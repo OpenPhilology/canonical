@@ -1,173 +1,208 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI>
-
-<teiHeader status="new" type="text">
-
-<fileDesc>
-
-<titleStmt>
-<title>Hymn to Zeus from Hymns</title>
-<author>Callimachus</author>
-<sponsor>Perseus Project, Tufts University</sponsor>
-<principal>Gregory Crane</principal>
-<respStmt>
-<resp>Prepared under the supervision of</resp>
-<name>Lisa Cerrato</name>
-<name>William Merrill</name>
-<name>Elli Mylonas</name>
-<name>David Smith</name>
-</respStmt>
-<funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-&fund.Google;
-</titleStmt>
-
-<extent></extent>
-
-
-
-<notesStmt><note anchored="yes"></note></notesStmt>
-<sourceDesc>
-<biblStruct>
-	<monogr>
-		<author>Callimachus</author>
-	    <title>Works</title>
-	    <editor>A.W. Mair</editor>
-		<imprint>
-		    <publisher>London: William Heinemann; New York: G.P. Putnam's Sons</publisher>
-		    <date>1921</date></imprint>
-	</monogr>
-</biblStruct>
-</sourceDesc>
-
-
-</fileDesc>
-
-<encodingDesc>
-
-<refsDecl doctype="TEI.2">
-<state delim="." unit="hymn"/>
-<state unit="line"/>
-</refsDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language id="greek">Greek</language>
-<language id="en">English</language>
-</langUsage>
-</profileDesc>
-
-<revisionDesc>
-        <change>
-            <date></date><respStmt><name></name><resp></resp></respStmt><item>
+<?xml version="1.0" encoding="UTF-8"?><TEI><teiHeader status="new" type="text">
+    <fileDesc>
+        <titleStmt>
+            <title>Hymn to Zeus</title>
+            <author>Callimachus</author>
+            <sponsor>Perseus Project, Tufts University</sponsor>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+                <resp>Prepared under the supervision of</resp>
+                <name>Lisa Cerrato</name>
+                <name>William Merrill</name>
+                <name>Elli Mylonas</name>
+                <name>David Smith</name>
+            </respStmt>
+            <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
+        </titleStmt>
+       
+        
+        <sourceDesc>
+            <biblStruct>
+                <monogr>
+                    <title>Hymns and Epigrams</title>
+                    <author>Callimachus</author>
+                    <editor role="editor">Ulrich von Wilamowitz-Moellendorff</editor>
+                    <imprint>
+                        <pubPlace>Berlin</pubPlace>
+                        <publisher>Weidmann</publisher>
+                        <date>1897</date>
+                    </imprint>
+                </monogr>
+            </biblStruct>
+        </sourceDesc>
+    </fileDesc>
+    
+    <encodingDesc>
+        <editorialDecl>
+            <correction status="medium" method="silent">&Perseus.DE;</correction>
+        </editorialDecl>
+        <refsDecl doctype="TEI.2" n="text=intro">
+            <state unit="text"/>
+            <state unit="section" n="chunk"/>
+        </refsDecl>
+        <refsDecl doctype="TEI.2" n="text=hymns">
+            <state unit="text"/>
+            <state unit="poem" n="chunk"/>
+            <state unit="line"/>
+        </refsDecl>
+        <refsDecl doctype="TEI.2" n="text=epigrams">
+            <state unit="text"/>
+            <state unit="poem" n="chunk"/>
+            <state unit="line"/>
+        </refsDecl>
+    </encodingDesc>
+    
+    <profileDesc>
+        <langUsage>
+            <language id="greek">Greek</language>
+            <language id="en">English</language>
+            <language id="la">Latin</language>
+            <language id="de">German</language>
+            <language id="fr">French</language>
+            <language id="it">Italian</language>
+        </langUsage>
+    </profileDesc>
+    
+    <revisionDesc>
+        <change><date>23-Jul-02</date>
+            <respStmt><name>AEM</name><resp>markup</resp></respStmt>
+            <item>Initial markup
             </item>
         </change>
-<change><date>July 2014</date>
-    <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
-    <item>split speeches and converted to unicode</item>
-      </change></revisionDesc>
-
+        <change><date>5/27/09</date><respStmt><name>RS</name><resp>(n/a)</resp></respStmt>
+            <item>  
+                $Log: call_gk.xml,v $
+                Revision 1.4  2013-09-13 11:21:30  balmas01
+                reverting texts back to pre_cts_reorg tagged version
+                
+                Revision 1.2  2011-09-07 13:40:45  rsingh04
+                adding rend=displayNum or displayNumAndIdent to lb tags
+                
+                Revision 1.1  2011-09-07 13:33:17  rsingh04
+                moved from Aristotle directory
+                
+                Revision 1.2  2011-01-15 16:10:31  gcrane
+                alternate editions
+                
+                Revision 1.1  2011-01-01 22:28:59  gcrane
+                LB milestones instead of L containers
+                Q tags added
+                
+                Revision 1.1  2009/10/09 19:49:34  rsingh04
+                more reorganizing of texts module by collection
+                
+                Revision 1.3  2009/05/27 16:39:10  rsingh04
+                added/fixed cvs log keyword
+                
+            </item>
+        </change>
+        <change><date>July 2014</date>
+            <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
+            <item>split speeches and converted to unicode</item>
+        </change></revisionDesc>
+    </revisionDesc>
+    
 </teiHeader><text><body>
-<p><pb id="p.36"></pb>
-<lb n="1" rend="displayNum"></lb>Ζηνὸς ἔοι τί κεν ἄλλο παρὰ σπονδῇσιν ἀείδειν
-<lb n="2" rend="displayNum"></lb>λώιον ἢ θεὸν αὐτόν, ἀεὶ μέγαν, αἰὲν ἄνακτα,
-<lb n="3" rend="displayNum"></lb>Πηλαγόνων <note n="1">phlago/nwn *e.m.; phlogo/nwn. The reading of the Mss. *phlogo/nwn (phlogo/nwn: tw=n giga/ntwn para\ to\ e)k phlou= gene/sqai, toute/sti th=s schol.) sas corrected by Salmasius and others from E.M. s.v. *phlago/nes: oi( gi/gantes, *kalli/maxos <q>Πηλαγόνων ἐλατῆρα.</q> Cf. Hesych. s.v., Strabo vii. 331, fr. 40.</note> ἐλατῆρα, δικασπόλον οὐρανίδῃσι;
-<lb n="4" rend="displayNum"></lb>πῶς καί μιν, Δικταῖον ἀείσομεν ἠὲ Λυκαῖον;
-<lb n="5" rend="displayNum"></lb>ἐν δοιῇ μάλα θυμός, ἐπεὶ γένος ἀμφήριστον. 
-<lb n="6" rend="displayNum"></lb>Ζεῦ, σὲ μὲν Ἰδαίοισιν ἐν οὔρεσί φασι γενέσθαι,
-<lb n="7" rend="displayNum"></lb>Ζεῦ, σὲ δʼ ἐν Ἀρκαδίῃ· πότεροι, πάτερ, ἐψεύσαντο;
-<lb n="8" rend="displayNum"></lb><q>Κρῆτες ἀεὶ ψεῦσται·</q> καὶ γὰρ τάφον, ὦ ἄνα, σεῖο
-<lb n="9" rend="displayNum"></lb>Κρῆτες ἐτεκτήναντο· σὺ δʼ οὐ θάνες, ἐσσὶ γὰρ αἰεί.
-<pb id="p.38"></pb>
-<lb n="10" rend="displayNum"></lb>ἐν δέ σε Παρρασίῃ <note n="1">*parrasi/h| Lascaris; *parnasi/h|.</note> Ῥείη τέκεν, ἧχι μάλιστα 
-<lb n="11" rend="displayNum"></lb>ἔσκεν ὄρος θάμνοισι περισκεπές· ἔνθεν ὁ χῶρος
-<lb n="12" rend="displayNum"></lb>ἱερός, οὐδέ τί μιν κεχρημένον Εἰλειθυίης
-<lb n="13" rend="displayNum"></lb>ἑρπετὸν οὐδὲ γυνὴ ἐπιμίσγεται, ἀλλά ἑ Ῥείης
-<lb n="14" rend="displayNum"></lb>ὠγύγιον καλέουσι λεχώιον Ἀπιδανῆες.
-<lb n="15" rend="displayNum"></lb>ἔνθα σʼ ἐπεὶ μήτηρ μεγάλων ἀπεθήκατο κόλπων 
-<lb n="16" rend="displayNum"></lb>αὐτίκα δίζητο ῥόον ὕδατος, ᾧ κε τόκοιο
-<lb n="17" rend="displayNum"></lb>λύματα χυτλώσαιτο, τεὸν δʼ ἐνὶ χρῶτα λοέσσαι.
-</p><p><lb n="18" rend="displayNum"></lb>Λάδων ἀλλʼ οὔπω μέγας ἔρρεεν οὐδʼ Ἐρύμανθος,
-<lb n="19" rend="displayNum"></lb>λευκότατος ποταμῶν, ἔτι δʼ ἄβροχος ἦεν ἅπασα
-<lb n="20" rend="displayNum"></lb>Ἀρκαδίη· μέλλεν δὲ μάλʼ εὔυδρος καλέεσθαι 
-<lb n="21" rend="displayNum"></lb>αὖτις· ἐπεὶ τημόσδε, Ῥέη ὅτʼ ἐλύσατο μίτρην,
-<lb n="22" rend="displayNum"></lb>ἦ πολλὰς ἐφύπερθε σαρωνίδας ὑγρὸς Ἰάων
-<lb n="23" rend="displayNum"></lb>ἤειρεν, πολλὰς δὲ Μέλας ὤκχησεν ἁμάξας,
-<lb n="24" rend="displayNum"></lb>πολλὰ δὲ Καρνίωνος <note n="2">*karni/wnos Arnaldus, cf. Paus. viii. 34, Plin. iv. 6; *kari/wnos MSS.</note> ἄνω διεροῦ περ ἐόντος
-<lb n="25" rend="displayNum"></lb>ἰλυοὺς ἐβάλοντο κινώπετα, νίσσετο δʼ ἀνὴρ 
-<lb n="26" rend="displayNum"></lb>πεζὸς ὑπὲρ Κρᾶθίν τε πολύστιόν <note n="3">polu/stion schol. Apoll. Rh. ii. 1172; polu/steion MSS. and schol. Pind. O. vi. 146; cf. Nicand. T. 792, 950, A. 466.</note> τε Μετώπην
-<lb n="27" rend="displayNum"></lb>διψαλέος· τὸ δὲ πολλὸν ὕδωρ ὑπὸ ποσσὶν ἔκειτο.
-<lb n="28" rend="displayNum"></lb>καί ῥʼ ὑπʼ ἀμηχανίης σχομένη φάτο πότνια Ῥείη·
-<pb id="p.40"></pb>
-<lb n="29" rend="displayNum"></lb><q>Γαῖα φίλη, τέκε καὶ σύ· τεαὶ δʼ ὠδῖνες ἐλαφραί.</q>
-<lb n="30" rend="displayNum"></lb>εἶπε καὶ ἀντανύσασα θεὴ μέγαν ὑψόθι πῆχυν 
-<lb n="31" rend="displayNum"></lb>πλῆξεν ὄρος σκήπτρῳ· τὸ δέ οἱ δίχα πουλὺ διέστη,
-<lb n="32" rend="displayNum"></lb>ἐκ δʼ ἔχεεν μέγα χεῦμα· τόθι χρόα φαιδρύνασα,
-<lb n="33" rend="displayNum"></lb>ὦνα, τεὸν σπείρωσε, Νέδῃ δέ σε δῶκε κομίζειν <note n="1">komi/zein *a; komi/ssai other MSS.</note>
-<lb n="34" rend="displayNum"></lb>κευθμὸν ἔσω Κρηταῖον, ἵνα κρύφα παιδεύοιο,
-<lb n="35" rend="displayNum"></lb>πρεσβυτάτῃ Νυμφέων αἵ μιν τότε μαιώσαντο, 
-<lb n="36" rend="displayNum"></lb>πρωτίστῃ γενεῇ <note n="2">prwti/sth geneh\ Schneider.</note> μετά γε Στύγα τε Φιλύρην τε.
-<lb n="37" rend="displayNum"></lb>οὐδʼ ἁλίην ἀπέτεισε θεὴ χάριν, ἀλλὰ τὸ χεῦμα
-<lb n="38" rend="displayNum"></lb>κεῖνο Νέδην ὀνόμηνε· τὸ μέν ποθι πουλὺ κατʼ αὐτὸ
-<lb n="39" rend="displayNum"></lb>Καυκώνων πτολίεθρον, ὃ Λέπρειον <note n="3">*le/prion MSS.; corr. Wass.</note> πεφάτισται,
-<lb n="40" rend="displayNum"></lb>συμφέρεται Νηρῆι, παλαιότατον δέ μιν ὕδωρ 
-<lb n="41" rend="displayNum"></lb>υἱωνοὶ <note n="4">guiwnoi\ *mSS.</note> πίνουσι Λυκαονίης ἄρκτοιο.
-<lb n="42" rend="displayNum"></lb>εὖτε Θενὰς ἀπέλειπεν ἐπὶ Κνωσοῖο φέρουσα,
-<lb n="43" rend="displayNum"></lb>Ζεῦ πάτερ, ἡ Νύμφη σε Θ̔εναὶ δʼ ἔσαν ἐγγύθι Κνωσοὖ,
-<lb n="44" rend="displayNum"></lb>τουτάκι τοι πέσε, δαῖμον, ἄπʼ ὀμφαλός· ἔνθεν ἐκεῖνο
-<lb n="45" rend="displayNum"></lb>ὀμφάλιον μετέπειτα πέδον καλέουσι Κύδωνες. 
-<lb n="46" rend="displayNum"></lb>Ζεῦ, σὲ δὲ Κυρβάντων ἑτάραι προσεπηχύναντο
-<pb id="p.42"></pb>
-<lb n="47" rend="displayNum"></lb>Δικταῖαι Μελίαι, σὲ δʼ ἐκοίμισεν Ἀδρήστεια
-<lb n="48" rend="displayNum"></lb>λίκνῳ <note n="1">lei/knw| MSS.</note> ἐνὶ χρυσέῳ, δὺ δʼ ἐθήσαο πίονα μαζὸν
-<lb n="49" rend="displayNum"></lb>αἰγὸς Ἀμαλθείης, ἐπὶ σὲ γλυκὺ κηρίον ἔβρως.
-<lb n="50" rend="displayNum"></lb>γέντο γὰρ ἐξαπιναῖα Πανακρίδος ἔργα μελίσσης 
-<lb n="51" rend="displayNum"></lb>Ἰδαίοις ἐν ὄρεσσι, τά τε κλείουσι Πάνακρα.
-<lb n="52" rend="displayNum"></lb>οὖλα δὲ Κούρητές σε περὶ πρύλιν ὠρχήσαντο
-<lb n="53" rend="displayNum"></lb>τεύχεα πεπηήγοντες, <note n="2">v.l. peplhgo/tes.</note> ἵνα Κρόνος οὔασιν ἠχὴν
-<lb n="54" rend="displayNum"></lb>ἀσπίδος εἰσαΐοι καὶ μή σεο κουρίζοντος.
-<lb n="55" rend="displayNum"></lb>καλὰ μὲν ἠέξευ, καλὰ δʼ ἔτραφες, οὐράνιε Ζεῦ, 
-<lb n="56" rend="displayNum"></lb>ὀξὺ δʼ ἀνήβησας, ταχινοὶ δέ τοι ἦλθον ἴουλοι.
-<lb n="57" rend="displayNum"></lb>ἀλλʼ ἔτι παιδνὸς ἐὼν ἐφράσσαο πάντα τέλεια·
-<lb n="58" rend="displayNum"></lb>τῶ τοι καὶ γνωτοὶ προτερηγενέες περ ἐόντες
-<lb n="59" rend="displayNum"></lb>οὐρανὸν οὐκ ἐμέγηραν ἔχειν ἐπιδαίσιον οἶκον.
-<lb n="60" rend="displayNum"></lb>δηναιοὶ δʼ οὐ πάμπαν ἀληθέες ἦσαν ἀοιδοί. 
-<lb n="61" rend="displayNum"></lb>φάντο πάλον Κρονίδῃσι διάτριχα δώματα νεῖμαι·
-<lb n="62" rend="displayNum"></lb>τίς δέ κʼ ἐπʼ Οὐλύμπῳ τε καὶ Ἄιδι κλῆρον ἐρύσσαι,
-<lb n="63" rend="displayNum"></lb>ὃς μάλα μὴ νενίηλος; ἐπʼ ἰσαίῃ γὰρ ἔοικε
-<lb n="64" rend="displayNum"></lb>πήλασθαι· τὰ δὲ τόσσον ὅσον διὰ πλεῖστον ἔχουσι.
-<lb n="65" rend="displayNum"></lb>ψευδοίμην ἀίοντος ἅ κεν πεπίθοιεν ἀκουήν. 
-<lb n="66" rend="displayNum"></lb>οὔ σε θεῶν ἐσσῆνα πάλοι θέσαν, ἔργα δὲ χειρῶν,
-<pb id="p.44"></pb>
-<lb n="67" rend="displayNum"></lb>σή τε βίη τό τε κάρτος, ὃ καὶ πέλας εἵσαο δίφρου.
-<lb n="68" rend="displayNum"></lb>θήκαο δʼ οἰωνῶν μέγʼ ὑπείροχον ἀγγελιώτην
-<lb n="69" rend="displayNum"></lb>σῶν τεράων· ἅ τʼ ἐμοῖσι φίλοις ἐνδέξια φαίνοις.
-<lb n="70" rend="displayNum"></lb>εἵλεο δʼ αἰζηῶν ὅ τι φέρτατον· οὐ σύ γε νηῶν 
-<lb n="71" rend="displayNum"></lb>ἐμπεράμους, οὐκ ἄνδρα σακέσπαλον, οὐ μὲν ἀοιδόν·
-<lb n="72" rend="displayNum"></lb>ἀλλὰ τὰ μὲν μακάρεσσιν ὀλίζοσιν αὖθι παρῆκας
-<lb n="73" rend="displayNum"></lb>ἄλλα μέλειν ἑτέροισι, σὺ δʼ ἐξέλεο πτολιάρχους
-<lb n="74" rend="displayNum"></lb>αὐτούς, ὧν ὑπὸ χεῖρα γεωμόρος, ὧν ἴδρις αἰχμῆς,
-<lb n="75" rend="displayNum"></lb>ὧν ἐρέτης, ὧν πάντα· τί δʼ οὐ κρατέοντος ὑπʼ ἰοχύν; 
-<lb n="76" rend="displayNum"></lb>αὐτίκα χαλκῆας μὲν ὑδείομεν Ἡφαίστοιο,
-<lb n="77" rend="displayNum"></lb>τευχηστὰς δʼ Ἄρηος, ἐπακτῆρας δὲ Χιτώνης
-<lb n="78" rend="displayNum"></lb>Ἀρτέμιδος, Φοίβου δὲ λύρης εὖ εἰδότας οἴμους·
-<lb n="79" rend="displayNum"></lb>ἐκ δὲ Διὸς βασιλῆες, ἐπεὶ Διὸς οὐδὲν ἀνάκτων
-<lb n="80" rend="displayNum"></lb>θειότερον· τῶ καί σφε <note n="1">sfe Bentley; sfi.</note> τεὴν ἐκρίναο λάξιν. 
-<lb n="81" rend="displayNum"></lb>δῶκας δὲ πτολίεθρα φυλασσέμεν, ἵζεο δʼ αὐτὸς
-<lb n="82" rend="displayNum"></lb>ἄκρῃσʼ ἐν πολίεσσιν, ἐπόψιος οἵ τε δίκῃσι
-<lb n="83" rend="displayNum"></lb>λαὸν ὑπὸ σκολιῇσʼ οἵ τʼ ἔμπαλιν ἰθύνουσιν·
-<lb n="84" rend="displayNum"></lb>ἐν δὲ ῥυηφενίην ἔβαλές σφισιν, ἐν δʼ ἅλις ὄλβον·
-<lb n="85" rend="displayNum"></lb>πᾶσι μέν, οὐ μάλα δʼ ἶσον. ἔοικε δὲ τεκμήρασθαι 
-<lb n="86" rend="displayNum"></lb>ἡμετέρῳ μεδέοντι· περιπρὸ γὰρ εὐρὺ βέβηκεν.
-<lb n="87" rend="displayNum"></lb>ἑσπέριος κεῖνός γε τελεῖ τά κεν ἦρι νοήσῃ·
-<lb n="88" rend="displayNum"></lb>ἑσπέριος τὰ μέγιστα, τὰ μείονα δʼ, εὖτε νοήσῃ.
-<lb n="89" rend="displayNum"></lb>οἱ δὲ τὰ μὲν πλειῶνι, τὰ δʼ οὐχ ἑνί, τῶν δʼ ἀπὸ πάμπαν
-<lb n="90" rend="displayNum"></lb>αὐτὸς ἄνην ἐκόλουσας, ἐνέκλασσας δὲ μενοινήν. 
-<lb n="91" rend="displayNum"></lb>χαῖρε μέγα, Κρονίδη πανυπέρτατε, δῶτορ ἐάων,
-<pb id="p.46"></pb>
-<lb n="92" rend="displayNum"></lb>δῶτορ ἀπημονίης. τεὰ δʼ ἔργματα τίς κεν ἀείδοι;
-<lb n="93" rend="displayNum"></lb>οὐ γένετʼ, οὐκ ἔσται, τίς <note n="1">e)/stai: ti/s vulg.</note> κεν <note n="2">ken MSS.; kai\ Wilamos.</note> Διὸς ἔργματʼ ἀείσαι. <note n="3">a)ei/sai Blomf.; a)ei/soi or a)ei/sei MSS.</note>
-<lb n="94" rend="displayNum"></lb>χαῖρε πάτερ, χαῖρʼ αὖθι· δίδου δʼ ἀρετήν τʼ ἄφενός τε.
-<lb n="95" rend="displayNum"></lb>οὔτʼ ἀρετῆς ἄτερ ὄλβος ἐπίσταται ἄνδρας ἀέξειν 
-<lb n="96" rend="displayNum"></lb>οὔτʼ ἀρετὴ ἀφένοιο· δίδου δʼ ἀρετήν τε καὶ ὄλβον.
-</p>
-<pb id="p.48"></pb>
+
+    <p>						<lb></lb>Ζηνὸς ἔοι τί κεν ἄλλο παρὰ σπονδῆισιν ἀείδειν
+        <lb></lb>λώιον ἢ θεὸν αὐτόν, ἀεὶ μέγαν, αἰὲν ἄνακτα,
+        <lb></lb>Πηλαγόνων ἐλατῆρα, δικασπόλον οὐρανίδηισι;
+        <lb rend="displayNumAndIndent"></lb>πῶς καί μιν, Δικταῖον ἀείσομεν ἠὲ Λυκαῖον;
+        <lb n="5" rend="displayNum"></lb>ἐν δοιῆι μάλα θυμός, ἐπεὶ γένος ἀμφήριστον.
+        <lb></lb>Ζεῦ δὲ μὲν Ἰδαίοισιν ἐν οὔρεσί φασι γενέσθαι,
+        <lb></lb>Ζεῦ δὲ δʼ ἐν Ἀρκαδίηι· πότεροι, πάτερ, ἐψεύσαντο;
+        <lb></lb><q>Κρῆτες ἀεὶ ψεῦσται</q>· καὶ γὰρ τάφον, ὦ ἄνα, σεῖο
+        <lb></lb>Κρῆτες ἐτεκτήναντο· σὺ δʼ οὐ θάνες, ἐσσὶ γὰρ αἰεί.
+        <lb n="10" rend="displayNum"></lb>ἐν δέ σε Παρρασίηι Ῥείη τέκεν, ἧχι μάλιστα
+        <lb></lb>ἔσκεν ὄρος θάμνοισι περισκεπές &lpar;ἔνθεν ὁ χῶρος
+        <lb></lb>ἱερός, οὐδέ τί μιν κεχρημένον Εἰλειθυίης
+        <lb></lb>ἑρπετὸν οὐδὲ γυνὴ ἐπιμίσγεται, ἀλλά ἑ Ῥείης
+        <lb></lb>ὠγύγιον καλέουσι λεχώιον Ἀπιδανῆες&rpar;·
+        <lb n="15" rend="displayNum"></lb>ἔνθα σʼ ἐπεὶ μήτηρ μεγάλων ἀπεθήκατο κόλπων,
+        <lb></lb>αὐτίκα δίζητο ῥόον ὕδατος ὧι κε τόκοιο
+        <lb></lb>λύματα χυτλώσαιτο τεὸν δʼ ἐνὶ χρῶτα λοέσσαι.
+        <lb></lb>Λάδων ἀλλʼ οὔπω μέγας ἔρρεεν οὐδʼ Ἐρύμανθος,
+        <lb></lb>λευκότατος ποταμῶν, ἔτι δʼ ἄβροχος ἦεν ἅπασα
+        <lb n="20" rend="displayNum"></lb>Ἀρκαδίη· μέλλεν δὲ μάλʼ εὔυδρος καλέεσθαι
+        <lb></lb>αὖτις· ἐπεὶ τημόσδε, Ῥέη ὅτʼ ἐλύσατο μίτρην,
+        <lb></lb>ἦ πολλὰς ἐφύπερθε σαρωνίδας ὑγρὸς Ἰάων
+        <lb></lb>ἤειρεν, πολλὰς δὲ Μέλας ὤκχησεν ἁμάξας,
+        <lb></lb>πολλὰ δὲ Καρίωνος ἄνω διεροῦ περ ἐόντος
+        <lb n="25" rend="displayNum"></lb>ἰλυοὺς ἐβάλοντο κινώπετα, νίσσετο δʼ ἀνήρ
+        <pb n="18"></pb>
+        <lb></lb>πεζὸς ὑπὲρ Κρᾶθίν τε πολύστιόν τε Μετώπην
+        <lb></lb>διψαλέος· τὸ δὲ πολλὸν ὕδωρ ὑπὸ ποσσὶν ἔκειτο.
+        <lb></lb>καί ῥʼ ὑπʼ ἀμηχανίης σχομένη φάτο πότνια Ῥείη
+        <lb></lb>ʼΓαῖα φίλη τέκε καὶ σύ· τεαὶ δʼ ὠδῖνες ἐλαφραί.ʼ
+        <lb n="30" rend="displayNum"></lb>εἶπε καὶ ἀντανύσασα θεὴ μέγαν ὑψόθι πῆχυν
+        <lb></lb>πλῆξεν ὄρος σκήπτρωι· τὸ δέ οἱ δίχα πουλὺ διέστη,
+        <lb></lb>ἐκ δʼ ἔχεεν μέγα χεῦμα· τόθι χρόα φαιδρύνασα
+        <lb></lb>ὦνα τεὸν σπείρωσε, Νέδηι δέ σε δῶκε κομίζειν
+        <lb></lb>κευθμὸν ἔσω Κρηταῖον, ἵνα κρύφα παιδεύοιο,
+        <lb n="35" rend="displayNum"></lb>πρεσβυτάτηι Νυμφέων, αἵ μιν τότε μαιώσαντο
+        <lb></lb>πρωτίστη γενεὴ μετά γε Στύγα τε Φιλύρην τε.
+        <lb></lb>οὐδʼ ἁλίην ἀπέτεισε θεὴ χάριν, ἀλλὰ τὸ χεῦμα
+        <lb></lb>κεῖνο Νέδην ὀνόμηνε· τὸ μέν ποθι πουλὺ κατʼ αὐτό
+        <lb></lb>Καυκώνων πτολίεθρον, δ Λέπρειον πεφάτισται,
+        <lb n="40" rend="displayNum"></lb>συμφέρεται Νηρῆι, παλαιότατον δέ μιν ὕδωρ
+        <lb></lb>υἱωνοὶ πίνουσι Λυκαονίης ἄρκτοιο.
+        <lb></lb>εὖτε Θενὰς ἀπέλειπεν ἐπὶ Κνωσοῖο φέρουσα
+        <lb></lb>Ζεῦ πάτερ ἡ Νύμφη σε &lpar;Θεναὶ δʼ ἔσαν ἐγγύθι Κνωσοῦ&rpar;,
+        <lb></lb>τουτάκι τοι πέσε δαῖμον ἄπʼ ὀμφαλός· ἔνθεν ἐκεῖνο
+        <lb n="45" rend="displayNum"></lb>ὀμφάλιον μετέπειτα πέδον καλέουσι Κύδωνες.
+        <lb></lb>Ζεῦ σὲ δὲ Κυρβάντων ἑτάραι προσεπηχύναντο
+        <lb></lb>Δικταῖαι Μελίαι, δὲ δʼ ἐκοίμισεν Ἀδρήστεια
+        <lb></lb>λίκνωι ἐνὶ χρυσέωι, σὺ δʼ ἐθήσαο πίονα μαζόν
+        <lb></lb>αἰγὸς Ἀμαλθείης, ἐπὶ δὲ γλυκὺ κηρίον ἔβρως.
+        <lb n="50" rend="displayNum"></lb>γέντο γὰρ ἐξαπιναῖα Πανακρίδος ἔργα μελίσσης
+        <lb></lb>Ἰδαίοις ἐν ὄρεσσι, τά τε κλείουσι Πάνακρα.
+        <lb></lb>οὖλα δὲ Κούρητές σε περὶ πρύλιν ὠρχήσαντο
+        <lb></lb>τεύχεα πεπλήγοντες, ἵνα Κρόνος οὔασιν ἠχήν
+        <lb></lb>ἀσπίδος εἰσαΐοι καὶ μή σεο κουρίζοντος.
+        <milestone unit="card" n="55"/>
+        <lb rend="displayNumAndIndent" n="55"></lb>καλὰ μὲν ἠέξευ, καλὰ δʼ ἔτραφες οὐράνιε Ζεῦ,
+        <lb></lb>ὀξὺ δʼ ἀνήβησας, ταχινοὶ δέ τοι ἦλθον ἴουλοι.
+        <pb n="19"></pb>
+        <lb></lb>ἀλλʼ ἔτι παιδνὸς ἐὼν ἐφράσσαο πάντα τέλεια·
+        <lb></lb>τῶι τοι καὶ γνωτοὶ προτερηγενέες περ ἐόντες
+        <lb></lb>οὐρανὸν οὐκ ἐμέγηραν ἔχειν ἐπιδαίσιον οἶκον.
+        <lb n="60" rend="displayNum"></lb>δηναιοὶ δʼ οὐ πάμπαν ἀληθέες ἦσαν ἀοιδοί·
+        <lb></lb>φάντο πάλον Κρονίδηισι διάτριχα δώματα νεῖμαι·
+        <lb></lb>τίς δέ κʼ ἐπʼ οὐλύμπωι τε καὶ ἄιδι κλῆρον ἐρύσσαι,
+        <lb></lb>δς μάλα μὴ νενίηλος; ἐπʼ ἰσαίηι γὰρ ἔοικε
+        <lb></lb>πήλασθαι· τὰ δὲ τόσσον ὅσον διὰ πλεῖστον ἔχουσι.
+        <lb n="65" rend="displayNum"></lb>ψευδοίμην ἀίοντος ἅ κεν πεπίθοιεν ἀκουήν.
+        <lb></lb>οὔ σε θεῶν ἐσσῆνα πάλοι θέσαν, ἔργα δὲ χειρῶν,
+        <lb></lb>σή τε βίη τό τε κάρτος, ὃ καὶ πέλας εἵσαο δίφρου.
+        <lb></lb>θήκαο δʼ οἰωνῶν μέγʼ ὑπείροχον ἀγγελιώτην
+        <lb></lb>σῶν τεράων· ἅ τʼ ἐμοῖσι φίλοις ἐνδέξια φαίνοις.
+        <lb n="70" rend="displayNum"></lb>εἵλεο δʼ αἰζηῶν ὅ τι φέρτατον· οὐ σύ γε νηῶν
+        <lb></lb>ἐμπεράμους, οὐκ ἄνδρα σακέσπαλον, οὐ μὲν ἀοιδόν·
+        <lb></lb>ἀλλὰ τὰ μὲν μακάρεσσιν ὀλίζοσιν αὖθι παρῆκας
+        <lb></lb>ἄλλα μέλειν ἑτέροισι, σὺ δʼ ἐξέλεο πτολιάρχους
+        <lb></lb>αὐτούς, ὧν ὑπὸ χεῖρα γεωμόρος, ὧν ἴδρις αἰχμῆς,
+        <lb n="75" rend="displayNum"></lb>ὧν ἐρέτης, ὧν πάντα· τί δʼ οὐ κρατέοντος ὑπʼ ἰσχύν;
+        <lb></lb>αὐτίκα χαλκῆας μὲν ὑδείομεν Ἡφαίστοιο,
+        <lb></lb>τευχηστὰς δʼ Ἄρηος, ἐπακτῆρας δὲ Χιτώνης
+        <lb></lb>Ἀρτέμιδος, Φοίβου δὲ λύρης εὖ εἰδότας οἴμους·
+        <lb></lb><q>ἐκ δὲ Διὸς βασιλῆες</q>· ἐπὶ χθονὸς οὐδὲν ἀνάκτων
+        <lb n="80" rend="displayNum"></lb>θειότερον· τῶι καί σφε τεὴν ἐκρίναο λάξιν.
+        <lb></lb>δῶκας δὲ πτολίεθρα φυλασσέμεν, ἵζεο δʼ αὐτὸς
+        <lb></lb>ἄκρηισʼ ἐν πολίεσσιν, ἐπόψιος οἵ τε δίκηισι
+        <lb></lb>λαὸν ὑπὸ σκολιῆισʼ οἵ τʼ ἔμπαλιν ἰθύνουσιν·
+        <lb></lb>ἐν δὲ ῥυηφενίην ἔβαλές σφισιν, ἐν δʼ ἅλις ὄλβον·
+        <lb n="85" rend="displayNum"></lb>πᾶσι μέν, οὐ μάλα δʼ ἶσον. ἔοικε δὲ τεκμήρασθαι
+        <lb></lb>ἡμετέρωι μεδέοντι· περιπρὸ γὰρ εὐρὺ βέβηκεν.
+        <lb></lb>ἑσπέριος κεῖνός γε τελεῖ τά κεν ἦρι νοήσηι·
+        <lb></lb>ἑσπέριος τὰ μέγιστα, τὰ μείονα δʼ, εὖτε νοήσηι.
+        <lb></lb>οἳ δὲ τὰ μὲν πλειῶνι, τὰ δʼ οὐχ ἑνί, τῶν δʼ ἀπὸ πάμπαν
+        <pb n="20"></pb>
+        <lb n="90" rend="displayNum"></lb>αὐτὸς ἄνην ἐκόλουσας, ἐνέκλασσας δὲ μενοινήν.
+        <lb rend="displayNumAndIndent"></lb>χαῖρε μέγα Κρονίδη πανυπέρτατε, δῶτορ ἐάων,
+        <lb></lb>δῶτορ ἀπημονίης. τεὰ δʼ ἔργματα τίς κεν ἀείδοι;
+        <lb></lb>οὐ γένετʼ, οὐκ ἔσται· τίς καὶ Διὸς ἔργματʼ ἀείσει;
+        <lb></lb>χαῖρε πάτερ, χαῖρʼ αὖθι· δίδου δʼ ἀρετήν τʼ ἄφενός τε.
+        <lb n="95" rend="displayNum"></lb>οὔτʼ ἀρετῆς ἄτερ ὄλβος ἐπίσταται ἄνδρας ἀέξειν
+        <lb></lb>οὔτʼ ἀρετὴ ἀφένοιο· δίδου δʼ ἀρετήν τε καὶ ὄλβον.
+        <pb n="21"></pb></p></div1>
 </body></text></TEI>

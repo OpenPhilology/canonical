@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Ab urbe condita" type="work">Ab Urbe Condita, books 8-10 - 9</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -38,19 +38,19 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter" n="chunk"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter" n="chunk"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="la">Latin</language>
-                <language id="greek">Greek</language>
+                language ident="en">English</language>
+                language ident="la">Latin</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -59,21 +59,21 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="9" type="book">
+            <div part="N" sample="complete" org="uniform" n="9" type="book">
                 <head>Book IX</head>
                 <p>
                     <milestone n="1" unit="chapter"/>
                     IN the following year came the Caudine Peace,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 321</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 321</note>
                     the notorious sequel of a disaster to the Roman arms.
                     <milestone n="2" unit="section"/>
                     <name>Titus</name>
                     Veturius Calvinus and Spurius Postumius were consuls.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For the second time, having held the office together thirteen years before.
                     </note>
                     <name>The</name>
@@ -84,7 +84,7 @@
                     <quote>
                         <reg>you</reg>
                         must not think that this embassy has been of no avail: whatever divine resentment we incurred by breaking the treaty
-                        <note anchored="yes" place="unspecified">The reference is to events described at viii. xxxvii. 3.</note>
+                        <note anchored="true" place="unspecified">The reference is to events described at viii. xxxvii. 3.</note>
                         has been appeased.
                         <milestone n="4" unit="section"/>
                         <reg>well</reg>
@@ -105,7 +105,7 @@
                         your anger and my punishment?
                         <reg>i</reg>
                         refuse no nation,
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 321</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 321</note>
                         no private citizen.
                         <milestone n="8" unit="section"/>
                         <reg>but</reg>
@@ -135,7 +135,7 @@
                     <milestone n="4" unit="section"/>
                     <reg>this</reg>
                     rumour, which
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 321</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 321</note>
                     had designedly been given out before, had already come to the ears of the Romans, but the prisoners strengthened their belief in it, especially since they all gave the same account.
                     <milestone n="5" unit="section"/>
                     <name>The</name>
@@ -166,7 +166,7 @@
                     barricade and armed men.
                     <reg>at</reg>
                     this they came to a
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 321</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 321</note>
                     halt, without any command, and a stupor came over the minds of all, and a strange kind of numbness over their bodies; and looking at one another —for
                     <milestone n="11" unit="section"/>
                     every man supposed his neighbour more capable of thinking and planning than himself —they stood for a long time motionless and silent.
@@ -194,12 +194,12 @@
                         let us scale the mountains, penetrate the forests, go wherever we can carry
                         <milestone n="2??" unit="section"/>
                         arms, if only we may come at the enemy, whom we have now been conquering for close upon thirty years
-                        <note anchored="yes" place="unspecified">The speaker disregards the interval of peace (341-328).</note>
+                        <note anchored="true" place="unspecified">The speaker disregards the interval of peace (341-328).</note>
                         ; any field will be smooth and level to a
                         <pb id="p.171"/>
                         Roman who fights against a treacherous Samnite!
                     </quote>
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 321</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 321</note>
                     <milestone n="3" unit="section"/>
                     Another would ask:
                     <quote>
@@ -238,7 +238,7 @@
                     old man made no objection; he was
                     <pb id="p.173"/>
                     brought to the camp in a waggon —so the story
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 321</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 321</note>
                     runs —and being invited to join the council of war, spoke to such purpose as merely, without changing his opinion, to add thereto his reasons: If, he said, they adopted his first proposal —which
                     <milestone n="10" unit="section"/>
                     he held to be the best —they would establish lasting peace and friendship with a very powerful people by conferring an enormous benefit upon them; by adopting the other plan they would postpone the war for many generations, in which time the Roman State, having lost two armies, would not easily regain its strength; there was no third plan.
@@ -273,7 +273,7 @@
                     them Pontius made answer, that the war was
                     <pb id="p.175"/>
                     already fought and won; and since they knew
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 321</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 321</note>
                     not how to admit their plight, even when beaten and made prisoners, he intended to send them unarmed and with a single garment each under the yoke;
                     <milestone n="4" unit="section"/>
                     in all else the peace should be one of equal terms to the vanquished and the victors; for if the Romans would evacuate the Samnite territory and withdraw their colonies, Romans and Samnites should thenceforward live by their own laws in an equal alliance.
@@ -291,9 +291,9 @@
                     , after a long silence —for the consuls were incapable of uttering a word, either for a treaty so disgraceful or against a treaty so necessary —
                     <milestone n="8" unit="section"/>
                     Lucius Lentulus, at that time first of the lieutenants both for his valour and his dignities,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         He had been consul
-                        <date value="-328">328 B.C.</date>
+                        date when="-328">328 B.C.</date>
                         (viii. xxii. 8). His descendants assumed the surname of Caudini and a P. Cornelius Caudinus is mentioned at XXVI. xlviii. 9 and a L. Cornelius Caudinus at xxvii. xxi. 9.
                     </note>
                     spoke as follows:
@@ -305,7 +305,7 @@
                         if, in like manner as they had it in their power to run down from the Capitol, sword in hand, against their enemy, even as the besieged have often sallied out against the besiegers,
                         <pb id="p.177"/>
                         so we were able, whether on favourable ground or
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 321</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 321</note>
                         no, only to come to grips with our antagonist, I should not lack my father's spirit in advising you.
                         <milestone n="10" unit="section"/>
                         <reg>i</reg>
@@ -352,11 +352,11 @@
                     the Caudine
                     <pb id="p.179"/>
                     Peace was not entered into by means of a treaty, as
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 321</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 321</note>
                     people in general believe and as Claudius
-                    <note anchored="yes" place="unspecified">Q. Claudius Quadrigarius (Introduction, Vol. I. p. xxx).</note>
+                    <note anchored="true" place="unspecified">Q. Claudius Quadrigarius (Introduction, Vol. I. p. xxx).</note>
                     actually states, but by a guarantee.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <quote>
                             <name>The</name>
                             <hi rend="italics">sponsio</hi>
@@ -369,7 +369,7 @@
                     what need would there have been for guarantors or for hostages in a treaty, where the agreement is concluded with a prayer that the nation responsible for any departure from the recited terms may be smitten by Jupiter even as the swine is smitten by the
                     <milestone n="4" unit="section"/>
                     fetials?
-                    <note anchored="yes" place="unspecified">See I. xxiv. 8.</note>
+                    <note anchored="true" place="unspecified">See I. xxiv. 8.</note>
                     <name>The</name>
                     guarantors were the consuls, the lieutenants, the quaestors, and the tribunes of the soldiers, and the names of all who gave the guarantee are extant, whereas, if the agreement had been entered into as in making a treaty, none would be preserved except those of the two
                     <milestone n="5" unit="section"/>
@@ -396,7 +396,7 @@
                     pictured to their mind's eye the hostile yoke, the victor's taunts,
                     <pb id="p.181"/>
                     and fleering countenance; and how they must pass
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 321</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 321</note>
                     unarmed between the ranks of their armed enemies, and then wend their wretched way, a pitiful band, through the cities of their allies; and finally the return to their own city and their parents, whither they themselves and their ancestors had often returned in
                     <milestone n="10" unit="section"/>
                     triumph.
@@ -428,7 +428,7 @@
                     enemy under arms stood on either side, reviling them and mocking them; many they actually threatened with the sword, and some, whose
                     <pb id="p.183"/>
                     resentment of the outrage showing too plainly in their
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 321</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 321</note>
                     faces gave their conquerors offence, they wounded or slew outright.
                 </p>
                 <p>
@@ -462,7 +462,7 @@
                     the following day, when the young nobles sent from Capua to attend them to the borders of Campania had returned, and were called into the
                     <pb id="p.185"/>
                     senatehouse and questioned by the elders, they reported
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 321</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 321</note>
                     that they had seemed to be much more sorrowful and dejected than before: their column had marched on in silence and almost as though dumb;
                     <milestone n="12" unit="section"/>
                     the old Roman spirit was quite dashed; they had lost their courage with their arms; being saluted, they returned not the salutation; they responded to no questions; not a man of them had been able to open his mouth for shame, as if they still bore on their necks the yoke under which they had been sent;
@@ -471,7 +471,7 @@
                     <milestone n="7" unit="chapter"/>
                     <reg>such</reg>
                     were the opinions that were spoken
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                     and listened to, and the Roman name had well —nigh
                     <milestone n="2" unit="section"/>
                     been given up for lost in the council of Rome's faithful allies, when Aulus Calavius, son of Ovius, a man of famous birth and achievements and at that time venerable also for his age, asserted that the case was very different:
@@ -490,7 +490,7 @@
                     <milestone n="6" unit="section"/>
                     <name>The</name>
                     first news was that the army was
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                     entrapped; then came a gloomier report, more by reason of the disgraceful peace than because of the peril.
                     <milestone n="7" unit="section"/>
                     <reg>on</reg>
@@ -498,7 +498,7 @@
                     <milestone n="8" unit="section"/>
                     <name>The</name>
                     booths round about the Forum were shut up, and ere proclamation could be made, all business was suspended; tunics with the broad stripe of purple were discarded, as were golden rings.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The
                         <hi rend="italics">latus clavus,</hi>
                         a broad (purple) stripe in the tunic, marked the senator.
@@ -525,7 +525,7 @@
                     flaw in their appointment occasioned the substitution in their
                     <pb id="p.189"/>
                     room of Marcus Aemilius Papus, as dictator, and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                     Lucius Valerius Flaccus, as master of the horse.
                     <reg>however</reg>
                     , even they did not hold an election; and because the people were dissatisfied with all the magistrates of that year, the state reverted to an interregnum.
@@ -542,7 +542,7 @@
                     <milestone n="2" unit="section"/>
                     <name>Publilius</name>
                     had the fasces,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The
                         <hi rend="italics">fasces</hi>
                         (bundles of rods, symbolic of supreme authority) were borne by the lictors in alternate attendance on the two consuls.
@@ -565,7 +565,7 @@
                         motion will bear witness whether it was myself or your legions that I spared, when I bound myself by a base, or, perhaps,
                         <pb id="p.191"/>
                         a necessary pledge, —by which, however, the Roman
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                         People is not held, since it was given without the people's authorization; nor by its terms is aught but our own persons due to the Samnites.
                         <milestone n="6" unit="section"/>
                         <reg>let</reg>
@@ -593,7 +593,7 @@
                     they
                     <pb id="p.193"/>
                     were all crossing over to support his motion, with
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                     nothing but praises for his heroism, Lucius Livius and Quintus Maelius, tribunes of the plebs, endeavoured for a moment to interpose their veto.
                     <milestone n="14" unit="section"/>
                     <name>The</name>
@@ -602,7 +602,7 @@
                     unless every advantage which the Samnites had possessed at Caudium were restored to them;
                     <milestone n="15" unit="section"/>
                     moreover, they had merited no punishment for having preserved by their pledge of peace the army of the Roman People; nor, finally, seeing that they were sacrosanct, could they be surrendered to the enemy or violated.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livius and Maelius are apparently thought of as having been among the guarantors and as having afterwards been elected plebeian tribunes.
                     </note>
                 </p>
@@ -625,7 +625,7 @@
                     ! If the Samnites with that same arrogance with which they extorted this capitulation from us had
                     <pb id="p.195"/>
                     compelled us to pronounce the solemn form of words
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                     of those who surrender cities, would you tribunes assert that the Roman People had been surrendered, and that this City, with its temples, its holy places, its bounds and waters, was become the property of the Samnites?
                     <milestone n="6" unit="section"/>
                     <reg>but</reg>
@@ -657,7 +657,7 @@
                         was nothing done at Caudium, Conscript Fathers, by man's wisdom: the immortal gods deprived of understanding both your commanders and the enemy's. We, on our part, took no sufficient precautions in the war: while, as for them, they threw away their ill —got victory by their ill —guided conduct, for they hardly trusted the very ground that had given them
                         <pb id="p.197"/>
                         their conquest, in their haste to deprive of arms, on
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                         any terms, men born to the use of arms.
                         <milestone n="12" unit="section"/>
                         <reg>why</reg>
@@ -666,7 +666,7 @@
                         to treat with senate and with people for a peace and covenant?
                         <reg>it</reg>
                         was only three days' journey to those who travel light; meantime hostilities would have been suspended, until their envoys should return from Rome with either certain victory or a peace.
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             Victory, in case the Roman People declined to accept terms for the ransom of their army; peace, if they acceded to those terms.
                         </note>
                         <milestone n="14" unit="section"/>
@@ -693,7 +693,7 @@
                         Samnites have in us guarantors who are responsible and quite competent, so far as concerns what belongs to ourselves and what we are able to deliver, namely, our persons and our lives; against these let
                         <pb id="p.199"/>
                         them storm, against these direct their swords, against
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                         these make sharp their anger.
                         <milestone n="19" unit="section"/>
                         <reg>as</reg>
@@ -711,7 +711,7 @@
                     <milestone n="3" unit="section"/>
                     <name>Postumius</name>
                     was on all men's lips; they extolled him to the skies, and compared his conduct to the devotion of Publius Decius, the consul,
-                    <note anchored="yes" place="unspecified">viii. ix. 4 f.</note>
+                    <note anchored="true" place="unspecified">viii. ix. 4 f.</note>
                     and to other glorious deeds.
                     <milestone n="4" unit="section"/>
                     <name>The</name>
@@ -741,11 +741,11 @@
                         , draw the thong tight,
                     </quote>
                     he exclaimed,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                     <quote>that the surrender may be duly carried out.</quote>
                     <reg>then</reg>
                     , on arriving at the assembly of the Samnites and the tribune of Pontius, Aulus Cornelius Arvina the fetial
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         the
                         <hi rend="italics">pater patratus,</hi>
@@ -786,17 +786,17 @@
                     <milestone n="5" unit="section"/>
                     <reg>let</reg>
                     us
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                     fight it out in those circumstances, and in those positions, which were ours before peace was mentioned; let the Roman People not blame the pledge given by the consuls, nor let us blame the honour of the Roman People.
                     <milestone n="6" unit="section"/>
                     <reg>will</reg>
                     you never, when you have been beaten, lack excuses for not holding to your covenants?
                     <reg>you</reg>
                     gave hostages to Porsinna —and withdrew them by a trick.
-                    <note anchored="yes" place="unspecified">An allusion to the Cloelia episode, II. xiii. 6-11.</note>
+                    <note anchored="true" place="unspecified">An allusion to the Cloelia episode, II. xiii. 6-11.</note>
                     <reg>you</reg>
                     ransomed your City from the Gauls with gold —and cut them down as they were receiving the gold.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         V. xlviii
                         <milestone n="7" unit="section"/>
                         —xlix.
@@ -829,7 +829,7 @@
                         shall the gods believe that Postumius is a Samnite —not a Roman —citizen,
                         <pb id="p.205"/>
                         and that a Roman envoy has been maltreated by a
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                         Samnite, and that you, in consequence of this, have justly made war on
                         <milestone n="12" unit="section"/>
                         us!
@@ -861,7 +861,7 @@
                 <p>
                     <reg>meanwhile</reg>
                     the Satricans revolted to the Samnites,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                     and the colony of Fregellae, in a surprise attack by the Samnites —accompanied, it would seem, by people from Satricum —was seized during the night.
                     <milestone n="6" unit="section"/>
                     <reg>mutual</reg>
@@ -887,7 +887,7 @@
                     <pb id="p.209"/>
                     Fortune and fight it out with Publilius.
                     <reg>they</reg>
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                     accordingly formed up in line of battle.
                 </p>
                 <p>
@@ -921,7 +921,7 @@
                     <milestone n="7" unit="section"/>
                     <reg>for</reg>
                     the Samnites, who in those
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                     days dwelt in villages among the mountains, used to ravage the regions of the plain and coast, despising their cultivators, who were of a softer character, and one that —as often happens —resembled their country, while they themselves were rude highlanders.
                     <milestone n="8" unit="section"/>
                     <reg>if</reg>
@@ -944,7 +944,7 @@
                     this juncture, while both sides were
                     <pb id="p.213"/>
                     making ready for the struggle, came ambassadors
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                     from Tarentum, admonishing both Samnites and Romans to desist from war.
                     <reg>whichever</reg>
                     party should oppose the cessation of hostilities, against that they proposed to fight in behalf of the other.
@@ -953,7 +953,7 @@
                     listening to these envoys, Papirius, as though moved by what they said, replied that he would consult his colleague.
                     <reg>having</reg>
                     sent for Publilius, he employed every moment of the interval in making his preparations, and when he had conferred with him about a matter which admitted of no doubt, displayed the battle —signal.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         a red flag hung out in front of the general's tent.
                     </note>
@@ -965,7 +965,7 @@
                     <quote>
                         <name>Tarentines</name>
                         , the keeper of the chickens reports that the signs are favourable; the sacrifice too has been exceedingly auspicious;
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             Two kinds of divination are alluded to: (1) by observing the feeding of the sacred chickens, (2) by inspecting the entrails of a victim.
                         </note>
                         as you see, the gods are with us at our going into action.
@@ -984,12 +984,12 @@
                     they had
                     <pb id="p.215"/>
                     been deceived, but they chose rather to endure
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                     whatever Fortune might have in store for them than be thought to have spurned the peaceful advice of the Tarentines.
                     <milestone n="9" unit="section"/>
                     <name>The</name>
                     consuls declared that they embraced the omen,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The omen lay in the Samnites' expressed purpose to offer no resistance.
                     </note>
                     praying that the enemy might be so minded as not even to defend his rampart.
@@ -1013,7 +1013,7 @@
                     but they feared that the enemy, if they despaired of
                     <pb id="p.217"/>
                     quarter, might be driven blindly to put their
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 320</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 320</note>
                     prisoners to death, choosing to slay before they were slain themselves.
                     <milestone n="16" unit="section"/>
                     <name>These</name>
@@ -1023,7 +1023,7 @@
                     <milestone n="15" unit="chapter"/>
                     <name>The</name>
                     assembly was dismissed, and a council of
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 319</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 319</note>
                     war was held to determine whether they should press the siege with all their forces, or should employ one army and its general to test the dispositions of the Apulians around them —a people whose sympathies were still in doubt.
                     <milestone n="2" unit="section"/>
                     <name>The</name>
@@ -1040,7 +1040,7 @@
                     the soldiers he
                     <pb id="p.219"/>
                     intended to send under the yoke, clad only in their
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 319</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 319</note>
                     tunics, inflicting on them no new disgrace, but requiting that which had first been put upon the Romans.
                     <milestone n="7" unit="section"/>
                     <reg>they</reg>
@@ -1062,7 +1062,7 @@
                     doubt is attended with another —whether at the ensuing election Papirius Cursor was retained in office in recognition of his victory at Luceria, being returned for a third time to the consulship, together with Quintus Aulius Cerretanus —then chosen for the second time —or
                     <pb id="p.221"/>
                     whether it was Lucius Papirius Mugillanus, and the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 319</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 319</note>
                     mistake was a matter of the surname.
                 </p>
                 <p>
@@ -1071,7 +1071,7 @@
                     is agreed that from this point onwards the war was brought to a conclusion by the consuls.
                     <name>Aulius</name>
                     finished in one successful battle the campaign against the Ferentani,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Their town has been conjecturally identified with Horace's
                         <quote>low —lying Forentum,</quote>
                         <hi rend="italics">
@@ -1107,7 +1107,7 @@
                     party, seeing that the Samnite garrison was
                     <pb id="p.223"/>
                     intending to escape on the following night —for they had
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 319</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 319</note>
                     made no preparations for enduring a siege —deemed it sufficient to let the consul know at what hour and by what gate the enemy meant to leave, and what road he planned to
                     <milestone n="8" unit="section"/>
                     take.
@@ -1134,7 +1134,7 @@
                     possessed remarkable fleetness of foot, which was even the source of his
                     <milestone n="13" unit="section"/>
                     surname.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">
                             <name>Cursor</name>
                         </hi>
@@ -1146,7 +1146,7 @@
                     is said that he vanquished all his mates at running, whether owing to the
                     <pb id="p.225"/>
                     strength of his legs or to much exercise; that he
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 319</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 319</note>
                     had also the greatest capacity for food and
                     <milestone n="14" unit="section"/>
                     wine; and that no general was harder on his men, whether horse or foot, for his own constitution could never be overcome by
@@ -1191,12 +1191,12 @@
                     can be thought to have been more remote from my intention, since I first set about this task, than to depart unduly from the order of events, and to aim, by the introduction of ornamental digressions, at providing as it were agreeable
                     <pb id="p.227"/>
                     bypaths for the reader, and mental relaxation for
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 319</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 319</note>
                     myself.
                     <milestone n="2" unit="section"/>
                     <reg>nevertheless</reg>
                     the mention of so great a prince and captain evokes certain thoughts which I have often silently pondered in my mind, and disposes me to enquire how the Roman State would have fared in a war with Alexander.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Professor Anderson argues that the following digression (chap. xvii. § 3 through chap. xix) was a youthful exercise in rhetoric written when Livy was a boy and later inserted here without revision, but with the addition of an introductory section (§§ 1, 2). See his edition,
                         <hi rend="italics">
                             <reg>app</reg>
@@ -1232,7 +1232,7 @@
                     Valerius Corvus, Gaius Marcius Rutulus, Gaius Sulpicius, Titus Manlius Torquatus, Quintus Publilius Philo, Lucius Papirius Cursor, Quintus Fabius Maximus,
                     <pb id="p.229"/>
                     the two Decii, Lucius Volumnius, Manius Curius?
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 319</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 319</note>
                     <milestone n="9" unit="section"/>
                     <reg>after</reg>
                     these come some extraordinary men, if he had turned his attention to war with Carthage first and later with Rome, and had crossed into Italy when somewhat old.
@@ -1253,7 +1253,7 @@
                     <milestone n="14" unit="section"/>
                     <name>The</name>
                     counsels of a single youth would no doubt have got the better of that senate —not to speak of individual members —which was called an assembly of kings by him who before all others had a true conception of the Roman Senate!
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cineas, the ambassador of King Pyrrhus.
                         <hi rend="italics">
                             <reg>cf</reg>
@@ -1272,13 +1272,13 @@
                     I suppose there was the danger that Alexander would display more skill than any of these whom I have named, in selecting a place for a camp, in organizing his service of supply, in guarding against ambuscades, in choosing a time for battle, in
                     <pb id="p.231"/>
                     marshalling his troops, in providing strong reserves!
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 319</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 319</note>
                     <milestone n="16" unit="section"/>
                     <reg>he</reg>
                     would have said it was no Darius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Darius III, defeated by Alexander in the battle of Arbela,
-                        <date value="-331">331 B.C.</date>
+                        date when="-331">331 B.C.</date>
                     </note>
                     whom he had to deal with, trailing women and eunuchs after him, and weighed down with the gold and purple trappings of his station.
                     <reg>him</reg>
@@ -1286,7 +1286,7 @@
                     <milestone n="17" unit="section"/>
                     <reg>far</reg>
                     different from India, through which he progressed at the head of a rout of drunken revellers, would Italy have appeared to him, as he gazed on the passes of Apulia and the Lucanian mountains, and the still fresh traces of that family disaster wherein his uncle, King Alexander of Epirus, had lost his life.
-                    <note anchored="yes" place="unspecified">VIII. xxiv.</note>
+                    <note anchored="true" place="unspecified">VIII. xxiv.</note>
                 </p>
                 <p>
                     <milestone n="18" unit="chapter"/>
@@ -1302,7 +1302,7 @@
                     am loath, in writing of so great a prince, to remind the reader of the ostentatious alteration in his dress, and of his desire that men should prostrate themselves in adulation, a thing which even conquered Macedonians would have found oppressive, much more then those who had been victorious;
                     <milestone n="5" unit="section"/>
                     of his cruel punishments and the murder of his friends as they drank and feasted; of the boastful lie about his origin.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Philotas was examined under torture and confessed participation in a plot against Alexander's life.
                         <reg>he</reg>
                         implicated also his father Parmenio, the general, and both were executed.
@@ -1315,7 +1315,7 @@
                     if his love of wine had
                     <pb id="p.233"/>
                     every day grown stronger? and his truculent and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 319</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 319</note>
                     fiery anger?
                     <milestone n="6" unit="section"/>
                     <reg>i</reg>
@@ -1324,7 +1324,7 @@
                     we deem such vices to be no detraction from a general's good qualities?
                     <reg>but</reg>
                     there was forsooth the danger —as the silliest of the Greeks,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This is supposed to refer to Timagenes, an historian of a notoriously anti-Roman bias.
                     </note>
                     who exalt the reputation even of the Parthians against the Romans, are fond of alleging —that
@@ -1332,9 +1332,9 @@
                     the Roman People would have been unable to withstand the majesty of Alexander's name, though I think that they had not so much as heard of him; and that out of all the Roman nobles not one would have dared to lift up his voice against him, although in Athens, a city crushed by the arms of Macedonia, at the very moment when men had before their eyes the reeking ruins of the
                     <milestone n="8??" unit="section"/>
                     neighbouring Thebes, they dared inveigh against him freely, as witness the records of their speeches.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         An allusion, more rhetorical than exact, to the famous Philippics of Demosthenes, the latest of which was probably delivered some six years before the destruction of Thebes in
-                        <date value="-335">335 B.C.</date>
+                        date when="-335">335 B.C.</date>
                     </note>
                 </p>
                 <p>
@@ -1350,7 +1350,7 @@
                     it occasion us surprise if, seeing that upon the one side are counted more generations than are years
                     <pb id="p.235"/>
                     upon the other,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         If we reckon the
                         <hi rend="italics">saeculum</hi>
                         or
@@ -1361,11 +1361,11 @@
                         says that people are really comparing these thirteen generations with the thirteen years of Alexander's (effective) life,
                         <hi rend="italics">i.e.</hi>
                         his reign (336-
-                        <date value="-323">323 B.C.</date>
+                        date when="-323">323 B.C.</date>
                         ).
                     </note>
                     fortune should have varied more
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 319</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 319</note>
                     in that long time than in a life of thirteen years?
                     <milestone n="12" unit="section"/>
                     <reg>why</reg>
@@ -1390,7 +1390,7 @@
                     , he would have run a greater risk than they, inasmuch as the Macedonians would have had but a single Alexander, not only exposed to many dangers, but
                     <pb id="p.237"/>
                     incurring them voluntarily, while there would have
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 319</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 319</note>
                     been
                     <milestone n="19??" unit="section"/>
                     many Romans a match for Alexander, whether for glory or for the greatness of their deeds, of whom each several one would have lived and died as his own fate commanded, without endangering the State.
@@ -1402,13 +1402,13 @@
                     <milestone n="2" unit="section"/>
                     <name>The</name>
                     quinquennial enumerations of that period put the population at 250,000.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         In the last census which Livy had recorded (
-                        <date value="-459">459 B.C.</date>
+                        date when="-459">459 B.C.</date>
                         ) were enrolled 117,321 persons (III. xxiv. 10). Livy seems to have consulted the records of the censors, at least occasionally.
                     </note>
                     And so at the time when all the Latin allies were in revolt
-                    <note anchored="yes" place="unspecified">Or possibly: at every revolt of the Latin allies.</note>
+                    <note anchored="true" place="unspecified">Or possibly: at every revolt of the Latin allies.</note>
                     it was the custom to enroll ten legions, by a levy which was virtually limited to the City.
                     <milestone n="3" unit="section"/>
                     <reg>in</reg>
@@ -1427,20 +1427,20 @@
                 <p>
                     <reg>add</reg>
                     to this, that the Romans would have had recruits
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 319</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 319</note>
                     ready to call upon, but Alexander,
                     <milestone n="7??" unit="section"/>
                     as happened afterwards to Hannibal, would have found his army wear away, while he warred in a foreign land.
                     <milestone n="8" unit="section"/>
                     <reg>his</reg>
                     men would have been armed with targets and spears:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The
                         <hi rend="italics">sarisa</hi>
                         was a pike 21 feet long.
                     </note>
                     the Romans with an oblong shield, affording more protection to the body, and the Roman javelin, which strikes, on being thrown, with a much harder impact than the lance.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The
                         <hi rend="italics">hasta</hi>
                         was ordinarily used as a pike or lance, but was sometimes thrown, by means of a thong.
@@ -1460,7 +1460,7 @@
                     , many a time —however prosperous the outset of his enterprise might have been —would he have wished for Indians and Persians and unwarlike Asiatics, and would have owned that he had before made war upon women, as Alexander, King of Epirus, is reported to have said,
                     <milestone n="12??" unit="section"/>
                     when mortally wounded, contrasting the type of war waged by this very youth in Asia, with that which had fallen to his own share.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Aulus Gellius, xvii. xxi. 33, says that Alexander, as he was setting sail for Italy, remarked that he was going to the Romans, as it were to the men's quarters (
                         <hi rend="italics">andronitin</hi>
                         ); whereas the Macedonian had gone to the Persians, as to the quarters of the women (
@@ -1473,11 +1473,11 @@
                     when I remember that we contended against the Carthaginians on the seas for
                     <pb id="p.241"/>
                     four —andtwenty years, I think that the whole life of Alexander
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 319</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 319</note>
                     would hardly have sufficed for this single war; and perchance, inasmuch as the Punic State had been by ancient treaties leagued with the Roman,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The earliest treaty was said to have been made in
-                        <date value="-509">509 B.C.</date>
+                        date when="-509">509 B.C.</date>
                         (Livy does not mention it, but Polybius does, at III. xxii.); and another in 348. See vii. xxvii. 2, and note.
                     </note>
                     and the two cities most powerful in men and arms might well have made common cause against the foe whom both dreaded, he had been crushed beneath the simultaneous attacks of Rome and Carthage.
@@ -1497,7 +1497,7 @@
                     <milestone n="20" unit="chapter"/>
                     <name>Marcus</name>
                     Polius Flaccina and Lucius Plautius
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 318-317</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 318-317</note>
                     Venox were the next consuls.
                     <reg>in</reg>
                     that year came ambassadors from many Samnite states to seek a renewal of the treaty.
@@ -1512,7 +1512,7 @@
                     <milestone n="4" unit="section"/>
                     <reg>in</reg>
                     Apulia,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 318-317</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 318-317</note>
                     likewise, the Teanenses and Canusini, exhausted by the devastation of their lands, gave hostages to Lucius Plautius the consul and made submission.
                     <milestone n="5" unit="section"/>
                     <reg>in</reg>
@@ -1521,7 +1521,7 @@
                     steps being taken at the instance of the Capuans themselves, as a remedy for the distress occasioned by internal discord.
                     <reg>at</reg>
                     Rome two tribes were added, the Ufentina and the Falerna.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Making the number now thirty
                         <milestone n="7" unit="section"/>
                         —one.
@@ -1530,7 +1530,7 @@
                 <p>
                     <reg>when</reg>
                     affairs had once taken a tum in Apulia, the Apulian Teates
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">
                             <reg>teate</reg>
                         </hi>
@@ -1555,7 +1555,7 @@
                     assault.
                     <reg>and</reg>
                     once it had been noised abroad amongst the allies how the affairs of Capua were firmly established by Roman discipline, the Antiates, too, complained that they were living without fixed statutes and without magistrates, and the senate designated the colony's own patrons to draw up laws for it.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Prominent Romans were often invited to act in a semiofficial relation of protectorship to Italian or even to foreign towns.
                     </note>
                     <reg>not</reg>
@@ -1565,16 +1565,16 @@
                     <milestone n="21" unit="chapter"/>
                     <name>The</name>
                     consuls Gaius Junius Bubulcus and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 316</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 316</note>
                     Quintus Aemilius Barbula gave over their legions, at
                     <pb id="p.245"/>
                     the conclusion of the year, not to Spurius Nautius
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 316</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 316</note>
                     and Marcus Popilius, the consuls at whose election they had presided, but to a dictator —Lucius Aemilius.
                     <milestone n="2" unit="section"/>
                     <name>The</name>
                     latter, with Lucius Fulvius, his master of the horse, laid siege to Saticula,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Saticula was probably on the border between Campania and Samnium, and possibly occupied the same site as the modern S. Agata dei Goti.
                     </note>
                     and by so doing afforded the Samnites a pretext for renewing the war.
@@ -1601,15 +1601,15 @@
                     <milestone n="22" unit="chapter"/>
                     <reg>when</reg>
                     the year had come round, the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 315</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 315</note>
                     conduct of the war passed without a break into the
                     <pb id="p.247"/>
                     hands of the dictator Quintus Fabius.
                     <name>The</name>
                     new
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 315</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 315</note>
                     consuls,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The men whose names are by so strange an oversight omitted here were L. Papirius Cursor and Q. Publilius Philo, each of whom had thrice held the office.
                     </note>
                     as their predecessors had done, remained in Rome; Fabius took new forces to replace the old, and proceeded to Saticula, to receive the army from Aemilius.
@@ -1637,7 +1637,7 @@
                     <milestone n="8" unit="section"/>
                     <reg>yet</reg>
                     the rank and file were not more dismayed
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 315</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 315</note>
                     by their leader's death —though it often happens so —than they were angered; and as Aulius rode recklessly on through the enemy's squadrons, all those about him darted their javelins at him.
                     <milestone n="9" unit="section"/>
                     <reg>but</reg>
@@ -1667,7 +1667,7 @@
                     the scouts who had scattered out along the roads reported one after the other that the Samnite legions
                     <pb id="p.251"/>
                     were following and were already close at hand.
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 315</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 315</note>
                     <milestone n="4" unit="section"/>
                     <reg>whereupon</reg>
                     the Romans marched to meet the enemy, and an indecisive battle was fought near Lautulae.
@@ -1677,11 +1677,11 @@
                     <milestone n="6" unit="section"/>
                     <reg>i</reg>
                     find in some authorities
-                    <note anchored="yes" place="unspecified">Whom Diodorus follows (xix. lxxii.).</note>
+                    <note anchored="true" place="unspecified">Whom Diodorus follows (xix. lxxii.).</note>
                     that the Romans were defeated in this battle, and that it was here that the master of the horse, Quintus Aulius, lost his life.
                     <reg>to</reg>
                     fill out the term of Aulius they appointed Gaius Fabius,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The
                         <hi rend="italics">
                             <name>Fasti</name>
@@ -1709,7 +1709,7 @@
                     he said,
                     <quote>
                         we are trapped and have no way of escape save such as victory shall open to us.
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             <hi rend="italics">i.e.</hi>
                             down the valley of the Liris, through the Samnite army, for the other way was blocked by the town of Sora.
                         </note>
@@ -1721,7 +1721,7 @@
                         will therefore not beguile you by leaving the camp standing here for you to
                         <pb id="p.253"/>
                         make a refuge, if you fail of victory, as on the former
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 315</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 315</note>
                         occasion.
                         <reg>entrenchments</reg>
                         should be secured by arms, not arms by entrenchments.
@@ -1753,13 +1753,13 @@
                     <milestone n="24" unit="chapter"/>
                     <name>The</name>
                     Romans then returned to Sora; and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 314</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 314</note>
                     new consuls, Marcus Poetelius and Gaius Sulpicius,
                     <pb id="p.255"/>
                     took over the army from Fabius the dictator, dismissing
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 314</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 314</note>
                     a great part of the veteran troops and bringing in new cohorts to replace them.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The legions had been three years in the field, although some of the soldiers, who had been enlisted to replace those killed or disabled, had not served so long.
                         <name>These</name>
                         latter were retained with the colours and the others were discharged.
@@ -1781,7 +1781,7 @@
                     <milestone n="5" unit="section"/>
                     <reg>he</reg>
                     himself on the following night, having directed certain cohorts to seek cover in the woods below the town, took with him ten picked men, whom he conducted over steep and almost impassable ground up to the citadel.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Apparently conceived of as merely an unfortified and (for the time being) unoccupied height.
                     </note>
                     <milestone n="6" unit="section"/>
@@ -1797,7 +1797,7 @@
                         an ascent like this three men would be enough to keep back a multitude, however numerous: you are not
                         <pb id="p.257"/>
                         only ten, but Romans, and of Romans the very
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 314</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 314</note>
                         bravest.
                         <milestone n="8" unit="section"/>
                         <reg>you</reg>
@@ -1845,14 +1845,14 @@
                     those who were taken to Rome were scourged and beheaded in the Forum, to the great joy of the commons, whom it most
                     <pb id="p.259"/>
                     nearly concerned that the people who were sent out
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 314</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 314</note>
                     here and there to colonies should in every case be protected.
                 </p>
                 <p>
                     <milestone n="25" unit="chapter"/>
                     <name>The</name>
                     consuls on leaving Sora conducted a campaign against the lands and cities of the Ausones.
-                    <note anchored="yes" place="unspecified">Ausones is the Greek name for the Aurunci.</note>
+                    <note anchored="true" place="unspecified">Ausones is the Greek name for the Aurunci.</note>
                     <milestone n="2" unit="section"/>
                     <reg>for</reg>
                     everything had been disturbed by the coming of the Samnites, when the battle was fought at Lautulae, and conspiracies had been formed all about Campania.
@@ -1864,7 +1864,7 @@
                     <milestone n="4" unit="section"/>
                     <reg>from</reg>
                     Ausona,
-                    <note anchored="yes" place="unspecified">Site unknown.</note>
+                    <note anchored="true" place="unspecified">Site unknown.</note>
                     from Minturnae, and from Vescia, twelve young nobles, having conspired to betray their cities, came to the consuls, and explained to them that their countrymen, after long looking forward to the coming of the Samnites, had no sooner heard of the
                     <milestone n="5??" unit="section"/>
                     battle at Lautulae than they had concluded the Romans vanquished and had aided the Samnites with men and arms;
@@ -1879,7 +1879,7 @@
                     <pb id="p.261"/>
                     <name>These</name>
                     latter fell upon the watchmen, at the same
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 314</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 314</note>
                     time making a signal to their fellows in armour to rush in from their ambuscade.
                     <reg>thus</reg>
                     the gates were captured, and three towns were taken in one hour and by one device.
@@ -1907,7 +1907,7 @@
                 <p>
                     <reg>in</reg>
                     that year also of general disloyalty to the Romans, there were secret conspiracies of the nobles, even at Capua.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         With this sentence Livy resumes the narrative begun in Chap.
                     </note>
                     <milestone n="6" unit="section"/>
@@ -1918,7 +1918,7 @@
                     <milestone n="7" unit="section"/>
                     <name>Gaius</name>
                     Maenius was nominated, and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 314</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 314</note>
                     named Marcus Folius master of the horse.
                     <name>Great</name>
                     was the terror inspired by that magistracy; and so, whether from fear or a guilty conscience, the Calavii, Ovius and Novius, who had headed the conspiracy, before informations could be lodged against them with the dictator, avoided trial by a death which was undoubtedly self —inflicted.
@@ -1954,7 +1954,7 @@
                     <quote>
                         <name>Quirites</name>
                         , aware of my past life, and this very
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 314</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 314</note>
                         office which has been conferred upon me is witness to my innocence; for it was necessary to select as dictator for the administration of judicial investigations, not the most distinguished soldier —as has often been done at other times, when some crisis in the state required it —but the man who had lived a life most aloof from these cabals.
                         <milestone n="15" unit="section"/>
                         <reg>but</reg>
@@ -1976,14 +1976,14 @@
                     were
                     <pb id="p.267"/>
                     the first to go to trial before the consuls —for to
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 314</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 314</note>
                     these the senate had given the matter in charge — and, against the testimony of the nobles, were gloriously acquitted.
                     <milestone n="21" unit="section"/>
                     <name>Publilius</name>
                     Philo, too, after all his famous achievements at home and in war, and after having repeatedly held the highest offices, had incurred the hate of the nobility, and was brought to trial and acquitted.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         In
-                        <date value="-339">339 B.C.</date>
+                        date when="-339">339 B.C.</date>
                         <name>Philo</name>
                         had proposed three democratic laws, which won him the enmity of the patricians.
                         <reg>see</reg>
@@ -2015,7 +2015,7 @@
                     the Samnite leaders, on the contrary, it appeared that
                     <pb id="p.269"/>
                     their forces were daily diminishing with petty
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 314</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 314</note>
                     losses, and were wasting away with the prolongation of the war.
                 </p>
                 <p>
@@ -2037,7 +2037,7 @@
                     the Samnite infantry wavered, their cavalry moved up to support them.
                     <reg>but</reg>
                     while they came obliquely onward, in the interval between the armies, the Roman cavalry charged them at the gallop, confounding the ranks and the formations of horse and foot, until they had routed the entire army at that point.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         the Samnite right.
                     </note>
@@ -2049,7 +2049,7 @@
                     <milestone n="12" unit="section"/>
                     <reg>but</reg>
                     perceiving his colleague's victory
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 314</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 314</note>
                     to be safe, he left him and rode off with twelve hundred men to his own wing.
                     <milestone n="13" unit="section"/>
                     <reg>there</reg>
@@ -2061,9 +2061,9 @@
                     <milestone n="14" unit="section"/>
                     <reg>presently</reg>
                     the Romans had begun to conquer all along the line, while the Samnites, giving up the struggle, were massacred or made prisoners, except those who fled to Maleventum, the city which is now called Beneventum.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The city, which was a Greek colony, was called
-                        <foreign lang="greek">Malovei/s,</foreign>
+                        <foreign xml:lang="grc">Malovei/s,</foreign>
                         which meant
                         <quote>
                             <reg>sheeptown</reg>
@@ -2073,7 +2073,7 @@
                             <reg>appletown</reg>
                         </quote>
                         ). The Romans corrupted the accusative case,
-                        <foreign lang="greek">Malove/nta,</foreign>
+                        <foreign xml:lang="grc">Malove/nta,</foreign>
                         to
                         <hi rend="italics">
                             <name>Maleventum</name>
@@ -2088,7 +2088,7 @@
                             <name>Beneventum</name>
                         </hi>
                         when they planted a colony there,
-                        <date value="-268">268 B.C.</date>
+                        date when="-268">268 B.C.</date>
                     </note>
                     <reg>tradition</reg>
                     avers that some thirty thousand Samnites were slain or captured.
@@ -2097,7 +2097,7 @@
                     <milestone n="28" unit="chapter"/>
                     <name>The</name>
                     consuls, who had won a brilliant
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 313</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 313</note>
                     victory, at once marched away to lay siege
                     <milestone n="2??" unit="section"/>
                     to Bovianum, where they remained in winter quarters, until the new consuls, Lucius Papirius Cursor (for the fifth time) and Gaius Junius Bubulcus (for the second) appointed Gaius Poetelius dictator, who, with Marcus Folius as master of horse, took over the command.
@@ -2111,7 +2111,7 @@
                     <milestone n="4" unit="section"/>
                     <reg>within</reg>
                     its walls, as the dictator drew near,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 313</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 313</note>
                     the whole Samnite population and the Nolani of the country —side had taken refuge.
                     <milestone n="5" unit="section"/>
                     <reg>after</reg>
@@ -2121,7 +2121,7 @@
                     <milestone n="6" unit="section"/>
                     <reg>those</reg>
                     who ascribe the honour of capturing Nola to the consul, add that Atina and Calatia were won by the same man, but that Poetelius was made dictator on the outbreak of a pestilence, that lie might drive the nail.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For the practice of driving a nail in the wall of the shrine of Minerva in the great temple of Jupiter on the Capitol, see vii. iii.
                         <reg>but</reg>
                         the writers referred to in the present passage are probably mistaken, as the
@@ -2142,7 +2142,7 @@
                     <milestone n="8" unit="section"/>
                     <name>The</name>
                     senate also passed a resolution that a colony be sent out to Interamna Sucasina,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         So called (or sometimes Lirenas) to distinguish it from two other towns called Interamna —a name which is derived from the two streams (in this case the Casinus and the Liris) at whose confluence the town was situated.
                     </note>
                     but it was left for the next consuls, Marcus Valerius and Publius Decius, to appoint the three commissioners and send out four thousand settlers.
@@ -2151,14 +2151,14 @@
                     <milestone n="29" unit="chapter"/>
                     <name>The</name>
                     war with the Samnites was practically
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 312</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 312</note>
                     ended, but the Roman senators had not yet ceased to be concerned about it, when the rumour of an Etruscan war sprang up.
                     <milestone n="2" unit="section"/>
                     <reg>in</reg>
                     those days there was no other race —setting apart the risings of the Gauls
                     <pb id="p.275"/>
                     —whose arms were more dreaded, not only because
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 312</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 312</note>
                     their territory lay so near, but also because of their
                     <milestone n="3" unit="section"/>
                     numbers.
@@ -2183,7 +2183,7 @@
                     , too, in that year was the censorship of Appius Claudius and Gaius Plautius; but the name of Appius was of happier memory with succeeding generations, because he built a road, and conveyed a stream of water into the
                     <milestone n="7" unit="section"/>
                     City.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The road was the Via Appia, which ran from Rome to Capua, and was later extended to Beneventum and, finally, to Brundisium.
                         <name>The</name>
                         aqueduct brought water from a point between seven and eight miles out, on the road to Gabii, and supplied the Circus Maximus and other low —lying parts of the City.
@@ -2196,7 +2196,7 @@
                     censorship alone.
                     <reg>it</reg>
                     was Appius, too, by whose warranty the Potitian clan, with whom the priesthood of Hercules at the Ara Maxima
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         An ancient altar erected in honour of Hercules.
                         <name>The</name>
                         origin of the cult is described at I. vii. 3-15.
@@ -2207,7 +2207,7 @@
                     <milestone n="10" unit="section"/>
                     upon them.
                     <reg>tradition</reg>
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 312</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 312</note>
                     relates that after this a strange thing happened, and one that might well give men pause ere they disturb the established order of religious ceremonies.
                     <reg>for</reg>
                     whereas at that time there were twelve families of the Potitii, and grown men to the number of thirty, within the year they had perished, every man, and the stock had
@@ -2218,7 +2218,7 @@
                     <milestone n="30" unit="chapter"/>
                     <reg>and</reg>
                     so the consuls of the following year,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 311</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 311</note>
                     Gaius Junius Bubulcus (for the third time) and Quintus Aemilius Barbula (for the second), complained to the people, at the outset of their administration, that the senatorial order had been depraved by the improper choice of members, in which better men had been passed over than some that had been appointed.
                     <milestone n="2" unit="section"/>
                     <reg>they</reg>
@@ -2226,7 +2226,7 @@
                     <milestone n="3" unit="section"/>
                     <reg>in</reg>
                     that year, also, two commands —both military —began to be conferred by the people; for it was enacted, first, that sixteen tribunes of the soldiers should be chosen by popular vote for the four legions, whereas previously these places had been for the most part in the gift of dictators and consuls, very few being left to popular suffrage
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For an instance of the popular election of
                         <hi rend="italics">tribuni militum</hi>
                         <hi rend="italics">cf.</hi>
@@ -2240,7 +2240,7 @@
                     former of
                     <pb id="p.279"/>
                     these measures was proposed by the tribunes of the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 311</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 311</note>
                     plebs Lucius Atilius and Gaius Marcius; the latter by Marcus Decius, another tribune of the plebs.
                 </p>
                 <p>
@@ -2272,9 +2272,9 @@
                     were permitted on three days in every year to roam the City in festal robes, making music and enjoying the licence that is now customary, and to such
                     <pb id="p.281"/>
                     as should play at sacrifices was given again the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 311</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 311</note>
                     privilege of banqueting in the temple.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The story of the secession of the flute —players is found also in Ovid,
                         <hi rend="italics">
                             <name>Fasti</name>
@@ -2299,7 +2299,7 @@
                     <milestone n="2" unit="section"/>
                     <reg>in</reg>
                     Samnium the Roman garrison at Cluviae,
-                    <note anchored="yes" place="unspecified">The site of Cluviae is not known.</note>
+                    <note anchored="true" place="unspecified">The site of Cluviae is not known.</note>
                     which had defended itself successfully against assault, was starved into submission.
                     <name>The</name>
                     Samnites, having scourged their prisoners in brutal fashion, put them to death, although they had surrendered.
@@ -2328,7 +2328,7 @@
                     rustic deserters and prisoners, some falling into the consul's hands by accident and some on purpose,
                     <pb id="p.283"/>
                     by giving all the same account —and a true one,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 311</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 311</note>
                     too —of enormous flocks that had been brought together in an inaccessible mountain meadow, persuaded him to lead thither his legions in light marching order to seize the booty.
                     <milestone n="8" unit="section"/>
                     <reg>there</reg>
@@ -2359,7 +2359,7 @@
                 <p>
                     <reg>roused</reg>
                     by these words, the soldiers disregarded
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 311</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 311</note>
                     every obstacle and advanced against the battle —line which their enemies had formed above them.
                     <reg>there</reg>
                     was a little hard fighting there, while the column was mounting the slope;
@@ -2370,7 +2370,7 @@
                     the ground which they had sought out for the difficulties it presented to an enemy caught the Samnites themselves in a trap of their own devising.
                     <reg>and</reg>
                     so, very few were able to get off; about twenty thousand men were slain; and the victorious Romans struck out this way and that to collect the booty of cattle which the enemy had thrown in their way.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The
                         <hi rend="italics">
                             <name>Fasti</name>
@@ -2398,7 +2398,7 @@
                     the following day, their generals having decided on the swifter plan in preference to the safer, the
                     <pb id="p.287"/>
                     signal for battle was displayed at sunrise and their
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 311</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 311</note>
                     men in fighting array marched out upon the field.
                     <milestone n="5" unit="section"/>
                     <reg>when</reg>
@@ -2430,7 +2430,7 @@
                 <p>
                     <reg>thereafter</reg>
                     there was nothing done that year at
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 311</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 311</note>
                     Sutrium worth recording.
                     <milestone n="12" unit="section"/>
                     <name>The</name>
@@ -2440,7 +2440,7 @@
                     <milestone n="33" unit="chapter"/>
                     <name>Quintus</name>
                     Fabius, consul in the following
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     year, took over the campaign at Sutrium.
                     <reg>for</reg>
                     colleague he was given Gaius Marcius Rutulus.
@@ -2455,8 +2455,8 @@
                     <milestone n="4" unit="section"/>
                     <name>Appius</name>
                     Claudius the censor, on the expiration of the eighteen months which had been fixed by the Aemilian law
-                    <note anchored="yes" place="unspecified">
-                        <date value="-434">434 B.C.</date>
+                    <note anchored="true" place="unspecified">
+                        date when="-434">434 B.C.</date>
                         (iv. xxiv. 5).
                     </note>
                     as the limit of the censorship, although his colleague Gaius Plautius had abdicated, could himself by no compulsion be prevailed upon to do likewise.
@@ -2473,7 +2473,7 @@
                         , tell us, Appius Claudius, what
                         <pb id="p.291"/>
                         you would have done had you been censor at the
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                         time when Gaius Furius and Marcus Geganius were censors.
                     </quote>
                     <milestone n="8" unit="section"/>
@@ -2481,7 +2481,7 @@
                     replied that the tribune's question had no particular bearing upon his own case;
                     <milestone n="9" unit="section"/>
                     for even though the Aemilian law had bound those censors in whose term of office it had been passed, because the people had enacted the law after their election to the censorship and their latest enactment was always the effective law, yet neither himself nor any one of those who had been chosen censors subsequently to the passage of that law could have been bound by it.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Appius held that, whereas the election of Furius and Geganius for a period of five years had been set aside by the Aemilian law, which was then the latest enactment on the subject and so replaced any earlier one, nevertheless all those who were elected subsequently derived their powers from still later enactments, by which in its tum the Aemilian law was superseded.
                     </note>
                 </p>
@@ -2496,35 +2496,35 @@
                     said Sempronius, "the descendant of that Appius, who having been elected decemvir for one year, himself declared his own election for a second year, and in the third, although a private citizen, with neither his own nor another's warrant of election, retained
                     <milestone n="2??" unit="section"/>
                     the fasces and authority, and relinquished not his hold on the magistracy until he was overwhelmed by his ill —gotten, ill —administered, and ill —continued powers.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For the story of the Decemvir, see III. xxxiii
                         <milestone n="3" unit="section"/>
                         —lviii.
                     </note>
                     <reg>it</reg>
                     was this same family, Quirites, under compulsion of whose violence and abuse you banished yourselves from your native City and occupied the Sacred Mount
-                    <note anchored="yes" place="unspecified">II. xxxii. 2.</note>
+                    <note anchored="true" place="unspecified">II. xxxii. 2.</note>
                     ; the same against which
                     <milestone n="4??" unit="section"/>
                     you provided yourselves with the help of tribunes
-                    <note anchored="yes" place="unspecified">II. xxxiii. 1-3.</note>
+                    <note anchored="true" place="unspecified">II. xxxiii. 1-3.</note>
                     ; the same, because of which two armies of you encamped upon the Aventine
-                    <note anchored="yes" place="unspecified">III. l.13, and li. 10.</note>
+                    <note anchored="true" place="unspecified">III. l.13, and li. 10.</note>
                     ; the same that has ever attacked the laws restricting usury and throwing open the public
                     <milestone n="5" unit="section"/>
                     lands.
-                    <note anchored="yes" place="unspecified">II. xxix. 9; xliv. 1; Ixi. 1; vi. xl. 11.</note>
+                    <note anchored="true" place="unspecified">II. xxix. 9; xliv. 1; Ixi. 1; vi. xl. 11.</note>
                     <reg>this</reg>
                     same
                     <pb id="p.293"/>
                     family broke off marriages between patricians and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     plebeians
-                    <note anchored="yes" place="unspecified">IV. i. vi.</note>
+                    <note anchored="true" place="unspecified">IV. i. vi.</note>
                     ; this same family blocked the path of the plebeians to curule
                     <milestone n="6" unit="section"/>
                     offices.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">e.g.</hi>
                         IV. vi. 7.
                     </note>
@@ -2565,9 +2565,9 @@
                     privilege?
                     <reg>whom</reg>
                     , pray, could men elect as king
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     for sacrifice?
-                    <note anchored="yes" place="unspecified">I. ii. 1-2</note>
+                    <note anchored="true" place="unspecified">I. ii. 1-2</note>
                     <reg>he</reg>
                     will seize on the title of sovereignty, and assert that he has been chosen as one elected with fullest rights to be king at Rome.
                     <reg>who</reg>
@@ -2584,7 +2584,7 @@
                     should I cite antiquity?
                     <reg>recently</reg>
                     , within these ten years,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livy has himself put the dictatorship of Maenius in the year 314. He is probably following another annalist here whose account (like that of the
                         <hi rend="italics">
                             <name>Fasti</name>
@@ -2620,13 +2620,13 @@
                     are not satisfied forsooth with having in your scrupulous exercise of a censor's powers diverted the service of our most
                     <pb id="p.297"/>
                     ancient cult, the only one inaugurated by the god
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     himself in whose honour it is observed, from the priesthood of the most exalted nobles to the ministry of
                     <milestone n="19" unit="section"/>
                     slaves; it was not enough that a family more ancient than the beginnings of this City, and sanctified by the entertainment of the immortal gods, should through you and your censorship be within a year uprooted and
                     <milestone n="20" unit="section"/>
                     destroyed; no, you must needs involve the entire state in such heinous guilt
-                    <note anchored="yes" place="unspecified">The guilt of unlawfully prolonging his censorship.</note>
+                    <note anchored="true" place="unspecified">The guilt of unlawfully prolonging his censorship.</note>
                     as even to name is an omen that fills my mind with
                     <milestone n="21" unit="section"/>
                     dread.
@@ -2653,11 +2653,11 @@
                         prison; nor, seeing that our forefathers have ordained that in the election of censors, if either fall
                         <pb id="p.299"/>
                         short of the legal vote,
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             No one was held to be elected unless he had received the votes of an absolute majority of the centuries.
                         </note>
                         the election shall be put off
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                         and the other not be declared elected, will I now suffer you, who cannot be elected as sole censor, to administer the censorship alone.
                     </quote>
                 </p>
@@ -2688,7 +2688,7 @@
                     was no easy matter to get close enough
                     <pb id="p.301"/>
                     for fighting hand to hand, and they had no javelins
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     for long —range work.
                     <reg>there</reg>
                     they stood, exposed to missiles, with no adequate cover of any sort, and as some of them gave ground and the line began to waver and be unsteady, the Roman first and second lines, giving a fresh cheer, charged them, sword in hand.
@@ -2707,9 +2707,9 @@
                     <milestone n="36" unit="chapter"/>
                     <reg>in</reg>
                     those days the Ciminian Forest was more impassable and appalling than were lately the wooded defiles of Germany,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livy is probably thinking of the German campaigns of Caesar in 55 and 53, and of Agrippa in
-                        <date value="-38">38 B.C.</date>
+                        date when="-38">38 B.C.</date>
                     </note>
                     and no one —not even a trader —had up to that time visited it.
                     <reg>to</reg>
@@ -2724,7 +2724,7 @@
                     language well.
                     <reg>i</reg>
                     have authority for believing that
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     in that age Roman boys were regularly wont to be schooled in Etruscan literature, as nowadays they are trained in Greek; but it seems more probable that this man possessed some exceptional qualification to induce him to venture amongst enemies in so daring a disguise.
                     <milestone n="4" unit="section"/>
                     <reg>it</reg>
@@ -2752,7 +2752,7 @@
                     <reg>he</reg>
                     <pb id="p.305"/>
                     himself stopped behind with the cavalry, and at
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     dawn of the following day made a demonstration against the enemy's outposts, which had been stationed at the entrance to the pass.
                     <reg>having</reg>
                     kept the enemy in play for a sufficient time, he retired within his camp, and emerging from it by the opposite gate overtook the column before night.
@@ -2768,7 +2768,7 @@
                     <milestone n="14" unit="section"/>
                     <reg>there</reg>
                     , as it happened, they found five legates, with two tribunes of the plebs,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The tribunes were added to the embassy that they might, if necessary, compel obedience to the senate by the exercise of their sacrosanct authority.
                         <reg>this</reg>
                         was an unusual procedure, as the powers of the tribunes were held to extend no further than one mile from the City.
@@ -2788,7 +2788,7 @@
                     an army came to Sutrium that was larger than any they had raised before; and not only did they move forward their camp, out of the woods, but even, in their
                     <pb id="p.307"/>
                     eagerness for combat, came down into the plain at
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     the earliest opportunity in battle formation.
                     <milestone n="3" unit="section"/>
                     <reg>at</reg>
@@ -2803,7 +2803,7 @@
                     <milestone n="5" unit="section"/>
                     <reg>it</reg>
                     was about the tenth hour of the day
-                    <note anchored="yes" place="unspecified">Perhaps about six o'clock.</note>
+                    <note anchored="true" place="unspecified">Perhaps about six o'clock.</note>
                     when the consul bade the soldiers sup, and commanded them to be armed and ready at whatever hour of the day or night he might give the signal.
                     <milestone n="6" unit="section"/>
                     <reg>in</reg>
@@ -2823,7 +2823,7 @@
                     <milestone n="9" unit="section"/>
                     <name>The</name>
                     line
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     was drawn up inside the fortifications, and selected cohorts were posted at the exits.
                     <reg>then</reg>
                     , on the signal being given a little before dawn, which on summer nights is the time of deepest sleep, the rampart was thrown down, and the Romans, rushing out in battle —formation, fell upon their enemies, who were lying all about the field.
@@ -2859,10 +2859,10 @@
                     these things were going on in Etruria, the other consul, Gaius Marcius Rutulus,
                     <pb id="p.311"/>
                     captured Allifae from the Samnites by assault.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         At viii. xxv. 4, Livy mentioned the acquisition of Allifae, but has nowhere spoken of its recapture by the Samnites.
                     </note>
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     <reg>many</reg>
                     forts and villages besides were either wiped out in the course of hostilities or came intact into the hands of the
                     <milestone n="2" unit="section"/>
@@ -2873,7 +2873,7 @@
                     about this time a Roman fleet, commanded by Publius Cornelius, whom the senate had placed in charge of the coast, sailed for Campania and put into Pompeii.
                     <reg>from</reg>
                     there the sailors and rowers set out to pillage the territory of Nuceria.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Diod. (XIX. lxv.) tells us that Nuceria (formerly an ally of Rome) had revolted to the Samnites.
                     </note>
                     <reg>having</reg>
@@ -2903,7 +2903,7 @@
                     <milestone n="8" unit="section"/>
                     Etruscans.
                     <reg>so</reg>
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     they hastened to bring all their strength to bear upon crushing Gaius Marcius, the consul; and resolved, if Marcius should avoid an encounter, to march forthwith into Etruria, through the countries of the Marsi and the Sabines.
                     <name>The</name>
                     consul met them, and the battle was fiercely contested on both sides, but without a decision being reached.
@@ -2939,9 +2939,9 @@
                     in the
                     <pb id="p.315"/>
                     silence of the night, as the custom is, he appointed
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     Lucius Papirius dictator.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The consul rose and took the auspices after midnight because it was less likely that anything unlucky would then be said or done —in the absence of bystanders —to vitiate the ceremony.
                     </note>
                     <reg>when</reg>
@@ -2954,7 +2954,7 @@
                     named Gaius Junius Bubulcus master of the horse.
                     <reg>when</reg>
                     he began to lay before the curiate assembly
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Under the kings the curiate assembly had been the only formal assembly of the people (
                         <hi rend="italics">cf.</hi>
                         I. xiii. 6 for the origin of the
@@ -2968,11 +2968,11 @@
                     a law confirming his authority, the proceedings were cut short by an evil omen, the first vote to be counted being that of the ward called Faucia, notorious for two calamities, the capture of the City and the Caudine Peace, which had both been incurred in years when this same curia had the right of
                     <milestone n="16" unit="section"/>
                     the first return.
-                    <note anchored="yes" place="unspecified">This was determined each time by lot.</note>
+                    <note anchored="true" place="unspecified">This was determined each time by lot.</note>
                     <name>Licinius</name>
                     Macer makes this ward unlucky also for a third disaster —that of the Cremera.
-                    <note anchored="yes" place="unspecified">
-                        <date value="-477">477 B.C.</date>
+                    <note anchored="true" place="unspecified">
+                        date when="-477">477 B.C.</date>
                         (Book II, chap. 1.).
                     </note>
                 </p>
@@ -2984,7 +2984,7 @@
                     , setting out with the legions which had recently been recruited on account of
                     <milestone n="2??" unit="section"/>
                     the fear occasioned by the army's march through the Ciminian Forest, he came to the vicinity of Longula,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Longula was a Volscian town, but was situated not far from the Samnite border.
                         <reg>it</reg>
                         is not necessary to assume, with Weissenborn-Mueller, that Livy is referring to an otherwise unknown Longula in Samnium.
@@ -2998,14 +2998,14 @@
                     some time after that they remained quietly in the camps
                     <pb id="p.317"/>
                     they had established near one another, neither lacking
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     confidence in themselves nor yet making light of their adversaries.
                     <milestone n="5" unit="section"/>
                     <reg>meanwhile</reg>
                     the Etruscans, employing a
                     <hi rend="italics">
                         lex sacrata,
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             One who violated the
                             <hi rend="italics">lex sacrata</hi>
                             was forfeited to the gods.
@@ -3041,7 +3041,7 @@
                     <reg>that</reg>
                     <pb id="p.319"/>
                     day for the first time broke the might of the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 310</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 310</note>
                     Etruscans, which had long flourished in prosperity.
                     <reg>their</reg>
                     strength was cut off in the battle, and their camp was taken and plundered in the same attack.
@@ -3050,7 +3050,7 @@
                     <milestone n="40" unit="chapter"/>
                     <name>The</name>
                     war in Samnium, immediately afterwards,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 308</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 308</note>
                     was attended with equal danger and an equally glorious conclusion.
                     <name>The</name>
                     enemy, besides their other warlike preparations, had made their battle —line to glitter with new and splendid arms.
@@ -3062,7 +3062,7 @@
                     <milestone n="3" unit="section"/>
                     <reg>they</reg>
                     wore a sponge
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Weissenborn-Mueller think a breastplate resembling a sponge in appearance is intended.
                         <name>The</name>
                         translator follows Professor Anderson in taking the expression literally, of a corslet made of sponge.
@@ -3086,7 +3086,7 @@
                     manhood they said,
                     <pb id="p.321"/>
                     was the adornment of a soldier; all those other
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 305</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 305</note>
                     things went with the victory, and a rich enemy was the prize of the victor, however poor.
                 </p>
                 <p>
@@ -3105,7 +3105,7 @@
                     <milestone n="10" unit="section"/>
                     <reg>declaring</reg>
                     that he offered up these men in sacrifice to Orcus
-                    <note anchored="yes" place="unspecified">Orcus —the Greek Pluto —was god of the dead.</note>
+                    <note anchored="true" place="unspecified">Orcus —the Greek Pluto —was god of the dead.</note>
                     ,Junius charged, threw their ranks into disorder, and clearly made their
                     <milestone n="11" unit="section"/>
                     line recoil.
@@ -3134,7 +3134,7 @@
                     <milestone n="14" unit="section"/>
                     to flee.
                     <name>The</name>
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 308</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 308</note>
                     fields were soon heaped with slain and with glittering armour.
                     <reg>at</reg>
                     first the frightened Samnites found a refuge in their camp, but presently even that had to be abandoned, and ere nightfall it had been taken, sacked, and set on fire.
@@ -3147,7 +3147,7 @@
                     captured armour.
                     <reg>so</reg>
                     magnificent was its appearance that the shields inlaid with gold were divided up amongst the owners of the moneychangers' booths, to be used in decking out the Forum.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         It was forty years later when the Romans began to coin silver for themselves; but there would be much coined silver in circulation by this time from Etruria and Magna Graecia, to furnish employment for money —changers (
                         <hi rend="italics">argentarii</hi>
                         ).
@@ -3158,7 +3158,7 @@
                     or covered chariots of the gods, were
                     <milestone n="17" unit="section"/>
                     conducted through it.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A
                         <hi rend="italics">tensa</hi>
                         is figured in Stuart Jones,
@@ -3179,7 +3179,7 @@
                     the Romans made use of the splendid armour of their enemies to do honour to the gods; while the Campanians, in consequence of their pride and in hatred of the Samnites, equipped after this fashion the gladiators who furnished them entertainment at their feasts, and bestowed on them the
                     <milestone n="18" unit="section"/>
                     name of Samnites.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The Romans seem to have obtained from Capua the idea of gladiators (Livy,
                         <hi rend="italics">
                             <reg>per</reg>
@@ -3197,7 +3197,7 @@
                 <p>
                     <reg>in</reg>
                     the same year the consul Fabius fought a battle with the remnants of the Etruscan forces near Perusia —which, together with other cities, had broken the truce
-                    <note anchored="yes" place="unspecified">Chap, xxxvii. § 12.</note>
+                    <note anchored="true" place="unspecified">Chap, xxxvii. § 12.</note>
                     —and gained an easy
                     <milestone n="19" unit="section"/>
                     and decisive victory.
@@ -3209,7 +3209,7 @@
                     placed a garrison in Perusia and having sent
                     <pb id="p.325"/>
                     on before him to the senate in Rome the Etruscan
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 308</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 308</note>
                     deputations which had come to him seeking friendship, the consul was borne in
                     <milestone n="21??" unit="section"/>
                     triumph into the City, after gaining a success more brilliant even than the dictator's; indeed the glory of conquering the Samnites was largely diverted upon the lieutenants, Publius Decius and Marcus Valerius, of whom, at the next election, the people with great enthusiasm made the one consul and the other praetor.
@@ -3229,7 +3229,7 @@
                     <milestone n="4" unit="section"/>
                     <reg>a</reg>
                     battle was fought with the Samnites, in which the enemy were defeated without much difficulty, nor would the engagement have been remembered but for the fact that it was the first time that the Marsi had made war against the Romans.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The Marsi, though of Samnite stock, had hitherto bee on good terms with the Romans.
                     </note>
                     <milestone n="5" unit="section"/>
@@ -3247,7 +3247,7 @@
                     of these he dismantled, lest they should serve as a refuge for the enemy, and by devastating far and wide he made himself so feared that all who
                     <pb id="p.327"/>
                     bore the Etruscan name begged the consul to grant
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 308</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 308</note>
                     them a treaty.
                     <reg>this</reg>
                     privilege they were denied, but a truce for a year was granted them.
@@ -3258,14 +3258,14 @@
                 <p>
                     <name>The</name>
                     tranquillity which now obtained in Etruria was disturbed by a sudden revolt of the Umbrians, a people which had escaped all the distress of war, except that an army had passed through their territory.
-                    <note anchored="yes" place="unspecified">Livy has not mentioned this before.</note>
+                    <note anchored="true" place="unspecified">Livy has not mentioned this before.</note>
                     <milestone n="9" unit="section"/>
                     <reg>calling</reg>
                     up all their fighting men, and inducing great part of the Etruscans to rebel, they mustered so large an army, that they boasted, with much glorifying of themselves and fleering at the Romans, that they would leave Decius behind them in Etruria and march off to the assault of Rome.
                     <milestone n="10" unit="section"/>
                     <reg>when</reg>
                     this purpose of theirs was reported to the consul Decius, he hastened by forced marches from Etruria towards the City, and encamped in the fields belonging to Pupinia,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         South of the Anio not far from Gabii.
                         <reg>see</reg>
                         xxvi. ix. 12.
@@ -3282,7 +3282,7 @@
                     <milestone n="13" unit="section"/>
                     <name>The</name>
                     consul obeyed the order, and advanced by long marches to Mevania,
-                    <note anchored="yes" place="unspecified">In the neighbourhood of Perugia and Assisi.</note>
+                    <note anchored="true" place="unspecified">In the neighbourhood of Perugia and Assisi.</note>
                     where the forces of the Umbrians at that time lay.
                 </p>
                 <p>
@@ -3291,7 +3291,7 @@
                     sudden arrival of the consul, whom they had believed to have his hands full with another war in Samnium, a long way from Umbria, so dismayed the Umbrians that some were for falling back on their
                     <pb id="p.329"/>
                     fortified cities, and others for giving up the war;
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 308</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 308</note>
                     but one canton —which
                     <milestone n="15" unit="section"/>
                     they themselves call Materina —not only kept the rest to their arms, but brought them to an immediate engagement.
@@ -3318,21 +3318,21 @@
                     the next and on succeeding
                     <pb id="p.331"/>
                     days the other peoples of Umbria also capitulated:
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 308</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 308</note>
                     the men of Ocriculum were received into friendship under a stipulation.
                 </p>
                 <p>
                     <milestone n="42" unit="chapter"/>
                     <name>Fabius</name>
                     , having won a war assigned by lot
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 307-306</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 307-306</note>
                     to another man, led his army back to his own province.
                     <milestone n="2" unit="section"/>
                     <reg>just</reg>
                     as in the preceding year the people had rewarded his successful campaign by re —electing him to the consulship, so now the senate continued him in command for the year to follow.
                     <name>The</name>
                     new consuls were Appius Claudius and Lucius Volumnius, the former of whom had strongly opposed the resolution.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The senate had a grudge against Appius (see chap. xxx. § 1 f.), and so prolonged, unconstitutionally, the command of Fabius, and gave the other war to Volumnius.
                     </note>
                 </p>
@@ -3362,7 +3362,7 @@
                     <pb id="p.333"/>
                     <reg>even</reg>
                     so they were invested before dark, and guards
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 307-306</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 307-306</note>
                     were posted in the night to prevent anyone's escaping.
                     <milestone n="7" unit="section"/>
                     <reg>next</reg>
@@ -3384,9 +3384,9 @@
                     the Hernici resented.
                     <name>The</name>
                     people of Anagnia assembled a council of all the states in the circus which they call the Maritime Circus, and all of the Hernic name, excepting the inhabitants of Aletrium, Ferentinum and Verulae, declared war on the Roman People.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The Hernici had been at peace with the Romans ever since their subjugation in
-                        <date value="-358">358 B.C.</date>
+                        date when="-358">358 B.C.</date>
                         (VII. xv. 9).
                     </note>
                 </p>
@@ -3396,9 +3396,9 @@
                     Samnium, too, the departure of Fabius was the cause of fresh disturbances.
                     <name>Calatia</name>
                     and Sora with their Roman garrisons were taken by assault, and the captured soldiers were treated with shameful rigour.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Calatia was mentioned in chap. ii. § 2 as a Samnite town, and its capture by the Romans in
-                        <date value="-314">314 B.C.</date>
+                        date when="-314">314 B.C.</date>
                         is noted in chap. xxviii. § 6. Sora, on the borders of the Hernici, was taken in the same year (chap. xxiv. § 14).
                     </note>
                     <reg>accordingly</reg>
@@ -3411,7 +3411,7 @@
                     the outset of the campaign the enemy were so successful in
                     <pb id="p.335"/>
                     seizing all the strategic points between the camps
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 307-306</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 307-306</note>
                     of the
                     <milestone n="4??" unit="section"/>
                     consuls, that not even a nimble courier could get through, and for some days the consuls were kept in uncertainty regarding everything and could only speculate about one another's state.
@@ -3448,12 +3448,12 @@
                     since they had not considered themselves equal to a
                     <pb id="p.337"/>
                     battle with even one army, and believed that, once
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 307-306</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 307-306</note>
                     they had suffered two consular armies to unite, there would be no hope for them, they made an attack on Marcius as he was approaching in loose marching older.
                     <milestone n="12" unit="section"/>
                     <reg>hastily</reg>
                     throwing down their packs in the midst, the Romans formed up
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         in a hollow square, as the words
                         <hi rend="italics">in medium</hi>
@@ -3485,7 +3485,7 @@
                     victors rushed upon them, without orders from the consuls or receiving any
                     <pb id="p.339"/>
                     signal, exclaiming that the Samnites must begin
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 307-306</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 307-306</note>
                     their soldiering with a bitter lesson.
                     <milestone n="19" unit="section"/>
                     <name>The</name>
@@ -3511,9 +3511,9 @@
                     returned to the City, which he entered in a triumph over the Hernici.
                     <name>An</name>
                     equestrian statue in the Forum was decreed him and was erected in front of the temple of Castor.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The temple of Castor and Pollux had been vowed at the battle of Lake Regillus,
-                        <date value="-299">299 B.C.</date>
+                        date when="-299">299 B.C.</date>
                         , and dedicated fifteen years later (II. xx. 12, and xlii. 5).
                     </note>
                     <milestone n="23" unit="section"/>
@@ -3531,8 +3531,8 @@
                     the same year the censor Gaius Junius
                     <pb id="p.341"/>
                     Bubulcus let the contract for the temple of Safety,
-                    <note anchored="yes" place="unspecified">On the Quirinal.</note>
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 307-306</note>
+                    <note anchored="true" place="unspecified">On the Quirinal.</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 307-306</note>
                     which he had vowed, while consul, during the Samnite war.
                     <reg>he</reg>
                     and his colleague, Marcus Valerius Maximus, built roads through the countryside at the public
@@ -3540,7 +3540,7 @@
                     costs.
                     <reg>in</reg>
                     this year also the treaty with the Carthaginians was renewed for the third time,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         VII. Xxvii. 2 and note.
                         <hi rend="italics">
                             <reg>per</reg>
@@ -3556,7 +3556,7 @@
                     <milestone n="44" unit="chapter"/>
                     <name>The</name>
                     same year had a dictator in the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 305</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 305</note>
                     person of Publius Cornelius Scipio, the master of the horse being Publius Decius Mus.
                     <milestone n="2" unit="section"/>
                     <name>These</name>
@@ -3565,10 +3565,10 @@
                     <name>The</name>
                     consuls chosen were Lucius Postumius and Tiberius Minucius.
                     <name>Piso</name>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Lucius Calpurnius Piso Frugi, the annalist,
                         <hi rend="italics">cos.</hi>
-                        <date value="-133">133 B.C.</date>
+                        date when="-133">133 B.C.</date>
                     </note>
                     makes these men follow Quintus Fabius and Publius Decius, omitting the two years in which we have placed the consulship of Claudius and Volumnius and that of Cornelius and Marcius.
                     <milestone n="4" unit="section"/>
@@ -3579,7 +3579,7 @@
                     <milestone n="5" unit="section"/>
                     <reg>in</reg>
                     that year also the Samnites made forays upon the Campus Stellatis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This was a tract forming part of the Ager Falernus, later celebrated for its choice wine.
                     </note>
                     in Campania.
@@ -3595,7 +3595,7 @@
                     others that the armies quitted the field on even terms, and that Postumius, feigning fear, in the night withdrew his
                     <pb id="p.343"/>
                     forces secretly to the mountains, where the enemy
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 305</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 305</note>
                     followed him and themselves entrenched a camp, at a distance of two miles from his.
                     <milestone n="9" unit="section"/>
                     <name>The</name>
@@ -3625,13 +3625,13 @@
                 <p>
                     <reg>in</reg>
                     that year Sora, Arpinum, and Cesennia
-                    <note anchored="yes" place="unspecified">Site unknown.</note>
+                    <note anchored="true" place="unspecified">Site unknown.</note>
                     were
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 305</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 305</note>
                     won back from the Samnites.
                     <name>The</name>
                     great statue of Hercules was set up and dedicated on the Capitol.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Perhaps to appease the god for the indignity mentioned in chap. xxix. § 9.
                     </note>
                 </p>
@@ -3639,7 +3639,7 @@
                     <milestone n="45" unit="chapter"/>
                     <reg>in</reg>
                     the consulship of Publius Sulpicius
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 304</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 304</note>
                     Saverrio and Publius Sempronius Sophus, the Samnites, whether seeking to end or only to postpone hostilities, sent envoys to Rome to treat for peace.
                     <milestone n="2" unit="section"/>
                     <reg>to</reg>
@@ -3650,9 +3650,9 @@
                     <milestone n="4" unit="section"/>
                     <name>The</name>
                     Roman army marched all over Samnium; the people were peaceable and furnished the army liberally with supplies; accordingly their ancient treaty was in that year restored again to the Samnites.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         In
-                        <date value="-354">354 B.C.</date>
+                        date when="-354">354 B.C.</date>
                         the Samnites' had sought and obtained a treaty with the Romans, upon what terms is not known, but they were doubtless liberal (vii. xix. 4)
                     </note>
                 </p>
@@ -3660,27 +3660,27 @@
                     <milestone n="5" unit="section"/>
                     <name>The</name>
                     arms of Rome were then directed against the Aequi, who had been her enemies of old, but for many years past had remained quiet,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Since
-                        <date value="-388">388 B.C.</date>
+                        date when="-388">388 B.C.</date>
                         (vi. iv. 8).
                     </note>
                     under colour of a peace which they observed but treacherously.
                     <milestone n="6" unit="section"/>
                     <name>The</name>
                     reason for making war on them was as follows: before the overthrow of the Hernici they had repeatedly joined with them in sending assistance to the Samnites,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Chap. xlii. § 8, where, however, the Aequi are not specified.
                     </note>
                     and after the subjugation of the Hernici, almost the entire nation had gone over to the enemy, without attempting to disguise their policy;
                     <milestone n="7" unit="section"/>
                     <pb id="p.347"/>
                     and when fetials had applied to them for reparation,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 304</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 304</note>
                     after the adoption of the Samnite treaty at Rome, they had persistently asserted that the Romans were attempting under threats of war to intimidate them into becoming Roman citizens; and how little that was a thing to be desired had
                     <milestone n="8??" unit="section"/>
                     been shown, they said, by the Hernici, since those who had been permitted to do so had chosen their own laws in preference to Roman citizenship, while those who had not been given an option were to have citizenship thrust upon them as a punishment.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">
                             <reg>cf</reg>
                             .
@@ -3698,10 +3698,10 @@
                     <milestone n="11" unit="section"/>
                     <name>The</name>
                     army of the Aequi, who for many years had made no war on their own account,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         while Aequians had volunteered for service in other armies, they had engaged in no war as a nation —at any rate with Rome —since
-                        <date value="-388">388 B.C.</date>
+                        date when="-388">388 B.C.</date>
                         (vi. iv. 8).
                     </note>
                     like a hastily levied militia, under no definite commanders and subject to no supreme authority, were in a state of panic.
@@ -3721,7 +3721,7 @@
                     enemy were scattered over the countryside when at break of day the Romans came
                     <pb id="p.349"/>
                     out and formed in order of battle, and encountering
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 304</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 304</note>
                     nobody, advanced at a quick pace towards the
                     <milestone n="15" unit="section"/>
                     Aequian camp.
@@ -3753,7 +3753,7 @@
                     <milestone n="2" unit="section"/>
                     <reg>i</reg>
                     find in certain annals that being in attendance upon the aediles, and perceiving that the tribes were supporting him for aedile, but that his name was thrown out because he was acting as a recorder, he put away his tablet and took an oath that he would keep no record.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The tribes were beginning to enter their votes in favour of Flavius, but the aedile presiding at the election refused to admit his candidacy, on the score that as an apparitor, a paid civil servant, he might not hold a magistracy.
                         <name>Flavius</name>
                         thereupon renounced his position as secretary and declined to serve as such at the election.
@@ -3768,9 +3768,9 @@
                     <milestone n="3" unit="section"/>
                     <pb id="p.351"/>
                     Licinius Macer alleges that he had ceased some time
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 304</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 304</note>
                     before to act as secretary, having been already a tribune, and on two occasions a triumvir, once on the commission which had charge of the night —watch,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         These were commonly called
                         <hi rend="italics">tresviri capitales,</hi>
                         and were police commissioners, who besides the duty referred to in the text, were charged with assisting the magistrates who had criminal jurisdiction, and particularly with executing sentences of death.
@@ -3781,7 +3781,7 @@
                             .
                         </hi>
                         xi. would indicate that the office was not introduced until about
-                        <date value="-289">289 B.C.</date>
+                        date when="-289">289 B.C.</date>
                     </note>
                     and again on one appointed to found a colony.
                     <milestone n="4" unit="section"/>
@@ -3806,14 +3806,14 @@
                     Flavius had been elected aedile by the faction of the market —place,
                     <pb id="p.353"/>
                     which had become powerful in consequence of the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 304</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 304</note>
                     censorship of Appius Claudius.
                     <milestone n="11" unit="section"/>
                     <name>Claudius</name>
                     had been the first to debase the senate by the appointment of the sons of freedmen, and afterwards, when no one allowed the validity of his selection, and he had failed to gain the influence in the senate —house
                     <milestone n="12" unit="section"/>
                     which had been his object, he had distributed the humble denizens of the City amongst all the tribes, and had thus corrupted the Forum and the Campus Martius.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The centuriate comitia met in the Campus Martius, the tribal comitia in the Forum.
                         <reg>membership</reg>
                         in the formen assembly
@@ -3836,7 +3836,7 @@
                     was Fabius too, so it is said, who instituted the parade of the knights on the fifteenth of July.
                 </p>
                 <pb id="p.355"/>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

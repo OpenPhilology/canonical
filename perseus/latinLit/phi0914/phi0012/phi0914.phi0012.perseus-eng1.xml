@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Ab Urbe Condita" type="work">Ab Urbe Condita, books 1-2 - 2</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -38,18 +38,18 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter" n="chunk"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter" n="chunk"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -58,21 +58,21 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="2" type="book">
+            <div part="N" sample="complete" org="uniform" n="2" type="book">
                 <head>Book II</head>
                 <p>
                     <milestone n="1" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     THE new liberty enjoyed by the Roman people,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                     their achievements in peace and war, annual magistracies, and laws superior in authority to men will henceforth be my theme.
                     <milestone n="2" unit="section"/>
                     This liberty was the more grateful as the last king had been so great a tyrant. For his predecessors so ruled that there is good reason to regard them all as successive founders of parts, at least, of the City, which they added to serve as new homes for the numbers they had themselves recruited.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This statement is too sweeping, for Livy nowhere attributes any enlargement of the City to Numa.
                     </note>
                     <milestone n="3" unit="section"/>
@@ -85,7 +85,7 @@
                     But it was favoured by the mild restraint of the government, which nursed it up to the point
                     <pb id="p.221"/>
                     where its ripened powers enabled it to bear good
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                     fruit of liberty. Moreover you may reckon the beginning of liberty as proceeding rather from the limitation of the consuls' authority to a year than from any diminution of their power compared with that which the kings had exercised.
                     <milestone n="7" unit="section"/>
                     All the rights of the kings and all their insignia were possessed by the earliest consuls; only one thing was guarded against —that the terror they inspired should not be doubled by permitting both to have the rods.
@@ -97,7 +97,7 @@
                     In the next place, that the strength of the senate might receive an added augmentation from the numbers of that order, he filled up the list of the Fathers, which had been abridged by the late king's butcheries, drawing upon the foremost men of equestrian rank until he had brought the total up to three hundred.
                     <milestone n="11" unit="section"/>
                     From that time, it is said, was handed down the custom of summoning to the senate the Fathers and the Enrolled, the latter being the designation of the new senators, who were appointed.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Later any senator might be called
                         <hi rend="italics">pater conscriptus,</hi>
                         and it is possible that Livy and Festus (p. 254 M) were misled in supposing that originally the
@@ -107,9 +107,9 @@
                         another. See Conway's note.
                     </note>
                     This measure was wonderfully effective in promoting harmony in the state and attaching the plebs to the Fathers.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livy appears to have assumed that the new senators were plebeians, but this is almost certainly wrong. The first definite notice of a plebeian senator occurs at v. xii. 11 (
-                        <date value="-400">400 B.C.</date>
+                        date when="-400">400 B.C.</date>
                         ).
                     </note>
                 </p>
@@ -121,7 +121,7 @@
                     absence might nowhere be regretted, a
                     <quote>
                         king of
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                         sacrifices
                     </quote>
                     was appointed.
@@ -140,7 +140,7 @@
                     The Roman people did not believe that they had recovered absolute freedom. The royal family, the royal name
                     <pb id="p.225"/>
                     were not only present in the state, but were
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                     actually in authority, an obstacle and a stumbling-block in the way of liberty.
                     <milestone n="7" unit="section"/>
                     <quote>This fear,</quote>
@@ -162,7 +162,7 @@
                     <milestone n="3" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Although no one doubted that the Tarquinii
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                     would presently go to war, their attack was delayed beyond all expectation; while a thing men did not fear at all, to wit a treasonable plot, almost cost Rome her liberty.
                     <milestone n="2" unit="section"/>
                     There were among the young men a number of youths, the sons of families not unimportant, whose pleasures had been less confined under the monarchy, who, being of the same age as the young Tarquinii, and their cronies, had grown used to the untrammelled life of princes.
@@ -176,7 +176,7 @@
                     Meantime the envoys were
                     <pb id="p.229"/>
                     exerting themselves to a different purpose. Ostensibly
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                     seeking to recover the property, they secretly laid their plans for winning back the kingdom; and, as if in furtherance of their apparent object, they went about sounding the disposition of the youthful nobles.
                     <milestone n="7" unit="section"/>
                     To those who gave them a friendly hearing they delivered letters from the Tarquinii, and plotted with them to admit the royal family secretly by night into the City.
@@ -193,7 +193,7 @@
                     These letters, being given as a pledge of sincerity, furnished clear proof of the crime, For on the eve of the envoys' setting out to rejoin their masters it happened that they were dining at the house of the Vitellii, where the conspirators, having dismissed all witnesses, had much talk together, naturally enough, about their
                     <pb id="p.231"/>
                     new design. This conversation one of the slaves
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                     overheard.
                     <milestone n="6" unit="section"/>
                     He had for some time perceived what was in the wind, but was waiting for the opportunity which the delivery of the letters to the envoys would provide, that their seizure might make good his accusation. When he saw that the letters had been given, he laid the matter before the consuls.
@@ -206,7 +206,7 @@
                     They refused to return it, and refused to confiscate it to the state, but gave it up to the plebeians to plunder, that having had their fingers in the spoils of the princes they might for ever relinquish hope of making their peace with them. The land of the Tarquinii, lying between the City and the Tiber, was consecrated to Mars and became the Campus Martius.
                     <milestone n="3" unit="section"/>
                     It happened, they say, that there was then standing upon it a crop of spelt, ripe for the harvest. Since this produce of the land might not, for religious reasons, be consumed, the grain was cut, straw and all,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Ordinarily the Roman farmer cut the stalk close to the ear, but this time it was cut near the ground, that the crop might be completely destroyed.
                     </note>
                     by a large body of men, who were set to work upon it simultaneously, and was carried in baskets and thrown into the Tiber, then flowing with a feeble current, as is usually the case in midsummer.
@@ -214,7 +214,7 @@
                     So the heaps
                     <pb id="p.233"/>
                     of grain, caught in the shallow water, settled down
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                     in the mud, and out of these and the accumulation of other chance materials such as a river brings down, there was gradually formed an island. Later, I suppose, embankments were added, and work was done, to raise the surface so high above the water and make it strong enough to sustain even temples and porticoes.
                     <milestone n="5" unit="section"/>
                     When the chattels of the princes had been pillaged, sentence was pronounced and punishment inflicted upon the traitors —a punishment the more conspicuous because the office of consul imposed upon a father the duty of exacting the penalty from his sons, and he who ought to have been spared even the sight of their suffering was the very man whom Fortune appointed to enforce it.
@@ -228,12 +228,12 @@
                     When the
                     <pb id="p.235"/>
                     guilty had suffered, that the example might be in
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                     both respects a notable deterrent from crime, the informer was rewarded with money from the treasury, emancipation, and citizenship.
                     <milestone n="10" unit="section"/>
                     He is said to have been the first to be freed by the
                     <hi rend="italics">vindicta.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A staff with which the slave was touched in the ceremony of manumission. The etymology suggested in the next sentence is wrong;
                         <hi rend="italics">Vindicius,</hi>
                         like
@@ -257,7 +257,7 @@
                     Let them
                     <pb id="p.237"/>
                     succour and support him, and avenge, as well, their
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                     own long-standing grievances, the oft-repeated destruction of their armies, and seizure of their lands. This last plea moved the men of Veii, and they cried out with threatenings that they ought, at all events with a Roman for their commander, to wipe out their disgraces and recover what they had lost in war.
                     <milestone n="5" unit="section"/>
                     The Tarquinienses were influenced by his name and kinship: it seemed a fine thing to them that one of their blood should be king in Rome.
@@ -277,7 +277,7 @@
                     In those days it was to a general's credit to take part in the actual fighting, so he eagerly accepted the challenge, and they rushed at one another with such desperation, neither of them taking thought for his own defence if only he might wound his adversary, that
                     <pb id="p.239"/>
                     each was pierced right through his shield by the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                     other's thrust, and, impaled upon the two spears, they fell dying from their horses.
                     <milestone n="10" unit="section"/>
                     At the same time the rest of the cavalry as well began to fight, and not long after the infantry also appeared. In this battle the advantage was divided, and the fortune of war seemed equally balanced: the right wing on each side was victorious, while the left was defeated.
@@ -297,7 +297,7 @@
                     For when it grew light and not a single enemy was to be seen, Publius Valerius the consul gathered up the spoils and returned in triumph to Rome. His colleague's funeral he celebrated with all the pomp then possible; but a far greater honour to the dead man was the general grief, which was particularly conspicuous inasmuch as the matrons mourned a year for him, as for a father, because
                     <pb id="p.241"/>
                     he had been so spirited an avenger of outraged
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                     modesty.
                 </p>
                 <p>
@@ -307,7 +307,7 @@
                     It was noised about that he was aspiring to the power of a king, since he had not caused a colleague to be elected in the place of Brutus, and was building a house on the highest part of the Velia, an elevated position of natural strength, men said, which he was converting into an impregnable citadel.
                     <milestone n="7" unit="section"/>
                     The frequency of these remarks and the general acceptance they met with, shamefully unjust as they were, distressed the consul. He summoned the people to a council, and with lowered fasces
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Bundles of rods which symbolized the magistrate's authority to scourge, as the axes (
                         <hi rend="italics">secures</hi>
                         ) did his right to put to death.
@@ -325,7 +325,7 @@
                         Could I possibly have feared that I, well known as the bitterest enemy of kings, should myself incur the charge of
                         <pb id="p.243"/>
                         seeking kingly power? Could I have believed that,
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                         though I dwelt in the very Citadel and on the Capitol itself, I could be feared by my fellow-citizens? Can so trivial a cause ruin my reputation with you? Does your confidence rest on so slight a foundation that it makes more difference where I am than who I am?
                         <milestone n="11" unit="section"/>
                         There shall be no menace in the house of Publius Valerius to your liberties, Quirites; your Velia shall be safe. I will not only bring my house down on to level ground, but will even place it under a hill, that you may live above me, the citizen whom you suspect. Let those build on the Velia who can better be trusted with men's liberty than can Publius Valerius!
@@ -347,7 +347,7 @@
                     Pulvillus.
                     <milestone n="5" unit="section"/>
                     In some ancient authorities I do not find
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 509</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 509</note>
                     Lucretius given as consul, but Brutus is followed immediately by Horatius; I suppose that because no exploit lent distinction to Lucretius's consulship men forgot it.
                 </p>
                 <p>
@@ -367,9 +367,9 @@
                     <milestone n="9" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Next Publius Valerius (for the second time)
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 508</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 508</note>
                     and Titus Lucretius were made consuls.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Dion. Hal. (v. 21) says that Valerius was consul for the
                         <hi rend="italics">third</hi>
                         time, and Horatius for the second time, when the war with Porsinna came. Mommsen thought the MSS. had lost these names, and proposed to insert them directly after those in the text. But in chap. xi. 8, T. Lucretius is still the colleague of Valerius.
@@ -377,7 +377,7 @@
                     By this time the Tarquinii had sought refuge with Lars
                     <pb id="p.247"/>
                     Porsinna, king of Clusium. There they mingled advice
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 508</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 508</note>
                     and entreaty, now imploring him not to permit them, Etruscans by birth and of the same blood and the same name as himself, to suffer the
                     <milestone n="2" unit="section"/>
                     privations of exile, and again even warning him not to allow the growing custom of expelling kings to go unpunished. Liberty was sweet enough in itself.
@@ -393,7 +393,7 @@
                     Thanks to this
                     <pb id="p.249"/>
                     liberality on the part of the Fathers, the distress
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 508</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 508</note>
                     which attended the subsequent blockade and famine was powerless to destroy the harmony of the state, which was such that the name of king was not more abhorrent to the highest than to the lowest;
                     <milestone n="8" unit="section"/>
                     nor was there ever a man in after years whose demagogic arts made him so popular as its wise governing at that time made the whole senate.
@@ -414,7 +414,7 @@
                     Then, striding to the
                     <pb id="p.251"/>
                     head of the bridge, conspicuous amongst the fugitives
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 508</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 508</note>
                     who were clearly seen to be shirking the fight, he covered himself with his sword and buckler and made ready to do battle at close quarters, confounding the Etruscans with amazement at his audacity.
                     <milestone n="7" unit="section"/>
                     Yet were there two who were prevented by shame from leaving him. These were Spurius Larcius and Titus Herminius, both famous for their birth and their deeds. With these he endured the peril of the first rush and the stormiest moment of the battle.
@@ -432,7 +432,7 @@
                     So praying, all armed as he was, he leaped down into the river, and under a shower of missiles swam across unhurt
                     <pb id="p.253"/>
                     to his fellows, having given a proof of valour which
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 508</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 508</note>
                     was destined to obtain more fame than credence with posterity.
                     <milestone n="12" unit="section"/>
                     The state was grateful for so brave a deed: a statue of Cocles was set up in the comitium, and he was given as much land as he could plough around in one day.
@@ -453,7 +453,7 @@
                     Accordingly, to lure forth plunderers, he issued orders to his people that on the following day a large number of them should drive out their flocks by the
                     <pb id="p.255"/>
                     Esquiline Gate, which was the most remote from the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 508</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 508</note>
                     enemy, believing that they would hear of it, since the blockade and famine were causing desertions on the part of faithless slaves.
                     <milestone n="6" unit="section"/>
                     And in fact the enemy did hear of it from a deserter's report, and crossed the river in much greater force than usual, in the hope of making a clean sweep of the booty.
@@ -461,7 +461,7 @@
                     Consequently Publius Valerius directed Titus Herminius to lie in ambush with a small force two miles out on the Gabinian Way, and Spurius Larcius with a body of light-armed youths to take post at the Colline Gate, until the enemy should pass, and then to throw themselves between him and the river, cutting off his retreat.
                     <milestone n="8" unit="section"/>
                     Of the two consuls, Titus Lucretius went out by the Naevian Gate with several maniples of soldiers, Valerius himself led out some picked cohorts by way of the Caelian Mount.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Where there was a gate called
                         <hi rend="italics">Porta Caelimontana,</hi>
                         south of the
@@ -471,7 +471,7 @@
                     These last were the first to be seen by the enemy.
                     <milestone n="9" unit="section"/>
                     Herminius had no sooner perceived that the skirmish was begun than he rushed in from his ambush and fell upon the rear of the Etruscans, who had turned to meet Valerius. On the right hand and on the left,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         From the standpoint of the inhabitants of the city, looking eastward from the walls.
                     </note>
                     from the Naevian Gate and from the Colline, an answering shout was returned.
@@ -486,7 +486,7 @@
                     to have hopes that he would take the City by sitting still, when Gaius Mucius, a young Roman noble, thinking it a shame that although the Roman People had not, in
                     <pb id="p.257"/>
                     the days of their servitude when they lived under
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 508</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 508</note>
                     kings, been blockaded in a war by any enemies, they should now,
                     <milestone n="3" unit="section"/>
                     when free, be besieged by those same Etruscans whose armies they had so often routed, made up his mind that this indignity must be avenged by some great and daring deed.
@@ -508,7 +508,7 @@
                     But friendless as he was, even then, when
                     <pb id="p.259"/>
                     Fortune wore so menacing an aspect, yet as one
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 508</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 508</note>
                     more to be feared than fearing,
                     <quote>I am a Roman citizen,</quote>
                     he cried;
@@ -540,7 +540,7 @@
                         Since you hold bravery
                         <pb id="p.261"/>
                         in honour, my gratitude shall afford you the
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 508</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 508</note>
                         information your threats could not extort: we are three hundred, the foremost youths of Rome, who have conspired to assail you in this fashion.
                         <milestone n="16" unit="section"/>
                         I drew the first lot; the others, in whatever order it falls to them, will attack you, each at his own time, until Fortune shall have delivered you into our hands.
@@ -550,7 +550,7 @@
                     <milestone n="13" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     The release of Mucius, who was afterwards known as Scaevola,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         <quote>Left-handed.</quote>
                     </note>
@@ -569,7 +569,7 @@
                     Now when courage had been thus distinguished, even the women were inspired to deeds of patriotism. Thus the maiden Cloelia, one of the hostages, eluded
                     <pb id="p.263"/>
                     the sentinels, when it chanced that the Etruscans had
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 508</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 508</note>
                     encamped not far from the bank of the Tiber, and heading a band of girls swam the river and, under a rain of hostile darts, brought them all back in safety to their kinsmen in Rome.
                     <milestone n="7" unit="section"/>
                     When this had been reported to the king, he was at first enraged and sent emissaries to Rome to demand that the hostage Cloelia be given up, for he made no great account of the others.
@@ -588,7 +588,7 @@
                     This peaceful departure of the Etruscan king from Rome is inconsistent with the custom handed down from antiquity even to our own age,
                     <pb id="p.265"/>
                     among other formalities observed at sales of booty,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 508</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 508</note>
                     of proclaiming
                     <quote>the goods of King Porsinna.</quote>
                     <milestone n="2" unit="section"/>
@@ -607,7 +607,7 @@
                     The Cumaean levies, employing skill to meet force, swerved a little to one side, and when the enemy had swept by them, faced about and attacked them in the rear, with the
                     <pb id="p.267"/>
                     result that the Etruscans, caught between two lines,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 508</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 508</note>
                     almost in the moment of victory, were cut to pieces.
                     <milestone n="8" unit="section"/>
                     A very small number of them, having lost their leader and finding no nearer refuge, drifted to Rome, unarmed and with all the helplessness and the dejected aspect of suppliants. There they were kindly received and were quartered about among the citizens.
@@ -618,13 +618,13 @@
                     <milestone n="15" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Spurius Larcius and Titus Herminius were the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 507-506</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 507-506</note>
                     next consuls, and after them came Publius Lucretius and Publius Valerius Publicola. In the latter year an embassy was sent to Rome for the last time by Porsinna to negotiate for the restoration of Tarquinius to power. To these envoys the senate replied that they would send representatives to the king, and they forthwith dispatched those of the Fathers who were held in the highest esteem.
                     <milestone n="2" unit="section"/>
                     It would not have been impossible, they said, to reply shortly that the royal family would not be received. It was not for that reason that they had preferred to send chosen members of the senate to him rather than to give their answer to his ambassadors in Rome. But they had desired that for all time discussion of that question might be ended, and that where there were so great obligations on both sides there might not be mutual irritation, from the king's seeking that which was incompatible with the liberty of the Roman people, while the Romans, unless they were willing
                     <pb id="p.269"/>
                     to sacrifice their existence to their good nature, denied
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 507-506</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 507-506</note>
                     the request of a man whom they would not willingly have denied anything.
                     <milestone n="3" unit="section"/>
                     The Roman people were not living under a monarchy, but were free. They had resolved to throw open their gates to enemies sooner than to kings; in this prayer they were all united, that the day which saw the end of liberty in their City might also see the City's end.
@@ -645,13 +645,13 @@
                     <milestone n="16" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     The consulship of Marcus Valerius and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 505-503</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 505-503</note>
                     Publius Postumius. This year a successful war was waged against the Sabines, and the consuls triumphed. More elaborate preparations for war were then made by the Sabines.
                     <milestone n="2" unit="section"/>
                     To confront them, and to prevent any sudden peril arising from Tusculum, in which quarter hostility, though not openly avowed, was none the
                     <pb id="p.271"/>
                     less suspected, Publius Valerius was made consul for
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 505-503</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 505-503</note>
                     the fourth time and Titus Lucretius for the second.
                     <milestone n="3" unit="section"/>
                     A schism which occurred between the advocates of war and those of peace amongst the Sabines resulted in the transfer of some part of their strength to the Romans.
@@ -661,9 +661,9 @@
                     The
                     <quote>Old Claudian Tribe</quote>
                     was the name used later, when new tribesmen had been added, to designate those who came from this territory.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         By
-                        <date value="-241">241 B.C.</date>
+                        date when="-241">241 B.C.</date>
                         the number of tribes had grown to thirty-five. After this date no new tribes were added, but newly incorporated districts were assigned to one or another of the already existing tribes. Thus certain members of the Claudian Tribe lived elsewhere than in the district
                         <quote>across the Anio,</quote>
                         and those who came to Rome for elections from the original seat of the tribe were called the
@@ -679,11 +679,11 @@
                     He was mourned by the matrons as Brutus had been. In the same year two Latin colonies, Pometia and Cora, revolted to the Aurunci. The
                     <pb id="p.273"/>
                     Aurunci were the first to be attacked. Upon the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 505-503</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 505-503</note>
                     defeat of the great army which had boldly issued forth to meet the invasion of their territory by the consuls, the whole weight of the Auruncan war fell upon Pometia.
                     <milestone n="9" unit="section"/>
                     After the battle, as well as during its progress, no quarter was given. The slain had somewhat outnumbered the prisoners, and the prisoners were indiscriminately slaughtered. Even the hostages, of whom three hundred had been received, were not spared in the rage of war.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livy has nowhere told us about these hostages. In chap. xxii. 2 the same towns give the same number of hostages. Obviously he has made distinct episodes out of different versions of the same story, misled no doubt by the different dates assigned by different annalists to the affair of Pometia.
                     </note>
                     This year also a triumph was celebrated at Rome.
@@ -692,7 +692,7 @@
                     <milestone n="17" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     The consuls of the next year, Opiter
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 502</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 502</note>
                     Verginius and Spurius Cassius, attempted to capture Pometia, first by assault and then by the use of mantlets and other engines.
                     <milestone n="2" unit="section"/>
                     Against their besiegers the Aurunci, rather of an implacable hatred than for any hope or opportunity offered, rushed out, armed with firebrands for the most part, instead of swords, and carried death and flames in all directions.
@@ -704,11 +704,11 @@
                     They had repaired their mantlets and the rest of their equipment, and they were already upon the
                     <pb id="p.275"/>
                     point of sending their men against the walls when
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 502</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 502</note>
                     the town capitulated.
                     <milestone n="6" unit="section"/>
                     But the fate of the Aurunci was no less awful from their having surrendered their city than if it had been stormed. Their chief men were beheaded, and the rest of the colonists were sold as slaves.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Literally
                         <quote>under the crown,</quote>
                         meaning a chaplet placed on the head of a captive as an indication that he was a part of the spoils.
@@ -721,11 +721,11 @@
                     <milestone n="18" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     The year after had as its consuls Postumius
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 501</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 501</note>
                     Cominius and Titus Largius.
                     <milestone n="2" unit="section"/>
                     In this year, during the celebration of the games at Rome, the Sabine youths, in a spirit of wantonness, forcibly abducted certain harlots. Men gathered hastily and there was a brawl which was almost a battle, and, trifling as its origin was, it seemed to threaten a fresh outbreak of the war.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Despite the apparently conclusive victory recorded in chap. xvi. 6.
                     </note>
                     <milestone n="3" unit="section"/>
@@ -736,7 +736,7 @@
                     In the oldest writers, however, I find it said that Titus Largius was the first to be made dictator, and that Spurius Cassius was
                     <pb id="p.277"/>
                     master of the horse. They chose men of consular
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 501</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 501</note>
                     rank, for so the law prescribed which had been passed to regulate the selection of a dictator.
                     <milestone n="6" unit="section"/>
                     I am therefore the more disposed to believe that Largius, a consular, rather than Manius Valerius, the son of Marcus and grandson of Volesus, a man who had not yet held the consulship, was assigned to be the director and superior of consuls;
@@ -746,9 +746,9 @@
                 <p>
                     <milestone n="8" unit="section"/>
                     When they had named a dictator for the first time at Rome, and men saw the axes borne before him, a great fear came over the plebs and caused them to be more zealous in obeying orders. For there was no recourse in this case, as with the consuls, who shared the powers of their office equally, to the assistance of the man's colleague, nor was there any appeal nor any help anywhere but in scrupulous obedience.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         But in
-                        <date value="-300">300 B.C.</date>
+                        date when="-300">300 B.C.</date>
                         a
                         <hi rend="italics">lex Valeria de provocatione</hi>
                         gave the people the right to appeal from the dictator.
@@ -765,13 +765,13 @@
                     <milestone n="19" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     In the consulship of Servius Sulpicius and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 500-499</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 500-499</note>
                     Manius Tullius nothing worthy of note occurred. They were succeeded by Titus Aebutius and Gaius Vetusius.
                     <milestone n="2" unit="section"/>
                     During their year of office Fidenae was besieged, Crustumeria taken; Praeneste went over from the Latins to the Romans, and it was no longer possible to postpone the Latin war, which had now been smouldering for several years.
                     <milestone n="3" unit="section"/>
                     Aulus Postumius as dictator,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Postumius had not held the consulship, which in chap. xviii. 5 Livy stated to have been a necessary qualification for the dictatorship.
                     </note>
                     and Titus Aebutius as master of the horse, set out with large forces of infantry and cavalry, and at Lake Regillus, in the territory of Tusculum, met the enemy's advancing column.
@@ -785,7 +785,7 @@
                     Similarly on the other wing, Aebutius, the master of the horse, charged Octavius Mamilius. But the Tusculan commander
                     <pb id="p.281"/>
                     saw him coming, and he too spurred his horse to
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 500-499</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 500-499</note>
                     the encounter;
                     <milestone n="8" unit="section"/>
                     and so great was the force in their levelled lances as they met, that the arm of Aebutius was transfixed, while Mamilius was struck in the breast.
@@ -793,7 +793,7 @@
                     Mamilius was received by the Latins within their second line: Aebutius, being unable to manage a weapon with his wounded arm, retired from the battle.
                     <milestone n="10" unit="section"/>
                     The Latin leader, not a jot discouraged by his wound, urged on the fighting, and, because he saw that his men were in retreat, called up a cohort of Roman exiles, commanded by a son of Lucius Tarquinius,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Of the sons of Tarquinius, Sextus's death is mentioned in I. lx. 2 and that of Arruns in II. vi. 9. This must therefore have been Titus (I. lvi. 6).
                     </note>
                     and these, fighting with greater fury on account of the loss of their property and native land, restored the battle for a while.
@@ -812,7 +812,7 @@
                     were advancing boldly at the double, and that his troops were checked and were giving
                     <pb id="p.283"/>
                     ground, he issued orders to his own cohort, a picked
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 500-499</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 500-499</note>
                     body of men which he kept about his person as a guard, that if they saw any Roman running away they should treat him as an enemy.
                     <milestone n="6" unit="section"/>
                     Being thus between two dangers, the Romans faced about to meet the foe, and the battle-line was formed again. The cohort of the dictator then entered the engagement for the first time.
@@ -828,7 +828,7 @@
                     It restored at once the courage of the foot to see the young nobles on even terms with themselves and sharing in the danger. Then at last the
                     <pb id="p.285"/>
                     Latins received a check, and their battle-line was
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 500-499</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 500-499</note>
                     forced to yield.
                     <milestone n="12" unit="section"/>
                     The knights had their horses brought up that they might be able to pursue the enemy, and they were followed by the infantry. Then the dictator, neglecting no help, divine or human, is said to have vowed a temple to Castor, and to have promised rewards to the soldiers who should be first and second to enter the camp of the enemy;
@@ -839,11 +839,11 @@
                     <milestone n="21" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     For the next three years there was neither
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 498-495</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 498-495</note>
                     a stable peace nor war. The consuls Quintus Cloelius and Titus Larcius were followed by Aulus Sempronius and Marcus Minucius.
                     <milestone n="2" unit="section"/>
                     In the latter year a temple to Saturn was dedicated and the Saturnalia was established as a festal day.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The Saturnalia proper fell on December 17, though as many as seven days came to be devoted to the popular celebration of the festival (Macrobius, I. X. 24), which was a sort of carnival. As an old Italic feast it probably originated earlier than Livy thought. See Macrobius I. viii. 1.
                     </note>
                     Next Aulus Postumius and Titus Verginius were made consuls.
@@ -856,7 +856,7 @@
                 <pb id="p.287"/>
                 <p>
                     At the next election Appius Claudius and Publius
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 495</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 495</note>
                     Servilius were chosen consuls. This year was marked by the announcement of Tarquinius's death. He died at Cumae, whither he had gone to the court of Aristodemus after the downfall of the Latin cause.
                     <milestone n="6" unit="section"/>
                     These tidings cheered the Fathers and encouraged the plebs. But the Fathers were too inconsiderate, in consequence of their rejoicing at this event; and the plebs, who up to this time had been most studiously deferred to, began to feel the oppression of the nobles.
@@ -873,12 +873,12 @@
                     Yet it was not long before the Volsci, being relieved of their alarm, resumed their native duplicity; again they made secret preparations for war, and formed a military alliance with the Hernici, while they also sent out envoys, this
                     <pb id="p.289"/>
                     way and that, to instigate the Latins to rebellion.
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 495</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 495</note>
                     <milestone n="4" unit="section"/>
                     But the disaster which had recently befallen the Latins at Lake Regillus so filled them with rage and hate against anyone who advised them to go to war, that they did not even abstain from violating an embassy, but seized the Volsci and brought them to Rome. There they delivered them up to the consuls with the information that the Volsci and the Hernici were preparing to attack the Romans.
                     <milestone n="5" unit="section"/>
                     When this service had been reported to the senate the Fathers were so grateful that they released to the Latins six thousand captives, and referred the question of a treaty, which they had all but refused in perpetuity, to the incoming magistrates.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Neither captives nor treaty were mentioned in chap. XX., and Livy seems here to be following a different authority, possibly Valerius of Antium, whom at XXXIII. X. 8 he accuses of exaggerating numbers.
                     </note>
                     <milestone n="6" unit="section"/>
@@ -890,7 +890,7 @@
                     <milestone n="23" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     But not only was war with the Volsci imminent; the citizens were at loggerheads among themselves, and internal dissensions between the Fathers and the plebs had burst into a blaze of hatred, chiefly on account of those who had been bound over to service for their debts.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The word
                         <hi rend="italics">nexus</hi>
                         was used (1) of one who had borrowed money by
@@ -903,7 +903,7 @@
                     These men complained loudly that while they were abroad
                     <pb id="p.291"/>
                     fighting for liberty and dominion they had been enslaved
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 495</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 495</note>
                     and oppressed at home by fellow-citizens, and that the freedom of the plebeians was more secure in war than in peace, amongst enemies than amongst citizens. This bitter feeling, which was growing spontaneously, the notable calamity of one man fanned into a flame.
                     <milestone n="3" unit="section"/>
                     Old, and bearing the marks of all his misfortunes, the man rushed into the Forum. His dress was covered with filth, and the condition of his body was even worse, for he was pale and half dead with emaciation.
@@ -917,7 +917,7 @@
                     torturechamber.
                     <milestone n="7" unit="section"/>
                     He then showed them his back, disfigured
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 495</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 495</note>
                     with the wales of recent scourging. The sight of these things and the man's recital produced a mighty uproar.
                     <milestone n="8" unit="section"/>
                     The disturbance was no longer confined to the Forum, but spread in all directions through the entire City. Those who had been bound over, whether in chains or not, broke out into the streets from every side, and implored the Quirites to protect them.
@@ -933,7 +933,7 @@
                     The rest were afraid to enter not only the Curia but even the Forum, and nothing could be done because those present were too few. Whereat the people concluded they were being flouted and put off, and that the missing senators were absent not from accident, nor fear, but with the intent to hinder action, and that the consuls themselves were paltering;
                     <pb id="p.295"/>
                     nor did they doubt that their misery was made a
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 495</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 495</note>
                     jest.
                     <milestone n="14" unit="section"/>
                     A little more and not even the majesty of the consuls could have held in check the angry crowd, when the absent Fathers, uncertain whether they should incur more danger by holding back or by coming forward, finally came into the senate, and the required number being at length assembled, not only the senators, but even the consuls themselves were unable to agree.
@@ -950,7 +950,7 @@
                     The Curia, on the other hand, was downcast and dismayed. In their twofold fear —of their fellow-citizens and of the enemy —they begged Servilius the consul, whose character appealed more to the people than did that of his colleague, that he would extricate the state from
                     <pb id="p.297"/>
                     the fearful perils with which it was beset.
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 495</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 495</note>
                     <milestone n="4" unit="section"/>
                     Thereupon the consul adjourned the senate and went before the people. There he declared that the Fathers were anxious to consult the interests of the plebs, but that their deliberations concerning that very important part —but only a part after all —of the state had been broken off by their fears for the entire nation.
                     <milestone n="5" unit="section"/>
@@ -967,7 +967,7 @@
                     <milestone n="25" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     The next night the Volsci, relying on the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 495</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 495</note>
                     lack of harmony among the Romans, attacked their camp on the chance that the darkness might encourage desertions or treachery. But the sentries perceived them, the army was roused, and, the signal being given, rushed to arms.
                     <milestone n="2" unit="section"/>
                     Thus the design of the Volsci came to naught, and the remainder of the night was devoted by both armies to sleeping. On the following day at dawn the Volsci filled up the trenches and assaulted the rampart, and soon they were everywhere pulling down the palisades.
@@ -977,7 +977,7 @@
                     While they ran, the foot-soldiers struck at them from behind as long as they could keep up the pursuit; then the horsemen drove them panic-stricken clear to their camp. Soon the camp itself had been surrounded by the legions, and when the Volsci had fled from it in terror, it was taken and plundered.
                     <milestone n="5" unit="section"/>
                     Next day Servilius led his forces to Suessa Pometia, where the enemy had taken refuge, and within a few days took the town and gave it up to be sacked.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         But it had already been razed, as we read in chap. xvii. 6 — another indication that Livy is reproducing different versions of the same story (see chap. xvi. 9 and note).
                     </note>
                     This yielded some slight relief to the soldiers, who needed it
@@ -985,7 +985,7 @@
                     badly. The consul led his army back to Rome, with great honour to himself. As he was setting out on his return thither ambassadors approached him from
                     <pb id="p.301"/>
                     the Volsci of Ecetra, who were alarmed at their own
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 495</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 495</note>
                     prospects, in view of the capture of Pometia. A decree of the senate granted them peace, but took away their land.
                 </p>
                 <p>
@@ -1006,7 +1006,7 @@
                     They marched on Aricia in fighting order, joined
                     <pb id="p.303"/>
                     battle with the Aurunci not far from the town, and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 495</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 495</note>
                     in a single engagement finished the war.
                 </p>
                 <p>
@@ -1023,8 +1023,8 @@
                     The consuls had got into a dispute as to which should dedicate the temple to Mercury. The senate referred the case to the people for decision. Whichever consul should, by command of the people, be entrusted with the dedication was to have charge
                     <pb id="p.305"/>
                     of the corn-supply, to establish a guild of merchants,
-                    <note anchored="yes" place="unspecified">Mercury was the patron of trade.</note>
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 495</note>
+                    <note anchored="true" place="unspecified">Mercury was the patron of trade.</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 495</note>
                     and perform the solemn rites in the presence of the
                     <milestone n="6" unit="section"/>
                     pontifex. The people assigned the dedication to Marcus Laetorius, a centurion of the first rank —a choice which would readily be understood as intended not so much to honour Laetorius, to whom a commission had been given which was too exalted for his station in life, as to humiliate the
@@ -1042,7 +1042,7 @@
                     majesty. When the usual daily throng of lawless men was standing about him, he gave orders
                     <pb id="p.307"/>
                     to seize one who was a conspicuous leader in their
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 495</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 495</note>
                     disturbances. The lictors were already dragging the man away, when he appealed; nor would the consul have granted the appeal, for there was no question what the decision of the people would be, had not his obstinacy been with difficulty overcome, more by the advice and influence of the nobles than by the popular outcry, so steeled was he to endure men's
                     <milestone n="13" unit="section"/>
                     hate. From that moment the trouble grew worse each day, and not only were there open disturbances, but what was far more pernicious, secret gatherings and conferences. At last the consuls whom the plebeians so hated went out of office. Servilius had the goodwill of neither party, but Appius was in high esteem with the senators.
@@ -1051,7 +1051,7 @@
                     <milestone n="28" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Aulus Verginius and Titus Vetusius then
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 494</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 494</note>
                     entered upon the consulship. Whereat the plebs, uncertain what sort of consuls they would prove to be, held nightly gatherings, some on the Esquiline and other son the Aventine, lest if they met in the Forum they might be frightened into adopting ill-considered measures, and manage all their business rashly and at haphazard.
                     <milestone n="2" unit="section"/>
                     This seemed to the consuls, as indeed it was, a mischievous practice. They laid the matter before the Fathers, but their report could not be discussed in an orderly fashion, so tumultuously was it received, with shouts from every part of the house and expressions of indignation from the senators, that a thing which ought to have been settled by an exercise of consular authority should be invidiously referred by the consuls to the senate.
@@ -1059,7 +1059,7 @@
                     It was evident that if only there were magistrates in the nation there would have been no assembly in Rome but the assembly of the people; as it was, the
                     <pb id="p.309"/>
                     government was broken up into a thousand separate
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 494</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 494</note>
                     curias and meetings. One single
                     <hi rend="italics">man</hi>
                     —a more significant word than
@@ -1082,7 +1082,7 @@
                     <milestone n="29" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Having sufficiently weighed both the courses open to them,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         (1) to persuade the senate to content the people; (2) to coerce the people.
                     </note>
                     the consuls finally said:
@@ -1090,7 +1090,7 @@
                         Lest you should say that you had not been warned,
                         <pb id="p.311"/>
                         Conscript Fathers, we are on the verge of a great mutiny.
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 494</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 494</note>
                         We demand that those who are loudest in accusing us of cowardice stand by us while we hold the levy.
                         <milestone n="2" unit="section"/>
                         The most severe amongst you, since such is your pleasure, shall guide our procedure.
@@ -1112,7 +1112,7 @@
                     Titus Largius held that this was no time for merely requiting services;
                     <pb id="p.313"/>
                     the whole commons was submerged in debt, and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 494</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 494</note>
                     the situation could not be remedied unless provision were made for all; indeed, if some were treated in one way and some in another, it would heighten the discontent instead of allaying it.
                     <milestone n="9" unit="section"/>
                     Appius Claudius, naturally harsh, and rendered savage by the hatred of the plebs on the one hand and the praises of the Fathers on the other, said that it was not misery but licence that had stirred up so great a hubbub, and that wantonness was what ailed the plebs rather than anger.
@@ -1139,13 +1139,13 @@
                     chanced, up in arms at once.
                     <milestone n="4" unit="section"/>
                     But the consuls and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 494</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 494</note>
                     the older senators saw to it that a magistracy rendered formidable by its paramount authority should be committed to a man of gentle disposition, and chose for dictator Manius Valerius, son of Volesus.
                     <milestone n="5" unit="section"/>
                     The plebs, though they perceived that it was against themselves that the creation of a dictator was aimed, still, since it was through a law proposed by a brother of Valerius that they possessed the right of
                     <milestone n="6" unit="section"/>
                     appeal,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         That is to say, in general; from a dictator, however, there was no appeal until a later period.
                     </note>
                     they had no fear of any harsh or oppressive act on the part of one of that family. An edict which the dictator soon promulgated strengthened their confidence.
@@ -1156,7 +1156,7 @@
                 </p>
                 <p>
                     Nor could war be deferred any longer, for the Aequi had invaded Latin territory. Emissaries from the Latins begged the senate either to send them help or permit them to take up arms themselves in defence of their country.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Apparently the Latins, perhaps after the battle of Lake Regillus (chap. xix. f.), had been denied the right to make war, save at the pleasure of the Romans.
                     </note>
                     <milestone n="9" unit="section"/>
@@ -1165,7 +1165,7 @@
                     The other consul marched against the Volsci. Lest he too might waste his time, he provoked the
                     <pb id="p.317"/>
                     enemy, chiefly by ravaging their lands, to bring their
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 494</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 494</note>
                     camp nearer and do battle with him.
                     <milestone n="11" unit="section"/>
                     In the plain between the camps the two armies formed their lines, each in front of its own stockade.
@@ -1186,11 +1186,11 @@
                     Attacking with his cavalry, he
                     <pb id="p.319"/>
                     made havoc of their centre, which, in extending
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 494</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 494</note>
                     their wings too widely, they had unduly weakened; and in the midst of the disorder the infantry assailed them. By a single rush the camp was captured and the war ended.
                     <milestone n="3" unit="section"/>
                     From the time of the fight at Lake Regillus no other battle of those days was more famous. The dictator entered the City in triumph. In addition to the customary honours a place was assigned him in the circus, for himself and his descendants, to witness the games, and a curule chair was put there for him.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         That this apparently unique distinction was actually conferred on the Valerii is confirmed by an honorary inscription (
                         <hi rend="italics">C.I.L.</hi>
                         i. 284).
@@ -1207,7 +1207,7 @@
                     Though a threefold success had thus been gained in the war, neither senators nor plebeians had been relieved of their anxiety respecting the outcome of
                     <pb id="p.321"/>
                     affairs at home, so great was the artfulness, as well
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 494</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 494</note>
                     as influence, with which the money-lenders had laid their plans to baffle not only the commons but even the dictator himself.
                     <milestone n="8" unit="section"/>
                     For after the return of the consul Vetusius, the first business which Valerius brought before the senate was in behalf of the victorious people, that the senate might declare its policy regarding the treatment of those bound over for debt.
@@ -1228,13 +1228,13 @@
                     Thereupon the senators became alarmed, fearing that if the army should be disbanded there would again be secret gatherings and conspiracies. And so, although the levy had been held by order of the dictator, yet because the men had been sworn in by the consuls they regarded the troops as bound by their oath, and, under the pretext that the Aequi
                     <pb id="p.323"/>
                     had recommenced hostilities, gave orders to lead the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 494</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 494</note>
                     legions out of the City.
                     <milestone n="2" unit="section"/>
                     This brought the revolt to a head. At first it is said, there was talk of killing the consuls, that men might thus be freed from their oath; but when it was explained to them that no sacred obligation could be dissolved by a crime, they took the advice of one Sicinius, and without orders from the consuls withdrew to the Sacred Mount, which is situated across the river Anio, three miles from the City.
                     <milestone n="3" unit="section"/>
                     —This version of the story is more general than that given by Piso, namely that the Aventine was the place of their secession.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livy appears to have had the other tradition in mind when he wrote iii. liv. 9.
                     </note>
                     <milestone n="4" unit="section"/>
@@ -1247,7 +1247,7 @@
                     Assuredly no hope was left save in harmony amongst the citizens, and this they concluded they must restore to the state by fair means or foul.
                     <milestone n="8" unit="section"/>
                     They therefore decided to send as an ambassador to the commons Agrippa Menenius, an eloquent man and dear to the plebeians as being one of themselves by birth.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         If Menenius was a plebeian, it is improbable that he was also, as Livy rather implies, a senator.
                         <hi rend="italics">cf.</hi>
                         i. 11 and note.
@@ -1257,7 +1257,7 @@
                     style of that age:
                     <milestone n="9" unit="section"/>
                     In the days when man's members
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 494</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 494</note>
                     did not all agree amongst themselves, as is now the case, but had each its own ideas and a voice of its own, the other parts thought it unfair that they should have the worry and the trouble and the labour of providing everything for the belly, while the belly remained quietly in their midst with nothing to do but to enjoy the good things which they bestowed upon it; they therefore conspired together that the hands should carry no food to the mouth, nor the mouth accept anything that was given it, nor the teeth grind up what they received.
                     <milestone n="10" unit="section"/>
                     While they sought in this angry spirit to starve the belly into submission, the members themselves and the whole body were reduced to the utmost weakness.
@@ -1265,7 +1265,7 @@
                     Hence it had become clear that even the belly had no idle task to perform, and was no more nourished than it nourished the rest, by giving out to all parts of the body that by which we live and thrive, when it has been divided equally amongst the veins and is enriched with digested food —that is, the blood.
                     <milestone n="12" unit="section"/>
                     Drawing a parallel from this to show how like was the internal dissension of the bodily members to the anger of the plebs against the Fathers, he prevailed upon the minds of his hearers.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The same apologue is found in Xenophon,
                         <hi rend="italics">Mem.</hi>
                         II. iii. 18; Cicero,
@@ -1277,7 +1277,7 @@
                     <milestone n="33" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Steps
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 493</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 493</note>
                     were then taken towards harmony, and a compromise was effected on these terms: the plebeians were to have magistrates of their own, who should be inviolable, and in them should lie the right to aid the people against the consuls, nor should any senator be permitted to take this magistracy.
                     <milestone n="2" unit="section"/>
                     And so they chose two
@@ -1285,11 +1285,11 @@
                     Gaius Licinius and Lucius Albinus. These appointed three others to be their colleagues. Amongst the latter,
                     <pb id="p.327"/>
                     Sicinius, the promoter of the revolt, was one, as all
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 493</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 493</note>
                     agree; the identity of the other two is less certain.
                     <milestone n="3" unit="section"/>
                     Some hold that there were only two tribunes elected on the Sacred Mount, and that the law of inviolability was enacted there.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         In either case the number was five from the year 471 on (lviii. 1), till it was raised to ten in the year 457.
                     </note>
                 </p>
@@ -1307,7 +1307,7 @@
                     overhung the wall.
                     <milestone n="8" unit="section"/>
                     Thereupon the townspeople
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 493</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 493</note>
                     raised a shout, mingled with such a wailing of women and children as is generally heard at the first alarm. This brought new courage to the Romans and covered the Volsci with confusion —as was natural when the city which they had come to relieve was taken.
                     <milestone n="9" unit="section"/>
                     Thus the men of Antium were routed, and Corioli was won. So completely did the glory of Marcius overshadow the consul's fame, that, were it not for the record on a bronze column of the treaty with the Latins which was struck by Spurius Cassius alone, in the absence of his colleague, men would have forgotten that Postumus Cominius had waged war on the Volsci.
@@ -1318,7 +1318,7 @@
                     <milestone n="11" unit="section"/>
                     This mediator and umpire of civil harmony, this ambassador of the senators to the people, this restorer of the plebs to Rome, did not leave sufficient wealth to pay for a funeral. He was buried by the commons, who contributed a
                     <hi rend="italics">sextans</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A
                         <hi rend="italics">sextans</hi>
                         was the sixth part of an as, or pound of copper.
@@ -1329,7 +1329,7 @@
                     <milestone n="34" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     The consuls next chosen were Titus
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 492-491</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 492-491</note>
                     Geganius and Publius Minucius. This year, though there was no war to occasion trouble from without and the breach at home had been healed, another and a much more serious misfortune befell the nation;
                     <milestone n="2" unit="section"/>
                     for first the price of corn went up, from men's failure to cultivate the fields during the withdrawal of the plebs; and this was followed by a famine, such as comes to a beleaguered city.
@@ -1337,7 +1337,7 @@
                     It would have meant starvation for the slaves, at least, and the plebeians, had not the consuls met the situation by sending
                     <pb id="p.331"/>
                     agents far and wide to buy up corn, not only to
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 492-491</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 492-491</note>
                     Etruria, northwards along the coast from Ostia, and south past the Volsci by sea, all the way to Cumae, but even to Sicily —so far afield had the enmity of Rome's neighbours driven her to seek for help.
                     <milestone n="4" unit="section"/>
                     When grain had been purchased at Cumae the ships were held back by Aristodemus, the tyrant, in satisfaction for the property of the Tarquinii, whose heir he was. Among the Volsci and Pomptini the agents could not even make any purchases, and they were actually in danger from the violence of the people.
@@ -1357,7 +1357,7 @@
                         Why do I see plebeian magistrates, why do I, after being sent beneath
                         <pb id="p.333"/>
                         the yoke and ransomed, as it were, from brigands,
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 492-491</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 492-491</note>
                         behold Sicinius in power?
                         <milestone n="10" unit="section"/>
                         Shall I endure these humiliations any longer than I must? When I would not brook Tarquinius as king, must I brook Sicinius? Let him secede now and call out the plebs; the way lies open to the Sacred Mount and the other hills. Let them seize grain from our fields as they did two years ago. Let them enjoy the corn-prices they have brought about by their own madness.
@@ -1371,19 +1371,19 @@
                     <milestone n="35" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Even the senate deemed the proposal too
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 491</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 491</note>
                     harsh, and the plebs were so angry that they almost resorted to arms. Starvation, they said, was now being employed against them, as though they were public enemies, and they were being defrauded of their food and sustenance; the imported corn, their only supply, unexpectedly bestowed on them by Fortune, was to be snatched from their mouths unless the tribunes should be delivered up in chains to Gnaeus Marcius, unless he should work his will on the persons of the Roman plebeians; in him a new executioner had risen up against them, who bade them choose between death and slavery.
                     <milestone n="2" unit="section"/>
                     When he came out from the Curia they would have set upon him, had not the tribunes, in the nick of time, appointed a day to try him; whereupon their anger subsided,
                     <pb id="p.335"/>
                     for every man saw that he was himself made his
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 491</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 491</note>
                     enemy's judge, and held over him the power of life and death.
                     <milestone n="3" unit="section"/>
                     With contempt at first Marcius heard the threats of the tribunes, alleging that the right to help, not to punish, had been granted to that office, and that they were tribunes not of the Fathers, but of the plebs. But the commons had risen in such a storm of anger that the Fathers had to sacrifice one man to appease them.
                     <milestone n="4" unit="section"/>
                     For all that, they resisted the hatred of their adversaries and called upon the private resources of the several senators, as well as the strength of the entire order. At first they tried, by posting their clients
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The clients were a class distinct both from the plebs and the patricians. To the latter they stood in the feudal relation of vassal to lord. They were perhaps originally citizens of conquered towns, and were recruited by manumissions and immigration.
                     </note>
                     here and there, to frighten persons from coming together for deliberation, in the hope that they might thereby break up their plans.
@@ -1395,7 +1395,7 @@
                     His host was Attius Tullius, at that time by far the foremost of the Volscian name and ever unfriendly to the Romans. And so, spurred on, the one by his inveterate hatred and
                     <pb id="p.337"/>
                     the other by fresh resentment, they took counsel
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 491</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 491</note>
                     together how they might make war on Rome.
                     <milestone n="8" unit="section"/>
                     They believed that it would be no easy matter to induce the Volscian commons to take up the arms which they had so often unluckily essayed; the destruction of their young men in oft-repeated wars, and finally by the plague, had, they supposed, broken their spirit; artifice must be invoked, where hate had grown dull with lapse of time, that they might find some new cause of anger to exasperate men's hearts.
@@ -1404,14 +1404,14 @@
                     <milestone n="36" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     It so happened that at Rome preparations were making to repeat the Great Games.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         the Roman Games (cf. I. xxxv. 9).
                     </note>
                     The reason of the repetition was as follows: at an early hour of the day appointed for the games, before the show had begun, a certain householder had driven his slave, bearing a yoke, through the midst of the circus, scourging the culprit as he went.
                     <milestone n="2" unit="section"/>
                     The games had then been begun, as though this circumstance had in no way affected their sanctity. Not long after, Titus Latinius, a plebeian, had a dream. He dreamt that Jupiter said that the leading dancer at the games
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         the slave who had been scourged through the circus.
                     </note>
@@ -1422,7 +1422,7 @@
                     Heavy was the price he paid for his hesitation, for a few days later he lost his son. Lest this sudden calamity should leave any uncertainty as to its cause in the mind of the wretched man, the same phantom appeared again before him in his dreams, and asked
                     <pb id="p.339"/>
                     him, as he thought, whether he had been sufficiently
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 491</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 491</note>
                     repaid for spurning the gods; for a greater recompense was at hand unless he went quickly and informed the consuls.
                     <milestone n="5" unit="section"/>
                     This brought the matter nearer home. Yet he still delayed and put off going, till a violent attack of illness suddenly laid him low.
@@ -1449,7 +1449,7 @@
                         guard lest they should commit one.
                         <milestone n="4" unit="section"/>
                         The disposition
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 491</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 491</note>
                         of our people is far more fickle than I could wish.
                         <milestone n="5" unit="section"/>
                         Many disasters have taught us the truth of this, since it is not to our own merit, but to your patience, that we owe our preservation. A great crowd of Volsci is now in Rome; there are games; the citizens will be intent upon the spectacle.
@@ -1468,7 +1468,7 @@
                     As they journeyed on in an almost unbroken line, Tullius, who had gone ahead, arrived before them at the source of the Ferentina. There, when any of their chief men arrived, he met them with words of complaint and
                     <pb id="p.343"/>
                     indignation. These leaders, eagerly drinking in the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 491</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 491</note>
                     words with which he ministered to their anger, he conducted and, thanks to their influence, the rest of the throng also, to a field which lay below the road.
                     <milestone n="2" unit="section"/>
                     There he launched out upon a speech like a general's harangue.
@@ -1488,14 +1488,14 @@
                     So, their spontaneous anger fanned to a
                     <pb id="p.345"/>
                     flame, they dispersed to their several homes, and,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 491</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 491</note>
                     every man arousing his own people, they brought about a revolt of the entire Volscian name.
                 </p>
                 <p>
                     <milestone n="39" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     As generals for this war the nations all
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 488</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 488</note>
                     agreed in choosing Attius Tullius and Gnaeus Marcius, the Roman exile, who inspired rather more hope than did his colleague.
                     <milestone n="2" unit="section"/>
                     This hope he by no means disappointed, so that it was easy to see that Rome's commanders were a greater source of strength to her than her armies were. Marching first to Circei, he drove out the Roman colonists from that city and turned it over, thus liberated, to the Volsci.
@@ -1513,12 +1513,12 @@
                     In this one point they were unable to agree, that the senate and the consuls saw no hope anywhere but in arms, while the plebs preferred anything to war. Spurius Nautius and Sextus
                     <pb id="p.347"/>
                     Furius were now consuls.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livy implies that they were not the immediate successors of the consuls for 491, and in fact he seems to have omitted two sets, Q. Sulpicius Camerinus and Serg. Larcius Flavus (490), and C. Julius Iulus and P. Pinarius Rufus (489), though at III. xxxiii. 1 and v. liv. 5 he reckons in these two years. The missing names are supplied by Dion. Hal. vii. 68 and viii. 1.
                     </note>
                     <milestone n="9" unit="section"/>
                     While they were
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 488</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 488</note>
                     reviewing their levies and distributing garrisons about the walls and the other places where they had seen fit to place pickets and sentries, a great multitude of people demanding peace first terrified them with their rebellious clamour, and then forced them to call the senate together and propose the sending of envoys to Gnaeus Marcius. The Fathers consented to propose it when they saw that the plebeians were growing discouraged, and ambassadors were sent to Marcius to treat for peace.
                     <milestone n="10" unit="section"/>
                     Stern was the answer they brought back.
@@ -1531,7 +1531,7 @@
                     <milestone n="40" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Then the married women gathered in large
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 488-487</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 488-487</note>
                     numbers at the house of Veturia, the mother of Coriolanus, and Volumnia, his wife.
                     <milestone n="2" unit="section"/>
                     Whether this was public policy or woman's fear I cannot find out; in any case they prevailed with them that both Veturia, an aged woman, and Volumnia should take the two little sons of Marcius and go with them to the camp of the enemy; and that, since the swords of the men could not defend the City, the women should defend it with their prayers and tears.
@@ -1539,7 +1539,7 @@
                     When they reached
                     <pb id="p.349"/>
                     the camp, and the word came to Coriolanus that a
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 488-487</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 488-487</note>
                     great company of women was at hand, at first, as might have been expected of one whom neither the nation's majesty could move, as represented in its envoys, nor the awfulness of religion, as conveyed to heart and eye by the persons of her priests, he showed even greater obduracy in resisting women's tears.
                     <milestone n="4" unit="section"/>
                     Then one of his friends, led by Veturia's conspicuous sadness to single her out from amongst the other women, as she stood between her son's wife and his babies, said:
@@ -1560,7 +1560,7 @@
                         long enslavement is in store.
                     </quote>
                     The embraces of his
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 488-487</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 488-487</note>
                     wife and children, following this speech, and the tears of the entire company of women, and their lamentations for themselves and their country, at last broke through his resolution.
                     <milestone n="10" unit="section"/>
                     He embraced his family and sent them back, and withdrew his forces from before the City. Having then led his army out of Rome's dominions he is said to have perished beneath the weight of resentment which this act caused, by a death which is variously described. I find in Fabius, by far the oldest authority, that Coriolanus lived on to old age.
@@ -1568,7 +1568,7 @@
                     At least he reports that this saying was often on his lips, that exile was a far more wretched thing when one was old. There was no envy of the fame the women had earned, on the part of the men of Rome —so
                     <milestone n="12" unit="section"/>
                     free was life in those days from disparagement of another's glory —and to preserve its memory the temple of Fortuna Muliebris was built and dedicated.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For another account of Coriolanus, see Dion. Hal. viii. 12 and viii. 17-56.
                     </note>
                 </p>
@@ -1586,7 +1586,7 @@
                     <milestone n="41" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Spurius Cassius and Proculus Verginius were
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 486-485</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 486-485</note>
                     then made consuls. A treaty was struck with the Hernici, and two-thirds of their land was taken from them. Of this the consul Cassius proposed to divide one half amongst the Latins and the other half amongst the plebeians.
                     <milestone n="2" unit="section"/>
                     To this gift he wished to add some part of that land which, he charged, was held by individuals, although it belonged to the state. Whereupon many of the Fathers, being themselves in possession of the land, took fright at the danger which threatened their interests. But the senators were also concerned on public grounds, namely, that the consul by his largesses should be building up an influence perilous to liberty.
@@ -1602,7 +1602,7 @@
                     Popular
                     <pb id="p.355"/>
                     favour now began to go over to the opponent and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 486-485</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 486-485</note>
                     vetoer of the land-legislation. Each consul then began, as if vying with the other, to pamper the plebs. Verginius said that he would permit lands to be assigned, provided they were assigned to none but Roman citizens.
                     <milestone n="8" unit="section"/>
                     Cassius, having by his proposed agrarian grants made a bid for the support of the allies and thereby lowered himself in the eyes of the Romans, desired to regain the affection of his fellow-citizens by another donation, and proposed that the money received from the Sicilian corn should be paid back to the people.
@@ -1621,7 +1621,7 @@
                     <milestone n="42" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     It was not long before the people forgot
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 484-483</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 484-483</note>
                     the anger they had felt against Cassius. The inherent attractiveness of the agrarian legislation appealed to them on its own account, when its author had been removed, and their desire for it was enhanced by the meanness of the Fathers, who after the defeat in that year of the Volsci and the Aequi defrauded the soldiers of their booty.
                     <milestone n="2" unit="section"/>
                     Whatever was taken from the enemy Fabius sold and placed the proceeds in the public treasury. The Fabian name was hateful to the plebs, on the last consul's account; nevertheless the patricians succeeded in procuring the election of Caeso Fabius to that office, along with Lucius Aemilius.
@@ -1631,7 +1631,7 @@
                     Yet more of the enemy perished in flight than in the battle, so relentlessly did the cavalry pursue their routed forces.
                     <milestone n="5" unit="section"/>
                     Castor's temple was dedicated the same year, on the fifteenth of July. It had been vowed during the Latin war by Postumius, the dictator. His son, being made duumvir for this special purpose, dedicated it.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The temple was erected in honour of both Castor and Pollux, but was commonly referred to by the name of the former alone (
                         <hi rend="italics">e.g.</hi>
                         Cicero,
@@ -1646,13 +1646,13 @@
                     The desires of the plebs were this year again excited by the charms of the land-law. The tribunes of the plebs endeavoured to recommend their democratic office by a democratic law, while the senators, who thought there was frenzy enough and to spare in the populace, without rewarding it, shuddered at
                     <pb id="p.359"/>
                     the thought of land-grants and encouragements to
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 484-483</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 484-483</note>
                     rashness.
                     <milestone n="7" unit="section"/>
                     The most strenuous of leaders were at hand for the senatorial opposition, in the persons of the consuls. Their party was therefore victorious and not only won an immediate success but, besides, elected as consuls for the approaching year Marcus Fabius, Caeso's brother, and one whom, on account of the prosecution of Spurius Cassius, the people hated even more, namely, Lucius Valerius.
                     <milestone n="8" unit="section"/>
                     This year also there was a conflict with the tribunes. Nothing came of the legislation, and its supporters fell into contempt, from boasting of a measure which they could not carry through. The Fabii were thence-forward held in great repute, after their three successive consulships, which had all without interruption been subjected to the proof of struggles with the tribunes; accordingly the office, as if well invested, was permitted to remain some time in that family.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For the next four years, making seven successive years in all, the Fabii were represented in the consulate.
                     </note>
                     <milestone n="9" unit="section"/>
@@ -1667,7 +1667,7 @@
                     <milestone n="43" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Quintus Fabius and Gaius Julius were
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 482-480</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 482-480</note>
                     then made consuls. This year there was no less discord at home, and the menace of war was greater. The Aequi took up arms, and the Veientes even made a foray into Roman territory. During the increasing anxiety occasioned by these campaigns Caeso Fabius and Spurius Furius were elected to the consulship.
                     <milestone n="2" unit="section"/>
                     Ortona, a Latin city, was being besieged by the Aequi; while the Veientes, who by this time had their fill of rapine, were threatening to attack Rome itself.
@@ -1683,7 +1683,7 @@
                     For when the consul, besides the many other instances of good generalship which he displayed in
                     <pb id="p.363"/>
                     preparing for the war and in his conduct of it, had so
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 482-480</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 482-480</note>
                     drawn up the battle-line that a charge of the cavalry alone sufficed to rout the enemy's army, the foot refused to pursue the flying foe;
                     <milestone n="8" unit="section"/>
                     nor could even their own sense of guilt —to say nothing of the exhortation of their hated general, —nor even the thought of the immediate disgrace to all, and the danger they must presently incur if the enemy should recover his courage, compel them to quicken their pace, or, if nothing else, to stand in their ranks.
@@ -1698,13 +1698,13 @@
                     <milestone n="44" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     This year also had a tribune who advocated
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 480</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 480</note>
                     a land-law, Tiberius Pontificius. He set out on the same path that Spurius Licinius had trodden, as though Licinius had been successful, and for a time obstructed the levy.
                     <milestone n="2" unit="section"/>
                     The senators were again thrown into consternation, but Appius Claudius told them that the tribunician power had been overcome the year before, actually for the time being, and potentially
                     <pb id="p.365"/>
                     for ever, since a way had been discovered for
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 480</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 480</note>
                     employing its resources to its own undoing.
                     <milestone n="3" unit="section"/>
                     For there would always be some tribune who would be willing to gain a personal victory over his colleague, and obtain the favour of the better element, while doing the nation a service. There would be a number of tribunes, if a number should be needed, who would be ready to help the consuls; and a single one was enough, though opposed to all the rest.
@@ -1722,7 +1722,7 @@
                     And indeed the leading men in the councils of all the Etrurian peoples were wrathfully complaining that there would be no end to the power of the Romans unless factional quarrels should set them to fighting amongst themselves. They asserted that this was the only poison, the only decay which had been found to work upon
                     <pb id="p.367"/>
                     opulent states, so as to make great empires transitory.
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 480</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 480</note>
                     <milestone n="9" unit="section"/>
                     For a long time the Romans had withstood this evil, thanks partly to the prudence of the senate, partly to the patience of the plebs; but they had now come to a crisis. Two states had been created out of one: each faction had its own magistrates, its own laws.
                     <milestone n="10" unit="section"/>
@@ -1740,7 +1740,7 @@
                     and bring them to their senses.
                     <milestone n="3" unit="section"/>
                     Their enemies the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 480</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 480</note>
                     Veientes and the other Etruscans were for that reason the more in haste to act; they attempted to provoke the Romans to fight, at first by riding up to their camp and challenging them to come out, and finally, when they gained nothing by this, by shouting insults both at the consuls themselves and at the army.
                     <milestone n="4" unit="section"/>
                     They said that their pretended want of harmony amongst themselves had been resorted to in order to conceal their fear, and that the consuls distrusted the courage of their men even more than their loyalty; it was a strange kind of mutiny where armed men were silent and inactive.
@@ -1750,7 +1750,7 @@
                     they were unwilling that the patricians, that the consuls should obtain a success; hatred of the foe contended in their bosoms with hatred of their fellow-citizens. At length the former feeling got the upper hand, so proud and insolent was the jeering of the enemy.
                     <milestone n="7" unit="section"/>
                     They gathered in crowds at the praetorium,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The headquarters of the consul, who was originally called praetor.
                     </note>
                     demanded battle, requested that the signal should be given. The consuls, as though considering the matter, put their heads together and conferred for a long time.
@@ -1758,7 +1758,7 @@
                     They desired to fight, but it was needful to keep back their desire and conceal it, that by opposition and delay they might stimulate to fury the already eager soldiery. The men were therefore told that the
                     <pb id="p.371"/>
                     thing was premature, that the time for battle had
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 480</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 480</note>
                     not yet come; that they must keep within the camp.
                     <milestone n="9" unit="section"/>
                     Then the consuls issued an order to abstain from fighting, declaring that if any man fought without orders they should treat him as an enemy. Dismissed with these words, the less inclination the soldiers discovered in the consuls the greater became their own eagerness for the fray.
@@ -1777,7 +1777,7 @@
                     There was a centurion named
                     <pb id="p.373"/>
                     Marcus Flavoleius, who had been among the foremost
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 480</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 480</note>
                     in demanding battle.
                     <quote>I will return victorious from the field, Marcus Fabius,</quote>
                     he cried, and invoked the wrath of Father Jupiter, Mars Gradivus, and the other gods, if he failed to keep his vow. The same pledge was then taken in order by the entire army, each man invoking its penalties upon himself.
@@ -1798,7 +1798,7 @@
                     The Fabian clan was
                     <pb id="p.375"/>
                     conspicuous among the foremost, a spectacle and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 480</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 480</note>
                     encouragement to their fellow-citizens. One of them, the Quintus Fabius who had been consul three years before, was leading the attack on the closely marshalled Veientes, when a Tuscan, exulting in his strength and skill at arms, caught him unawares in the midst of a crowd of his enemies and drove his sword through his breast. As the blade was withdrawn Fabius fell headlong upon his wound.
                     <milestone n="5" unit="section"/>
                     It was but the fall of one man, but both armies felt it; and the Romans were giving way at that point, when Marcus Fabius the consul leaped over the prostrate corpse and, covering himself with his target, cried,
@@ -1823,7 +1823,7 @@
                     For as Quintus Fabius had done on the
                     <pb id="p.377"/>
                     other flank, so here the consul Manlius was personally
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 480</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 480</note>
                     leading the attack upon the enemy, whom he had almost routed, for his soldiers followed him valiantly, when he was severely wounded and retired from the fighting line.
                     <milestone n="3" unit="section"/>
                     His men believed him to be dead, and faltered; and they would have yielded the position, had not the other consul ridden up at a gallop, with some few troops of horse, and calling out that his colleague was alive, and that he himself had defeated and routed the other wing and was come to help them, in that way put a stop to their wavering.
@@ -1835,7 +1835,7 @@
                     In desperation at this turn the Etruscans had been inflamed to the point rather of madness than of recklessness. For when, as they rushed in whatever direction there seemed a prospect of escape, they had made several charges to no purpose, one band of youths made a dash at the consul himself, whose arms made him
                     <pb id="p.379"/>
                     conspicuous. Their first discharge of javelins was parried
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 480</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 480</note>
                     by the soldiers who surrounded him, but after that there was no withstanding their violence.
                     <milestone n="7" unit="section"/>
                     The consul fell, mortally wounded, and all about him fled. The Etruscans grew more reckless than before; the Romans were driven, quaking with terror, right across the camp, and their case would have been desperate, had
@@ -1851,14 +1851,14 @@
                     Nor was he unmindful of that policy which he had adopted in the beginning of his consulship, of winning the affections of the plebs, but billeted the
                     <pb id="p.381"/>
                     wounded soldiers on the patricians, to be cared for.
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 480</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 480</note>
                     To the Fabii he assigned the largest number, nor did they anywhere receive greater attention. For this the Fabii now began to enjoy the favour of the people, nor was this end achieved by aught but a demeanour wholesome for the state.
                 </p>
                 <p>
                     <milestone n="48" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     The senators were now therefore not
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 479</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 479</note>
                     more forward than the plebeians in choosing Caeso Fabius to be consul, along with Titus Verginius. On taking office his first concern was neither war nor the raising of troops nor anything else, save that the prospect of harmony which had been already partly realized should ripen at the earliest possible moment into a good understanding between the patricians and the plebs.
                     <milestone n="2" unit="section"/>
                     He therefore proposed at the outset of his term that before one of the tribunes should rise up and advocate a land-law, the Fathers themselves should anticipate him by making it their own affair and bestowing the conquered territory upon the plebs with the utmost impartiality; for it was right that they should possess it by whose blood and toil it had been won.
@@ -1872,7 +1872,7 @@
                     But the Veientes inflicted a defeat on the Romans owing to the rashness of the other consul; and the
                     <pb id="p.383"/>
                     army would have been destroyed if Caeso Fahius
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 479</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 479</note>
                     had not come, in the nick of time, to its rescue. Thenceforward there was neither peace nor war with the Veientes, but something very like freebooting.
                     <milestone n="6" unit="section"/>
                     In the face of the Roman legions they would retreat into their city; when they perceived the legions to be withdrawn they would make raids upon the fields, evading war by a semblance of peace, and peace in turn by war. Hence it was impossible either to let the whole matter go or to end it. Other wars, too, were immediately threatening —like the one with the Aequi and the Volsci, who would observe peace only so long as the suffering involved in their latest defeat was passing away, —or were soon to be begun, by the always hostile Sabines and all Etruria.
@@ -1890,20 +1890,20 @@
                     The consul came out from the senate-house, and escorted by a column of the Fabii, who had halted in the vestibule of the curia while awaiting
                     <pb id="p.385"/>
                     the senate's decision, returned to his house. After
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 479</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 479</note>
                     receiving the command to present themselves armed next day at the consul's threshold, they dispersed to their homes.
                 </p>
                 <p>
                     <milestone n="49" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     The news spreads to every part of the City
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 479-478</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 479-478</note>
                     and the Fabii are lauded to the skies. Men tell how a single family has taken upon its shoulders the burden of a state, how the war with Veii has been turned over to private citizens and private arms.
                     <milestone n="2" unit="section"/>
                     If there were two other clans of equal strength in the City, the one might undertake the Volsci, the other the Aequi, and the Roman People might enjoy the tranquillity of peace, while all the neighbouring nations were being subdued. On the following day the Fabii arm and assemble at the designated place.
                     <milestone n="3" unit="section"/>
                     The consul, coming forth in the cloak of a general,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The crimson
                         <hi rend="italics">paludamentum.</hi>
                     </note>
@@ -1919,7 +1919,7 @@
                         in your valour, go with good
                         <pb id="p.387"/>
                         fortune, and crown your undertaking with success as
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 479-478</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 479-478</note>
                         great!
                     </quote>
                     <milestone n="7" unit="section"/>
@@ -1928,7 +1928,7 @@
                     that noble band with blessings and prosperity, and restore them soon in safety to their native land and their kindred. Their prayers were uttered in vain.
                     <milestone n="9" unit="section"/>
                     Setting out by the Unlucky Way,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A name afterwards given to the arch from the result of this expedition.
                     </note>
                     the right arch of the Porta Carmentalis, they came to the river Cremera, a position which seemed favourable for the erection of a fort.
@@ -1943,14 +1943,14 @@
                     And so they were driven back upon Saxa Rubra, where they had their camp, and sued for peace. It
                     <pb id="p.389"/>
                     was granted, but their instinctive fickleness caused
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 479-478</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 479-478</note>
                     them to weary of the pact before the Roman garrison was withdrawn from the Cremera.
                 </p>
                 <p>
                     <milestone n="50" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Again the Fabii were pitted against the people
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 477</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 477</note>
                     of Veii. No preparations had been made for a great war, yet not only were raids made upon farming lands, and surprise attacks upon raiding parties, but at times they fought in the open field and in serried ranks;
                     <milestone n="2" unit="section"/>
                     and a single clan of the Roman People often carried off the victory from that most mighty state, for those days, in all Etruria.
@@ -1964,7 +1964,7 @@
                     They had scattered this way and that and were seizing the flocks, which had dispersed in all directions, as they do if terrified,
                     <pb id="p.391"/>
                     when suddenly the ambush rose up, and enemies were
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 477</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 477</note>
                     in front and on every side of them.
                     <milestone n="7" unit="section"/>
                     First the shout which echoed all along the Etruscan line filled them with consternation, and then the javelins began to fall upon them from every quarter; and as the Etruscans drew together and the Romans were now fenced in by a continuous line of armed men, the harder the enemy pressed them the smaller was the space within which they themselves were forced to
@@ -1976,7 +1976,7 @@
                     There they at first made a stand; presently, when their superior position had afforded them time to breathe and to collect their spirits after so great a fright, they actually routed the troops which were advancing to dislodge them; and a handful of men, with the aid of a good position, were winning the victory, when the Veientes who had been sent round by the ridge emerged upon the crest of the hill, thus giving the enemy the advantage again.
                     <milestone n="11" unit="section"/>
                     The Fabii were all slain to a man, and their fort was stormed. Three hundred and six men perished, as is generally agreed; one, who was little more than a boy in years,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This was that Fabius, according to the legend, who was to become consul ten years later! See III. X.
                     </note>
                     survived to maintain the Fabian stock, and so to afford the very greatest help to the Roman People in its dark hours, on many occasions, at home and in the field.
@@ -1985,11 +1985,11 @@
                     <milestone n="51" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     When this disaster befel, Gaius Horatius
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 477-476</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 477-476</note>
                     and Titus Menenius had begun their consulship.
                     <pb id="p.393"/>
                     Menenius was at once sent out to confront the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 477-476</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 477-476</note>
                     Etruscans, elated by their victory. Again the Roman arms were unsuccessful, and Janiculum was taken by the enemy.
                     <milestone n="2" unit="section"/>
                     They would also have laid siege to Rome, which was suffering not only from war but from a scarcity of corn —for the Etruscans had crossed the Tiber —had not the consul Horatius been recalled from the Volscian country; and so nearly did that invasion approach the very walls of the City that battles were fought first at the temple of Hope, where the result was indecisive, and again at the Colline Gate.
@@ -2007,7 +2007,7 @@
                     Forthwith the
                     <pb id="p.395"/>
                     consul himself crossed the Tiber and fortified a camp
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 477-476</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 477-476</note>
                     beneath the hill. Next day at dawn, partly because he was emboldened by the successful battle of the day before, but more because the want of corn drove him to the rashest kind of measures, provided only they were speedy, he was
                     <milestone n="8" unit="section"/>
                     so reckless as to lead his army up Janiculum to the enemy's camp, and after suffering a more disgraceful repulse than he had administered the day before, owed his own rescue and that of his army to the arrival of his colleague.
@@ -2018,13 +2018,13 @@
                     <milestone n="52" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     There came to the City with the return of
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 476-475</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 476-475</note>
                     peace a relaxation in the corn-market; for not only was grain imported from Campania, but now that each had ceased to fear for his own future want, men brought out the stores which they had concealed.
                     <milestone n="2" unit="section"/>
                     As a consequence of plenty and idleness a spirit of licence again began to affect men's minds, and they began to seek at home for the old troubles which were no longer to be met with abroad. The tribunes roused the plebs to madness with their usual poison, a land-law. The Fathers resisted, but the tribunes incited the people against them, not as a body merely, but as individuals.
                     <milestone n="3" unit="section"/>
                     Quintus Considius and Titus Genucius, the proposers of the agrarian measure, cited Titus Menenius to appear for trial.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         What was the charge? Perhaps that he had failed to support the Fabii; perhaps that he had lost Janiculum by his incompetence.
                     </note>
                     He had incurred the dislike of the plebs owing to the loss of the outpost on the Cremera, when he as consul had occupied a permanent camp not far away;
@@ -2032,7 +2032,7 @@
                     and this unpopularity was his undoing, though the senators exerted themselves in his behalf no less
                     <pb id="p.397"/>
                     than they had done for Coriolanus, and though the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 476-475</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 476-475</note>
                     favour enjoyed by his father Agrippa had not yet passed away.
                     <milestone n="5" unit="section"/>
                     In respect to the penalty the tribunes showed restraint; though they had charged him with a capital offence, they fixed the fine of the condemned at two thousand
@@ -2053,7 +2053,7 @@
                     Domestic strife was at an end; but war broke out with the Veientes, with whom the Sabines had united their arms. Publius Valerius the consul was
                     <pb id="p.399"/>
                     dispatched to Veii with an army to which had been
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 476-475</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 476-475</note>
                     added auxiliaries from the Latins and the Hernici. He at once advanced upon the Sabine camp, which had been established in front of the walls of their allies, and threw the enemy into such confusion that, while they were running out in small groups, some one way and some another, to repel the attack of the Romans, he captured the gate against which he had directed his first assault.
                     <milestone n="2" unit="section"/>
                     What followed within the stockade was a massacre rather than a battle. The sounds of confusion in the camp penetrated even to the city, and the frightened inhabitants ran hastily to their weapons, as though Veii had been surprised.
@@ -2069,14 +2069,14 @@
                     <milestone n="6" unit="section"/>
                     <pb id="p.401"/>
                     There was no species of disaster or indignity which
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 476-475</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 476-475</note>
                     was not visited upon the Volsci, yet they could not be forced into giving battle.
                 </p>
                 <p>
                     <milestone n="54" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Lucius Furius and Gaius Manlius were the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 474-473</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 474-473</note>
                     next consuls. To Manlius fell the command against the Veientes. But there was no war; a truce for forty years was granted, at their solicitation, and corn and a money-indemnity were exacted of them.
                     <milestone n="2" unit="section"/>
                     The foreign peace was immediately succeeded by quarrels at home. The land-law with which the tribunes goaded the plebs excited them to the pitch of madness. The consuls, not a jot intimidated by the condemnation of Menenius, not a jot by the danger of Servilius, resisted the measure with the utmost violence.
@@ -2093,13 +2093,13 @@
                     he did to their beck and call;
                     <milestone n="6" unit="section"/>
                     if he should bestir
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 474-473</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 474-473</note>
                     himself, if he should show consideration for the patricians, if he should believe that the state comprised any other element than the plebs —let him call to mind the exile of Gnaeus Marcius, the condemnation of Menenius and his death.
                     <milestone n="7" unit="section"/>
                     Fired by these speeches, the senators began to hold councils, no longer publicly, but in private, where the people could not learn their plans. In these deliberations there was but one guiding principle, that by fair means or foul the defendants must be got off. The more truculent a suggestion was, the greater was the favour it evoked, and an agent was not wanting for the most daring crime.
                     <milestone n="8" unit="section"/>
                     Well then, on the day of the trial the plebeians were in the Forum, on tiptoe with expectation. At first they were filled with amazement because the tribune did not come down;
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         from his home: the Forum was lower than the residential parts of Rome.
                     </note>
@@ -2114,7 +2114,7 @@
                     <milestone n="55" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Immediately following this pernicious victory
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 473</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 473</note>
                     a levy was proclaimed, which the timorousness of the tribunes allowed the consuls to push through without ever a veto.
                     <milestone n="2" unit="section"/>
                     But this time the commons were fairly roused to anger, more by the silence of the tribunes than by the consuls' power. They declared that it was all up with their liberty; that men had gone back to their old ways; that with Genucius the tribunician power had suffered death and burial.
@@ -2122,7 +2122,7 @@
                     They must adopt another course and other plans to resist the patricians; but the only way was this: that the plebs should undertake their own defence, since they had no one else to help them. Twenty-four lictors were all the retinue of the consuls, and even these were plebeians. Nothing was more contemptible or weaker, if there were any to contemn; it was every man's own imagination that made them great and awe-inspiring.
                     <milestone n="4" unit="section"/>
                     They had incited one another with arguments of this sort when the consuls sent a lictor to arrest Volero Publilius, a plebeian, who, on the ground that he had been a centurion, denied their right to make him a common soldier.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livy mentions another instance of a conscript's objecting to serve in a rank lower than that he had previously held, in XLII. xxxiii. 3; but it does not appear that the men had any prescriptive right in the matter.
                     </note>
                     Volero called upon the tribunes.
@@ -2138,7 +2138,7 @@
                     Then Volero, who was himself a powerful man and was helped by those he had called to his assistance, beat off the lictor and, choosing the place where the uproar of his sympathisers
                     <pb id="p.407"/>
                     was the angriest, plunged into the thick of the crowd,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 473</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 473</note>
                     calling out,
                     <quote>
                         I appeal, and implore the protection of the plebs; help, citizens!
@@ -2158,18 +2158,18 @@
                     <milestone n="56" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Volero, having been taken into favour by
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 472-471</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 472-471</note>
                     the plebs, was at the next election made plebeian tribune for that year which had Lucius Pinarius and Publius Furius for consuls.
                     <milestone n="2" unit="section"/>
                     And contrary to the expectation of all, who believed that he would employ his tribuneship in persecuting the consuls of the preceding year, he set the general welfare above his private grievance, and without attacking the consuls by so much as a word, brought a bill before the people providing that plebeian magistrates should be chosen in the tribal assembly.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         It is not clear how Livy supposed that these officials had formerly been elected. Perhaps Volero merely aimed at securing by legal sanction what the state had always recognized in practice, viz. that plebeian magistrates should be chosen by none but plebeians. But this was not Livy's view, as is clear from lviii. 1.
                     </note>
                     <milestone n="3" unit="section"/>
                     It was no trivial matter which he proposed under this form, which at
                     <pb id="p.409"/>
                     first sight appeared so harmless, but one that
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 472-471</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 472-471</note>
                     completely deprived the patricians of the power of using their clients' votes to select what tribunes they liked.
                     <milestone n="4" unit="section"/>
                     This measure was extremely welcome to the plebs; the Fathers opposed it with all their might, yet the only effectual resistance —to wit, a veto by some member of the tribunician college —neither consuls nor nobles were sufficiently influential to command. Nevertheless the legislation, which its very importance rendered difficult, was drawn out by party strife to the end of the year.
@@ -2188,12 +2188,12 @@
                     <pb id="p.411"/>
                     <quote>
                         Since speech is not so easy for me, Quirites, as it is
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 472-471</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 472-471</note>
                         to make good what I have spoken, be at hand tomorrow. I will either die here in your sight or carry through the law.
                     </quote>
                     <milestone n="10" unit="section"/>
                     The tribunes were the first on the scene next day, and possessed themselves of the rostra;
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The word
                         <hi rend="italics">templum</hi>
                         might be applied to any space duly marked off by augural ceremonies. Here it means the speakers' platform in the
@@ -2214,7 +2214,7 @@
                     Still, Appius was obstinately holding out, despite the fury of the tempest, and a sanguinary battle would have ensued, if Quinctius, the other consul, had not entrusted the senators of consular rank with the task of getting his colleague out
                     <pb id="p.413"/>
                     of the Forum, by force, if they could not achieve
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 472-471</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 472-471</note>
                     it otherwise; while he himself now appealed to the raging populace with soothing entreaties, and now besought the tribunes to dismiss the council.
                     <milestone n="16" unit="section"/>
                     Let them give their anger time: time would not rob them of their power, but would add wisdom to their strength; the Fathers would be subject to the people, and the consul to the Fathers.
@@ -2223,7 +2223,7 @@
                     <milestone n="57" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     It was hard for Quinctius to still the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 471</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 471</note>
                     plebs; much harder for the senators to quiet the other consul. At length the council of the plebs was adjourned, and the consuls convened the senate.
                     <milestone n="2" unit="section"/>
                     At this meeting alternating hope and fear gave rise to conflicting opinions. But in proportion as their passions cooled with the lapse of time and gave way to deliberation, their minds more and more revolted from the struggle; insomuch that they passed a vote of thanks to Quinctius, because it was due to him that the quarrel had been abated.
@@ -2236,7 +2236,7 @@
                     <milestone n="58" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Then
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 471</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 471</note>
                     for the first time tribunes were elected in the tribal assembly. That their number was also increased by three, as if there had been only two before, is stated by Piso.
                     <milestone n="2" unit="section"/>
                     He also gives the names of the tribunes: Gnaeus Siccius, Lucius Numitorius, Marcus Duillius, Spurius Icilius, Lucius Maecilius.
@@ -2245,7 +2245,7 @@
                     While Rome was thus distracted, the Volsci and the Aequi began war.
                     <milestone n="3" unit="section"/>
                     They had laid waste the fields in order that the plebeians, if they should secede, might find a refuge with them.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         To
                         <hi rend="italics">lay waste</hi>
                         Roman lands they must first
@@ -2264,7 +2264,7 @@
                     Sloth, idleness, neglect, and obstinacy were in all they did. Neither shame nor fear restrained them. If he wished the column to advance more rapidly they deliberately retarded their pace;
                     <pb id="p.417"/>
                     if he stood by to encourage their work, they would
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 471</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 471</note>
                     all relax the industry they had manifested of their own accord.
                     <milestone n="8" unit="section"/>
                     In his presence they sunk their gaze; as he passed by they cursed him under their breath; till that proud spirit, which the hatred of the plebs had never broken, was at times disturbed.
@@ -2286,7 +2286,7 @@
                     These things in no wise daunted the haughty spirit of Appius. But when he would have gone further and have vented his rage upon the army, and was issuing orders for an assembly, the lieutenants and tribunes gathered hurriedly about
                     <pb id="p.419"/>
                     him and warned him upon no account to seek a test
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 471</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 471</note>
                     of his authority, when its effectiveness all depended on the goodwill of those obeying it.
                     <milestone n="5" unit="section"/>
                     The men, they reported, were saying that they would not go to be harangued, and everywhere voices were overheard demanding that the camp be removed from Volscian territory. The victorious enemy had a little while before been almost in their gates and on their wall, and a great disaster was not merely to be apprehended, but was openly hovering before their eyes.
@@ -2302,11 +2302,11 @@
                     Asking them all in turn where their arms and where their standards were, he caused the unarmed soldiers and
                     <pb id="p.421"/>
                     the standard-bearers who had lost their standards,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 471</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 471</note>
                     and in
                     <milestone n="11" unit="section"/>
                     addition to these the centurions and the recipients of a double ration
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This was granted in recognition of unusual valour. So the Victoria Cross is accompanied by a small stipend.
                     </note>
                     who had quitted their ranks, to be scourged with rods and beheaded; of the remaining number every tenth man was selected by lot for punishment.
@@ -2331,7 +2331,7 @@
                     <milestone n="61" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     A stormier year succeeded, under the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 470</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 470</note>
                     consuls Lucius Valerius and Titus Aemilius, partly owing to strife between the classes about the land-law, partly to the trial of Appius Claudius.
                     <milestone n="2" unit="section"/>
                     He was the bitterest opponent of the law, and was upholding the claim of those who had possession of the public domain as if he had been a third consul, when Marcus Duillius and Gnaeus Siccius lodged an accusation against him.
@@ -2347,7 +2347,7 @@
                     Once only did he plead his cause, in the tone he had been wont to use on all occasions, namely, that of a
                     <pb id="p.425"/>
                     prosecutor; and so completely did his firmness
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 470</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 470</note>
                     overwhelm the tribunes and the commons that they themselves voluntarily adjourned the trial to a later day, and then allowed the affair to drag.
                     <milestone n="8" unit="section"/>
                     The interval was not very long, but before the appointed day came round Appius fell sick and died.
@@ -2372,7 +2372,7 @@
                     <milestone n="63" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     While these wars were going on and there
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 469</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 469</note>
                     was still discord at home, Titus Numicius Priscus and Aulus Verginius were elected consuls.
                     <milestone n="2" unit="section"/>
                     It was clear that the plebs would endure no further postponement of the land-law, and were preparing to use violent measures, when the approach of a Volscian army was announced by the smoke which rose from burning farmhouses and by the flight of the country people. By this circumstance the insurrection, which was already matured and on the point of breaking out, was repressed.
@@ -2392,11 +2392,11 @@
                     <milestone n="64" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Towards the close of the year there was a
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 469-468</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 469-468</note>
                     brief season of peace, but, as always on other occasions, a peace distracted by the strife of patricians and plebeians.
                     <milestone n="2" unit="section"/>
                     The angry plebs refused to take part in the consular elections:
-                    <note anchored="yes" place="unspecified">Held in the centuriate comitia.</note>
+                    <note anchored="true" place="unspecified">Held in the centuriate comitia.</note>
                     by the votes of the patricians and their clients Titus Quinctius and Quintus Servilius were chosen consuls. They experienced a year like the preceding one: dissensions, to begin with, then a foreign war and tranquillity.
                     <milestone n="3" unit="section"/>
                     The Sabines executed a rapid march across the Crustuminian plains, bringing fire and sword to the country about the river Anio. When almost at the Colline Gate and the City walls they were beaten back, yet they carried off immense spoils of men and cattle.
@@ -2412,11 +2412,11 @@
                     He therefore gave the signal for the recall. For a few
                     <pb id="p.431"/>
                     days both sides rested, as if they had tacitly agreed
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 469-468</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 469-468</note>
                     on a truce. Meanwhile a great force of men came in from all their tribes to the camp of the Volsci and Aequi.
                     <milestone n="9" unit="section"/>
                     They made no question but that the Romans, if they had perceived them, would retreat in the night, and accordingly at about the third watch
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The Romans divided the night into four equal watches, beginning at sunset.
                     </note>
                     they came to attack the camp.
@@ -2429,7 +2429,7 @@
                     <milestone n="65" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     As soon as it was light, the Romans, who
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 468</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 468</note>
                     were fresh and had enjoyed a good sleep, were led out into line of battle.
                     <milestone n="2" unit="section"/>
                     The Volsci, weary from standing and from loss of sleep, were driven back at the first assault; though it was rather a retreat than a rout, for behind them were hills, to which, under cover of the first line, they withdrew safely and in good order. The consul ordered a halt when his army reached rising ground. The infantry could hardly be restrained, noisily demanding permission to press on after the fleeing enemy.
@@ -2437,7 +2437,7 @@
                     Still more ardent were the cavalry. They swarmed about the general, and shouted that
                     <pb id="p.433"/>
                     they were going on before the standards. While the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 468</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 468</note>
                     consul was hesitating, feeling certain of the valour of his troops but doubtful of the ground, the men cried out that they were going, and instantly made good their word. Planting their spears in the ground, that they might be the lighter for the ascent, they went up at a run.
                     <milestone n="4" unit="section"/>
                     The Volsci, having discharged their javelins at the first onset, picked up the stones which lay about under their feet, and flung them at their enemies as they mounted. Confused by this rain of missiles from above, the left wing of the Romans was nearly overwhelmed, and had already begun to retreat, when the consul, reproaching them at once with rashness and with cowardice, succeeded in shaming them out of their fear.
@@ -2449,7 +2449,7 @@
                     After a blockade of a few days the place surrendered; the besiegers had not delivered any new attack, but the Volsci had lost heart from the moment of their unsuccessful battle and the capture of their camp.
                 </p>
                 <pb id="p.435"/>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

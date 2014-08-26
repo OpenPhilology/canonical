@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>The History of Rome by Titus Livius, books thirty-seven to forty-five - 42</title>
@@ -17,8 +17,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:NEH">The National Endowment for the Humanities</funder>
-            </titleStmt>
-            <extent>about 1.4 Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -49,20 +49,20 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter" n="chunk"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter" n="chunk"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English </language>
-                <language id="greek">Greek </language>
-                <language id="la">Latin </language>
-                <language id="fr">French </language>
+                language ident="en">English </language>
+                language ident="greek">Greek </language>
+                language ident="la">Latin </language>
+                language ident="fr">French </language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>4/5/2006</date>
                 <respStmt>
@@ -71,12 +71,12 @@
                 </respStmt>
                 <item>initial file </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
             <pb n="1958" id="p.1958"/>
-            <div1 part="N" sample="complete" org="uniform" n="42" type="book">
+            <div part="N" sample="complete" org="uniform" n="42" type="book">
                 <head>Book XLII.</head>
                 <argument>
                     <p>
@@ -251,7 +251,7 @@ Corsicans and Ligurians.
                     <milestone n="11" unit="section"/>
                     One hundred thousand
                     <hi rend="italics">asses</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         322
                         <hi rend="italics">l.</hi>
                         18
@@ -602,7 +602,7 @@ Corsicans and Ligurians.
                     <milestone n="6" unit="section"/>
                     This embassy was highly pleasing to the senate; and they ordered, that Cneius Sicinius, the praetor, should hire a furnished house for the accommodation of the young prince and his attendants. Then that which they sought was given to ambassadors of the Thracians, who were disputing among themselves, and requesting the friendship and alliance of the Roman people, and presents of the amount of two thousand
                     <hi rend="italics">asses</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         6
                         <hi rend="italics">l.</hi>
                         9
@@ -2005,7 +2005,7 @@ Corsicans and Ligurians.
                     There an account was received that Atlesbis, a petty prince of Thrace, and Corragus, an officer belonging to Eumenes, had made an inroad into the dominions of Cotys, and seized on the district called Marene.
                     <milestone n="5" unit="section"/>
                     Supposing, therefore, that he must send Cotys home to defend his own territories, he honoured him at his departure with very magnificent presents, and paid to his cavalry two hundred talents,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         38,750
                         <hi rend="italics">l.</hi>
                     </note>
@@ -2027,7 +2027,7 @@ Corsicans and Ligurians.
                     <milestone n="12" unit="section"/>
                     The Thebans, being harassed by the Coronaeans, pressed him to go into Bœotia; wherefore, in compliance with their entreaties, and because that country was better adapted for winter quarters than Magnesia, he led his army thither.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

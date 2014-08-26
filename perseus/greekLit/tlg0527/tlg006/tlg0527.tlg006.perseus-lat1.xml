@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - Joshua</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,13 +81,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="Joshua" type="book">
+            <div part="N" sample="complete" org="uniform" n="Joshua" type="book">
                 <head lang="en">Joshua</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -187,8 +187,8 @@ sermonibus quos praeceperis ei moriatur tu tantum confortare et
 viriliter age
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -316,8 +316,8 @@ filium Nun narraveruntque ei omnia quae acciderant sibi
 terram hanc et timore prostrati sunt cuncti habitatores eius
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -405,8 +405,8 @@ medio Iordanis accincti omnisque populus per arentem alveum
 transiebat
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">quibus transgressis dixit Dominus ad Iosue</s>
@@ -515,8 +515,8 @@ lapides
 et ut vos timeatis Dominum Deum vestrum omni tempore
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -593,8 +593,8 @@ perrexitque ad eum et ait noster es an adversariorum
 stas sanctus est fecitque Iosue ut sibi fuerat imperatum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -734,8 +734,8 @@ illius iaciat et in novissimo liberorum ponat portas eius
                         <milestone unit="verse" n="27"/>
                         <s part="N">fuit ergo Dominus cum Iosue et nomen eius in omni terra vulgatum est</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -877,8 +877,8 @@ ab eis vocatumque est nomen loci illius vallis Achor usque
 hodie
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1069,8 +1069,8 @@ universa replicavit coram omni multitudine Israhel mulieribus
 ac parvulis et advenis qui inter eos morabantur
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1213,8 +1213,8 @@ populi et altaris Domini caedentes ligna et aquas conportantes
 usque in praesens tempus in loco quem Dominus elegisset
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1434,8 +1434,8 @@ vastavit Dominus enim Deus Israhel pugnabat pro eo
                         <milestone unit="verse" n="44"/>
                         <s part="N">reversusque est cum omni Israhele ad locum castrorum in Galgala</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1562,8 +1562,8 @@ Mosen et tradidit eam in possessionem filiis Israhel secundum
 partes et tribus suas quievitque terra a proeliis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1646,8 +1646,8 @@ Chananeus et Ferezeus Eveus et Iebuseus
                         <milestone unit="verse" n="24"/>
                         <s part="N">rex Thersa unus omnes reges triginta et unus</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1802,8 +1802,8 @@ Iordanem contra Hiericho ad orientalem plagam
 Deus Israhel ipse est possessio eius ut locutus est illi
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1888,8 +1888,8 @@ usque in praesentem diem quia secutus est Dominum Deum Israhel
 inter Enacim situs est et terra cessavit a proeliis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2091,8 +2091,8 @@ Iuda delere habitavitque Iebuseus cum filiis Iuda in Hierusalem
 usque in praesentem diem
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2145,8 +2145,8 @@ in Gazer habitavitque Chananeus in medio Ephraim usque in diem
 hanc tributarius
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="17" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="17" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2256,8 +2256,8 @@ habitandum spatia et poteris ultra procedere cum subverteris
 Chananeum quem dicis ferreos habere currus et esse fortissimum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="18" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="18" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2390,8 +2390,8 @@ Cariath civitates quattuordecim et villae earum haec est
 possessio filiorum Beniamin iuxta familias suas
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="19" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="19" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">et egressa est sors secunda filiorum Symeon per cognationes suas fuitque hereditas</s>
@@ -2558,8 +2558,8 @@ filiorum Israhel in Silo coram Domino ad ostium tabernaculi
 testimonii partitique sunt terram
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="20" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="20" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">et locutus est Dominus ad Iosue dicens loquere filiis Israhel et dic eis</s>
@@ -2611,8 +2611,8 @@ sanguinem vindicare cupientis donec staret ante populum
 expositurus causam suam
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="21" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="21" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2767,8 +2767,8 @@ dicionem redacti sunt
 promiserat irritum fuit sed rebus expleta sunt omnia
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="22" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="22" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">eodem tempore vocavit Iosue Rubenitas et Gadditas et dimidiam tribum Manasse</s>
@@ -2950,8 +2950,8 @@ eos atque pugnarent et delerent terram possessionis eorum
 extruxerant Testimonium nostrum quod Dominus ipse sit Deus
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="23" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="23" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3043,8 +3043,8 @@ eos cito atque velociter consurget in vos furor Domini et
 auferemini de terra hac optima quam tradidit vobis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="24" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="24" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3221,8 +3221,8 @@ possessione filiorum Ioseph
 in Gaab Finees filii eius quae data est ei in monte Ephraim
                         </s>
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

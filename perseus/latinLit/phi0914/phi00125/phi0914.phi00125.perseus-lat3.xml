@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Ab Urbe Condita" type="work">Ab Urbe Condita, books 23-25 - 25</title>
@@ -18,8 +18,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -40,19 +40,19 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter" n="chunk"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter" n="chunk"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -61,17 +61,17 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="25" type="book">
+            <div part="N" sample="complete" org="uniform" n="25" type="book">
                 <head>Liber XXV</head>
                 <p>
                     <milestone n="1" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     DUM haec in Africa atque in Hispania geruntur,
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 541</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 541</note>
                     Hannibal in agro Sallentino aestatem consumpsit
 					spe per proditionem urbis Tarentinorum potiundae.
                     <reg>ipsorum</reg>
@@ -107,7 +107,7 @@
                     <milestone n="6" unit="section"/>
                     <reg>quo</reg>
                     diutius trahebatur bellum et variabant
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 541</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 541</note>
                     secundae adversaeque res non fortunam magis quam
 					animos hominum, tanta religio, et ea magna ex parte
 					externa, civitatem incessit ut aut homines aut dei
@@ -129,7 +129,7 @@
                     <milestone n="9" unit="section"/>
                     <reg>primo</reg>
                     secretae bonorum indignationes exaudiebantur; deinde ad patres et iam ad
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         et iam ad
                         <hi rend="italics">
                             <reg>alschefski</reg>
@@ -156,7 +156,7 @@
                     <reg>ubi</reg>
                     potentius iam
 					esse id malum apparuit quam ut minores per magistratus sedaretur, M. Aemilio praetori urbano
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         urbano (
                         <hi rend="italics">i.e.</hi>
                         urb.)
@@ -170,7 +170,7 @@
                     et in contione senatus consultum recitavit et edixit ut quicumque libros vaticinos precationesve aut artem sacrificandi
                     <pb id="p.344"/>
                     conscriptam haberet, eos libros omnis litterasque ad se
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 541</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 541</note>
                     ante kal.
                     <reg>apriles</reg>
                     deferret, neu quis in publico sacrove loco novo aut externo ritu sacrificaret.
@@ -195,7 +195,7 @@
                     <reg>comitiorum</reg>
                     consularium iam adpetebat tempus;
 					sed quia consules bello
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         bello
                         <hi rend="italics">P?x:</hi>
                         a bello
@@ -230,7 +230,7 @@
                     <milestone n="7?" unit="section"/>
                     <quote>
                         <reg>si</reg>
-                        <note anchored="yes" place="unspecified" type="margin">A.U.C. 541</note>
+                        <note anchored="true" place="unspecified" type="margin">A.U.C. 541</note>
                         me
                     </quote>
                     inquit
@@ -244,7 +244,7 @@
 					fuit: ludi Romani pro temporis illius copiis magnifice
 					facti et diem unum instaurati, et congii olei in vicos
 					singulos dati . . .
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">
                             <reg>numeral</reg>
                             missing, perhaps L preceding
@@ -268,7 +268,7 @@
                     <milestone n="3" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Q. Fulvius Flaccus tertium Appius Claudius
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     consulatum ineunt.
                     <milestone n="2" unit="section"/>
                     <reg>et</reg>
@@ -292,7 +292,7 @@
                     <milestone n="5" unit="section"/>
                     <name>Ti</name>
                     . Sempronio
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     Graccho et P. Sempronio Tuditano imperium provinciaeque Lucani et Gallia cum suis exercitibus prorogatae;
                     <milestone n="6" unit="section"/>
                     item P. Lentulo qua vetus provincia in
@@ -339,7 +339,7 @@
 					per eum ad senatum delata nec tamen ullo senatus
                     <pb id="p.350"/>
                     consulto notata, quia patres ordinem publicanorum
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     in tali tempore offensum nolebant.
                     <milestone n="13" unit="section"/>
                     <reg>populus</reg>
@@ -393,12 +393,12 @@
                     dimissa senatus vocatur et consules
                     <pb id="p.352"/>
                     referunt de concilio plebis turbato vi atque audacia
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     publicanorum:
                     <milestone n="2" unit="section"/>
                     M. Furium Camillum, cuius exilium
 					ruina urbis secutura
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         secutura
                         <hi rend="italics">
                             <reg>alschefski</reg>
@@ -435,7 +435,7 @@
                     <reg>haec</reg>
                     cum ab optimo quoque pro atrocitate rei
 					accepta
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         accepta
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -456,7 +456,7 @@
                     <pb id="p.354"/>
                     <reg>tribuni</reg>
                     plebem rogaverunt plebesque ita scivit, si
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     M. Postumius ante kal.
                     <reg>maias</reg>
                     non prodisset citatusque eo die non respondisset neque excusatus esset, videri eum in exilio esse bonaque eius venire, ipsi aqua et igni placere interdici.
@@ -506,7 +506,7 @@
                     sufficiebat, senatus absistere eos incepto
                     <pb id="p.356"/>
                     vetuit et triumviros binos creari iussit, alteros qui
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     citra, alteros qui ultra
                     <corr sic="quinquagensimum">quinquagesimum</corr>
                     lapidem in
@@ -548,7 +548,7 @@
                     <quote>
                         <reg>consulem</reg>
                         te, M. Marcelle, in Italia
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             Italia
                             <hi rend="italics">x:</hi>
                             italiam
@@ -559,11 +559,11 @@
 						senatus consultum factum est, nisi hoc sperassemus,
                         <pb id="p.358"/>
                         in provinciam nos morte regum turbatam ad grave
-                        <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                        <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                         bellum adversus Siculos simul Poenosque mitti,
                         <milestone n="3?" unit="section"/>
                         et sanguine nostro vulneribusque nos senatui
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             nos senatui
                             <hi rend="italics">
                                 <reg>bentley</reg>
@@ -604,7 +604,7 @@
                         miles nihil umquam dicam de imperatore meo, cui
 						praesertim gratias sciam ab senatu actas quod non
 						desperaverit de re publica, cui post fugam ab Cannis
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             ab Cannis
                             <hi rend="italics">
                                 <name>Gronovius</name>
@@ -629,7 +629,7 @@
                         vobis vestrisque liberis
 						ignoscitis facile, patres conscripti, in haec vilia capita
 						saevitis?
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             a saevitis
                             <hi rend="italics">A</hi>
                             2: saeviret
@@ -650,7 +650,7 @@
                         <reg>ad</reg>
                         <pb id="p.360"/>
                         Alliam prope omnis exercitus fugit; ad Furculas
-                        <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                        <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                         Caudinas ne expertus quidem certamen arma tradidit hosti, ut alias pudendas clades exercituum taceam;
                         <milestone n="11" unit="section"/>
                         tamen tantum afuit ab eo ut ulla ignominia iis exercitibus quaereretur ut et urbs Roma per eum exercitum qui ab Allia Veios transfugerat reciperaretur,
@@ -673,7 +673,7 @@
                         <milestone n="15" unit="section"/>
                         nunc deteriore
 						condicione sumus quam apud patres nostros fuerunt
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             fuerunt
                             <hi rend="italics">J. H. Voss:</hi>
                             fuerant
@@ -692,7 +692,7 @@
                         hoste etiam relegati sumus,
                         <milestone n="18?" unit="section"/>
                         ubi senescamus in exilio,
-                        <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                        <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                         ne qua spes, ne qua occasio abolendae ignominiae, ne qua placandae civium irae, ne qua denique bene moriendi sit.
                         <milestone n="19" unit="section"/>
                         <reg>neque</reg>
@@ -723,7 +723,7 @@
                         quaeque ad laborem
 						periculumque deposcimus, ut quod ad Cannas faciundum fuit quam primum fiat, quoniam, quidquid
 						postea viximus,
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             viximus
                             <hi rend="italics">P</hi>
                             (1): vivimus
@@ -758,7 +758,7 @@
                     militibus,
                     <milestone n="3?" unit="section"/>
                     qui ad Cannas commilitones suos pugnantis
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     deseruissent, senatum nihil videre cur res publica
 					committenda esset.
                     <milestone n="4" unit="section"/>
@@ -774,7 +774,7 @@
                     <reg>comitia</reg>
                     deinde a praetore urbano de senatus sententia plebique scitu sunt habita, quibus creati sunt
 					quinqueviri muris turribus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         turribus
                         <hi rend="italics">P</hi>
                         (1): et turribus
@@ -789,7 +789,7 @@
                     reficiendis, et triumviri bini, uni sacris conquirendis donisque persignandis,
                     <milestone n="6?" unit="section"/>
                     alteri reficiendis aedibus Fortunae et matris Matutae
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Matutae
                         <hi rend="italics">z: om. P</hi>
                         (1).
@@ -822,7 +822,7 @@
                     Tarentinorum defectio iam diu et in spe
                     <pb id="p.366"/>
                     Hannibali et in suspicione Romanis esset, causa forte
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     extrinsecus maturandae eius intervenit.
                     <milestone n="11" unit="section"/>
                     <reg>phileas</reg>
@@ -830,7 +830,7 @@
 					cum esset, vir inquieti animi et minime otium, quo
 					tum diutino senescere videbatur, patientis, aditum
 					sibi ad obsides Tarentinos et Thurinos
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Tarentinos et Thurinos
                         <hi rend="italics">
                             <reg>heusinger</reg>
@@ -890,7 +890,7 @@
 					ceteri silva prope viam sese occuluerunt, Nico et
                     <pb id="p.368"/>
                     Philemenus progressi ad stationes comprehensique,
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     ultro id petentes, ad Hannibalem deducti sunt.
                     <milestone n="6" unit="section"/>
                     <reg>qui</reg>
@@ -908,7 +908,7 @@
                     cum
 					Hannibale rursus fide sanxerunt liberos Tarentinos
 					leges suas
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         suas
                         <hi rend="italics">
                             <reg>wesenberg</reg>
@@ -917,7 +917,7 @@
                         (1).
                     </note>
                     suaque omnia habituros neque ullum vectigal Poeno pensuros praesidiumve invitos recepturos; prodita hospitia Romanorum cum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         hospitia Romanorum cum
                         <hi rend="italics">
                             <name>Weissenborn</name>
@@ -954,12 +954,12 @@
                     viam aberat; ubi, quo minus
                     <pb id="p.370"/>
                     mirum esset uno eodemque loco stativa eum tam diu
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     habere, aegrum simulabat.
                     <name>Romanis</name>
                     quoque qui in
 					praesidio Tarenti erant suspecta esse tam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         tam
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -995,7 +995,7 @@
                     <milestone n="4" unit="section"/>
                     et ne ibi
 					quidem denuntiato
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         denuntiato
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -1020,7 +1020,7 @@
                     in cetera adeo nihil ab eo intenta cura est ut contra
                     <pb id="p.372"/>
                     pro argumento fuerit illa procursatio Numidarum
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     Hannibalem exercitumque e castris non movisse.
                     <name>Hannibal</name>
                     concubia nocte movit.
@@ -1035,7 +1035,7 @@
                     <milestone n="10" unit="section"/>
                     <reg>ea</reg>
                     mediterranea regio est orientem spectans; busta
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         spectans; busta
                         <hi rend="italics">
                             <reg>ussing</reg>
@@ -1070,7 +1070,7 @@
                     <reg>nota</reg>
                     vox eius et familiare iam
 					signum cum excitasset vigilem, dicenti
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         dicenti
                         <hi rend="italics">x:</hi>
                         dicente
@@ -1088,14 +1088,14 @@
                     deinde triginta fere armati ceteros vigiles obtruncant
                     <pb id="p.374"/>
                     refringuntque portam proximam, et agmen sub
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     signis confestim inrupit.
                     <reg>inde</reg>
                     cum silentio in forum ducti Hannibali sese coniunxerunt.
                     <milestone n="16" unit="section"/>
                     <reg>tum</reg>
                     duo milia Gallorum Poenus in tres divisa partis per urbem dimittit; Tarentinos iis addit duces binos
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         iis addit duces binos
                         <hi rend="italics">Bōttcher: om. P</hi>
                         (1),
@@ -1143,7 +1143,7 @@
 					erat et Romani qui caedibus superfuerant in arcem
                     <pb id="p.376"/>
                     confugerant conticiscebatque paulatim tumultus,
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     tum Hannibal Tarentinos sine armis convocare iubet.
                     <milestone n="7" unit="section"/>
                     <reg>convenere</reg>
@@ -1189,7 +1189,7 @@
                     non sine illa etiam spe,
                     <milestone n="3?" unit="section"/>
                     cum prohibentibus opus
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     Romanis manum posse conseri et, si ferocius procucurrissent, magna caede ita attenuari praesidii vires,
 					ut facile per se ipsi Tarentini urbem ab iis tueri
 					possent.
@@ -1215,7 +1215,7 @@
                     <milestone n="7" unit="section"/>
                     <reg>inde</reg>
                     et
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Inde et
                         <hi rend="italics">P</hi>
                         (1): inde
@@ -1241,9 +1241,9 @@
                     spem cepit etiam arcem expugnari posse.
                     <reg>et</reg>
                     est
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     non altitudine, ut ceterae,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ceterae
                         <hi rend="italics">
                             <reg>cr</reg>
@@ -1280,7 +1280,7 @@
 					quod si naves sint,
                     <milestone n="13?" unit="section"/>
                     quibus commeatus invehi prohibeat, extemplo aut arce cessuros
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         arce cessuros
                         <hi rend="italics">
                             <name>Gronovius</name>
@@ -1313,7 +1313,7 @@
                         in campo
                         <pb id="p.382"/>
                         sitam habetis; planae et satis latae viae patent in
-                        <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                        <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                         omnis partis.
                         <milestone n="17" unit="section"/>
                         <name>Via</name>
@@ -1366,9 +1366,9 @@
 					fuerat, et cum conquisitio priore anno ex senatus
                     <pb id="p.384"/>
                     consulto talium librorum fieret, in M. Aemili praetoris
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     urbani,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         urbani
                         <hi rend="italics">
                             <name>Sigonius</name>
@@ -1391,7 +1391,7 @@
                     <reg>ex</reg>
                     hui'us
 					Marcii duobus carminibus alterius post rem actam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         actam
                         <hi rend="italics">CA</hi>
                         .v: acta
@@ -1403,7 +1403,7 @@
                         </hi>
                     </note>
                     editi comprobata
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         comprobata
                         <hi rend="italics">
                             <reg>ussing</reg>
@@ -1426,7 +1426,7 @@
                     <quote>
                         <reg>amnem</reg>
                         , Troiugena,
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             Troiugena
                             <hi rend="italics">G. Hermann:</hi>
                             -nam
@@ -1462,7 +1462,7 @@
                         <reg>hostis</reg>
                         , Romani, si
 						expellere
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             expellere
                             <hi rend="italics">P</hi>
                             (1): ex agro expellere
@@ -1472,7 +1472,7 @@
                             1. xvii. 28.
                         </note>
                         vultis, vomicam
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             vomicam
                             <hi rend="italics">
                                 <reg>a</reg>
@@ -1485,7 +1485,7 @@
                         quae gentium venit longe, Apollini vovendos censeo ludos, qui quotannis comiter Apollini fiant; cum populus dederit ex publico partem, privati uti conferant pro se atque suis;
                         <milestone n="10" unit="section"/>
                         iis ludis faciendis praeerit
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             praeerit
                             <hi rend="italics">CM</hi>
                             1
@@ -1503,11 +1503,11 @@
                         praetor is qui ius
                         <pb id="p.386"/>
                         populo plebeique dabit summum; decemviri Graeco
-                        <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                        <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                         ritu hostiis sacra faciant.
                         <reg>hoc</reg>
                         si recte facietis, gaudebitis semper fietque res vestra melior; nam is deum
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             deum
                             <hi rend="italics">
                                 <reg>riemann</reg>
@@ -1524,7 +1524,7 @@
                     <milestone n="11" unit="section"/>
                     <reg>ad</reg>
                     id carmen explanandum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         explanandum
                         <hi rend="italics">P</hi>
                         2(1)
@@ -1539,7 +1539,7 @@
                         </hi>
                     </note>
                     diem unum sumpserunt; postero die senatus consultum factum est ut decemviri
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         decemviri
                         <hi rend="italics">P</hi>
                         (1): decemviri libros
@@ -1562,7 +1562,7 @@
                     coronatus spectavit,
 					matronae supplicavere; vulgo apertis ianuis in
 					propatulo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         propatulo
                         <hi rend="italics">A:</hi>
                         -lis
@@ -1578,7 +1578,7 @@
                     Hannibal circa Tarentum, consules
                     <pb id="p.388"/>
                     ambo in Samnio essent, sed circumsessuri Capuam
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     viderentur, quod malum diuturnae obsidionis esse
 					solet, iam famem Campani sentiebant, quia sementem
 					facere prohibuerant eos Romani exercitus.
@@ -1627,7 +1627,7 @@
                     legatos decem
                     <corr sic="externplo">extemplo</corr>
                     ad consules—-circa Bovianum
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     castra Romanorum erant—miserunt.
                     <milestone n="9" unit="section"/>
                     <reg>qui</reg>
@@ -1641,7 +1641,7 @@
                     ; duo milia plaustrorum, inconditam inermemque aliam turbam advenisse; per tumultum ac
 					trepidationem omnia agi, castrorumque formam et
 					militarem ordinem inmixtis agrestibus et
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         et
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -1669,7 +1669,7 @@
                     <milestone n="13" unit="section"/>
                     <reg>altitudo</reg>
                     loci et munimenta defendere,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         defendere
                         <hi rend="italics">
                             <reg>alschefski</reg>
@@ -1702,7 +1702,7 @@
                     <reg>itaque</reg>
                     <pb id="p.392"/>
                     convocatis legatis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         legatis
                         <hi rend="italics">
                             <reg>alschefski</reg>
@@ -1711,10 +1711,10 @@
                         (1).
                     </note>
                     tribunisque militum consul
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     absistendum temerario incepto ait; tutius sibi videri reduci eo die exercitum Beneventum, dein postero
 					castra
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         castra
                         <hi rend="italics">
                             <reg>crvier</reg>
@@ -1731,7 +1731,7 @@
                     <reg>proxima</reg>
                     forte
 					hosti
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         forte hosti
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -1772,7 +1772,7 @@
 					ab revocando ad incitandos hortandosque versus
                     <pb id="p.394"/>
                     milites, ostendere in quanto discrimine ac periculo
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     fortissima cohors sociorum et civium legio esset.
                     <milestone n="9" unit="section"/>
                     <reg>itaque</reg>
@@ -1787,7 +1787,7 @@
                     <milestone n="11" unit="section"/>
                     <reg>supra</reg>
                     sex
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         sex
                         <hi rend="italics">R</hi>
                         2(7): ex
@@ -1818,7 +1818,7 @@
 					audita sua pariter sociorumque clade, legatos ad
                     <pb id="p.396"/>
                     Hannibalem miserunt, qui nuntiarent duos consules
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     ad Beneventum esse, diei iter a Capua; tantum non ad portas et muros bellum esse; ni propere subveniat, celerius Capuam quam Arpos in potestatem hostium venturam.
                     <milestone n="2" unit="section"/>
                     <reg>ne</reg>
@@ -1841,7 +1841,7 @@
                     <reg>et</reg>
                     erat satis validum praesidium traductis ad arcem
 					Tarenti tuendam qui Metaponti erant
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         qui Metaponti erant
                         <hi rend="italics">z: om. P</hi>
                         (1),
@@ -1859,7 +1859,7 @@
                     eos non Tarentinorum magis defectio
                     <pb id="p.398"/>
                     Metapontinorumque, quibus indidem ex Achaia oriundi
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     etiam cognatione iuncti erant, quam ira in Romanos propter obsides nuper interfectos.
                     <milestone n="8" unit="section"/>
                     <reg>eorum</reg>
@@ -1872,7 +1872,7 @@
 					cum modico praesidio praeerat, quem facile elici
 					ad certamen temere ineundum rebantur posse,
 					non tam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         tam
                         <hi rend="italics">z: om. P</hi>
                         (1).
@@ -1903,7 +1903,7 @@
 					ventum, coorti cum clamore equites prope inconditam Thurinorum turbam nec satis fido animo unde
                     <pb id="p.400"/>
                     pugnabat stantem extemplo in fugam averterunt.
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     <milestone n="14" unit="section"/>
                     <name>Romani</name>
                     , quamquam circumventos hinc pedes, hinc eques urgebat, tamen aliquamdiu pugnam traxere; postremo et ipsi terga vertunt atque ad urbem fugiunt.
@@ -1922,7 +1922,7 @@
                     <reg>seditio</reg>
                     inde paulisper tenuit,
 					cum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         cum,
                         <hi rend="italics">P</hi>
                         (1)
@@ -1952,7 +1952,7 @@
                     ne Beneventum sine praesidio esset, et ut ad subita
                     <pb id="p.402"/>
                     belli, si Hannibal, quod facturum haud dubitabant,
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     ad opem ferendam sociis Capuam venisset, equitis
 					vim sustinere possent, Ti. Gracchum ex Lucanis
 					cum equitatu ac levi armatura Beneventum venire
@@ -1971,7 +1971,7 @@
 					adedere iocur conspectique repente ex oculis abierunt.
                     <milestone n="3" unit="section"/>
                     <reg>ideo</reg>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Ideo
                         <hi rend="italics">Köhler:</hi>
                         id
@@ -1988,7 +1988,7 @@
                         </hi>
                     </note>
                     cum haruspicum monitu sacrificium instauraretur atque intentius exta reservarentur, iterum ac tertium tradunt adlapsos
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         adlapsos
                         <hi rend="italics">
                             <name>Weissenborn</name>
@@ -2007,7 +2007,7 @@
                     Lucanus fuit, caput partis eius Lucanorum, cum pars
 					ad Hannibalem defecisset, quae cum Romanis stabat;
 					et iam altero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         altero
                         <hi rend="italics">
                             <name>Weissenborn</name>
@@ -2016,7 +2016,7 @@
                         (1).
                     </note>
                     anno
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         anno
                         <hi rend="italics">PCR:</hi>
                         hanno
@@ -2045,9 +2045,9 @@
                     Magonem, qui in Bruttiis praeerat,
                     <milestone n="7?" unit="section"/>
                     clam in
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     colloquium venit fideque ab eo accepta, si Romanum iis imperatorem tradidisset, liberos cum suis legibus venturos in amicitiam Lucanos, deducit Poenum in locum quo cum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quo cum
                         <hi rend="italics">
                             <name>Gronovius</name>
@@ -2095,12 +2095,12 @@
 					Romanis; ibi paucis verbis transigi rem posse ut
                     <pb id="p.406"/>
                     omne nomen Lucanum in fide ac societate Romana
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     sit.
                     <milestone n="15" unit="section"/>
                     <name>Gracchus</name>
                     fraudem et sermoni et rei abesse ratus ac similitudine veri captus cum lictoribus ac turma equitum e castris profectus duce hospite in insidias praecipitat.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         praecipitat
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -2151,7 +2151,7 @@
                     quam pro numero hominum editur pugna.
                     <reg>iaculis</reg>
                     maxime aperta corpora Romanorum, cum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cum Madvig, Conway:</hi>
                         et cum
                         <hi rend="italics">P</hi>
@@ -2163,7 +2163,7 @@
                     <milestone n="23" unit="section"/>
                     <name>Gracchum</name>
                     iam nudatum praesidio
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     vivum capere Poeni nituntur; ceterum conspicatus Lucanum hospitem inter hostis, adeo infestus confertos invasit ut parci ei sine multorum pernicie non posset.
                     <milestone n="24" unit="section"/>
                     <reg>exanimem</reg>
@@ -2172,7 +2172,7 @@
                 <p>
                     <reg>haec</reg>
                     si
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         si
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -2215,7 +2215,7 @@
 					et corporum suae cuique genti adsuetis, ipso Hannibale
                     <pb id="p.410"/>
                     omni rerum verborumque honore exequias celebrante.
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     <milestone n="6" unit="section"/>
                     <reg>haec</reg>
                     tradunt qui in Lucanis rei gestae auctores sunt.
@@ -2259,7 +2259,7 @@
                     <milestone n="5" unit="section"/>
                     <reg>is</reg>
                     tum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Is tum
                         <hi rend="italics">
                             <reg>cr</reg>
@@ -2275,7 +2275,7 @@
                     <pb id="p.412"/>
                     <reg>quod</reg>
                     ubi est Crispino nuntiatum, ratus conloquium
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     amicum ac familiare quaeri, manente memoria etiam in discidio publicorum foederum privati iuris, paulum
 					a ceteris processit.
                     <milestone n="6" unit="section"/>
@@ -2324,7 +2324,7 @@
                     tantum moratus dum imperatores consuleret permitterentne sibi extra ordinem in provocantem
                     <pb id="p.414"/>
                     hostem pugnare,permissu eorum arma cepit
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     equumque conscendit et Badium nomine compellans ad pugnam evocavit.
                     <milestone n="13" unit="section"/>
                     <reg>nulla</reg>
@@ -2378,7 +2378,7 @@
                     <milestone n="6" unit="section"/>
                     <reg>inde</reg>
                     consules, ut
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     averterent Capua Hannibalem, nocte quae secuta
 					est diversi, Fulvius in agrum Cumanum, Claudius
 					in Lucanos abit.
@@ -2422,7 +2422,7 @@
                     <reg>et</reg>
                     ipse aliquantum voluntariorum in
 					itinere ex
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ex
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -2439,7 +2439,7 @@
                     dubia res
                     <pb id="p.418"/>
                     erat, quippe inter Hannibalem ducem et centurionem,
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     exercitusque alterum vincendo veteranum, alterum novum totum, magna ex parte etiam tumultuarium
 					ac semermem.
                     <milestone n="15" unit="section"/>
@@ -2449,14 +2449,14 @@
                     <reg>pugnatum</reg>
                     tamen ut in nulla pari
 					re; duas amplius horas constitit pugna spe
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         -stitit pugna spe con-
                         <hi rend="italics">M. Müller: om. P</hi>
                         (1),
                         <hi rend="italics">a lost line.</hi>
                     </note>
                     concitante,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         concitante
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -2476,7 +2476,7 @@
                     </note>
                     <corr sic="done">donec</corr>
                     dux stetit, Romanam aciem.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Romanam aciem
                         <hi rend="italics">P</hi>
                         (1): -a acie
@@ -2506,7 +2506,7 @@
                     <name>Casilinum</name>
                     frumentum convectum; ad Volturni ostium, ubi nunc urbs est,
 					castellum communitum ibique et Puteolis, quos iam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ibique . . . iam
                         <hi rend="italics">
                             <name>Conway</name>
@@ -2528,7 +2528,7 @@
 					cladem quae in Lucanis accepta erat volonum
                     <pb id="p.420"/>
                     quoque exercitus, qui vivo Graccho summa fide stipendia
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     fecerat, velut exauctoratus morte ducis ab signis discessit.
                 </p>
                 <p>
@@ -2573,7 +2573,7 @@
                     existerent,
                     <milestone n="4>" unit="section"/>
                     et Magonem ac duo ferme milia equitum,
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     qua fugam inclinaturam credebat, omnia itinera
 					insidere iubet.
                     <reg>his</reg>
@@ -2615,7 +2615,7 @@
 					arrepto cum ducentis ferme equitibus effugit;
                     <milestone n="10" unit="section"/>
                     cetera a fronte pulsa, inde a
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         inde a
                         <hi rend="italics">
                             <name>Weissenborn</name>
@@ -2635,7 +2635,7 @@
                     <milestone n="1" unit="section"/>
                     <reg>hae</reg>
                     clades super aliam alia Romam cum
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     essent nuntiatae, ingens quidem et luctus et pavor
 					civitatem cepit; sed tamen quia consules, ubi
 					summa rerum esset, ad id locorum prospere rem
@@ -2682,7 +2682,7 @@
                     <reg>ita</reg>
                     tria
 					praetoria circa Capuam erecta; tres et
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         et
                         <hi rend="italics">P</hi>
                         (2)
@@ -2696,7 +2696,7 @@
                     exercitus
                     <pb id="p.426"/>
                     diversis partibus opus adgressi fossa valloque
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     circumdare urbem parant et castella excitant modicis
                     <milestone n="9?" unit="section"/>
                     intervallis multisque simul locis cum prohibentibus
@@ -2717,7 +2717,7 @@
 					Capuam operibus, potestatem Campanis facerent
 					ut qui eorum vellent exirent a Capua suasque res
 					secum ferrent:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ferrent
                         <hi rend="italics">M</hi>
                         4
@@ -2760,7 +2760,7 @@
                     <milestone n="16?" unit="section"/>
                     <reg>cum</reg>
                     hac spe dimissi legati vix regredi Capuam iam
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     duplici fossa valloque cinctam potuerunt.
                 </p>
                 <p>
@@ -2789,7 +2789,7 @@
                     <reg>non</reg>
                     erat conloquii copia, quia multorum animi suspecti
 					omnium curam oculosque eo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         eo
                         <hi rend="italics">
                             <reg>b</reg>
@@ -2805,7 +2805,7 @@
 					initium conloquendi de tali re fecit.
                     <reg>deinde</reg>
                     in
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Deinde in
                         <hi rend="italics">z:</hi>
                         dein
@@ -2817,7 +2817,7 @@
                     piscatoria quidam nave retibus operti circumvectique ita ad castra Romana conlocutique cum transfugis,
                     <pb id="p.430"/>
                     et iidem saepius eodem modo et alii atque alii;
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     postremo ad octoginta facti.
                     <milestone n="7" unit="section"/>
                     <reg>et</reg>
@@ -2866,14 +2866,14 @@
 					alia in obsidione desint, vino largius epulas celebrari
                     <pb id="p.432"/>
                     et ab Epicyde praebito universae plebei et per
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     tribus a principibus diviso.
                 </p>
                 <p>
                     <milestone n="15" unit="section"/>
                     <reg>quod</reg>
                     ubi
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quod ubi
                         <hi rend="italics">M</hi>
                         1: id ubi
@@ -2901,7 +2901,7 @@
                     <milestone n="1" unit="section"/>
                     <reg>iam</reg>
                     mille armatorum muri
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         muri
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -2916,7 +2916,7 @@
                         </hi>
                     </note>
                     ceperant partem, cum ceterae admotae sunt copiae
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         sunt copiae
                         <hi rend="italics">
                             <name>Weissenborn</name>
@@ -2929,7 +2929,7 @@
                     quo per ingentem solitudinem erat perventum, quia magna pars in turribus epulati
 					aut sopiti vino erant aut semigraves potabant;
 					paucos tamen eorum inproviso oppresses
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         inproviso oppressos
                         <hi rend="italics">
                             <name>Hertz</name>
@@ -2944,7 +2944,7 @@
                     <milestone n="3" unit="section"/>
                     <reg>prope</reg>
                     Hexapylon est portula; ea magna vi refringi coepta et e muro ex composito tuba datum signum erat et iam undique non furtim, sed vi aperta
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         aperta
                         <hi rend="italics">
                             <name>Gronovius</name>
@@ -2960,12 +2960,12 @@
                     ad Epipolas.
                     <pb id="p.434"/>
                     frequentem custodiis locum, perventum erat,
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     terrendique magis hostes erant quam fallendi, sicut territi sunt.
                     <milestone n="5" unit="section"/>
                     <reg>nam</reg>
                     simulac tubarum est auditus cantus clamorque tenentium muros partemque urbis, omnia teneri custodes rati
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         rati
                         <hi rend="italics">A</hi>
                         2:
@@ -3010,7 +3010,7 @@
 					bus locis urbem omnium ferme illa tempestate
                     <pb id="p.436"/>
                     pulcherrimam subiectam oculis vidit, inlacrimasse
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     dicitur partim gaudio tantae perpetratae rei, partim
 					vetusta gloria urbis.
                     <milestone n="12" unit="section"/>
@@ -3034,7 +3034,7 @@
                     praemittit
 					Syracusanos qui intra praesidia Romana, ut ante
 					dictum est, fuerant, ut adloquio leni pellicerent
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         pellicerent
                         <hi rend="italics">M</hi>
                         1
@@ -3069,14 +3069,14 @@
 					impositus; ad quem missus a Marcello Sosis, unus
                     <pb id="p.438"/>
                     ex interfectoribus tyranni, cum longo sermone
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     habito dilatus per frustrationem esset, rettulit
 					Marcello tempus eum ad deliberandum sumpsisse.
                     <milestone n="4" unit="section"/>
                     <reg>cum</reg>
                     is diem de die differret, dum Hippocrates
 					atque Himilco admoverent castra legionesque,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         -que
                         <hi rend="italics">C</hi>
                         4
@@ -3107,7 +3107,7 @@
                     <milestone n="8" unit="section"/>
                     <name>Castra</name>
                     testis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         testis
                         <hi rend="italics">M. Müller</hi>
                         (
@@ -3152,7 +3152,7 @@
                     <milestone n="10" unit="section"/>
                     <reg>inter</reg>
                     haec et Philodemus, cum spes
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     auxilii nulla esset, fide accepta ut inviolatus ad Epicyden rediret, deducto praesidio tradidit tumulum Romanis.
                     <milestone n="11" unit="section"/>
                     <reg>aversis</reg>
@@ -3197,7 +3197,7 @@
 					praeerat, et Epicydes eruptionem in stationes Marcelli fecit, et classis Punica litori quod inter urbem
                     <pb id="p.442"/>
                     et castra Romana erat adpulsa est, ne quid praesidii
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     Crispino submitti a Marcello posset.
                     <milestone n="5" unit="section"/>
                     <reg>tumultum</reg>
@@ -3210,7 +3210,7 @@
                     <milestone n="7" unit="section"/>
                     <reg>accessit</reg>
                     et ab
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ab
                         <hi rend="italics">
                             <reg>salvinius</reg>
@@ -3261,9 +3261,9 @@
                     <milestone n="12?" unit="section"/>
                     <reg>multo</reg>
                     tamen vis maior pestis Poenorum castra quam
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     Romana invaserat; nam Romani
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         invaserat; nam Romani
                         <hi rend="italics">H. J. Müller: om. P</hi>
                         (1),
@@ -3291,7 +3291,7 @@
                     <reg>deleto</reg>
                     terrestri Punico exercitu Siculi
 					qui Hippocratis milites fuerant . . .,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">
                             <reg>missing</reg>
                             are two town names and perhaps
@@ -3322,7 +3322,7 @@
 					onerariis profectus a Carthagine satis prosperos
                     <pb id="p.446"/>
                     ventos ad traiciendum in Siciliam habuit; sed iidem
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     venti superare eum Pachynum prohibebant.
                     <milestone n="5" unit="section"/>
                     <name>Bomilcaris</name>
@@ -3366,7 +3366,7 @@
 					ad se Romanas naves vidit, incertum qua subita
                     <pb id="p.448"/>
                     territus re, Bomilcar vela in altum dedit missisque
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     nuntiis Heracleam qui onerarias retro inde Africam repetere iuberent, ipse Siciliam praetervectus Tarentum petit.
                     <milestone n="13" unit="section"/>
                     <name>Epicydes</name>
@@ -3411,9 +3411,9 @@
                     iis et
                     <pb id="p.450"/>
                     multitudine ad contionem vocata, inopiam quaeque
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     ipsi inter se fremere occulti
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         occulti
                         <hi rend="italics">P</hi>
                         (2): occulte
@@ -3443,7 +3443,7 @@
 					reconciliandi se Romanis praetermisissent; eam
 					autem, qualis illo momento horae sit, nullam deinde
 					fore, si simul liberatas ab impotentibus tyrannis . . .
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">
                             <reg>a</reg>
                             lacuna variously supplied, e.g.
@@ -3478,7 +3478,7 @@
                     numero missi oratores ad Marcellum,
                     <milestone n="2?" unit="section"/>
                     quorum
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     princeps
                     <quote>
                         <reg>neque</reg>
@@ -3529,7 +3529,7 @@
                         ille multo amicus fuit quam hic hostis, et
                         <pb id="p.454"/>
                         illius benefacta etiam re
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             re
                             <hi rend="italics">PC:</hi>
                             pre
@@ -3545,7 +3545,7 @@
                             </hi>
                         </note>
                         sensistis, huius amentia
-                        <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                        <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                         ad perniciem tantum ipsius valuit.
                     </quote>
                     <milestone n="8" unit="section"/>
@@ -3595,7 +3595,7 @@
 					patriam reverti libeat; contra, si malle obsideri
                     <pb id="p.456"/>
                     pergat, quam spem esse terra marique clauso?
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     <milestone n="4" unit="section"/>
                     <reg>motus</reg>
                     his Moericus, cum legatos ad Marcellum mitti
@@ -3621,7 +3621,7 @@
                     Marcellus nocte
 					navem onerariam cum armatis remulco quadriremis
 					trahi ad Achradinam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Achradinam
                         <hi rend="italics">P</hi>
                         (1): Nasum
@@ -3644,7 +3644,7 @@
 					ad Nasum armatos exponunt, qui inproviso adorti
                     <pb id="p.458"/>
                     semiplenas stationes et adapertas fores portae, qua
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     paulo ante excurrerant armati, haud magno certamine Nasum cepere desertam trepidatione et fuga custodum.
                     <milestone n="11" unit="section"/>
                     <reg>neque</reg>
@@ -3654,7 +3654,7 @@
                     <name>Marcellus</name>
                     , ut captam esse Nasum
 					comperit
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         comperit
                         <hi rend="italics">
                             <name>Weissenborn</name>
@@ -3698,7 +3698,7 @@
                     quidem
 					tertium annum circumsedere Syracusas, non ut
 					populus Romanus servam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Romanus (
                         <hi rend="italics">i.e.</hi>
                         R.) servam
@@ -3711,7 +3711,7 @@
                     civitatem haberet, sed
                     <pb id="p.460"/>
                     ne transfugarum alienigenarumque
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         alienigenarum
                         <hi rend="italics">
                             <name>Hertz</name>
@@ -3733,7 +3733,7 @@
                         ).
                     </note>
                     duces captam
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     et oppressam tenerent.
                     <milestone n="6" unit="section"/>
                     <reg>quid</reg>
@@ -3746,7 +3746,7 @@
                     omnium laborum periculorumque
 					circa moenia Syracusana terra marique tam diu
 					exhaustorum nequaquam tanti eum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         tanti eum
                         <hi rend="italics">
                             <reg>harant</reg>
@@ -3762,7 +3762,7 @@
                         </hi>
                     </note>
                     fructum esse quod capere Syracusas
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">
                             <reg>here</reg>
                             Madvig inserted
@@ -3788,7 +3788,7 @@
                     <milestone n="8" unit="section"/>
                     <reg>inde</reg>
                     quaestor cum praesidio ab Naso
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ab Naso ad
                         <hi rend="italics">
                             <name>Geyer</name>
@@ -3807,7 +3807,7 @@
                     </note>
                     ad accipiendam pecuniam regiam custodiendamque missus.
                     <reg>urbs</reg>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Urbs
                         <hi rend="italics">x Walters: om. P</hi>
                         (1): Achradina
@@ -3820,7 +3820,7 @@
                     <milestone n="9" unit="section"/>
                     <reg>cum</reg>
                     multa irae, multa avaritiae foeda exempla ederentur, Archimeden memoriae proditum est in tanto tumultu, quantum captae terror
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         terror
                         <hi rend="italics">Bōttcher: om. P</hi>
                         (1): pavor
@@ -3837,7 +3837,7 @@
                     maxume modo Syracusae captae; in quibus praedae tantum fuit, quantum vix capta
                     <pb id="p.462"/>
                     Carthagine tum fuisset, cum qua
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         cum qua
                         <hi rend="italics">P</hi>
                         (1): cum (quum)
@@ -3847,7 +3847,7 @@
                         </hi>
                     </note>
                     viribus aequis
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     certabatur.
                 </p>
                 <p>
@@ -3892,7 +3892,7 @@
 					accessisse viginti milia Celtiberorum ea hieme ad
 					arma excita.
                     <reg>hostium</reg>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         excita.
                         <reg>hostium</reg>
                         <hi rend="italics">
@@ -3928,7 +3928,7 @@
                     volebant prius opprimi
                     <pb id="p.464"/>
                     duces Romani; et spes erat satis superque ad id
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     virium esse; illa restabat cura, ne fuso eo perculsi alter Hasdrubal et Mago in avios saltus montesque
 					recipientes sese bellum extraherent.
                     <milestone n="7" unit="section"/>
@@ -3958,7 +3958,7 @@
                     <milestone n="2" unit="section"/>
                     peritus omnis barbaricae
 					et praecipue earum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         earum
                         <hi rend="italics">
                             <name>Gronovius</name>
@@ -3971,7 +3971,7 @@
                     gentium in quibus per tot annos militabat perfidiae,
                     <milestone n="3" unit="section"/>
                     facili linguae commercio,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         commercio
                         <hi rend="italics">z Conway: om. P</hi>
                         (1).
@@ -3984,7 +3984,7 @@
 					verterent arma agebatur—et merces quanta vel
                     <pb id="p.466"/>
                     pro bello satis esset dabatur ne bellum gererent, et
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     cum quies ipsa, tum reditus domum fructusque videndi suos suaque grata vulgo erant.
                     <milestone n="5" unit="section"/>
                     <reg>itaque</reg>
@@ -4037,7 +4037,7 @@
                     dies noctesque infestus aderat,
                     <milestone n="4?" unit="section"/>
                     ut non vagos tantum
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     procul a castris lignatum pabulatumque progressos
 					exciperet, sed ipsis obequitaret castris invectusque
 					in medias saepe stationes omnia ingenti tumultu
@@ -4077,7 +4077,7 @@
 					intulere,
                     <milestone n="10" unit="section"/>
                     et
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         et
                         <hi rend="italics">
                             <reg>cr</reg>
@@ -4093,7 +4093,7 @@
                     hortantique
                     <pb id="p.470"/>
                     imperatori et offerenti se ubi plurimus labor erat latus
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     dextrum lancea traicitur; cuneusque is hostium qui in confertos circa ducem impetum fecerat, ut exanimem labentem ex equo Scipionem vidit, alacres gaudio cum clamore per totam aciem nuntiantes
 					discurrunt imperatorem Romanum cecidisse.
                     <milestone n="12" unit="section"/>
@@ -4120,7 +4120,7 @@
 					usi confestim e proelio vix necessaria quiete data
 					militibus ad Hasdrubalem Hamilcaris citatum agmen
 					rapiunt non dubia spe, cum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         cum
                         <hi rend="italics">
                             <reg>ax</reg>
@@ -4129,7 +4129,7 @@
                         (2).
                     </note>
                     se
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         se
                         <hi rend="italics">x: om. P</hi>
                         (1).
@@ -4146,7 +4146,7 @@
 					pervenerat, sed maestum quoddam silentium erat et
                     <pb id="p.472"/>
                     tacita divinatio, qualis iam praesagientibus animis
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     inminentis mali esse solet.
                     <milestone n="4" unit="section"/>
                     <reg>imperator</reg>
@@ -4168,7 +4168,7 @@
                     anxius curis id modo esse
 					salutare in praesens credebat, cedere inde quantum
 					posset; exinde
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         exinde
                         <hi rend="italics">
                             <name>Conway</name>
@@ -4204,7 +4204,7 @@
 					tumulum quendam non quidem satis tutum,
                     <pb id="p.474"/>
                     praesertim agmini perculso, editiorem tamen quam
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     cetera circa erant, subducit.
                     <milestone n="3" unit="section"/>
                     <reg>ibi</reg>
@@ -4250,7 +4250,7 @@
                     <reg>at</reg>
                     <pb id="p.476"/>
                     trudibus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         At trudibus
                         <hi rend="italics">W. Heraeus, Walters:</hi>
                         traditisdibi
@@ -4272,7 +4272,7 @@
                         </hi>
                     </note>
                     cum amoliti obiecta onera armatis dedissent
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     viam pluribusque idem partibus fieret, capta iam
 					undique castra erant.
                     <milestone n="12" unit="section"/>
@@ -4321,7 +4321,7 @@
                     in exercitu L. Marcius Septimi filius, eques Romanus,
                     <pb id="p.478"/>
                     impiger iuvenis animique et ingenii aliquanto quam
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     pro fortuna in qua erat natus maioris.
                     <milestone n="3" unit="section"/>
                     <reg>ad</reg>
@@ -4330,7 +4330,7 @@
 					per tot annos omnis militiae artis edoctus fuerat.
                     <milestone n="4" unit="section"/>
                     <reg>is</reg>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Is
                         <hi rend="italics">
                             <name>Weissenborn</name>
@@ -4375,7 +4375,7 @@
                     <reg>neque</reg>
                     <pb id="p.480"/>
                     sedari lamentatio poterat excitantibus
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     centurionibus manipulares et ipso mulcente et increpante Marcio, quod in muliebris et inutiles se proiecissent fletus potius quam ad tutandos semet ipsos et rem
 					publicam secum acuerent animos, et ne inultos
 					imperatores suos iacere sinerent,
@@ -4386,7 +4386,7 @@
                     <reg>inde</reg>
                     verso repente in iram luctu
 					discurrunt
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         discurrunt
                         <hi rend="italics">P</hi>
                         (3):
@@ -4399,7 +4399,7 @@
                         </hi>
                     </note>
                     ad arma ac velut accensi rabie discurrunt
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         discurrunt
                         <hi rend="italics">P</hi>
                         (1)
@@ -4441,7 +4441,7 @@
 					vallo acti, postquam neminem insequi viderunt, metu
                     <pb id="p.482"/>
                     substitisse rati, contemptim rursus et sedato gradu
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     in castra abeunt.
                 </p>
                 <p>
@@ -4487,9 +4487,9 @@
 					duorum exercituum patriae conservare possim
                     <pb id="p.484"/>
                     cogitandum est, avertere animum ab assiduo maerore
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     licet.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         licet
                         <hi rend="italics">
                             <name>Gronovius</name>
@@ -4534,7 +4534,7 @@
                     cuius populi vis atque virtus
 					non obruta sit Cannensi clade, ex omni profecto
 					saevitia fortunae emersurum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         emersurum
                         <hi rend="italics">xz:</hi>
                         -am
@@ -4561,7 +4561,7 @@
                         opportunitatem volui,
                         <milestone n="12?" unit="section"/>
                         ut postmodo praeparati
-                        <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                        <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                         incautos, armati inermes atque etiam sopitos per occasionem adgredi possetis.
                         <reg>nec</reg>
                         huius occasionis spem,
@@ -4617,7 +4617,7 @@
                         absunt.
                         <reg>nunc</reg>
                         adgredientibus spes aliqua est, et
-                        <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                        <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                         iam temptastis vestras atque illorum vires:
                         <milestone n="20" unit="section"/>
                         si diem proferimus et hesternae eruptionis fama contemni
@@ -4676,7 +4676,7 @@
                     semisomnos
                     <pb id="p.490"/>
                     hostis caedunt, pars ignes casis stramento arido tectis
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     iniciunt, pars portas occupant, ut fugam intercludant.
                     <milestone n="4" unit="section"/>
                     <reg>hostes</reg>
@@ -4729,9 +4729,9 @@
                     caedes oppressit, exuuntur castris.
                     <reg>ita</reg>
                     nocte ac die
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     bina castra hostium expugnata
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         expugnata
                         <hi rend="italics">z Conway:</hi>
                         oppugnata
@@ -4774,7 +4774,7 @@
                     -Quietae deinde aliquamdiu in Hispania res fuere, utrisque post tantas in vicem acceptas
                     <pb id="p.494"/>
                     inlatasque clades cunctantibus periculum summae
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     rerum facere.
                 </p>
                 <p>
@@ -4792,7 +4792,7 @@
                     ceterum inde
 					primum initium mirandi Graecarum artium opera
 					licentiaeque huius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         huius
                         <hi rend="italics">
                             <reg>ussing</reg>
@@ -4834,7 +4834,7 @@
 					duces reliqui prioris belli, et tertius novus ab
                     <pb id="p.496"/>
                     Hannibale in locum Hippocratis missus,Libyphoenicum
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     generis Hippacritanus—Muttinen populares vocabant—, vir inpiger et sub Hannibale magistro omnis
 					belli artes edoctus.
                     <milestone n="6" unit="section"/>
@@ -4877,7 +4877,7 @@
 					gloria eius: Muttinem sibi modum facere,
                     <pb id="p.498"/>
                     degenerem Afrum imperatori Carthaginiensi misso ab
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     senatu populoque!
                     <milestone n="13" unit="section"/>
                     <reg>is</reg>
@@ -4895,7 +4895,7 @@
 					iubet.
                     <milestone n="2" unit="section"/>
                     <reg>instruenti</reg>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         instruenti
                         <hi rend="italics">
                             <name>Gronovius</name>
@@ -4930,7 +4930,7 @@
                     <reg>itaque</reg>
                     haud
 					magni certaminis res
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         res
                         <hi rend="italics">
                             <name>Conway</name>
@@ -4954,11 +4954,11 @@
                     <pb id="p.500"/>
                     <milestone n="7?" unit="section"/>
                     postquam omnes Agrigentum trepido agmine
-                    <note anchored="yes" place="unspecified" type="margin">A.U.C. 542</note>
+                    <note anchored="true" place="unspecified" type="margin">A.U.C. 542</note>
                     petentes viderunt, ipsi metu obsidionis passim in civitatis proxumas dilapsi.
                     <reg>multa</reg>
                     milia hominum caesa, capta . . .
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">
                             <reg>perhaps</reg>
                         </hi>
@@ -5001,7 +5001,7 @@
                     deinde
 					creati L. Cornelius Lentulus, M. Cornelius Cethegus,
 					C. Sulpicius, C. Calpurnius Piso.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">
                             <reg>names</reg>
                             in this sentence are in part restored by Aldus and Sigonius. P
@@ -5026,7 +5026,7 @@
 					imperium est.
                 </p>
                 <pb id="p.502"/>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

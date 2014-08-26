@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader status="new" type="text">
+  <teiHeader type="text">
     <fileDesc>
       <titleStmt>
 	<title>Epitome </title>
@@ -17,7 +17,7 @@
 </respStmt>
 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
 	
-      </titleStmt>
+      </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
 	
       <sourceDesc>
 	<bibl>
@@ -30,24 +30,24 @@ Includes Frazer's notes.
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
-      <refsDecl doctype="TEI.2">
-    <state unit="text"/>
-	<state unit="book" delim="."/>
-	<state unit="chapter" delim="."/>
-	<state unit="section" n="chunk"/>
+      <refsDecl
+    refState unit="text"/>
+	refState unit="book" delim="."/>
+	refState unit="chapter" delim="."/>
+	refState unit="section" n="chunk"/>
       </refsDecl>
-      <refsDecl doctype="TEI.2">
-	<state unit="volume" delim="."/>
-	<state unit="page"/>
+      <refsDecl
+	refState unit="volume" delim="."/>
+	refState unit="page"/>
       </refsDecl>
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language id="greek">Greek
-        </language><language id="en">English
+        language ident="greek">Greek
+        </language>language ident="en">English
       </language></langUsage>
     </profileDesc>
-    <revisionDesc>
+    <revisionDesc><!--
       <change><date>1991</date>
 	<respStmt><resp>tagging</resp><name>Lauren Burka</name><name>Chiara Thayer</name></respStmt>
 	<item>Data keyboarded in the Philippines. Basic SGML tagging done by Lauren Burka and Chiara Thayer</item>
@@ -89,10 +89,10 @@ Includes Frazer's notes.
     <change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
   </teiHeader><text xml:lang="grc">
 			<body>
-				<div1 n="E" type="book">
+				<div n="E" type="book">
 <milestone unit="chapter" n="1"/><milestone unit="section" n="1"/><p> <pb n="128"></pb><!-- <NOTE ED="Frazer">1</NOTE> --><milestone unit="MSS" n="E" ed="Frazer"/>τρίτην ἔκτεινεν ἐν Κρομμυῶνι σῦν τὴν  καλουμένην Φαιὰν ἀπὸ<!-- <NOTE ED="Frazer">2</NOTE> --> τῆς θρεψάσης γραὸς αὐτήν· ταύτην τινὲς Ἐχίδνης καὶ Τυφῶνος λέγουσι.
 <milestone unit="section" n="2"/>τέταρτον ἔκτεινε Σκείρωνα τὸν Κορίνθιον τοῦ Πέλοπος, ὡς δὲ ἔνιοι Ποσειδῶνος. οὗτος ἐν τῇ Μεγαρικῇ κατέχων τὰς ἀφʼ ἑαυτοῦ κληθείσας πέτρας Σκειρωνίδας, ἠνάγκαζε τοὺς παριόντας νίζειν αὐτοῦ τοὺς πόδας, καὶ νίζοντας εἰς τὸν βυθὸν αὐτοὺς ἔρριπτε βορὰν ὑπερμεγέθει χελώνῃ.
 <milestone unit="section" n="3"/>Θησεὺς δὲ ἁρπάσας αὐτὸν τῶν ποδῶν ἔρριψεν <add>εἰς τὴν θάλασσαν</add>.<!-- <NOTE ED="Frazer">3</NOTE> --> πέμπτον ἔκτεινεν ἐν <pb n="130"></pb>Ἐλευσῖνι Κερκυόνα τὸν Βράγχου καὶ Ἀργιόπης νύμφης. οὗτος ἠνάγκαζε τοὺς παριόντας παλαίειν καὶ παλαίων ἀνῄρει· Θησεὺς δὲ αὐτὸν μετέωρον ἀράμενος ἔρραξεν εἰς γῆν.
@@ -147,10 +147,10 @@ Includes Frazer's notes.
 <milestone unit="section" n="8"/></p><p><milestone unit="MSS" n="E" ed="Frazer"/>ὅτι Ὀδυσσεὺς λαβὼν αἰχμάλωτον Φρύγα ἠνάγκασε γράψαι περὶ προδοσίας ὡς παρὰ  Πριάμου πρὸς Παλαμήδην· καὶ χώσας ἐν ταῖς σκηναῖς<!-- <NOTE ED="Frazer">1</NOTE> --> αὐτοῦ χρυσὸν τὴν δέλτον ἔρριψεν ἐν τῷ  στρατοπέδῳ. Ἀγαμέμνων δὲ ἀναγνοὺς καὶ εὑρὼν τὸν χρυσόν, τοῖς συμμάχοις αὐτὸν ὡς προδότην  παρέδωκε καταλεῦσαι.
 <milestone unit="section" n="9"/></p><p>ὅτι Μενέλαος σὺν Ὀδυσσεῖ καὶ Ταλθυβίῳ πρὸς <add>Κινύραν εἰς</add><!-- <NOTE ED="Frazer">2</NOTE> --> Κύπρον ἐλθόντες συμμαχεῖν ἔπειθον· ὁ δὲ Ἀγαμέμνονι μὲν οὐ παρόντι θώρακας ἐδωρήσατο, ὀμόσας δὲ πέμψειν πεντήκοντα ναῦς, μίαν πέμψας, ἧς ἦρχεν<!-- <NOTE ED="Frazer">3</NOTE> --><gap></gap>ὁ Μυγδαλίωνος, καὶ τὰς λοιπὰς ἐκ γῆς πλάσας μεθῆκεν εἰς τὸ πέλαγος.
 <milestone unit="section" n="10"/></p><p>ὅτι θυγατέρες Ἀνίου τοῦ<!-- <NOTE ED="Frazer">4</NOTE> --> Ἀπόλλωνος Ἐλαῒς <pb n="180"></pb>Σπερμὼ Οἰνώ, αἱ Οἰνότροφοι<!-- <NOTE ED="Frazer">1</NOTE> --> λεγόμεναι· αἷς ἐχαρίσατο Διόνυσος ποιεῖν ἐκ γῆς ἔλαιον σῖτον οἶνον.
-<milestone unit="section" n="11"/></p><p><milestone unit="MSS" n="S" ed="Frazer"/>συνηθροίζετο δὲ ὁ στρατὸς ἐν Αὐλίδι. οἱ δὲ στρατεύσαντες ἐπὶ Τροίαν ἦσαν οἵδε. Βοιωτῶν <pb n="182"></pb>μὲν ἡγεμόνες δέκα· ἦγον ναῦς <num lang="greek">μ</num>. Ὀρχομενίων <num lang="greek">δ</num>· ἦγον ναῦς <num lang="greek">λ</num>. Φωκέων ἡγεμόνες <num lang="greek">δ</num>· ἦγον ναῦς <num lang="greek">μ</num>. Λοκρῶν Αἴας Ὀιλέως·<!-- <NOTE ED="Frazer">1</NOTE> --> ἦγε ναῦς <num lang="greek">μ</num>. Εὐβοέων Ἐλεφήνωρ Χαλκώδοντος καὶ Ἀλκυόνης· ἦγε ναῦς <num lang="greek">μ</num>. Ἀθηναίων Μενεσθεύς· ἦγε ναῦς <num lang="greek">ν</num>.
-<milestone unit="section" n="12"/>Σαλαμινίων<!-- <NOTE ED="Frazer">2</NOTE> --> Αἴας ὁ Τελαμώνιος· ἦγε ναῦς <num lang="greek">ιβ</num>. Ἀργείων Διομήδης Τυδέως καὶ οἱ σὺν αὐτῷ· ἦγον ναῦς <num lang="greek">π</num>. Μυκηναίων Ἀγαμέμνων Ἀτρέως καὶ Ἀερόπης ναῦς <num lang="greek">ρ</num>. Λακεδαιμονίων Μενέλαος Ἀτρέως καὶ Ἀερόπης <num lang="greek">ξ</num>. Πυλίων<!-- <NOTE ED="Frazer">3</NOTE> --> Νέστωρ Νηλέως καὶ  Χλωρίδος ναῦς <num lang="greek">μ</num>. Ἀρκάδων Ἀγαπήνωρ ναῦς <num lang="greek">ζ</num>. Ἠλείων Ἀμφίμαχος καὶ οἱ σὺν αὐτῷ ναῦς <num lang="greek">μ</num>. Δουλιχίων Μέγης Φυλέως ναῦς <num lang="greek">μ</num>. Κεφαλλήνων Ὀδυσσεὺς Λαέρτου καὶ Ἀντικλείας<!-- <NOTE ED="Frazer">4</NOTE> --> ναῦς <num lang="greek">ιβ</num>. Αἰτωλῶν Θόας Ἀνδραίμονος καὶ Γόργης· ἦγε ναῦς <num lang="greek">μ</num>.
-<milestone unit="section" n="13"/>Κρητῶν Ἰδομενεὺς Δευκαλίωνος <num lang="greek">μ</num>. Ῥοδίων Τληπόλεμος<!-- <NOTE ED="Frazer">5</NOTE> --> Ἡρακλέους καὶ Ἀστυόχης ναῦς <num lang="greek">θ</num>. Συμαίων Νιρεὺς Χαρόπου<!-- <NOTE ED="Frazer">6</NOTE> --> ναῦς <num lang="greek">γ</num>. <pb n="184"></pb>Κώων Φείδιππος καὶ Ἄντιφος οἱ Θεσσαλοῦ <num lang="greek">λ</num>.
-<milestone unit="section" n="14"/>Μυρμιδόνων Ἀχιλλεὺς Πηλέως καὶ Θέτιδος <num lang="greek">ν</num>. ἐκ Φυλάκης Πρωτεσίλαος Ἰφίκλου <num lang="greek">μ</num>. Φεραίων Εὔμηλος Ἀδμήτου <num lang="greek">ια</num>. Ὀλιζώνων Φιλοκτήτης Ποίαντος <num lang="greek">ζ</num>. Αἰνιάνων Γουνεὺς Ὠκύτου <num lang="greek">κβ</num>. Τρικκαίων Ποδαλείριος<!-- <NOTE ED="Frazer">1</NOTE> --><gap></gap><num lang="greek">λ</num>. Ὀρμενίων  Εὐρύπυλος<!-- <NOTE ED="Frazer">2</NOTE> --><gap></gap>ναῦς <num lang="greek">μ</num>. Γυρτωνίων<!-- <NOTE ED="Frazer">3</NOTE> --> Πολυποίτης Πειρίθου <num lang="greek">λ</num>. Μαγνήτων Πρόθοος Τενθρήδονος<!-- <NOTE ED="Frazer">4</NOTE> --> <num lang="greek">μ</num>. νῆες μὲν οὖν αἱ πᾶσαι ,<num lang="greek">αιγ</num>, ἡγεμόνες δὲ <num lang="greek">μγ</num>,  ἡγεμόνειαι δὲ <num lang="greek">λ</num>·
+<milestone unit="section" n="11"/></p><p><milestone unit="MSS" n="S" ed="Frazer"/>συνηθροίζετο δὲ ὁ στρατὸς ἐν Αὐλίδι. οἱ δὲ στρατεύσαντες ἐπὶ Τροίαν ἦσαν οἵδε. Βοιωτῶν <pb n="182"></pb>μὲν ἡγεμόνες δέκα· ἦγον ναῦς <num xml:lang="grc">μ</num>. Ὀρχομενίων <num xml:lang="grc">δ</num>· ἦγον ναῦς <num xml:lang="grc">λ</num>. Φωκέων ἡγεμόνες <num xml:lang="grc">δ</num>· ἦγον ναῦς <num xml:lang="grc">μ</num>. Λοκρῶν Αἴας Ὀιλέως·<!-- <NOTE ED="Frazer">1</NOTE> --> ἦγε ναῦς <num xml:lang="grc">μ</num>. Εὐβοέων Ἐλεφήνωρ Χαλκώδοντος καὶ Ἀλκυόνης· ἦγε ναῦς <num xml:lang="grc">μ</num>. Ἀθηναίων Μενεσθεύς· ἦγε ναῦς <num xml:lang="grc">ν</num>.
+<milestone unit="section" n="12"/>Σαλαμινίων<!-- <NOTE ED="Frazer">2</NOTE> --> Αἴας ὁ Τελαμώνιος· ἦγε ναῦς <num xml:lang="grc">ιβ</num>. Ἀργείων Διομήδης Τυδέως καὶ οἱ σὺν αὐτῷ· ἦγον ναῦς <num xml:lang="grc">π</num>. Μυκηναίων Ἀγαμέμνων Ἀτρέως καὶ Ἀερόπης ναῦς <num xml:lang="grc">ρ</num>. Λακεδαιμονίων Μενέλαος Ἀτρέως καὶ Ἀερόπης <num xml:lang="grc">ξ</num>. Πυλίων<!-- <NOTE ED="Frazer">3</NOTE> --> Νέστωρ Νηλέως καὶ  Χλωρίδος ναῦς <num xml:lang="grc">μ</num>. Ἀρκάδων Ἀγαπήνωρ ναῦς <num xml:lang="grc">ζ</num>. Ἠλείων Ἀμφίμαχος καὶ οἱ σὺν αὐτῷ ναῦς <num xml:lang="grc">μ</num>. Δουλιχίων Μέγης Φυλέως ναῦς <num xml:lang="grc">μ</num>. Κεφαλλήνων Ὀδυσσεὺς Λαέρτου καὶ Ἀντικλείας<!-- <NOTE ED="Frazer">4</NOTE> --> ναῦς <num xml:lang="grc">ιβ</num>. Αἰτωλῶν Θόας Ἀνδραίμονος καὶ Γόργης· ἦγε ναῦς <num xml:lang="grc">μ</num>.
+<milestone unit="section" n="13"/>Κρητῶν Ἰδομενεὺς Δευκαλίωνος <num xml:lang="grc">μ</num>. Ῥοδίων Τληπόλεμος<!-- <NOTE ED="Frazer">5</NOTE> --> Ἡρακλέους καὶ Ἀστυόχης ναῦς <num xml:lang="grc">θ</num>. Συμαίων Νιρεὺς Χαρόπου<!-- <NOTE ED="Frazer">6</NOTE> --> ναῦς <num xml:lang="grc">γ</num>. <pb n="184"></pb>Κώων Φείδιππος καὶ Ἄντιφος οἱ Θεσσαλοῦ <num xml:lang="grc">λ</num>.
+<milestone unit="section" n="14"/>Μυρμιδόνων Ἀχιλλεὺς Πηλέως καὶ Θέτιδος <num xml:lang="grc">ν</num>. ἐκ Φυλάκης Πρωτεσίλαος Ἰφίκλου <num xml:lang="grc">μ</num>. Φεραίων Εὔμηλος Ἀδμήτου <num xml:lang="grc">ια</num>. Ὀλιζώνων Φιλοκτήτης Ποίαντος <num xml:lang="grc">ζ</num>. Αἰνιάνων Γουνεὺς Ὠκύτου <num xml:lang="grc">κβ</num>. Τρικκαίων Ποδαλείριος<!-- <NOTE ED="Frazer">1</NOTE> --><gap></gap><num xml:lang="grc">λ</num>. Ὀρμενίων  Εὐρύπυλος<!-- <NOTE ED="Frazer">2</NOTE> --><gap></gap>ναῦς <num xml:lang="grc">μ</num>. Γυρτωνίων<!-- <NOTE ED="Frazer">3</NOTE> --> Πολυποίτης Πειρίθου <num xml:lang="grc">λ</num>. Μαγνήτων Πρόθοος Τενθρήδονος<!-- <NOTE ED="Frazer">4</NOTE> --> <num xml:lang="grc">μ</num>. νῆες μὲν οὖν αἱ πᾶσαι ,<num xml:lang="grc">αιγ</num>, ἡγεμόνες δὲ <num xml:lang="grc">μγ</num>,  ἡγεμόνειαι δὲ <num xml:lang="grc">λ</num>·
 <milestone unit="section" n="15"/></p><p><milestone unit="MSS" n="ES" ed="Frazer"/>ὅτι ὄντος ἐν Αὐλίδι τοῦ στρατεύματος, θυσίας γενομένης Ἀπόλλωνι,<!-- <NOTE ED="Frazer">5</NOTE> --> ὁρμήσας δράκων ἐκ τοῦ βωμοῦ παρὰ τὴν πλησίον πλάτανον, οὔσης ἐν αὐτῇ νεοττιᾶς,<!-- <NOTE ED="Frazer">6</NOTE> --> τοὺς ἐν<!-- <NOTE ED="Frazer">7</NOTE> --> αὐτῇ καταναλώσας  στρουθοὺς ὀκτὼ σὺν τῇ μητρὶ ἐνάτῃ λίθος ἐγένετο. Κάλχας δὲ εἰπὼν κατὰ Διὸς βούλησιν γεγονέναι αὐτοῖς τὸ σημεῖον τοῦτο, τεκμηράμενος ἐκ τῶν γεγονότων ἔφη δεκαετεῖ χρόνῳ δεῖν Τροίαν ἁλῶναι.
 <milestone unit="section" n="16"/>καὶ πλεῖν παρεσκευάζοντο ἐπὶ Τροίαν.<!-- <NOTE ED="Frazer">8</NOTE> -->  Ἀγαμέμνων οὖν αὐτὸς ἡγεμὼν<!-- <NOTE ED="Frazer">9</NOTE> --> τοῦ σύμπαντος στρατοῦ <pb n="186"></pb>ἦν, ἐναυάρχει<!-- <NOTE ED="Frazer">1</NOTE> --> δʼ Ἀχιλλεὺς πεντεκαιδεκαέτης τυγχάνων.
 <milestone unit="section" n="17"/></p><p><milestone unit="MSS" n="E" ed="Frazer"/>ἀγνοοῦντες δὲ τὸν ἐπὶ Τροίαν πλοῦν Μυσίᾳ προσίσχουσι καὶ ταύτην ἐπόρθουν, Τροίαν  νομίζοντες εἶναι. βασιλεύων δὲ Τήλεφος Μυσῶν, Ἡρακλέους παῖς, ἰδὼν τὴν χώραν λεηλατουμένην, τοὺς Μυσοὺς καθοπλίσας ἐπὶ τὰς ναῦς συνεδίωκε τοὺς Ἕλληνας καὶ πολλοὺς ἀπέκτεινεν, ἐν οἷς καὶ Θέρσανδρον τὸν Πολυνείκους ὑποστάντα.  ὁρμήσαντος δὲ Ἀχιλλέως ἐπʼ αὐτὸν οὐ μείνας ἐδιώκετο· καὶ διωκόμενος ἐμπλακεὶς εἰς ἀμπέλου κλῆμα<!-- <NOTE ED="Frazer">2</NOTE> --> τὸν μηρὸν τιτρώσκεται δόρατι.
@@ -271,11 +271,11 @@ Includes Frazer's notes.
 <milestone unit="section" n="23"/>λυθείσης δὲ τῆς νεὼς Ὀδυσσεὺς τὸν ἱστὸν κατασχὼν παραγίνεται εἰς τὴν  Χάρυβδιν. τῆς δὲ Χαρύβδεως καταπινούσης τὸν ἱστόν, ἐπιλαβόμενος ὑπερπεφυκότος<!-- <NOTE ED="Frazer">3</NOTE> --> ἐρινεοῦ περιέμεινε. καὶ πάλιν ἀνεθέντα τὸν ἱστὸν θεωρήσας, ἐπὶ  τοῦτον ῥίψας εἰς Ὠγυγίαν νῆσον διεκομίσθη.
 <milestone unit="section" n="24"/></p><p>ἐκεῖ δὲ ἀποδέχεται Καλυψὼ θυγάτηρ  Ἄτλαντος, καὶ συνευνασθεῖσα γεννᾷ παῖδα Λατῖνον. μένει δὲ παρʼ αὐτῇ πενταετίαν, καὶ σχεδίαν ποιήσας ἀποπλεῖ. ταύτης δὲ ἐν τῷ πελάγει  διαλυθείσης ὀργῇ Ποσειδῶνος, γυμνὸς πρὸς Φαίακας ἐκβράσσεται.
 <milestone unit="section" n="25"/>Ναυσικάα δέ, ἡ τοῦ βασιλέως θυγάτηρ Ἀλκινόου, πλύνουσα τὴν ἐσθῆτα  ἱκετεύσαντα αὐτὸν ἄγει πρὸς Ἀλκίνοον, ὃς αὐτὸν ξενίζει <pb n="296"></pb>καὶ δῶρα δοὺς μετὰ πομπῆς αὐτὸν εἰς τὴν πατρίδα ἐξέπεμψε. Ποσειδῶν δὲ Φαίαξι μηνίσας τὴν μὲν ναῦν ἀπελίθωσε, τὴν δὲ πόλιν ὄρει περικαλύπτει.
-<milestone unit="section" n="26"/>Ὀδυσσεὺς δὲ παραγενόμενος εἰς τὴν πατρίδα εὑρίσκει τὸν οἶκον διεφθαρμένον· νομίσαντες γὰρ αὐτὸν τεθνάναι Πηνελόπην ἐμνῶντο ἐκ Δουλιχίου μὲν <num lang="greek">νζ</num>·
+<milestone unit="section" n="26"/>Ὀδυσσεὺς δὲ παραγενόμενος εἰς τὴν πατρίδα εὑρίσκει τὸν οἶκον διεφθαρμένον· νομίσαντες γὰρ αὐτὸν τεθνάναι Πηνελόπην ἐμνῶντο ἐκ Δουλιχίου μὲν <num xml:lang="grc">νζ</num>·
 <milestone unit="section" n="27"/>Ἀμφίνομος Θόας Δημοπτόλεμος  Ἀμφίμαχος Εὐρύαλος, Πάραλος Εὐηνορίδης Κλυτίος Ἀγήνωρ Εὐρύπυλος, Πυλαιμένης<!-- <NOTE ED="Frazer">1</NOTE> --> Ἀκάμας  Θερσίλοχος Ἅγιος Κλύμενος, Φιλόδημος  Μενεπτόλεμος Δαμάστωρ Βίας Τέλμιος, Πολύιδος Ἀστύλοχος Σχεδίος Ἀντίγονος<!-- <NOTE ED="Frazer">2</NOTE> --> Μάρψιος,  Ἰφιδάμας Ἀργεῖος Γλαῦκος Καλυδωνεὺς Ἐχίων, Λάμας Ἀνδραίμων Ἀγέρωχος Μέδων Ἄγριος, Πρόμος Κτήσιος Ἀκαρνάν Κύκνος Ψηρᾶς,  Ἑλλάνικος Περίφρων Μεγασθένης Θρασυμήδης  Ὀρμένιος, Διοπίθης Μηκιστεὺς Ἀντίμαχος Πτολεμαῖος Λεστορίδης,<!-- <NOTE ED="Frazer">3</NOTE> --> Νικόμαχος Πολυποίτης Κεραός.
-<milestone unit="section" n="28"/>ἐκ δὲ Σάμης <num lang="greek">κγ</num>· Ἀγέλαος Πείσανδρος Ἔλατος Κτήσιππος Ἱππόδοχος, Εὐρύστρατος Ἀρχέμολος<!-- <NOTE ED="Frazer">4</NOTE> --> Ἴθακος Πεισήνωρ Ὑπερήνωρ, Φεροίτης<!-- <NOTE ED="Frazer">5</NOTE> -->  Ἀντισθένης Κέρβερος Περιμήδης Κῦννος, Θρίασος Ἐτεωνεὺς Κλυτίος Πρόθοος Λύκαιθος,<!-- <NOTE ED="Frazer">6</NOTE> --> Εὔμηλος Ἴτανος<!-- <NOTE ED="Frazer">7</NOTE> --> Λύαμμος.
-<milestone unit="section" n="29"/>ἐκ δὲ Ζακύνθου <num lang="greek">μδ</num>· <pb n="298"></pb>Εὐρύλοχος Λαομήδης Μόλεβος<!-- <NOTE ED="Frazer">1</NOTE> --> Φρένιος Ἴνδιος, Μίνις<!-- <NOTE ED="Frazer">2</NOTE> --> Λειώκριτος<!-- <NOTE ED="Frazer">3</NOTE> --> Πρόνομος Νίσας Δαήμων,  Ἀρχέστρατος<!-- <NOTE ED="Frazer">4</NOTE> --> Ἱππό<del>μαχος Εὐρύαλος Περίαλλος Εὐηνορίδης, Κλυτίος Ἀγήνωρ</del> Πόλυβος  Πολύδωρος Θαδύτιος,<!-- <NOTE ED="Frazer">5</NOTE> --> Στράτιος <del>Φρένιος Ἴνδιος</del> Δαισήνωρ Λαομέδων, Λαόδικος Ἅλιος Μάγνης Ὀλοίτροχος<!-- <NOTE ED="Frazer">6</NOTE> --> Βάρθας, Θεόφρων Νισσαῖος  Ἀλκάροψ Περικλύμενος Ἀντήνωρ, Πέλλας Κέλτος Περίφας Ὄρμενος Πόλυβος, Ἀνδρομήδης.
-<milestone unit="section" n="30"/>ἐκ δὲ αὐτῆς Ἰθάκης ἦσαν οἱ μνηστευόμενοι <num lang="greek">ιβ</num> οἵδε· Ἀντίνοος Πρόνοος Λειώδης Εὐρύνομος  Ἀμφίμαχος, Ἀμφίαλος Πρόμαχος Ἀμφιμέδων  Ἀρίστρατος Ἕλενος, Δουλιχιεὺς Κτήσιππος.
+<milestone unit="section" n="28"/>ἐκ δὲ Σάμης <num xml:lang="grc">κγ</num>· Ἀγέλαος Πείσανδρος Ἔλατος Κτήσιππος Ἱππόδοχος, Εὐρύστρατος Ἀρχέμολος<!-- <NOTE ED="Frazer">4</NOTE> --> Ἴθακος Πεισήνωρ Ὑπερήνωρ, Φεροίτης<!-- <NOTE ED="Frazer">5</NOTE> -->  Ἀντισθένης Κέρβερος Περιμήδης Κῦννος, Θρίασος Ἐτεωνεὺς Κλυτίος Πρόθοος Λύκαιθος,<!-- <NOTE ED="Frazer">6</NOTE> --> Εὔμηλος Ἴτανος<!-- <NOTE ED="Frazer">7</NOTE> --> Λύαμμος.
+<milestone unit="section" n="29"/>ἐκ δὲ Ζακύνθου <num xml:lang="grc">μδ</num>· <pb n="298"></pb>Εὐρύλοχος Λαομήδης Μόλεβος<!-- <NOTE ED="Frazer">1</NOTE> --> Φρένιος Ἴνδιος, Μίνις<!-- <NOTE ED="Frazer">2</NOTE> --> Λειώκριτος<!-- <NOTE ED="Frazer">3</NOTE> --> Πρόνομος Νίσας Δαήμων,  Ἀρχέστρατος<!-- <NOTE ED="Frazer">4</NOTE> --> Ἱππό<del>μαχος Εὐρύαλος Περίαλλος Εὐηνορίδης, Κλυτίος Ἀγήνωρ</del> Πόλυβος  Πολύδωρος Θαδύτιος,<!-- <NOTE ED="Frazer">5</NOTE> --> Στράτιος <del>Φρένιος Ἴνδιος</del> Δαισήνωρ Λαομέδων, Λαόδικος Ἅλιος Μάγνης Ὀλοίτροχος<!-- <NOTE ED="Frazer">6</NOTE> --> Βάρθας, Θεόφρων Νισσαῖος  Ἀλκάροψ Περικλύμενος Ἀντήνωρ, Πέλλας Κέλτος Περίφας Ὄρμενος Πόλυβος, Ἀνδρομήδης.
+<milestone unit="section" n="30"/>ἐκ δὲ αὐτῆς Ἰθάκης ἦσαν οἱ μνηστευόμενοι <num xml:lang="grc">ιβ</num> οἵδε· Ἀντίνοος Πρόνοος Λειώδης Εὐρύνομος  Ἀμφίμαχος, Ἀμφίαλος Πρόμαχος Ἀμφιμέδων  Ἀρίστρατος Ἕλενος, Δουλιχιεὺς Κτήσιππος.
 <milestone unit="section" n="31"/></p><p>οὗτοι πορευόμενοι εἰς τὰ βασίλεια δαπανῶντες τὰς Ὀδυσσέως ἀγέλας εὐωχοῦντο. Πηνελόπη δὲ ἀναγκαζομένη τὸν γάμον ὑπέσχετο ὅτε τὸ ἐντάφιον Λαέρτῃ πέρας ἕξει, καὶ τοῦτο ὕφηνεν ἐπὶ ἔτη τρία, μεθʼ ἡμέραν μὲν ὑφαίνουσα, νύκτωρ δὲ ἀναλύουσα. τοῦτον τὸν τρόπον ἐξηπατῶντο οἱ μνηστῆρες ὑπὸ τῆς Πηνελόπης, μέχρις ὅτε ἐφωράθη.
 <milestone unit="section" n="32"/>Ὀδυσσεὺς δὲ μαθὼν τὰ κατὰ τὴν οἰκίαν, ὡς ἐπαίτης πρὸς Εὔμαιον οἰκέτην ἀφικνεῖται, καὶ Τηλεμάχῳ  ἀναγνωρίζεται, καὶ παραγίνεται εἰς τὴν πόλιν.  Μελάνθιος δὲ αὐτοῖς συντυχὼν ὁ αἰπόλος οἰκέτης ὑπάρχων ἀτιμάζει. παραγενόμενος δὲ εἰς τὰ βασίλεια τοὺς μνηστῆρας μετῄτει τροφήν, καὶ <pb n="300"></pb>εὑρὼν μεταίτην Ἶρον καλούμενον διαπαλαίει αὐτῷ. Εὐμαίῳ δὲ μηνύσας ἑαυτὸν καὶ Φιλοιτίῳ,<!-- <NOTE ED="Frazer">1</NOTE> --> μετὰ τούτων<!-- <NOTE ED="Frazer">2</NOTE> --> καὶ Τηλεμάχου τοῖς μνηστῆρσιν  ἐπιβουλεύει.
 <milestone unit="section" n="33"/>Πηνελόπη δὲ τοῖς μνηστῆρσι τίθησιν Ὀδυσσέως τόξον, ὃ παρὰ Ἰφίτου ποτὲ ἔλαβε, καὶ τῷ τοῦτο τείναντί φησι συνοικήσειν. μηδενὸς δὲ τεῖναι δυναμένου, δεξάμενος Ὀδυσσεὺς τοὺς  μνηστῆρας κατετόξευσε σὺν Εὐμαίῳ καὶ Φιλοιτίῳ καὶ Τηλεμάχῳ. ἀνεῖλε δὲ καὶ Μελάνθιον καὶ τὰς συνευναζομένας τοῖς μνηστῆρσι θεραπαίνας, καὶ τῇ γυναικὶ καὶ τῷ πατρὶ ἀναγνωρίζεται.

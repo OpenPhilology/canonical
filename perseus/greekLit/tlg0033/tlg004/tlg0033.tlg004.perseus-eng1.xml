@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>Odes (English). Machine readable text - I.</title>
@@ -15,15 +15,15 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 245K</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
                 <authority>Perseus Project</authority>
             </publicationStmt>
             <notesStmt>
-                <note place="unspecified" anchored="yes">
+                <note place="unspecified" anchored="true">
                     Diane Arnson Svarlien typed in her translation.  Basic SGML tagging by EM
                 </note>
             </notesStmt>
@@ -42,20 +42,20 @@
                     <p>professional data entry</p>
                 </correction>
             </editorialDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="poem"/>
-                <state unit="line"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="poem"/>
+                refState unit="line"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
-                <language id="latin">Latin</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
+                language ident="latin">Latin</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>8/9</date>
                 <respStmt>
@@ -96,21 +96,21 @@
                 </respStmt>
                 <item>Entered Svarlien's responses to Hubbard.</item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" type="book" n="I.">
+            <div part="N" sample="complete" org="uniform" type="book" n="I.">
                 <head>Isthmian Odes</head>
                 <p/>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="1">
+                <div part="N" sample="complete" org="uniform" type="poem" n="1">
                     <head>
                         <title>Isthmian 1</title>
                         <persName type="winner">For Herodotus of Thebes</persName>
                         <seg part="N" type="race">Chariot Race</seg>
                         <date>
                             ?
-                            <date value="-458">458</date>
+                            date when="-458">458</date>
                             B. C.
                         </date>
                     </head>
@@ -192,15 +192,15 @@
                         <placeName key="tgn,7010770">Pytho</placeName>
                         , with exquisite wreaths from the Alpheus and the Olympian games, thus winning glory for seven-gated Thebes. But if someone hoards hidden wealth at home, and attacks others with mockery, he fails to consider that he is giving up his soul to Hades without glory.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="2">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="2">
                     <head>
                         <title>Isthmian 2</title>
                         <persName type="winner">In memory of the victories of Xenocrates of Acragas</persName>
                         <seg part="N" type="race">Chariot Race</seg>
                         <date>
                             ?
-                            <date value="-470">470</date>
+                            date when="-470">470</date>
                             B. C.
                         </date>
                     </head>
@@ -259,8 +259,8 @@
                         <milestone unit="line" ed="P" n="45"/>
                         or these songs. For I did not fashion them to stand idle. Give this message, Nicasippus, when you come across my trusty friend.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="3">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="3">
                     <head>
                         <title>Isthmian 3</title>
                         <persName type="winner">For Melissus of Thebes</persName>
@@ -289,8 +289,8 @@
                         <milestone unit="line" ed="P" n="15"/>
                         Surely you know of the ancient glory of Cleonymus in the chariot-races. And, being related to the Labdacids on their mother's side, they followed a path of wealth with the toil of their four-horse teams. But the whirling days of a man's lifetime change many things. Only the children of the gods are unwounded.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="4">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="4">
                     <head>
                         <title>Isthmian 4</title>
                         <persName type="winner">For Melissus of Thebes</persName>
@@ -373,15 +373,15 @@
                         <milestone unit="line" ed="P" n="70"/>
                         myrtle, this man showed forth a double victory, having won before in the boy's contest by heeding the wise advice of his helmsman and trainer, Orseas. I will honor him together with Orseas in my victory-song, pouring delightful grace on both.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="5">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="5">
                     <head>
                         <title>Isthmian 5</title>
                         <persName type="winner">For Phylacidas of Aegina</persName>
                         <seg part="N" type="race">Pancratium</seg>
                         <date>
                             ?
-                            <date value="-478">478</date>
+                            date when="-478">478</date>
                             B. C.
                         </date>
                     </head>
@@ -443,15 +443,15 @@
                         <milestone unit="line" ed="P" n="60"/>
                         skillful with his hands in guiding straight the course of Phylacidas' blows, and with a mind to match. Take a garland for him, and bring him a fillet of fine wool, and send along this winged new song.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="6">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="6">
                     <head>
                         <title>Isthmian 6</title>
                         <persName type="winner">For Phylacidas of Aegina</persName>
                         <seg part="N" type="race">Pancratium</seg>
                         <date>
                             ?484 or
-                            <date value="-480">480</date>
+                            date when="-480">480</date>
                             B. C.
                         </date>
                     </head>
@@ -495,11 +495,11 @@
                         <milestone unit="strophe" n="str. 3"/>
                         <milestone unit="line" n="51"/>
                         and he spoke like a prophet: “Telamon, you will have the son that you ask for. Name him after the bird that appeared: wide-ruling Aias, awesome in the war-toils of the people.”
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Compare
                             <hi rend="Italic">Aias</hi>
                             with Greek
-                            <foreign lang="greek">ai)eto/s</foreign>
+                            <foreign xml:lang="grc">ai)eto/s</foreign>
                             ,
                             <hi rend="Italic">eagle</hi>
                         </note>
@@ -518,18 +518,18 @@
                         He is loved for his kindness to his guest-friends; he pursues with moderation in his thoughts and restrains with moderation. He does not say one thing and think another. You might say that for athletes he is like the bronze-mastering Naxian whetstone among other stones. I shall give him to drink the pure water of Dirce, which the deep-waisted daughters of
                         <milestone unit="line" ed="P" n="75"/>
                         golden-robed Mnemosyne
-                        <note place="unspecified" anchored="yes" resp="Svarlien">Memory</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">Memory</note>
                         brought forth beside the fine-walled gates of Cadmus.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="7">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="7">
                     <head>
                         <title>Isthmian 7</title>
                         <persName type="winner">For Strepsiades of Thebes</persName>
                         <seg part="N" type="race">Pancratium</seg>
                         <date>
                             ?
-                            <date value="-454">454</date>
+                            date when="-454">454</date>
                             B. C.
                         </date>
                     </head>
@@ -578,15 +578,15 @@
                         <milestone unit="line" ed="P" n="50"/>
                         a blossoming garland also from your contests at Pytho.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="8">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="8">
                     <head>
                         <title>Isthmian 8</title>
                         <persName type="winner">For Cleandros of Aegina</persName>
                         <seg part="N" type="race">Pancratium</seg>
                         <date>
                             ?
-                            <date value="-478">478</date>
+                            date when="-478">478</date>
                             B. C.
                         </date>
                     </head>
@@ -640,19 +640,19 @@
                         he too was once victorious over all that lived around him, battering them with his inescapable hands. He is not dishonored by the offspring of his father's distinguished brother. Therefore let another young man weave for Cleandros a garland of tender myrtle in honor of the pancratium, since the contest of Alcathous and the young men of Epidaurus welcomed him before in his success. A good man may praise him,
                         <milestone unit="line" ed="P" n="70"/>
                         for he did not restrain his youth, keeping it hidden in his pocket
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading
-                            <foreign lang="greek">ko/lpw|</foreign>
+                            <foreign xml:lang="grc">ko/lpw|</foreign>
                             (Theiler, Slater) or
-                            <foreign lang="greek">ko/lpou</foreign>
+                            <foreign xml:lang="grc">ko/lpou</foreign>
                             (Young) rather than
-                            <foreign lang="greek">keia=|</foreign>
+                            <foreign xml:lang="grc">keia=|</foreign>
                             .
                         </note>
                         and ignorant of fine deeds.
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

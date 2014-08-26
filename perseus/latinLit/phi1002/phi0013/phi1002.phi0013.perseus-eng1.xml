@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Inst." type="work">Institutio Oratoria, books 1-3 - 3</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -39,23 +39,23 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter"/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter"/>
+                refState unit="section"/>
             </refsDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="page"/>
+            <refsDecl
+                refState unit="page"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="la">Latin</language>
-                <language id="greek">Greek</language>
+                language ident="en">English</language>
+                language ident="la">Latin</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -64,12 +64,12 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
             <pb id="p.371"/>
-            <div1 part="N" sample="complete" org="uniform" n="3" type="book">
+            <div part="N" sample="complete" org="uniform" n="3" type="book">
                 <head>Book III</head>
                 <p>
                     <milestone n="1" unit="chapter"/>
@@ -109,7 +109,7 @@ somewhat over-sensitive.
                     Lucretilus has the same
 object in mind when he states that he has set forth
 his philosophical system in verse; for you will remember the well known simile which he uses
-                    <note anchored="yes" place="unspecified">iv. 11. See also i. 936.</note>
+                    <note anchored="true" place="unspecified">iv. 11. See also i. 936.</note>
                     :—
                     <quote rend="blockquote">
                         <l part="N">And as physicians when they seek to give</l>
@@ -166,10 +166,10 @@ just mentioned, and lived on to survive Socrates.
 Chalcedon, Prodicus of Ceos, Protagoras of Abdera,
 for whose instructions, which he afterwards published
 in a text-book, Euathlus is said to have paid 10,000
-                    <note anchored="yes" place="unspecified">About £312.</note>
+                    <note anchored="true" place="unspecified">About £312.</note>
                     denarii, Hippias of Elis and Alcidamas of Elaea whom
 Plato
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Phaedr.</hi>
                         261 D.
                     </note>
@@ -185,7 +185,7 @@ and Theodorus of Byzantium, who was one of those
 called
                     <quote>word-artificers</quote>
                     by Plato.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Phaedr. 266</hi>
                         E.
                     </note>
@@ -195,7 +195,7 @@ first to treat commonplaces, Prodicus, Hippias,
 Protagoras and Thrasymachus the first to handle
 emotional themes. Cicero in the
                     <hi rend="italics">Brutus</hi>
-                    <note anchored="yes" place="unspecified">vii. 27.</note>
+                    <note anchored="true" place="unspecified">vii. 27.</note>
                     states
 that nothing in the ornate rhetorical style was
 ever committed to writing before Pericles, and that
@@ -203,7 +203,7 @@ certain of his speeches are still extant. For my
 part I have been unable to discover anything in
                     <pb id="p.377"/>
                     the least worthy of his great reputation for eloquence,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         XII, ii. 22: x. 49, where Quintilian asserts that all
 the writings of Pericles have been lost.
@@ -225,7 +225,7 @@ branch of study, and when he was already advanced
 in years (and he lived to the age of ninety-eight),
 Aristotle began to teach the art of rhetoric in his
 afternoon lectures,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Aristotle gave his esoteric lectures in the morning,
 reserving the afternoon for those of more general interest:
 see Aul. Gell. xx. v.
@@ -233,17 +233,17 @@ see Aul. Gell. xx. v.
                     in which he frequently quoted
 the wel-known line from the
                     <hi rend="italics">Philoctetes</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Probably the
                         <hi rend="italics">Philoctetes</hi>
                         of Euripides. The original line
 was
-                        <foreign lang="greek">ai)sxro\n siwpa=n, barba/rous d' e)a=n le/gein,</foreign>
+                        <foreign xml:lang="grc">ai)sxro\n siwpa=n, barba/rous d' e)a=n le/gein,</foreign>
                         which Aristotle
 travestied by substituting
-                        <foreign lang="greek">*)isokra/thn</foreign>
+                        <foreign xml:lang="grc">*)isokra/thn</foreign>
                         for
-                        <foreign lang="greek">barba/rous.</foreign>
+                        <foreign xml:lang="grc">barba/rous.</foreign>
                     </note>
                     in the form
                     <quote rend="blockquote">
@@ -306,14 +306,14 @@ mention, should occasion demand.
 who shed the greatest light not only on the practice
 but on the theory of oratory; for he stands alone
 among Romans as combining the gift of actual eloquence with that of teaching the art. With him for
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The younger Hermagoras, a rhetorician of the Augustan
 age.
                     </note>
                     <pb id="p.381"/>
                     predecessor it would be more modest to be silent, but
 for the fact that he himself describes his Rhetorica
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">sc.</hi>
                         the
                         <hi rend="italics">de Inventione.</hi>
@@ -376,7 +376,7 @@ according as their nature suggested. These observations were confirmed by experi
 proceeded to teach what he knew.
                     <milestone n="4" unit="section"/>
                     Cicero,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv.</hi>
                         i. 2.
                     </note>
@@ -430,7 +430,7 @@ assigned the fifth place.
 that there are only three departments on the ground
 that memory and delivery (for which I shall give
 instructions in their proper place
-                    <note anchored="yes" place="unspecified">Book II. claps. ii. and iii.</note>
+                    <note anchored="true" place="unspecified">Book II. claps. ii. and iii.</note>
                     ) are given us by
 nature not by art, may be disregarded, although
 Thrasymachus held the same views as regards delivery.
@@ -454,7 +454,7 @@ speaker has
                     incousistent, two-edged or foolish
 arguments, but merely that he has failed to avoid
 them. It is true that Cicero in his Rhetorica
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         No such statement is found in the
                         <hi rend="italics">de Inventione.</hi>
                     </note>
@@ -478,7 +478,7 @@ this with all the greater confidence because Cicero in
                     <pb id="p.387"/>
                     his
                     <hi rend="italics">Partitiones oratoriae</hi>
-                    <note anchored="yes" place="unspecified">i. 3.</note>
+                    <note anchored="true" place="unspecified">i. 3.</note>
                     arrives at the same five-fold
 division of which I have just spoken. For after an
 initial division of oratory into
@@ -500,7 +500,7 @@ initial division of oratory into
 department common to them all and acting as their
 guardian. Again in the
                     <hi rend="italics">Orator</hi>
-                    <note anchored="yes" place="unspecified">14–17.</note>
+                    <note anchored="true" place="unspecified">14–17.</note>
                     he states that eloquence consists of five things, and in view of the fact
 that this is a later work we may accept this as his
 more settled opinion.
@@ -606,7 +606,7 @@ these are
 believes,
                     <hi rend="italics">elements</hi>
                     of rhetoric, which the Greeks call
-                    <foreign lang="greek">stoixei=a</foreign>
+                    <foreign xml:lang="grc">stoixei=a</foreign>
                     But they cannot correctly be called
                     <hi rend="italics">elements.</hi>
                     For in that case we should have to regard
@@ -647,7 +647,7 @@ it better to say that there are three
                     <hi rend="italics">kinds</hi>
                     of oratory;
 those whom Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Or.</hi>
                         I. xxxi. 141;
                         <hi rend="italics">Top.</hi>
@@ -673,7 +673,7 @@ content with the threefold division.
 attempt has been made by certain Greeks and by
 Cicero in his
                     <hi rend="italics">de Oratore,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Or.</hi>
                         ii. 10
                         <hi rend="italics">sq.</hi>
@@ -683,7 +683,7 @@ merely more than three, but that the number of
 kinds is almost past calculation: and this view has
 almost been thrust down our throats by the greatest
 authority
-                    <note anchored="yes" place="unspecified">Unknown. Perhaps the elder Pliny.</note>
+                    <note anchored="true" place="unspecified">Unknown. Perhaps the elder Pliny.</note>
                     of our own times.
                     <milestone n="3" unit="section"/>
                     Indeed if we place the
@@ -746,7 +746,7 @@ as
 exhortation, dissuasion, praise, denunciation,
                     <pb id="p.395"/>
                     accusation, defence, inquiry, or as he called it
-                    <foreign lang="greek">e)cetastiko/n.</foreign>
+                    <foreign xml:lang="grc">e)cetastiko/n.</foreign>
                     The first two, however, clearly belong to deliberative, the next to demonstrative, the three last to
 forensic oratory.
                     <milestone n="10" unit="section"/>
@@ -754,13 +754,13 @@ forensic oratory.
 held that oratory was to be divided only into the
 following heads: question and answer, command and
 entreaty, or as he calls it
-                    <foreign lang="greek">eu)xwlh/.</foreign>
+                    <foreign xml:lang="grc">eu)xwlh/.</foreign>
                     Plato in his
                     <hi rend="italics">Sophist</hi>
-                    <note anchored="yes" place="unspecified">222 o.</note>
+                    <note anchored="true" place="unspecified">222 o.</note>
                     in addition to public and forensic oratory
 introduces a third kind which he styles
-                    <foreign lang="greek">prosomilhtikh/,</foreign>
+                    <foreign xml:lang="grc">prosomilhtikh/,</foreign>
                     which I will permit myself to translate by
                     <quote>conversational.</quote>
                     This is distinct from forensic oratory and
@@ -768,7 +768,7 @@ is adapted for private discussions, and we may regard
 it as identical with dialectic.
                     <milestone n="11" unit="section"/>
                     Isocrates
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Fr. 3
                         <hi rend="italics">s.</hi>
                     </note>
@@ -898,9 +898,9 @@ what is written are questions of law, those which concern what is not written ar
                     questions, the former
                     <hi rend="italics">legal</hi>
                     questions, for so we may translate
-                    <foreign lang="greek">logiko/n</foreign>
+                    <foreign xml:lang="grc">logiko/n</foreign>
                     and
-                    <foreign lang="greek">nomiko/n.</foreign>
+                    <foreign xml:lang="grc">nomiko/n.</foreign>
                     <milestone n="5" unit="section"/>
                     Those who hold that every question concerns either things or words, mean much the same.
                 </p>
@@ -915,7 +915,7 @@ persons, time or place and the like. The Greeks call
 them
                     <hi rend="italics">theses,</hi>
                     Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Top.</hi>
                         xxi. 79.
                     </note>
@@ -928,7 +928,7 @@ them
                     <hi rend="italics">parts of a cause.</hi>
                     <milestone n="6" unit="section"/>
                     Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Top.</hi>
                         81;
                         <hi rend="italics">Part. Or.</hi>
@@ -1093,7 +1093,7 @@ question. For they cannot possibly be by the
 famous Hermagoras, who wrote so much that was
 admirable on the art of rhetoric, since, as is clear
 from the first book of the Rhetorica of Cicero,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv.</hi>
                         i. 6.
                     </note>
@@ -1110,7 +1110,7 @@ Cicero has relieved me of any feeling of shame
 that I might have in controverting his opinion, since
 he has not only expressed his disapproval of his Rhetorica, but in the
                     <hi rend="italics">Orator,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Orator</hi>
                         xiv. 45.
                     </note>
@@ -1118,7 +1118,7 @@ he has not only expressed his disapproval of his Rhetorica, but in the
                     <hi rend="italics">de Oratore</hi>
                     and the
                     <hi rend="italics">Topica</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Or.</hi>
                         iii. 30;
                         <hi rend="italics">Top.</hi>
@@ -1187,7 +1187,7 @@ sense of the Greek
 the same way that Apollodorus defines a
                     <hi rend="italics">matter.</hi>
                     Isocrates
-                    <note anchored="yes" place="unspecified">Fr. 13 Sheehan.</note>
+                    <note anchored="true" place="unspecified">Fr. 13 Sheehan.</note>
                     on the other hand defines a
                     <hi rend="italics">cause</hi>
                     as
@@ -1198,7 +1198,7 @@ or a dispute in which definite persons are involved;
                     </hi>
                     while
 Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Top.</hi>
                         xxi. 80.
                     </note>
@@ -1215,7 +1215,7 @@ most of these.
                 </p>
                 <p>
                     VI.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This chapter is highly technical and of little interest for
 the most part to any save professed students of the technique
 of the ancient schools of rhetoric. Its apparent obscurity will,
@@ -1227,7 +1227,7 @@ extremely ingenious fictitious theme discussed in sections
                     </note>
                     Since every cause, then, has a certain essential
                     <hi rend="italics">basis</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         There is no exact English equivalent for
                         <hi rend="italics">status. Basis</hi>
                         or
@@ -1259,7 +1259,7 @@ call the
                     <hi rend="italics">that which may be inferred from the question,</hi>
                     while Theodorus calls it the most
                     <hi rend="italics">general head,</hi>
-                    <foreign lang="greek">kefa/laion genikw/taton,</foreign>
+                    <foreign xml:lang="grc">kefa/laion genikw/taton,</foreign>
                     to which everything
 must be referred. These different names, however, all
 mean the same thing, nor is it of the least importance
@@ -1269,14 +1269,14 @@ as long as the thing itself is perfectly clear.
                     The
 Greeks call this essential
                     <hi rend="italics">basis</hi>
-                    <foreign lang="greek">sta/sis,</foreign>
+                    <foreign xml:lang="grc">sta/sis,</foreign>
                     a name which
 they hold was not invented by Hermagoras, but
 according to some was introduced by Naucrates, the
 pupil of Isocrates, according to others by Zopyrus of
 Clazomenae, although Aeschines in his speech against
 Ctesiphon
-                    <note anchored="yes" place="unspecified">§ 206.</note>
+                    <note anchored="true" place="unspecified">§ 206.</note>
                     seems to employ the word, when he asks
 the jury not to allow Demosthenes to be irrelevant
 but to keep him to the
@@ -1387,7 +1387,7 @@ cause will stand or fall. On the other hand questions
 may have more
                     <hi rend="italics">bases</hi>
                     than one.
-                    <note anchored="yes" place="unspecified">See § 21.</note>
+                    <note anchored="true" place="unspecified">See § 21.</note>
                     <milestone n="10" unit="section"/>
                     A brief example
 will show what I mean. When the accused says
@@ -1401,7 +1401,7 @@ makes the
                     <quote>but I did not do it,</quote>
                     he introduces an element of
                     <hi rend="italics">conjecture.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See § 30
                         <hi rend="italics">aqq.</hi>
                     </note>
@@ -1445,7 +1445,7 @@ in his actual speech.
                     <hi rend="italics">basis</hi>
                     lay in the first
 point raised by the other side in its defence. Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Top.</hi>
                         xxv. 93.
                     </note>
@@ -1499,7 +1499,7 @@ by the latter
                     <hi rend="italics">negative.</hi>
                     Again in any
                     <hi rend="italics">syllogism</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         where the law forms the major premise, while the
 minor premiss is the act which is brought under the law.
@@ -1509,7 +1509,7 @@ minor premiss is the act which is brought under the law.
                     affirms.
                     <milestone n="16" unit="section"/>
                     But on the other hand he who in such cases
-                    <note anchored="yes" place="unspecified">Conjectural causes and the syllogism.</note>
+                    <note anchored="true" place="unspecified">Conjectural causes and the syllogism.</note>
                     denies appears to impose the burden of dealing with
 such
                     <hi rend="italics">bases</hi>
@@ -1558,7 +1558,7 @@ same person either accuser or accused.
 exercised the profession of an actor, is under no circumstances to be allowed a seat in the first fourteen
 rows of the theatre.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Reserved for
                         <hi rend="italics">eguites.</hi>
                     </note>
@@ -1581,7 +1581,7 @@ the denial will be made by the accuser.
                     <milestone n="20" unit="section"/>
                     The view
 of the majority of writers
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         that the defendant makes the
                         <hi rend="italics">basis</hi>
@@ -1643,7 +1643,7 @@ special.
                 </p>
                 <p>
                     To begin with Aristotle
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Categ.</hi>
                         ii. 7.
                     </note>
@@ -1651,7 +1651,7 @@ special.
 ten categories on which every question seems to turn.
                     <milestone n="23" unit="section"/>
                     First there is
-                    <foreign lang="greek">ou)si/a</foreign>
+                    <foreign xml:lang="grc">ou)si/a</foreign>
                     which Plautus calls
                     <hi rend="italics">essence,</hi>
                     the
@@ -1670,7 +1670,7 @@ as dealing with two questions as to
                     <hi rend="italics">relation,</hi>
                     involving questions of
                     <hi rend="italics">competence</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See §§ 52, 68
                         <hi rend="italics">sqq.,</hi>
                         84–86, which make the meaning of
@@ -1703,7 +1703,7 @@ its vagueness, is perhaps the least unsatisfactory rendering.
                     <milestone n="24" unit="section"/>
                     which for example are concerned with a person's being
 armed or clothed. Lastly comes
-                    <foreign lang="greek">kei=sqai</foreign>
+                    <foreign xml:lang="grc">kei=sqai</foreign>
                     or
                     <hi rend="italics">position,</hi>
                     which means to be in a certain position, such for instance as being warm, standing or angry. Of these
@@ -1723,11 +1723,11 @@ to the means by which we establish
                     or
                     <hi rend="italics">quality. Time,</hi>
                     or
-                    <foreign lang="greek">xro/nos,</foreign>
+                    <foreign xml:lang="grc">xro/nos,</foreign>
                     from which we get questions
 such as whether a child is born a slave, if his mother
 is delivered of him while assigned
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">addicti</hi>
                         were not technically
                         <hi rend="italics">servi,</hi>
@@ -1746,16 +1746,16 @@ regarded as an exile.
                     <hi rend="italics">time</hi>
                     in another
 sense, called
-                    <foreign lang="greek">kairo/s</foreign>
+                    <foreign xml:lang="grc">kairo/s</foreign>
                     by the Greeks, by which they
 refer to a period of time, such as summer or winter;
                     <pb id="p.423"/>
                     under this heading come problems such as that about
 the man who held high revel in a time of pestilence.
-                    <note anchored="yes" place="unspecified">There is no other reference to this theme.</note>
+                    <note anchored="true" place="unspecified">There is no other reference to this theme.</note>
                     <hi rend="italics">Action</hi>
                     or
-                    <foreign lang="greek">pra=cis,</foreign>
+                    <foreign xml:lang="grc">pra=cis,</foreign>
                     to which they refer questions as to
 whether an act was committed wittingly or unwittingly, by accident or under compulsion and the like.
                     <hi rend="italics">Number,</hi>
@@ -1769,7 +1769,7 @@ the same number of tyrants.
 heading come a large number of disputes, whenever
 a fact is not denied, but the defence pleads that the
 act was just and reasonable.
-                    <foreign lang="greek">tro/pos</foreign>
+                    <foreign xml:lang="grc">tro/pos</foreign>
                     or
                     <hi rend="italics">manner,</hi>
                     which
@@ -1778,7 +1778,7 @@ one way when it might have been done in another:
 under this category come cases of such as that of the
 adulterer who is scourged with thongs or starved to
 death.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         An adulterer caught
                         <hi rend="italics">flagrante delicto</hi>
                         might be killed by
@@ -1789,7 +1789,7 @@ blood would be illegal.
                     for action, the meaning of which
 is too obvious to need explanation or illustration:
 the Greeks however call it
-                    <foreign lang="greek">e)/rgwn a)formai/</foreign>
+                    <foreign xml:lang="grc">e)/rgwn a)formai/</foreign>
                     <milestone n="28" unit="section"/>
                     These
 authorities like Aristotle hold that no question can
@@ -1801,7 +1801,7 @@ Some subtract two of them, namely
                     and substitute for what I have called
                     <hi rend="italics">action, things,</hi>
                     or in Greek
-                    <foreign lang="greek">pra/gmata.</foreign>
+                    <foreign xml:lang="grc">pra/gmata.</foreign>
                     I have thought it sufficient to notice these doctrines, for fear someone might
 complain of their omission. Still I do not consider
 that
@@ -1861,7 +1861,7 @@ one, as will appear in the sequel.
                     Some have recognised only two
                     <hi rend="italics">bases.</hi>
                     Archedemus
-                    <note anchored="yes" place="unspecified">Fr. 11, Arnim.</note>
+                    <note anchored="true" place="unspecified">Fr. 11, Arnim.</note>
                     for instance admits only the
                     <hi rend="italics">conjectural</hi>
                     and
@@ -1877,7 +1877,7 @@ he held that questions of
                     <hi rend="italics">identity</hi>
                     and
                     <hi rend="italics">difference.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         the question may be stated
                         <quote>Does it conform to our conception of injustice or is it something different?</quote>
@@ -1909,7 +1909,7 @@ accused.
                     The
                     <hi rend="italics">juridical is</hi>
                     that known in Greek as
-                    <foreign lang="greek">dikaiologiko/s</foreign>
+                    <foreign xml:lang="grc">dikaiologiko/s</foreign>
                     But just as Archedemus would not
 recognise the
                     <hi rend="italics">qualitative basis,</hi>
@@ -1943,7 +1943,7 @@ certain, it will be some one of the other
                     Apollodorus says the same thing when he states that
 a question must either lie in
                     <hi rend="italics">things external,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">e.g.</hi>
                         circumstantial evidence.
                     </note>
@@ -1954,18 +1954,18 @@ play to
                     <hi rend="italics">opinions:</hi>
                     the former
 he calls
-                    <foreign lang="greek">pragmatiko/s</foreign>
+                    <foreign xml:lang="grc">pragmatiko/s</foreign>
                     the latter
-                    <foreign lang="greek">peri\ e)nnoi/as</foreign>
+                    <foreign xml:lang="grc">peri\ e)nnoi/as</foreign>
                     The same
 is said by those who employ the terms
-                    <foreign lang="greek">a)prolhpto\s</foreign>
-                    <note anchored="yes" place="unspecified">
-                        <foreign lang="greek">a)prolhpto/s</foreign>
+                    <foreign xml:lang="grc">a)prolhpto\s</foreign>
+                    <note anchored="true" place="unspecified">
+                        <foreign xml:lang="grc">a)prolhpto/s</foreign>
                         lit. = unpresumed.
                     </note>
                     and
-                    <foreign lang="greek">prolhptiko/s,</foreign>
+                    <foreign xml:lang="grc">prolhptiko/s,</foreign>
                     that is to say
                     <hi rend="italics">doubtful</hi>
                     and
@@ -1980,9 +1980,9 @@ with the
                     <hi rend="italics">accidents</hi>
                     of something which is an admitted
 fact: that is to say it is either
-                    <foreign lang="greek">peri\ ou)si/as</foreign>
+                    <foreign xml:lang="grc">peri\ ou)si/as</foreign>
                     or
-                    <foreign lang="greek">peri\ sumbebhko/twn</foreign>
+                    <foreign xml:lang="grc">peri\ sumbebhko/twn</foreign>
                     For in all these cases the first
                     <hi rend="italics">basis</hi>
                     is
@@ -2015,7 +2015,7 @@ head of
                     of
                     <hi rend="italics">definition.</hi>
                     Posidonius
-                    <note anchored="yes" place="unspecified">Fr. p. 232, Bake.</note>
+                    <note anchored="true" place="unspecified">Fr. p. 232, Bake.</note>
                     divides them into two
 classes, those concerned with
                     <hi rend="italics">words</hi>
@@ -2028,11 +2028,11 @@ and how does it come to mean what it means? In
 the latter case, we employ
                     <hi rend="italics">conjecture,</hi>
                     which he calls
-                    <foreign lang="greek">kat' ai)/sqhsin,</foreign>
+                    <foreign xml:lang="grc">kat' ai)/sqhsin,</foreign>
                     or inference from perception,
                     <hi rend="italics">quality, definition</hi>
                     which he calls
-                    <foreign lang="greek">kat' e)/nnoian,</foreign>
+                    <foreign xml:lang="grc">kat' e)/nnoian,</foreign>
                     or rational inference, and
                     <hi rend="italics">relation.</hi>
                     Hence also comes the division
@@ -2063,7 +2063,7 @@ temple. He divides
                     he
 places four classes, excluding questions of
                     <hi rend="italics">competence:</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         § 23;
                         <hi rend="italics">translatio</hi>
@@ -2079,7 +2079,7 @@ Laws, Syllogism.
                     he places under the
 head of
                     <hi rend="italics">conjecture.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         the
                         <hi rend="italics">conjectural basis</hi>
@@ -2154,14 +2154,14 @@ with
                     <hi rend="italics">definition</hi>
                     with questions of
                     <hi rend="italics">competence.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See § 11 and the case cited in 38, where the accused
 would argue that he was guilty not of sacrilege, but of
 simple theft.
                     </note>
                     <milestone n="43" unit="section"/>
                     <hi rend="italics">ratiocinative basis or syllogism</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         When we argue that a certain case comes under a certain law.
                         <hi rend="italics">cp.</hi>
                         § 15.
@@ -2190,7 +2190,7 @@ interpretations the only question is as to the
                     <hi rend="italics">general bases;</hi>
                     Cicero adopts them in his
                     <hi rend="italics">Orator,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Or.</hi>
                         xiv. 45.
                     </note>
@@ -2206,7 +2206,7 @@ discussion is covered by the three questions,
 of these three
                     <hi rend="italics">bases</hi>
                     are too obvious for mention.
-                    <note anchored="yes" place="unspecified">Conjectural, definitive, and qualitative.</note>
+                    <note anchored="true" place="unspecified">Conjectural, definitive, and qualitative.</note>
                     The same view is asserted by Patrocles.
                     <milestone n="45" unit="section"/>
                     Marcus
@@ -2243,7 +2243,7 @@ others which are concerned with the letter of the law:
 such as that of
                     <hi rend="italics">contradictory laws,</hi>
                     or
-                    <foreign lang="greek">a)ntinomi/a</foreign>
+                    <foreign xml:lang="grc">a)ntinomi/a</foreign>
                     that
 which rests on the
                     <hi rend="italics">letter of the law</hi>
@@ -2252,15 +2252,15 @@ which rests on the
                     or
                     <hi rend="italics">intention</hi>
                     (which the Greeks call
-                    <foreign lang="greek">kata\ r(hto\n kai\ dia/noian</foreign>
+                    <foreign xml:lang="grc">kata\ r(hto\n kai\ dia/noian</foreign>
                     and
-                    <foreign lang="greek">meta/lhyis</foreign>
+                    <foreign xml:lang="grc">meta/lhyis</foreign>
                     to which latter we give various
 names, styling it the
                     <hi rend="italics">translative, transumptive</hi>
                     or
                     <hi rend="italics">transpositive basis</hi>
-                    <note anchored="yes" place="unspecified">Concerned with questions of competence.</note>
+                    <note anchored="true" place="unspecified">Concerned with questions of competence.</note>
                     ; the
                     <hi rend="italics">syllogism,</hi>
                     which we call the
@@ -2271,7 +2271,7 @@ names, styling it the
 on
                     <hi rend="italics">ambiguity</hi>
                     or
-                    <foreign lang="greek">a)mfiboli/a.</foreign>
+                    <foreign xml:lang="grc">a)mfiboli/a.</foreign>
                     I mention these because
 they are called
                     <hi rend="italics">bases</hi>
@@ -2284,16 +2284,16 @@ prefer to call them
                     Athenaeus laid down that there were four
                     <hi rend="italics">bases:</hi>
                     the
-                    <foreign lang="greek">protreptikh\</foreign>
+                    <foreign xml:lang="grc">protreptikh\</foreign>
                     or
-                    <foreign lang="greek">parormhtikh/,</foreign>
+                    <foreign xml:lang="grc">parormhtikh/,</foreign>
                     that is, the
                     <hi rend="italics">hortative,</hi>
                     which is peculiar to deliberative themes;
 the
-                    <foreign lang="greek">suntelikh/</foreign>
-                    <note anchored="yes" place="unspecified">
-                        <foreign lang="greek">suntelikh/</foreign>
+                    <foreign xml:lang="grc">suntelikh/</foreign>
+                    <note anchored="true" place="unspecified">
+                        <foreign xml:lang="grc">suntelikh/</foreign>
                         lit. = contributory.
                     </note>
                     which is shown to be the
@@ -2302,37 +2302,37 @@ the
 so much from the name itself, but from what
                     <pb id="p.435"/>
                     follows; the
-                    <foreign lang="greek">u(pallaktikh/</foreign>
+                    <foreign xml:lang="grc">u(pallaktikh/</foreign>
                     or
                     <hi rend="italics">definitive,</hi>
                     for it consists
 in a change of terms.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The defendant admits the act, but gives it a different
 name,
                         <hi rend="italics">e.g.</hi>
                         theft, not sacrilege.
-                        <foreign lang="greek">u(pallaktikh/</foreign>
+                        <foreign xml:lang="grc">u(pallaktikh/</foreign>
                         = changing.
                     </note>
                     ; and the
                     <hi rend="italics">juridical</hi>
                     to which
 he gives the name employed by other Greek writers.
-                    <note anchored="yes" place="unspecified">
-                        <foreign lang="greek">dikaiologiko/s</foreign>
+                    <note anchored="true" place="unspecified">
+                        <foreign xml:lang="grc">dikaiologiko/s</foreign>
                     </note>
                     <milestone n="48" unit="section"/>
                     For, as I have said, there is a great variety in the
 names employed. There are some who, arguing from
 its meaning of change, hold that
-                    <foreign lang="greek">u(pallaktikh/</foreign>
+                    <foreign xml:lang="grc">u(pallaktikh/</foreign>
                     is the
                     <hi rend="italics">translative basis,</hi>
                     which is concerned with
                     <hi rend="italics">competence.</hi>
                     Others, Caecilius
-                    <note anchored="yes" place="unspecified">Caec. fr. 49, Burkh.</note>
+                    <note anchored="true" place="unspecified">Caec. fr. 49, Burkh.</note>
                     and Theon for instance, hold
 that there are the same number of
                     <hi rend="italics">bases,</hi>
@@ -2342,7 +2342,7 @@ the questions whether a thing is, what it is, of what
 kind it is and how great it is.
                     <milestone n="49" unit="section"/>
                     Aristotle
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Ar.
                         <hi rend="italics">Rhet.</hi>
                         1416
@@ -2366,7 +2366,7 @@ on the following lines:—
                     <quote>I struck him, but did not commit an assault.</quote>
                     <milestone n="50" unit="section"/>
                     Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv.</hi>
                         I. viii. 10.
                     </note>
@@ -2396,7 +2396,7 @@ with
                     <hi rend="italics">competence.</hi>
                     But in another passage he
 treats
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Part. Or.</hi>
                         31 and 38.
                     </note>
@@ -2412,7 +2412,7 @@ treats
                     and
                     <hi rend="italics">relative.</hi>
                     Theodorus, also, as I have said,
-                    <note anchored="yes" place="unspecified">§ 36.</note>
+                    <note anchored="true" place="unspecified">§ 36.</note>
                     adopts the
 same number of general heads,
                     <hi rend="italics">whether a thing is, what it is, of what kind it is, how great it is,</hi>
@@ -2449,20 +2449,20 @@ to a certain standard.
 six
                     <hi rend="italics">bases: conjecture</hi>
                     or
-                    <foreign lang="greek">ge/nesis,</foreign>
+                    <foreign xml:lang="grc">ge/nesis,</foreign>
                     <hi rend="italics">quality, particularity</hi>
                     or
-                    <foreign lang="greek">i)dio/ths</foreign>
+                    <foreign xml:lang="grc">i)dio/ths</foreign>
                     by which word they mean
                     <hi rend="italics">definition, quantity</hi>
                     or
-                    <foreign lang="greek">a)ci/a,</foreign>
+                    <foreign xml:lang="grc">a)ci/a,</foreign>
                     <hi rend="italics">comparison</hi>
                     and
                     <hi rend="italics">competence, for</hi>
                     which a new
 term has been found in
-                    <foreign lang="greek">meta/stasis</foreign>
+                    <foreign xml:lang="grc">meta/stasis</foreign>
                     I call it new
 when applied to a
                     <hi rend="italics">basis,</hi>
@@ -2478,11 +2478,11 @@ think there are seven, while refusing to recognise
                     in place of which
 they substitute four
                     <hi rend="italics">legal bases,</hi>
-                    <note anchored="yes" place="unspecified">See § 46.</note>
+                    <note anchored="true" place="unspecified">See § 46.</note>
                     completing the
 seven by the addition of those three which they call
                     <hi rend="italics">rational.</hi>
-                    <note anchored="yes" place="unspecified">Conjectural, definitive, qualitative.</note>
+                    <note anchored="true" place="unspecified">Conjectural, definitive, qualitative.</note>
                     <milestone n="55" unit="section"/>
                     Others again make eight by the addition
 of
@@ -2498,7 +2498,7 @@ of division, reserving the name of
                     to the
                     <hi rend="italics">legal,</hi>
                     as I mentioned above,
-                    <note anchored="yes" place="unspecified">§ 46.</note>
+                    <note anchored="true" place="unspecified">§ 46.</note>
                     since in the former the
 problem is concerned with
                     <hi rend="italics">facts,</hi>
@@ -2526,7 +2526,7 @@ thinking that there are four, namely
                     to the latter he
                     <pb id="p.439"/>
                     appends the phrase
-                    <foreign lang="greek">kata\ sumbebhko/s</foreign>
+                    <foreign xml:lang="grc">kata\ sumbebhko/s</foreign>
                     <quote>according to its accidents,</quote>
                     illustrating his meaning by putting a
 case where it is enquired whether a man
@@ -2553,7 +2553,7 @@ four species: first that which is concerned with
 illustrated by questions such as whether he is free
 who is claimed as a slave and waiting the trial of his
 case,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">assertio</hi>
                         = a trial in which the question of a person's
 liberty is involved. When waiting trial, this person is
@@ -2570,7 +2570,7 @@ has done well or ill.
                     <milestone n="58" unit="section"/>
                     I am aware that another explanation is given by Cicero in the first book of his
 Rhetorica
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv.</hi>
                         i. xi. 14.
                     </note>
@@ -2586,7 +2586,7 @@ us as the special sphere of the lawyer.
                     <milestone n="59" unit="section"/>
                     But I have
 already mentioned
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv.</hi>
                         i. xi. 14.
                     </note>
@@ -2598,7 +2598,7 @@ present instance he may have been influenced by the
 fact that the first examples given by Hermagoras of
 this species are drawn from legal questions, or by the
 fact that the Greeks call interpreters of the law
-                    <foreign lang="greek">pragmatikoi/.</foreign>
+                    <foreign xml:lang="grc">pragmatikoi/.</foreign>
                     <milestone n="60" unit="section"/>
                     But for these early efforts Cicero
                     <pb id="p.441"/>
@@ -2613,7 +2613,7 @@ to teach that there was a
                     <hi rend="italics">competence,</hi>
                     although the elements of this doctrine are
 found in Aristotle,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Rhet.</hi>
                         II. xv. 8.
                     </note>
@@ -2624,9 +2624,9 @@ the name.
 Hermagoras of five kinds. First the letter of the
 law and its intention; the names which he gives to
 these are
-                    <foreign lang="greek">kata\ r(hto/n</foreign>
+                    <foreign xml:lang="grc">kata\ r(hto/n</foreign>
                     and
-                    <foreign lang="greek">u(pecai/resis,</foreign>
+                    <foreign xml:lang="grc">u(pecai/resis,</foreign>
                     that is to say
                     <hi rend="italics">the letter of the law</hi>
                     and the
@@ -2670,7 +2670,7 @@ many years, but of which I expressed my open approbation.
 concealment of the truth as regards any portion of
 my views, more especially in a work designed for the
 profit of young men of sound disposition. For Hippocrates,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Epidem</hi>
                         V. 14.
                     </note>
@@ -2685,12 +2685,12 @@ his
                     <hi rend="italics">Lucullus</hi>
                     and
                     <hi rend="italics">Catulus</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The two books of the first edition of the
                         <hi rend="italics">Academica.</hi>
                     </note>
                     and the books
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         the Rhetorica, better known as
                         <hi rend="italics">de Inventione.</hi>
@@ -2719,7 +2719,7 @@ between the formation and publication of my views.
                     <hi rend="italics">definitive,</hi>
                     and to one
                     <hi rend="italics">legal basis.</hi>
-                    <note anchored="yes" place="unspecified">See III. v. 4.</note>
+                    <note anchored="true" place="unspecified">See III. v. 4.</note>
                     These were
 my
                     <hi rend="italics">general bases.</hi>
@@ -2757,7 +2757,7 @@ one of the
 often asserted, as all who have attended my lectures
 will remember, and even those discourses which
 were published against my will
-                    <note anchored="yes" place="unspecified">See I. Proem. 7.</note>
+                    <note anchored="true" place="unspecified">See I. Proem. 7.</note>
                     included the
                     <pb id="p.445"/>
                     statement, that the
@@ -2808,7 +2808,7 @@ to represent the actual plaintiff.
 decided whether he could have been so appointed.
                     <quote>
                         You ought not to have proceeded by interdict,
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             <hi rend="italics">sc.</hi>
                             by getting an order for restitution.
                         </note>
@@ -2827,7 +2827,7 @@ the same species of question as those laws under
 which the action is brought, so that the enquiry is
                     <pb id="p.447"/>
                     really concerned with the name of a given act,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">e. g.</hi>
                         murder or manslaughter: sacrilege or theft.
                     </note>
@@ -2839,7 +2839,7 @@ the letter of the law and its meaning, or with something that requires to be set
                     it is not the question concerning which
 the advocate argues that is involved, but the question
 on account of which he argues.
-                    <note anchored="yes" place="unspecified">See § 70.</note>
+                    <note anchored="true" place="unspecified">See § 70.</note>
                     <milestone n="73" unit="section"/>
                     An example will make
 this clearer.
@@ -2894,7 +2894,7 @@ there is a
                     <hi rend="italics">question</hi>
                     and a
                     <hi rend="italics">basis</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">sc.</hi>
                         the conjectural.
                     </note>
@@ -2914,7 +2914,7 @@ whether loss of civil rights debars a person from
                     bringing an action. Here on the other hand we find
 both
                     <hi rend="italics">questions and bases.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         sc. the conjectural or definitive basis and the qualitative.
                     </note>
                     It is therefore to
@@ -2930,7 +2930,7 @@ other
                     <hi rend="italics">comparative</hi>
                     and the
                     <hi rend="italics">recriminatory.</hi>
-                    <note anchored="yes" place="unspecified">See III. x. 3 and 4.</note>
+                    <note anchored="true" place="unspecified">See III. x. 3 and 4.</note>
                     <milestone n="76" unit="section"/>
                     <quote>But,</quote>
                     it is urged,
@@ -2966,12 +2966,12 @@ been deprived of civil rights is not allowed to take
 legal action.
                     </quote>
                     <quote>I have the right, since disinheriting is not legal action.</quote>
-                    <note anchored="yes" place="unspecified">Disinheritance could only be effected by legal action.</note>
+                    <note anchored="true" place="unspecified">Disinheritance could only be effected by legal action.</note>
                     The question here is what is legal
 action. And we shall arrive at the conclusion that the
 son's disinheritance is unlawful, by use of the
                     <hi rend="italics">syllogism.</hi>
-                    <note anchored="yes" place="unspecified">See § 15.</note>
+                    <note anchored="true" place="unspecified">See § 15.</note>
                     The case will be similar with all the
                     <hi rend="italics">rational</hi>
                     and
@@ -3008,7 +3008,7 @@ abandon the
                     for he states that he himself is free from blame, so that we really should
 differentiate between two kinds of
                     <hi rend="italics">quality</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         (
                         <hi rend="italics">A</hi>
                         ) Absolute, when the deed is shown to be right. (
@@ -3025,7 +3025,7 @@ accused person alone is defended.
                 <p>
                     <milestone n="80" unit="section"/>
                     We must therefore accept the view of the authorities followed by Cicero,
-                    <note anchored="yes" place="unspecified">See § 44.</note>
+                    <note anchored="true" place="unspecified">See § 44.</note>
                     to the effect that there are
 three things on which enquiry is made in every case:
 we ask
@@ -3103,7 +3103,7 @@ amongst themselves, a law which is repudiated by
 public custom. There are also certain things which
 although equitable are prohibited by law; witness the
 restrictions placed on testamentary disposition.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         e.g. that the legal heir must receive at least a quarter of
 the property.
                     </note>
@@ -3127,7 +3127,7 @@ called
                     fall into two classes as I have
                     <pb id="p.455"/>
                     shown,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         § 67, and III.
                         <hi rend="italics">v.</hi>
                         4.
@@ -3195,7 +3195,7 @@ concerned with the
 questions, although they come under the three
                     <hi rend="italics">bases,</hi>
                     yet since, as I have mentioned,
-                    <note anchored="yes" place="unspecified">§ 87.</note>
+                    <note anchored="true" place="unspecified">§ 87.</note>
                     they have certain
 characteristic features of their own, require to be
 pointed out to learners; and we must allow them
@@ -3211,7 +3211,7 @@ involve any other
                     <hi rend="italics">questions</hi>
                     than the three I have
 mentioned.
-                    <note anchored="yes" place="unspecified">§ 80.</note>
+                    <note anchored="true" place="unspecified">§ 80.</note>
                     <milestone n="90" unit="section"/>
                     As regards questions of
                     <hi rend="italics">quantity, number, relation,</hi>
@@ -3235,7 +3235,7 @@ time, or place something was done.
                     But I will speak of individual questions when I
 come to handle the rules for
                     <hi rend="italics">division.</hi>
-                    <note anchored="yes" place="unspecified">Book VII.</note>
+                    <note anchored="true" place="unspecified">Book VII.</note>
                     This much is
 agreed to by all writers, that one
                     <hi rend="italics">cause</hi>
@@ -3362,7 +3362,7 @@ that one law should originate two
                     <hi rend="italics">bases.</hi>
                     The law is
 twofold, and therefore has the force of two laws.
-                    <note anchored="yes" place="unspecified">101</note>
+                    <note anchored="true" place="unspecified">101</note>
                     To the son who desires to re-enter the family, the
 disinherited's first reply is,
                     <quote>Even though you are allowed to re-enter the family, I am still the heir.</quote>
@@ -3411,7 +3411,7 @@ Thus in one case we shall have either two special
                     and also
                     <hi rend="italics">definition,</hi>
                     or those three
-                    <note anchored="yes" place="unspecified">See § 82.</note>
+                    <note anchored="true" place="unspecified">See § 82.</note>
                     which are really the only
                     <hi rend="italics">bases</hi>
                     strictly so called,
@@ -3420,7 +3420,7 @@ Thus in one case we shall have either two special
                     <hi rend="italics">letter of the law and intention, quality</hi>
                     in the
                     <hi rend="italics">syllogism,</hi>
-                    <note anchored="yes" place="unspecified">See § 88.</note>
+                    <note anchored="true" place="unspecified">See § 88.</note>
                     and
                     <hi rend="italics">definition,</hi>
                     which needs no
@@ -3434,7 +3434,7 @@ explanation.
                     <hi rend="italics">point for the decision of the judge,</hi>
                     and a
                     <hi rend="italics">central argument.</hi>
-                    <note anchored="yes" place="unspecified">For discussion of these technical terms see chap. xi.</note>
+                    <note anchored="true" place="unspecified">For discussion of these technical terms see chap. xi.</note>
                     For nothing can be said which does not contain a
 reason, something to which the decision of the judge
 is directed, and finally something which, more than
@@ -3444,7 +3444,7 @@ a rule explained by writers on judicial causes, I will
 postpone them to the appropriate portion of my work.
 For the present I shall follow the order which I
 prescribed by my division
-                    <note anchored="yes" place="unspecified">Chaps. iii. and iv.</note>
+                    <note anchored="true" place="unspecified">Chaps. iii. and iv.</note>
                     of
                     <hi rend="italics">causes</hi>
                     into three classes.
@@ -3456,21 +3456,21 @@ prescribed by my division
                     which are
 concerned with praise and blame. This class appears
 to have been entirely divorced by Aristotle,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Rhet.</hi>
                         1358 b. 2.
                     </note>
                     and
 following him by Theophrastus, from the practical
 side of oratory (which they call
-                    <foreign lang="greek">pragmatikh=|,</foreign>
+                    <foreign xml:lang="grc">pragmatikh=|,</foreign>
                     ) and to
 have been reserved solely for the delectation of
 audiences, which indeed is shown to be its peculiar
 function by its name, which implies display.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">sc.</hi>
-                        <foreign lang="greek">e)pideiktikh/.</foreign>
+                        <foreign xml:lang="grc">e)pideiktikh/.</foreign>
                     </note>
                     <milestone n="2" unit="section"/>
                     Roman
@@ -3484,14 +3484,14 @@ also a recognised practice to produce persons to
 praise the character of the accused. Further the
 published speeches of Cicero directed against his
 rivals in the election to the consulship,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The speech was known as
                         <hi rend="italics">in Toga Candida.</hi>
                         Only fragments survive.
                     </note>
                     and
 against Lucius Piso, Clodius and Curio,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The
                         <hi rend="italics">in Pisonem</hi>
                         survives, the
@@ -3508,7 +3508,7 @@ to display, as, for instance, panegyrics of gods and
 heroes of the past, a consideration which provides
 the solution of a question which I discussed a little
 while back,
-                    <note anchored="yes" place="unspecified">III. v. 3.</note>
+                    <note anchored="true" place="unspecified">III. v. 3.</note>
                     and proves that those are wrong who
 hold that an orator will never speak on a subject
 unless it involves some problem.
@@ -3516,7 +3516,7 @@ unless it involves some problem.
                     But what problem
 is involved by the praise of Jupiter Capitolinus, a
 stock theme of the sacred Capitoline contest,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The quinquennial contest in honour of Jupiter
 Capitolinus, founded by Domitian in 86.
                     </note>
@@ -3581,7 +3581,7 @@ praised because they were born immortal, others
 because they won immortality by their valour, a theme
 which the piety of our sovereign has made the glory
 even of these present times.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">sc.</hi>
                         by Donitian's deification of his father Vespasian and
 his brother Titus.
@@ -3615,19 +3615,19 @@ requires variety of treatment. At times for instance
                     <pb id="p.471"/>
                     we extol beauty and strength in honorific terms, as
 Homer does in the case of Agamemnon
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Iliad,</hi>
                         ii. 477.
                     </note>
                     and
 Achilles
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Iliad,</hi>
                         ii. 180.
                     </note>
                     ; at times again weakness may contribute
 largely to our admiration, as when Homer says
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Iliad,</hi>
                         v. 801.
                     </note>
@@ -3704,10 +3704,10 @@ to many, some like Thersites and Irus have been
 despised for their poverty and mean appearance,
 others have been loathed because their natural advantages were nullified by their vices: the poets for
 instance tell us that Nireus
-                    <note anchored="yes" place="unspecified">the handsomest warrior among the Greeks of Troy.</note>
+                    <note anchored="true" place="unspecified">the handsomest warrior among the Greeks of Troy.</note>
                     was a coward and
 Pleisthenes
-                    <note anchored="yes" place="unspecified">Son of Atreus: the allusion is not known.</note>
+                    <note anchored="true" place="unspecified">Son of Atreus: the allusion is not known.</note>
                     a debauchee.
                     <milestone n="20" unit="section"/>
                     The mind too has as
@@ -3724,7 +3724,7 @@ come.
 their parents; founders of cities are detested for
 concentrating a race which is a curse to others, as
 for example the founder of the Jewish superstition;
-                    <note anchored="yes" place="unspecified">Moses.</note>
+                    <note anchored="true" place="unspecified">Moses.</note>
                     the laws of Gracchus are hated, and we
 abhor any loathsome example of vice that has been
 handed down to posterity, such as the criminal form of
@@ -3740,7 +3740,7 @@ blame to be true.
                 <p>
                     <milestone n="23" unit="section"/>
                     Aristotle
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Rhet.</hi>
                         i. 9.
                     </note>
@@ -3802,7 +3802,7 @@ will be praised for their magnificence, walls for
                     their utility, and both for their beauty or the skill of
 the architect. Places may also be praised, witness
 the praise of Sicily in Cicero.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">in Verr.</hi>
                         ii. 1
                         <hi rend="italics">sqq.,</hi>
@@ -3827,13 +3827,13 @@ the heading of
                     <hi rend="italics">quality,</hi>
                     although all three
                     <hi rend="italics">bases</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Quality, conjecture, definition. See chap. vi. for explanation of this term.
                     </note>
                     may
 he involved in Panegyric and it was observed by
 Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Top.</hi>
                         xxv. 94.
                     </note>
@@ -3855,7 +3855,7 @@ has been restricted by some authorities to questions
 of expediency. If it should be necessary to assign
 one single aim to deliberative I should prefer
 Cicero's
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Or.</hi>
                         II. lxxxii. 334.
                     </note>
@@ -3880,7 +3880,7 @@ misled by the prospect of advantage into approving
 courses of the dishonourable nature of which there
 can be no question: witness the Numantine treaty
 and the surrender of the Caudine Forks.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Mancinus was surrounded on retreat from Numiantia in
 137 B. C., while the surrender at the Caudine Forks took
 place in 321 B. C. In both cases the Senate refused to ratify
@@ -3904,7 +3904,7 @@ is especially the case when advice has to be given
 on private matters, where there is some doubt of
 the legality of the course under consideration. Of
                     <hi rend="italics">conjecture'</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For
                         <hi rend="italics">conjecture</hi>
                         see III. vi. 30
@@ -3917,7 +3917,7 @@ on. Returning to
                     for the moment, we
 find it in the question raised by Demosthenes,
                     <quote>whether Philip should give or restore Halonnesus,</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Halonnesus had belonged to Athens, but had been seized
 by pirates. Philip ejected the pirates. The Athenians asked
 him to restore it; he replied that it belonged to him and
@@ -3926,7 +3926,7 @@ asked for it as a gift he promised to give it them.
                     </note>
                     and to that discussed by Cicero in the
                     <hi rend="italics">Philippics</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         VIII. i. 2, where the question is discussed as to
 whether the war with Antony is
                         <hi rend="italics">bellum</hi>
@@ -3943,7 +3943,7 @@ to the nature of a
                     Again does not the
 question raised in connection with the statue of
 Servius Sulpicius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Phil.</hi>
                         ix. 1.
                     </note>
@@ -3985,7 +3985,7 @@ This need cause no surprise, since even in
                     we seek to win the favour of our hearers when our
 aim is praise pure and simple, and not the acquisition
 of any advantage. Aristotle,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Rhet.</hi>
                         iii. 14
                     </note>
@@ -4010,7 +4010,7 @@ the utmost freedom,
                     since it is sometimes drawn from
 irrelevant material, as for example in Isocrates' Praise
 of Helen,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The speech opens with a disquisition on the absurd and
 trivial nature of much that is contained in the speeches of
 sophists and rhetoricians.
@@ -4084,7 +4084,7 @@ kind of oratory is entirely concerned with addressing
 public assemblies and have restricted it to politics.
                     <milestone n="14" unit="section"/>
                     Even Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Orat.</hi>
                         ii. 82.
                     </note>
@@ -4119,7 +4119,7 @@ the question turns on such points as to whether the
 Isthmus can be cut through, the Pontine Marshes
 drained, or a harbour constructed at Ostia, or whether
 Alexander is likely to find land beyond the Ocean,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         the theme of a
                         <hi rend="italics">suasoria</hi>
                         of the elder Seneca (
@@ -4141,7 +4141,7 @@ questions such as whether Rome is ever likely to
 Africa if Scipio transports his army thither, or whether
 the Samnites are likely to keep faith if the Romans
 lay down their arms.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">sc.</hi>
                         at the Caudine Forks: see above, § 3.
                     </note>
@@ -4166,11 +4166,11 @@ may be added reasons for taking action or the reverse,
 as for example if the senate should discuss whether
 it should deliver the Fabii to the Gauls when the
 latter threaten war,
-                    <note anchored="yes" place="unspecified">See Livy, v. 36.</note>
+                    <note anchored="true" place="unspecified">See Livy, v. 36.</note>
                     or Gaius Caesar should deliberate
 whether he should persist in the invasion of Germany,
 when his soldiers on all sides are making their wills.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See Caesar,
                         <hi rend="italics">Gallic War,</hi>
                         i. 39, where this detail is
@@ -4218,13 +4218,13 @@ needs be added: consequently there is no necessity
 arising out of the circumstances themselves, for death
 is a possible alternative. And as a matter of fact the
 Saguntines
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         In 218 B. C., when besieged by Hannibal. See Livy,
 xxi. 14.
                     </note>
                     did not surrender, nor did those who were
 surrounded on the raft from Opitergium.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         C. Antonius was blockaded in an island off the Dalmatian
 coast which he held for Caesar 49 B. C. Reinforcements on
 rafts were sent to his rescue. Most were captured; but in
@@ -4250,7 +4250,7 @@ where necessity exists, there is no room for deliberation, any more than where i
 with questions where some doubt exists. Those
 therefore are wiser who make the third consideration
 for deliberative oratory to be
-                    <foreign lang="greek">to\ dunato/n</foreign>
+                    <foreign xml:lang="grc">to\ dunato/n</foreign>
                     or
                     <quote>possibility</quote>
                     as we translate it; the translation may seem clumsy,
@@ -4266,8 +4266,8 @@ would add are really but
                     <hi rend="italics">general</hi>
                     considerations just mentioned. For right, justice,
 piety, equity and mercy (for thus they translate
-                    <foreign lang="greek">to\</foreign>
-                    <foreign lang="greek">h(/meron</foreign>
+                    <foreign xml:lang="grc">to\</foreign>
+                    <foreign xml:lang="grc">h(/meron</foreign>
                     ), with any other virtues that anyone may be
 pleased to add, all come under the heading of that
 which is honourable.
@@ -4305,7 +4305,7 @@ the enemy, even though refusal to do so means
 certain death. At times on the other hand we prefer
 expediency to honour, as when we advise the arming
 of slaves in the Punic War.
-                    <note anchored="yes" place="unspecified">After the battle of Cannae: Livy, xxii. 57.</note>
+                    <note anchored="true" place="unspecified">After the battle of Cannae: Livy, xxii. 57.</note>
                     <milestone n="31" unit="section"/>
                     But even in this case we
 must not openly admit that such a course is dishonourable: we can point out that all men are free by
@@ -4335,7 +4335,7 @@ respective advantages. The problem may be still
 more complicated, as for instance when Pompey
 deliberated whether to go to Parthia, Africa or
 Egypt.
-                    <note anchored="yes" place="unspecified">After his defeat at Pharsalus.</note>
+                    <note anchored="true" place="unspecified">After his defeat at Pharsalus.</note>
                     In such a case the enquiry is not which of
                     <pb id="p.497"/>
                     two courses is better or worse, but which of three or
@@ -4431,7 +4431,7 @@ those who seek our advice. I realise the thought
 that will immediately occur to my reader:
                     <quote>Do you then teach that this should be done or think it right?</quote>
                     Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The letter is lost. the argument of the quotation is as
 follows. The policy
                         <hi rend="italics">which</hi>
@@ -4456,7 +4456,7 @@ is right in giving advice.
 somewhat abstruse question, and does not concern
 deliberative oratory alone. I shall therefore reserve
 it for my twelfth and concluding book.
-                    <note anchored="yes" place="unspecified">Chap. xii.</note>
+                    <note anchored="true" place="unspecified">Chap. xii.</note>
                     <milestone n="43" unit="section"/>
                     For my part
 I would not have anything done dishonourably. But
@@ -4474,7 +4474,7 @@ address bad men, we should gloss over what is unsightly. For there is no man so 
 seem so.
                     <milestone n="45" unit="section"/>
                     Thus Sallust makes Catiline
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Cat.</hi>
                         xx.
                     </note>
@@ -4493,7 +4493,7 @@ to beg Antonius for mercy or even to burn the
                     <hi rend="italics">Philippics</hi>
                     if Antonius promises to spare him on that
 condition,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For examples of this theme see the elder Seneca (
                         <hi rend="italics">Suas.</hi>
                         vi. and vii.).
@@ -4507,7 +4507,7 @@ but we shall exhort him to save himself in the interest of the state.
                     For he needs some such reason
 as that to preserve him from feeling shame at entreating such a one as Antony. Again if we urge
 Gaius Caesar
-                    <note anchored="yes" place="unspecified">Julius Caesar.</note>
+                    <note anchored="true" place="unspecified">Julius Caesar.</note>
                     to accept the crown we shall assert
 that the state is doomed to destruction unless controlled by a monarchy. For the sole aim of the man
 who is deliberating about committing a criminal act
@@ -4550,7 +4550,7 @@ words of which had to be adapted to suit the position and character of those for
 same way or assumed the same character when he
 wrote for Gnaeus Pompeius and when he wrote for
 Titus Ampius and the rest?
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Nothing is
                         <hi rend="italics">known</hi>
                         of these speeches.
@@ -4610,7 +4610,7 @@ demand,
 of historical persons, whom we select ourselves.
 Cicero for instance in the
                     <hi rend="italics">pro Caelio</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         xiv.
                         <hi rend="italics">sqq</hi>
                     </note>
@@ -4709,7 +4709,7 @@ the
 as far as possible be free from all affectation: in
 stating this view he followed the authority of his instructor, although as a rule he is not afraid to differ
 from him. For Aristotle
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Rhet.</hi>
                         iii. 12.
                     </note>
@@ -4746,7 +4746,7 @@ before the senate or the people are as remarkable for
 the splendour of their eloquence as the speeches
 which he delivered in accusing or defending persons
 before the courts. And yet Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Part. or.</hi>
                         xxvii. 97.
                     </note>
@@ -4894,7 +4894,7 @@ within the case is to be called part of it, why not
                     <milestone n="5" unit="section"/>
                     On the other hand I
 disagree with those who, like Aristotle,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Rhet.</hi>
                         ii. 26.
                     </note>
@@ -4908,7 +4908,7 @@ forms part of the
                     is constructive, and the
                     <hi rend="italics">reputation</hi>
                     destructive. Aristotle
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Rhet.</hi>
                         iii. 13.
                     </note>
@@ -5006,7 +5006,7 @@ but they still are of frequent occurrence in the
 Imperial or Senatorial courts, and were frequent in
 the days when they came up for trial before the
 people.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         In the permanent courts (
                         <hi rend="italics">quaestiones perpetuae</hi>
                         ). There
@@ -5037,7 +5037,7 @@ class, the
                     <hi rend="italics">comparative.</hi>
                     Questions of comparison frequently require to be handled in portions of a cause,
 as for instance in the centum viral court,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A civil court specially concerned with questions of
 inheritance.
                     </note>
@@ -5046,7 +5046,7 @@ other questions have been raised the question is discussed as to which of two cl
 case to be brought into court on such grounds alone,
 as in
                     <hi rend="italics">divinations</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Divinatio</hi>
                         is a trial to decide between the claims of two
 persons to appear as accuser, there being no public prosecutor
@@ -5061,13 +5061,13 @@ the accuser shall be, and occasionally when two informers dispute as to which ha
                     Some again have added a fourth class, namely
                     <hi rend="italics">mutual accusation,</hi>
                     which they call
-                    <foreign lang="greek">a)ntikathgori/a</foreign>
+                    <foreign xml:lang="grc">a)ntikathgori/a</foreign>
                     Others, however, regard it as belonging to the
                     <hi rend="italics">comparative</hi>
                     group, to which indeed the common case of
 reciprocal suits on different grounds bears a strong
 resemblance. If this latter case should also be called
-                    <foreign lang="greek">a)ntikathgori/a</foreign>
+                    <foreign xml:lang="grc">a)ntikathgori/a</foreign>
                     (for it has no special name of its own), we
 must divide
                     <hi rend="italics">mutual accusation</hi>
@@ -5101,7 +5101,7 @@ consider what is the
                     or, as others call it,
                     <hi rend="italics">the foundation</hi>
                     of the case.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This highly technical chapter will be largely unintelligible
 to those who have not read chapter vi. Those who have no
 stomach for such points would do well to skip §§ 1–20; they
@@ -5145,7 +5145,7 @@ into other species.
                     <milestone n="4" unit="section"/>
                     This main question, then, they
 call the
-                    <foreign lang="greek">zh/thma.</foreign>
+                    <foreign xml:lang="grc">zh/thma.</foreign>
                     The
                     <hi rend="italics">line of defence</hi>
                     is the method by
@@ -5162,34 +5162,34 @@ so doing: the
                     <hi rend="italics">line of defence</hi>
                     that Clytemnestra killed her husband,
 Orestes' father. This is called the
-                    <foreign lang="greek">ai)/tion</foreign>
+                    <foreign xml:lang="grc">ai)/tion</foreign>
                     or
                     <hi rend="italics">motive.</hi>
                     <pb id="p.525"/>
                     The point for the decision of the judge is known as
 the
-                    <foreign lang="greek">krino/menon</foreign>
+                    <foreign xml:lang="grc">krino/menon</foreign>
                     and in this case is whether it was
 right that even a guilty mother should be killed by
 her son.
                     <milestone n="5" unit="section"/>
                     Some have drawn a distinction between
-                    <foreign lang="greek">ai)/tion</foreign>
+                    <foreign xml:lang="grc">ai)/tion</foreign>
                     and
-                    <foreign lang="greek">ai)ti/an</foreign>
+                    <foreign xml:lang="grc">ai)ti/an</foreign>
                     making
-                    <foreign lang="greek">ai)/tion</foreign>
+                    <foreign xml:lang="grc">ai)/tion</foreign>
                     mean the cause of the
 trial, namely the murder of Clytemnestra,
-                    <foreign lang="greek">ai)ti/a</foreign>
+                    <foreign xml:lang="grc">ai)ti/a</foreign>
                     the
 motive urged in defence, namely the murder of
 Agamemnon. But there is such lack of agreement
 over these two words, that some make
-                    <foreign lang="greek">ai)ti/a</foreign>
+                    <foreign xml:lang="grc">ai)ti/a</foreign>
                     the cause
 of the trial and
-                    <foreign lang="greek">ai)/tion</foreign>
+                    <foreign xml:lang="grc">ai)/tion</foreign>
                     the motive of the deed, while
 others reverse the meanings. If we turn to Latin
 writers we find that some have given these causes the
@@ -5205,7 +5205,7 @@ while others give the same name to both.
                     seems to spring from
                     <hi rend="italics">cause,</hi>
                     or as the Greeks say
-                    <foreign lang="greek">ai)/tion e)c ai)ti/on</foreign>
+                    <foreign xml:lang="grc">ai)/tion e)c ai)ti/on</foreign>
                     as will be seen from the following:—
 Clytemnestra killed Agamemnon, because he had
 sacrificed their daughter and brought home a captive
@@ -5261,7 +5261,7 @@ speaking, that on which judgment is given.
                     <milestone n="9" unit="section"/>
                     As for
 the
-                    <foreign lang="greek">su/nexon</foreign>
+                    <foreign xml:lang="grc">su/nexon</foreign>
                     the
                     <hi rend="italics">central argument,</hi>
                     as I have mentioned
@@ -5269,7 +5269,7 @@ it is called by some, or the
                     <hi rend="italics">foundation</hi>
                     as it is called by
 others, or as Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">De Inv.</hi>
                         I. xiv. 19.
                     </note>
@@ -5297,7 +5297,7 @@ discussion, they deny that the
                     rests on the same ground as
                     <hi rend="italics">the main question at issue,</hi>
                     and this view is maintained by Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">De Inv. I. c.: Part. Or.</hi>
                         xxx. 104.
                     </note>
@@ -5336,7 +5336,7 @@ duty to kill her.
                     I will put
                     <pb id="p.529"/>
                     it in the words of Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv. l. c.</hi>
                     </note>
                     himself:—
@@ -5436,12 +5436,12 @@ be found to reside in the
 have already mentioned, he followed Hermagoras,
 while in the
                     <hi rend="italics">Topicai</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Top.</hi>
                         xxv. 95.
                     </note>
                     he holds that the
-                    <foreign lang="greek">krino/menon</foreign>
+                    <foreign xml:lang="grc">krino/menon</foreign>
                     or
                     <hi rend="italics">disputed point</hi>
                     is originated by the
@@ -5463,7 +5463,7 @@ which causes the whole defence to fall to the ground.
                     But
 in the
                     <hi rend="italics">Partitiones Oratoriae</hi>
-                    <note anchored="yes" place="unspecified">xxix. 103.</note>
+                    <note anchored="true" place="unspecified">xxix. 103.</note>
                     he gives the name of
                     <hi rend="italics">foundation</hi>
                     to that which is advanced against the defence, on the ground that the
@@ -5602,8 +5602,8 @@ on the
 when we say
                     <quote>It is the head of the whole business,</quote>
                     or, as Menander says,
-                    <foreign lang="greek">kefa/laio/n e)stin.</foreign>
-                    <note anchored="yes" place="unspecified">
+                    <foreign xml:lang="grc">kefa/laio/n e)stin.</foreign>
+                    <note anchored="true" place="unspecified">
                         Perhaps a gloss referring to the late rhetorician Menander. If genuine, the words must refer to the comic poet.
                     </note>
                     But generally
@@ -5623,7 +5623,7 @@ the
                     <hi rend="italics">exordium.</hi>
                 </p>
                 <pb id="p.539"/>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

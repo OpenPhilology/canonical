@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Ab Urbe Condita" type="work">Ab Urbe Condita, books 43-45 - 44</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -38,19 +38,19 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter" n="chunk"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter" n="chunk"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
-                <language id="la">Latin</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
+                language ident="la">Latin</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -59,32 +59,32 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
             <pb id="p.91"/>
-            <div1 part="N" sample="complete" org="uniform" n="44" type="book">
+            <div part="N" sample="complete" org="uniform" n="44" type="book">
                 <head>Book XLIV</head>
                 <p>
                     <milestone n="1" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     AT the beginning of the spring following the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     winter campaigns just mentioned, Quintus Marcius Philippus
-                    <note anchored="yes" place="unspecified">Cf. XLII. xxxvii. —xlvii. and lvi. 7.</note>
+                    <note anchored="true" place="unspecified">Cf. XLII. xxxvii. —xlvii. and lvi. 7.</note>
                     the consul left Rome and reached Brundisium with five thousand
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This figure seems to come from Polybius. A larger figure for these reinforcements is mentioned in XLIII. xii. 3.
                     </note>
                     men whom he planned to take over with him as reinforcements for the
                     <milestone n="2" unit="section"/>
                     legions. The ex-consul Marcus Popilius
-                    <note anchored="yes" place="unspecified">Cf. XLII. xxii. 7.</note>
+                    <note anchored="true" place="unspecified">Cf. XLII. xxii. 7.</note>
                     and some young men of equally high birth accompanied the consul as tribunes of the soldiers
-                    <note anchored="yes" place="unspecified">Perhaps elected by the people, see XLIII. xii. 7.</note>
+                    <note anchored="true" place="unspecified">Perhaps elected by the people, see XLIII. xii. 7.</note>
                     in the legions for Macedonia. About the same time Gaius Marcius Figulus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A cousin of the consul Philippus. Cf. Polybius XVIII. 16. 4; Livy XLIII. xi. 7.
                     </note>
                     the praetor, who had been assigned
@@ -98,7 +98,7 @@
                     At this time Aulus Hostilius had his camp in Thessaly near Old Pharsalus, having on the one hand performed no military feat worth mentioning, but on
                     <pb id="p.93"/>
                     the other hand having accustomed the soldiery to
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     strict military discipline in place of uncontrolled laxness and having loyally furthered the interests of the allies and protected them from any kind of harm. On hearing of his successor's approach, he carefully inspected his men, their arms, and their horses, and with his army in parade order went to meet the approaching
                     <milestone n="6" unit="section"/>
                     consul. Not only was the first meeting of the commanders in accord with the high station both of the men themselves and of the Roman name, but the utmost harmony prevailed in their subsequent operations, for the proconsul remained with the
@@ -111,7 +111,7 @@
                     soldiers. Beginning with the unnatural crimes of Perseus committed against his brother and planned against his
                     <milestone n="9??" unit="section"/>
                     father,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For the attacks of Perseus against his brother, cf. XL. v ff. and xx ff.; in XL. lvi. 9, Philip is represented as having died in anger against Perseus, but Livy gives no description of the plot here alleged.
                     </note>
                     he went on to mention the acquisition of the throne by crime, the subsequent poisonings and slaughter, the attack by scoundrelly bandits on Eumenes, the wrongs committed by Perseus against the Roman people, and the plunderings of cities allied to them, contrary to
@@ -135,7 +135,7 @@
                     <milestone n="2" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     After the consul had aroused the ardour of
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     the soldiers by a speech to this effect, he began to hold councils on strategy. Gaius Marcius the praetor, after picking up the fleet at Chalcis, arrived in camp.
                     <milestone n="2" unit="section"/>
                     It was decided not to waste more time by lingering in Thessaly, but to break camp at once and proceed thence into Macedonia, while
@@ -149,14 +149,14 @@
                     after a day's march, he summoned the guides for various routes, bade each explain before the council the route by which he would guide them, and then, after dismissing the guides, laid before the council the question of which route to choose.
                     <milestone n="6" unit="section"/>
                     Some preferred the road via Pythoüs; others the one over the Cambunian Mountains used the preceding year by the consul Hostilius; others, a route past Lake Ascuris.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For Pythoüs, cf. XLII. liii. 6 and below, xxxii. 9 and xxxv. 15. Perseus entered Thessaly by the Cambunian Mountain route, cf. XLII. liii. 6; Livy's account of the march of Hostilius seems to have disappeared in one of the lacunae, cf. p. 14 n. 7. Volustana, mentioned below, sec. 10, is at the north-east end of this route, next to Mt. Olympus. Lake Ascuris is the modern Nezeros.
                     </note>
                     <milestone n="7" unit="section"/>
                     For a certain distance yet there was no divergence in the routes; therefore the discussion as to this choice was postponed until they should encamp near the point of separation of the roads.
                     <milestone n="8" unit="section"/>
                     Thence the consul led his army into Perrhaebia and settled down between Azorus and Doliche
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This seems to have been farther west than necessary for the Ascuris route.
                     </note>
                     for further conference as to the road to take.
@@ -164,23 +164,23 @@
                     During the same time Perseus, knowing that the enemy was
                     <pb id="p.97"/>
                     approaching, but unaware which route he would choose,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     decided to occupy all the passes with forces.
                     <milestone n="10" unit="section"/>
                     To the summit of the Cambunian Mountains (which the Macedonians themselves call Volustana) he sent ten thousand light-armed young men
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <quote>Young men</quote>
                         seems superfluous, and editors are inclined to substitute an expression suggesting whence the troops came.
                     </note>
                     under the command of Asclepiodotus; near the fort above Lake Ascuris —Lapathus is the name of the place —Hippias
                     <milestone n="11" unit="section"/>
                     was ordered to hold the pass with a force of twelve thousand Macedonians.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Asclepiodotus is mentioned in XLII. li. 7 as a commander of Gauls; Hippias appears in XLII. li. 3 and lix. 7 as a commander of phalanx-men.
                     </note>
                     <milestone n="12" unit="section"/>
                     The king himself with the rest of his forces remained in camp near Dium; later, so planlessly that he seemed to have lost his mind, he would dash with some unencumbered cavalry along the shore, now to Heracleum, now to Phila, returning without halt to Dium.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This patrolling may not have been as senseless as Livy would have it; Livy seems to be convinced that the gods made Perseus mad, preparatory to destroying him; but if Perseus had happened upon the Romans when they actually came down from the mountains, it would have been to his advantage. Cf. Diodorus XXX. 10 for the same view of Perseus' folly;
                         <hi rend="italics">ibid.</hi>
                         2 elaborates the incident told below, vi. 1.
@@ -190,10 +190,10 @@
                     <milestone n="3" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Meanwhile the consul had settled on the plan of proceeding by the pass where the king's officer was encamped near Ottolobus.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">I.e.,</hi>
                         the pass by Lake Ascuris. Cf. Herodotus VII. 128 on Xerxes' choice of routes in
-                        <date value="-480">480 B.C.</date>
+                        date when="-480">480 B.C.</date>
                         ; he went via Perrhaebia and Gonnus.
                     </note>
                     <milestone n="2" unit="section"/>
@@ -202,7 +202,7 @@
                     Immediately the whole Roman army followed. However, so steep, rough, and rugged was the road that the advance forces, travelling light, barely completed a two days' march of fifteen miles
                     <pb id="p.99"/>
                     before pitching camp. The place they occupied is
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     called Dierus.
                     <milestone n="4" unit="section"/>
                     Thence on the following day they advanced seven miles, seized a hill not far from the enemy's camp, and reported by messenger to the consul that they were in contact with the enemy, that they had occupied a place safe and suitable for all purposes, and that he should follow them as rapidly as he could march.
@@ -227,7 +227,7 @@
                     The Romans had come out
                     <pb id="p.101"/>
                     unencumbered for battle and the enemy were light troops, a
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     type very ready to stir up combat.
                     <milestone n="3" unit="section"/>
                     Therefore immediately on meeting they discharged their weapons; many wounds were both received and inflicted by either side in the hasty encounter; small numbers of both forces were killed.
@@ -245,12 +245,12 @@
                     In fact, the position was such that, had the consul confronted an enemy like to the old-time kings of Macedonia, he
                     <pb id="p.103"/>
                     might have suffered a great disaster.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This passage illustrates the strength of Livy's dramatic sense, and his weakness as a military commentator; but he had reason to point out the rashness of Marcius, who had once been badly defeated by the Ligurians because he rushed into a narrow pass without reconnaissance (XXXIX. xx. 5-10).
                     </note>
                     <milestone n="9" unit="section"/>
                     But though
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     the king was scouring the shore near Dium with cavalry, and at a distance of twelve miles could almost hear the shouts and din of the fighting men, he neither added to his forces by reinforcing his weary men with fresh troops, nor did he himself appear on the battle-field —a matter of greatest moment —although the Roman commander, aged over sixty and overburdened with flesh, performed vigorously in person all the duties of a soldier.
                     <milestone n="10" unit="section"/>
                     Magnificently he pursued his bold undertaking to the end;
@@ -271,9 +271,9 @@
                     on a cross-beam laid
                     <pb id="p.105"/>
                     upon these posts, planks, each thirty feet long, were
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     fastened together to form a runway, and earth thrown on top of them.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         As with Hannibal's use of vinegar for breaking rock (XXI. xxxvii. 2), this passage leaves several questions unanswered, including the question of whether it ever happened. We can say that either Livy or a copyist left out of the account of the runway a mention of the stringers which would be necessary; the
                         <quote>thirty-foot planks</quote>
                         somehow have replaced these stringers and the transverse planks which presumably would provide the flooring.
@@ -294,11 +294,11 @@
                     For the next day as well they were compelled to wait in the depths of this valley for Popilius and the troops left behind
                     <pb id="p.107"/>
                     with him. These troops too, though threatened from
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     no direction by the enemy, were harassed as by an enemy by the ruggedness of the terrain.
                     <milestone n="11" unit="section"/>
                     On the third day, they proceeded with the united forces through the pass called Callipeuce
-                    <note anchored="yes" place="unspecified">The name (Fair Pines) suggests a forested area.</note>
+                    <note anchored="true" place="unspecified">The name (Fair Pines) suggests a forested area.</note>
                     by the natives.
                     <milestone n="12" unit="section"/>
                     On the fourth day, they descended through country as pathless as before, but their skill was greater through practice, and their morale was higher, since the enemy had not showed himself anywhere and they were reaching the sea. On reaching the plains between Heracleum and Libethrum they pitched a camp, most of which occupied hills.
@@ -311,7 +311,7 @@
                     The king was in his bath, they say, when the presence of the enemy was announced. At this message he leapt in terror from his tub and dashed out crying that he had been beaten without a battle.
                     <milestone n="2" unit="section"/>
                     And thereafter, as his terror drove him to a succession of fear-struck plans and orders, he sent out two of his friends, one to Pella to cast into the sea the money stored in Phacus,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The citadel of Pella, cf. below, x. 3; xlvi. 6; Polybius XXIX. 3 and XXXI. 17 (25); Diodorus XXX. 11. It is not clear why the treasure was thrown into the sea, and not simply dumped into the marshy lake which washed the walls of Phacus, but the recovery of most of the treasure by divers sounds as if it had been dumped on clean bottom.
                     </note>
                     the other to Thessalonica to burn the dockyards. He recalled Asclepiodotus and Hippias and their forces from outpost duty and opened every approach for attack.
@@ -319,7 +319,7 @@
                     The king ran off with all the gilded statues at Dium, to prevent their falling into the hands of the enemy, and compelled the inhabitants of that region to move to Pydna. Thereby
                     <pb id="p.109"/>
                     what might have seemed the rashness of the consul
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     in advancing to a position from which he could not retire without the consent of the enemy, was turned by the king into well-calculated boldness.
                     <milestone n="4" unit="section"/>
                     For the Romans had two passes by which they could extricate themselves: one through Tempe into Thessaly, the other into Macedonia past Dium.
@@ -327,7 +327,7 @@
                     Both of the passes were being held by the king's forces;
                     <milestone n="6" unit="section"/>
                     therefore if the king, by fearlessly holding his own, had resisted the first false appearance of approaching danger, he would have left the Romans no retreat through Tempe to Thessaly, nor any route for bringing up provisions from that direction.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livy neglects the possibility of supply by sea, on which the consul seems to have relied, see below, vii. 10; this is probably due to the characteristic preoccupation of a Roman with the land, though one must admit that the passage above cited shows that the fleet was badly handled, and the coast presumably was difficult, cf. below, xlii. 5-6.
                     </note>
                     <milestone n="7" unit="section"/>
@@ -342,7 +342,7 @@
                     If the Romans' access to
                     <pb id="p.111"/>
                     supplies through Tempe, as well as their line of
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     retreat, had been cut off, they would have had to return to the mountains through which they had descended.
                     <milestone n="12" unit="section"/>
                     As they had deceived the enemy in this by stealth, they could not duplicate the feat without concealment and while the enemy were in possession of the higher summits; and the difficulty they had undergone would have laid low all hope.
@@ -350,7 +350,7 @@
                     There was no alternative left in this rash enterprise but to get out into Macedonia past Dium in the teeth of the enemy, and this undertaking, had not the gods deprived the king of his wits, would itself have been of the utmost difficulty.
                     <milestone n="14" unit="section"/>
                     For between the foothills of Mount Olympus and the sea lies an interval of a little more than a mile, half of which space is taken up with the broad estuary of the Baphyrus River, while part of the plain is obstructed by either the temple of Jupiter
-                    <note anchored="yes" place="unspecified">For this famous temple, cf. Polybius IV. 62.</note>
+                    <note anchored="true" place="unspecified">For this famous temple, cf. Polybius IV. 62.</note>
                     or the town.
                     <milestone n="15" unit="section"/>
                     The very small remainder could have been barred off by a ditch of no extravagant size and a palisade, and there was such an abundance of stone and of forest timber at hand that even a wall could have been thrown up and towers erected.
@@ -363,9 +363,9 @@
                     <milestone n="7" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     The consul sighted much security as well as hope in the folly and inaction of the king; he sent back a message to Spurius Lucretius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         On this section, cf. Polybius XXVIII. 0. 11 (9a. 12). Lucretius had been praetor in
-                        <date value="-172">172 B.C.</date>
+                        date when="-172">172 B.C.</date>
                         , cf. XLII. ix. 8.
                     </note>
                     at Larisa to seize the forts abandoned by the enemy in the region of Tempe, and sending Popilius to reconnoitre the crossings around Dium, arrived at that city in two days' march, since he learned that everything lay open in all directions.
@@ -373,11 +373,11 @@
                     He ordered his camp to be
                     <pb id="p.113"/>
                     pitched next to the temple itself, so that no sacrilege
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     against the sacred precinct might be committed.
                     <milestone n="3" unit="section"/>
                     On personally inspecting the city which, though not large, was adorned with public installations and an abundance of statues
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Among these statues were the portraits by Lysippus of the twenty-five Cavalry Companions killed at the battle of the Granicus, cf. Arrian,
                         <hi rend="italics">Anabasis</hi>
                         I. 16. 4.
@@ -403,7 +403,7 @@
                     there was a great scarcity of grain and almost a famine —he heard from the men just
                     <pb id="p.115"/>
                     come into port that the freight ships had been left
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     in Magnesia.
                     <milestone n="11" unit="section"/>
                     As the consul was debating what should be done —so completely was his struggle directed against the mere difficulty of the situation, without the slightest effort on the part of the enemy to make matters worse —in
@@ -426,7 +426,7 @@
                     It flows from a ravine of Mount Olympus, is scanty in summer, but again in
                     <pb id="p.117"/>
                     winter is swollen by rains; it forms great rapids
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     above its boulders, and below, by carrying off the eroded earth to the sea, produces great abysses and banks sheer on either side above a deeply-hollowed channel.
                     <milestone n="7" unit="section"/>
                     Thinking that the enemy's advance was barred by this river, the king intended to use up the rest of the summer.
@@ -449,22 +449,22 @@
                     The younger Romans even captured the lowest part of the wall by turning to military use a performance of the arena.
                     <milestone n="4" unit="section"/>
                     It was the custom then, before there had been introduced the present extravagance
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livy notes the beginnings of lavishness in shows as early as
-                        <date value="-186">186 B.C.</date>
+                        date when="-186">186 B.C.</date>
                         , see XXXIX. xxii. 2, XLI. xxvii. 6, and below, xviii. 8.
                     </note>
                     of cramming the arena with animals from all over the earth, to hunt out various sorts of spectacles, for one race with four-horse chariots and one with bareback riders hardly occupied the space of an hour for the two events.
                     <milestone n="5" unit="section"/>
                     As one of these performances, groups of about sixty
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Sixty was the usual number of soldiers in the so-called
                         <quote>century.</quote>
                     </note>
                     youths (occasionally more at more
                     <pb id="p.119"/>
                     elaborate games) entered under arms. Their entrance
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     was in some respects an imitation of military manoeuvres, but in other respects was of a style more showy than the military and more akin to the fashion of gladiatorial combats.
                     <milestone n="6" unit="section"/>
                     After passing through various evolutions in this manoeuvre, they would form in ranks, with shields close-set over their heads, the front rank erect, the second somewhat stooped, the third and fourth more so, and the rear rank down on their knees, so that they would form a
@@ -483,7 +483,7 @@
                     like this was brought up to the lowest part of the wall.
                     <milestone n="8" unit="section"/>
                     When soldiers on top came up to the wall, they were at their highest elevation level with the defenders of the wall; the defenders were routed and the soldiers of two maniples
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Polybius (XXVIII. 11 (12)) says that a third maniple formed the
                         <quote>tortoise.</quote>
                         Cf. Ammianus Marcellinus XXVI. 8. 9 for a similar formation.
@@ -494,7 +494,7 @@
                     <quote>tortoise</quote>
                     <pb id="p.121"/>
                     slid harmlessly like rain down to the bottom of the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     slippery slope.
                 </p>
                 <p>
@@ -509,7 +509,7 @@
                     Perseus at length recovered his courage from the panic which had struck him down. and would have preferred that his commands had not been obeyed when he ordered the treasure at Pella to be cast into the sea and the dockyards at Thessalonica to be burned.
                     <milestone n="2" unit="section"/>
                     Andronicus, the envoy to Thessalonica, had killed time to allow for the very thing which happened, a change of mind.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Andronicus is accused by Diodorus XXX. 11 of working in this matter for a Roman victory.
                     </note>
                     <milestone n="3" unit="section"/>
@@ -524,7 +524,7 @@
                     He was striking terror into the city itself, when
                     <pb id="p.123"/>
                     from the engines of all types which were distributed
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     about, stones shot by machine struck down not only the skirmishers about the walls who rashly approached, but even the men in the ships.
                     <milestone n="7" unit="section"/>
                     Recalling the soldiers to the ships and abandoning the siege of Thessalonica, they made thence for Aenea. This city is fifteen miles away, set opposite Pydna in fertile land.
@@ -536,24 +536,24 @@
                     Nothing but utter necessity, when they were kept from finding safety in their ships, aroused the spirits of the Roman soldiers, both by despair of other means of safety and by indignation. The fight was renewed on the shore; those aboard the ships came to the rescue.
                     <milestone n="11" unit="section"/>
                     Here about two hundred of the Macedonians were slain and an equal number captured. From Antigonea the fleet sailed to the peninsula of Pallene and landed troops to ravage it. This land belonged to the territory of Cassandrea
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Established about
-                        <date value="-300">300 B.C.</date>
+                        date when="-300">300 B.C.</date>
                         on the site of Potidaea, which had been destroyed by Philip II in
-                        <date value="-356">356 B.C.</date>
+                        date when="-356">356 B.C.</date>
                     </note>
                     and was by far the most fertile of all the coast they had passed.
                     <milestone n="12" unit="section"/>
                     Here they were met by King Eumenes, who had set out from Elaea
-                    <note anchored="yes" place="unspecified">The port of Pergamum, east by south of Lesbos.</note>
+                    <note anchored="true" place="unspecified">The port of Pergamum, east by south of Lesbos.</note>
                     with twenty decked
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         According to Nissen, the use of this word indicates that Livy is following Polybius here.
                     </note>
                     ships, as well as by five decked ships sent by King Prusias.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         He was hedging on his neutrality of
-                        <date value="-171">171 B.C.</date>
+                        date when="-171">171 B.C.</date>
                         , cf. XLII. xxix. 3.
                     </note>
                 </p>
@@ -564,11 +564,11 @@
                     <milestone n="2" unit="section"/>
                     <pb id="p.125"/>
                     This was founded by King Cassander precisely in the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     narrows which connect the peninsula of Pallene with the rest of Macedonia and are bounded on the one side by the Gulf of Macedonia, and on the other by that of Torone.
                     <milestone n="3" unit="section"/>
                     For the peninsula on which this city is situated rises high and projects into the sea quite as far as Mount Athos, which is noted for its size; it forms, opposite to the district of Magnesia, two unequal promontories, the larger named Posideum and the smaller Canastraeum.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livy's description is confusing; Posideum, the westward promontory, is no more than a spur on the side of the main peninsula, of which Canastraeum forms the tip, extending to the south-east; the slimness of this tip induced Livy or his source to call it the smaller.
                     </note>
                 </p>
@@ -577,11 +577,11 @@
                     The siege was begun in separate divisions. The Roman commander constructed works, including
                     <hi rend="italics">chevaux-de-frise,</hi>
                     extending from the Macedonian to the Toronaic gulf, in the quarter called Clitae, in order to cut off the highway. On the other side is a narrow strait
-                    <note anchored="yes" place="unspecified">Perhaps a moat open at one end to the sea.</note>
+                    <note anchored="true" place="unspecified">Perhaps a moat open at one end to the sea.</note>
                     ; there Eumenes was attacking.
                     <milestone n="5" unit="section"/>
                     The Romans found that their greatest task was filling the moat which Perseus had lately built as a defence. When the praetor inquired why there were no mounds to be seen, where the earth dug from the moat would be, he was shown certain arches.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         These arches were probably intended as sally-ports, cf. XXXVI. xxiii. 3; it is not so clear what they had to do with the absence of soil from the moat-whether the bricks had been made from the soil, or whether the latter had been taken within the walls through the arches for disposal, before the brick curtains were built.
                     </note>
                     These, he heard, were built up not to the same strength as the old wall, but only to the thickness of a single brick. He therefore adopted the plan of opening a path into the city by piercing the brickwork.
@@ -592,11 +592,11 @@
                 <pb id="p.127"/>
                 <p>
                     In the garrison of Cassandrea there were, besides
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     a respectable contingent of young citizens, eight hundred Agrianes
-                    <note anchored="yes" place="unspecified">Cf. XLII. li. 5 and the note.</note>
+                    <note anchored="true" place="unspecified">Cf. XLII. li. 5 and the note.</note>
                     and two thousand Illyrian Penestae
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         These Illyrians were mentioned in XLIII. xxiii. 7; Pleuratus, who sent them, is possibly the exile mentioned in XLIII. xix. 13 as serving with Perseus.
                     </note>
                     sent from their home by Pleuratus —both peoples being good fighters. They were defending the walls as the Romans struggled with the utmost energy to mount them, when the piercing of the brickwork of the arches in the twinkling of an eye, laid open the city.
@@ -619,7 +619,7 @@
                     and land, gained any worth-while advantage.
                     <milestone n="5" unit="section"/>
                     Both
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     commanders therefore determined to strengthen the forces on guard, so that no reinforcement from Macedonia might be sent in, and since open assault was unsuccessful, to attack the fortifications with siege-works.
                     <milestone n="6" unit="section"/>
                     During the preparation of these works, ten Macedonian scout-ships, sent from Thessalonica with picked Gallic auxiliaries, saw that the besieging ships were anchored out to sea, and in the dead of night, in single column, hugging the shore as closely as possible, entered the city. Report of this new defence force compelled both the Romans and the king to abandon the siege.
@@ -634,7 +634,7 @@
                     Meanwhile the consul, for his part, in order not merely to remain sluggishly idle in hostile territory, sent Marcus Popilius with five thousand soldiers to assail the city of Meliboea.
                     <milestone n="2" unit="section"/>
                     This is situated in the foothills of Mount Ossa, on the side sloping toward Thessaly, and conveniently threatening Demetrias.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The threat to Demetrias must have consisted in cutting its line of communications, since Meliboea is twenty-five miles away, air-line.
                     </note>
                     <milestone n="3" unit="section"/>
@@ -645,7 +645,7 @@
                 <pb id="p.131"/>
                 <p>
                     When Perseus heard that Meliboea was being
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     attacked by the consul's army at the same time that the fleet was anchored at Iolcus, in order to attack Demetrias from there, he sent a certain Euphranor, one of his officers, with two thousand picked soldiers to Meliboea.
                     <milestone n="5" unit="section"/>
                     Euphranor's orders were that if he dislodged the Romans from Meliboea, he was to enter Demetrias unobserved before the Romans brought their camp up to the city from Iolcus.
@@ -657,7 +657,7 @@
                     However, the praetor and the king rode around the walls, reconnoitring the situation of the city, in case they could attempt an assault by works or by main force at any point.
                     <milestone n="9" unit="section"/>
                     There was a rumour that Cydas the Cretan
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A substantial account of this and other intrigues is given by Polybius XXIX. 6 (lc).
                     </note>
                     and Antimachus, the commander in Demetrias, were agents in discussing terms of friendship between Eumenes and Perseus. At any rate, the Romans departed from Demetrias.
@@ -667,14 +667,14 @@
                     The praetor Marcius Figulus sent part of his fleet into winter quarters at Sciathus, and made for Oreüs in
                     <pb id="p.133"/>
                     Euboea with the rest of his ships, thinking that this
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     city was most suitable for the forwarding of supplies to the armies in Macedonia and Thessaly.
                 </p>
                 <p>
                     The historians give highly different accounts of King Eumenes.
                     <milestone n="12" unit="section"/>
                     If you trust Valerius Antias,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         As Livy knew, trusting Valerius Antias was a hazardous proceeding. Polybius XXIX. 5 (lb) is less certain about Eumenes' attitude; Valerius perhaps reported the view prevailing in Rome at the time.
                     </note>
                     his account is that although the praetor summoned the king with frequent despatches, he did not even receive naval assistance from him, nor did Eumenes on his way to Asia part on good terms with the consul, being indignant because he was not permitted to encamp in the Roman area;
@@ -691,15 +691,15 @@
                     Thanks were expressed by the senate and gifts sent the envoys, a twisted necklace of two pounds of gold and golden bowls of four pounds, a horse with ornamental trappings, and cavalry weapons.
                     <milestone n="3" unit="section"/>
                     After the Gauls, Pamphylian
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         They had apparently been recognized as free
                         <quote>friends</quote>
                         of Rome after a dispute as to their status under the treaty with Antiochus, XXXVIII. xxxix. 17, and xv. 6.
                     </note>
                     envoys presented in the senate-house a gold crown made of twenty thousand philips
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         These coins were worth about twenty silver drachmas, cf. XXXVII. lix. 4 and the note. The gift seems to have been unusually large; the Rhodians gave the same when desperately trying to regain Roman favour, see XLV. xxv. 7; the figure here may be wrong. The philip, by weight a stater or double drachma of the Athenian standard (= 8.6 g.; the theoretical U.S. gold dollar of 1934 = 15r[grains troy = 0.988 g.), was popularized by Philip II after the fall of Olynthus in
-                        <date value="-348">348 B.C.</date>
+                        date when="-348">348 B.C.</date>
                         He seems to have taken the coin from the Olynthians; it paralleled an earlier issue from Philippi, which began as a colony of Thasos three years before its capture by Philip, and which had an Athenian adviser. Philip continued the coinage of this town. During the second century, the philip was the commonest gold coin of Rome (see XXXIV. lii. 7; XXXVII. lix. 4; XXXIX. v. 15 and vii. 1, and frequent allusions of Plautus'
                         <hi rend="italics">Bacchides, Poenulus,</hi>
                         and
@@ -713,7 +713,7 @@
                     and their request was
                     <pb id="p.135"/>
                     granted that they be permitted to deposit this
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     present in the temple of Jupiter, Greatest and Best, and to offer sacrifice on the Capitol;
                     <milestone n="4" unit="section"/>
                     a gracious answer was given to the envoys' request for a renewal of the state of friendship, and a gift of two thousand
@@ -734,7 +734,7 @@
                     <milestone n="10" unit="section"/>
                     <pb id="p.137"/>
                     For the third year, they said, they were feeling many
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     inconveniences from this war because of the interruption of commerce; their island was poor, and could not be inhabited without the assistance of sea-borne supplies.
                     <milestone n="11" unit="section"/>
                     Since therefore they could no longer endure this privation, they had sent other envoys to Perseus in Macedonia, to inform him that it was the Rhodians' wish that he should arrange a peace with the Romans, and that they had sent a similar announcement to Rome.
@@ -744,11 +744,11 @@
                 <p>
                     <milestone n="13" unit="section"/>
                     I feel sure that even now these statements cannot be read or heard without indignation; from this one can judge what the senate's state of mind was as they listened.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For the services of the Rhodians, cf. XLII. xlvi. 6. According to Polybius XXVIII. 16, relations between Rome and Rhodes were entirely cordial this year; in
-                        <date value="-168">168 B.C.</date>
+                        date when="-168">168 B.C.</date>
                         the consul Marcius suggested to an embassy of the Rhodians that they act as mediators; the only result was to encourage the pro-Macedonians in Rhodes (cf. below, xxxv. 4, where Livy still saddles the Rhodians with the onus in this matter; also XLV. iii. 3, with which cf. Polybius XXIX. 10). Polybius suspects Marcius of planning to have the Rhodians annoy the Romans and so justify Rome's overriding their independence; in view of Marcius' liking for intrigue (XLII. xlvii. 1-4), this is quite probable. In XLV. xxii. 2, Livy suggests that Roman suspicion of Rhodes was something new in
-                        <date value="-167">167 B.C.</date>
+                        date when="-167">167 B.C.</date>
                         ; in XLV. xxv. 6, the
                         <quote>freeing</quote>
                         of Lycia and Caria seems to have been ordered in that year. Claudius (see below) or some other annalist seems to have misled Livy by anticipating developments. Cassius Dio XX. fr. 66, 2 = Zonaras 9. 22 says that Perseus would have been granted peace but for the tactlessness of the Rhodians. Livy certainly had no suspicion that the Romans might have continued to tolerate Perseus.
@@ -758,11 +758,11 @@
                     <milestone n="15" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Claudius has it that the senate returned no answer, but only had read its decree that the Roman people gave the Carians and Lycians their freedom
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Previous friction between these peoples and the Rhodians was noted in XLI. vi. 8-12, cf. the note, and XLII. xiv. 8. Polybius XXX. 5. 12 records a decree
                         <quote>freeing</quote>
                         the Carians and Lycians in the year 168-
-                        <date value="-7">7 B.C.</date>
+                        date when="-7">7 B.C.</date>
                         , probably the time when it was actually passed.
                     </note>
                     and that despatches should be immediately sent to both peoples, on hearing which the
@@ -770,7 +770,7 @@
                     chief of the
                     <pb id="p.139"/>
                     Rhodian embassy, for whose proud language the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     senate-house had but a moment before seemed too small, now suffered deflation.
                     <milestone n="3" unit="section"/>
                     Other historians record the following answer:
@@ -778,7 +778,7 @@
                 <p>
                     <quote>
                         At the outset of this war the Roman people were informed by no trifling sources that the Rhodians had entered upon secret plots with King Perseus against the Roman state,
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             Cf. XLII. xxvi. 8 for earlier Roman suspicions, which to a large extent resulted from the Rhodians' non-partisanship, based on a preference for a balance of power, cf. XLII. xxx. 5-6.
                         </note>
                         but even had this been doubtful before, the words of the embassy just uttered have made the matter certain.
@@ -802,13 +802,13 @@
                     in Macedonia he had procured supplies in advance of winter from
                     <pb id="p.141"/>
                     various localities, and in particular had received
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     twenty thousand bushels of wheat and ten thousand of barley from the Epirotes, so that payment for this grain should be arranged with their envoys at Rome.
                     <milestone n="3" unit="section"/>
                     Clothes, said the consul, should be sent to the army from Rome; there was need for about two hundred horses, especially Numidians, and he had no supply of them where he was. A decree of the senate was passed to carry out these requests of the consul.
                     <milestone n="4" unit="section"/>
                     Gaius Sulpicius the praetor
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         He was the city praetor, cf. XLIII. xv. 3. Under Sulpicius' sponsorship as praetor, Ennius produced his
                         <hi rend="italics">Thyestes</hi>
                         (Cicero,
@@ -818,7 +818,7 @@
                         for Sulpicius' prediction of an eclipse, see below, xxxvii. 5.
                     </note>
                     let a contract for transporting to Macedonia six thousand togas,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For this use of a civilian garment by soldiers, cf. XXII. liv. 2 and the note.
                     </note>
                     thirty thousand tunics, and two hundred horses, and for depositing them where the consul chose. Sulpicius also paid the envoys of the Epirotes the price of the grain, and brought before the senate Onesimus, son of Pytho, a Macedonian noble.
@@ -830,36 +830,36 @@
                     On being introduced to the senate, he recited these facts, and the senate ordered that he be enrolled in the category of allies, that a residence and entertainment
                     <pb id="p.143"/>
                     be provided for him, that two hundred acres of the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     public land of the Roman people in the district of Tarentum be given him, and that a house be bought for him at Tarentum.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For similar rewards, cf. II. xvi. 4-5; XXIII. xlvi. 6-7; XXVI. xxi. 9-13.
                     </note>
                     Gaius Decimius the praetor
-                    <note anchored="yes" place="unspecified">He was praetor in charge of aliens, XLIII. xv. 3.</note>
+                    <note anchored="true" place="unspecified">He was praetor in charge of aliens, XLIII. xv. 3.</note>
                     was entrusted with the execution of these orders.
                 </p>
                 <p>
                     <milestone n="8" unit="section"/>
                     The censors conducted the census on the thirteenth of December more strictly than before. Many were deprived of their rank of knights, among them Publius Rutilius who as tribune of the commons had violently assailed the censors; he was also removed from his tribe and disenfranchised.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Severity to knights was previously mentioned, XLIII. xvi. 1; either the process was interrupted by the objections there described, or the censors conducted a new review at this later date. Rutilius was now open to their attack, because he had left the tribunate four days before on December 9.
                     </note>
                     <milestone n="9" unit="section"/>
                     As half the revenues of the year had by decree of the senate been assigned by the quaestors to the censors for the construction of public works, Titus Sempronius, out of the funds assigned to him, bought for the
                     <milestone n="10??" unit="section"/>
                     state the house of Publius Africanus behind the Old Shops in the direction of the statue of Vortumnus, as well as the butcher's stalls and the shops adjacent, and saw to the construction of the basilica which afterward received the name of Sempronian.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Africanus was the father-in-law of the censor. The Old Shops had been built in
-                        <date value="-209">209 B.C.</date>
+                        date when="-209">209 B.C.</date>
                         , cf. XXVII. xi. 16, and were so called to distinguish them from some built in
-                        <date value="-194">194 B.C.</date>
+                        date when="-194">194 B.C.</date>
                         The bronze statue of the Etruscan god Vortumnus stood in the
                         <hi rend="italics">Vicus Tuscus</hi>
                         some distance south-west of the Forum, but visible from it; the statue is mentioned by Cicero,
                         <hi rend="italics">in Verrem</hi>
                         II. I. 59, 154, and Propertius V. (IV.) 2. The god, whose name seems to be good Latin, was in charge of turning or exchange, and received a temple in Rome after the overthrow of his home town of Volsinii in
-                        <date value="-264">264 B.C.</date>
+                        date when="-264">264 B.C.</date>
                         The Basilica Sempronia was later supplanted by the Basilica Julia.
                     </note>
                 </p>
@@ -874,7 +874,7 @@
                     as possible to hold the elections.
                     <milestone n="3" unit="section"/>
                     The praetor
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     Sulpicius forwarded the resolution to the consul, and read to the senate a few days later the return despatch from that officer. In this, he set the day for the elections as . . ., and announced his return to the city previous to that time. The consul made haste, and the elections were completed on the day set.
                     <milestone n="4" unit="section"/>
                     There were elected as consuls Lucius Aemilius Paulus for the second time, in the fourteenth year after his first term, and Gaius Licinius Crassus.
@@ -890,7 +890,7 @@
                     In these decrees, the fields of operation for the consuls were designated as Macedonia and Italy; those for the praetors were, besides the two jurisdictions in the city, the fleet, Spain, Sicily, and Sardinia.
                     <pb id="p.147"/>
                     Macedonia fell to the lot of the consul Aemilius,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         It was later assumed, cf.
                         <hi rend="italics">C.I.L.</hi>
                         I.2 1, p. 194,
@@ -904,7 +904,7 @@
                         of the Roman people. Crassus had a respectable record as a soldier, cf. XLII. lviii. 12.
                     </note>
                     Italy to
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     Licinius.
                     <milestone n="10" unit="section"/>
                     Of the praetors, Gnaeus Baebius received the jurisdiction over citizens, Lucius Anicius was given that over aliens and was placed at the disposal of the senate, Gnaeus Octavius received the fleet, Publius Fonteius Spain, Marcus Aebutius Sicily, and Gaius Papirius Sardinia.
@@ -923,7 +923,7 @@
                     From good information on these points sure decisions might be made for the
                     <pb id="p.149"/>
                     future, said Aemilius. The senate gave the consul
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 169</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 169</note>
                     Gnaeus Servilius the task of choosing three men satisfactory to Lucius Aemilius as envoys to Macedonia. Two days later the envoys set out —Gnaeus Domitius Ahenobarbus, Aulus Licinius Nerva, and Lucius Baebius.
                 </p>
                 <p>
@@ -933,7 +933,7 @@
                     The priests who died during this year were Publius Quinctilius Varus, the
                     <hi rend="italics">flamen</hi>
                     of Mars,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         He was replaced in the following year by Lucius Postumius Albinus, XLV. xv. 10.
                     </note>
                     and Marcus Claudius Marcellus of the Board of Ten. Gnaeus Octavius replaced the latter.
@@ -944,7 +944,7 @@
                     <milestone n="19" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     In the consulship of Lucius Aemilius Paulus
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     and Gaius Licinius, on the fifteenth of March, at the beginning of the new year, the senators were on the
                     <hi rend="italics">qui vive,</hi>
                     especially as to what the consul in charge of Macedonia would bring before them about his field of operations.
@@ -956,9 +956,9 @@
                     In order to avoid any delay to his
                     <pb id="p.151"/>
                     settingout, said Paulus, the day for the Latin Festival had
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     been set at April twelfth
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The date is given below, xxii. 16, as March 31; in either case, it was very early as compared with dates cited elsewhere,
                         <hi rend="italics">e.g.,</hi>
                         XLI. xvi. 1 (May 5), XLII. xxxv. 3 (June 1). Actually, due to the confusion of the calendar, the festival was held in late January this year, cf. below, xxxvii. 8.
@@ -972,11 +972,11 @@
                     First the envoys from King Ptolemy and Queen Cleopatra at Alexandria were announced.
                     <milestone n="7" unit="section"/>
                     Grimy,
-                    <note anchored="yes" place="unspecified">As part of their costume as suppliants.</note>
+                    <note anchored="true" place="unspecified">As part of their costume as suppliants.</note>
                     with untrimmed beard and hair, they entered the senate-house bearing olive-branches, and prostrated themselves; their speech was more pitiable than their array.
                     <milestone n="8" unit="section"/>
                     Antiochus, the king of Syria, who had been a hostage at Rome, under the decent pretext of restoring the elder Ptolemy to his throne, was waging war against the younger brother, who was then in possession of Alexandria.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         On Antiochus' sojourn at Rome, cf. XLI. xx; a previous stage in Antiochus' encroachment on Egypt was mentioned in XLII. xxix. 5, cf. Polybius XXVII. 19, also XXVIII. 18 f. (16 f.) The
                         <quote>elder Ptolemy</quote>
                         is Ptolemy VI Philometor; the
@@ -991,13 +991,13 @@
                     Roman people, and such their influence with all kings and nations that, if they sent
                     <pb id="p.153"/>
                     envoys to declare to Antiochus that the senate did not
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     wish war to be made on kings allied to it, Antiochus would at once depart from the walls of Alexandria and would lead his army back into Syria.
                     <milestone n="12" unit="section"/>
                     If they hesitated to do this, shortly Ptolemy and Cleopatra, robbed of their kingdom, would arrive in Rome, somewhat to the shame of the Roman people, because they had offered no aid in the final crisis of their fortunes.
                     <milestone n="13" unit="section"/>
                     The senators, stirred by the entreaties of the Alexandrines, at once
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Polybius XXIX. 2 (1) stresses the Roman interest in keeping Antiochus out of Egypt; he does not indicate that the Roman embassy accompanied the Egyptians, and puts more emphasis than does Livy on Roman initiative.
                     </note>
                     sent Gaius Popilius Laenas, Gaius Decimius, and Gaius Hostilius as envoys to bring an end to the war between the kings.
@@ -1008,9 +1008,9 @@
                     <milestone n="20" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     This embassy left within three days along with the envoys from Alexandria. The mission from Macedonia arrived on the last day of the Quinquatrus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This festival, first mentioned for the year
-                        <date value="-207">207 B.C.</date>
+                        date when="-207">207 B.C.</date>
                         , occurred on March 19-23, see XXVI. xxvii. 1 and the note, also Ovid,
                         <hi rend="italics">Fasti</hi>
                         III. 810;
@@ -1030,11 +1030,11 @@
                         The king does not offer battle, and our forces have
                         <pb id="p.155"/>
                         not the strength to compel him to do so. Also the
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                         winter is an added obstacle to an active campaign. The soldiers are being supported in idleness and have grain for no more than six days.
                         <milestone n="5" unit="section"/>
                         The Macedonian forces are said to number thirty thousand. If Appius Claudius
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             Livy has not mentioned him since XLIII. xxiii. 6; Polybius XXVIII. 13 (11) tells how Appius in the meantime had tried to raise Achaean troops, but had been hindered by Marcius.
                         </note>
                         had sufficient strength in the region of Lychnidus, he could have distracted the king with a second front; as it is, Appius and the force with him are in the greatest danger unless either a full-fledged army is quickly sent him or his present force is extricated.
@@ -1043,7 +1043,7 @@
                         <milestone n="7" unit="section"/>
                         Eumenes and his fleet have come and gone for no good reason, as if his ships were drifting before the wind; and there is no good evidence that the spirit of this king is unwavering.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The immediate facts reported by Livy, above, x. 12-xiii. 10, and xxviii, do not bear this out; but Eumenes was not above bargaining with Perseus, below, xxiv-xxv (based on Polybius), and some of Livy's sources may have projected back later Roman suspicions, cf. above, xiii. 9. 12-13. Livy usually falls into the attitude, natural enough for his own day, that no one had any business to act contrary to Roman interests; but in the second century, Rome was not the paramount power in the Macedonian-Greek world, and it was not even clear that she proposed at this time to take a permanent interest in the affairs of that region.
                     </note>
                     The envoys reported that Attalus was as gallantly unswerving as Eumenes was entirely undependable.
@@ -1056,9 +1056,9 @@
                     The senate decreed that the consuls and the people should each choose half of the tribunes for
                     <pb id="p.157"/>
                     eight legions; however, it was voted that no one who
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     had not held office should be chosen that year.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         These provisions for officering the legions provided for reasonably competent officers, while still avoiding the suspicion of favouritism among an office-holding clique which may have caused the use of popular election of tribunes the previous year XLIII. xii. 7. Of the eight legions, two were probably for Gaul (i.e., north Italy), and two were to be Home Guard (
                         <hi rend="italics">urbanae</hi>
                         ); officers less competent or less congenial to the consuls could be shunted to these legions. The dangers of
@@ -1083,7 +1083,7 @@
                     This force was given to Anicius besides the
                     <pb id="p.159"/>
                     two legions which he was ordered to transport to
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     Macedonia, each legion having five thousand two hundred infantry and three hundred cavalry. Moreover, five thousand sailors were enrolled for the fleet.
                     <milestone n="11" unit="section"/>
                     Licinius the consul was ordered to hold his area with two legions, and to add to them ten thousand infantry and six hundred cavalry of the allies.
@@ -1107,7 +1107,7 @@
                         For I have noticed that, as is commonly the case, so
                         <pb id="p.161"/>
                         now especially in this war no one is so scornful of
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                         rumour that his spirit cannot be weakened.
                         <milestone n="8" unit="section"/>
                         In all the clubs and even —God save us! —at dinner-tables there are experts who lead armies to Macedonia, who know where camp should be pitched, what places should be held with garrisons, when or by what pass Macedonia should be invaded, where granaries should be set up, by what routes on land or sea provisions should be supplied, when we must join battle with the enemy and when it is better to remain inactive.
@@ -1123,12 +1123,12 @@
                         Thus, if there is anyone who is confident that he can advise me as to the best advantage of the state in this campaign which I am about to conduct, let him not refuse his services to
                         <pb id="p.163"/>
                         the state, but come with me into Macedonia. I will
-                        <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                        <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                         furnish him with his sea-passage, with a horse, a tent, and even travel-funds. If anyone is reluctant to do this and prefers the leisure of the city to the hardships of campaigning, let him not steer the ship from on shore.
                         <milestone n="14" unit="section"/>
                         The city itself provides enough subjects for conversation; let him confine his garrulity to these; and let him be aware that I shall be satisfied with the advice originating in camp.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Polybius XXIX. 1 (la) also mentions Paulus' attack on the armchair generals, which President Roosevelt used effectively
                         <hi rend="italics">(New York Times,</hi>
                         Mar. 18, 1942, p. 10). In sec. 2, cf. the note on the text, it is possible that there was a reference to Paulus' reluctance to assume the consulship in this year, a reluctance to which Plutarch,
@@ -1141,7 +1141,7 @@
                     After this address and the due completion of the sacrifice at the Latin Festival,
                     <milestone n="16??" unit="section"/>
                     which was held on March 31
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The date had been set for two weeks later, according to xix. 4 above; it seems unlikely that the date, once announced, could have been advanced, and there is probably a confusion in the text between Ides and Kalends either here or above.
                     </note>
                     on the Alban Mount, both the consul and the praetor Gnaeus Octavius immediately set out for Macedonia.
@@ -1154,13 +1154,13 @@
                     While these events were occurring in Italy, Perseus decided that since he had discovered that the Romans had entered the pass and that the final crisis of the war impended, he must no longer postpone the project which he could not bring himself to complete because expenditure of money was required-namely, gaining the adherence of Gentius, king of Illyria.
                     <milestone n="2" unit="section"/>
                     Inasmuch as Perseus had agreed through his envoy Hippias
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Not named by Livy in his description of an earlier stage of the negotiations in XLIII. xx. In the present passage, Livy is following Polybius XXIX. 3-4.
                     </note>
                     on a payment of three
                     <pb id="p.165"/>
                     hundred talents of silver, on condition of an exchange
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     of hostages, he sent Pantauchus, one of his most trusty friends, to complete the agreement.
                     <milestone n="3" unit="section"/>
                     At Meteon in the region of Labeatis, Pantauchus met the Illyrian king; there he received the king's oath and his hostages. Gentius too sent an envoy named Olympio to require the oath and the hostages of Perseus.'
@@ -1180,15 +1180,15 @@
                     The hostages were also given and received in the sight of all, those who were to receive the money were sent to the royal treasury at Pella and those who were to accompany the Illyrian envoys to Rhodes were ordered to take ship at Thessalonica.
                     <milestone n="10" unit="section"/>
                     Metrodorus
-                    <note anchored="yes" place="unspecified">A Rhodian, agent of the pro-Macedonian party.</note>
+                    <note anchored="true" place="unspecified">A Rhodian, agent of the pro-Macedonian party.</note>
                     was at that port, a recent arrival from Rhodes, who stated, on the authority of Dinon and Polyaratus, the
                     <pb id="p.167"/>
                     heads of the state,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         They were heads of the pro-Macedonian party, but Livy may exaggerate their official position.
                     </note>
                     that the Rhodians were ready for
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     war. Metrodorus was assigned as the leader of the combined embassy with the Illyrians.
                 </p>
                 <p>
@@ -1199,7 +1199,7 @@
                     Perseus' father had been overcome with the aid of Attalus;
                     <milestone n="3" unit="section"/>
                     with Eumenes helping, and to a certain extent Perseus' father Philip as well, Antiochus had been assailed
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         On Attalus, see above, XXIX. xii. 14 and XXXI. xiv; for Eumenes, XXXV. xiii; XXXVI. xliv; XXXVII. xli; for Philip, XXXVII. vii.
                     </note>
                     ; now both Eumenes and Prusias were in arms against Perseus;
@@ -1217,7 +1217,7 @@
                     hatred and suspicion to the Romans, with false and more serious charges;
                     <milestone n="8" unit="section"/>
                     for he was already regarded as a traitor and almost an enemy, while the two kings with grasping hands vied with each other in guile and greed.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Polybius XXIX. 7-8 (Id) calls Eumenes
                         <quote>most unscrupulous</quote>
                         and Perseus
@@ -1227,7 +1227,7 @@
                     </note>
                     <milestone n="9" unit="section"/>
                     There was a Cretan, Cydas, one of Eumenes' henchmen. He had held conversations, first at Amphipolis with a certain Chimarus, a fellow-countryman who was serving in Perseus' army, then later at Demetrias, beneath the very walls of the city, once with a certain Menecrates and again with Antimachus, both of whom were officers of the king.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For the negotiations at Demetrias, see above, xiii. 9, where Antimachus only is mentioned on the Macedonian side.
                     </note>
                     <milestone n="10" unit="section"/>
@@ -1239,20 +1239,20 @@
                     <milestone n="25" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Eumenes did not want a victory for Perseus, nor did he intend to assist him in winning one by military means, not so much because of the mutual hostility of their fathers, as because of the hatred engendered between himself and Perseus.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livy is in this chapter expanding the account of Polybius XXIX. 7-8 (Id).
                     </note>
                     <milestone n="2" unit="section"/>
                     The jealousy of kings is such that Eumenes would not have viewed with calmness the attainment by Perseus of such great strength and prestige as awaited him if he defeated the Romans.
                     <milestone n="3" unit="section"/>
                     Eumenes also perceived that from the very outset of the war Perseus had nurtured the hope of peace in every way
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livy now states what his presentation of facts showed before-that Perseus did not want the war, and stood on the defensive from the first, see Vol. XII. 396 and 460, notes 1, Roman suspicions and propaganda notwithstanding; the latter have influenced Livy extensively in his commentary on events.
                     </note>
                     and as
                     <pb id="p.171"/>
                     time went on had come more and more, as the threat
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     came closer, to treat and think of nothing else.
                     <milestone n="4" unit="section"/>
                     Since the war was dragging on longer than the Romans had hoped, they too, their commanders, and their senate would not be averse, so Eumenes thought, to ending so disturbing and difficult a war.
@@ -1260,7 +1260,7 @@
                     Having ascertained this willingness on either side, Eumenes was eager to put on sale his good offices in an effort to negotiate the peace which he thought might even come about automatically through the weariness of the stronger and the fears of the weaker side.
                     <milestone n="6" unit="section"/>
                     Therefore Eumenes tried to negotiate for a reward, now for not aiding the Romans' military effort on land or sea, now for securing peace with the Romans; for his abstention from war, his price was a thousand talents,
-                    <note anchored="yes" place="unspecified">Polybius says five hundred.</note>
+                    <note anchored="true" place="unspecified">Polybius says five hundred.</note>
                     for negotiating peace, fifteen hundred.
                     <milestone n="7" unit="section"/>
                     He showed himself always ready not only to pledge his word to either course of action, but even to give hostages.
@@ -1277,7 +1277,7 @@
                     Since this island was in Perseus' realm, Eumenes saw that it made no difference
                     <pb id="p.173"/>
                     whether the money was there or at Pella; he
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     attempted to secure some sort of down payment.
                     <milestone n="12" unit="section"/>
                     And so having tried vainly to overreach each other, the kings got themselves nothing but a bad reputation.
@@ -1288,7 +1288,7 @@
                     This was not the only failure incurred by Perseus because of miserliness, when by payment of money he could either through Eumenes' efforts have secured peace. which he should have bought even at the price of part of his kingdom, or had he been deceived, he could have exposed his enemy with the booty on him and aroused just hostility toward him on the part of the Romans.
                     <milestone n="2" unit="section"/>
                     But a previous parallel case was that of the alliance with King Gentius, ready for the taking; and at this same time Perseus lost through miserliness the tremendous assistance of the Gauls who were scattered through the region of Illyria.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         These people may have been much the same as the Bastarnae of XL. v. 10 and lvii, cf. also XLI. xix. 3-11. The name of the leader, Clondicus, is the same here and in XL. lviii. 8, which makes it sound like a title rather than a proper name. In Polybius XXV. 6 (XXVI. 9), there is a reference to the Bastarnae joining Perseus and the Gauls (Paton's interpretation),which has led some scholars to think that Polybius was referring to the Bastarnae as Gauls (Galatai) here. Properly, the Bastarnae were Germans rather than Gauls, as was recognized soon after Livy's time, cf. Strabo VII. 306, Pliny,
                         <hi rend="italics">N.H.</hi>
                         IV. 81, Tacitus,
@@ -1305,11 +1305,11 @@
                     He
                     <pb id="p.175"/>
                     himself brought horses, breast-ornaments, and capes
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     as presents for the chief men, and a small amount of gold to distribute among a few, supposing that the rank and file could be led along by expectations.
                     <milestone n="7" unit="section"/>
                     He reached the city of Almana and pitched camp on the banks of the Axius River. The force of Gauls halted near Desudaba in Maedica,
-                    <note anchored="yes" place="unspecified">Probably on the mid-Strymon.</note>
+                    <note anchored="true" place="unspecified">Probably on the mid-Strymon.</note>
                     waiting for their promised pay.
                     <milestone n="8" unit="section"/>
                     Thither Perseus sent Antigonus, one of the wearers of the purple, to order the rank and file of the Gauls to shift camp to Bylazora (this is a place in Paeonia) and the leaders to come in a body to him. The Gauls were seventy-five miles from the Axius River and the king's camp.
@@ -1330,7 +1330,7 @@
                     to many people;
                     <milestone n="13" unit="section"/>
                     it was dangerous, he said, to receive
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     such large numbers into Macedonia, for fear that they would find the Gauls more deadly as allies than the Romans were as enemies; a force of five thousand cavalry was sufficient, for these they could use for military
                     <milestone n="14??" unit="section"/>
                     purposes and would not themselves be overawed by their numbers.
@@ -1351,7 +1351,7 @@
                     The Romans would have had to consider their own plight, since they could neither remain if Thessaly, the army's source of supplies, were lost, nor could they advance
                     <pb id="p.179"/>
                     while the camp of the Macedonians lay before them.
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     <milestone n="7" unit="section"/>
                     By losing this added strength, Perseus weakened to no small degree the morale of the Macedonians, who had been depending on this source of hope.
                 </p>
@@ -1364,7 +1364,7 @@
                     Illyrians, and he ordered them to convey it by short stages, and then when the Macedonian frontier was reached, to halt there and wait for messengers from him.
                     <milestone n="11" unit="section"/>
                     After Gentius had received a scant portion of the money, he was continually spurred on by Pantauchus to assail the Romans with an act of hostility, and so he threw into prison Marcus Perpenna and Lucius Petilius, the ambassadors who happened to reach him at this time.
-                    <note anchored="yes" place="unspecified">See below xxxii. 2.</note>
+                    <note anchored="true" place="unspecified">See below xxxii. 2.</note>
                     <milestone n="12" unit="section"/>
                     On hearing of this Perseus thought that Gentius had committed himself to fight the Romans in any case, and sent a recall to the one conveying the money, as if his only concern was to save as much booty as possible for the Romans after his own defeat.
                 </p>
@@ -1379,7 +1379,7 @@
                     After the disappointment of Herophon's return from the court of Eumenes, Perseus sent Antenor and Callippus, his naval commanders, with
                     <pb id="p.181"/>
                     forty scout-ships —there were five cutters
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cf. XXXV. xxvi. 1, Polybius XVI. 2. 9 and XVIII (XVII) 1. 1, lumps these
                         <hi rend="italics">pristes</hi>
                         with the
@@ -1391,7 +1391,7 @@
                         XXXII. xxxii. 9.
                     </note>
                     added to
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     this number —to
                     <milestone n="2" unit="section"/>
                     Tenedos, in order to protect from that base the ships scattered through the Cyclades islands on their way to Macedonia with grain.
@@ -1411,7 +1411,7 @@
                     the strait is narrowest.
                     <milestone n="9" unit="section"/>
                     Eumenes' officers least of
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     all suspected that a Macedonian fleet was at large in that sea; now they thought them to be Romans, now Attalus, or some men sent back by Attalus from the Roman camp and on their way to Pergamum. But when the shape of the approaching scout-ships was unmistakable and the rapid motion of the oars and the pointing of the prows head-on revealed that enemies were approaching, then panic fell upon them.
                     <milestone n="10" unit="section"/>
                     Since there was no hope of resistance, both because of the unwieldly type of vessel and because the Galatians could hardly withstand an undisturbed voyage,
@@ -1421,7 +1421,7 @@
                     But as the scoutships put troops ashore nearer the city at a more convenient landing-place, the Macedonians overtook the Galatians and cut them down, partly as they fled along the road and partly when they were shut out of the city gates.
                     <milestone n="13" unit="section"/>
                     For the Chians had closed their gates, not knowing who were fleeing or who pursuing.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The move by Eumenes to add to Attalus' force indicates that Livy's charges of treachery against Eumenes were none too well founded. The exact course of the action described is not clear from the account in Livy's usual impressionistic manner; but the Macedonian ships seem to have let the transports pass Subota, wherever that was, and then pursued, overtaking them between Phanae, the cape and harbour at the south end of Chios (cf. above, XXXVI. xliii. 11 and Strabo XIV. 1. 35) and Chios city. The Chians were allies of Rome.
                     </note>
                     About eight hundred of the Galatians were killed and two hundred taken alive; some of the horses were destroyed in the sea as the ships were wrecked, some were hamstrung on shore by the Macedonians.
@@ -1431,7 +1431,7 @@
                     to the fleet;
                     <milestone n="15" unit="section"/>
                     he said he would await them at Phanae.
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     For about three days the fleet anchored before the city.
                     <milestone n="16" unit="section"/>
                     Then they moved on to Phanae, and setting sail on the unexpectedly early arrival of the ten scout-ships, crossed the Aegean Sea to Delos.
@@ -1440,7 +1440,7 @@
                     <milestone n="29" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     While these events were taking place, the Roman envoys,
-                    <note anchored="yes" place="unspecified">To Alexandria, cf. xix. 13.</note>
+                    <note anchored="true" place="unspecified">To Alexandria, cf. xix. 13.</note>
                     Gaius Popilius, Gaius Decimius, and Gaius Hostilius, set out from Chalcis in three five-banked ships and on arriving at Delos found there forty Macedonian scout-ships and five five-bankers of King Eumenes.
                     <milestone n="2" unit="section"/>
                     The holiness of the temple and the island kept them all from harm. And so the Roman, the Macedonian, and Eumenes' sailors mingled in the temple under the truce provided by the sacredness of the place.
@@ -1458,11 +1458,11 @@
                     Since, then, the boldness of Dinon and Polyaratus, who sided with
                     <pb id="p.187"/>
                     Perseus, was on the increase, not only was a cordial
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     response given to the kings, but the flat statement was made that the Rhodians would by their influence bring an end to the war, and that therefore the kings
                     <milestone n="8??" unit="section"/>
                     themselves should make up their minds calmly to accept peace.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Livy is following Polybius XXIX. 11 (5). Polybius says that the loss of Eumenes' cavalry impressed the Rhodians, but does not mention the Gauls from the North; he does not make the Rhodians sound as cock-sure as does Livy.
                     </note>
                 </p>
@@ -1470,11 +1470,11 @@
                     <milestone n="30" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     By now spring was beginning
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         It was late April by the then Roman calendar, but actually early February, see below, xxxvii. 5-9.
                     </note>
                     and the new commanders arrived in the field, the consul Aemilius in Macedonia, Octavius with the fleet at Oreüs, and in the region of Illyria, Anicius, whose task was the campaign against Gentius.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The characterization of Gentius is based on Polybius XXIX. 13 (5).
                     </note>
                     <milestone n="2" unit="section"/>
@@ -1491,7 +1491,7 @@
                     From there he sent his brother with
                     <pb id="p.189"/>
                     a thousand infantry and fifty cavalry to subdue the
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     tribe of the Cavii either by force or threats, while he himself advanced from Lissus five miles to the city of Bassania.
                     <milestone n="8" unit="section"/>
                     The inhabitants were allied to the Romans; and so when overtures were made by messengers sent ahead of Gentius, they preferred to stand siege rather than to surrender.
@@ -1509,9 +1509,9 @@
                     the territory of Dyrrachium and Apollonia.
                     <milestone n="14" unit="section"/>
                     Then a
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     fleet at . . .
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Appian,
                         <hi rend="italics">Illyrian Wars</hi>
                         ii. 9 says that Anicius
@@ -1530,7 +1530,7 @@
                     Next he arrived at Scodra, the centre of resistance not only because Gentius had appropriated it as the citadel for his whole kingdom, but also because it is the best-fortified town of the Labeate tribe, and is hard to approach.
                     <milestone n="3" unit="section"/>
                     Two rivers surround it, the Clausal flowing by on the side of the city which faces eastward, the Barbanna on the west side, flowing from the Labeate Lake. (These two streams after joining fall into the Oriundes River
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This river is elsewhere called the Drilon (modern Drin); in 1858, after a period during which the Drilon emptied to the south, and the Barbanna followed its own course to the sea, the Drin, in flood, resumed the course reported by Livy, and was maintaining it, except for some water following the southern channel, about 1940 (see the
                         <hi rend="italics">Encyclopaedia Britannica,</hi>
                         1944,
@@ -1548,7 +1548,7 @@
                     If well-placed forces had shut the gates and defended the walls and gate-towers, they
                     <pb id="p.193"/>
                     would have routed the Romans from the wall and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     made their attempt worthless; as it was, they sallied from the gate and on level ground joined battle with more spirit than they maintained.
                     <milestone n="8" unit="section"/>
                     For they were routed and huddled in flight, while over two hundred fell in the very mouth of the gate, and they
@@ -1556,7 +1556,7 @@
                     brought in with them such panic that Gentius at once sent representatives named Teuticus and Bellus, leading men of the nation, to the praetor to ask for a truce so that the king might deliberate over his situation.
                     <milestone n="10" unit="section"/>
                     When he was given three days for this purpose, he boarded a ship, since the Roman camp was about half a mile from the city, and sailed up the Barbanna River to Lake Labeate, as if seeking a secluded spot for taking council; actually, as became evident, he was stirred by an unfounded hope that his brother Caravantius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Possibly he had gone to a different region from that mentioned in the preceding chapter, and was among friends.
                     </note>
                     would arrive with many thousands of soldiers gathered in the region to which he had been sent.
@@ -1570,7 +1570,7 @@
                     On that day he was banqueted with marks of distinction by the praetor, and then put under the guard of Gaius Cassius, tribune of the soldiers, after
                     <pb id="p.195"/>
                     having received a mere ten talents, hardly the fee of
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     a gladiator, though he
                     <milestone n="15??" unit="section"/>
                     was a king dealing with a king, to induce him to sink to such misfortune.
@@ -1583,7 +1583,7 @@
                     When they had been restored to a properly dignified state, he immediately sent Perpenna to arrest the friends and relatives of the king.
                     <milestone n="3" unit="section"/>
                     Perpenna set out for Meteon, the city of the Labeate tribe, and brought to camp at Scodra Etleva,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         We cannot determine whether this is another queen, or whether the name Etuta in xxx. 4 refers to the same woman.
                     </note>
                     the queen, with her two children, Scerdilaedus and Pleuratus, and Caravantius the king's brother.
@@ -1596,18 +1596,18 @@
                     During the time that this was going on, Perseus also was in great fear because of the arrival not only of Aemilius the new consul, who he heard had come on the scene bringing dire threats, but also of Octavius the praetor.
                     <milestone n="6" unit="section"/>
                     The king was feeling equally keenly the threat from the Roman fleet and the danger to the coastal area. At Thessalonica, Eumenes and Athenagoras were in command with a small garrison of two thousand light infantry.
-                    <note anchored="yes" place="unspecified">Cf, XLII. li. 4 and the note.</note>
+                    <note anchored="true" place="unspecified">Cf, XLII. li. 4 and the note.</note>
                     <milestone n="7" unit="section"/>
                     To that place Perseus sent the officer Androcles also, under orders to encamp right by the dockyards.
                     <milestone n="8" unit="section"/>
                     To Aenea a thousand cavalry under Creon of Antigonea were sent to
                     <pb id="p.197"/>
                     protect the coastal area, in order to come at once to
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     the aid of the country folk at any point on the shore where they heard that enemy ships had put in.
                     <milestone n="9" unit="section"/>
                     Five thousand Macedonians were sent to garrison Pythoüs and Petra,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         These places guarded a pass north of Mount Olympus by which the position at the Elpeüs might have been taken in the rear.
                     </note>
                     the commanders being Histiaeus, Theogenes, and Midon.
@@ -1615,7 +1615,7 @@
                     When these forces had left, Perseus set himself to fortifying the bank of the Elpeüs, because its dry bed could be crossed. In order that his entire force might be free for this operation, women gathered from the near-by cities brought foodstuffs into camp;
                     <milestone n="11" unit="section"/>
                     the soldiers, under orders, from the woods near by generously . . .
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Further preparations of Perseus and the arrival of Paulus at the Roman camp were described in this gap.
                     </note>
                 </p>
@@ -1625,7 +1625,7 @@
                     ... to gather, and finally he ordered the water-carriers to follow him to the sea, which was less than three-tenths of a mile away, and to dig wells on the beach, some here, some there, at slight intervals.
                     <milestone n="2" unit="section"/>
                     The immense height of the mountains,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Plutarch,
                         <hi rend="italics">Aemilius</hi>
                         xiv. 1, says that the green woods on the slopes indicated abundant ground-water.
@@ -1637,7 +1637,7 @@
                     This success too gave the commander no little glory and power of leadership with the soldiers. Then when the soldiers were ordered to put their weapons in condition, the consul with the tribunes and ranking centurions went forward to reconnoitre the crossings, in order to find out where
                     <pb id="p.199"/>
                     the way down was easy for men under arms and where
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     on the farther bank there was the least unfavourable way up.
                     <milestone n="5" unit="section"/>
                     After gathering sufficient information on these points, he introduced other changes, too; in the first place, he saw to it that everything in the column should take place in good order and without confusion at the beck and call of the commander;
@@ -1645,13 +1645,13 @@
                     when orders were given to the whole army at once and not all were within hearing, he said, some, after receiving an unclear order, made additions of their own and did more than was bidden, while others did less; hence discordant outcries arose everywhere and the enemy found out what was afoot sooner than one's own men.
                     <milestone n="7" unit="section"/>
                     Therefore the consul decided that the tribune of the soldiers should first give an order privately to the chief centurion of the legion, and he and his subordinates in rank should then each tell to the next in rank
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Centurions ranked according to their place in the formation of the legion, cf. e.g. XLII. xxxiv. 5-8.
                     </note>
                     what was to be done, whether the order was to be passed from the head of the column to the rear, or from the last to the first.
                     <milestone n="8" unit="section"/>
                     The consul also made the innovation of forbidding sentries to carry a shield
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Plutarch,
                         <hi rend="italics">Aemilius</hi>
                         xiii. 5, says a spear.
@@ -1663,7 +1663,7 @@
                     All were used to spending the entire day under arms, cavalry with their horses bridled; when this took
                     <pb id="p.201"/>
                     place on summer days under an unremitting -and
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     burning sun, after so many hours of heat and weariness the tired men and horses were often attacked by fresh enemy troops and superior numbers thrown into confusion by even a few.
                     <milestone n="11" unit="section"/>
                     So he gave orders that men on duty in the morning should be relieved at noon by a different afternoon detail; in this way a fresh enemy could never attack tired men.
@@ -1690,13 +1690,13 @@
                     <milestone n="6" unit="section"/>
                     <pb id="p.203"/>
                     Not only did they show by such remarks with how
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     much approval they had heard the words of the consul, but there was also an immediate response in action.
                     <milestone n="7" unit="section"/>
                     Soon you could have seen no one idle in the whole camp; some were sharpening swords, others were polishing helmets and cheek-pieces, still others shields and coats of mail;
                     <milestone n="8" unit="section"/>
                     some were fitting their armour to their bodies and trying the nimbleness of their bodies under arms, others were brandishing spears, others fencing with their swords and inspecting the point
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The Romans relied chiefly on the thrust, cf. Vegetius I. 12.
                     </note>
                     ; so that anyone could easily see that as soon as an opportunity of joining battle with the enemy had been
@@ -1706,7 +1706,7 @@
                 <p>
                     <milestone n="10" unit="section"/>
                     When Perseus, too, noticed that on the arrival of the consul and the beginning of spring everything in the enemy camp was full of noise and bustle as if the war were just beginning, that the camp had been shifted from Phila to the bank opposite the Macedonians, and the hostile commander was now going about to view Perseus' defences, no doubt because he was reconnoitring a passage, now .. .
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         According to Plutarch,
                         <hi rend="italics">Aemilius</hi>
                         xv, a period of startling inactivity on both sides ensued. The words with which the text resumes may conclude an account of how the news of Gentius' defeat arrived in the two camps.
@@ -1723,7 +1723,7 @@
                     But now some boys were seen by their relatives being led along with the Illyrian hostages
                     <pb id="p.205"/>
                     and the more carefully the various details were
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     concealed, the more easily they leaked out through the garrulity of the king's servants.
                 </p>
                 <p>
@@ -1735,7 +1735,7 @@
                     Some, especially the younger, wished to force a way through the bank of the Elpeüs and the fortifications;
                     <milestone n="7" unit="section"/>
                     a solid formation, they said, attacking in single column would be irresistible to the Macedonians, who had the previous year been driven out of so many forts,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This is contrary to the picture given by Livy above, chs. iv-vii, and seems to be inserted to show that the speakers estimated the situation incorrectly.
                     </note>
                     rather higher and better fortified and held with strong garrisons.
@@ -1743,14 +1743,14 @@
                     Others advised that Octavius with his fleet should make for Thessalonica and by ravaging the coastal area create a diversion of the king's forces, so that on the appearance of another attack in his rear the king would be pulled about to guard the inner part of his kingdom and be compelled to open a crossing somewhere over the Elpeüs. The consul himself regarded the riverbank as impregnable by nature and by fortification and, besides the fact that artillery had been placed everywhere, he had heard that the enemy employed
                     <pb id="p.207"/>
                     missile weapons better and with more deadly aim.
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     <milestone n="9" unit="section"/>
                     The whole thought of the Roman commander inclined in a different direction;
                     <milestone n="10" unit="section"/>
                     and dismissing his council, he summoned the Perrhaebian merchants Coenus and Menophilus, men already known to him for loyalty and wisdom, and secretly inquired what the passes into Perrhaebia were like.
                     <milestone n="11" unit="section"/>
                     When they said that the terrain was not difficult, but was blocked by the king's guard-forces,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Plutarch,
                         <hi rend="italics">Aemilius</hi>
                         xv and xvi. 1, says that the passes were not guarded at this time, but that Perseus sent a force after hearing that Romans, under Nasica, were on the march to Pythium. Plutarch cites Polybius and Nasica himself for the story of the dislodging of the Macedonians.
@@ -1760,7 +1760,7 @@
                     the sword is the weapon used at close quarters in a confused throng, and with that weapon the Roman soldier would win. Planning to use the abovementioned merchants as guides, the consul summoned the praetor Octavius, explained his plans, and ordered him to sail for Heracleum with the fleet and have ten days' cooked rations for a thousand men.
                     <milestone n="13" unit="section"/>
                     For his own part, he sent Publius Scipio Nasica and his own son Quintus Fabius Maximus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         As explained by Plutarch,
                         <hi rend="italics">Aemilius</hi>
                         xv, this was the elder of Aemilius' sons by his first wife; the younger became Scipio Africanus the Younger, cf. below, xliv. 1-2. After divorcing his wife, remarrying, and having two more sons(for whom see below, XLV. xl. 7), Aemilius gave the older pair in adoption. Fabius was about eighteen at this time; his adoption had taken place about ten years before.
@@ -1768,11 +1768,11 @@
                     with five thousand picked
                     <milestone n="14??" unit="section"/>
                     men
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Plutarch, following Nasica and correcting Polybius, lists three thousand Italians (
                         <quote>special troops</quote>
                         —
-                        <foreign lang="greek">e)kto\s ta/cews</foreign>
+                        <foreign xml:lang="grc">e)kto\s ta/cews</foreign>
                         =
                         <hi rend="italics">extraordinarii</hi>
                         ?), five thousand of the
@@ -1785,7 +1785,7 @@
                     to Heracleum, in order to feign an embarkation for the purpose of the plan mentioned in the council, namely, of ravaging the coastal area of inner Macedonia. Scipio and Fabius were privately
                     <pb id="p.209"/>
                     informed that food was ready for them at the fleet,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     so that they would not be
                     <milestone n="15" unit="section"/>
                     delayed. Next, the guides were instructed to arrange the stages of the journey so that they could attack Pythoüs in the fourth watch of the third day. Next day at dawn the consul himself, in order to keep the king from investigating the other projects, joined battle with the enemy's outposts in the middle of the
@@ -1797,7 +1797,7 @@
                     other. The king's light troops fought better at long range with missiles; at close quarters the Romans were steadier, and better protected by either the cavalry targe or the Ligurian rectangular
                     <milestone n="19" unit="section"/>
                     shield.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This is based on Polybius XXIX. 14. 4; the Ligurian shield was long and light, according to Diodorus V. 39. 7.
                     </note>
                     About noon the consul ordered the recall to be sounded for his
@@ -1809,11 +1809,11 @@
                     later. On the
                     <pb id="p.211"/>
                     third day, he desisted from battle and went down to
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     the lower side of the camp as if he were going to attempt the crossing through the spur of the fortifications which ran down to the
                     <milestone n="23" unit="section"/>
                     sea. What was before Perseus' eyes ...
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Judging from Plutarch,
                         <hi rend="italics">Aemilius</hi>
                         xvi, the lost four sheets told of the success of Nasica in clearing the pass, Perseus' fright and retreat, and his subsequent resolve to make a stand at Pydna; also of the joining of Nasica with Paulus and the overtaking of the Macedonians.
@@ -1823,7 +1823,7 @@
                     <milestone n="36" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     The season was that immediately following the turn of midsummer
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See below, xxxvii. 5-8 and note 1; by the then calendar, it was Sept. 3.
                     </note>
                     ; the time of day was approaching noon; the journey had been made through much dust and an ever-hotter sun.
@@ -1835,7 +1835,7 @@
                     Since all were not yet in formation, he urged on the tribunes of the soldiers to hasten the deployment; he himself went about the ranks and was engaged in rousing the spirits of the men to battle by exhortation.
                     <milestone n="5" unit="section"/>
                     At this they first kept eagerly calling for the signal; then, in proportion as the heat increased their countenances were less lively and their cries slacker, and some stood lolling on their shields and leaning on their spears. Then the consul proceeded openly to give the order to the ranking centurions to layout the front of the camp and place the baggage.
-                    <note anchored="yes" place="unspecified">Which was placed next the wall of the camp.</note>
+                    <note anchored="true" place="unspecified">Which was placed next the wall of the camp.</note>
                     <milestone n="6" unit="section"/>
                     When the soldiers perceived that this was being done, some rejoiced
                     <milestone n="7??" unit="section"/>
@@ -1844,13 +1844,13 @@
                     Surrounding the general were his
                     <pb id="p.213"/>
                     staff and the foreign commanders, among whom was
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     Attalus, all showing approval as long as they believed the consul was going to fight (for he had not revealed his doubts even to them); then at the sudden change of plan they were all silent except Nasica,
                     <milestone n="9??" unit="section"/>
                     who alone dared to advise the consul not to loose his grasp on an enemy who had baffled previous generals by avoiding an encounter.
                     <milestone n="10" unit="section"/>
                     Nasica feared that if the enemy departed by night, he would have to be pursued with the greatest toil and risk into the interior of Macedonia, and that the summer would be wasted, as under previous leaders,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         As far as Livy's account goes, this applies only to Marcius, above, vi-x.
                     </note>
                     in roaming about the bypaths and passes of the Macedonian mountains;
@@ -1877,7 +1877,7 @@
                     rear formation first from behind the
                     <pb id="p.215"/>
                     battle-line, next the chief formation, while the forward
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     formation stood its ground at the front of the battle-line, in case the enemy should make a move; last of all he withdrew the forward formation, taking the soldiers of one maniple at a time, starting with the right wing.
                     <milestone n="3" unit="section"/>
                     In this way, while the cavalry and the light-armed troops faced the enemy from in front of the battle-line, the infantry were withdrawn without confusion, and the cavalry were not called away from their posts until the facade of the rampart and the ditch facing the enemy had been completed.
@@ -1887,7 +1887,7 @@
                 <p>
                     <milestone n="5" unit="section"/>
                     After the fortification of the camp was complete, Gaius Sulpicius Gallus,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         He is mentioned by Cicero,
                         <hi rend="italics">De Senectute</hi>
                         xiv. 49 as a geometer and astronomer. For his praetorship, see XLIII. ii. 5. Pliny,
@@ -1905,7 +1905,7 @@
                     Since this occurred in the regular order of nature at certain times, said Sulpicius, it could be calculated ahead of time and foretold. Therefore just as they were not surprised —inasmuch as both the risings and the settings of the sun and moon are well understood —when they saw the moon shining now full, now during its wane with a narrow arc, no more ought they to count it a prodigy that the moon is darkened
                     <pb id="p.217"/>
                     whenever it is hidden in the shadow of the earth.
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     <milestone n="8" unit="section"/>
                     On the night preceding the 4th of September, when the moon was eclipsed at the predicted hour, the Roman soldiers regarded the wisdom of Gallus as almost divine;
                     <milestone n="9" unit="section"/>
@@ -1918,7 +1918,7 @@
                     The king had a rejoinder ready at hand: not only that the enemy had taken the lead in openly declining battle and leading his men back to camp, but that he had posted his forces in a position to which the phalanx could not be advanced, since even slightly unfavourable terrain makes a phalanx useless.
                     <milestone n="12" unit="section"/>
                     As for the consul, besides his seeming loss of an opportunity for battle on the previous day and his giving the enemy a chance of withdrawing by night if they wished, he seemed on this day too to be wasting time on the pretext of offering sacrifice, although he should have given the signal at dawn and gone out to battle.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Plutarch,
                         <hi rend="italics">Aemilius</hi>
                         xvii. 6, says that the consul's sacrifice to Heracles obtained good omens only with the twenty-first victim; also that the consul waited till the afternoon so that the sun would not be in the eyes of his troops.
@@ -1932,7 +1932,7 @@
                     "That excellent young man, Publius
                     <pb id="p.219"/>
                     Nasica, alone among all those who favoured fighting
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     yesterday disclosed his opinion to me; he too kept silent later, so that he may have seemed to have exchanged his view for mine.
                     <milestone n="2" unit="section"/>
                     Certain others thought it better to criticize their general behind his back rather than to advise him openly.
@@ -1944,7 +1944,7 @@
                     Out of this small force of ours, one-fourth of the men were left to guard the baggage; and you know that the guarding of the packs is not put in the hands of the most cowardly.
                     <milestone n="6" unit="section"/>
                     But suppose we had been united: can we possibly consider it a small advantage that we shall go out, with the good help of the gods,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For similar expressions of precautionary piety, see VI. xxiii. 10, VII. xxxii. 17, XXI. xxi. 6.
                     </note>
                     from this camp in which we have spent last night, to do battle either today or at latest tomorrow if we so determine?
@@ -1954,7 +1954,7 @@
                     journey nor by construction on that day, when he is rested and refreshed in his own tent, when he is full of strength and vigorous in body and in spirit? Or whether he
                     <pb id="p.221"/>
                     is wearied by a long march and tired by his load,
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     dripping with sweat, his throat dry with thirst, his mouth and eyes full of dust, with the midday sun beating down upon him?
                     <milestone n="9" unit="section"/>
                     Will you pit him against an enemy fresh and rested, who brings into battle a strength unsapped by previous exertion? Who, by the gods' good faith, when he is thus matched, sluggish though he be and unwarlike, will not overcome the bravest fighter?
@@ -1977,7 +1977,7 @@
                     This abode is a second
                     <pb id="p.223"/>
                     home for the soldier, its rampart takes the place of
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     city walls and his own tent is the soldier's dwelling and hearthside. Should we have fought like nomads with no abode, so that, whether conquered or conquerors, we might return —where?
                 </p>
                 <p>
@@ -2001,24 +2001,24 @@
                     After this speech silence ensued, partly because men had changed over to his opinion, partly because they shrank from offending him to no purpose in a matter which was in any case a lost opportunity and could not be brought back. Nor
                     <pb id="p.225"/>
                     even on that day did either the consul or the king
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     care to fight, the king because he would have had to attack men no longer weary from travel as on the previous day, nor in turmoil as they marshalled their line of battle and hardly in formation, the consul because neither wood nor fodder had been collected in the new camp and a large number of soldiers had gone out of camp to seek them from the near-by countryside. Without either general wishing it, Fortune, which is stronger than human planning, brought on the battle. There was a stream of no great size nearer the camp of the enemy, from which both the Macedonians and the Romans were drawing water after posting guards on either bank in order to accomplish this mission safely. There were two cohorts on the Roman side, a Marrucinian and a Paelignian, and two troops of Samnite cavalry under the command of the staff-officer Marcus Sergius Silus; another fixed outpost was stationed before the camp under the staff-officer Gaius Cluvius, composed of three cohorts, from Firmum, the Vestini, and Cremona respectively, and two troops of cavalry from Placentia and Aesernia.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The Marrucini, Paeligni, Samnites, and Vestini were Italian
                         <quote>allies</quote>
                         of the Romans; Firmum, Cremona, Placentia, and Aesernia were colonies with Latin rights.
                     </note>
                     <milestone n="2" unit="section"/>
                     While there was quiet at the river, since neither side took the offensive, about the ninth hour a baggage-animal shied from the hands of his grooms and escaped toward the other bank.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Plutarch credits Aemilius with ordering a horse to be let loose, in order to bring on the battle.
                     </note>
                     While three soldiers were chasing him through the water, which was about knee-deep, two Thracians dragged the animal from mid-stream to their bank; the Romans pursued them, killed one,
                     <pb id="p.227"/>
                     recaptured the animal, and retired to their post.
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     There was a guard of eight hundred Thracians on the Macedonian bank. At first a few of these, angry at the killing of their fellow-countryman before their eyes, crossed the river in pursuit of the killers, then more went, and finally the whole force, and with the guard . .
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Two leaves of the MS. are missing at this point. Judging from Plutarch, these pages contained a description of the advance of the armies from camp, their battle-order, skirmishing by the light-armed troops in which the Macedonians had the advantage, the charge of the Paelignians against some Macedonian light infantry and their collision with the phalanx (cf. below, sec. 9), and perhaps the impression made on Aemilius by the phalanx, an impression which he was careful not to show at the time.
                     </note>
                 </p>
@@ -2031,7 +2031,7 @@
                     <milestone n="2" unit="section"/>
                     In the rear were the light infantry; the consul faced a unit with metal shields 
 					—these were called the Bronze Shields. Lucius Albinus the ex-consul was ordered to lead the second legion against the White Shield phalanx
-                    <note anchored="yes" place="unspecified">Plutarch speaks of this unit as having gilded armour.</note>
+                    <note anchored="true" place="unspecified">Plutarch speaks of this unit as having gilded armour.</note>
                     ; this was the centre of the hostile line.
                     <milestone n="3" unit="section"/>
                     On the right wing, where the battle had begun near the river, the consul brought 
@@ -2042,7 +2042,7 @@
 					result, so in this battle the anti-elephant corps was
                     <pb id="p.229"/>
                     a mere name without practical effect.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Zonaras 9. 22 (p. 269) says that these were infantry 
 						with sharp spikes projecting from their helmets and shields, and also cavalry, both forces having been drilled to fight elephants; dummy elephants were used to 
 						accustom the horses to them. The words of Livy at the beginning of sec. 4 seem to be a direct quotation from Polybius XXIX. 17. 2 (12).
@@ -2050,7 +2050,7 @@
                     <milestone n="5" unit="section"/>
                     The 
 					charge
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     of the elephants was followed up by the allies of the Latin Name, who routed the left wing.
                     <milestone n="6" unit="section"/>
                     In the centre the charge of the 
@@ -2067,7 +2067,7 @@
                     <milestone n="9" unit="section"/>
                     If they had attacked frontally in solid line against an orderly phalanx, as happened to the Paelignians who at the beginning of the battle recklessly met the 
 					light infantry, the Romans would have spitted themselves on the spears and would not have withstood the solid line.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A variant account of the battle is given by 
 						Frontinus II. iii. 20, who says that Paulus arranged his line in wedges, and tried to draw out the Macedonians by attacking with skirmishers (
                         <hi rend="italics">velites</hi>
@@ -2084,7 +2084,7 @@
 					away their weapons and fled, the cavalry on the
                     <pb id="p.231"/>
                     other hand retired from the fight almost unscathed.
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     <milestone n="2" unit="section"/>
                     The king 
 					himself was the leader in the flight. Directly from Pydna he set out for Pella with the Sacred Squadrons of cavalry; immediately Cotys and the Odrysan cavalry 
@@ -2108,7 +2108,7 @@
                     It is readily agreed that the Romans never killed so many Macedonians in any other single battle. For about twenty thousand men were slain; about six thousand who escaped from the battlefield to Pydna were taken alive, and five thousand stragglers were captured in flight. Of the victors not more than one hundred fell and by far the greater part of them were Paeligni; somewhat more were wounded. If fighting had broken out earlier, so that sufficient
                     <pb id="p.233"/>
                     daylight would have remained for the victors to
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     pursue, the entire Macedonian force would have been wiped out; as it was, the approach of night both sheltered the fugitives and inspired in the Romans a reluctance to pursue over unknown terrain.
                 </p>
                 <p>
@@ -2126,7 +2126,7 @@
                     The king was bothered till about midnight by losing his way and by various difficulties of the route.
                     <milestone n="5" unit="section"/>
                     At the palace Perseus was waited upon by the commanders of Pella, Euctus, and Eulaeus,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Plutarch,
                         <hi rend="italics">Aemilius</hi>
                         xxiii, calls them
@@ -2150,7 +2150,7 @@
                     <milestone n="44" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     When the consul returned victorious to
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     camp, he was prevented 
 					from enjoying an unalloyed delight by the sting of worry over his younger son.
                     <milestone n="2" unit="section"/>
@@ -2159,7 +2159,7 @@
                     <milestone n="3" unit="section"/>
                     This son was then in his seventeenth year, a fact which in itself increased the 
 					anxiety for him, and had been carried away in another direction by a crowd while in hot pursuit of the enemy. When he returned very late, then at last on the safe recovery of his son the consul felt the joy of so great a victory.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The 
 						soldiers hailed him as
                         <hi rend="italics">imperator</hi>
@@ -2175,7 +2175,7 @@
 					he craftily hired a man to play the part of dispatch bearer, from whom he received papers in the middle of the market place.
                     <milestone n="5" unit="section"/>
                     The message in these despatches was that the Roman fleet had put in at Emathia
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The district west of Amphipolis, toward the Chalcidic peninsula.
                     </note>
                     and was harassing the surrounding 
@@ -2189,7 +2189,7 @@
                     Having got rid of
                     <pb id="p.237"/>
                     the Thracians on this pretext, he barred the gates as
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     soon as he saw that they had crossed the Strymon.
                 </p>
                 <p>
@@ -2217,11 +2217,11 @@
                 <p>
                     <milestone n="8" unit="section"/>
                     After Perseus had tried his only expedient, to get aid from the Bisaltae,
-                    <note anchored="yes" place="unspecified">A tribe living just west of Amphipolis.</note>
+                    <note anchored="true" place="unspecified">A tribe living just west of Amphipolis.</note>
                     to whom he sent envoys
                     <pb id="p.239"/>
                     without result, he appeared before an assembly bringing
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     his son Philip with him,
                     <milestone n="9" unit="section"/>
                     in order to strengthen by exhortation the spirits of the people of Amphipolis themselves, and of the cavalry and infantry who had either accompanied him or had in their flight reached the 
@@ -2229,7 +2229,7 @@
                     <milestone n="10" unit="section"/>
                     He began to speak several times, but tears choked him, and when he could not open his mouth he instructed Evander the Cretan in the matters which he 
 					wished to discuss with the people and went down from the sacred spot.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">I.e.,</hi>
                         the speakers' stand, cf. VIII. xiv. 12, describing the 
 					consecration of the Roman Rostra.
@@ -2260,7 +2260,7 @@
                     <pb id="p.241"/>
                     surrendered cities, so that no 
 					wrong should be done
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     to the conquered in the first days of peace; he kept the king's ambassadors with him and, since he did 
 					not know of the king's flight, sent Publius Nasica to Amphipolis with a small force of infantry and cavalry,
                     <milestone n="2" unit="section"/>
@@ -2288,7 +2288,7 @@
                     <pb id="p.243"/>
                     <milestone n="9" unit="section"/>
                     During the days in camp at Pella, numerous embassies
-                    <note anchored="yes" place="unspecified" type="margin">B.C. 168</note>
+                    <note anchored="true" place="unspecified" type="margin">B.C. 168</note>
                     were 
 					received which came, especially from Thessaly, to offer congratulations.
                     <milestone n="10" unit="section"/>
@@ -2297,12 +2297,12 @@
                     <milestone n="11" unit="section"/>
                     The pouring out of the entire populace to meet him showed to any one that Paulus had not robbed 
 					them of a just and good king. . .
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Lost at this point is the account of Paulus' entry into Amphipolis and his subsequent march to the eastward, cf. 
 						XLV. iv. 2.
                     </note>
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader status="new" type="text">
+<teiHeader type="text">
 <fileDesc>
 <titleStmt>
 <title>Epigrams </title>
@@ -14,7 +14,7 @@
 <name>David Smith</name>
 </respStmt>
 <funder n="org:Tufts">Tufts University</funder>
-</titleStmt>
+</titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
 
 
 <sourceDesc>
@@ -37,25 +37,25 @@
 <editorialDecl>
 <correction status="medium" method="silent">&Perseus.DE;</correction>
 </editorialDecl>
-<refsDecl doctype="TEI.2">
-<state unit="text"/>
-<state unit="poem"/>
-<state unit="line"/>
+<refsDecl
+refState unit="text"/>
+refState unit="poem"/>
+refState unit="line"/>
 </refsDecl>
 </encodingDesc>
 
 <profileDesc>
 <langUsage>
-<language id="greek">Greek</language>
-<language id="en">English</language>
-<language id="la">Latin</language>
-<language id="de">German</language>
-<language id="fr">French</language>
-<language id="it">Italian</language>
+language ident="greek">Greek</language>
+language ident="en">English</language>
+language ident="la">Latin</language>
+language ident="de">German</language>
+language ident="fr">French</language>
+language ident="it">Italian</language>
 </langUsage>
 </profileDesc>
 
-<revisionDesc>
+<revisionDesc><!--
 <change><date>29-Jul-02</date>
 <respStmt><name>AEM</name><resp>markup</resp></respStmt>
 <item>initial markup
@@ -64,13 +64,13 @@
 <change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
 
 </teiHeader><text xml:lang="grc">
 <body>
 <head>Ἐπιγράμματα</head>
 
-<div1 n="1" type="poem">
+<div n="1" type="poem">
 <head lang="la"><bibl n="AP 6.336">α παλ ϝι.336</bibl></head>
 <p><lb></lb>τὰ ῥόδα τὰ δροσόεντα καὶ ἁ κατάπυκνος ἐκείνα
 <lb rend="displayNumAndIndent"></lb>ἕρπυλλος κεῖται ταῖς?̔Ελικωνιάσι,
@@ -80,14 +80,14 @@
 <lb rend="displayNumAndIndent"></lb>τερμίνθου τρώγων ἔσχατον ἀκρεμόνα.
 <pb n="175"></pb>
 </p>
-<div1 n="2" type="poem">
+<div n="2" type="poem">
 <head lang="la"><bibl n="AP 6.177">α παλ ϝι.177</bibl></head>
 <p><lb></lb>Δάφνις ὁ λευκόχρως, ὁ καλᾷ σύριγγι μελίσδων
 <lb rend="displayNumAndIndent"></lb>βουκολικοὺς ὕμνους, ἄνθετο Πανὶ τάδε,
 <lb></lb>τοὺς τρητοὺς δόνακας, τὸ λαγωβόλον, ὀξὺν ἄκοντα,
 <lb rend="displayNumAndIndent"></lb>νεβρίδα, τὰν πήραν, ᾇ ποκʼ ἐμαλοφόρει.
 </p>
-<div1 n="3" type="poem">
+<div n="3" type="poem">
 <head lang="la"><bibl n="AP 9.338">α παλ ιχ.338</bibl></head>
 <p><lb></lb>εὕδεις φυλλοστρῶτι πέδῳ Δάφνι σῶμα κεκμακὸς
 <lb rend="displayNumAndIndent"></lb>ἀμπαύων· στάλικες δʼ ἀρτιπαγεῖς ἀνʼ ὄρη.
@@ -96,7 +96,7 @@
 <lb n="5" rend="displayNum"></lb>ἄντρον ἔσω στείχοντες ὁμόρροθοι. ἀλλὰ τὺ φεῦγε,
 <lb rend="displayNumAndIndent"></lb>φεῦγε μεθεὶς ὕπνου κῶμα καταγρόμενον.
 </p>
-<div1 n="4" type="poem">
+<div n="4" type="poem">
 <head lang="la"><bibl n="AP 9.437">α παλ ιχ.437</bibl></head>
 <p><lb></lb>τήναν τὰν λαύραν τάς τε δρύας αἰπόλε κάμψας
 <lb rend="displayNumAndIndent"></lb>σύκινον εὑρήσεις ἀρτιγλυφὲς ξόανον,
@@ -118,7 +118,7 @@
 <lb></lb>ῥέξω γὰρ δαμάλαν, λάσιον τράγον, ἄρνα τὸν ἴσχω
 <lb rend="displayNumAndIndent"></lb>σακίταν. ἀίοι δʼ εὐμενέως ὁ θεός.
 </p>
-<div1 n="5" type="poem">
+<div n="5" type="poem">
 <head lang="la"><bibl n="AP 9.433">α παλ ιχ.433</bibl></head>
 <p><lb></lb>λῇς ποτὶ τᾶν Νυμφᾶν διδύμοις αὐλοῖσιν ἀεῖσαι
 <lb rend="displayNumAndIndent"></lb>ἁδύ τί μοι; κἠγὼ πακτίδʼ ἀειράμενος
@@ -127,7 +127,7 @@
 <lb n="5" rend="displayNum"></lb>ἐγγὺς δὲ στάντες λασίας δρυὸς ἄντρου ὄπισθεν
 <lb rend="displayNumAndIndent"></lb>Πᾶνα τὸν αἰγιβάταν ὀρφανίσωμες ὕπνου.
 </p>
-<div1 n="6" type="poem">
+<div n="6" type="poem">
 <head lang="la"><bibl n="AP 9.432">α παλ ιχ.432</bibl></head>
 <p><lb></lb>͂̓Α δειλαῖε τὺ Θύρσι, τί τὸ πλέον, εἰ καταταξεῖς
 <lb rend="displayNumAndIndent"></lb>δάκρυσι διγλήνους ὦπας ὀδυρόμενος;
@@ -136,7 +136,7 @@
 <lb n="5" rend="displayNum"></lb>αἱ δὲ κύνες κλαγγεῦντι· τί τὸ πλέον, ἁνίκα τήνας
 <lb rend="displayNumAndIndent"></lb>ὀστίον οὐδὲ τέφρα λείπεται οἰχομένας;
 </p>
-<div1 n="7" type="poem">
+<div n="7" type="poem">
 <head lang="la"><bibl n="AP 7.659">α παλ ϝιι.659</bibl></head>
 <p><lb></lb>νήπιον υἱὸν ἔλειπες, ἐν ἁλικίᾳ δὲ καὶ αὐτός,
 <lb rend="displayNumAndIndent"></lb>Εὐρύμεδον τύμβου τοῦδε θανὼν ἔτυχες.
@@ -144,7 +144,7 @@
 <lb rend="displayNumAndIndent"></lb>τιμασεῦντι, πατρὸς μνώμενοι ὡς ἀγαθοῦ.
 <pb n="177"></pb>
 </p>
-<div1 n="8" type="poem">
+<div n="8" type="poem">
 <head lang="la"><bibl n="AP 6.337">α παλ ϝι.337</bibl></head>
 <p><lb></lb>͂̓Ηλθε καὶ ἐς Μίλητον ὁ τοῦ Παιήονος υἱός,
 <lb rend="displayNumAndIndent"></lb>ἰητῆρι νόσων ἀνδρὶ συνοισόμενος
@@ -153,21 +153,21 @@
 <lb n="5" rend="displayNum"></lb>̓Ηετίωνι χάριν γλαφυρᾶς χερὸς ἄκρον ὑποστὰς
 <lb rend="displayNumAndIndent"></lb>μισθόν· ὁ δʼ εἰς ἔργον πᾶσαν ἀφῆκε τέχνην.
 </p>
-<div1 n="9" type="poem">
+<div n="9" type="poem">
 <head lang="la"><bibl n="AP 7.660">α παλ ϝιι.660</bibl></head>
 <p><lb></lb>ξεῖνε, Συρακόσιός τοι ἀνὴρ τόδʼ ἐφίεται?̓́Ορθων·
 <lb rend="displayNumAndIndent"></lb>χειμερίας μεθύων μηδαμὰ νυκτὸς ἴοις.
 <lb></lb>καὶ γὰρ ἐγὼ τοιοῦτον ἔχω πότμον· ἀντὶ δὲ πολλᾶς
 <lb rend="displayNumAndIndent"></lb>πατρίδος ὀθνείαν κεῖμαι ἐφεσσάμενος.
 </p>
-<div1 n="10" type="poem">
+<div n="10" type="poem">
 <head lang="la"><bibl n="AP 6.338">α παλ ϝι.338</bibl></head>
 <p><lb></lb>̔Υμῖν τοῦτο θεαὶ κεχαρισμένον ἐννέα πάσαις
 <lb rend="displayNumAndIndent"></lb>τὤγαλμα Ξενοκλῆς θῆκε τὸ μαρμάρινον,
 <lb></lb>μουσικός· οὐχ ἑτέρως τις ἐρεῖ. σοφίῃ δʼ ἐπὶ τῇδε
 <lb rend="displayNumAndIndent"></lb>αἶνον ἔχων Μουσέων οὐκ ἐπιλανθάνεται.
 </p>
-<div1 n="11" type="poem">
+<div n="11" type="poem">
 <head lang="la"><bibl n="AP 7.661">α παλ ϝιι.661</bibl></head>
 <p><lb></lb>Εὐσθένεος τὸ μνῆμα· φυσιγνώμων ὁ σοφιστής,
 <lb rend="displayNumAndIndent"></lb>δεινὸς ἀπʼ ὀφθαλμοῦ καὶ τὸ νόημα μαθεῖν.
@@ -177,14 +177,14 @@
 <lb rend="displayNumAndIndent"></lb>καίπερ ἄκικυς ἐὼν εἶχʼ ἄρα κηδεμόνας.
 <pb n="178"></pb>
 </p>
-<div1 n="12" type="poem">
+<div n="12" type="poem">
 <head lang="la"><bibl n="AP 6.339">α παλ ϝι.339</bibl></head>
 <p><lb></lb>Δημομέλης ὁ χορηγός, ὁ τὸν τρίποδʼ ὦ Διόνυσε
 <lb rend="displayNumAndIndent"></lb>καὶ σὲ τὸν ἥδιστον θεῶν μακάρων ἀναθείς,
 <lb></lb>μέτριος ἦν ἐν πᾶσι, χορῷ δʼ ἐκτήσατο νίκην
 <lb rend="displayNumAndIndent"></lb>ἀνδρῶν, καὶ τὸ καλὸν καὶ τὸ προσῆκον ὁρῶν.
 </p>
-<div1 n="13" type="poem">
+<div n="13" type="poem">
 <head lang="la"><bibl n="AP 6.340">α παλ ϝι.340</bibl></head>
 <p><lb></lb>̔Η Κύπρις οὐ πάνδημος. ἱλάσκεο τὴν θεὸν εἰπὼν
 <lb rend="displayNumAndIndent"></lb>οὐρανίην, ἁγνῆς ἄνθεμα Χρυσογόνης
@@ -193,14 +193,14 @@
 <lb n="5" rend="displayNum"></lb>ἐκ σέθεν ἀρχομένοις ὦ πότνια· κηδόμενοι γὰρ
 <lb rend="displayNumAndIndent"></lb>ἀθανάτων αὐτοὶ πλεῖον ἔχουσι βροτοί.
 </p>
-<div1 n="14" type="poem">
+<div n="14" type="poem">
 <head lang="la"><bibl n="AP 9.435">α παλ ιχ.435</bibl></head>
 <p><lb></lb>̓Αστοῖς καὶ ξείνοισιν ἴσον νέμει ἥδε τράπεζα·
 <lb rend="displayNumAndIndent"></lb>θεὶς ἀνελοῦ ψήφου πρὸς λόγον ἐρχομένης.
 <lb></lb>ἄλλός τις πρόφασιν λεγέτω· τὰ δʼ ὀθνεῖα Κάικος
 <lb rend="displayNumAndIndent"></lb>χρήματα καὶ νυκτὸς βουλομένοις ἀριθμεῖ.
 </p>
-<div1 n="15" type="poem">
+<div n="15" type="poem">
 <head lang="la"><bibl n="AP 7.658">α παλ ϝιι.658</bibl></head>
 <p><lb></lb>γνώσομαι, εἴ τι νέμεις ἀγαθοῖς πλέον, ἢ καὶ ὁ δειλὸς
 <lb rend="displayNumAndIndent"></lb>ἐκ σέθεν ὡσαύτως ἶσον ὁδοιπόρʼ ἔχει.
@@ -208,7 +208,7 @@
 <lb rend="displayNumAndIndent"></lb>κεῖται τῆς ἱερῆς κοῦφος ὑπὲρ κεφαλῆς.</q>
 <pb n="179"></pb>
 </p>
-<div1 n="16" type="poem">
+<div n="16" type="poem">
 <head lang="la"><bibl n="AP 7.662">α παλ ϝιι.662</bibl></head>
 <p><lb></lb>̔Η παῖς ᾤχετʼ ἄωρος ἐν ἑβδόμῳ ἥδʼ ἐνιαυτῷ
 <lb rend="displayNumAndIndent"></lb>εἰς?̓Αίδην πολλοῖς ἡλικίης προτέρη,
@@ -217,7 +217,7 @@
 <lb n="5" rend="displayNum"></lb>αἰαῖ ἐλεινὰ παθοῦσα Περιστερί, ὡς ἐν ἑτοίμῳ
 <lb rend="displayNumAndIndent"></lb>ἀνθρώποις δαίμων θῆκε τὰ λυγρότατα.
 </p>
-<div1 n="17" type="poem">
+<div n="17" type="poem">
 <head lang="la"><bibl n="AP 9.599">α παλ ιχ.599</bibl></head>
 <p><lb></lb>θᾶσαι τὸν ἀνδριάντα τοῦτον ὦ ξένε
 <lb rend="displayNumAndIndent"></lb>σπουδᾷ, καὶ λέγʼ ἐπὴν ἐς οἶκον ἔνθῃς·
@@ -226,7 +226,7 @@
 <lb n="5" rend="displayNum"></lb>προσθεὶς δὲ χὥτι τοῖς νέοισιν ἅδετο,
 <lb rend="displayNumAndIndent"></lb>ἐρεῖς ἀτρεκέως ὅλον τὸν ἄνδρα.
 </p>
-<div1 n="18" type="poem">
+<div n="18" type="poem">
 <head lang="la"><bibl n="AP 9.600">α παλ ιχ.600</bibl></head>
 <p><lb></lb>̔́Α τε φωνὰ Δώριος χὡνὴρ ὁ τὰν κωμῳδίαν εὑρὼν?̓Επίχαρμος.
 <lb rend="displayNumAndIndent"></lb>ὦ Βάκχε, χάλκεόν νιν ἀντʼ ἀλαθινοῦ τὶν ὧδʼ ἀνέθηκαν
@@ -235,21 +235,21 @@
 <lb rend="displayNumAndIndent"></lb>πολλὰ γὰρ πὸτ τὰν ζόαν τοῖς πᾶσιν εἶπε χρήσιμα. μεγάλα χάρις αὐτῷ.
 <pb n="180"></pb>
 </p>
-<div1 n="19" type="poem">
+<div n="19" type="poem">
 <head lang="la"><bibl n="AP 13.3">α παλ χιιι.3</bibl></head>
 <p><lb></lb>̔Ο μουσοποιὸς ἐνθάδʼ?̔Ιππῶναξ κεῖται.
 <lb></lb>εἰ μὲν πονηρός, μὴ ποτέρχευ τῷ τύμβῳ·
 <lb></lb>εἰ δʼ ἐσσὶ κρήγυός τε καὶ παρὰ χρηστῶν,
 <lb></lb>θαρσέων καθίζευ, κἢν θέλῃς ἀπόβριξον.
 </p>
-<div1 n="20" type="poem">
+<div n="20" type="poem">
 <head lang="la"><bibl n="AP 7.663">α παλ ϝιι.663</bibl></head>
 <p><lb rend="displayNumAndIndent"></lb>̔Ο μικκὸς τόδʼ ἔτευξε τᾷ Θραΐσσᾳ
 <lb></lb>Μήδειος τὸ μνᾶμʼ ἐπὶ τᾷ ὁδῷ κἠπέγραψε Κλείτας.
 <lb rend="displayNumAndIndent"></lb>ἑξεῖ τὰν χάριν ἁ γυνὰ ἀντὶ τήνων,
 <lb></lb>ὧν τὸν κοῦρον ἔθρεψε. τί μάν; ἔτι χρησίμα καλεῖται.
 </p>
-<div1 n="21" type="poem">
+<div n="21" type="poem">
 <head lang="la"><bibl n="AP 7.664">α παλ ϝιι.664</bibl></head>
 <p><lb></lb>̓Αρχίλοχον καὶ στᾶθι καὶ εἴσιδε τὸν πάλαι ποιητὰν
 <lb rend="displayNumAndIndent"></lb>τὸν τῶν ἰάμβων, οὗ τὸ μυρίον κλέος
@@ -258,7 +258,7 @@
 <lb rend="displayNumAndIndent" n="5"></lb>ὡς ἐμμελής τʼ ἔγεντο κἠπιδέξιος
 <lb rend="displayNumAndIndent"></lb>ἔπεά τε ποιεῖν πρὸς λύραν τʼ ἀείδειν.
 </p>
-<div1 n="22" type="poem">
+<div n="22" type="poem">
 <head lang="la"><bibl n="AP 9.598">α παλ ιχ.598</bibl></head>
 <p><lb></lb>τὸν τοῦ Ζανὸς ὅδʼ ὗμιν υἱὸν ὡνὴρ
 <lb></lb>τὸν λεοντομάχαν, τὸν ὀξύχειρα,
@@ -270,7 +270,7 @@
 <lb></lb>πολλοῖς μησὶν ὄπισθε κἠνιαυτοῖς.
 <pb n="181"></pb>
 </p>
-<div1 n="23" type="poem">
+<div n="23" type="poem">
 <head>ἐκ τῆς Βερενίκης <bibl><foreign lang="la">ατηεναευς ϝιι. 284.</foreign></bibl></head>
 <p><lb></lb>Καἴ τις ἀνὴρ αἰτεῖται ἐπαγροσύνην τε καὶ ὄλβον,
 <lb></lb>ἐξ ἁλὸς ᾧ ζωή, τὰ δὲ δίκτυα κείνῳ ἄροτρα,
@@ -279,7 +279,7 @@
 <lb n="5" rend="displayNum"></lb>καί κε λίνα στήσαιτο καὶ ἐξερύσαιτο θαλάσσης
 <lb></lb>ἔμπλεα.
 </p>
-<div1 n="24" type="poem">
+<div n="24" type="poem">
 <head>Μεγάρα</head>
 <p><lb rend="displayNumAndIndent"></lb><q>μῆτερ ἐμή, τίφθʼ ὧδε φίλον κατὰ θυμὸν ἰάπτεις
 <lb></lb>ἐκπάγλως ἀχέουσα, τὸ πρὶν δέ τοι οὐκέτʼ ἔρευθος
@@ -412,7 +412,7 @@
 <lb></lb>παννυχίῃ· τὰ δὲ πάντα πρὸς Εὐρυσθῆα τρέποιτο
 <lb></lb>οἴκου ἀφʼ ἡμετέροιο, γένοιτο δὲ μάντις ἐκείνῳ
 <lb n="125" rend="displayNum"></lb>θυμὸς ἐμός, μηδʼ ἄλλο παρὲκ τελέσειέ τι δαίμων.</q>
-<pb n="186"></pb></p></div1>
+<pb n="186"></pb></p></div>
 </body>
 </text>
 

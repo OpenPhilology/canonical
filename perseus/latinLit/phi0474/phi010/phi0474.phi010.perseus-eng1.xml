@@ -15,7 +15,7 @@
 <name>Elli Mylonas</name>
 <name>David Smith</name>
 </respStmt>
-<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt>  <sourceDesc>
+<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>  <sourceDesc>
 				<biblStruct>
 					<monogr>
 						<author>M. Tullius Cicero</author>
@@ -31,41 +31,41 @@
 		</fileDesc>
 
 		<encodingDesc>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Corn." doctype="TEI.2">
 				<state delim=" " unit="text"/>
-				<state unit="speech"/>
+				refState unit="speech"/>
 			</refsDecl>
 		</encodingDesc>
 
 		<profileDesc>
 			<langUsage>
-				<language id="en">English</language>
-				<language id="la">Latin</language>
-				<language id="greek">Greek</language>
+				language ident="en">English</language>
+				language ident="la">Latin</language>
+				language ident="greek">Greek</language>
 			</langUsage>
 		</profileDesc>
 
-		<revisionDesc>
+		<revisionDesc><!--
 			<change>
 				<date>7/14/97</date>
 				<respStmt>
@@ -183,7 +183,7 @@ Added to repository.
 		<change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
 	</teiHeader><text xml:lang="en">
 				<front>
 					<head>THE SPEECH OF M. T. CICERO IN DEFENCE OF AULUS CLUENTIUS HABITUS.</head>
@@ -206,7 +206,7 @@ Added to repository.
        now Sassia, having married her daughter to the young Oppianicus, urged him to institute fresh
        proceedings against Cluentius. So he prosecuted him afresh. His counsel was Lucius Attius,
        and the cause was tried before Quintus Vocontius Naso in the consulship of Marcus Aemilius
-       Lepidus and Lucius Volcatius Tullus, A.U.C. 688. <note anchored="yes">Manutius makes a
+       Lepidus and Lucius Volcatius Tullus, A.U.C. 688. <note anchored="true">Manutius makes a
         mistake in fixing this consulship of Lepidus and Tullus, and by consequence, the delivery of
         this oration, one year earlier.</note> Cluentius was acquitted.</p>
 					</argument>
@@ -216,7 +216,7 @@ Added to repository.
 					<milestone n="1" unit="section"/>
 					<p>I have observed, O judges, that the whole speech of the accuser is divided into two parts,
       one of which appeared to me to rely upon, and to put its main trust in, the inveterate
-      unpopularity of the trial before Junius; <note anchored="yes">Junius had been the judge in the
+      unpopularity of the trial before Junius; <note anchored="true">Junius had been the judge in the
        trial of Oppianicus. See <bibl n="Cic. Clu. 74">c. xxvii.</bibl></note> the other, just for
       the sake of usage, to touch very lightly and diffidently On the method pursued in cases of
       accusations of poisoning; concerning which matter this form of trial is appointed by law. And,
@@ -339,7 +339,7 @@ Added to repository.
       distinguished for valour, for reputation and for nobleness of birth, not only of the
       municipality of <placeName key="perseus,Larinum">Larinum</placeName>, of which he was a
       native, but also of all that district and neighbourhood. When he died, in the consulship of
-      Sulla and Pompeius, <note anchored="yes">a. u. c. 666. Twenty-two years before this
+      Sulla and Pompeius, <note anchored="true">a. u. c. 666. Twenty-two years before this
        time.</note> he left this son, a boy fifteen years old, and a daughter grown up and of
       marriageable age, who a short time after her father's death married Aulus Aurius Melinus, her
       own cousin, a youth of the fairest possible reputation, as was then supposed, among his
@@ -479,7 +479,7 @@ Added to repository.
       himself to the protection of a court of justice, or of the laws,—he never dared to
       trust himself unarmed among his enemies; but at the time when violence was stalking abroad,
       after the victory of Lucius Sulla, he came to <placeName key="perseus,Larinum">Larinum</placeName> with a body of armed men, to the great alarm of all the citizens; he
-      carried off the quatuorviri, <note anchored="yes">“The highest magistrates of a
+      carried off the quatuorviri, <note anchored="true">“The highest magistrates of a
         <foreign lang="la">colonia</foreign> were the decemviri or quatuorviri, so called as the
        numbers might vary, whose functions may be compared with those of the consulate at <placeName key="perseus,Rome">Rome</placeName>, before the establishment of the praetorship. Their
        principal duties were the administration of justice.”—Smith, Dict. Ant.
@@ -624,13 +624,13 @@ Added to repository.
       and his friends had lately witnessed his will, the freedmen of Asinius and some of his
       friends, because it was notorious that on the last day that Asinius had been seen, Avilius had
       been with him, and had been seen with him by many people, proceed against him, and bring him
-      before Quintus Manilius, who at that time was a triumvir. <note anchored="yes">There were many
+      before Quintus Manilius, who at that time was a triumvir. <note anchored="true">There were many
         <foreign lang="la">triumviri</foreign>, but the <foreign lang="la">triumviri
         capitales</foreign>, which are meant here, were regular magistrates elected by the people,
        they succeeded to many of the functions of the <foreign lang="la">quaestores
         parricidii</foreign>, and in many points they resembled the magistracy of the Eleven at
         <placeName key="perseus,Athens">Athens</placeName>. Their court appears to have been near
-       the Maenian Column. <foreign lang="la">Vide</foreign> Smith, Dict. Ant. p, <date value="1009">1009</date>, v. <foreign lang="la">Triumvir</foreign>.</note> And Avilius at once, without
+       the Maenian Column. <foreign lang="la">Vide</foreign> Smith, Dict. Ant. p, date when="1009">1009</date>, v. <foreign lang="la">Triumvir</foreign>.</note> And Avilius at once, without
       any witness or any informer appearing against him, being agitated by the consciousness of his
       recent wickedness, relates everything as I have now stated it, and confesses that Asinius had
       been murdered by him according to the plan of Oppianicus. <milestone n="39" unit="section"/>
@@ -661,7 +661,7 @@ Added to repository.
       erasures, he had the will copied over again, and had it signed and sealed with forged seals. I
       pass over many things on purpose. And indeed I fear lest I may appear to have said too much as
       it is. But you must suppose that he has been consistent with himself in every other
-      transaction of his life. All the senators <note anchored="yes">The term in the original is
+      transaction of his life. All the senators <note anchored="true">The term in the original is
         <foreign lang="la">decuriones</foreign>. In the colonies “the name of the senate
        was <foreign lang="la">ordo decurionum</foreign>, in later times simply <foreign lang="la">ordo</foreign> or <foreign lang="la">curia</foreign>, the members of it were <foreign lang="la">decuriones</foreign> or <foreign lang="la">curiales</foreign>. Thus in the later
        ages, <foreign lang="la">curia</foreign> is opposed to <foreign lang="la">senatus</foreign>,
@@ -1010,7 +1010,7 @@ Added to repository.
       heard this—“For nothing,” said he, “I will follow
       whenever you like. But what have you got?” Then he promises him forty thousand
       sesterces if Oppianicus is acquitted. And he begs him to summon the rest of those with whom he
-      is accustomed to converse, and he, the contriver of the whole business, adds Gutta <note anchored="yes">This is quite untranslatable; it is a set of puns. Gutta is the name of one
+      is accustomed to converse, and he, the contriver of the whole business, adds Gutta <note anchored="true">This is quite untranslatable; it is a set of puns. Gutta is the name of one
        judge, Bulbus of another; but <foreign lang="la">gutta</foreign> also means a drop, and
         <foreign lang="la">bulbus</foreign> means an onion. He sprinkles a drop on this onion, or he
        pours water on the onion to boil it.</note> to Bulbus. <milestone n="72" unit="section"/>
@@ -1178,8 +1178,8 @@ Added to repository.
       knowledge of the world, and practice in pleading, say such a thing as this? For they say that
       he is the wisest man; to whom everything which is necessary is sure to occur of his own
       accord; and that he is next best to him, who is guided by the clever experience of another.
-       <note anchored="yes">There is an epigram in the Greek anthology from which these sentiments
-       of Cicero seem to be taken:—<quote lang="greek">
+       <note anchored="true">There is an epigram in the Greek anthology from which these sentiments
+       of Cicero seem to be taken:—<quote xml:lang="grc">
         <l>ou(=tos me\n pana/ristos, o(\s au)to\s pa/nta noh/sh|, </l>
         <l>e)sqlo\s d' au)= ka)/keinos, o(\s eu)= ei)po/nti pi/qhtai, </l>
         <l>o(/s de/ ke mh/t' au)/to\s noe/h|, mh/t' a)/llou a)kou/wn </l>
@@ -1279,7 +1279,7 @@ Added to repository.
       cause but envy, mistake, suspicion, daily assemblies, seditiously stirred up by appeals to
       popular feeling. The same tribune of the people was the accuser before the assemblies, and the
       prosecutor in the courts of law. Be came into the court of justice not from the, assembly, but
-      bringing the whole assembly with him. Those steps of <persName><surname>Aurelius</surname></persName>, <note anchored="yes">These were steps built in the forum by Marcus
+      bringing the whole assembly with him. Those steps of <persName><surname>Aurelius</surname></persName>, <note anchored="true">These were steps built in the forum by Marcus
        Aurelius Cotta, and called by his name.</note> which were new at that time, appeared as if
       they had been built on purpose for a theatre for the display of that tribunal. And when the
       prosecutor had filled them with men in a state of great excitement, there was not only no
@@ -1395,7 +1395,7 @@ Added to repository.
       because he had sat as judge, not in his own decury, nor according to the law. He was
       prosecuted at a rather more peaceable time than <persName><surname>Junius</surname></persName>, but under almost the same law, and on very nearly the same indictment.
       But because at the trial shore was no sedition, no violence, and no crowd, he was easily
-      acquitted at the first hearing. I do not count this acquittal.<note anchored="yes">The passage
+      acquitted at the first hearing. I do not count this acquittal.<note anchored="true">The passage
        which follows in the text is given up by Orellius altogether corrupt, and is wholly
        unintelligible as it stands at present. Weiske thinks that several words have dropped
        out.</note><gap desc="******"/></p>
@@ -1470,7 +1470,7 @@ Added to repository.
        <milestone n="40" unit="chapter"/><milestone n="110" unit="section"/></p>
 					<p>For, as for Quinctius, indeed, what cause had he ever pleaded before, though he was now
       nearly fifty years old? Who had ever seen him not only in the position of a counsel for the
-      defence, but even as a witness to character, or as employed in any <note anchored="yes">“The Latin is, ‘<foreign lang="la">non modo in <emph>patroni</emph>, sed
+      defence, but even as a witness to character, or as employed in any <note anchored="true">“The Latin is, ‘<foreign lang="la">non modo in <emph>patroni</emph>, sed
         in laudatoris, aut <emph>advocati</emph>, loco viderat.</foreign>’ In the time of
        Cicero the <foreign lang="la">advocatus</foreign> was different from the person who conducted
        the suit (<foreign lang="la">patronus</foreign>) and made the speech, though in later times
@@ -1605,7 +1605,7 @@ Added to repository.
       weight, that one is not afraid to find fault with, or even to rescind the sentence of the
       other; so that one decides on removing a man from the senate, the other wishes to have him
       retained in it, and thinks him worthy of the highest rank. The one orders him to be degraded
-      to the rank of an aerarian <note anchored="yes"><foreign lang="la">Aerarii</foreign> were
+      to the rank of an aerarian <note anchored="true"><foreign lang="la">Aerarii</foreign> were
        those citizens of <placeName key="tgn,7013962">Rome</placeName> who did not enjoy the perfect
        franchise. They had to pay the <foreign lang="la">aes militare</foreign>, and to remove a
        citizen in the enjoyment of the full franchise into the list of those who enjoyed a less
@@ -1620,7 +1620,7 @@ Added to repository.
       because the censors have stated it in their notes, or whether they made such a statement in
       their notes because it was the fact. If it is the case because they have so stated it, take
       care what you are doing; beware lest you are establishing for the future a king by power in
-      the person of every one of our censors,—beware lest the note <note anchored="yes">In
+      the person of every one of our censors,—beware lest the note <note anchored="true">In
        the <bibl n="Liv. 29.37.1">twenty-ninth book of Livy, c. 37</bibl>, an extraordinary instance
        is related of disagreement between the censors; for one of them, Caius Claudius Nero,
        degraded his colleague, Marcus Livius, and Livius in his turn degraded Caius Claudius.</note>
@@ -1757,7 +1757,7 @@ Added to repository.
       the register of the knights, said with a loud voice, so that the whole assembly could hear
       him, that he knew that he had committed deliberate perjury and that if any one denied it, he
       would give him his own evidence in support of this assertion. But when no one ventured to deny
-      it, he ordered him to give up his horse. <note anchored="yes">“If the censors
+      it, he ordered him to give up his horse. <note anchored="true">“If the censors
        considered a knight unworthy of his rank, they struck him off of the list of knights, and
        deprived him of his horse, or ordered him to sell it, with the intention, no doubt, that the
        person thus degraded should refund to the state the money which had been advanced to him for

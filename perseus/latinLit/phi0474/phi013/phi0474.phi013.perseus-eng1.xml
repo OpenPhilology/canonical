@@ -15,7 +15,7 @@
 <name>Elli Mylonas</name>
 <name>David Smith</name>
 </respStmt>
-<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt>  <sourceDesc>
+<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>  <sourceDesc>
 				<biblStruct>
 					<monogr>
 						<author>M. Tullius Cicero</author>
@@ -31,41 +31,41 @@
 		</fileDesc>
 
 		<encodingDesc>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Corn." doctype="TEI.2">
 				<state delim=" " unit="text"/>
-				<state unit="speech"/>
+				refState unit="speech"/>
 			</refsDecl>
 		</encodingDesc>
 
 		<profileDesc>
 			<langUsage>
-				<language id="en">English</language>
-				<language id="la">Latin</language>
-				<language id="greek">Greek</language>
+				language ident="en">English</language>
+				language ident="la">Latin</language>
+				language ident="greek">Greek</language>
 			</langUsage>
 		</profileDesc>
 
-		<revisionDesc>
+		<revisionDesc><!--
 			<change>
 				<date>7/14/97</date>
 				<respStmt>
@@ -183,10 +183,10 @@ Added to repository.
 		<change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
 	</teiHeader><text xml:lang="en">
 				<body>
-					<div1 type="Speech" n="1">
+					<div type="Speech" n="1">
 						<head>THE FIRST ORATION OF M. T. CICERO AGAINST LUCIUS CATILINA. DELIVERED IN THE SENATE.</head>
 						<argument>
 							<head>THE ARGUMENT.</head>
@@ -277,7 +277,7 @@ Added to repository.
        That destruction which you have been long plotting against us ought to have already fallen on
        your own head. <milestone n="3" unit="section"/>
       </p>
-						<p>What? Did not that most illustrious man, Publius Scipio, <note anchored="yes">This was
+						<p>What? Did not that most illustrious man, Publius Scipio, <note anchored="true">This was
         Scipio Nasica, who called on the consul Mucius Scaevola to do his duty and save the
         republic; but as he refused to put any one to death without a trial, Scipio called on all
         the citizens to follow him, and stormed the Capitol, which Gracchus had occupied with his
@@ -288,7 +288,7 @@ Added to repository.
        instances, such as how Caius Servilius Ahala with his own hand slew Spurius Maelius when
        plotting a revolution in the state. There was—there was once such virtue in this
        republic, that brave men would repress mischievous citizens with severer chastisement than
-       the most bitter enemy. For we have a resolution <note anchored="yes"> This resolution was
+       the most bitter enemy. For we have a resolution <note anchored="true"> This resolution was
         couched in the form <foreign lang="la">Videant Consules nequid respublica detrimenti
          capiat</foreign>; and it exempted the consuls from all obligation to attend to the ordinary
         forms of law, and invested them with absolute power over the lives of all the citizens who
@@ -314,7 +314,7 @@ Added to repository.
         <milestone n="5" unit="section"/> A camp is pitched in <placeName key="tgn,1000080">Italy</placeName>, at the entrance of Etruria, in hostility to the republic; the number of
        the enemy increases every day; and yet the general of that camp, the leader of those enemies,
        we see within the walls—yes, and even in the senate, —planning every day
-       some internal injury to the republic. <note anchored="yes">This is the same incident that is
+       some internal injury to the republic. <note anchored="true">This is the same incident that is
         the subject of the preceding oration in defence of Rabirius.</note> If, O Catiline, I should
        now order you to be arrested, to be put to death, I should, I suppose, have to fear lest all
        good men should say that I had acted tardily, rather than that any one should affirm that I
@@ -611,7 +611,7 @@ Added to repository.
        republic, the robbers of Italy, men bound together by a treaty and infamous alliance of
        crimes, dead and alive, with eternal punishments.</p>
 					
-					<div1 type="Speech" n="2">
+					<div type="Speech" n="2">
 						<head>THE SECOND ORATION OF M. T. CICERO AGAINST LUCIUS CATILINA. ADDRESSED TO THE PEOPLE. </head>
 						<argument>
 							<head>THE ARGUMENT.</head>
@@ -947,7 +947,7 @@ Added to repository.
        now that all the forces of all enemies are defeated by land and sea, this city which they
        have ordained to be the most beautiful and flourishing of all cities.</p>
 					
-					<div1 type="Speech" n="3">
+					<div type="Speech" n="3">
 						<head>THE THIRD ORATION OF M. T. CICERO AGAINST LUCIUS CATILINA. ADDRESSED TO THE PEOPLE.</head>
 						<argument>
 							<head>THE ARGUMENT.</head>
@@ -961,7 +961,7 @@ Added to repository.
         remain behind to protect the city. </p>
 							<p>In the meantime Lentulus, and the other conspirators who remained behind, were proceeding
         with their designs. And among other steps, they decided on endeavouring to tamper with some
-        ambassadors from the Allobroges, <note anchored="yes">The Allobroges occupied the districts
+        ambassadors from the Allobroges, <note anchored="true">The Allobroges occupied the districts
          of Dauphiné and Savoy.</note> who were at that moment within the city, as the
         Allobroges were supposed not to be very well affected to the Roman power. At first these
         ambassadors appear to have willingly given ear to their proposals; but after a while they
@@ -1000,7 +1000,7 @@ Added to repository.
         chief men of their nation from Lentulus, Cethegus, and Statilius; and that they, and Lucius
         Cassius also, begged them to send a body of cavalry into Italy, and that Lentulus assured
         them, from the Sibylline books, that he was the third Cornelius who was destined to reign at
-        Rome. <note anchored="yes">Cinna and Sulla had been the two former Cornelii.</note> The
+        Rome. <note anchored="true">Cinna and Sulla had been the two former Cornelii.</note> The
         letters were produced and opened. On the sight of them the conspirators respectively
         acknowledged them to be theirs, and Lentulus was even so conscience-stricken that he
         confessed his whole crime. </p>
@@ -1172,7 +1172,7 @@ Added to repository.
 						<p>And the senate, O citizens, acted with such lenity, that, out of so great a conspiracy, and
        such a number and multitude of domestic enemies, it thought that since the republic was
        saved, the minds of the rest might be restored to a healthy state by the punishment of nine
-       most abandoned men. <milestone n="15" unit="section"/> And also a supplication <note anchored="yes">A supplication was a solemn thanksgiving to the gods, decreed by the senate,
+       most abandoned men. <milestone n="15" unit="section"/> And also a supplication <note anchored="true">A supplication was a solemn thanksgiving to the gods, decreed by the senate,
         when all the temples were opened and the statues of the gods placed in public upon couches
          (<foreign lang="la">pulvinaria</foreign>), to which the people offered up their
         thanksgivings and prayers. It was usually decreed on the intelligence arriving of any great
@@ -1211,7 +1211,7 @@ Added to repository.
        wickedness, so industrious in criminal exploits, from his plots within the city to the open
        warfare of the camp, (I will express my honest opinion, O citizens,) I should not easily have
        removed from your necks so vast a weight of evil. He would not have determined on the
-       Saturnalia <note anchored="yes">The Saturnalia was a feast of Saturn at which extraordinary
+       Saturnalia <note anchored="true">The Saturnalia was a feast of Saturn at which extraordinary
         licence and indulgence was allowed to all the slaves; it took place at the end of December,
         while this speech of Cicero was delivered early in November.</note> to massacre you he would
        not <pb n="312"/> have announced the destruction of the republic, and even the day of its
@@ -1295,7 +1295,7 @@ Added to repository.
        peace, with me in the garb of peace for your only general and commander. </p>
 						<p><milestone n="24" unit="section"/> Remember, O citizens, all civil dissensions, and not
        only those which you have heard of but these also which you yourselves remember and have
-       seen. Lucius Sulla crushed Publius Sulpicius<note anchored="yes">Sulpicius procured a law to
+       seen. Lucius Sulla crushed Publius Sulpicius<note anchored="true">Sulpicius procured a law to
         be passed for taking the command against Mithridates from Sulla and giving it to Marius;
         Sulla came to Rome with his army and slew Sulpicius, when Marius fled to Africa. Sulla made
         Octavius and Cinna consuls, who quarreled after he was gone, and Cinna went over to the
@@ -1371,7 +1371,7 @@ Added to repository.
        is now removed, with guard and watch as you did last night, That you shall not have to do so
        long, and that you shall enjoy perpetual tranquillity, shall, O Romans, be my care.</p>
 					
-					<div1 type="Speech" n="4">
+					<div type="Speech" n="4">
 						<head> THE FOURTH ORATION OF M. T. CICERO AGAINST LUCIUS CATILINA. DELIVERED IN THE SENATE.</head>
 						<argument>
 							<head>THE ARGUMENT.</head>
@@ -1425,7 +1425,7 @@ Added to repository.
        tortures, I will bear them not only bravely but even cheerfully, provided that by my toils
        dignity and safety are procured for you and for the Roman people. </p>
 						<p><milestone n="2" unit="section"/> I am that consul, O conscript fathers, to whom neither
-       the forum in which all justice is contained, nor the Campus Martius, <note anchored="yes">The
+       the forum in which all justice is contained, nor the Campus Martius, <note anchored="true">The
          <foreign lang="la">Campus Martius</foreign> was consecrated or restored to Mars after the
         expulsion of the Tarquins; the <foreign lang="la">comitia centuriata</foreign> at which all
         magistrates were created were held there.</note> consecrated to the consular assemblies, nor
@@ -1538,7 +1538,7 @@ Added to repository.
        now doubtful to any one what he, who voted for the imprisonment of the criminals,
        congratulation to him who had detected them, and rewards to those who had proved the crime,
        thinks of the whole matter, and of the cause. But Caius Caesar considers that the Sempronian
-        <note anchored="yes">The Sempronian law was proposed by Caius Gracchus, B.C. <date value="-123">123</date>, and enacted that the people only should decide respecting the life
+        <note anchored="true">The Sempronian law was proposed by Caius Gracchus, B.C. date when="-123">123</date>, and enacted that the people only should decide respecting the life
         or civil condition of a citizen. It is alluded to also in the oration <bibl n="Cic. Rab.Perd. 4">Pro Rabir. c. 4</bibl>, where Cicero says, “Caius Gracchus
         passed a law that no decision should be come to about the life of a Roman citizen without
         your command,” speaking to the <foreign lang="la">Quirites</foreign>.</note> law
@@ -1580,7 +1580,7 @@ Added to repository.
        lax, we must endure the character of the greatest cruelty, to the damage of our country and
        our fellow-citizens. </p>
 						<p>
-       <milestone n="13" unit="section"/> Unless, indeed, Lucius <note anchored="yes">The
+       <milestone n="13" unit="section"/> Unless, indeed, Lucius <note anchored="true">The
         brother-in-law of Lucius Caesar was Marcus Fulvius, whose death, at the command of Opimius
         the consul, is referred to at <bibl n="Cic. Catil. 2.1">Cat. 2. chap1</bibl>. He sent his
         son to the consul to treat for his surrender, whom Opimius sent back the first time, and
@@ -1625,7 +1625,7 @@ Added to repository.
        established in nay consulship, I pledge myself to you that no civil and domestic calamity can
        hereafter reach any part of the republic. I see that the tribunes of the
        treasury—excellent men—have united with similar zeal in defence of the
-       republic, and all the notaries. <note anchored="yes">The notaries at Rome were in the pay of
+       republic, and all the notaries. <note anchored="true">The notaries at Rome were in the pay of
         the state; they were chiefly employed in making up the public accounts. In the time of
         Cicero it seems to have been lawful for any one to obtain the office of <foreign lang="la">scriba</foreign> by purchase, (see <bibl n="Cic. Ver. 2.2.79">Cic. in Verr. 2.79</bibl>,)
         and freedmen and their sons frequently availed themselves of this privilege. </note> For as
@@ -1712,7 +1712,7 @@ Added to repository.
        can any power be found which will be able to undermine and destroy your union with the Roman
        knights, and such unanimity as exists among all good men. <milestone n="11" unit="chapter"/><milestone n="23" unit="section"/></p>
 						<p>As, then, this is the case, O conscript fathers, instead of my military
-       command—instead of the army,——instead of the province <note anchored="yes">Cicero, in order to tempt Antonius to aid him in counteracting the
+       command—instead of the army,——instead of the province <note anchored="true">Cicero, in order to tempt Antonius to aid him in counteracting the
         treasonable designs of Catiline, had given up to him the province of Macedonia, which had
         fallen to his own lot; and having accepted that or Cisalpine Gaul in exchange for it, he
         gave that also to Quintus Metellus; being resolved to receive no emolument, directly or
@@ -1735,7 +1735,7 @@ Added to repository.
        houses and homes of the whole city; concerning your dominion, your liberty and the safety of
        Italy and the whole republic. For you have a consul who will not hesitate to obey your
        decrees, and who will be able as long as he lives, to defend what you decide on and of his
-       own power to execute it. <note anchored="yes">This speech was spoken, and the criminals
+       own power to execute it. <note anchored="true">This speech was spoken, and the criminals
         executed, on the fifth of December. But Catiline was not yet entirely overcome. He had with
         him in Etruria two legions,—about twelve thousand men; of which, however, not
         above one quarter were regularly armed. For some time by marches and counter marches he

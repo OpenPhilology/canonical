@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Inst." type="work">Institutio Oratoria, books 4-6 - 4</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -39,23 +39,23 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter"/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter"/>
+                refState unit="section"/>
             </refsDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="page"/>
+            <refsDecl
+                refState unit="page"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="la">Latin</language>
-                <language id="greek">Greek</language>
+                language ident="en">English</language>
+                language ident="la">Latin</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -64,11 +64,11 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="4" type="book">
+            <div part="N" sample="complete" org="uniform" n="4" type="book">
                 <head>Book IV</head>
                 <p>
                     <milestone n="pr" unit="chapter"/>
@@ -165,7 +165,7 @@ clearly show that this portion is designed as an introduction to the subject on 
 speak.
                     <milestone n="2" unit="section"/>
                     It may be because
-                    <foreign lang="greek">oi)/mh</foreign>
+                    <foreign xml:lang="grc">oi)/mh</foreign>
                     means a tune, and
 players on the lyre have given the name of
                     <hi rend="italics">proem</hi>
@@ -176,7 +176,7 @@ for the prize, that orators before beginning to plead
 make a few introductory remarks to win the indulgence of the judges.
                     <milestone n="3" unit="section"/>
                     Or it may be because
-                    <foreign lang="greek">oi)=mos</foreign>
+                    <foreign xml:lang="grc">oi)=mos</foreign>
                     in Greek means a
                     <hi rend="italics">way,</hi>
                     that the practice has arisen of
@@ -197,7 +197,7 @@ already acquainted with the case.
                     This form of
 licence arises from the fact that a sketch of the case
 is always given before actual declamation.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         the statement of the
                         <quote>hard case</quote>
@@ -401,14 +401,14 @@ Pompey's soldiers have been stationed in the court
 as a threat to themselves. Or it may be necessary
 to frighten them, as Cicero does in the
                     <hi rend="italics">Verrines.</hi>
-                    <note anchored="yes" place="unspecified">i. 15.</note>
+                    <note anchored="true" place="unspecified">i. 15.</note>
                     <milestone n="21" unit="section"/>
                     There are two ways of bringing fear to bear upon
 the judges. The commonest and most popular is to
 threaten them with the displeasure of the Roman
 people or the transference of the juries to another
 class
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">e.g.</hi>
                         in the
                         <hi rend="italics">Verrines</hi>
@@ -425,7 +425,7 @@ prosecution for bribery: this is a method which is
 fairly safe with a large body of judges, since it
 checks the bad and pleases the good members of
 the jury, but I should never recommend its employment with a single judge
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         It must be borne in mind that
                         <hi rend="italics">iudex</hi>
                         may be a juryman
@@ -552,7 +552,7 @@ together with anything else that is like to suffer
 injury from the fall of the client whom we defend.
                     <milestone n="31" unit="section"/>
                     As regards external circumstances
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         In the
                         <hi rend="italics">pro Caelio</hi>
                         (c. 1) Cicero calls attention to the fact
@@ -680,7 +680,7 @@ regard the case as presenting only old familiar
 features and consequently to give it less attention?
 What was his purpose in the
                     <hi rend="italics">pro Caelio</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Cael.</hi>
                         31.
                     </note>
@@ -707,9 +707,9 @@ consider that there are five kinds of causes, the
                     <hi rend="italics">obscure,</hi>
                     or as they are called in
 Greek,
-                    <foreign lang="greek">e)/ndocon, a)/docon, a)mfi/docon, para/docon</foreign>
+                    <foreign xml:lang="grc">e)/ndocon, a)/docon, a)mfi/docon, para/docon</foreign>
                     and
-                    <foreign lang="greek">dusparakolou/qhton.</foreign>
+                    <foreign xml:lang="grc">dusparakolou/qhton.</foreign>
                     To these some would add a sixth,
 the
                     <hi rend="italics">scandalous,</hi>
@@ -801,7 +801,7 @@ advantage to the case.
                     <milestone n="46" unit="section"/>
                     At times, like Cicero in his
 defence of Rabirius Postumus,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro</hi>
                         Rab. i. 1.
                     </note>
@@ -844,7 +844,7 @@ display of wit will often restore their flagging spirits
 and we may alleviate their boredom by the introduction of entertaining matter derived from any source
 that may be available. It will also be found advantageous to anticipate the objections that may be
 raised by our opponent, as Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Div. in</hi>
                         Caec. i. 1.
                     </note>
@@ -859,7 +859,7 @@ as the accuser of Verres,
                     he then goes on to show
 that the accusation which he has undertaken is
 really a defence of the allies, an artifice known as
-                    <foreign lang="greek">pro/lhyis</foreign>
+                    <foreign xml:lang="grc">pro/lhyis</foreign>
                     or anticipation.
                     <milestone n="50" unit="section"/>
                     Although this is at times
@@ -971,7 +971,7 @@ been insisted on by all writers, though its force has
 been somewhat impaired by present conditions, since
 in certain trials, more especially those brought on
 capital charges or in the centumviral
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The court of the
                         <hi rend="italics">cettumviri</hi>
                         was specially concerned with
@@ -1015,8 +1015,8 @@ unpremeditated, while neither our words nor our
 looks should promise too much. For a method of
 pleading which conceals its art and makes no vain
 display, being as the Greeks say
-                    <foreign lang="greek">a)nepi/fatos</foreign>
-                    <note anchored="yes" place="unspecified">
+                    <foreign xml:lang="grc">a)nepi/fatos</foreign>
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         unobtrusive.
                     </note>
@@ -1088,14 +1088,14 @@ now forbidden to do so.
                     <pb id="p.43"/>
                     turns to address Aeschines in his
                     <hi rend="italics">exordium,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Cor.</hi>
                     </note>
                     while
 Cicero adopts the same device in several of his
 speeches, but more especially in the
                     <hi rend="italics">pro Ligario,</hi>
-                    <note anchored="yes" place="unspecified">i. 2.</note>
+                    <note anchored="true" place="unspecified">i. 2.</note>
                     where he turns to address Tubero.
                     <milestone n="67" unit="section"/>
                     His speech
@@ -1131,7 +1131,7 @@ the words
 feeling surprise at the employment of
                     <hi rend="italics">apostrophe,</hi>
                     Cicero in his defence of Scaurus,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This speech is lost: the existing speech in his defence is
 on the charge of extortion.
                     </note>
@@ -1214,7 +1214,7 @@ the judge has been sufficiently prepared for our
 speech without it or if the case is such as to render
                     <pb id="p.47"/>
                     such preparation unnecessary. Aristotle
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Rhet.</hi>
                         iii. 14.
                     </note>
@@ -1241,7 +1241,7 @@ attention and good-will, a proceeding which Prodicus
 recommended as a means of wakening them when
 they begin to nod. A good example is the
 following:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cic.
                         <hi rend="italics">pro Var. fr.</hi>
                         8.
@@ -1266,11 +1266,11 @@ same function as an
                     such as the passage in
 the
                     <hi rend="italics">pro Cluentio</hi>
-                    <note anchored="yes" place="unspecified">xlii. 117.</note>
+                    <note anchored="true" place="unspecified">xlii. 117.</note>
                     where Cicero introduces an attack
 on the censors and in the
                     <hi rend="italics">pro Murena</hi>
-                    <note anchored="yes" place="unspecified">iii. 7.</note>
+                    <note anchored="true" place="unspecified">iii. 7.</note>
                     when he
 apologises to Servius. But the practice is too
 common to need illustration.
@@ -1323,7 +1323,7 @@ the
 is somewhat long and complicated, we shall do well
 to prepare the judge for it, as Cicero often does,
 most notably in the following passage:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Cluent.</hi>
                         iv. 11.
                     </note>
@@ -1353,7 +1353,7 @@ too many classes and err on the side of subtlety. For
                     they demand an explanation dealing not only with the
 facts of the case which is before the court, but with the
 person involved (as in the sentence,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Sall. Hist.</hi>
                         iv. 25.
                     </note>
@@ -1364,7 +1364,7 @@ with loquacity rather than eloquence
                     </quote>
                     ) or of the
 place where an incident occurred (as in the sentence
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cic.
                         <hi rend="italics">Verr.</hi>
                         <milestone n="1" unit="chapter"/>
@@ -1373,7 +1373,7 @@ place where an incident occurred (as in the sentence
                     </note>
                     <quote>Lampsacus, gentlemen, is a town situated on the Hellespont</quote>
                     ), or of the time at which something occurred (as in the verse
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Verg.
                         <hi rend="italics">G.</hi>
                         i. 43.
@@ -1400,7 +1400,7 @@ Further they style some
                     a distinction which is self-evident. To this they add that our explanation may
 refer to the past (which is of course the commonest
 form), the present (for which compare Cicero's
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Rosc. Am.</hi>
                         xxii. 60.
                     </note>
@@ -1576,7 +1576,7 @@ himself?
                     <hi rend="italics">statements of facts,</hi>
                     neither
 is the first portion of Cicero's
-                    <note anchored="yes" place="unspecified">V. 11.</note>
+                    <note anchored="true" place="unspecified">V. 11.</note>
                     defence of Cluentius,
 beginning with the words
                     <quote>Aulus Cluentius Habitus.</quote>
@@ -1592,7 +1592,7 @@ but facts which are none the less relevant to the
 case: the speaker's purpose may be to illustrate the
 case by some parallel, as in the passage in the
                     <hi rend="italics">Verrines</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         V. 3. The shepherd was crucifed because the carrying
 of arms was forbidden.
                     </note>
@@ -1604,7 +1604,7 @@ him as a present;
                     or he may desire to dispel some
 charge that is irrelevant to the case as in the passage
 of the speech for Rabirius Postumus,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         X. 28. The charge in question was that Rabirius had
 worn the Greek
                         <hi rend="italics">pallium</hi>
@@ -1623,7 +1623,7 @@ of steward.
                     </quote>
                     Or the orator may desire to heighten
 the effect of his charges, as Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Verr.</hi>
                         v. 10.
                     </note>
@@ -1636,13 +1636,13 @@ description of the journey of Verres.
 either to stir the emotions of the judges, as in that
 passage of the
                     <hi rend="italics">proo Roscio Amerino</hi>
-                    <note anchored="yes" place="unspecified">xxii. 60.</note>
+                    <note anchored="true" place="unspecified">xxii. 60.</note>
                     dealing with
 Chrysogonus to which I referred just recently, or to
 entertain them with a show of wit, as in the
 passage of the
                     <hi rend="italics">pro Cluentio</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         xx. 57
                         <hi rend="italics">sqq.</hi>
                     </note>
@@ -1651,7 +1651,7 @@ Caepasius: sometimes again a digression may be
 introduced to add beauty to the speech, as in the
 passage about Proserpine in the
                     <hi rend="italics">Verrines,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         IV. 48. The words quoted do not occur in our MSS of
 Cicero.
                     </note>
@@ -1693,7 +1693,7 @@ point in detail.
                     At times again we may pretend
 that we are repeating the facts for the benefit of
 some new member of the jury,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         i.e. introduced to fill the place of a juror who had had
 to leave the jury.
                     </note>
@@ -1822,7 +1822,7 @@ For since declamation is merely an exercise in forensic
 pleading, why should they not qualify themselves to
                     <pb id="p.67"/>
                     speak either first or second
-                    <note anchored="yes" place="unspecified">See note prefixed to Index.</note>
+                    <note anchored="true" place="unspecified">See note prefixed to Index.</note>
                     ? Those however who
 do not understand the reason for such a practice,
 think that when they appear in the courts they
@@ -1835,7 +1835,7 @@ for the full statement of the facts. For what statement of the case can be made 
 a jealous husband of maltreating her, or a father is
 indicting his son turned Cynic before the censors
 for indecent behaviour
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See Index,
                         <hi rend="italics">s. v.</hi>
                         Cynicus.
@@ -1864,7 +1864,7 @@ credible or probable for plausible).
                     <milestone n="32" unit="section"/>
                     I agree with
 this classification of its qualities, although Aristotle
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Rhet.</hi>
                         iii. 16.
                     </note>
@@ -2013,7 +2013,7 @@ acknowledged and reared and brought up to manhood.
                     For this reason some of the Greeks draw a
 distinction between a concise statement (the word
 they use is
-                    <foreign lang="greek">su/ntomos</foreign>
+                    <foreign xml:lang="grc">su/ntomos</foreign>
                     ) and a brief statement, the
 former being free from all superfluous matter, while
 the latter may conceivably omit something that
@@ -2095,7 +2095,7 @@ I will speak when I come to the
 things indeed may be omitted altogether from our
 marshalling of the facts, witness the following
 example from Cicero,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Caec.</hi>
                         iv. 11.
                     </note>
@@ -2134,7 +2134,7 @@ a reminder: Cicero does this even at the close of a
                     <hi rend="italics">statement of facts</hi>
                     in the
                     <hi rend="italics">pro Ligario:</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Lig.</hi>
                         ii. 4.
                     </note>
@@ -2216,7 +2216,7 @@ case.
                     <milestone n="57" unit="section"/>
                     The best kind of preparatory remarks are
 those which cannot be recognised as such: Cicero,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Mil.</hi>
                         x. 28.
                     </note>
@@ -2264,7 +2264,7 @@ penetration.
                     <milestone n="61" unit="section"/>
                     To these three qualities some add magnificence of
 diction or
-                    <foreign lang="greek">megalopre/peia</foreign>
+                    <foreign xml:lang="grc">megalopre/peia</foreign>
                     as they call it this quality
 is not, however, suitable to all cases. For what place
 has language that rises above the ordinary level in
@@ -2297,10 +2297,10 @@ enough to the statement of facts, is equally so in
 other portions of the speech. There are others
                     <pb id="p.85"/>
                     who add palpability, which the Greeks call
-                    <foreign lang="greek">e)na/rgeia.</foreign>
+                    <foreign xml:lang="grc">e)na/rgeia.</foreign>
                     <milestone n="64" unit="section"/>
                     And I will not conceal the fact that Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Top.</hi>
                         xxvi. 97.
                     </note>
@@ -2368,7 +2368,7 @@ against us, admit the truth.
 from the temple, but it was private property, and
 therefore he is not guilty of sacrilege. He abducted
 a maiden, but the father
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             The victim can claim either that the ravisher should
 marry her or be put to death. Her father cannot however
 make either of these demands on her behalf.
@@ -2564,7 +2564,7 @@ when it is necessary to divert the judge from some
 prejudice that he has formed against us.
                     <milestone n="81" unit="section"/>
                     Conjectural
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For this technical term = cases turning on questions of
 fact, see III. vi. 30
                         <hi rend="italics">sqq.</hi>
@@ -2664,7 +2664,7 @@ to be supported by the speaker's native talent, and
 sometimes consists simply in an assumption of modesty,
 which is, I imagine, the reason why it is called a
 gloss,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">color</hi>
                         is a technical term for
                         <quote>
@@ -2856,7 +2856,7 @@ of such a nature that we give the impression of
 having been forced from our proper course by
 some uncontrollable emotion. The passage in
 Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Clu.</hi>
                         vi. 15.
                     </note>
@@ -2893,7 +2893,7 @@ were drowsed with sleep or weighed down by some
                         heavy lethargy?
                     </quote>
                     but by Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Verr.</hi>
                         v. xlv. 118.
                     </note>
@@ -2905,7 +2905,7 @@ says,
                     Again
 in the pro
                     <hi rend="italics">Clueniio</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Clu.</hi>
                         xxvi.
                     </note>
@@ -2916,7 +2916,7 @@ case it should be thought that Cicero did this
 without design (quite an incredible supposition in
 his case), I would point out that in the
                     <hi rend="italics">Partitiones</hi>
-                    <note anchored="yes" place="unspecified">ix. 31.</note>
+                    <note anchored="true" place="unspecified">ix. 31.</note>
                     he lays it down that the
                     <hi rend="italics">statement of facts</hi>
                     should
@@ -2931,7 +2931,7 @@ have already said, never argue points in the
                     but we may sometimes introduce
 arguments, as for example Cicero does in the pro
                     <hi rend="italics">Ligario,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ii. 4. Ligarius was accused of having fought for the Pompeians in Africa. Cicero points out that he went out to Africa
 before the outbreak of war was dreamed of and that his
 whole attitude was discreet.
@@ -2948,7 +2948,7 @@ not witnesses. A statement in its simplest form
 will run as follows,
                     <quote>Quintus Ligarius went out as legate to C. Considius.</quote>
                     But how will Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Lig.</hi>
                         i. 2.
                     </note>
@@ -2962,7 +2962,7 @@ as legate to Gaius Considius at a time when there
 was no thought of war.
                     </quote>
                     And again elsewhere
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">ib.</hi>
                         ii. 4.
                     </note>
@@ -2974,7 +2974,7 @@ sense would have been sufficiently clear had he
                     <pb id="p.111"/>
                     said no more than
                     <quote>Quintus Ligarius would not suffer himself to be entangled in any transaction,</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Lig.</hi>
                         i. 3.
                     </note>
@@ -3010,7 +3010,7 @@ cogency of my proof, if I have previously filled his
 mind with anger or pity?
                     <milestone n="113" unit="section"/>
                     Does not Cicero,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Verr.</hi>
                         v 62. A Roman citizen might not be scourged.
                         <hi rend="italics">cp.</hi>
@@ -3031,7 +3031,7 @@ in the law.
                     <milestone n="114" unit="section"/>
                     Again does he not throughout the
 whole of his statement excite the warmest indignation at the misfortunes of Philodamus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">ib.</hi>
                         i. 30
                     </note>
@@ -3117,7 +3117,7 @@ palate. The best way of so doing is the interposition of a short sentence like t
                         Milo's slaves did what everyone would have
 wished his own slaves to do under similar circumstances
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Mil.</hi>
                         x. 29.
                     </note>
@@ -3128,7 +3128,7 @@ daring and produce something like the following:
 were no witnesses, none to sanction the union, and
 the omens were dark and sinister.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Clu. v.</hi>
                         14.
                     </note>
@@ -3206,7 +3206,7 @@ what we wish to display to the bystanders.
                     There is also a kind of repetition of the
                     <hi rend="italics">statement</hi>
                     which the Greeks call
-                    <foreign lang="greek">e)pidihgh/sis.</foreign>
+                    <foreign xml:lang="grc">e)pidihgh/sis.</foreign>
                     It belongs to
 declamation rather than forensic oratory, and was invented to enable the speaker (in view of the fact that
 the statement should be brief) to set forth his facts
@@ -3246,7 +3246,7 @@ reputation and birth made him the leading man not
 only in his native town of Larinum, but in all the
 surrounding district.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Cluent.</hi>
                         v. 11.
                     </note>
@@ -3254,14 +3254,14 @@ surrounding district.
                     Or again they may be introduced without such circumstances, as in the
 passage beginning
                     <quote>For Quintus Ligarius etc.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Lig. i.</hi>
                         2.
                     </note>
                     Often, too, we may commence with a fact as Cicero
 does in the
                     <hi rend="italics">pro Tullio</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Tull. vi.</hi>
                         14.
                     </note>
@@ -3272,7 +3272,7 @@ which he inherited from his father in the territory
 of Thurium,
                     </quote>
                     or Demosthenes in the speech in defence of Ctesiphonl,
-                    <note anchored="yes" place="unspecified">§ 18.</note>
+                    <note anchored="true" place="unspecified">§ 18.</note>
                     —
                     <quote>On the outbreak of the Phocian war.</quote>
                 </p>
@@ -3293,7 +3293,7 @@ had ejected Caecina. He stated that he had done so.
 A sum of money was deposited. It is for you to
 decide to whom this money is to go.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cic.
                         <hi rend="italics">pro Caec.</hi>
                         viii. 23.
@@ -3436,7 +3436,7 @@ or a strict interpretation of the law, since the necessity for such digression w
                     <milestone n="12" unit="section"/>
                     Such passages may also serve as a kind of peroration after the main question. The Greeks call
 this
-                    <foreign lang="greek">pare/kbasis,</foreign>
+                    <foreign xml:lang="grc">pare/kbasis,</foreign>
                     the Romans
                     <hi rend="italics">egressus</hi>
                     or
@@ -3451,7 +3451,7 @@ record historical or even legendary occurrences.
 examples I may cite the praise of Sicily and the rape
                     <pb id="p.129"/>
                     of Proserpine
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Verr.</hi>
                         I vii. 27.
                     </note>
@@ -3460,14 +3460,14 @@ examples I may cite the praise of Sicily and the rape
                     or the famous recital of
 the virtues of Gneius Pompeius in the
                     <hi rend="italics">pro Cornelio,</hi>
-                    <note anchored="yes" place="unspecified">See note on IV. iv. 8.</note>
+                    <note anchored="true" place="unspecified">See note on IV. iv. 8.</note>
                     where the great orator as though the course of his
 eloquence had been broken by the mere mention of
 the general's name, interrupts the topic on which he
 had already embarked and digresses forthwith to sing
 his praises.
                     <milestone n="14" unit="section"/>
-                    <foreign lang="greek">pare/kbasis</foreign>
+                    <foreign xml:lang="grc">pare/kbasis</foreign>
                     may, I think, be defined as the
 handling of some theme, which must however have
 some bearing on the case, in a passage that involves
@@ -3512,7 +3512,7 @@ the
                     <hi rend="italics">exordium</hi>
                     when he was defending Milo, as is
 clear from the short speech
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The speech actually delivered, not the long speech which
 has come down to us, but was never delivered.
                     </note>
@@ -3530,11 +3530,11 @@ returning to the point from which he departed.
                     <hi rend="italics">statement of facts</hi>
                     some place the
                     <hi rend="italics">proposition</hi>
-                    <note anchored="yes" place="unspecified">III. ix. 5; xi. 27.</note>
+                    <note anchored="true" place="unspecified">III. ix. 5; xi. 27.</note>
                     which they regard as forming a division
 of a forensic speech. I have already expressed
 my opinion of this view.
-                    <note anchored="yes" place="unspecified">III. ix. 2.</note>
+                    <note anchored="true" place="unspecified">III. ix. 2.</note>
                     But it seems to me
 that the beginning of every
                     <hi rend="italics">proof</hi>
@@ -3544,8 +3544,8 @@ that the beginning of every
 main question and sometimes even in the enunciation
 of individual arguments, more especially of those
 which are called
-                    <foreign lang="greek">e)pixeirh/mata</foreign>
-                    <note anchored="yes" place="unspecified">See v. xiv. 14.</note>
+                    <foreign xml:lang="grc">e)pixeirh/mata</foreign>
+                    <note anchored="true" place="unspecified">See v. xiv. 14.</note>
                     But for the moment
 I shall speak of the first kind. It is not always necessary to employ it.
                     <milestone n="2" unit="section"/>
@@ -3565,7 +3565,7 @@ gentlemen: he that laid the ambush was defeated,
                         violence was conquered by violence, or rather I
 should say audacity was crushed by valour.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Mil.</hi>
                         xi. 30.
                     </note>
@@ -3665,7 +3665,7 @@ of an offence against the state; for when he was
 tribune of the plebs, he himself read out his bill to
 the public assembly.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The speech is lost. In 67 B.C. Cornelius as tribune of
 the plebs proposed a law enacting that no man should be
 released from the obligations of a law save by decree of
@@ -3873,7 +3873,7 @@ the
                     <hi rend="italics">partition</hi>
                     adopted by Cicero in the
                     <hi rend="italics">pro Cluentio,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         iv. 9. Oppianicus had been indicted by Cluentius for an
 attempt upon his life and condemned. The
                         <quote>previous judgments</quote>
@@ -3902,7 +3902,7 @@ foolish as to deny that the
                     <hi rend="italics">partition</hi>
                     in the
                     <hi rend="italics">pro Murena</hi>
-                    <note anchored="yes" place="unspecified">v. 11.</note>
+                    <note anchored="true" place="unspecified">v. 11.</note>
                     is admirable.
                     <quote>
                         I understand, gentlemen, that the
@@ -3920,7 +3920,7 @@ other superfluous.
                     There are also a number who are in doubt as to
 a form of defence which I may exemplify as follows:
                     <quote>If I murdered him, I did right; but I did not murder him.</quote>
-                    <note anchored="yes" place="unspecified">See III. vi 10.</note>
+                    <note anchored="true" place="unspecified">See III. vi 10.</note>
                     What, they ask, is the value of the
 first part, if the second can be proved, since they are
 mutually inconsistent, and if anyone employs both
@@ -3952,12 +3952,12 @@ patriotism of the slayer and redounded to his glory.
                     <milestone n="16" unit="section"/>
                     I would not however entirely condemn the order
 mentioned above,
-                    <note anchored="yes" place="unspecified">§ 13.</note>
+                    <note anchored="true" place="unspecified">§ 13.</note>
                     since there are certain arguments
 which, though hard in themselves, may serve to
 soften those which come after. The proverb,
                     <quote>If you want to get your due, you must ask for something more,</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The proverb would seem originally to refer to bargaining
 in the market: the salesman, knowing he will be beaten
 down, sets his original price too high. But it would equally
@@ -3994,7 +3994,7 @@ the order of our proofs.
                     We may also at times
 pretend to say certain things against the wishes of
 our clients, as Cicero
-                    <note anchored="yes" place="unspecified">lii.</note>
+                    <note anchored="true" place="unspecified">lii.</note>
                     does in the
                     <hi rend="italics">pro Cluentio</hi>
                     when
@@ -4116,7 +4116,7 @@ points in an order different from that which was
 assigned them in your
                     <hi rend="italics">proposition.</hi>
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

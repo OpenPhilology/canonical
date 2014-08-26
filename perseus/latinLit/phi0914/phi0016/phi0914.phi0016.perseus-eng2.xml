@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>The History of Rome by Titus Livius, the first eight books - 6</title>
@@ -17,8 +17,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:NEH">The National Endowment for the Humanities</funder>
-            </titleStmt>
-            <extent>about 1.4 Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -47,20 +47,20 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter" n="chunk"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter" n="chunk"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English </language>
-                <language id="greek">Greek </language>
-                <language id="la">Latin </language>
-                <language id="fr">French </language>
+                language ident="en">English </language>
+                language ident="greek">Greek </language>
+                language ident="la">Latin </language>
+                language ident="fr">French </language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>4/4/2006</date>
                 <respStmt>
@@ -69,12 +69,12 @@
                 </respStmt>
                 <item>initial file </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
             <pb n="391" id="p.391"/>
-            <div1 part="N" sample="complete" org="uniform" n="6" type="book">
+            <div part="N" sample="complete" org="uniform" n="6" type="book">
                 <head>BOOK VI.</head>
                 <argument>
                     <p>
@@ -1401,7 +1401,7 @@ from the commons.
                     <milestone n="14" unit="section"/>
                     And when thanks were returned to them by all, a decree of the senate passed, that the dictator should ask of the people two persons as aediles from among the patricians; that the senate should give their approbation to all the elections of that year.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

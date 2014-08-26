@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Inst." type="work">Institutio Oratoria, books 1-3 - epTryph</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -39,23 +39,23 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter"/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter"/>
+                refState unit="section"/>
             </refsDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="page"/>
+            <refsDecl
+                refState unit="page"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="la">Latin</language>
-                <language id="greek">Greek</language>
+                language ident="en">English</language>
+                language ident="la">Latin</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -64,11 +64,11 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="epTryph" type="book">
+            <div part="N" sample="complete" org="uniform" n="epTryph" type="book">
                 <head>Preface</head>
                 <milestone n="pr" unit="chapter"/>
                 <milestone n="1" unit="section"/>
@@ -103,7 +103,7 @@ spread our canvas to the gale and offer up a fervent
 prayer to heaven as we put out to sea. But remember I rely on your loyal care to see that they
 reach the public in as correct a form as possible.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

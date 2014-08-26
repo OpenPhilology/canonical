@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - Luke</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,17 +81,17 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="Luke" type="book">
+            <div part="N" sample="complete" org="uniform" n="Luke" type="book">
                 <head lang="en">
                     <persName>
                         <surname full="yes">Luke</surname>
                     </persName>
                 </head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">quoniam quidem multi conati sunt ordinare narrationem quae in nobis conpletae sunt rerum</s>
@@ -345,8 +345,8 @@ dirigendos pedes nostros in viam pacis
 deserto usque in diem ostensionis suae ad Israhel
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -546,8 +546,8 @@ illis et mater eius conservabat omnia verba haec in corde suo
                         <milestone unit="verse" n="52"/>
                         <s part="N">et Iesus proficiebat sapientia aetate et gratia apud Deum et homines</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -688,8 +688,8 @@ putabatur filius Ioseph qui fuit Heli
                         <milestone unit="verse" n="38"/>
                         <s part="N">qui fuit Enos qui fuit Seth qui fuit Adam qui fuit Dei</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -860,8 +860,8 @@ evangelizare regnum Dei quia ideo missus sum
                         <milestone unit="verse" n="44"/>
                         <s part="N">et erat praedicans in synagogis Galilaeae</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1024,8 +1024,8 @@ vinum novum utres et ipsum effundetur et utres peribunt
                         <milestone unit="verse" n="39"/>
                         <s part="N">et nemo bibens vetus statim vult novum dicit enim vetus melius est</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1229,8 +1229,8 @@ inlisus est fluvius et continuo concidit et facta est ruina
 domus illius magna
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">cum autem implesset omnia verba sua in aures plebis intravit Capharnaum</s>
@@ -1429,8 +1429,8 @@ dilexit multum cui autem minus dimittitur minus diligit
                         <milestone unit="verse" n="50"/>
                         <s part="N">dixit autem ad mulierem fides tua te salvam fecit vade in pace</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1679,8 +1679,8 @@ nolite flere non est mortua sed dormit
                         <milestone unit="verse" n="56"/>
                         <s part="N">et stupuerunt parentes eius quibus praecepit ne alicui dicerent quod factum erat</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1942,8 +1942,8 @@ permitte mihi primum ire sepelire patrem meum
 aspiciens retro aptus est regno Dei
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2104,8 +2104,8 @@ me solam ministrare dic ergo illi ut me adiuvet
                         <milestone unit="verse" n="42"/>
                         <s part="N">porro unum est necessarium Maria optimam partem elegit quae non auferetur ab ea</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2329,8 +2329,8 @@ periti graviter insistere et os eius opprimere de multis
                         <milestone unit="verse" n="54"/>
                         <s part="N">insidiantes et quaerentes capere aliquid ex ore eius ut accusarent eum</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2559,8 +2559,8 @@ iudex tradat te exactori et exactor mittat te in carcerem
                         <milestone unit="verse" n="59"/>
                         <s part="N">dico tibi non exies inde donec etiam novissimum minutum reddas</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2709,8 +2709,8 @@ non videbitis me donec veniat cum dicetis benedictus qui venit
 in nomine Domini
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2843,8 +2843,8 @@ possidet non potest meus esse discipulus
 mittetur qui habet aures audiendi audiat
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">erant autem adpropinquantes ei publicani et peccatores ut audirent illum</s>
@@ -2973,8 +2973,8 @@ suam cum meretricibus venit occidisti illi vitulum saginatum
 mortuus erat et revixit perierat et inventus est
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3102,8 +3102,8 @@ inde huc transmeare
 quis ex mortuis resurrexerit credent
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="17" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="17" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3239,8 +3239,8 @@ relinquetur duo in agro unus adsumetur et alter relinquetur
                         <milestone unit="verse" n="37"/>
                         <s part="N">qui dixit eis ubicumque fuerit corpus illuc congregabuntur aquilae</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="18" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="18" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">dicebat autem et parabolam ad illos quoniam oportet semper orare et non deficere</s>
@@ -3393,8 +3393,8 @@ multo magis clamabat Fili David miserere mei
 omnis plebs ut vidit dedit laudem Deo
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="19" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="19" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">et ingressus perambulabat Hiericho</s>
@@ -3562,8 +3562,8 @@ perdere
                         <milestone unit="verse" n="48"/>
                         <s part="N">et non inveniebant quid facerent illi omnis enim populus suspensus erat audiens illum</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="20" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="20" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3728,8 +3728,8 @@ discubitus in conviviis
                         <milestone unit="verse" n="47"/>
                         <s part="N">qui devorant domos viduarum simulantes longam orationem hii accipient damnationem maiorem</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="21" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="21" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respiciens autem vidit eos qui mittebant munera sua in gazofilacium divites</s>
@@ -3866,8 +3866,8 @@ morabatur in monte qui vocatur Oliveti
                         <milestone unit="verse" n="38"/>
                         <s part="N">et omnis populus manicabat ad eum in templo audire eum</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="22" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="22" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">adpropinquabat autem dies festus azymorum qui dicitur pascha</s>
@@ -4103,8 +4103,8 @@ suum dicentes si tu es Christus dic nobis
                         <milestone unit="verse" n="71"/>
                         <s part="N">at illi dixerunt quid adhuc desideramus testimonium ipsi enim audivimus de ore eius</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="23" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="23" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">et surgens omnis multitudo eorum duxerunt illum ad Pilatum</s>
@@ -4299,8 +4299,8 @@ eius
                         <milestone unit="verse" n="56"/>
                         <s part="N">et revertentes paraverunt aromata et unguenta et sabbato quidem siluerunt secundum mandatum</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="24" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="24" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">una autem sabbati valde diluculo venerunt ad monumentum portantes quae paraverant aromata</s>
@@ -4492,8 +4492,8 @@ in civitate quoadusque induamini virtutem ex alto
                         <milestone unit="verse" n="53"/>
                         <s part="N">et erant semper in templo laudantes et benedicentes Deum amen</s>
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>The History of Rome by Titus Livius, books twenty-seven to thirty-six - 34</title>
@@ -17,8 +17,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:NEH">The National Endowment for the Humanities</funder>
-            </titleStmt>
-            <extent>about 1.4 Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -47,20 +47,20 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter" n="chunk"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter" n="chunk"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English </language>
-                <language id="greek">Greek </language>
-                <language id="la">Latin </language>
-                <language id="fr">French </language>
+                language ident="en">English </language>
+                language ident="greek">Greek </language>
+                language ident="la">Latin </language>
+                language ident="fr">French </language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>4/5/2006</date>
                 <respStmt>
@@ -69,12 +69,12 @@
                 </respStmt>
                 <item>initial file </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
             <pb n="1490" id="p.1490"/>
-            <div1 part="N" sample="complete" org="uniform" n="34" type="book">
+            <div part="N" sample="complete" org="uniform" n="34" type="book">
                 <head>BOOK XXXIV.</head>
                 <argument>
                     <p>
@@ -193,7 +193,7 @@ dors bring intelligence of the hostile designs of Antiochus and Hannibal.
                         As diseases must necessarily be known before their remedies, so passions come into being before the laws which prescribe limits to them. What called forth the Licinian law, restricting estates to five hundred acres, but the unbounded desire for enlarging estates?
                         <milestone n="9" unit="section"/>
                         What the Cincian law, concerning gifts and presents, but that the plebeians
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             Previous to the passing of the Cincian law, about ten years before this time, the advocates who pleaded in the courts received fees and presents: and as all or most of these were senators, the plebeians are here represented as tributary to the senate. By the above law they were forbidden to receive either fees or presents.
                         </note>
                         had become
@@ -239,7 +239,7 @@ dors bring intelligence of the hostile designs of Antiochus and Hannibal.
                     I know that these and other similar strong expressions, for the purpose of exaggeration, are easily found; and, mild as Marcus Cato is in his disposition, yet in his speeches he is not only vehement, but sometimes even austere. What new thing, let me ask, have the matrons done in coming out into public in a body on an occasion which nearly concerns themselves?
                     <milestone n="7" unit="section"/>
                     Have they never before appeared in public? I will turn over your own Antiquities,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Alluding to a treatise by Cato, upon the antiquities of Italy, entitled
                         <quote>Origines,</quote>
                         which is the word used here by Valerius.
@@ -399,18 +399,18 @@ dors bring intelligence of the hostile designs of Antiochus and Hannibal.
                     Helvius, soon after, arrived at the camp of Cato; and as the region was now free from enemies, he sent back the escort to Farther Spain, and proceeded to Rome, where, on account of his successful services, he entered the city with an ovation.
                     <milestone n="4" unit="section"/>
                     He carried into the treasury, of silver bullion, fourteen thousand pounds' weight; of coined, seventeen thousand and twenty-three denarii;
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         549
                         <hi rend="italics">l.</hi>
                         14
                         <hi rend="italics">s.</hi>
                     </note>
                     and Oscan
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Osca, now Huesca, was a city in Spain, remarkable for silver mines near it.
                     </note>
                     denarii, one hundred and twenty thousand four hundred and thirty-eight.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         659
                         <hi rend="italics">l.</hi>
                         11
@@ -426,7 +426,7 @@ dors bring intelligence of the hostile designs of Antiochus and Hannibal.
                     The latter also brought into the treasury thirty-four thousand
                     <pb n="1503" id="p.1503"/>
                     eight hundred pounds' weight of silver, seventy-eight thousand denarii,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         2430
                         <hi rend="italics">l.</hi>
                         11
@@ -435,7 +435,7 @@ dors bring intelligence of the hostile designs of Antiochus and Hannibal.
                         <hi rend="italics">d.</hi>
                     </note>
                     and of Oscan denarii two hundred and seventy-eight thousand.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         8889
                         <hi rend="italics">l.</hi>
                         6
@@ -1429,7 +1429,7 @@ dors bring intelligence of the hostile designs of Antiochus and Hannibal.
                     In Gaul, Lucius Valerius Flaccus, proconsul, in a pitched battle near Mediolanum, completely overthrew the Insubrian Gauls, and the Boians; who, under the command of Dorulacus, had crossed the Po, to rouse the Insubrians to arms. Ten thousand of the enemy were slain.
                     <milestone n="2" unit="section"/>
                     About this time his colleague, Marcus Porcius Cato, triumphed over Spain. He carried in the procession twenty-five thousand pounds' weight of unwrought silver, one hundred and three thousand silver denarii,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         3971
                         <hi rend="italics">l.</hi>
                         17
@@ -1438,7 +1438,7 @@ dors bring intelligence of the hostile designs of Antiochus and Hannibal.
                         <hi rend="italics">d.</hi>
                     </note>
                     five hundred and forty of Oscan silver,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         17
                         <hi rend="italics">l.</hi>
                         8
@@ -1448,7 +1448,7 @@ dors bring intelligence of the hostile designs of Antiochus and Hannibal.
                     </note>
                     and one thousand four hundred pounds' weight of gold. Out of the booty, he distributed to each of his soldiers two hundred and seventy
                     <hi rend="italics">asses;</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         17
                         <hi rend="italics">s.</hi>
                         5 1/2
@@ -1583,12 +1583,12 @@ dors bring intelligence of the hostile designs of Antiochus and Hannibal.
                     business cost the Achaeans
                     <milestone n="10??" unit="section"/>
                     one hundred talents,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         19,375
                         <hi rend="italics">l.</hi>
                     </note>
                     though they had fixed the price to be paid for each captive, to the owner, so low as five hundred denarii.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         16
                         <hi rend="italics">l.</hi>
                         2
@@ -1630,7 +1630,7 @@ dors bring intelligence of the hostile designs of Antiochus and Hannibal.
                     On the second, gold and silver wrought, unwrought, and coined. Of unwrought silver, there were eighteen thousand pounds' weight; and of wrought, two hundred and seventy thousand; consisting of many vessels of various sorts, most of them engraved, and several of exquisite workmanship; also a great many others made of brass; and, besides these, ten shields of silver.
                     <milestone n="6" unit="section"/>
                     The coined silver amounted to eighty-four thousand of the Attic coin, called Tetradrachmus, containing each of silver about the weight of four denarii.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         10,849
                         <hi rend="italics">l.</hi>
                         18
@@ -1638,7 +1638,7 @@ dors bring intelligence of the hostile designs of Antiochus and Hannibal.
                     </note>
                     <milestone n="7" unit="section"/>
                     Of gold there were three thousand seven hundred and fourteen pounds, and one shield wholly of gold: and of the gold coin called Philippics, fourteen thousand five hundred and fourteen.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         936
                         <hi rend="italics">l.</hi>
                         10
@@ -1651,7 +1651,7 @@ dors bring intelligence of the hostile designs of Antiochus and Hannibal.
                     <milestone n="10" unit="section"/>
                     Among these he distributed two hundred and fifty
                     <hi rend="italics">asses</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         16
                         <hi rend="italics">s.</hi>
                         1 1/4
@@ -2008,7 +2008,7 @@ dors bring intelligence of the hostile designs of Antiochus and Hannibal.
                     <milestone n="18" unit="section"/>
                     for, had the case been otherwise, Scipio alone, either from his own knowledge of the business, or the influence which he possessed, and to which he had a just claim on both parties, could, with a nod, have ended the controversy.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

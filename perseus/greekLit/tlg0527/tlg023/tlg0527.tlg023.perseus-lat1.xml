@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - 1 Maccabees</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,13 +81,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="1 Maccabees" type="book">
+            <div part="N" sample="complete" org="uniform" n="1 Maccabees" type="book">
                 <head lang="en">1 Maccabees</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -343,8 +343,8 @@ coinquinari inmundis
                         <milestone unit="verse" n="67"/>
                         <s part="N">et facta est ira magna super populum valde</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -602,8 +602,8 @@ sepultus est a filiis suis in sepulchris patrum suorum in Modin
 et planxerunt eum omnis Israhel planctu magno
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">et surrexit Iudas qui vocabatur Macchabeus filius eius pro eo</s>
@@ -871,8 +871,8 @@ convenerunt disperdere nos et sancta nostra
                         <milestone unit="verse" n="60"/>
                         <s part="N">sicut autem fuerit voluntas in caelo sic fiat</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1129,8 +1129,8 @@ eam ad custodiendam Bethsuram ut haberet populus munitionem
 contra faciem Idumeae
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1453,8 +1453,8 @@ vidit aras eorum et spolia deorum ipsorum succendit igni et
 cepit spolia civitatum et regressus est in terram Iuda
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1743,8 +1743,8 @@ invenit Philippum dominantem civitati et pugnavit adversus eum
 et occupavit civitatem
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1968,8 +1968,8 @@ adtulerunt et suspenderunt contra Hierusalem
                         <milestone unit="verse" n="50"/>
                         <s part="N">et siluit terra Iuda dies paucos</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2129,8 +2129,8 @@ socios Iudaeos
 iudicium et pugnabimus tecum mari terraque
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2453,8 +2453,8 @@ Machemas et coepit Ionathas ibi iudicare populum et
 exterminavit impios ex Israhel
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2854,8 +2854,8 @@ cognatis regum et dedit ei Accaron et omnes fines eius in
 possessionem
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3195,8 +3195,8 @@ pervenerunt usque illuc
 virorum et regressus est Ionatha in Hierusalem
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3431,8 +3431,8 @@ Israhel luctu magno
 illos et tollamus de hominibus memoriam eorum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3648,8 +3648,8 @@ contritus est inimicus magnus ex Israhel
 posuit eum ducem virtutum universarum et habitavit Gazaris
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3893,8 +3893,8 @@ ponere eas in peribolo sanctorum in loco celebri
                         <milestone unit="verse" n="49"/>
                         <s part="N">exemplum autem eorum ponere in aerario ut habeat Simon et filii eius</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -4087,8 +4087,8 @@ aedificare Caedronem
 perambularent viam Iudaeae sicut constituit ei rex
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">et ascendit Iohannis de Gazaris et nuntiavit Simoni patri suo quae fecit Cendebeus</s>
@@ -4217,8 +4217,8 @@ struxit et rerum gestarum eius
 quo factus est princeps sacerdotum post patrem suum
                         </s>
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

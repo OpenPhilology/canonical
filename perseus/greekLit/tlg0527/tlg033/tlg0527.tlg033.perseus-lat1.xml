@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - Wisdom</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,13 +81,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="Wisdom" type="book">
+            <div part="N" sample="complete" org="uniform" n="Wisdom" type="book">
                 <head lang="en">Wisdom</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -158,8 +158,8 @@ aestimantes illam amicam defluxerunt et sponsionem posuerunt ad
 illam quoniam digni sunt qui sunt ex parte illius
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -254,8 +254,8 @@ iustitiae nec iudicaverunt honorem animarum sanctarum
                         <milestone unit="verse" n="25"/>
                         <s part="N">imitantur autem illum qui sunt ex parte illius</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">iustorum autem animae in manu Dei sunt et non tanget illos tormentum mortis</s>
@@ -324,8 +324,8 @@ sine honore erit novissima senectus illorum
                         <milestone unit="verse" n="19"/>
                         <s part="N">nationis enim iniquae dirae sunt consummationes</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -413,8 +413,8 @@ periet
 traducent illos ex adverso iniquitates ipsorum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -518,8 +518,8 @@ venti dividet illos et ad heremiam perducet omnem terram
 iniquitatis et malignitas evertet sedes potentium
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">melior est sapientia quam vires et vir prudens magis quam fortis</s>
@@ -616,8 +616,8 @@ rex sapiens populi stabilimentum est
                         <milestone unit="verse" n="27"/>
                         <s part="N">ergo accipite disciplinam per sermones meos et proderit vobis</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -745,8 +745,8 @@ dispositionem luci conparata invenitur prior
                         <milestone unit="verse" n="30"/>
                         <s part="N">illi enim succedit nox sapientiam autem non vincit malitia</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">adtingit enim a fine usque ad finem fortiter et disponit omnia suaviter</s>
@@ -833,8 +833,8 @@ donum adii Dominum et deprecatus sum illum et dixi ex totis
 praecordiis meis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">Deus parentum et Domine misericordiae tuae qui fecisti omnia verbo tuo</s>
@@ -913,8 +913,8 @@ quae tibi placent didicerunt homines
                         <milestone unit="verse" n="19"/>
                         <s part="N">et per sapientiam sanati sunt</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">haec illum qui primus finctus est patrem orbis terrarum cum solus esset creatus custodivit</s>
@@ -998,8 +998,8 @@ inferorum eduxit illos ideo iusti tulerunt spolia impiorum
                         <milestone unit="verse" n="21"/>
                         <s part="N">quoniam sapientia aperuit os mutorum et linguas infantium fecit dissertas</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">direxit opera illorum in manibus prophetae sancti</s>
@@ -1102,8 +1102,8 @@ aut quod a te vocatum non esset conservaretur
                         <milestone unit="verse" n="27"/>
                         <s part="N">parcis autem omnibus quoniam tua sunt Domine qui animas amas</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">bonus enim spiritus tuus est in omnibus</s>
@@ -1230,8 +1230,8 @@ Deum verum agnoverunt propter quod et finis condemnationis
 illis veniet
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1329,8 +1329,8 @@ adquirendo et de operando et de omnium rerum eventu petit ab eo
 qui in omnibus est inutilis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1474,8 +1474,8 @@ contemnentes iustitiam
 perambulat semper in iniustorum praevaricationem
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">tu autem Deus noster suavis et verus es patiens et misericordia disponens omnia</s>
@@ -1574,8 +1574,8 @@ esset mortalis illi autem numquam
 conspicere effugit autem Dei laudem et benedictionem eius
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1718,8 +1718,8 @@ benedictionem tuam et ad orientem lucis tibi adorare
                         <milestone unit="verse" n="29"/>
                         <s part="N">ingrati enim fides tamquam hibernalis glacies tabescit et disperiet tamquam aqua supervacua</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="17" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="17" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1823,8 +1823,8 @@ tenebrarum quae superventura illis erat ipsi ergo sibi erant
 graviores tenebris
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="18" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="18" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1947,8 +1947,8 @@ erat scripta
 erat enim sola temptatio irae sufficiens
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="19" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="19" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2056,8 +2056,8 @@ Domine magnificasti populum tuum et honorasti et non despexisti
 in omni tempore et in omni loco adsistens eis
                         </s>
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

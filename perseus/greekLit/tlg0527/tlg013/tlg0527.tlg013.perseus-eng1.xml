@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="English Bible" type="work">World English Bible - I Kings</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -38,7 +38,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -46,10 +46,10 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>14-Oct-99</date>
                 <respStmt>
@@ -76,13 +76,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="I Kings" type="book">
+            <div part="N" sample="complete" org="uniform" n="I Kings" type="book">
                 <head>The First Book of Kings</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Now king David was old and stricken in years; and they covered
@@ -293,8 +293,8 @@ king Solomon sent, and they brought him down from the altar. He came
 and did obeisance to king Solomon; and Solomon said to him, Go to your
 house.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Now the days of David drew near that he should die; and he
@@ -493,8 +493,8 @@ and the throne of David shall be established before Yahweh forever.
 out, and fell on him, so that he died. The kingdom was established in
 the hand of Solomon.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Solomon made affinity with Pharaoh king of Egypt, and took
@@ -612,8 +612,8 @@ she is the mother of it.
 the king had judged; and they feared the king: for they saw that the
 wisdom of God was in him, to do justice.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         King Solomon was king over all Israel.
@@ -736,8 +736,8 @@ and of fish.
                         There came of all peoples to hear the wisdom of
 Solomon, from all kings of the earth, who had heard of his wisdom.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Hiram king of Tyre sent his servants to Solomon; for he had
@@ -810,8 +810,8 @@ stones, to lay the foundation of the house with worked stone.
                         Solomon's builders and Hiram's builders and the Gebalites did fashion
 them, and prepared the timber and the stones to build the house.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         It happened in the four hundred and eightieth year after the
@@ -963,8 +963,8 @@ eighth month, was the house finished throughout all the parts of it,
 and according to all the fashion of it. So was he seven years in
 building it.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Solomon was building his own house thirteen years, and he
@@ -1173,8 +1173,8 @@ finished. Solomon brought in the things which David his father had
 dedicated, [even] the silver, and the gold, and the vessels, and put
 them in the treasuries of the house of Yahweh.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Then Solomon assembled the elders of Israel, and all the
@@ -1462,8 +1462,8 @@ they blessed the king, and went to their tents joyful and glad of heart
 for all the goodness that Yahweh had shown to David his servant, and to
 Israel his people.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         It happened, when Solomon had finished the building of the
@@ -1581,8 +1581,8 @@ servants of Solomon.
                         They came to Ophir, and fetched from there
 gold, four hundred and twenty talents, and brought it to king Solomon.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         When the queen of Sheba heard of the fame of Solomon
@@ -1704,8 +1704,8 @@ up and went out of Egypt for six hundred [shekels] of silver, and a
 horse for one hundred fifty; and so for all the kings of the Hittites,
 and for the kings of Syria, did they bring them out by their means.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Now king Solomon loved many foreign women, together with the
@@ -1883,8 +1883,8 @@ forty years.
                         Solomon slept with his fathers, and was buried in
 the city of David his father: and Rehoboam his son reigned in his place.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Rehoboam went to Shechem: for all Israel were come to Shechem
@@ -2026,8 +2026,8 @@ eighth month, even in the month which he had devised of his own heart:
 and he ordained a feast for the children of Israel, and went up to the
 altar, to burn incense.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Behold, there came a man of God out of Judah by the word of
@@ -2172,8 +2172,8 @@ him, that there might be priests of the high places.
 became sin to the house of Jeroboam, even to cut it off, and to destroy
 it from off the surface of the earth.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         At that time Abijah the son of Jeroboam fell sick.
@@ -2302,8 +2302,8 @@ continually.
 with his fathers in the city of David: and his mother's name was Naamah
 the Ammonitess. Abijam his son reigned in his place.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Now in the eighteenth year of king Jeroboam the son of Nebat
@@ -2446,8 +2446,8 @@ twenty-four years.
 Yahweh, and walked in the way of Jeroboam, and in his sin with which he
 made Israel to sin.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         The word of Yahweh came to Jehu the son of Hanani against
@@ -2589,8 +2589,8 @@ foundation of it with the loss of Abiram his firstborn, and set up the
 gates of it with the loss of his youngest son Segub, according to the
 word of Yahweh, which he spoke by Joshua the son of Nun.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="17" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="17" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Elijah the Tishbite, who was of the sojourners of Gilead,
@@ -2685,8 +2685,8 @@ to his mother; and Elijah said, Behold, your son lives.
 woman said to Elijah, Now I know that you are a man of God, and that
 the word of Yahweh in your mouth is truth.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="18" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="18" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         It happened after many days, that the word of Yahweh came to
@@ -2874,8 +2874,8 @@ went to Jezreel:
                         and the hand of Yahweh was on Elijah; and he
 girded up his loins, and ran before Ahab to the entrance of Jezreel.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="19" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="19" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Ahab told Jezebel all that Elijah had done, and withal how he
@@ -2973,8 +2973,8 @@ and killed them, and boiled their flesh with the instruments of the
 oxen, and gave to the people, and they ate. Then he arose, and went
 after Elijah, and ministered to him.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="20" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="20" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Ben Hadad the king of Syria gathered all his host together;
@@ -3164,8 +3164,8 @@ life, and your people for his people.
                         The king of Israel went
 to his house heavy and displeased, and came to Samaria.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="21" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="21" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         It happened after these things, that Naboth the Jezreelite
@@ -3290,8 +3290,8 @@ himself before me? because he humbles himself before me, I will not
 bring the evil in his days; but in his son's days will I bring the evil
 on his house.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="22" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="22" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         They continued three years without war between Syria and
@@ -3500,8 +3500,8 @@ Israel to sin.
 to anger Yahweh, the God of Israel, according to all that his father
 had done.
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

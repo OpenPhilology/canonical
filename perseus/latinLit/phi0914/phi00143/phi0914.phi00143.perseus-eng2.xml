@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>The History of Rome by Titus Livius, books thirty-seven to forty-five - 43</title>
@@ -17,8 +17,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:NEH">The National Endowment for the Humanities</funder>
-            </titleStmt>
-            <extent>about 1.4 Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -49,20 +49,20 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter" n="chunk"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter" n="chunk"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English </language>
-                <language id="greek">Greek </language>
-                <language id="la">Latin </language>
-                <language id="fr">French </language>
+                language ident="en">English </language>
+                language ident="greek">Greek </language>
+                language ident="la">Latin </language>
+                language ident="fr">French </language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>4/5/2006</date>
                 <respStmt>
@@ -71,11 +71,11 @@
                 </respStmt>
                 <item>initial file </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="43" type="book">
+            <div part="N" sample="complete" org="uniform" n="43" type="book">
                 <head>Book XLIII.</head>
                 <argument>
                     <p>
@@ -167,7 +167,7 @@ dus was chosen by the censors prince of the senate.
                         had formed the design of fitting out a powerful fleet, in favour, as they pretended, of the Romans, and against the Macedonians; but when it should be equipped and ready for action, they would have it in their power to make their own option which party they would treat as a friend, and which as a foe.
                     </quote>
                     <gap/>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Crevier supplement:
                         <p>
                             Then he pleaded Masinissa's cause concerning the land and towns, which, according to the complaint of the Carthaginians, were wrested from them by
@@ -214,7 +214,7 @@ dus was chosen by the censors prince of the senate.
                     <milestone n="8" unit="section"/>
                     But so little was then known of what passed, even in the vicinity of Rome, that he was, at that very time, at his own estate near Antium; and, with money amassed in his expedition, was bringing water thither from the river Loracina; he is said to have contracted for the execution of this work at the expense of one hundred and thirty thousand
                     <hi rend="italics">asses.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         419
                         <hi rend="italics">l.</hi>
                         15
@@ -232,7 +232,7 @@ dus was chosen by the censors prince of the senate.
                     they said,
                     <quote>
                         for destroying their city was, that, on his demanding from them one hundred thousand denariuses,
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             3,229
                             <hi rend="italics">l.</hi>
                             3
@@ -276,7 +276,7 @@ dus was chosen by the censors prince of the senate.
                     <milestone n="8" unit="section"/>
                     They voted, that presents, to the amount of two thousand
                     <hi rend="italics">asses,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         6
                         <hi rend="italics">l.</hi>
                         9
@@ -402,7 +402,7 @@ dus was chosen by the censors prince of the senate.
                     <milestone n="9" unit="section"/>
                     When the day of Caius Lucretius's trial came, the tribunes pleaded against him before the people, and demanded that he should be fined in the sum of one million of
                     <hi rend="italics">asses;</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         3029
                         <hi rend="italics">l.</hi>
                         1
@@ -819,7 +819,7 @@ dus was chosen by the censors prince of the senate.
                     <milestone n="8" unit="section"/>
                     His ambassadors returned from Gentius with the same answer as before. Still he did not cease from soliciting him, but sent embassy after embassy; yet, notwithstanding that he was sensible of the powerful support he would find in Gentius, the Macedonian could not prevail on himself to expend money on the business, although it was to him a question of vital import- ance.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

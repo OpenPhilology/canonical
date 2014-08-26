@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>The History of Rome by Titus Livius, books twenty-seven to thirty-six - 32</title>
@@ -17,8 +17,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:NEH">The National Endowment for the Humanities</funder>
-            </titleStmt>
-            <extent>about 1.4 Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -47,20 +47,20 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter" n="chunk"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter" n="chunk"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English </language>
-                <language id="greek">Greek </language>
-                <language id="la">Latin </language>
-                <language id="fr">French </language>
+                language ident="en">English </language>
+                language ident="greek">Greek </language>
+                language ident="la">Latin </language>
+                language ident="fr">French </language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>4/5/2006</date>
                 <respStmt>
@@ -69,12 +69,12 @@
                 </respStmt>
                 <item>initial file </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
             <pb n="1395" id="p.1395"/>
-            <div1 part="N" sample="complete" org="uniform" n="32" type="book">
+            <div part="N" sample="complete" org="uniform" n="32" type="book">
                 <head>BOOK XXXII.</head>
                 <argument>
                     <p>
@@ -171,12 +171,12 @@ Nabis, tyrant of Lacedaemon. Capture of several cities in Macedonia.
                     damus, having made their way into the town between the posts of the Macedonians, never ceased, day or night, making continual sallies, sometimes against the guards, sometimes against the works of the besiegers.
                     <milestone n="3" unit="section"/>
                     They were at the same time favoured by the very nature of the place: for Thaumaci stands near the road from Thermopylae, and the Malian bay, as you go through Lamia, on a lofty eminence, hanging immediately over the narrow pass which the Thessalians call Caela.
-                    <note anchored="yes" place="unspecified">Hollows.</note>
+                    <note anchored="true" place="unspecified">Hollows.</note>
                     <milestone n="4" unit="section"/>
                     After passing through the craggy grounds of Thessaly, the roads are rendered intricate by the windings of the valleys, and on the near approach to the city, such an immense plain opens at once to view, like a vast sea, that the eye can scarcely reach the bounds of the expanse beneath.
                     <milestone n="5" unit="section"/>
                     From this surprising prospect it was called Thaumaci.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         From
                         <hi rend="italics">thumazein,</hi>
                         to wonder.
@@ -573,7 +573,7 @@ Nabis, tyrant of Lacedaemon. Capture of several cities in Macedonia.
                     The design on Carystus was then resumed, and the fleets sailed thither; on which the whole body of the inhabitants, before the troops were disembarked, deserted the city and fled into the citadel, whence they sent deputies to beg protection from the Roman general.
                     <milestone n="2" unit="section"/>
                     To the townspeople life and liberty were immediately granted; and it was ordered, that the Macedonians should pay a ransom of three hundred drachmas
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         9
                         <hi rend="italics">l.</hi>
                         13
@@ -920,7 +920,7 @@ Nabis, tyrant of Lacedaemon. Capture of several cities in Macedonia.
                     <milestone n="14" unit="section"/>
                     The senate ordered a present to the latter of a hundred thousand
                     <hi rend="italics">asses;</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         322
                         <hi rend="italics">l.</hi>
                         18
@@ -930,7 +930,7 @@ Nabis, tyrant of Lacedaemon. Capture of several cities in Macedonia.
                     </note>
                     to the slaves, twenty-five thousand
                     <hi rend="italics">asses</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         80
                         <hi rend="italics">l.</hi>
                         14
@@ -1005,7 +1005,7 @@ Nabis, tyrant of Lacedaemon. Capture of several cities in Macedonia.
                 <p>
                     <milestone n="1" unit="section"/>
                     It was thought necessary, that before the consuls and praetors went abroad, some prodigies should be expiated. For the temples of Vulcan and Summanus,
-                    <note anchored="yes" place="unspecified">Pluto, Summus Manium.</note>
+                    <note anchored="true" place="unspecified">Pluto, Summus Manium.</note>
                     at Rome, and a wall and a gate at Fregellae, had been struck by lightning.
                     <milestone n="2" unit="section"/>
                     At Frusino, light had shone forth during the night. At Asculum, a lamb had been born with two heads and five feet. At Formiae, two wolves entering the town had torn several persons who fell in their way; and, at Rome, a wolf had made its way, not only into the city, but into the Capitol.
@@ -1381,7 +1381,7 @@ Nabis, tyrant of Lacedaemon. Capture of several cities in Macedonia.
                     added new honours to those formerly paid to the king;
                     <milestone n="9" unit="section"/>
                     and, on the other, the king, besides having on a former occasion redeemed for them, at a vast expense, a piece of land sacred to Apollo, unwilling to pass by the city of his friends and allies without a token of munificence, made them a present of ten talents of silver,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         1937
                         <hi rend="italics">l.</hi>
                         10
@@ -1393,7 +1393,7 @@ Nabis, tyrant of Lacedaemon. Capture of several cities in Macedonia.
                     <milestone n="11" unit="section"/>
                     She invited the females to her house, sometimes singly, and sometimes several together, who were united by family connexion; and partly by fair speeches, partly by threats, stripped them, not only of their gold, but, at last, even of their garments, and every article of female attire.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

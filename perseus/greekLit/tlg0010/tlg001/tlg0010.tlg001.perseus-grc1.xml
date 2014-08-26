@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader status="new" type="text">
+  <teiHeader type="text">
     <fileDesc>
       <titleStmt>
         <title>Against Euthynus </title>
@@ -18,7 +18,7 @@
         </respStmt>
         <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
 
-      </titleStmt>
+      </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
 
       <sourceDesc>
         <bibl>
@@ -33,16 +33,16 @@
     </fileDesc>
 
     <encodingDesc>
-      <refsDecl doctype="TEI.2">
-        <state unit="speech" delim="."/>
-        <state unit="section" n="chunk context"/>
+      <refsDecl
+        refState unit="speech" delim="."/>
+        refState unit="section" n="chunk context"/>
       </refsDecl>
     </encodingDesc>
 
     <profileDesc>
       <langUsage>
-        <language id="greek">Greek </language>
-        <language id="en">English </language>
+        language ident="greek">Greek </language>
+        language ident="en">English </language>
       </langUsage>
 
       <textClass id="gen.epideictic">
@@ -67,7 +67,7 @@
       </textClass>
     </profileDesc>
 
-    <revisionDesc>
+    <revisionDesc><!--
       <change>
         <date>April 1992</date>
         <respStmt>
@@ -123,7 +123,7 @@
         </respStmt>
         <item>split composite text and converted to unicode</item>
       </change>
-    </revisionDesc>
+    <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
   </teiHeader>
   <text xml:lang="grc">
     <body>
@@ -168,13 +168,13 @@
         οὐκ ἔστιν ἐφʼ ὅντινα ἂν ἧττον ἢ ἐπὶ τοῦτον ἦλθεν· ἐπεὶ ἔμοιγε δοκεῖ, εἰδότι τὴν τούτων
         οἰκειότητα, οὐδʼ ἂν Εὐθύνους Νικίαν ἀδικῆσαι, εἰ ἐξῆν ἄλλον τινὰ τοσαῦτα χρήματα
         ἀποστερῆσαι. <milestone unit="section" n="10"/>νῦν δʼ ἀρχαιότερον<note resp="ed" lang="en"
-          anchored="yes"><foreign lang="greek">ἀρχαιότερον</foreign>MSS.:<foreign lang="greek"
-            >ἦν</foreign>omitted in all but<foreign lang="greek">Λ</foreign>and Lang's cod.
-          Generally considered corrupt:<foreign lang="greek">ἀπʼ ἀρχῆς
-            ἕτερον</foreign>Strange:<foreign lang="greek">ἄρʼ ἦν ἕτερον</foreign>Sauppe:<foreign
-            lang="greek">ἄρα διάφορον ἦν</foreign>or<foreign lang="greek">ἄρα
-            διέφερεν</foreign>Blass:<foreign lang="greek">δʼ ἄρα τυχαιότερον</foreign>suggested by
-            Capps:<foreign lang="greek">ἀναγκαιότερον,</foreign>i.e., “rather inevitable,” proposed
+          anchored="true"><foreign xml:lang="grc">ἀρχαιότερον</foreign>MSS.:<foreign xml:lang="grc"
+            >ἦν</foreign>omitted in all but<foreign xml:lang="grc">Λ</foreign>and Lang's cod.
+          Generally considered corrupt:<foreign xml:lang="grc">ἀπʼ ἀρχῆς
+            ἕτερον</foreign>Strange:<foreign xml:lang="grc">ἄρʼ ἦν ἕτερον</foreign>Sauppe:<foreign
+            xml:lang="grc">ἄρα διάφορον ἦν</foreign>or<foreign xml:lang="grc">ἄρα
+            διέφερεν</foreign>Blass:<foreign xml:lang="grc">δʼ ἄρα τυχαιότερον</foreign>suggested by
+            Capps:<foreign xml:lang="grc">ἀναγκαιότερον,</foreign>i.e., “rather inevitable,” proposed
           by Post.</note> ἦν αὐτοῖς τὸ πρᾶγμα. ἐγκαλεῖν μὲν γὰρ ἔξεστιν ἐξ ἁπάντων ἐκλεξάμενον,
         ἀποστερεῖν δʼ οὐχ οἷόν ἄλλον ἢ τὸν παρακαταθέμενον. ὥστε Νικίας μὲν συκοφαντεῖν ἐπιθυμῶν οὐκ
         ἂν ἐπὶ τοῦτον ἦλθεν, Εὐθύνους δʼ ἀποστερεῖν ἐπιχειρῶν οὐκ ἄλλον εἶχεν. <milestone

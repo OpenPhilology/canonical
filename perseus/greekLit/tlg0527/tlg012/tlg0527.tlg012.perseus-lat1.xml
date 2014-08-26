@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - 2 Samuel</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,13 +81,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="2 Samuel" type="book">
+            <div part="N" sample="complete" org="uniform" n="2 Samuel" type="book">
                 <head lang="en">2 Samuel</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -200,8 +200,8 @@ in deliciis qui praebebat ornamenta aurea cultui vestro
                         <milestone unit="verse" n="27"/>
                         <s part="N">quomodo ceciderunt robusti et perierunt arma bellica</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -373,8 +373,8 @@ sui in Bethleem et ambulaverunt tota nocte Ioab et viri qui
 erant cum eo et in ipso crepusculo pervenerunt in Hebron
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -575,8 +575,8 @@ filii Sarviae duri mihi sunt retribuat Dominus facienti malum
 iuxta malitiam suam
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -650,8 +650,8 @@ piscinam in Hebron caput autem Hisboseth tulerunt et
 sepelierunt in sepulchro Abner in Hebron
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -766,8 +766,8 @@ ut percutiat castra Philisthim
 percussit Philisthim de Gabee usque dum venias Gezer
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">congregavit autem rursum David omnes electos ex Israhel triginta milia</s>
@@ -883,8 +883,8 @@ apparebo
                         <milestone unit="verse" n="23"/>
                         <s part="N">igitur Michol filiae Saul non est natus filius usque ad diem mortis suae</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1033,8 +1033,8 @@ sempiternum coram te quia tu Domine Deus locutus es et
 benedictione tua benedicetur domus servi tui in sempiternum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1119,8 +1119,8 @@ Iosaphat filius Ahilud erat a commentariis
                         <milestone unit="verse" n="18"/>
                         <s part="N">Banaias autem filius Ioiada super Cherethi et Felethi filii autem David sacerdotes erant</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1191,8 +1191,8 @@ vero cognatio domus Siba serviebat Mifiboseth
 regis iugiter vescebatur et erat claudus utroque pede
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1300,8 +1300,8 @@ Adadezer victos se ab Israhel fecerunt pacem cum Israhel et
 servierunt eis timueruntque Syri auxilium praebere filiis Ammon
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1437,8 +1437,8 @@ suam et facta est ei uxor peperitque ei filium et displicuit
 verbum hoc quod fecerat David coram Domino
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1613,8 +1613,8 @@ laterum sic fecit universis civitatibus filiorum Ammon et
 reversus est David et omnis exercitus Hierusalem
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1814,8 +1814,8 @@ Gessur luxit ergo David filium suum cunctis diebus
                         <milestone unit="verse" n="39"/>
                         <s part="N">cessavitque David rex persequi Absalom eo quod consolatus esset super Amnon interitu</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">intellegens autem Ioab filius Sarviae quod cor regis versum esset ad Absalom</s>
@@ -1985,8 +1985,8 @@ intravit ad regem et adoravit super faciem terrae coram eo
 osculatusque est rex Absalom
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2173,8 +2173,8 @@ audieritis
                         <milestone unit="verse" n="37"/>
                         <s part="N">veniente ergo Husai amico David in civitatem Absalom quoque ingressus est Hierusalem</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2299,8 +2299,8 @@ si quis consuleret Deum sic erat omne consilium Ahitofel et cum
 esset cum David et cum esset cum Absalom
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="17" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="17" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2462,8 +2462,8 @@ David et populo qui cum eo erat ad vescendum suspicati enim
 sunt populum fame et siti fatigari in deserto
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="18" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="18" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">igitur considerato David populo suo constituit super eum tribunos et centuriones</s>
@@ -2644,8 +2644,8 @@ flevit et sic loquebatur vadens fili mi Absalom fili mi Absalom
 quis mihi tribuat ut ego moriar pro te Absalom fili mi fili mi
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="19" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="19" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">nuntiatum est autem Ioab quod rex fleret et lugeret filium suum</s>
@@ -2878,8 +2878,8 @@ priori ut reducerem regem meum durius autem responderunt viri
 Iuda viris Israhel
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="20" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="20" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3019,8 +3019,8 @@ filius Ioiadae super Cheretheos et Feletheos
                         <milestone unit="verse" n="26"/>
                         <s part="N">Hira autem Hiaiarites erat sacerdos David</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="21" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="21" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3147,8 +3147,8 @@ quattuor et erat de origine Arafa
                         <milestone unit="verse" n="22"/>
                         <s part="N">hii quattuor nati sunt de Arafa in Geth et ceciderunt in manu David et servorum eius</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="22" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="22" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3284,8 +3284,8 @@ caput gentium populus quem ignoro serviet mihi
 christo suo David et semini eius in sempiternum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="23" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="23" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3437,8 +3437,8 @@ fecitque eum David sibi auricularium a secreto
                         <milestone unit="verse" n="39"/>
                         <s part="N">Urias Hettheus omnes triginta septem</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="24" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="24" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3572,8 +3572,8 @@ holocausta et pacifica et repropitiatus est Dominus terrae et
 cohibita est plaga ab Israhel
                         </s>
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

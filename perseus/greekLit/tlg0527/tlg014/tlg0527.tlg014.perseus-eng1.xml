@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="English Bible" type="work">World English Bible - II Kings</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -38,7 +38,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -46,10 +46,10 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>14-Oct-99</date>
                 <respStmt>
@@ -76,13 +76,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="II Kings" type="book">
+            <div part="N" sample="complete" org="uniform" n="II Kings" type="book">
                 <head>The Second Book of Kings</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Moab rebelled against Israel after the death of Ahab.
@@ -165,8 +165,8 @@ had no son.
 aren't they written in the book of the chronicles of the kings of
 Israel?
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         It happened, when Yahweh would take up Elijah by a whirlwind
@@ -278,8 +278,8 @@ she-bears out of the wood, and mauled forty-two lads of them.
                         He
 went from there to Mount Carmel, and from there he returned to Samaria.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Now Jehoram the son of Ahab began to reign over Israel in
@@ -396,8 +396,8 @@ have reigned in his place, and offered him for a burnt offering on the
 wall. There was great wrath against Israel: and they departed from him,
 and returned to their own land.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Now there cried a certain woman of the wives of the sons of
@@ -573,8 +573,8 @@ and shall leave of it.
                         So he set it before them, and they ate,
 and left of it, according to the word of Yahweh.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Now Naaman, captain of the host of the king of Syria, was a
@@ -701,8 +701,8 @@ and sheep and oxen, and men-servants and maid-servants?
 leprosy therefore of Naaman shall cleave to you, and to your seed
 forever. He went out from his presence a leper [as white] as snow.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         The sons of the prophets said to Elisha, See now, the place
@@ -839,8 +839,8 @@ door fast against him: isn't the sound of his master's feet behind him?
 down to him: and he said, Behold, this evil is of Yahweh; why should I
 wait for Yahweh any longer?
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Elisha said, Hear you the word of Yahweh: thus says Yahweh,
@@ -939,8 +939,8 @@ shall not eat of it:
                         it happened even so to him; for the people
 trod on him in the gate, and he died.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Now Elisha had spoken to the woman, whose son he had restored
@@ -1065,8 +1065,8 @@ the Syrians had given him at Ramah, when he fought against Hazael king
 of Syria. Ahaziah the son of Jehoram king of Judah went down to see
 Joram the son of Ahab in Jezreel, because he was sick.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Elisha the prophet called one of the sons of the prophets,
@@ -1224,8 +1224,8 @@ Jezreel shall the dogs eat the flesh of Jezebel;
 Jezebel shall be as dung on the face of the field in the portion of
 Jezreel, so that they shall not say, This is Jezebel.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Now Ahab had seventy sons in Samaria. Jehu wrote letters,
@@ -1387,8 +1387,8 @@ his son reigned in his place.
                         The time that Jehu reigned over
 Israel in Samaria was twenty-eight years.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Now when Athaliah the mother of Ahaziah saw that her son was
@@ -1481,8 +1481,8 @@ Athaliah they had slain with the sword at the king's house.
                         <milestone unit="verse" n="21"/>
                         Jehoash was seven years old when he began to reign.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         In the seventh year of Jehu began Jehoash to reign; and he
@@ -1578,8 +1578,8 @@ Jehozabad the son of Shomer, his servants, struck him, and he died; and
 they buried him with his fathers in the city of David: and Amaziah his
 son reigned in his place.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         In the three and twentieth year of Joash the son of Ahaziah,
@@ -1687,8 +1687,8 @@ Hazael the cities which he had taken out of the hand of Jehoahaz his
 father by war. Three times did Joash strike him, and recovered the
 cities of Israel.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         In the second year of Joash son of Joahaz king of Israel
@@ -1810,8 +1810,8 @@ of Israel?
                         Jeroboam slept with his fathers, even with the kings
 of Israel; and Zechariah his son reigned in his place.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         In the twenty-seventh year of Jeroboam king of Israel began
@@ -1968,8 +1968,8 @@ and Pekah the son of Remaliah.
 and was buried with his fathers in the city of David his father: and
 Ahaz his son reigned in his place.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         In the seventeenth year of Pekah the son of Remaliah Ahaz the
@@ -2057,8 +2057,8 @@ written in the book of the chronicles of the kings of Judah?
                         Ahaz slept with his fathers, and was buried with his fathers in the
 city of David: and Hezekiah his son reigned in his place.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="17" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="17" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         In the twelfth year of Ahaz king of Judah began Hoshea the
@@ -2238,8 +2238,8 @@ manner.
 engraved images; their children likewise, and their children's
 children, as did their fathers, so do they to this day.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="18" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="18" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Now it happened in the third year of Hoshea son of Elah king
@@ -2399,8 +2399,8 @@ Eliakim the son of Hilkiah, who was over the household, and Shebna the
 scribe, and Joah the son of Asaph the recorder, to Hezekiah with their
 clothes torn, and told him the words of Rabshakeh.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="19" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="19" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         It happened, when king Hezekiah heard it, that he tore his
@@ -2558,8 +2558,8 @@ happened, as he was worshipping in the house of Nisroch his god, that
 Adrammelech and Sharezer struck him with the sword: and they escaped
 into the land of Ararat. Esar Haddon his son reigned in his place.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="20" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="20" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         In those days was Hezekiah sick to death. Isaiah the prophet
@@ -2647,8 +2647,8 @@ of the kings of Judah?
                         Hezekiah slept with his fathers; and
 Manasseh his son reigned in his place.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="21" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="21" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Manasseh was twelve years old when he began to reign; and he
@@ -2753,8 +2753,8 @@ of the kings of Judah?
                         He was buried in his tomb in the garden
 of Uzza: and Josiah his son reigned in his place.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="22" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="22" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Josiah was eight years old when he began to reign; and he
@@ -2848,8 +2848,8 @@ will gather you to your fathers, and you shall be gathered to your
 grave in peace, neither shall your eyes see all the evil which I will
 bring on this place. They brought the king word again.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="23" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="23" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         The king sent, and they gathered to him all the elders of
@@ -3024,8 +3024,8 @@ the daughter of Pedaiah of Rumah.
                         He did that which was evil in
 the sight of Yahweh, according to all that his fathers had done.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="24" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="24" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         In his days Nebuchadnezzar king of Babylon came up, and
@@ -3110,8 +3110,8 @@ all that Jehoiakim had done.
 did it happen in Jerusalem and Judah, until he had cast them out from
 his presence. Zedekiah rebelled against the king of Babylon.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="25" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="25" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         It happened in the ninth year of his reign, in the tenth
@@ -3247,8 +3247,8 @@ were with him in Babylon,
                         and for his allowance, there was a continual allowance given
 him of the king, every day a portion, all the days of his life.
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

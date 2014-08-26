@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="English Bible" type="work">World English Bible - Jonah</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -38,7 +38,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -46,10 +46,10 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>14-Oct-99</date>
                 <respStmt>
@@ -76,13 +76,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="Jonah" type="book">
+            <div part="N" sample="complete" org="uniform" n="Jonah" type="book">
                 <head>Jonah</head>
-                <div2 part="N" sample="complete" org="uniform" n="0" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="0" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Now the word of Yahweh came to Jonah the son of Amittai, saying,
@@ -149,8 +149,8 @@ and they offered a sacrifice to Yahweh, and made vows.
                         Yahweh prepared a great fish to swallow up Jonah, and Jonah
 was in the belly of the fish three days and three nights.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Then Jonah prayed to Yahweh, his God, out of the fish's belly.
@@ -190,8 +190,8 @@ Salvation belongs to Yahweh."
                         Yahweh spoke to the fish, and it vomited out Jonah on the dry
 land.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         The word of Yahweh came to Jonah the second time, saying,
@@ -232,8 +232,8 @@ away from his fierce anger, so that we might not perish?"
 God repented of the evil which he said he would do to them, and he
 didn't do it.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         But it displeased Jonah exceedingly, and he was angry.
@@ -279,8 +279,8 @@ that great city, in which are more than one hundred twenty thousand
 persons who can't discern between their right hand and their left hand;
 and also much cattle?"
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

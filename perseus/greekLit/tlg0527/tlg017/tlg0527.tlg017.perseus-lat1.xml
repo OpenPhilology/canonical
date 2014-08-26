@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - 1 Esdras</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,13 +81,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="1 Esdras" type="book">
+            <div part="N" sample="complete" org="uniform" n="1 Esdras" type="book">
                 <head lang="en">1 Esdras</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et egit Iosias pascha in Hierosolymis Domino suo et
@@ -290,8 +290,8 @@ Persae, in repletione verbi Domini in ore Hieremiae,
 desertionis suae sabbatizavit in adimpletione annorum
 septuaginta.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         regnante Cyro Persarum anno primo, in consummatione verbi
@@ -406,8 +406,8 @@ turba et agmine,
 aedificatione templi in Hierusalem usque secundo anno regni
 Darii Persarum regis.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         rex Darius fecit cenam magnam omnibus vernaculis suis et
@@ -485,8 +485,8 @@ gesserunt.
                         o viri, non praecellit vinum quod sic cogit facere? et
 tacuit hoc dicto.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et inchoavit sequens dicere, qui dixit de fortitudine regis:
@@ -696,8 +696,8 @@ remissionem et refrigerium,
 nominatum est nomen eius in ipso. et exultabant cum musicis et
 laetitia diebus septem.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         post haec autem electi sunt ut ascenderent principes pagorum
@@ -953,8 +953,8 @@ adducentes, prohibebant eos aedificare,
 aedificium omni tempore vitae regis Cyri. et protraxerunt
 structuram per biennium usque ad Darii regnum.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         in secundo autem anno regni Darii prophetavit Aggeus et
@@ -1090,8 +1090,8 @@ Hierusalem.
                         ego Darius rex decrevi quam diligentissime secundum haec
 fieri.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         tunc Sisennes, subregulus Coelensyriae et Foenicen, et
@@ -1144,8 +1144,8 @@ epulantes in conspectu Domini,
                         quoniam convertit consilium regis Assyriorum in eis,
 confortare manus eorum ad opera manus Domini Dei Israhel.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et post hunc regnante Artaxerse Persarum rege, accessit
@@ -1495,8 +1495,8 @@ viriliter fac.
                         et exsurgens Ezras adiuravit principes sacerdotum et
 Levitas et omnem Israhel facere secundum haec, et iuraverunt.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et exsurgens Ezras ab ante atrium templi, abiit in
@@ -1678,8 +1678,8 @@ exaltati verbis quibus edocti sunt.
                         et congregati sunt universi in Hierusalem, celebrare
 laetitiam secundum testamentum Domini Dei Israhel.
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

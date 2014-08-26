@@ -15,7 +15,7 @@
 <name>Elli Mylonas</name>
 <name>David Smith</name>
 </respStmt>
-<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt>  <sourceDesc>
+<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>  <sourceDesc>
 				<biblStruct>
 					<monogr>
 						<author>M. Tullius Cicero</author>
@@ -31,41 +31,41 @@
 		</fileDesc>
 
 		<encodingDesc>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Corn." doctype="TEI.2">
 				<state delim=" " unit="text"/>
-				<state unit="speech"/>
+				refState unit="speech"/>
 			</refsDecl>
 		</encodingDesc>
 
 		<profileDesc>
 			<langUsage>
-				<language id="en">English</language>
-				<language id="la">Latin</language>
-				<language id="greek">Greek</language>
+				language ident="en">English</language>
+				language ident="la">Latin</language>
+				language ident="greek">Greek</language>
 			</langUsage>
 		</profileDesc>
 
-		<revisionDesc>
+		<revisionDesc><!--
 			<change>
 				<date>7/14/97</date>
 				<respStmt>
@@ -183,13 +183,13 @@ Added to repository.
 		<change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
 	</teiHeader><text xml:lang="en">
 				<front>
 					<head>THE SPEECH OF M. T. CICERO IN DEFENCE OF THE PROPOSED MANILIAN LAW.</head>
 					<argument>
 						<head>THE ARGUMENT.</head>
-						<p>In the year B.C. <date value="-67">67</date>, Aulus Gabinius had obtained the passing of a
+						<p>In the year B.C. date when="-67">67</date>, Aulus Gabinius had obtained the passing of a
        decree by which Pompey was invested for three years with the supreme command over all the
        Mediterranean, and over all the coasts of that sea, to a distance of four hundred furlongs
        from the sea. And in this command he had acted with great vigour and with complete success;
@@ -204,7 +204,7 @@ Added to repository.
        that Pompey commenced his campaign against the pirates, the consul Marcus Aquillius Glabrio
        was sent to supersede Lucullus in his command, but he was perfectly incompetent to oppose
        Mithridates, who seemed likely with such an enemy to recover all the power of which Lucullus
-       had deprived him. So in the year B.C. <date value="-66">66</date>, while Glabrio was still in
+       had deprived him. So in the year B.C. date when="-66">66</date>, while Glabrio was still in
         <placeName key="tgn,7016608">Bithynia</placeName>, and Pompey in <placeName key="tgn,7002294">Asia Minor</placeName>, Caius Manilius, a tribune of the people, brought
        forward a proposition, that, in addition to the command which Pompey already possessed, he
        should be invested with unlimited power in <placeName key="tgn,7016608">Bithynia</placeName>,
@@ -370,7 +370,7 @@ Added to repository.
 					<p>And even this must not be neglected by you, which I had proposed to myself as the last thing
       to be mentioned, when I was to speak of the kind of war, for it concerns the property of many
       Roman citizens; whom you, as becomes your wisdom, O Romans, must regard with the most careful
-      solicitude. The publicans, <note anchored="yes">It has been said before that the publicans
+      solicitude. The publicans, <note anchored="true">It has been said before that the publicans
        were taken almost exclusively from the equestrian order.</note> most honourable and
       accomplished men, have taken all their resources and all their wealth into that province; and
       their property and fortunes ought, by themselves, to be an object of your special care. In
@@ -404,7 +404,7 @@ Added to repository.
       it must absolutely be waged, and yet not one of such magnitude as to be formidable. And in
       this we must take the greatest care that those things do not appear to you contemptible which
       require to be most diligently guarded against. And that all men may understand that I give
-      Lucius Lucullus all the praise that is due to a gallant man, and most wise <note anchored="yes">The Latin is, “<foreign lang="la">forti <emph>viro</emph>, et
+      Lucius Lucullus all the praise that is due to a gallant man, and most wise <note anchored="true">The Latin is, “<foreign lang="la">forti <emph>viro</emph>, et
         sapientissimo <emph>homini</emph></foreign>,” and this opposition of <foreign lang="la">vir</foreign> and <foreign lang="la">homo</foreign> is not uncommon in Cicero's
        orations. “<foreign lang="la">Homo</foreign> is nearly synonymous with <foreign lang="la">vir</foreign>, but with this distinction, that <foreign lang="la">homo</foreign>
        is used of a man considered as an intellectual and moral being.—namely, where
@@ -544,7 +544,7 @@ Added to repository.
       own armies never ventured to cross over from <placeName key="perseus,Brundusium">Brundusium</placeName>, except in the depth of winter? Need I complain that men who were
       coming to you from foreign nations were taken prisoners, when even the ambassadors of the
       Roman people were forced to be ransomed? Need I say, that the sea was not safe for merchants,
-      when twelve axes <note anchored="yes">The Scholiast says that a consul named Milienus (whose
+      when twelve axes <note anchored="true">The Scholiast says that a consul named Milienus (whose
        name, however, does not appear in the Fasti) was taken prisoner by the pirates, and sold with
        his ensigns of office. The axes mean his <foreign lang="la">faces</foreign>.</note> came into
       the power of the pirates? <milestone n="33" unit="section"/> Need I mention, how <placeName key="tgn,5003757">Cnidus</placeName>, and <placeName key="perseus,Colophon">Colophon</placeName>, and <placeName key="tgn,7002673">Samos</placeName>, most noble cities,
@@ -591,11 +591,11 @@ Added to repository.
       to what extent these qualities exist in Cnaeus Pompeius. For they are all of the highest
       importance, O Romans, but yet they are to be seen and ascertained more by comparison with the
       conduct of others than by any display which they make of themselves. <milestone n="37" unit="section"/> For how can we rank a man among generals of any class at all, if
-      centurionships <note anchored="yes">The Scholiast says that Cicero is here hinting at Glabrio
+      centurionships <note anchored="true">The Scholiast says that Cicero is here hinting at Glabrio
        the consul, or at the younger Marius.</note> are sold, and have been constantly sold in his
       army? What great or honourable thoughts can we suppose that that man cherishes concerning the
       republic, who has either distributed the money which was taken from the treasury for the
-      conduct of the war among the magistrates, out of ambition <note anchored="yes">Lucullus is
+      conduct of the war among the magistrates, out of ambition <note anchored="true">Lucullus is
        supposed to be meant here as it is said that he had employed large sums in soliciting the
        votes of influential men, so as to be left in command of the province of <placeName key="tgn,1000004">Asia</placeName>, in which he had amassed enormous riches.</note> to keep
       his province, or, out of avarice, has left it behind him at <placeName key="perseus,Rome">Rome</placeName>, invested for his own advantage? Your murmurs show, O Romans, that you
@@ -683,7 +683,7 @@ Added to repository.
 					<p>Come, now; what a great proof does this circumstance afford us of the influence of the same
       man on the enemies of the Roman people, that all of them, living in countries so far distant
       from us and from each other, surrendered themselves to him alone in so short a time? that the
-      ambassadors of the Cretans, though there was at the time a general <note anchored="yes">Metellus, afterwards called Creticus, from his victory over the Cretans.</note> and an army
+      ambassadors of the Cretans, though there was at the time a general <note anchored="true">Metellus, afterwards called Creticus, from his victory over the Cretans.</note> and an army
       of ours in their island came almost to the end of the world to Cnaeus Pompeius, and said, all
       the cities of the Cretans were willing to surrender themselves to him? What did Mithridates
       himself do? Did he not send an ambassador into <placeName key="tgn,1000095">Spain</placeName>
@@ -838,7 +838,7 @@ Added to repository.
 					<p>For what can be so unprecedented as for a young man in a private capacity to levy an army at
       a most critical time of the republic? He levied one.—To command it? He did command
       it.—To succeed gloriously in his undertaking? He did succeed. What can be so
-      entirely contrary to usage, as for a very young man, whose age <note anchored="yes">“As regards the age at which a person might become a senator, we have no express
+      entirely contrary to usage, as for a very young man, whose age <note anchored="true">“As regards the age at which a person might become a senator, we have no express
        statement for the time of the republic, although it appears to have been fixed by some custom
        or law, as the <foreign lang="la">aetas senatoria</foreign> is frequently mentioned,
        especially during the latter period of the republic; but we may by induction discover the

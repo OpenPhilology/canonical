@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>Ab urbe condita libri, erklärt von M. Weissenborn, books 35-38 - 37</title>
@@ -14,7 +14,7 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:NEH">The National Endowment for the Humanities</funder>
-            </titleStmt>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
             <extent/>
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
@@ -40,20 +40,20 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book" delim="."/>
-                <state unit="chapter" delim="."/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book" delim="."/>
+                refState unit="chapter" delim="."/>
+                refState unit="section"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin </language>
-                <language id="en">English </language>
-                <language id="de">German </language>
+                language ident="la">Latin </language>
+                language ident="en">English </language>
+                language ident="de">German </language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006/7/03</date>
                 <respStmt>
@@ -62,11 +62,11 @@
                 </respStmt>
                 <item> </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="37" type="book">
+            <div part="N" sample="complete" org="uniform" n="37" type="book">
                 <p>
                     <milestone n="1" unit="chapter"/>
                     <milestone n="1" unit="section"/>
@@ -90,7 +90,7 @@
                     <milestone n="3" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.160"/>
                     ceterum et praesentes interrogationibus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     undique senatorum, confessionem magis noxae quam responsa exprimentium, fatigati sunt, et excedere curia iussi magnum certamen praebuerunt.
@@ -109,7 +109,7 @@
                     <milestone n="9" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.161"/>
                     cum res aut nova aut vetustate
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     exemplorum memoriae iam exoletae relata expectatione certaminis senatum erexisset,
@@ -182,7 +182,7 @@
                         <surname full="yes">Minucius</surname>
                     </persName>
                     — iam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     enim confectam provinciam scripserat et Ligurum omne nomen in deditionem venisse — traducere in Boios et
@@ -241,7 +241,7 @@
                         <surname full="yes">Aemilius</surname>
                     </persName>
                     , cui maritima provincia erat, viginti naves longas et socios navalis a
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     <persName n="2">
@@ -272,7 +272,7 @@
                     <milestone n="5" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.164"/>
                     supplicatio quoque earum religionum causa fuit quibus diis decemviri ex libris ut
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     fieret ediderunt.
@@ -321,7 +321,7 @@
                         <surname full="yes">Cornelius</surname>
                     </persName>
                     consul peractis, quae Romae agenda erant, pro contione edixit, ut milites, quos ipse in supplementum scripsisset,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     quique in Bruttiis cum
@@ -373,7 +373,7 @@
                     <milestone n="6" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.166"/>
                     Aetoli, postquam legati ab Roma rettulerunt nullam spem
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     pacis esse, quamquam omnis ora maritima eorum, quae in Peloponnesum versa est,
@@ -395,7 +395,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.167"/>
                     nemini ad Naupactum iri placuit occupato ad Coracem ab Aetolis saltu. ne tamen segnia aestiva essent et Aetoli non
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     impetratam pacem ab senatu nihilo minus per suam cunctationem haberent, oppugnare Acilius Amphissam statuit. ab Heraclea per Oetam exercitus eo deductus.
@@ -415,7 +415,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.168"/>
                     consul sex milia fere passuum inde posuit castra. eo legati
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564</date>
                     </note>
                     Athenienses primum ad
@@ -431,7 +431,7 @@
                     <milestone n="7" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.169"/>
                     perfecta videbatur res, cum aditus consul idem illud responsum rettulit, quo fugati ab senatu erant. eo tamquam novo cum icti Aetoli essent — nihil enim nec legatione Atheniensium nec placido Africani responso profectum videbant
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190. </date>
                     </note>
                     —, referre ad suos dixerunt velle.
@@ -472,7 +472,7 @@
                     <milestone n="9" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.170"/>
                     sed totum id vertitur in voluntate Philippi, qui si imperio nostro fidus est, et iter et commeatus et omnia, quae in longo itinere exercitus alunt iuvantque, nobis suppeditabit; si is
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     destituat, nihil per Thraeciam satis tutum habebis:
@@ -502,7 +502,7 @@
                     <milestone n="1" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.171"/>
                     Antiochus post navalem ad Corycum pugnam cum totam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     hiemem liberam in apparatus terrestris maritimosque habuisset, classi maxume reparandae, ne tota maris possessione pelleretur, intentus fuerat.
@@ -519,7 +519,7 @@
                     <milestone n="7" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.172"/>
                     is cum magnam praedam agi posse dixisset ex agro hostium, qui circa Thyatiram esset, hortando perpulit Livium, ut quinque milia militum secum mitteret. missi ingentem praedam intra
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     paucos dies averterunt.
@@ -539,7 +539,7 @@
                     <milestone n="7" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.173"/>
                     in portum, quem vocant Achaeorum, classem primum advertit; inde Ilium escendit, sacrificioque Minervae facto legationes finitimas ab Elaeunte et Dardano et
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     Rhoeteo, tradentis in fidem civitatis suas, benigne audivit.
@@ -565,7 +565,7 @@
                     <milestone n="5" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.174"/>
                     tum internuntius: regiam classem aut totam aut maiorem eius partem Polyxenidam traditurum ei; pretium tanti meriti nullum aliud
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     pacisci quam reditum in patriam.
@@ -582,7 +582,7 @@
                     <milestone n="11" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.175"/>
                     quam neglegentiam Polyxenidam in classe sua habiturum Pausistratus audivit, eam ipse extemplo habuit. partem navium ad commeatus accersendos Halicarnassum,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     partem Samum ad urbem misit,
@@ -602,7 +602,7 @@
                     <milestone n="5" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.176"/>
                     post solis occasum profectus septuaginta navibus tectis vento adverso ante lucem Pygela portum tenuit. ibi cum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     interdiu ob eandem causam quiesset, nocte in proxima Samiae terrae traiecit.
@@ -619,7 +619,7 @@
                     <milestone n="11" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.177"/>
                     superantem
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     iam fauces navem eius Polyxenidas tribus quinqueremibus circumsistit. navis rostris icta supprimitur; telis obruuntur propugnatores, inter quos et Pausistratus impigre pugnans interficitur.
@@ -639,7 +639,7 @@
                     <milestone n="2" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.178"/>
                     iam omnibus fessis Philota quoque praefecto praesidii permittente magistratus eorum cum Livio de condicionibus tradendae urbis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     agebant. rem distinebat, quod, utrum armati an inermes emitterentur regii, parum conveniebat.
@@ -658,7 +658,7 @@
                     <milestone n="9" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.179"/>
                     decem extemplo naves, et diebus post paucis decem alias praefecto omnium Eudamo miserunt,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     quem aliis virtutibus bellicis haudquaquam Pausistrato parem, cautiorem, quo minus animi erat, ducem futurum credebant.
@@ -672,7 +672,7 @@
                     <milestone n="1" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.180"/>
                     Polyxenidas Samum petituros ratus hostis, ut se Rhodiae classi coniungerent, ab Epheso profectus primo ad Myonnesum stetit; inde ad Macrin, quam vocant, insulam traiecit, ut praetervehentis classis si quas aberrantis ex
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     agmine naves posset aut postremum agmen opportune adoriretur.
@@ -691,7 +691,7 @@
                     <milestone n="8" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.181"/>
                     contra fauces portus instructa in frontem navium acie stetere. postquam nemo adversus ibat,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     classe divisa pars in salo ad ostium portus in ancoris stetit, pars in terram milites exposuit.
@@ -721,7 +721,7 @@
                     Aegaeo mari traiecit
                     <hi rend="italics">Chium.</hi>
                     eodem Timasicrates Rhodius cum duabus quadriremibus ab Samo nocte intempesta venit, deductusque ad Aemilium praesidii causa se missum ait, quod eam oram maris infestam onerariis regiae naves
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     excursionibus crebris ab Hellesponto atque Abydo facerent.
@@ -744,7 +744,7 @@
                     <milestone n="2" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.183"/>
                     sive enim abscedant, cui dubium esse, quin hostes extracturi demersas moles sint et minore molimento
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     aperturi portum, quam obstruatur? sin autem manendum ibi nihilo minus sit, quid attinere claudi portum?
@@ -775,7 +775,7 @@
                     civitates, quas praetervectus est, Miletus Myndus Halicarnassus Cnidus Cous, imperata enixe fecerunt.
                     <milestone n="3" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.184"/>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     Rhodum ut ventum est, simul et, ad quam rem missus esset, iis exposuit et consuluit eos. approbantibus cunctis et ad eam, quam habebat classem, adsumptis tribus quadriremibus navigat Patara.
@@ -792,7 +792,7 @@
                     <milestone n="9" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.185"/>
                     hi, dum missilibus primo et adversus paucos levibus excursionibus lacessebatur magis quam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     conserebatur pugna, sustinuerunt certamen; postquam plures ex urbe adfluebant,
@@ -821,7 +821,7 @@
                     <milestone n="2" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.186"/>
                     turpe ratus temptata frustra Patara esse, proficisci eo tota classe et summa vi adgredi
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     urbem statuit.
@@ -840,7 +840,7 @@
                     <milestone n="9" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.187"/>
                     pervenerunt. ibi in principiis sermo primo inter tribunos militum secretus oritur, deinde ad aures ipsius Aemilii pervenit, abduci classem ab Epheso, ab suo bello, ut ab tergo liber relictus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     hostis in tot propinquas sociorum urbes omnia impune conari posset.
@@ -860,7 +860,7 @@
                     <milestone n="5" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.188"/>
                     postremo cum per levia certamina expertus nulla parte virium se parem
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     esse intra moenia se recepisset, obsideri urbs coepta est.
@@ -879,7 +879,7 @@
                     <milestone n="12" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.189"/>
                     ibi peditum omnibus copiis relictis cum equitatu — erant autem sex milia equitum — in campos sub ipsa Elaeae moenia descendit misso caduceatore ad
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     Aemilium, velle se de pace agere.
@@ -899,7 +899,7 @@
                     <milestone n="7" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.190"/>
                     Antiochus pace nequiquam temptata, evastatis Elaeensium primum, deinde Pergamenorum agris, relicto ibi Seleuco filio, Adramytteum hostiliter itinere facto
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     petit agrum opulentum, quem vocant Thebes campum, carmine Homeri nobilitatum;
@@ -919,7 +919,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.191"/>
                     postquam semel compulsi metu
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     se moenibus incluserunt, contemptus eorum et inde neglegentia apud regios oritur. non stratos, non infrenatos magna pars habebant equos;
@@ -936,7 +936,7 @@
                     <milestone n="10" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.192"/>
                     postquam dilapsos ab ordinibus hostes vidit, peditibus, quantum accelerare possent, sequi iussis ipse princeps inter equites cum turma sua, quam potuit effusissimis habenis, clamore ab omni
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     simul pedite atque equite sublato stationem hostium improviso invadit.
@@ -956,7 +956,7 @@
                     <milestone n="3" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.193"/>
                     quievit Diophanes, dum in conspectu erant; deinde eodem, quo pridie, impetu in postremum agmen incurrit, tantumque rursus pavoris ac tumultus incussit, ut,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     cum terga caederentur, nemo pugnandi causa restiterit; trepidantesque et vix ordinem agminis servantes in castra compulsi sunt.
@@ -976,7 +976,7 @@
                     <milestone n="9" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.194"/>
                     extemplo oppugnatione omissa classis ad insulam se recepit nihil aliud quam depopulato circa urbem hostium agro.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     Inde placuit Eumenen domum dimitti et praeparare consuli atque exercitui,
@@ -1000,7 +1000,7 @@
                     <milestone n="5" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.195"/>
                     profectus cum, quantum accelerare poterat, maturasset, ad portum, quem Megisten vocant, praegressos consequitur. inde uno agmine Phaselidem cum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     venissent, optimum visum est ibi hostem opperiri.
@@ -1014,7 +1014,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.196"/>
                     tardius navigaverant regii adverso tempore etesiarum, quod velut statum favoniis ventis est. Rhodiorum duae et triginta
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     quadriremes et quattuor triremes fuere;
@@ -1031,7 +1031,7 @@
                     <milestone n="10" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.197"/>
                     ea res primo tumultum praebuit: nam nec sic in altum evectus erat, ut ordo omnium navium ad terram explicari posset, et festinans ipse praepropere cum quinque solis navibus Hannibali occurrit; ceteri
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     quia in frontem derigere iussi erant, non sequebantur.
@@ -1047,7 +1047,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.198"/>
                     Eudamum in alto multitudine navium maxime Hannibal, ceteris omnibus longe praestantem, urgebat, et circumvenisset, ni signo sublato
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     ex praetoria nave, quo dispersam classem in unum colligi mos erat, omnes quae in dextro cornu vicerant naves ad opem ferendam suis concurrissent.
@@ -1066,7 +1066,7 @@
                     <milestone n="11" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.199"/>
                     Hannibal, ictus uno proelio adverso, ne tum quidem
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     praetervehi Lyciam audebat, cum coniungi veteri regiae classi quam primum cuperet et ne id ei facere liberum esset,
@@ -1086,7 +1086,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.200"/>
                     Antiochus non civitatium modo, quae circa
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     se erant, contrahebat praesidia, sed ad Prusiam Bithyniae regem legatos miserat litterasque, quibus transitum in Asiam Romanorum increpabat:
@@ -1101,7 +1101,7 @@
                     <milestone n="9" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.201"/>
                     regulos se acceptos in fidem in Hispania reges
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     reliquisse; Masinissam non in patrio modo locasse regno, sed in Syphacis, a quo ante expulsus fuisset, regnum imposuisse;
@@ -1133,7 +1133,7 @@
                     <milestone n="2" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.202"/>
                     visendam, magis quia terrestribus copiis exercitum Romanum et duos Scipiones imperatores
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     videbat sustineri non posse, quam quod res navalis ipsa per se aut temptata sibi umquam feliciter aut tunc magnae et certae fiduciae esset.
@@ -1159,7 +1159,7 @@
                     <milestone n="10" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.203"/>
                     Aemilium et Sami
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     segnis diu mora offendebat, nihil minus opinantem quam Polyxenidam, bis nequiquam ab se provocatum, potestatem pugnae facturum esse,
@@ -1183,7 +1183,7 @@
                     <milestone n="3" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.204"/>
                     simul adlatum est Teios regiae classi commeatus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     benigne praebuisse, quinque milia vasorum vini pollicitos esse. Teum ex medio cursu classem repente avertit, aut volentibus iis usurus commeatu parato hostibus, aut ipsos pro hostibus habiturus.
@@ -1198,7 +1198,7 @@
                     <milestone n="8" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.205"/>
                     circa ea appropinquare non ausae naves, ne sub ictu
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     superstantium rupibus piratarum essent, diem trivere.
@@ -1220,7 +1220,7 @@
                     <milestone n="7" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.206"/>
                     promunturiis coeuntibus inter se ita clauditur
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     portus, ut vix duae simul inde naves possint exire.
@@ -1247,7 +1247,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.207"/>
                     haud secus quam in repentino incendio aut capta urbe trepidatur, aliis in urbem currentibus ad suos revocandos, aliis ex urbe naves cursu repetentibus, incertisque clamoribus, quibus ipsis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     tubae obstreperent, turbatis imperiis tandem concursum ad naves est.
@@ -1265,7 +1265,7 @@
                     <milestone n="1" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.208"/>
                     iam totis simul classibus ab omni parte
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     pugna conserta erat. ab Romanis octoginta naves pugnabant, ex quibus Rhodiae duae et viginti erant;
@@ -1282,7 +1282,7 @@
                     <milestone n="7" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.209"/>
                     dextera pars integra sociorum magis clade quam suo periculo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     terrebantur; ceterum, postquam alias circumventas, praetoriam navem Polyxenidae relictis sociis vela dantem videre, sublatis raptim dolonibus — et erat secundus petentibus Ephesum ventus — capessunt fugam quadraginta duabus navibus in ea pugna amissis, quarum decem tres captae in potestatem hostium venerunt,
@@ -1298,7 +1298,7 @@
                     <milestone n="1" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.210"/>
                     quo territus Antiochus, quia possessione maris pulsus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     longinqua tueri diffidebat se posse, praesidium ab Lysimachia, ne opprimeretur ibi ab Romanis, deduci pravo, ut res ipsa postea docuit, consilio iussit.
@@ -1327,7 +1327,7 @@
                     <milestone n="7" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.211"/>
                     Rhodii impigre praevertere ad traiciendas copias consulis [iere];
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     atque eo quoque functi officio, tum demum Rhodum rediere.
@@ -1343,7 +1343,7 @@
                     <milestone n="2" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.212"/>
                     altera pars infrequens aedificiis erat;
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     templa deum aliquantum tenebant loci; ea prius ariete admoto quatere muros turresque coepit;
@@ -1376,7 +1376,7 @@
                     <milestone n="11" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.213"/>
                     cum signa in urbem
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     inferrentur et pronuntiasset praetor parci se deditis velle, clamor undique est sublatus, indignum facinus esse, Phocaeensis, numquam fidos socios, semper infestos hostis, impune eludere.
@@ -1396,7 +1396,7 @@
                     <milestone n="3" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.214"/>
                     ibi paucos dies
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     stativa habuere, impedimenta aegrique ut consequerentur, qui passim per omnia Thraciae castella, fessi morbis ac longitudine viae, relicti erant.
@@ -1421,7 +1421,7 @@
                     <milestone n="2" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.215"/>
                     quam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     impetrabilem fore magnam ei spem attulit mora et cunctatio Romanorum, quos, simul Asiam attigissent, effuso agmine ad castra regia ituros crediderat.
@@ -1441,7 +1441,7 @@
                     <milestone n="7" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.216"/>
                     illud satis constat, si pax cum populo Romano maneret hospitiumque privatim regi cum Scipionibus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     esset, neque liberalius neque benignius haberi colique adolescentem, quam cultus est, potuisse.
@@ -1464,7 +1464,7 @@
                     <milestone n="5" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.217"/>
                     hae condiciones erant pacis; reliqua oratio fuit, ut memores rerum humanarum et suae fortunae moderarentur et alienam ne urgerent. finirent Europa imperium, id
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     quoque immensum esse;
@@ -1497,7 +1497,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.218"/>
                     Lysimachia tenenda erat, ne Chersonesum intraremus, aut ad Hellespontum obsistendum, ne in
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     Asiam traiceremus, si pacem tamquam ab sollicitis de belli eventu petituri eratis:
@@ -1521,7 +1521,7 @@
                     <milestone n="3" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.219"/>
                     sacrificavit Minervae praesidi arcis et Iliensibus in omni rerum verborumque honore ab se oriundos Romanos
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     praeferentibus et Romanis laetis origine sua. inde profecti sextis castris ad caput Caici amnis pervenerunt.
@@ -1545,7 +1545,7 @@
                     <milestone n="9" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.220"/>
                     quamquam sexaginta milia peditum, plus duodecim milia
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     equitum animos interdum ad spem certaminis faciebant, motus tamen Antiochus tanti auctoritate viri, in quo ad incertos belli eventus omnis fortunae posuerat subsidia, recepit se et transgressus Phrygium amnem circa Magnesiam, quae ad Sipylum est, posuit castra;
@@ -1565,7 +1565,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.221"/>
                     primo turbaverunt incompositos; dein, cum longius certamen fieret, Romanorum ex propinquis castris facili subsidio cresceret numerus, regii fessi iam et pluris non sustinentes recipere se conati circa ripam amnis, priusquam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     flumen ingrederentur, ab instantibus tergo aliquot interfecti sunt.
@@ -1593,7 +1593,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.222"/>
                     qui, tamquam non pugnandum cum tot milibus hostium, sed par numerus pecorum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     trucidandus esset, per fossas, per vallum castra invadere parati erant, si in proelium hostis non exiret.
@@ -1612,7 +1612,7 @@
                     <milestone n="8" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.223"/>
                     Romani mediam aciem, cornua Latini tenuerunt; hastatorum prima signa, dein principum erant, triarii postremos claudebant.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     <milestone n="9" unit="section"/>
@@ -1626,7 +1626,7 @@
                     <milestone n="13" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.224"/>
                     hi praesidio castris relicti sunt. XVI elephantos post triarios in subsidio locaverunt: nam praeterquam quod
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     multitudinem regiorum elephantorum — erant autem quattuor et quinquaginta — sustinere non videbantur posse, ne pari quidem numero Indicis Africi resistunt, sive quia magnitudine — longe enim illi praestant — sive robore animorum vincuntur.
@@ -1640,7 +1640,7 @@
                     <milestone n="3" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.225"/>
                     hoc et roboris
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     in regiis copiis erat, et perinde cum alia specie tum eminentibus tantum inter armatos elephantis magnum terrorem praebebat.
@@ -1657,7 +1657,7 @@
                     <milestone n="9" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.226"/>
                     extremum cornu claudebant quattuor milia, mixti Cyrtii funditores et Elymaei
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     sagittarii.
@@ -1672,7 +1672,7 @@
                     <milestone n="14" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.227"/>
                     Pisidae erant et Pamphylii et Lycii; tum Cyrtiorum et Elymaeorum paria in dextro cornu locatis auxilia, et sedecim elephanti modico intervallo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     distantes.
@@ -1690,7 +1690,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.228"/>
                     regii tam lata acie ne ex medio quidem cornua
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     sua circumspicere poterant, nedum extremi inter se conspicerentur, et umor arcus fundasque et iaculorum amenta emollierat.
@@ -1703,7 +1703,7 @@
                     <milestone n="8" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.229"/>
                     sic armatas quadrigas, quia, si in extremo aut in medio locatae forent, per suos agendae erant, in prima acie, ut ante dictum est.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     locaverat rex.
@@ -1721,7 +1721,7 @@
                     <milestone n="1" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.230"/>
                     ceterum vana illa res verae mox cladis causa fuit. auxilia enim subsidiaria, quae proxima locata erant, pavore et consternatione quadrigarum territa, et ipsa in
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     fugam versa nudarunt omnia usque ad cataphractos equites.
@@ -1732,7 +1732,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.231"/>
                     ibi simul perturbati ordines et impeditus intercursu suorum usus praelongarum hastarum — sarisas
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     Macedones vocant —, intulere signa Romanae legiones et pila in perturbatos coniecere.
@@ -1764,7 +1764,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.232"/>
                     hic maior timor minorem vicit: ancipiti coacti metu primo constiterunt; deinde et ipsi rediere in pugnam, et
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     Aemilius cum suo praesidio — erant autem duo milia virorum fortium —
@@ -1785,7 +1785,7 @@
                     <milestone n="11" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.233"/>
                     retenti in portis valloque, quae se impetu ipso capturos crediderant, Romani, postquam tandem
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     perruperunt, ab ira graviorem ediderunt caedem.
@@ -1810,7 +1810,7 @@
                     <milestone n="1" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.234"/>
                     sub idem fere tempus et ab Trallibus et a Magnesia, quae super Maeandrum est, et ab Epheso
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     ad dedendas urbes venerunt.
@@ -1846,7 +1846,7 @@
                     praebitoque iis petentibus frequenti consilio ad mandata edenda, “non tam, quid ipsi dicamus,
                     <gap/>
                     habemus” inquit Zeuxis, “quam ut a vobis quaeramus, Romani, quo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     piaculo expiare errorem regis, pacem veniamque impetrare a victoribus possimus. maximo semper animo victis regibus populisque ignovistis;
@@ -1861,7 +1861,7 @@
                     <milestone n="12" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.236"/>
                     animos, qui nostrae mentis sunt, eosdem in omni fortuna gessimus gerimusque, neque eos
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     secundae res extulerunt nec adversae minuerunt. eius rei, ut alios omittam, Hannibalem vestrum vobis testem darem, nisi vos ipsos dare possem.
@@ -1877,7 +1877,7 @@
                     <milestone n="17" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.237"/>
                     Thoantem quoque Aetolum, concitorem Aetolici belli, qui et illorum fiducia vos et vestra illos in nos armavit, dedetis et cum eo Mnasilochum Acarnana et Chalcidensis Philonem
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     et Eubulidam.
@@ -1909,7 +1909,7 @@
                     <milestone n="3" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.238"/>
                     praelata in eo triumpho sunt signa militaria ducenta triginta, et argenti infecti tria milia pondo, signati tetrachmum Atticum centum decem tria milia, cistophori ducenta
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                     undequinquaginta, vasa argentea caelata multa magnique ponderis;
@@ -1938,7 +1938,7 @@
                         <surname full="yes">Aurunculeius</surname>
                     </persName>
                     praetor in
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     senatum introduxit.
@@ -2003,7 +2003,7 @@
                     <milestone n="5" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.240"/>
                     vicenis maioribus hostiis in singulas supplicationes sacrificare consul est iussus.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 564.</date>
                     </note>
                 </p>
@@ -2042,7 +2042,7 @@
                     <milestone n="8" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.241"/>
                     nam Messalla iacuit — collegam dixit. praetores
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 190.</date>
                     </note>
                     exinde facti duo
@@ -2126,7 +2126,7 @@
                     <milestone n="6" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.242"/>
                     subtexit deinde fabulae huic
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 565.</date>
                     </note>
                     legatos Aetolos in senatu inter cetera hoc quoque interrogatos esse, unde audissent imperatores Romanos in Asia captos ab Antiocho rege et exercitum deletum esse;
@@ -2155,7 +2155,7 @@
                         <surname full="yes">Acilii</surname>
                     </persName>
                     sententiam, qui Antiochum Aetolosque devicerat, factum est, ut Aetoli eo die iuberentur proficisci ab urbe et intra quintum decimum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 189.</date>
                     </note>
                     diem Italia excedere.
@@ -2212,7 +2212,7 @@
                         <surname full="yes">Sempronius</surname>
                         <addName full="yes">Tuditanus</addName>
                     </persName>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 565.</date>
                     </note>
                     Siciliam,
@@ -2307,7 +2307,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.245"/>
                     et imperia inhibita ultro
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 189.</date>
                     </note>
                     citroque, et pignera capta, et multae dictae, et tribuni appellati, et provocatum ad populum est.
@@ -2324,7 +2324,7 @@
                     <milestone n="9" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.246"/>
                     desierant enim victum in Aetolia metuere — quam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 565.</date>
                     </note>
                     a vetere fama, quod ineuntibus id bellum gravis hostis et suis viribus, et quod Hannibalem rectorem militiae haberet, visus fuerat.
@@ -2357,7 +2357,7 @@
                     <milestone n="6" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.247"/>
                     haec approbantibus cunctis iubentibusque dicere ipsum, omissa in id verecundia, quid
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 189.</date>
                     </note>
                     sibi ab senatu populoque Romano tribui aequum censeret: propensius cumulatiusque, si quo possit, prout eius merita sint, senatum facturum,
@@ -2375,7 +2375,7 @@
                     <milestone n="2" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.248"/>
                     quae
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 565.</date>
                     </note>
                     quidem eo difficilior oratio erit, quod ea postulata eorum futura sunt, ut non solum nihil, quod contra me sit, sed ne quod ad ipsos quidem proprie pertineat, petere videantur.
@@ -2388,7 +2388,7 @@
                     <milestone n="6" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.249"/>
                     haec vos ne decipiat oratio, providendum vobis erit, neve non solum inaequaliter alios nimium deprimatis ex sociis vestris,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 189.</date>
                     </note>
                     alios praeter modum extollatis, sed etiam ne, qui adversus vos arma tulerint, in meliore statu sint, quam socii et amici vestri quod ad me attinet,
@@ -2405,7 +2405,7 @@
                     <milestone n="12" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.250"/>
                     rebus ipsis meritisque et impensis officiorum ut superare possem,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 565.</date>
                     </note>
                     fortuna tempora Antiochus et bellum in Asia gestum praebuerunt materiam.
@@ -2429,7 +2429,7 @@
                     <milestone n="19" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.251"/>
                     in acie ibi steti, eam partem sum tutatus, in qua me consul esse voluit. non sum hoc dicturas, patres
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 189.</date>
                     </note>
                     conscripti: quis hoc bello meritis erga vos mecum comparari potest?
@@ -2452,7 +2452,7 @@
                     <milestone n="28" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.252"/>
                     at enim magnificum est liberare civitates servas. ita opinor, si nihil hostile adversus vos fecerunt; sin autem Antiochi partis fuerunt, quanto est vestra prudentia et aequitate dignius sociis bene meritis quam hostibus vos consulere? “
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 565.</date>
                     </note>
                 </p>
@@ -2473,7 +2473,7 @@
                     <milestone n="7" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.253"/>
                     utcumque tamen res sese habet, magis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 189.</date>
                     </note>
                     verecundia nostra adversus regem nobis obstat, quam ipsa disceptatio aut nobis impedita est aut vobis perplexam deliberationem praebitura videtur.
@@ -2490,7 +2490,7 @@
                     <milestone n="13" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.254"/>
                     licet ergo vobis et praemiis belli ditare
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 565.</date>
                     </note>
                     socios et non decedere instituto vestro et meminisse, quem titulum praetenderitis prius adversus Philippum, nunc adversus Antiochum belli,
@@ -2505,7 +2505,7 @@
                     <milestone n="18" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.255"/>
                     non, quae in solo [modo] antiquo sunt, Graecae magis urbes
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 189.</date>
                     </note>
                     sunt quam coloniae earum, illinc quondam profectae in Asiam;
@@ -2522,7 +2522,7 @@
                     <milestone n="24" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.256"/>
                     barbari, quibus pro legibus semper dominorum imperia fuerunt, quo gaudent, reges habeant; Graeci suam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 565.</date>
                     </note>
                     fortunam, vestros animos gerunt.
@@ -2542,7 +2542,7 @@
                     <milestone n="2" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.257"/>
                     ut suae potius clementiae quam regis culpae, qui satis superque poenarum dedisset, memores consulerent; postremo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 189.</date>
                     </note>
                     pacem datam a
@@ -2603,7 +2603,7 @@
                         <surname full="yes">Aemilium</surname>
                         <addName full="yes">Paulum</addName>
                     </persName>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 565.</date>
                     </note>
                     <persName n="3">
@@ -2627,7 +2627,7 @@
                     <milestone n="4" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.259"/>
                     nisi quae libera ante bellum fuissent, Telmesson item nominatim et castra
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 189.</date>
                     </note>
                     Telmessium, praeter agrum, qui Ptolemaei Telmessii fuisset —: haec omnia, quae supra sunt scripta, regi Eumeni iussa dari.
@@ -2642,7 +2642,7 @@
                     <milestone n="8" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.260"/>
                     vocati sunt legati regis Antiochi, actumque cum iis est
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 565.</date>
                     </note>
                     nec quicquam impetratum testante foedera Antipatro, adversus quae ab Rhodiis non Solos, sed Ciliciam peti et iuga Tauri transcendi.
@@ -2693,7 +2693,7 @@
                     <milestone n="6" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.261"/>
                     fusi fugatique hostes; caesa decem octo milia armatorum; duo milia trecenti capti et castra expugnata. huius victoriae fama tranquilliores in Hispania res fecit.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 189.</date>
                     </note>
                 </p>
@@ -2782,7 +2782,7 @@
                         <surname full="yes">Cato</surname>
                     </persName>
                     ante alios testis conspiciebatur; cuius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 565.</date>
                     </note>
                     auctoritatem perpetuo tenore vitae partam toga candida elevabat.
@@ -2821,7 +2821,7 @@
                     <milestone n="5" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.263"/>
                     supplicationes deinde
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 189.</date>
                     </note>
                     fuerunt ex senatus consulto, quod
@@ -2851,7 +2851,7 @@
                     <milestone n="2" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.264"/>
                     triumphavit mense intercalario pridie Kal. Martias. qui
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 565.</date>
                     </note>
                     triumphus spectaculo oculorum maior quam Africani fratris eius fuit, recordatione rerum et aestimatione periculi certaminisque non magis comparandus, quam si imperatorem imperatori aut Antiochum ducem Hannibali conferres.
@@ -2862,7 +2862,7 @@
                     <milestone n="5" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.265"/>
                     omnia caelata erant — mille pondo et quadringenta viginti tria, aureorum mille pondo viginti tria. et duces regii, praefecti, purpurati duo et triginta
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. Ch. 189.</date>
                     </note>
                     ante currum ducti.
@@ -2900,14 +2900,14 @@
                     <milestone n="6" unit="section"/>
                     <pb n="notedatea" id="vol.8.p.266"/>
                     Valerius Antias ad quattuor milia captivorum, quia belli minas
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <date>a. u. 565.</date>
                     </note>
                     timuerint, ex tota insula reddita scripsit; eamque causam Fabio, cum rem nullam aliam gessisset, triumphi navalis impetrandi ab senatu fuisse.
                     <milestone n="7" unit="section"/>
                     a Creta Ephesum Fabius redit; inde tribus navibus in Thraciae oram missis ab Aeno et Maronia praesidia Antiochi deduci iussit, ut in libertate eae civitates essent.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

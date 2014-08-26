@@ -15,7 +15,7 @@
 <name>Elli Mylonas</name>
 <name>David Smith</name>
 </respStmt>
-<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt>  <sourceDesc>
+<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>  <sourceDesc>
 				<biblStruct>
 					<monogr>
 						<author>M. Tullius Cicero</author>
@@ -31,41 +31,41 @@
 		</fileDesc>
 
 		<encodingDesc>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Corn." doctype="TEI.2">
 				<state delim=" " unit="text"/>
-				<state unit="speech"/>
+				refState unit="speech"/>
 			</refsDecl>
 		</encodingDesc>
 
 		<profileDesc>
 			<langUsage>
-				<language id="en">English</language>
-				<language id="la">Latin</language>
-				<language id="greek">Greek</language>
+				language ident="en">English</language>
+				language ident="la">Latin</language>
+				language ident="greek">Greek</language>
 			</langUsage>
 		</profileDesc>
 
-		<revisionDesc>
+		<revisionDesc><!--
 			<change>
 				<date>7/14/97</date>
 				<respStmt>
@@ -183,7 +183,7 @@ Added to repository.
 		<change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
 	</teiHeader><text xml:lang="en">
 				<front>
 					<head>THE SPEECH OF M. T. CICERO IN DEFENCE OF LUCIUS FLACCUS.</head>
@@ -198,7 +198,7 @@ Added to repository.
        and remitted it to Rome. Hortensius was joined with Cicero in the defence; as is mentioned by
        Cicero in the last epistle of the second book of the Letters to Atticus; where he says,
        “With how much copiousness, with how much nobleness, with how much elegance, did
-       your friend Hortensius <note anchored="yes">But some editions read here <foreign lang="la">Hortalus</foreign>.</note> extol me to the skies, both when he was speaking of the
+       your friend Hortensius <note anchored="true">But some editions read here <foreign lang="la">Hortalus</foreign>.</note> extol me to the skies, both when he was speaking of the
        praetorship of Flaccus, and of the times of the Allobroges.” </p>
 						<p>We may observe, since there has been some dispute as to the order in which this oration
        should be printed, that it cannot have been spoken before the year 695, A. U. C., in the
@@ -272,7 +272,7 @@ Added to repository.
       should then see whether at that time all good men were my guides or my companions in
       preserving the common safety of <gap desc="******"/>
       <milestone n="frBob1" unit="section"/></p>
-					<p>He preferred saying they were strangled. <note anchored="yes">These fragments are from a
+					<p>He preferred saying they were strangled. <note anchored="true">These fragments are from a
        Vatican MS. first inserted in the text by Nobbe.</note>
       <milestone n="frBob2" unit="section"/></p>
 					<p>What did my friend Caetra wish? <milestone n="frBob3" unit="section"/></p>
@@ -281,7 +281,7 @@ Added to repository.
       really was mine. The senate to a great extent <gap desc="**"/><milestone n="frBob5" unit="section"/></p>
 					<p>O ye immortal gods! that Lentulus <gap desc="***"/>
       <milestone n="frMed" unit="section"/></p>
-					<p> [What <note anchored="yes">This passage is an addition of Beier from a Milan MS. inserted
+					<p> [What <note anchored="true">This passage is an addition of Beier from a Milan MS. inserted
        in the same way by Orellius.</note> was the use of bringing forward foreign evidence,] when
       his domestic life and his natural disposition was notorious? Therefore, I will not, O Decimus
       Laelius, allow you to assume this law and this condition as applicable to yourself and to the
@@ -311,7 +311,7 @@ Added to repository.
       our adversary. What is it, O Laelius? Have you at any time been able to stigmatize the youth
       of Lucius Flaccus, who has passed his time, not in the shade, nor in the common pursuits and
       training of those his age? In truth, even as a boy he went with his father, the consul, to the
-      wars; and yet, even as to this very fact you accused him of something because [something <note anchored="yes">This passage is an addition of Beier from a Milan MS. inserted in the same way
+      wars; and yet, even as to this very fact you accused him of something because [something <note anchored="true">This passage is an addition of Beier from a Milan MS. inserted in the same way
        by Orellius.</note> appeared able to be said so as to excite suspicion.] <milestone n="3" unit="chapter"/><milestone n="6" unit="section"/></p>
 					<p>With what charges, then, O Laelius, do you attack my client being such a man as he is? He
       was in Cilicia a military tribune when Publius Servilius was the general; not a word is said
@@ -550,7 +550,7 @@ Added to repository.
       men who from their fickleness are Greeks, but who, as far as cruelty goes, are barbarians: I
       should entreat you not to leave posterity so dangerous a precedent for their imitation.
        <milestone n="25" unit="section"/> But when the interests of Lucius Flaccus are at stake, a
-      man of whom I may say that the first man who was made consul of his family <note anchored="yes">This is not quite true, for Cicero is referring to Publius Valerius, surnamed
+      man of whom I may say that the first man who was made consul of his family <note anchored="true">This is not quite true, for Cicero is referring to Publius Valerius, surnamed
        Publicola, and he was not the first consul; but was elected as a substitute for Collatinus,
        who, with Brutus, was the first consul.</note> was the first man that was ever consul in this
       city; a man by whose valour the kings were banished, and liberty was established in this
@@ -1149,7 +1149,7 @@ Added to repository.
       Pergamus,—repudiated the advertisements which you produced. Publius Orbius, a man
       both prudent and incorruptible, gave every decision that he did give against you. <milestone n="32" unit="chapter"/></p>
 					<p>You received more favour from Publius Globulus, an intimate friend of mine. I wish that
-      neither he nor I may repent it? <note anchored="yes">There are a few words here hopelessly
+      neither he nor I may repent it? <note anchored="true">There are a few words here hopelessly
        corrupt which are omitted in the translation. Orellius prints it—<foreign lang="la">Flaccum in curia decrevissent veridicas. Adjungis</foreign>, etc., and in a note gives up
        the whole passage as corrupt. Nobbe puts the stop before <foreign lang="la">veridicas</foreign>.</note><gap desc="******"/>
       <milestone n="77" unit="section"/> You add real causes of the enmity between you, that your
@@ -1168,7 +1168,7 @@ Added to repository.
       being absent. [The resolution of the senate and the decree of Flaccus are read.] What next?
       suppose he had not made a decree, but had only issued an edict, who could have found fault
       with him with truth? Are you going to find fault with the letters of my brother, full of
-      humanity and equity. The same <note anchored="yes">This passage is given up by every
+      humanity and equity. The same <note anchored="true">This passage is given up by every
        commentator as irretrievably corrupt.</note> letters which, having been given by me <gap desc="****"/>Read the letters of Quintus Cicero. [The letters of Quintus Cicero are read.]
       What? did the people of Apollonides, when they had an opportunity, report these things to
       Flaccus? <milestone n="79" unit="section"/> Were they not argued in court before Orbius? Were
@@ -1209,7 +1209,7 @@ Added to repository.
       altogether. How much would Decianus rather have taken away from those six hours, if he had
       wished to serve you. In truth, that is what he himself suspects,—you envied the
       ingenuity of your junior counsel. Because he discharged the part which he had undertaken with
-      wit, and examined the witnesses cleverly, <note anchored="yes">What follows here in the text
+      wit, and examined the witnesses cleverly, <note anchored="true">What follows here in the text
        is quite unintelligible, and is given up by Orellius as hopelessly corrupt; and probably
        there is some corruption for the next few lines which I have attempted to
        translate.</note><gap desc="***"/> But if this be probable, at all events it is not very
@@ -1232,7 +1232,7 @@ Added to repository.
       “She was,” says he, “a person of good family.” O man,
       learned in the law! What? cannot inheritances legally come from women of good family?
       “She was,” says he, “under the power of her husband.”
-      Now I understand you; but was she so by use <note anchored="yes">The marriage <foreign lang="la">per coemptionem</foreign> has already been explained. “Marriage was also
+      Now I understand you; but was she so by use <note anchored="true">The marriage <foreign lang="la">per coemptionem</foreign> has already been explained. “Marriage was also
        effected by <foreign lang="la">usus</foreign>, if a woman lived with a man for a whole year
        as his wife.” Smith, Dict, Ant. p. 604 v. <title>Marriage</title>, q. v. </note> or
       by purchase? It could not be by use for legitimate guardianship cannot be annulled except by
@@ -1440,9 +1440,9 @@ Added to repository.
       with tears entreating your aid, and you in tears were listening to me; when I commended to
       your honest and well-proved loyalty the safety of the city and of the citizens. You, O
       Flaccus, being at that time praetor, took the messengers of the general destruction; it was
-      you who arrested that plague <note anchored="yes">He refers to the ambassadors of the
+      you who arrested that plague <note anchored="true">He refers to the ambassadors of the
        Allobroges, and to the letters from Lentulus, etc., which were found in their possession. See
-       the Arguments to the Catilinarian orations.<note anchored="yes"> of the republic which was
+       the Arguments to the Catilinarian orations.<note anchored="true"> of the republic which was
         contained in letters; you brought the proofs of our danger, you brought the aid that was to
         secure our safety to me and to the senate. What thanks were then given you by me! how did
         the senate, how did all good men thank you! Who would then have thought that any good man

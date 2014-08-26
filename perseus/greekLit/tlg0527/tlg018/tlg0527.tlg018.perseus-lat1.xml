@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - 2 Esdras</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,13 +81,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="2 Esdras" type="book">
+            <div part="N" sample="complete" org="uniform" n="2 Esdras" type="book">
                 <head lang="en">2 Esdras</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         liber Ezrae prophetae, filii Sarei, filii Azarei, filii
@@ -216,8 +216,8 @@ et Michae et Iohelis et Abdiae et Ionae
                         et Naum et Abacuc, Sofoniae. Aggei, Zacchariae et
 Malachiae, qui et angelus Domini vocatus est.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         haec dicit Dominus: ego eduxi populum istum de servitute,
@@ -372,8 +372,8 @@ fortiter pro nomine Domini steterunt.
                         tunc dixit mihi angelus: vade et adnuntia populo meo,
 qualia et quanta mirabilia Domini Dei vidisti.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         anno tricesimo ruinae civitatis eram in Babylone, ego
@@ -497,8 +497,8 @@ terram, aut quae gens sic observavit mandata tua?
                         homines quidem per nomina invenies servasse mandata tua,
 gentes autem non invenies.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et respondit ad me angelus qui missus est ad me, cui nomen
@@ -688,8 +688,8 @@ quis erit in diebus illis?
 ex parte possum tibi dicere, de vita autem tua non sum missus
 dicere tibi, sed nescio.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         de signis autem: ecce dies venient, et adprehendentur qui
@@ -879,8 +879,8 @@ creaturae et fortitudinem iuventutis praeterientis. et dixi:
 rogo domine, si inveni gratiam ante oculos tuos, demonstra
 servo tuo per quem visitas creaturam tuam.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et dixit ad me: initium terreni orbis, et antequam starent
@@ -1077,8 +1077,8 @@ eorum.
                         et si propter nos creatum est saeculum, quare non
 hereditatem possidemus nostrum saeculum? usquequo haec?
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et factum est cum finissem loqui verba haec, et missus est
@@ -1557,8 +1557,8 @@ non poterit decies millesima pars hominum vivificari,
 et deleverit multitudinem contemptionum, non fortassis
 derelinquentur innumerabilem multitudinem nisi pauci valde.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et respondit ad me et dixit: hoc saeculum fecit Altissimus
@@ -1765,8 +1765,8 @@ vitam.
 quae incipies facere in novissimis, sed non demonstrasti mihi
 quo tempore.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et respondit ad me et dixit: metiens metire in temet ipso,
@@ -1922,8 +1922,8 @@ honorificabamus valde Fortem.
                         et factum est cum crevisset et venissem accipere illi
 uxorem, et feci diem epuli.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et factum est cum introisset filius meus in thalamo suo,
@@ -2124,8 +2124,8 @@ diebus.
                         <milestone unit="verse" n="60"/>
                         et dormivi illam noctem et aliam sicut dixerat mihi.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et factum est secunda nocte, et vidi somnium, et ecce
@@ -2272,8 +2272,8 @@ et ungues tui pessimi et omne corpus tuum vanum,
                         uti refrigeret omnis terra et relevetur liberata de tua vi
 et speret iudicium et misericordiam eius qui fecit eam.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et factum est dum loqueretur leo verba haec ad aquilam, et
@@ -2435,8 +2435,8 @@ veniam ad vos post dies istos.
 mandavit, et manducabam de floribus solummodo agri, de herbis
 facta est mihi esca in diebus illis.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et factum est post dies septem, et somniavi somnium nocte.
@@ -2634,8 +2634,8 @@ et laudans Altissimum de mirabilibus, quae per tempus faciebat,
                         et quoniam gubernat tempora et quae sunt in temporibus
 inlata. et sedi ibi tribus diebus.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         et factum est tertio die, et ego sedebam sub quercu,
@@ -2788,8 +2788,8 @@ sapientibus de populo tuo.
                         in his enim est vena intellectus et sapientiae fons et
 scientiae flumen. et feci sic.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         ecce loquere in aures plebi meae sermones prophetiae quos
@@ -2857,8 +2857,8 @@ convertendos in se et reddere quae dederunt illis.
                         sicut faciunt usque hodie electis meis, sic faciam et
 reddam in sinum ipsorum. haec dicit Dominus Deus:
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="22"/>
                         non parcet dextera mea super peccantes nec cessabit
@@ -2995,8 +2995,8 @@ consument.
                         et natos tuos captivabunt et honestatem tuam spoliabunt et
 gloriam faciei tuae exterminabunt.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         vae tibi, Babylon et Asia, vae tibi, Aegypte et Syria.
@@ -3235,8 +3235,8 @@ iniquitatibus suis, quemadmodum ager constringitur a silva et
 spinis tegitur semita eius, per quam non transiet homo, et
 excluditur et mittitur ad devorationem ignis.
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

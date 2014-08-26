@@ -15,7 +15,7 @@
 <name>Elli Mylonas</name>
 <name>David Smith</name>
 </respStmt>
-<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt>  <sourceDesc>
+<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>  <sourceDesc>
 				<biblStruct>
 					<monogr>
 						<author>M. Tullius Cicero</author>
@@ -31,41 +31,41 @@
 		</fileDesc>
 
 		<encodingDesc>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Corn." doctype="TEI.2">
 				<state delim=" " unit="text"/>
-				<state unit="speech"/>
+				refState unit="speech"/>
 			</refsDecl>
 		</encodingDesc>
 
 		<profileDesc>
 			<langUsage>
-				<language id="en">English</language>
-				<language id="la">Latin</language>
-				<language id="greek">Greek</language>
+				language ident="en">English</language>
+				language ident="la">Latin</language>
+				language ident="greek">Greek</language>
 			</langUsage>
 		</profileDesc>
 
-		<revisionDesc>
+		<revisionDesc><!--
 			<change>
 				<date>7/14/97</date>
 				<respStmt>
@@ -183,7 +183,7 @@ Added to repository.
 		<change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
 	</teiHeader><text xml:lang="en">
 				<front>
 					<head>THE ORATION OF M. T. CICERO IN DEFENCE OF L. MURENA, PROSECUTED FOR BRIBERY.</head>
@@ -213,7 +213,7 @@ Added to repository.
 					<milestone n="1" unit="chapter"/>
 					<milestone n="1" unit="section"/>
 					<p>What I entreated of the immortal gods, O judges, according to the manners and institutions
-      of our ancestors, on that day when, after taking the auspices in the <foreign lang="la">comitia centuriata</foreign>, <note anchored="yes">The <foreign lang="la">comitia
+      of our ancestors, on that day when, after taking the auspices in the <foreign lang="la">comitia centuriata</foreign>, <note anchored="true">The <foreign lang="la">comitia
         centuriata</foreign>, or as they were sometimes called <foreign lang="la">majora</foreign>,
        were the assembly in which the people gave their votes according to the classification
        instituted by Servius Tullius; they were held in the Campus Martius without the city, and in
@@ -243,9 +243,9 @@ Added to repository.
       his enemies upon his honour, his reputation, and all his fortunes. <milestone n="2" unit="chapter"/><milestone n="3" unit="section"/></p>
 					<p>And first of all I will answer Marcus Cato a man who directs his life by a certain rule and
       system and who most carefully weighs the motives of every duty about my own duty. Cato says it
-      is not right that I who have been consul and the very passer <note anchored="yes">There had
+      is not right that I who have been consul and the very passer <note anchored="true">There had
        been several previous laws against bribery and corruption (<foreign lang="la">de
-        ambitu</foreign>). The <foreign lang="la">Lex Acilia</foreign>, passed B.C. <date value="-67">67</date>, imposed a fine on the offending party, with exclusion from the senate
+        ambitu</foreign>). The <foreign lang="la">Lex Acilia</foreign>, passed B.C. date when="-67">67</date>, imposed a fine on the offending party, with exclusion from the senate
        and from all public offices. The <foreign lang="la">Lex Tullia</foreign>, passed in Cicero's
        consulship, added banishment for ten years; and, among other restrictions, forbade any one to
        exhibit gladiators within two years of his being a candidate, unless he was required to do so
@@ -359,7 +359,7 @@ Added to repository.
       served under his father when general, he would have seemed either to have been afraid of the
       enemy, or of the command of his father, or else to have been repudiated by his father. Shall
       we say that, when all the sons who wear the <foreign lang="la">praetexta</foreign>
-      <note anchored="yes">The <foreign lang="la">toga praetexta</foreign> was a robe bordered with
+      <note anchored="true">The <foreign lang="la">toga praetexta</foreign> was a robe bordered with
        purple worn by the higher magistrates, and by freeborn children till they arrived at the age
        of manhood.</note> are accustomed to sit on the chariot of those who are celebrating a
       triumph, this man ought to have shunned adorning the triumph of his father with military
@@ -408,7 +408,7 @@ Added to repository.
       can neither be surpassed in worth by you, nor can himself surpass you in worth. You have
       spoken slightingly of the family of Lucius Murena, you have extolled your own; but if you
       dwell on this topic so as to allow no one to be considered as born of a good family, unless he
-      be a patrician, you will compel the common people again to secede to the Aventine Hill. <note anchored="yes">This refers to the time of Appius the <foreign lang="la">decemvir</foreign>,
+      be a patrician, you will compel the common people again to secede to the Aventine Hill. <note anchored="true">This refers to the time of Appius the <foreign lang="la">decemvir</foreign>,
        when the soldiers, at the call of Virginius, after the death of Virginia, occupied the
        Aventine, and were joined by great part of the plebs, demanding the abolition of the
        decemvirate.</note> But if there are honourable and considerable families among the
@@ -536,7 +536,7 @@ Added to repository.
       men knew whether a thing might be lawfully done or not; for men ordinarily had no records;
       those were possessed of great power who were consulted, so that even days for consultation
       were begged of them beforehand, as from the Chaldean astrologers. A certain notary was found,
-      by name Cnaeus Flavius, who could deceive <note anchored="yes">The Latin strictly is,
+      by name Cnaeus Flavius, who could deceive <note anchored="true">The Latin strictly is,
        “pierce the eyes of ravens.” It was a proverbial expression.</note> the
       most wary, and who set the people records to be learnt by heart each day, and who pilfered
       their own learning from the profoundest lawyers. So they, being angry because they were
@@ -573,7 +573,7 @@ Added to repository.
       on account of the inferiority of their understanding, should be under the protection of
       trustees. These men have found out classes of trustees, whose power is subordinate to that of
       the women. The one party did not wish the domestic sacrifices to be abolished in families; by
-      the ingenuity of the others old men were found to marry by the form called <foreign lang="la">coemptio</foreign>, <note anchored="yes"><foreign lang="la">Coemptio</foreign> was
+      the ingenuity of the others old men were found to marry by the form called <foreign lang="la">coemptio</foreign>, <note anchored="true"><foreign lang="la">Coemptio</foreign> was
        “a ceremony of marriage consisting in a mock sale, whereby the bride and bridegroom
        sold themselves to each other.” Riddle in voce. “<foreign lang="la">Coemptio</foreign> was effected by <foreign lang="la">mancipatio</foreign>, and
        consequently the wife was in <foreign lang="la">mancipio</foreign>.”—Smith, Dict. Ant. p. 603, § v., v.
@@ -752,7 +752,7 @@ Added to repository.
       underwent himself. He was as fortunate as he is brave.” What weight do you not
       suppose this must have to gaining a reputation and good-will among men? Indeed, if there is a
       sort of superstition in the <foreign lang="la">comitia</foreign>, that up to this time the
-      omen to be drawn from the vote of the prerogative <note anchored="yes">In the <foreign lang="la">comitia centuriata</foreign> the people voted in their centuries; the order in
+      omen to be drawn from the vote of the prerogative <note anchored="true">In the <foreign lang="la">comitia centuriata</foreign> the people voted in their centuries; the order in
        which the centuries voted was decided by lot, and that which gave it a vote first was called
        the <foreign lang="la">centuria praerogativa</foreign>. The question of a <foreign lang="la">tribus praerogativa</foreign> is a more disputed point; but on this see Smith, Dict. Ant.
        p. 997, v. <foreign lang="la">Tribus</foreign>, (Roman.)</note> tribe has always proved true,
@@ -768,7 +768,7 @@ Added to repository.
       wonder that it was of great service to Lucius Murena with the people. <milestone n="39" unit="section"/> But if we ourselves, who, from our constant business, have but little time
       for amusement, and who are able to derive many pleasures of another sort from our business
       itself; are still pleased and interested by exhibitions of games, why should you marvel at the
-      ignorant multitude being so? <milestone n="40" unit="section"/> Lucius Otho, <note anchored="yes">This refers to the law of Lucius Roscius Otho, (called <foreign lang="la">Roscia Lex</foreign> by Horace,) by which the fourteen rows of seats next to those of the
+      ignorant multitude being so? <milestone n="40" unit="section"/> Lucius Otho, <note anchored="true">This refers to the law of Lucius Roscius Otho, (called <foreign lang="la">Roscia Lex</foreign> by Horace,) by which the fourteen rows of seats next to those of the
        senators were reserved for the knights.</note> a brave man, and an intimate friend of mine,
       restored not only its dignity, but also its pleasure to the equestrian order; and, therefore,
       this law which relates to the games is the most acceptable of all laws, because by it that
@@ -885,7 +885,7 @@ Added to repository.
       slightest personal advantage. Do you think that those proposals which, with my most willing
       consent, the senate rejected in a very full house, were but a slight hindrance to you? You
       demanded the confusion of the votes of all the centuries, the extension of the Manilian law,
-       <note anchored="yes">This was not the Manilian law, in support of which Cicero spoke to
+       <note anchored="true">This was not the Manilian law, in support of which Cicero spoke to
        confer the command in Asia on Pompeius; but a law enacting that the votes should be counted
        without any regard to the centuries in which they were given; but this law was repealed soon
        after its enactment. </note> the equalization or all interest and dignity, and <pb n="354"/>
@@ -1099,7 +1099,7 @@ Added to repository.
       little more inclined to lenity; you would not when you were not induced by any enmity, or
       provoked by any personal injury, accuse a most virtuous man, a man of the highest rank and the
       greatest integrity; you would consider that as fortune had entrusted the guardianship of the
-      same year to you <note anchored="yes">Cato was tribune elect.</note> and to Murena, that you
+      same year to you <note anchored="true">Cato was tribune elect.</note> and to Murena, that you
       were connected with him by some certain political union; and the severe things which you have
       said in the senate you would either not have said, or you would have guarded against their
       being applied to him, or you would have interpreted them in the mildest sense. <milestone n="65" unit="section"/> And even you yourself, (at least that is my opinion and expectation,)
@@ -1207,7 +1207,7 @@ Added to repository.
       The men of the poorer classes first, who had not yet obtained from those of their own tribe
        <gap desc="***"/></p>
 					<p>[A considerable break in the text.] <milestone n="35" unit="chapter"/><milestone n="73" unit="section"/></p>
-					<p><gap desc="***"/> that the prefect of the carpenters <note anchored="yes">Besides the
+					<p><gap desc="***"/> that the prefect of the carpenters <note anchored="true">Besides the
        classes into which the centuries were divided and the four supernumerary centuries of
         <foreign lang="la">accensi</foreign>, <foreign lang="la">velati</foreign>, <foreign lang="la">proletarii</foreign>, and <foreign lang="la">capite censi</foreign>, there were
        three centuries classed according to their occupation. The <foreign lang="la">fabri</foreign>, or carpenters, who were attached to the centuries of the first class; the
@@ -1253,7 +1253,7 @@ Added to repository.
       the Roman people, in the name of his uncle Africanus, was asked by Maximus to prepare a couch
       for the banquet as Tubero was a son of the sister of the same Africanus. And he, a most
       learned man and a Stoic, covered for that occasion some couches made in the Carthaginian
-      fashion, with skins of kids, and exhibited some Samian <note anchored="yes">Samian vessels
+      fashion, with skins of kids, and exhibited some Samian <note anchored="true">Samian vessels
        were made of an inferior earthenware; Carthaginian couches were very low and narrow.</note>
       vessels, as if Diogenes the Cynic had been dead, and not as if he were paying respect to the
       obsequies of that godlike Africanus; a man with respect to whom Maximus, when he was
@@ -1274,7 +1274,7 @@ Added to repository.
       worth—do not in every case adhere to. For why do you ark any one to take pains for
       you, to assist you? You ask me to make you governor over myself to entrust myself to you. What
       is the meaning of this? Ought I to be asked this by you, or should not you rather be asked by
-      me to undertake labour and danger for the sake of my safety? <milestone n="77" unit="section"/> Nay more, why is it that you have a nomenclator <note anchored="yes">The <foreign lang="la">nomenclator</foreign> was a slave who accompanied the candidate in going his rounds, and
+      me to undertake labour and danger for the sake of my safety? <milestone n="77" unit="section"/> Nay more, why is it that you have a nomenclator <note anchored="true">The <foreign lang="la">nomenclator</foreign> was a slave who accompanied the candidate in going his rounds, and
        told him the name of every one he met, so that he might be able to accost them as if they
        were personally known to himself.</note> with you? for in so doing, you are practicing a
       trick and a deceit. For if it be an honourable thing for your fellow-citizens to be addressed
@@ -1327,7 +1327,7 @@ Added to repository.
       condition, that he may defend it from these great dangers. <milestone n="38" unit="chapter"/><milestone n="81" unit="section"/></p>
 					<p>And do you not see, O judges, what other evil there is added to these evils? I am addressing
       you,—you, O Cato. Do you not foresee a storm in your year of office? for in
-      yesterday's assembly there thundered out the mischievous voice of a tribune <note anchored="yes">He means Quintus Metellus Nepos, the same man who afterwards prevented his
+      yesterday's assembly there thundered out the mischievous voice of a tribune <note anchored="true">He means Quintus Metellus Nepos, the same man who afterwards prevented his
        making an address to the people on his resigning his consulship.</note> elect one of your own
       colleagues; against whom your own mind took many precautions, and so too did all good men,
       when they invited you to stand for the tribuneship. Everything which has been plotted for the

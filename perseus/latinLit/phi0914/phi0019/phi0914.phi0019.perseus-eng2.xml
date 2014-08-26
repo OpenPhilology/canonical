@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>The History of Rome by Titus Livius, books nine to twenty-six - 9</title>
@@ -18,8 +18,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:NEH">The National Endowment for the Humanities</funder>
-            </titleStmt>
-            <extent>about 1.4 Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -52,20 +52,20 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter" n="chunk"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter" n="chunk"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English </language>
-                <language id="greek">Greek </language>
-                <language id="la">Latin </language>
-                <language id="fr">French </language>
+                language ident="en">English </language>
+                language ident="greek">Greek </language>
+                language ident="la">Latin </language>
+                language ident="fr">French </language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>4/5/2006</date>
                 <respStmt>
@@ -74,11 +74,11 @@
                 </respStmt>
                 <item>initial file </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="9" type="book">
+            <div part="N" sample="complete" org="uniform" n="9" type="book">
                 <head>BOOK IX.</head>
                 <argument>
                     <p>
@@ -353,7 +353,7 @@
                     The shops were shut; and all business ceased in the forum, spontaneously, before it was proclaimed.
                     <milestone n="5" unit="section"/>
                     Laticlaves
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         In the original,
                         <hi rend="italics">lati clavi.</hi>
                         The latus clavus was a tunic, or vest, or- namented with a broad stripe of purple
@@ -811,7 +811,7 @@
                     and those who give it pre-eminence on account that the Roman people have been defeated, though not in any entire war, yet in several battles, whereas Alexander was never once unsuccessful in a single fight, do not consider that they are comparing the actions of one man, and that a young man, with the exploits of a nation waging wars now eight hundred years.
                     <milestone n="11" unit="section"/>
                     Can we wonder if, when on the one side more ages are numbered than years on the other, fortune varied more in so long a lapse of time than in the short term of thirteen years?
-                    <note anchored="yes" place="unspecified">The duration of Alexander's military career.</note>
+                    <note anchored="true" place="unspecified">The duration of Alexander's military career.</note>
                     <milestone n="12" unit="section"/>
                     But why not compare the success of one general with that of another? How many Roman commanders might I name who never lost a battle? In the annals of the magistrates, and the records, we may run over whole pages of consuls and dictators, with whose bravery, and successes also, the Roman
                     <pb n="586" id="p.586"/>
@@ -1506,7 +1506,7 @@
                     thanks, for so very meritoriously subduing his passion, he still persevered in obstinate silence, and dismissed them without any answer, or mention of what he had done: a proof that he felt an extraordinary degree of resentment, which had been suppressed within his breast.
                     <milestone n="14" unit="section"/>
                     Papirius appointed Caius Junius Bubulcus master of the horse; and, as he was proceeding in an assembly of the Curiae
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The
                         <hi rend="italics">comitia curiata,</hi>
                         or assemblies of the curie, alone had the power of conferring military command; no magistrate, therefore, could assume the command without the previous order of their assembly. In time, this came to be a mere matter of form; yet the practice always continued to be observed.
@@ -1859,7 +1859,7 @@
                     <milestone n="15" unit="section"/>
                     And this procedure, we are told, gave such universal satisfaction, that, by this regulation in the orders of the state, he obtained the surname of Maximus, which he had not obtained by his many victories. The annual review of the knights, on the ides of July, is also said to have been instituted by him.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

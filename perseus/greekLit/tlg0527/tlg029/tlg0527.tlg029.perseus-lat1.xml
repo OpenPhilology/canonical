@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - Proverbs</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,13 +81,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="Proverbs" type="book">
+            <div part="N" sample="complete" org="uniform" n="Proverbs" type="book">
                 <head lang="en">Proverbs</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">parabolae Salomonis filii David regis Israhel</s>
@@ -172,8 +172,8 @@ angustia
 abundantia perfruetur malorum timore sublato
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">fili mi si susceperis sermones meos et mandata mea absconderis penes te</s>
@@ -223,8 +223,8 @@ domus eius et ad impios semitae ipsius
                         <milestone unit="verse" n="22"/>
                         <s part="N">impii vero de terra perdentur et qui inique agunt auferentur ex ea</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">fili mi ne obliviscaris legis meae et praecepta mea custodiat cor tuum</s>
@@ -300,8 +300,8 @@ tuo et describe in tabulis cordis tui
                         <milestone unit="verse" n="35"/>
                         <s part="N">gloriam sapientes possidebunt stultorum exaltatio ignominia</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">audite filii disciplinam patris et adtendite ut sciatis prudentiam</s>
@@ -358,8 +358,8 @@ tuo et describe in tabulis cordis tui
                         <milestone unit="verse" n="27"/>
                         <s part="N">ne declines ad dexteram et ad sinistram averte pedem tuum a malo</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">fili mi adtende sapientiam meam et prudentiae meae inclina aurem tuam</s>
@@ -411,8 +411,8 @@ te omni tempore in amore illius delectare iugiter
                         <milestone unit="verse" n="23"/>
                         <s part="N">ipse morietur quia non habuit disciplinam et multitudine stultitiae suae decipietur</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">fili mi si spoponderis pro amico tuo defixisti apud extraneum manum tuam</s>
@@ -489,8 +489,8 @@ tuum
                         <milestone unit="verse" n="35"/>
                         <s part="N">nec adquiescet cuiusquam precibus nec suscipiet pro redemptione dona plurima</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">fili mi custodi sermones meos et praecepta mea reconde tibi</s>
@@ -556,8 +556,8 @@ ad laqueum et nescit quia de periculo animae illius agitur
                         <milestone unit="verse" n="27"/>
                         <s part="N">viae inferi domus eius penetrantes interiora mortis</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">numquid non sapientia clamitat et prudentia dat vocem suam</s>
@@ -639,8 +639,8 @@ terrae
                         <milestone unit="verse" n="36"/>
                         <s part="N">qui autem in me peccaverit laedet animam suam omnes qui me oderunt diligunt mortem</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">sapientia aedificavit sibi domum excidit columnas septem</s>
@@ -679,8 +679,8 @@ terrae
                         <milestone unit="verse" n="18"/>
                         <s part="N">et ignoravit quod gigantes ibi sint et in profundis inferni convivae eius</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -750,8 +750,8 @@ vero stultus maestitia est matris suae
                         <milestone unit="verse" n="32"/>
                         <s part="N">labia iusti considerant placita et os impiorum perversa</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">statera dolosa abominatio apud Dominum et pondus aequum voluntas eius</s>
@@ -819,8 +819,8 @@ investigator malorum est opprimetur ab eis
                         <milestone unit="verse" n="31"/>
                         <s part="N">si iustus in terra recipit quanto magis impius et peccator</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">qui diligit disciplinam diligit scientiam qui autem odit increpationes insipiens est</s>
@@ -882,8 +882,8 @@ est repentinus concinnat linguam mendacii
                         <milestone unit="verse" n="28"/>
                         <s part="N">in semita iustitiae vita iter autem devium ducit ad mortem</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">filius sapiens doctrina patris qui autem inlusor est non audit cum arguitur</s>
@@ -945,8 +945,8 @@ adquiescit arguenti glorificabitur
                         <milestone unit="verse" n="25"/>
                         <s part="N">iustus comedit et replet animam suam venter autem impiorum insaturabilis</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">sapiens mulier aedificavit domum suam insipiens instructam quoque destruet manibus</s>
@@ -1022,8 +1022,8 @@ segetes ibi manifesta fortitudo bovis
                         <milestone unit="verse" n="35"/>
                         <s part="N">acceptus est regi minister intellegens iracundiam eius inutilis sustinebit</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">responsio mollis frangit iram sermo durus suscitat furorem</s>
@@ -1098,8 +1098,8 @@ increpationibus possessor est cordis
                         <milestone unit="verse" n="33"/>
                         <s part="N">timor Domini disciplina sapientiae et gloriam praecedit humilitas</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">hominis est animum praeparare et Dei gubernare linguam</s>
@@ -1168,8 +1168,8 @@ increpationibus possessor est cordis
                         <milestone unit="verse" n="33"/>
                         <s part="N">sortes mittuntur in sinu sed a Domino temperantur</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="17" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="17" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">melior est buccella sicca cum gaudio quam domus plena victimis cum iurgio</s>
@@ -1231,8 +1231,8 @@ ruina laetatur alterius non erit inpunitus
                         <milestone unit="verse" n="28"/>
                         <s part="N">stultus quoque si tacuerit sapiens putabitur et si conpresserit labia sua intellegens</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="18" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="18" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">occasiones quaerit qui vult recedere ab amico omni tempore erit exprobrabilis</s>
@@ -1289,8 +1289,8 @@ ad irascendum facilem quis poterit sustinere
                         <milestone unit="verse" n="24"/>
                         <s part="N">vir amicalis ad societatem magis amicus erit quam frater</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="19" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="19" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">melior est pauper qui ambulat in simplicitate sua quam torquens labia insipiens</s>
@@ -1358,8 +1358,8 @@ corripueris sapientem intelleget disciplinam
                         <milestone unit="verse" n="29"/>
                         <s part="N">parata sunt derisoribus iudicia et mallei percutientes stultorum corporibus</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="20" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="20" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">luxuriosa res vinum et tumultuosa ebrietas quicumque his delectatur non erit sapiens</s>
@@ -1422,8 +1422,8 @@ corripueris sapientem intelleget disciplinam
                         <milestone unit="verse" n="30"/>
                         <s part="N">livor vulneris absterget mala et plagae in secretioribus ventris</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="21" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="21" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">sicut divisiones aquarum ita cor regis in manu Domini quocumque voluerit inclinabit illud</s>
@@ -1488,8 +1488,8 @@ corripueris sapientem intelleget disciplinam
                         <milestone unit="verse" n="31"/>
                         <s part="N">equus paratur ad diem belli Dominus autem salutem tribuet</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="22" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="22" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">melius est nomen bonum quam divitiae multae super argentum et aurum gratia bona</s>
@@ -1550,8 +1550,8 @@ corripueris sapientem intelleget disciplinam
                         <milestone unit="verse" n="29"/>
                         <s part="N">vidisti virum velocem in opere suo coram regibus stabit nec erit ante ignobiles</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="23" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="23" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">quando sederis ut comedas cum principe diligenter adtende quae posita sunt ante faciem tuam</s>
@@ -1637,8 +1637,8 @@ eorum qui carnes ad vescendum conferunt
 ego non sensi quando evigilabo et rursum vina repperiam
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="24" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="24" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">ne aemuleris viros malos nec desideres esse cum eis</s>
@@ -1719,8 +1719,8 @@ eius spinae et maceria lapidum destructa erat
                         <milestone unit="verse" n="34"/>
                         <s part="N">et veniet quasi cursor egestas tua et mendicitas quasi vir armatus</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="25" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="25" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">haec quoque parabolae Salomonis quas transtulerunt viri Ezechiae regis Iuda</s>
@@ -1794,8 +1794,8 @@ scrutator est maiestatis opprimitur gloria
 potest in loquendo cohibere spiritum suum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="26" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="26" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">quomodo nix aestate et pluvia in messe sic indecens est stulto gloria</s>
@@ -1860,8 +1860,8 @@ labia tumentia cum pessimo corde sociata
                         <milestone unit="verse" n="28"/>
                         <s part="N">lingua fallax non amat veritatem et os lubricum operatur ruinas</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="27" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="27" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">ne glorieris in crastinum ignorans quid superventura pariat dies</s>
@@ -1934,8 +1934,8 @@ desuper pilo non auferetur ab eo stultitia eius
 domus tuae et ad victum ancillis tuis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="28" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="28" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">fugit impius nemine persequente iustus autem quasi leo confidens absque terrore erit</s>
@@ -2010,8 +2010,8 @@ non est peccatum particeps homicidae est
                         <milestone unit="verse" n="28"/>
                         <s part="N">cum surrexerint impii abscondentur homines cum illi perierint multiplicabuntur iusti</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="29" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="29" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2077,8 +2077,8 @@ dimittitur voluntati suae confundet matrem suam
                         <milestone unit="verse" n="27"/>
                         <s part="N">abominantur iusti virum impium et abominantur impii eos qui in recta sunt via</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="30" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="30" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2188,8 +2188,8 @@ butyrum et qui vehementer emungitur elicit sanguinem et qui
 provocat iras producit discordias
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="31" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="31" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">verba Lamuhel regis visio qua erudivit eum mater sua</s>
@@ -2257,8 +2257,8 @@ enim domestici eius vestiti duplicibus
                         <milestone unit="verse" n="31"/>
                         <s part="N">thau date ei de fructu manuum suarum et laudent eam in portis opera eius</s>
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

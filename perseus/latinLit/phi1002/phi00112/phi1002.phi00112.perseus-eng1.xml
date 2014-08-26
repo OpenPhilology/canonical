@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Inst." type="work">Institutio Oratoria, books 10-12 - 12</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -39,23 +39,23 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter"/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter"/>
+                refState unit="section"/>
             </refsDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="page"/>
+            <refsDecl
+                refState unit="page"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
-                <language id="la">Latin</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
+                language ident="la">Latin</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -64,12 +64,12 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
             <pb id="p.353"/>
-            <div1 part="N" sample="complete" org="uniform" n="12" type="book">
+            <div part="N" sample="complete" org="uniform" n="12" type="book">
                 <head>Book XII</head>
                 <head>Introduction</head>
                 <p>
@@ -145,7 +145,7 @@ greatly, when forgiveness is assured us if we fail.
                     The orator then, whom I am concerned to form,
 shall be the orator as defined by Marcus Cato,
                     <quote>a good man, skilled in speaking.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp. I. Pr.</hi>
                         9.
                     </note>
@@ -319,7 +319,7 @@ consul was magnificent and his administration of his
 province a model of integrity, while he refused to
                     <pb id="p.365"/>
                     become one of the twenty commissioners,
-                    <note anchored="yes" place="unspecified">For the distribution of the Campanian lands.</note>
+                    <note anchored="true" place="unspecified">For the distribution of the Campanian lands.</note>
                     and in the
 grievous civil wars which afflicted his generation
 beyond all others, neither hope nor fear ever deterred
@@ -347,9 +347,9 @@ of man's nature.
 that he should not be called a wise man, like the
 sages who preceded him, but rather a student of
 wisdom?
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i. e.</hi>
-                        <foreign lang="greek">filo/sofos,</foreign>
+                        <foreign xml:lang="grc">filo/sofos,</foreign>
                         a term of which he was reputed the
 inventor.
                     </note>
@@ -372,7 +372,7 @@ on the loftiest pinnacle of eloquence, and can discover scarcely a single defici
 think he would have pruned away (for the general
 view of the learned is that he possessed many virtues
 and a few faults, and he himself
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Brut.</hi>
                         xci. 316.
                         <hi rend="italics">Orat.</hi>
@@ -390,7 +390,7 @@ approached more nearly,
                     <milestone n="21" unit="section"/>
                     and indeed had I felt otherwise in this connexion, I might have defended my
 point with greater boldness and freedom.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Quintilian's reverence for Cicero is such that he feels
 hampered in maintaining his thesis.
                     </note>
@@ -408,7 +408,7 @@ who will not allow sufficient credit even for eloquence
 to Cicero and Demosthenes, although Cicero himself
 does not regard Demosthenes as flawless, but asserts
 that he sometimes nods,
-                    <note anchored="yes" place="unspecified">See x. i. 24.</note>
+                    <note anchored="true" place="unspecified">See x. i. 24.</note>
                     while even Cicero fails to
 satisfy Brutus and Calvus (at any rate they criticised
 his style to his face), or to win the complete approval
@@ -464,7 +464,7 @@ things.
                     Was not this the man conceived by Virgil
 and described as quelling a riot when torches and
 stones have begun to fly:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         i. 151
                         <hi rend="italics">sqq.</hi>
@@ -543,7 +543,7 @@ good) asking,
                     <quote>
                         Why then is there so much art in connexion with eloquence? Why have you talked so
 much of 'glosses,'
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             <hi rend="italics">color</hi>
                             is a technical term for
                             <quote>
@@ -686,7 +686,7 @@ the election to the consulate of Cornelius Rufinus,
 personal enemy, merely because he knew that he
 was a capable general and the state was threatened
 with war.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The late is uncertain, but the reference must be either to
 the Samnite war of 290 or the war with Pyrrhus.
                     </note>
@@ -770,7 +770,7 @@ the precepts of philosophy and the dictates of reason.
                     <pb id="p.385"/>
                     third book of the
                     <hi rend="italics">de Oratore,</hi>
-                    <note anchored="yes" place="unspecified">Chs. xx. xxvii. and xxxi.</note>
+                    <note anchored="true" place="unspecified">Chs. xx. xxvii. and xxxi.</note>
                     affirms that all that is
 said concerning equity, justice, truth and the good,
 and their opposites, forms part of the studies of an
@@ -897,7 +897,7 @@ orator. For vast as is the variety of cases (since in
                     <pb id="p.391"/>
                     them, as I have pointed out in previous books, we seek
 to discover certain points by conjecture,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See
                         <milestone n="3" unit="chapter"/>
                         <milestone n="1" unit="section"/>
@@ -905,19 +905,19 @@ to discover certain points by conjecture,
                     </note>
                     reach our
 conclusions in others by means of definition,
-                    <note anchored="yes" place="unspecified">See III. vi. 45.</note>
+                    <note anchored="true" place="unspecified">See III. vi. 45.</note>
                     dispose
 of others on legal grounds' or by raising the question of competence,
-                    <note anchored="yes" place="unspecified">See ill. vi. 23.</note>
+                    <note anchored="true" place="unspecified">See ill. vi. 23.</note>
                     while other points are established by syllogism
-                    <note anchored="yes" place="unspecified">See III. vi. 15.</note>
+                    <note anchored="true" place="unspecified">See III. vi. 15.</note>
                     and others involve contradictions
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Probably an allusion to contradictory laws. See VIII. vii.
                     </note>
                     or are diversely interpreted owing to some
 ambiguity of language
-                    <note anchored="yes" place="unspecified">See VII. ix.</note>
+                    <note anchored="true" place="unspecified">See VII. ix.</note>
                     ), there is scarcely a single
 one which does not at some point or another involve
 the discussion of equity and virtue, while there are
@@ -958,7 +958,7 @@ there are numerous points which require to be
                     determined by appropriate and concise definitions
 (hence the
                     <hi rend="italics">definitive basis</hi>
-                    <note anchored="yes" place="unspecified">See III vi. 31.</note>
+                    <note anchored="true" place="unspecified">See III vi. 31.</note>
                     of cases), it is surely
 desirable that the orator should be instructed in
 such things by those who have devoted special
@@ -977,7 +977,7 @@ non-existent or false.
                 </p>
                 <p>
                     Physics
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         natural phlilosophy in the widest sense.
                     </note>
@@ -988,7 +988,7 @@ proportion as a loftier inspiration is required to
 speak of things divine than of things human; and
 further it includes within its scope the whole of
 ethics, which as we have shown
-                    <note anchored="yes" place="unspecified">§ 15.</note>
+                    <note anchored="true" place="unspecified">§ 15.</note>
                     are essential to the
 very existence of oratory.
                     <milestone n="21" unit="section"/>
@@ -1021,7 +1021,7 @@ orators of Greece, sat at the feet of Plato.
                     <milestone n="23" unit="section"/>
                     As for
 Cicero, he has often proclaimed
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Or. iii 12</hi>
                     </note>
                     the fact that he
@@ -1041,8 +1041,8 @@ said to contend for this honour.
 place Epicurus banishes us from his presence without
 more ado, since he bids all his followers to fly from
 learning in the swiftest ship that they can find.
-                    <note anchored="yes" place="unspecified">
-                        <foreign lang="greek">paidei/an pa=san a)ka/tion a)ra/menos feu=ge.</foreign>
+                    <note anchored="true" place="unspecified">
+                        <foreign xml:lang="grc">paidei/an pa=san a)ka/tion a)ra/menos feu=ge.</foreign>
                     </note>
                     Nor would Aristippus, who regards the highest good
 as consisting in physical pleasure, be likely to exhort
@@ -1064,7 +1064,7 @@ boast that they have a form of study which is near
 akin to oratory. For it was with them in the main
 that originated the practice of declaiming on general
 questions
-                    <note anchored="yes" place="unspecified">See II. i. 9. III. v. 5. and 10.</note>
+                    <note anchored="true" place="unspecified">See II. i. 9. III. v. 5. and 10.</note>
                     by way of exercise. The Stoics, though
 driven to admit that, generally speaking, their teachers
 have been deficient both in fullness and charm of
@@ -1201,7 +1201,7 @@ that may be of assistance to it.
 not wish my orator to be helpless, if it so chance
 that he puts in an appearance for the preliminary
 proceedings to which the hour before the commencement of the trial
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Ad horam constare</hi>
                         appears to be a technical
                         <hi rend="italics">term</hi>
@@ -1266,7 +1266,7 @@ Marcus Cato was at once a great orator and an
 expert lawyer, while Scaevola and Servius Sulpicius
                     <pb id="p.407"/>
                     were universally allowed to be eloquent as well.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i. e.</hi>
                         as well as experts on the law.
                     </note>
@@ -1289,7 +1289,7 @@ of eloquence, have betaken themselves to the study
 of law as a refuge for their indolence. Some of
 these transfer their attention to the praetor's edicts
 or the civil law,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The piraetor's edicts were displayed on a whitened board
 (
                         <hi rend="italics">in albo</hi>
@@ -1300,7 +1300,7 @@ red.
 specialists in
                     <hi rend="italics">formulae,</hi>
                     or legalists, as Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Or.</hi>
                         I. iv. 231.
                     </note>
@@ -1347,7 +1347,7 @@ long gone by.
                     <milestone n="5" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     Such are the instruments of which I promised
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Pr.</hi>
                         22 and xii.
                         <hi rend="italics">Pr.</hi>
@@ -1411,7 +1411,7 @@ in the consciousness of the nobility of our task.
                     <milestone n="5" unit="section"/>
                     There are also those natural instruments which, as
 I mentioned above,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         I
                         <hi rend="italics">Pr.</hi>
                         27.
@@ -1427,7 +1427,7 @@ out above all his contemporaries, when he was speaking. Such was the elect produ
 stature, the fire of his eye, the dignity of his brow,
 the excellence of his gesture, coupled with a voice
 which was not almost a tragedian's, as Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Or.</hi>
                         I. xxviii. 128.
                     </note>
@@ -1438,7 +1438,7 @@ of all tragedians that I have ever heard.
 rate I remember that, when he was speaking in the
 Basilica Julia before the first tribunal, and the four
 panels of judges
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Of the Cenutumviral Court. Four different cases were
 being tried simultaneously.
                     </note>
@@ -1462,7 +1462,7 @@ his strength. I shall not specify it further, since it
 is clear that Demosthenes pleaded against his
 guardians while he was still a mere boy, Calvus,
 Caesar and Pollio
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Demosthenes was 18, Crassus 19, Caesar 21, Asinius Pollio
 and Calvus not much older. See Tac.
                         <hi rend="italics">Dial.</hi>
@@ -1505,7 +1505,7 @@ natural vigour.
                     Take for example the whole of the
 well-known passage from Cicero's defence of Sextus
 Roscius:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Rose. Amer.</hi>
                         xxvi. 72.
                     </note>
@@ -1517,7 +1517,7 @@ sea to mariners or the shore to shipwrecked men?
                     etc. This passage was delivered at the age of
 twenty-six amid loud applause from the audience,
 but in later years
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Orat.</hi>
                         xxx. 107.
                     </note>
@@ -1629,7 +1629,7 @@ readiness to incur enmity were proofs of their confidence in their own rectitude
 taken by Hortensius, the Luculli, Sulpicius, Cicero,
 Caesar and many others, among them both the Catos,
 of whom one was actually called the Wise,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         Cato the Elder.
                     </note>
@@ -1675,7 +1675,7 @@ that advocate's assistance, and it is certainly unworthy
 of our ideal orator that he should wittingly defend
 injustice. For if he is led to defend what is false
 by any of the motives which I mentioned above,
-                    <note anchored="yes" place="unspecified">XII. i. 36.</note>
+                    <note anchored="true" place="unspecified">XII. i. 36.</note>
                     his
 own action will still be honourable.
                 </p>
@@ -1803,7 +1803,7 @@ who betakes himself to an advocate because he finds
 that his own powers are not equal to the conduct of
 his case, or by some member of that class of legal
 advisers
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Advocatus</hi>
                         is here used in its original sense. By Quintilian's time it had come also to mean
                         <quote>advocate,</quote>
@@ -1914,7 +1914,7 @@ his case, which the advocate will be able to elicit,
 provided he go carefully through all the
                     <quote>dwelling places</quote>
                     of argument which I have already described.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         V. x. 20
                         <hi rend="italics">sqq. i. e.</hi>
                         sources from which arguments may be
@@ -2059,7 +2059,7 @@ opponents unless the case demand.
                     For it is a
 dog's eloquence, as Appius says, to undertake the
 task of abusing one's opponent,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">A cognitor</hi>
                         is one who represents another. The litigant
 may abuse his opponent, but that does not justify his
@@ -2142,7 +2142,7 @@ he can manage.
                     As far as possible he will deliver
 only what he has written, and, if circumstances
 permit, only what he has, as Demosthenes says,
-                    <note anchored="yes" place="unspecified">This passage is our sole authority for the saying.</note>
+                    <note anchored="true" place="unspecified">This passage is our sole authority for the saying.</note>
                     carved into shape. Such a practice is possible in
 first hearings and also in subsequent hearings such as
 are granted in the public courts after an interval of
@@ -2216,7 +2216,7 @@ be his at command.
                     to be
 adopted remains to be discussed. This was described
 in my original division
-                    <note anchored="yes" place="unspecified">II. xiv. 5.</note>
+                    <note anchored="true" place="unspecified">II. xiv. 5.</note>
                     of my subject as forming its
 third portion: for I promised that I would speak of
 the art, the artist and the work. But since oratory
@@ -2252,7 +2252,7 @@ taste and ideals of individuals.
 inspection for something more than their mere
 antiquity, are said to have been Polygnotus and
 Aglaopllon,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Of the painters mentioned in this and the following
 sections Polyglotus of Thasos, son of Aglaophon, painted at
 Athens in the middle of the 5th century B.C.. Zunis of
@@ -2273,7 +2273,7 @@ persons of superior taste.
 These artists were separated by no great distance of
 time, since both flourished about the period of the
 Peloponnesian war: for example, Xenophon
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Memoir.</hi>
                         III. x. 1.
                     </note>
@@ -2286,7 +2286,7 @@ special attention to the treatment of line.
                     <milestone n="5" unit="section"/>
                     For
 Zeuxis emphasised the limbs of the human body,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">I.e.</hi>
                         by giving them roundness and solidity by his treatment of light and shade.
                     </note>
@@ -2308,7 +2308,7 @@ the different artists are distinguished for different
 excellences. Protogenes, for example, was renowned
 for accuracy, Pamphilus and Melanthius for soundness of taste, Antiphilus for facility, Theon of Samos
 for his depiction of imaginary scenes, known as
-                    <foreign lang="greek">fantasi/ai,</foreign>
+                    <foreign xml:lang="grc">fantasi/ai,</foreign>
                     and Apelles for genius and grace, in the
 latter of which qualities he took especial pride.
 Euphranor, on the other hand, was admired on the
@@ -2320,7 +2320,7 @@ marvellous skill in the arts of sculpture and painting.
                     <milestone n="7" unit="section"/>
                     The same differences exist between sculptors. The
 art of Callon and Hegesias
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Callon of Aegina and Hegesias flourished in the latter
 years of the 6th century. Calamis of Athens and Myron of
 Eleutheae, first half of 5th centuryy. Phidlias of Athens and
@@ -2400,7 +2400,7 @@ the sonority of Trachalus and the elegance of Secundus.
 of different forms of art, but is supreme in all the
 different qualities which are praised in each individual
 orator.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Cp.</hi>
                         x. i. 105
                         <hi rend="italics">sq.</hi>
@@ -2439,7 +2439,7 @@ name of health, in defiance of the actual truth, and
 because they cannot endure the dazzling rays of the
 sun of eloquence, hide themselves beneath the
 shadow of a mighty name.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">I.e.</hi>
                         Attic.
                     </note>
@@ -2516,7 +2516,7 @@ am prepared to grant that there is Lysias, since he
 is the favourite model of the admirers of this school,
 and such an admission will save us from being
 referred to Coccus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The only Coccus known to us is stated by Suidas to
 have been a pupil of Isocrates, whereas we should here
 have expected Quintilian to refer to some orator of the
@@ -2573,10 +2573,10 @@ and a crop of unusual abundance within the boundaries
 of Attica, they would deny it to be Attic, on the
 ground that it has produced more seed than it
 received: for you will remember the mocking comments passed by Menander
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Georg. 35 sqq.</hi>
                         (Koerte);
-                        <foreign lang="greek">
+                        <foreign xml:lang="grc">
                             a)pe/dwken o)rqw=s kai\ dikai/ws, ou) ple/on, | a)ll' au)to\ to\ me/tron.
                         </foreign>
                     </note>
@@ -2589,7 +2589,7 @@ actual virtues which the great orator Demosthenes
                     possessed, show himself to be the possessor of others,
 that either owing to his own temperament or the
 laws of Athens
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See II. xvi. 4. Quintilian alludes to an alleged law forbidding Athenian oratos, to appeal to the emotions in the
 law courts.
                     </note>
@@ -2615,10 +2615,10 @@ in point of elocution. For, in the first place, it is
 harsher in sound, since our alphabet does not contain
 the most euphonious of the Greek letters, one a
 vowel and the other a consonant,
-                    <note anchored="yes" place="unspecified">
-                        <foreign lang="greek">f</foreign>
+                    <note anchored="true" place="unspecified">
+                        <foreign xml:lang="grc">f</foreign>
                         alio
-                        <foreign lang="greek">g</foreign>
+                        <foreign xml:lang="grc">g</foreign>
                         .
                     </note>
                     than which there
@@ -2633,12 +2633,12 @@ Take, for example, words such as
                     <hi rend="italics">sephyri</hi>
                     and
                     <hi rend="italics">zophori:</hi>
-                    <note anchored="yes" place="unspecified">Friezes.</note>
+                    <note anchored="true" place="unspecified">Friezes.</note>
                     if they were spelt according to the Latin alphabet,
 they would produce a heavy and barbarous sound.
 For we replace these letters by others of a harsh
 and unpleasant character,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         F and U;
                         <hi rend="italics">zefuri and zofori.</hi>
                     </note>
@@ -2655,7 +2655,7 @@ harsh enough and, as often as it clashes (
                     <hi rend="italics">frangit</hi>
                     )
 with a consonant,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         I. iv. 11.
                     </note>
@@ -2670,7 +2670,7 @@ as our
                     for even though we have
 rejected the actual form of the letter, we cannot
 get rid of that which it represents.
-                    <note anchored="yes" place="unspecified">A sound approximating to our W.</note>
+                    <note anchored="true" place="unspecified">A sound approximating to our W.</note>
                     <milestone n="30" unit="section"/>
                     Similarly the
 letter Q, which is superfluous and useless save for
@@ -2684,7 +2684,7 @@ harsh syllables, as, for example, when we write
 together produce a sound for which Greek has no
 equivalent and which cannot therefore be expressed
 in Greek letters.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The sound of Q in itself does not differ from C. It
 would therefore be useless, save as an indication that U and
 another vowel are to follow. The U in this combination
@@ -2729,7 +2729,7 @@ and monotony of pronunciation, since the final
                     syllable is never marked by the rise of the acute
 accent nor by the rise and fill of the circumflex, but
 one or even two grave accents
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">I.e.</hi>
                         the last syllable and often the last
                         <hi rend="italics">two</hi>
@@ -2750,7 +2750,7 @@ to express them by metaphor or periphrasis, while
 even in the case of things which have names, the
 extreme poverty of the language leads us to resort
 to the same practice.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">I.e.</hi>
                         because the names are not holly adequate and
 there are no satisfactory synonyms.
@@ -2786,7 +2786,7 @@ and if they have greater precision, let us outdo
                     Even the lesser
 orators of Greece have their own havens where they
 may ride in safety,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Owing to the subtlety and delicacy of the Greek
 language even second-rate talent will he able to win distinction in dealing with minor things. But the coarser and
 more full-blooded nature of Latin makes this difficult.
@@ -2862,7 +2862,7 @@ certain orators.
                     On the other hand, that is no
 reason for thus calumniating the man who, as I said
 in dealing with the subject of artistic structure,
-                    <note anchored="yes" place="unspecified">x. ch. 4.</note>
+                    <note anchored="true" place="unspecified">x. ch. 4.</note>
                     succeeds in improving upon the bare necessaries of
 style. For the common language of every day seems
 to me to be of a different character from the style
@@ -2929,7 +2929,7 @@ are always effective in proportion to their seemliness.
                     But with regard to those passages to which we give
 the name of
                     <hi rend="italics">reflexions,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For this ever-recurring technical term there is no
 adequate translation. It means a
                         <quote>reflexion coached in aphoristic or epigrammatic form.</quote>
@@ -2977,12 +2977,12 @@ and its art will be judged by artists.
 teachers (for such they have persuaded themselves
 and others that they are) have laid it down that
 the
-                    <foreign lang="greek">para/deigma</foreign>
-                    <note anchored="yes" place="unspecified">Sec v. xi. 1. Parallels and especially historical ones.</note>
+                    <foreign xml:lang="grc">para/deigma</foreign>
+                    <note anchored="true" place="unspecified">Sec v. xi. 1. Parallels and especially historical ones.</note>
                     is best suited for actual speech and
 the
-                    <foreign lang="greek">e)nqu/mhma</foreign>
-                    <note anchored="yes" place="unspecified">
+                    <foreign xml:lang="grc">e)nqu/mhma</foreign>
+                    <note anchored="true" place="unspecified">
                         See v. xiv. 1
                         <hi rend="italics">sqq.</hi>
                         A form of syllogism.
@@ -3004,7 +3004,7 @@ even of Demosthenes, who is much more concise.
                     For with such a jury there would be no need to
 appeal to the emotions nor to charm and soothe the
 ears, since according to Aristotle
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Rhet.</hi>
                         iii. 13.
                     </note>
@@ -3053,7 +3053,7 @@ a mere concession to the needs of the moment.
                     For it is most important that we should know how
 the judge is disposed to listen, and his face will
 often (as Cicero
-                    <note anchored="yes" place="unspecified">Not in any extant work.</note>
+                    <note anchored="true" place="unspecified">Not in any extant work.</note>
                     reminds us) serve as a guide to
 the speaker. Consequently we must press the points
 that we see commend themselves to him, and draw
@@ -3069,7 +3069,7 @@ witnesses.
 asked a rustic witness whether he knew Amphion,
 and the witness replied that he did not, dropped
 the aspirate and shortened the second syllable,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The witness did not recognise the name correctly
 pronounced
                         <hi rend="italics">Amphion,</hi>
@@ -3088,7 +3088,7 @@ writing.
 it is held, we may differentiate three styles of
 speaking, all of them correct. The first is termed
 the plain
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">subtilis</hi>
                         (
                         <hi rend="italics">lit.</hi>
@@ -3099,13 +3099,13 @@ Cic.
                         vi. 20.
                     </note>
                     (or
-                    <foreign lang="greek">i)sxno/n</foreign>
+                    <foreign xml:lang="grc">i)sxno/n</foreign>
                     ), the second grand and
 forcible (or
-                    <foreign lang="greek">a(dro/n</foreign>
+                    <foreign xml:lang="grc">a(dro/n</foreign>
                     ), and the third either intermediate or florid, the latter being a translation
 of
-                    <foreign lang="greek">a)nqhro/n.</foreign>
+                    <foreign xml:lang="grc">a)nqhro/n.</foreign>
                     <milestone n="59" unit="section"/>
                     The nature of these three styles is,
 broadly speaking, as follows. The first would seem
@@ -3132,7 +3132,7 @@ but overshadowed by the green banks on either side.
                     But he whose eloquence is like to some great torrent
 that rolls down rocks and
                     <quote>disdains a bridge</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Verg.
                         <hi rend="italics">Aen.</hi>
                         viii. 728.
@@ -3143,7 +3143,7 @@ judge from his feet, struggle as he may, and force
 him to go whither he bears him. This is the orator
 that will call the dead to life (as, for example, Cicero
 calls upon Appius Caecus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See III. viii. 54.
                         <quote>
                             Cicero in the
@@ -3165,7 +3165,7 @@ by amplification and rise even to
                     <hi rend="italics">hyperbole,</hi>
                     as when
 Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Phil.</hi>
                         II. xxvii. 67. The passage continues:
                         <quote>
@@ -3190,7 +3190,7 @@ Albans, altars that were once the peers and equals
                         <pb id="p.487"/>
                         of the holy places of Rome.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro, Mil.</hi>
                         xxxi. 85.
                     </note>
@@ -3208,12 +3208,12 @@ most important cases?
                     <milestone n="64" unit="section"/>
                     For Homer himself assigns
 to Menelaus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Mil.</hi>
                         iii. 214. The words which Quintilian translates by
                         <hi rend="italics">non deerrare verbhis</hi>
                         are
-                        <foreign lang="greek">ou)d' a)famartoeph/s,</foreign>
+                        <foreign xml:lang="grc">ou)d' a)famartoeph/s,</foreign>
                         <quote>no stumbler in speech,</quote>
                         rather than
                         <quote>correct in speech.</quote>
@@ -3224,7 +3224,7 @@ to Menelaus
                     ) and devoid of all redundance, which qualities
 are virtues of the first type: and he says that from
 the lips of Nestor
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Il.</hi>
                         i. 249.
                     </note>
@@ -3232,7 +3232,7 @@ the lips of Nestor
 than which assuredly we can conceive no greater
 delight: but when he seeks to express the supreme
 gift of eloquence possessed by Ulysses
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Il.</hi>
                         iii. 221.
                     </note>
@@ -3244,7 +3244,7 @@ of its words.
                     <quote>With him then,</quote>
                     he says,
                     <quote>no mortal will contend, and men shall look upon him as on a god.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A blend of
                         <hi rend="italics">Il.</hi>
                         iii. 223 and
@@ -3253,7 +3253,7 @@ of its words.
                     </note>
                     It is this force and impetuosity that Eupolis
 admires in Pericles, this that Aristophanes
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aeh.</hi>
                         530.
                         <quote>
@@ -3312,7 +3312,7 @@ he is defending a client on a capital charge and
 when he is speaking in a lawsuit concerned with an
 inheritance, or discussing interdicts and suits taking
 the form of a wager,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         I. x. 5 and IV. ii. 61.
                         <hi rend="italics">Sponsio</hi>
@@ -3373,7 +3373,7 @@ please many, and I feel no surprise that this should
 and attractive to the car, and every effort of the
 voice inspires a natural pleasure in the soul of man;
 indeed this is the sole cause of those familiar gatherings in the Forum or on the Old Wall,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The
                         <hi rend="italics">agger</hi>
                         of Servius Tullius, which served as a promenadec.
@@ -3395,7 +3395,7 @@ hand, when such displays are compared with their
 betters, they sink into insignificance and fade out
 of sight, for they are like wool dyed red that
 pleases in the absence of purple, but, as Ovid
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Halm. Am.</hi>
                         707
                         <hi rend="italics">sqq.</hi>
@@ -3493,7 +3493,7 @@ the unworthy laughter of some, and the silent
 blushes of others, giving occasion to the malicious
 saying that he had rather
                     <quote>faint than finish.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         By
                         <quote>finish</quote>
                         is meant
@@ -3515,7 +3515,7 @@ who seek his counsels, as Lucius Crassus proposes
                     <pb id="p.499"/>
                     to do in the
                     <hi rend="italics">de Oratore</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de</hi>
                         (
                         <hi rend="italics">Or.</hi>
@@ -3546,7 +3546,7 @@ or diminution.
 than to teach that which you know surpassing well?
 It was for this that the elder Caelius brought his son
 to Cicero, as the latter
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Cael.</hi>
                         iv. 10.
                     </note>
@@ -3790,7 +3790,7 @@ a man despair of reaching supreme excellence (and
 why should he despair, if he have talents, health,
 capacity and teachers to aid him?), it is none the
 less a fine achievement, as Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Or.</hi>
                         i. 4.
                     </note>
@@ -3860,7 +3860,7 @@ the young student, it should at least produce what
 [value more,—the will to do well.
                 </p>
                 <pb id="p.517"/>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

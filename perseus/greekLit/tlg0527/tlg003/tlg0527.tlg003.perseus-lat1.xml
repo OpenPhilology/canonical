@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - Leviticus</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,13 +81,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="Leviticus" type="book">
+            <div part="N" sample="complete" org="uniform" n="Leviticus" type="book">
                 <head lang="en">Leviticus</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">vocavit autem Mosen et locutus est ei Dominus de tabernaculo testimonii dicens</s>
@@ -167,8 +167,8 @@ dividet eam et adolebit super altare lignis igne subposito
 holocaustum est et oblatio suavissimi odoris Domino
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -237,8 +237,8 @@ farris et sic offeres primitias tuas Domino
                         <milestone unit="verse" n="16"/>
                         <s part="N">de qua adolebit sacerdos in memoriam muneris partem farris fracti et olei ac totum tus</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -314,8 +314,8 @@ suavissimi odoris omnis adeps Domini erit
 vestris nec adipes nec sanguinem omnino comedetis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutusque est Dominus ad Mosen dicens</s>
@@ -470,8 +470,8 @@ incensum Domini rogabitque pro eo et pro peccato eius et
 dimittetur illi
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -568,8 +568,8 @@ nesciens fecerit et dimittetur ei
                         <milestone unit="verse" n="19"/>
                         <s part="N">quia per errorem deliquit in Dominum</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutus est Dominus ad Mosen dicens</s>
@@ -701,8 +701,8 @@ infertur in tabernaculum testimonii ad expiandum in sanctuario
 non comedetur sed conburetur igni
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">haec quoque est lex hostiae pro delicto sancta sanctorum est</s>
@@ -853,8 +853,8 @@ filiis Israhel ut offerrent oblationes suas Domino in deserto
 Sinai
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutusque est Dominus ad Mosen dicens</s>
@@ -1006,8 +1006,8 @@ Domini ne moriamini sic enim mihi praeceptum est
                         <milestone unit="verse" n="36"/>
                         <s part="N">feceruntque Aaron et filii eius cuncta quae locutus est Dominus per manum Mosi</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1110,8 +1110,8 @@ adipes qui erant super altare quod cum vidissent turbae
 laudaverunt Dominum ruentes in facies suas
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1220,8 +1220,8 @@ lugubri
                         <milestone unit="verse" n="20"/>
                         <s part="N">quod cum audisset Moses recepit satisfactionem</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutus est Dominus ad Mosen et Aaron dicens</s>
@@ -1401,8 +1401,8 @@ viventis quae movetur in aqua et reptat in terra
 comedere et quid respuere debeatis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutus est Dominus ad Mosen dicens</s>
@@ -1447,8 +1447,8 @@ holocaustum et alterum pro peccato orabitque pro ea sacerdos et
 sic mundabitur
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutus est Dominus ad Mosen et Aaron dicens</s>
@@ -1676,8 +1676,8 @@ atque subteminis omnisque supellectilis pelliciae quomodo
 mundari debeat vel contaminari
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutusque est Dominus ad Mosen dicens</s>
@@ -1894,8 +1894,8 @@ varias species coloribus inmutatis
                         <milestone unit="verse" n="57"/>
                         <s part="N">ut possit sciri quo tempore mundum quid vel inmundum sit</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutusque est Dominus ad Mosen et Aaron dicens</s>
@@ -2034,8 +2034,8 @@ quod est inter eos
 sanguine et hominis qui dormierit cum ea
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2197,8 +2197,8 @@ filiis Israhel et pro cunctis peccatis eorum semel in anno
 fecit igitur sicut praeceperat Dominus Mosi
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="17" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="17" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">et locutus est Dominus ad Mosen dicens</s>
@@ -2286,8 +2286,8 @@ mundus fiet
                         <milestone unit="verse" n="16"/>
                         <s part="N">quod si non laverit vestimenta sua nec corpus portabit iniquitatem suam</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="18" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="18" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutusque est Dominus ad Mosen dicens</s>
@@ -2395,8 +2395,8 @@ fuerunt ante vos et ne polluamini in eis ego Dominus Deus
 vester
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="19" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="19" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutus est Dominus ad Mosen dicens</s>
@@ -2535,8 +2535,8 @@ terra Aegypti
                         <milestone unit="verse" n="37"/>
                         <s part="N">custodite omnia praecepta mea et universa iudicia et facite ea ego Dominus</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="20" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="20" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutusque est Dominus ad Mosen dicens</s>
@@ -2679,8 +2679,8 @@ fuerit spiritus morte moriantur lapidibus obruent eos sanguis
 eorum sit super illos
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="21" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="21" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2780,8 +2780,8 @@ meum ego Dominus qui sanctifico eos
 Israhel cuncta quae sibi fuerant imperata
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="22" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="22" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutus quoque est Dominus ad Mosen dicens</s>
@@ -2921,8 +2921,8 @@ filiorum Israhel ego Dominus qui sanctifico vos
                         <milestone unit="verse" n="33"/>
                         <s part="N">et eduxi de terra Aegypti ut essem vobis in Deum ego Dominus</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="23" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="23" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutus est Dominus ad Mosen dicens</s>
@@ -3119,8 +3119,8 @@ Dominus Deus vester
                         <milestone unit="verse" n="44"/>
                         <s part="N">locutusque est Moses super sollemnitatibus Domini ad filios Israhel</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="24" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="24" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">et locutus est Dominus ad Mosen dicens</s>
@@ -3207,8 +3207,8 @@ qui blasphemaverat extra castra ac lapidibus oppresserunt
 feceruntque filii Israhel sicut praeceperat Dominus Mosi
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="25" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="25" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutusque est Dominus ad Mosen in monte Sinai dicens</s>
@@ -3428,8 +3428,8 @@ reddet emptori quod reliquum est annorum
                         <milestone unit="verse" n="55"/>
                         <s part="N">mei sunt enim servi filii Israhel quos eduxi de terra Aegypti</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="26" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="26" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3635,8 +3635,8 @@ dedit Dominus inter se et inter filios Israhel in monte Sinai
 per manum Mosi
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="27" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="27" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">locutusque est Dominus ad Mosen dicens</s>
@@ -3773,8 +3773,8 @@ sanctificabitur Domino et non redimetur
                         <milestone unit="verse" n="34"/>
                         <s part="N">haec sunt praecepta quae mandavit Dominus Mosi ad filios Israhel in monte Sinai</s>
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

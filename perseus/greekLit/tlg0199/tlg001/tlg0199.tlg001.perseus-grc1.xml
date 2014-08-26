@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>Odes (Greek) - Ep</title>
@@ -14,15 +14,15 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 73K</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
                 <authority>Perseus Project</authority>
             </publicationStmt>
             <notesStmt>
-                <note anchored="yes" place="unspecified">
+                <note anchored="true" place="unspecified">
                     The text was entered in the Philippines.  Basic SGML tagging by EM
                 </note>
             </notesStmt>
@@ -40,18 +40,18 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="poem"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="poem"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="greek">Greek</language>
-                <language id="en">English</language>
+                language ident="greek">Greek</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>8/14/92</date>
                 <respStmt>
@@ -98,13 +98,13 @@
 					added cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="grc">
         <body>
-            <div1 n="Ep" sample="complete" part="N" type="Book" org="uniform">
+            <div n="Ep" sample="complete" part="N" type="Book" org="uniform">
                 <head lang="en">επινιξιανς</head>
-                <div2 n="1" sample="complete" part="N" type="poem" org="uniform">
+                <div n="1" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 1</title>
                         <persName type="winner">
@@ -129,7 +129,7 @@
                     <gap></gap>
                     <l n="13" part="N">ὦ Πέλοπος λιπαρᾶς</l>
                     <l part="N">νάσου θεόδματοι πύλαι</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P">
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P">
                         2 lines missing at the end of ant. 1, 2 at the beginning of ep. 1.
                     </note>
                     <milestone n="epode 1" unit="strophe"/>
@@ -138,7 +138,7 @@
                     <l part="N">¯˘¯¯]εσσιν ἀν[δρῶν</l>
                     <l part="N">¯˘˘¯˘]τον αὐτ[¯</l>
                     <l part="N">¯˘¯]ἄλλαισιν[¯¯¯˘¯¯</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P">
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P">
                         Str., ant. and epode 3 are extremely fragmentary.
                     </note>
                     <milestone n="str. 3" unit="strophe"/>
@@ -152,7 +152,7 @@
                     <l part="N">κους ἐπʼ]ἀ̣νδ̣ήροις ἁλός</l>
                     <milestone n="ant. 3" unit="strophe"/>
                     <l n="55" part="N">ὑπό τʼ α]ὐ̣γαῖς ἀελι̣ο̣υ</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P">
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P">
                         6 lines at the end of ant. 3 and all of epode 3 are lost.
                     </note>
                     <milestone n="str. 4" unit="strophe"/>
@@ -170,7 +170,7 @@
                     <l part="N">¯¯˘˘¯]!γετ[!] πάμπα[ν</l>
                     <l part="N">¯˘˘¯˘˘]α̣ς</l>
                     <l part="N">¯¯˘¯¯¯]ομοι</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P"> 2 lines lost.</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P"> 2 lines lost.</note>
                     <milestone n="ep. 5" unit="strophe"/>
                     <gap></gap>
                     <l part="N"> ¯ ˘]αφθε[ ¯ ˘ × ¯ ˘ ˘ ¯ ¯</l>
@@ -202,7 +202,7 @@
                     <gap></gap>
                     <l n="138" part="N">ἄλλα]ξαν θύγατρες</l>
                     <milestone n="str. 7" unit="strophe"/>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 1</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 1</note>
                     <l part="N">πόλ[ιν ¯ ¯ ¯]ν βαθυδεί-</l>
                     <l n="140" part="N">ελον· [ἐκ τᾶ]ς μὲν γένος</l>
                     <l part="N">ἔπλε[το καρτε]ρόχειρ</l>
@@ -242,7 +242,7 @@
                     <l part="N"> πενίας τʼ ἀμαχάνου.</l>
                     <l part="N">ἶσον ὅ τʼ ἀφνεὸς ἱ-</l>
                     <l part="N"> μείρει μεγάλων ὅ τε μείων</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 2</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 2</note>
                     <l part="N">παυροτέρων· τὸ δὲ πάν-</l>
                     <l n="175" part="N">των εὐμαρεῖν οὐδὲν γλυκὺ</l>
                     <l part="N">θνατοῖσιν, ἀλλʼ αἰεὶ τὰ φεύ-</l>
@@ -255,8 +255,8 @@
                     <l part="N">μέν, τε]λευταθεῖσα δʼ ὀρθῶς</l>
                     <l part="N">ἀνδρὶ κ]αὶ εὖτε θάνῃ λεί-</l>
                     <l part="N"> πει πο]λυζήλωτον εὐκλείας ἄγαλμα.</l>
-                </div2>
-                <div2 n="2" sample="complete" part="N" type="poem" org="uniform">
+                </div>
+                <div n="2" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 2</title>
                         <persName type="winner">Τῷ Αὐτῷ</persName>
@@ -278,8 +278,8 @@
                     <l part="N"> γλυκεῖαν αὐλῶν καναχάν,</l>
                     <l part="N"> γεραίρουσʼ ἐπινικίοις</l>
                     <l part="N"> Πανθείδα φίλον υἱόν.</l>
-                </div2>
-                <div2 n="3" sample="complete" part="N" type="poem" org="uniform">
+                </div>
+                <div n="3" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 3</title>
                         <persName type="winner">Ἱέρωνι Συρακοσίῳ</persName>
@@ -304,7 +304,7 @@
                     <milestone n="ep. 1" unit="strophe"/>
                     <l part="N">θρόησε δὲ λ[αὸς ἀπείρων·</l>
                     <l n="10" part="N">ἆ τρισευδαίμ[ων ἀνήρ,</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 3</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 3</note>
                     <l part="N">ὃ παρὰ Ζηνὸς λαχὼν</l>
                     <l part="N"> πλείσταρχον Ἑλλάνων γέρας</l>
                     <l part="N">οἶδε πυργωθέντα πλοῦτον μὴ μελαμ-</l>
@@ -350,7 +350,7 @@
                     <milestone n="str. 4" unit="strophe"/>
                     <l part="N">×¯˘˘×˘˘˘¯˘]ν ἄστυ,</l>
                     <l part="N">φοινίσσεται αἵματι χρυσο]δίνας</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 4</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 4</note>
                     <l n="45" part="N">Πακτωλός· ἀεικελίως γυναῖκες</l>
                     <l part="N"> ἐξ ἐϋκτίτων μεγάρων ἄγονται·</l>
                     <milestone n="ant. 4" unit="strophe"/>
@@ -391,7 +391,7 @@
                     <l n="75" part="N">δολό]εσσα δʼ ἐλπὶς ὑπ[ὸ κέαρ δέδυκεν</l>
                     <l part="N"> ἐφαμ]ερίων· ὁ δʼ ἄναξ [Ἀπόλλων</l>
                     <l part="N">ὁ βουκό]λος εἶπε Φέρη[τος υἷι·</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 5</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 5</note>
                     <l part="N">θνατὸν εὖντα χρὴ διδύμους ἀέξειν</l>
                     <milestone n="ep. 6" unit="strophe"/>
                     <l part="N">
@@ -428,8 +428,8 @@
                     <l part="N"> πά· σὺν δʼ ἀλαθείᾳ καλῶν</l>
                     <l part="N">καὶ μελιγλώσσου τις ὑμνήσει χάριν</l>
                     <l part="N"> Κηΐας ἀηδόνος.</l>
-                </div2>
-                <div2 n="4" sample="complete" part="N" type="poem" org="uniform">
+                </div>
+                <div n="4" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 4</title>
                         <persName type="winner">Τῷ Αὐτῷ</persName>
@@ -452,7 +452,7 @@
                     <milestone n="str. 2" unit="strophe"/>
                     <l part="N">ἔτι δὲ τέ]τρατον εἴ τις ορ- </l>
                     <l part="N"> !!!!!!!]εἵλκε Δίκ]ας τάλαν[τον</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 6</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 6</note>
                     <l part="N">
                         Δεινομέν
                         <seg type="sling" part="N">εό</seg>
@@ -465,8 +465,8 @@
                     <l part="N">ἀείδειν. τί φέρτερον ἢ θεοῖσιν</l>
                     <l part="N">φίλον ἐόντα παντο[δα]πῶν</l>
                     <l n="20" part="N">λαγχάνειν ἄπο μοῖρα[ν ἐσ]θλῶν;</l>
-                </div2>
-                <div2 n="5" sample="complete" part="N" type="poem" org="uniform">
+                </div>
+                <div n="5" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 5</title>
                         <persName type="winner">
@@ -507,7 +507,7 @@
                     <l part="N"> χες λιγύφθογγοι φόβῳ·</l>
                     <l part="N">οὔ νιν κορυφαὶ μεγάλας ἴσχουσι γαίας,</l>
                     <l n="25" part="N">οὐδʼ ἁλὸς ἀκαμάτας</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 7</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 7</note>
                     <l part="N">δυσπαίπαλα κύματα· νωμᾶ-</l>
                     <l part="N"> ται δʼ ἐν ἀτρύτῳ χάει</l>
                     <l part="N">λεπτότριχα σὺν ζεφύρου πνοι-</l>
@@ -552,7 +552,7 @@
                     <l part="N">καὶ μάν π]οτʼ ἐρειψιπύλαν</l>
                     <l part="N"> παῖδʼ ἀνίκ]ατον λέγουσιν</l>
                     <l part="N">δῦναι Διὸς] ἀργικεραύ-</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 8</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 8</note>
                     <l part="N"> νου δώματα Φερσεφόνας τανισφύρου,</l>
                     <l n="60" part="N">καρχαρόδοντα κύνʼ ἄ-</l>
                     <l part="N"> ξοντʼ ἐς φάος ἐξ Ἀΐδα,</l>
@@ -588,7 +588,7 @@
                     <l part="N">τίς δʼ ἔκτανεν ; ἦ τάχα καλλίζωνος Ἥρα</l>
                     <l n="90" part="N">κεῖνον ἐφʼ ἁμετέρᾳ</l>
                     <l part="N">πέμψει κεφαλᾷ· τὰ δέ που</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 9</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 9</note>
                     <l part="N"> Παλλάδι ξανθᾷ μέλει.</l>
                     <l part="N">τὸν δὲ προσέφα Μελέαγρος</l>
                     <l part="N"> δακρυόεις· χαλεπὸν</l>
@@ -632,7 +632,7 @@
                     <l part="N">τῶν δʼ ὤ]λεσε μοῖρʼ ὀλοὰ</l>
                     <l part="N"> πλεῦνα]ς· οὐ γάρ πω δαΐφρων</l>
                     <l part="N">παῦσεν] χόλον ἀγροτέρα</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 10</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 10</note>
                     <l part="N"> Λατοῦς θυγάτηρ· περὶ δʼ αἴθωνος δορᾶς</l>
                     <l n="125" part="N">μαρνάμεθʼ ἐνδυκέως</l>
                     <l part="N"> Κουρῆσι μενεπτολέμοις·</l>
@@ -667,7 +667,7 @@
                     <l part="N">αἰαῖ· πύματον δὲ πνέων δάκρυσα τλ[άμων</l>
                     <l part="N"> ἀγλαὰν ἥβαν προλείπων.</l>
                     <l n="155" part="N">φασὶν ἀδεισιβόαν</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 11</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 11</note>
                     <l part="N"> Ἀμφιτρύωνος παῖδα μοῦνον δὴ τότε</l>
                     <l part="N">
                         τέγξαι βλέφαρον, ταλαπενθ
@@ -714,7 +714,7 @@
                     <l n="185" part="N">σας Ἱέρωνι φέρων</l>
                     <l part="N">εὐδ]αιμονίας πέταλον.</l>
                     <l part="N"> χρὴ δʼ ἀλαθείας χάριν</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 12</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 12</note>
                     <l part="N">αἰνεῖν, φθόνον ἀμφοτέραισιν</l>
                     <l part="N"> χερσὶν ἀπωσάμενον,</l>
                     <l n="190" part="N">εἴ τις εὖ πράσσοι βροτῶν.</l>
@@ -737,8 +737,8 @@
                     <l part="N"> πυθμένες θάλλουσιν ἐσθλ[ῶν,</l>
                     <l part="N"> τοὺς ὁ μεγιστοπάτωρ</l>
                     <l n="200" part="N">Ζεὺς ἀκινήτους ἐν εἰρήν[ᾳ φυλάσσοι.</l>
-                </div2>
-                <div2 n="6" sample="complete" part="N" type="poem" org="uniform">
+                </div>
+                <div n="6" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 6</title>
                         <persName type="winner">Λάχωνι Κεῖῳ</persName>
@@ -769,8 +769,8 @@
                     <l part="N">γεραίρει προδόμοις ἀοι-</l>
                     <l n="15" part="N">δαῖς, ὅτι στάδιον κρατή-</l>
                     <l part="N"> σας Κέον εὐκλέϊξας.</l>
-                </div2>
-                <div2 n="7" sample="complete" part="N" type="poem" org="uniform">
+                </div>
+                <div n="7" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 7</title>
                         <persName type="winner">Τῷ Αὐτῷ</persName>
@@ -779,7 +779,7 @@
                     <l part="N">ὦ λιπαρὰ θύγατερ Χρόνου τε κ[αὶ</l>
                     <l part="N">Νυκτός, σὲ πεντήκοντα μηνῶν ἁμέραν</l>
                     <l part="N">ἑκκαιδεκάταν ἐν Ὀλυμπ[ίᾳ ˘¯</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 13</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 13</note>
                     <l part="N">!!!]β̣αρυβρ[!!!!!!!!!!!!!] ἕκατι</l>
                     <l n="5" part="N">!!!]ι̣τοσαιμα̣[</l>
                     <l part="N">κρίνειν τα[χυτᾶτά τε] λαιψηρῶν ποδῶν</l>
@@ -788,21 +788,21 @@
                     <l part="N">νίκας ἐπʼ ἀνθρώποισιν εὔδοξος κέκλη-</l>
                     <l n="10" part="N">ται καὶ πολυζήλωτος. Ἀρ[ιστομένει]ον</l>
                     <l part="N">νῦν γ]ʼ ἐκόσμη[σας στε]φάν[οισι Λάχω]να</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P">The rest is fragmentary.</note>
-                </div2>
-                <div2 n="8" sample="complete" part="N" type="poem" org="uniform">
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P">The rest is fragmentary.</note>
+                </div>
+                <div n="8" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 8</title>
                         <persName type="winner">
                             <del status="unremarkable">Λιπαρίωνι Κεῖῳ</del>
                         </persName>
                     </head>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P">
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P">
                         The text of str. 1 is fragmentary.
                     </note>
                     <milestone n="str. 2" unit="strophe"/>
                     <l n="17" part="N">Πυθῶνά τε μηλοθύταν</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 14</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 14</note>
                     <l part="N">
                         ὑμν
                         <seg type="sling" part="N">έω</seg>
@@ -834,8 +834,8 @@
                     <l n="30" part="N">ἄνδημʼ ἐλαίας</l>
                     <l part="N">ἐν Πέλοπος Φρυγίου</l>
                     <l part="N"> κλεινοῖς ἀέθλοις.</l>
-                </div2>
-                <div2 n="9" sample="complete" part="N" type="poem" org="uniform">
+                </div>
+                <div n="9" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 9</title>
                         <persName type="winner">Ἀυτομήδει Φλειάσιῳ</persName>
@@ -863,7 +863,7 @@
                     <l part="N">ἐλπὶς ἀνθρώπων ὑφαιρ[εῖται νόημ]α</l>
                     <milestone n="ep. 1" unit="strophe"/>
                     <l part="N">ἃ καὶ τότʼ Ἄδραστον Ταλ[αϊονίδαν</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 15</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 15</note>
                     <l part="N">πέμπεν ἐς Θήβας Πολυνείκεϊ πλα[γκτῷ] πρόξεν[ον.</l>
                     <l part="N">κείνων ἀπʼ εὐδόξων ἀγώνων</l>
                     <l part="N">
@@ -915,7 +915,7 @@
                     <milestone n="str. 3" unit="strophe"/>
                     <l part="N">τίς γὰρ οὐκ οἶδεν κυανοπλοκάμου</l>
                     <l part="N">Θήβας ἐΰδμ[ατον πόλι]ν,</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 16</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 16</note>
                     <l part="N">ἢ τὰν μεγαλώνυ]μον Αἴγιναν, μεγίστου</l>
                     <l n="56" part="N">Ζηνὸς ἃ πλαθεῖσα λέ]χει τέκεν ἥρω</l>
                     <l part="N">¯ δ̣ε̣σ̣ω̣ ¯ ¯ ου·</l>
@@ -954,7 +954,7 @@
                     <l part="N">λείπεται Μουσᾶν [˘¯¯¯ ἄθυ]ρμα.</l>
                     <milestone n="ant. 4" unit="strophe"/>
                     <l part="N">εἰσὶ δʼ ἀνθρ[ώπων ˘˘¯˘˘¯</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 17</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 17</note>
                     <l part="N">
                         πολλαί· διακρίνει δὲ θ
                         <seg type="sling" part="N">εῶ</seg>
@@ -976,8 +976,8 @@
                     <l part="N"> πᾶς αἰ]νέοι· Τιμοξ[ένου</l>
                     <l part="N">πα]ιδὶ σὺν κώ[μοις ἁμαρ-</l>
                     <l part="N"> τ[έ]ο]ιτε πεντ[άθλου ϝέκατι.</l>
-                </div2>
-                <div2 n="10" sample="complete" part="N" type="poem" org="uniform">
+                </div>
+                <div n="10" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 10</title>
                         <persName type="winner">
@@ -1008,7 +1008,7 @@
                     <l part="N">κῦδος εὐρείαις Ἀθάναις</l>
                     <l part="N">θῆκας Οἰνείδαις τε δόξαν.</l>
                     <l part="N">ἐν Ποσειδᾶνος περικλειτοῖς ἀέθλοις</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 18</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 18</note>
                     <l n="20" part="N">εὐθὺς ἔνδειξ]ας Ἕλλασιν ποδῶν ὁρμὰν ταχεῖαν·</l>
                     <milestone n="ep. 1" unit="strophe"/>
                     <l part="N">δεύτερον δʼ οὔ]ροισιν ἔπι σταδίου,</l>
@@ -1051,12 +1051,12 @@
                     <l part="N">χρηστόν. τί μακρὰν γλῶσσαν ἰθύσας ἐλαύνω</l>
                     <l part="N">ἐκτὸς ὁδοῦ ; πέφαται θνατοῖσι νίκας</l>
                     <l part="N">ὕστε]ρον εὐφροσύνα·</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 19</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 19</note>
                     <l part="N">αὐλῶν [δὲ ˘¯˘˘¯¯</l>
                     <l n="55" part="N">μειγν̣[υτ¯¯˘¯¯</l>
                     <l part="N">χρή τιν[¯¯¯˘¯¯</l>
-                </div2>
-                <div2 n="11" sample="complete" part="N" type="poem" org="uniform">
+                </div>
+                <div n="11" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 11</title>
                         <persName type="winner">Ἀλεχιδάμῳ Μεταποντινῷ</persName>
@@ -1112,7 +1112,7 @@
                     <l part="N">γλαυκᾷ στεφανωσάμενον</l>
                     <l n="30" part="N">πορτιτρόφ[ον ἂν πεδίον πάτ]ραν θʼ ἱκέσθαι.</l>
                     <l part="N">[οὔ τι δόλος κακόφρων]</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 20</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 20</note>
                     <l part="N">παῖδʼ ἐν χθονὶ καλλιχόρῳ</l>
                     <l part="N">ποικίλαις τέχναις πέλασσεν·</l>
                     <l part="N">ἀλλʼ ἢ θεὸς αἴτιος, ἢ</l>
@@ -1157,7 +1157,7 @@
                     <l part="N"> σὺν πολυζήλῳ βασιλεῖ.</l>
                     <l part="N">νεῖκος γὰρ ἀμαιμάκετον</l>
                     <l n="65" part="N">βληχρᾶς ἀνέπαλτο κασιγνητοῖς ἀπʼ ἀρχᾶς</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 21</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 21</note>
                     <l part="N">Προίτῳ τε καὶ Ἀκρισίῳ·</l>
                     <l part="N"> λαούς τε διχοστασίαις</l>
                     <l part="N">ἤρειπον ἀμετροδίκοις μάχαις τε λυγραῖς.</l>
@@ -1199,7 +1199,7 @@
                     <l part="N"> νικο[κραδέμνοι]ο Λατοῦς</l>
                     <milestone n="ant. 3" unit="strophe"/>
                     <l part="N">κίκλ[ῃσκε θύγατρα] βοῶπιν,</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 22</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 22</note>
                     <l n="100" part="N">χεῖρας ἀντείνων πρὸς αὐγὰς</l>
                     <l part="N">ἱππώκεος ἀελίου,</l>
                     <l part="N"> τέκνα δυστάνοιο λύσσας</l>
@@ -1234,8 +1234,8 @@
                     <l part="N">ὅστις ἔχει φρένας, εὑ-</l>
                     <l n="125" part="N">ρήσει σὺν ἅπαντι χρόνῳ</l>
                     <l part="N"> μυρίας ἀλκὰς Ἀχαιῶν.</l>
-                </div2>
-                <div2 n="12" sample="complete" part="N" type="poem" org="uniform">
+                </div>
+                <div n="12" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 12</title>
                         <persName type="winner">Τεισίᾳ Ἀιγινήτῃι</persName>
@@ -1251,7 +1251,7 @@
                     <l part="N">ἐλθόντα κοσμῆσαι θεόδματον πόλιν·</l>
                     <milestone n="ant. 1" unit="strophe"/>
                     <l part="N">τάν τʼ ἐν Νεμέᾳ γυιαλκέα μουνοπάλαν̣</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P">Lines 9-32 are missing.</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P">Lines 9-32 are missing.</note>
                     <milestone n="ant. 2" unit="strophe"/>
                     <gap></gap>
                     <l n="34" part="N">ξεινου̣ [!!!!]νιοι αστ[×¯˘¯</l>
@@ -1268,9 +1268,9 @@
                         ου·
                     </l>
                     <l part="N">!!?̔!!?̓] ταύτας̣ καὶ ἐπʼ ἀργυροδίνα</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P">The rest is lost.</note>
-                </div2>
-                <div2 n="13" sample="complete" part="N" type="poem" org="uniform">
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P">The rest is lost.</note>
+                </div>
+                <div n="13" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 13</title>
                         <persName type="winner">
@@ -1281,18 +1281,18 @@
                         </seg>
                     </head>
                     <milestone n="str. 1" unit="strophe"/>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P">8 verses lost.</note>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 23</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P">8 verses lost.</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 23</note>
                     <l n="8" part="N">¯ ˘ ˘ ¯ ˘ ˘ ¯ ¯</l>
                     <l part="N">¯ ˘ ˘ ¯ ˘ ˘ λειω</l>
                     <l n="10" part="N">¯ ˘ ˘ ¯ ˘ ˘ ¯ ¯ ´ ̣ ε̣ρ̣[</l>
                     <l part="N">¯ ˘ ˘ ¯ ˘ ˘ ¯</l>
                     <l part="N">¯ ¯ ˘ ¯ ¯ ¯ ˘ ¯ δαν·</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P">
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P">
                         ant. 1, ep. 1, and the first ten verses of str. b, are lost.
                     </note>
                     <milestone n="str. 2" unit="strophe"/>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 24</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 24</note>
                     <l n="44" part="N"> ὕβριος ὑψινόου</l>
                     <l n="45" part="N">παύσει, δίκας θνατοῖσι κραίνων·</l>
                     <milestone n="ant. 2" unit="strophe"/>
@@ -1363,7 +1363,7 @@
                         δινᾶντος Αἴγινʼ ἠπιόφρον,
                     </l>
                     <milestone n="ant. 3" unit="strophe"/>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 25</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 25</note>
                     <l part="N">ἦ τοι μεγάλαν [Κρονίδας</l>
                     <l n="80" part="N">ἔδωκε τιμὰν</l>
                     <l part="N">ἐν πάντεσσιν [ἀγῶσιν,,</l>
@@ -1448,7 +1448,7 @@
                         τʼ ἔλυσεν ἄ[τας·
                     </l>
                     <l part="N">οἳ πρὶν μὲν [πολύπυργο]ν</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 26</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 26</note>
                     <l n="115" part="N">Ἰλίου θαητὸν ἄστυ</l>
                     <l part="N">οὐ λεῖπον, ἀτυζόμενοι [δὲ</l>
                     <l part="N">πτ]ᾶσσον ὀξεῖαν μάχαν,</l>
@@ -1513,7 +1513,7 @@
                         Λοξίας ἄναξ Ἀπόλλων·
                     </l>
                     <l part="N">ἷξόν τʼ ἐπὶ θῖνα θαλάσσας·</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 27</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 27</note>
                     <l n="150" part="N">ναυσὶ δʼ εὐπύμνοις παραὶ</l>
                     <l part="N"> μάρναντʼ, ἐναριζομένων</l>
                     <l part="N"> δʼ ἔρ]ευθε φώτων</l>
@@ -1552,7 +1552,7 @@
                         τῶν εἰ καὶ τ[˘˘¯¯
                     </l>
                     <l part="N">ἢ βαθυξύλω[ι˘¯¯</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P">5 lines lost.</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P">5 lines lost.</note>
                     <l n="175" part="N">οὐ γὰρ ἀλα[μπέσ]ι νυ[κτὸς</l>
                     <l part="N"> πασιφανὴς Ἀρετὰ</l>
                     <l part="N"> κρυφθεῖσʼ ἀμαυρο[ῦται δνόφοισιν,</l>
@@ -1570,7 +1570,7 @@
                         Αἰακοῦ τιμᾷ, σὺν Εὐ-
                     </l>
                     <l part="N"> κλείᾳ δὲ φιλοστεφ[άνῳ</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 28</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 28</note>
                     <l n="185" part="N">πόλιν κυβερνᾷ,</l>
                     <l part="N">Εὐνομία τε σαόφρων,</l>
                     <l part="N">ἃ θαλίας τε λέλογχεν</l>
@@ -1621,11 +1621,11 @@
                         δυσμενέων δὲ μα[ταία
                     </l>
                     <l part="N"> γλῶσσʼ ἀϊδ]ὴς μιν[ύθει</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P">
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P">
                         The last v. of str. 7, and the first nine of ant. 7 are lost.
                     </note>
                     <milestone n="ant. 7" unit="strophe"/>
-                    <note anchored="yes" place="unspecified" lang="en" type="Papyr" resp="P">Column 29</note>
+                    <note anchored="true" place="unspecified" lang="en" type="Papyr" resp="P">Column 29</note>
                     <l n="220" part="N">ἐλπίδι θυμὸν ἰαίνει·</l>
                     <l part="N"> τᾷ καὶ ἐγὼ πίσυνο[ς</l>
                     <l part="N"> φοινικοκραδέμνοισ[ι Μούσαις</l>
@@ -1645,8 +1645,8 @@
                     <l part="N"> πανθαλὴς ἐμαῖς ἐνέσταξ[εν φρασίν,</l>
                     <l n="230" part="N">τερψιεπεῖς νιν ἀοιδαὶ</l>
                     <l part="N"> παντὶ καρύξοντι λαῷ.</l>
-                </div2>
-                <div2 n="14" sample="complete" part="N" type="poem" org="uniform">
+                </div>
+                <div n="14" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 14</title>
                         <persName type="winner">Κλεοπτολέμῳ Θεσσαλῷ</persName>
@@ -1679,11 +1679,11 @@
                     <l part="N">Πυρρίχου τʼ εὔδοξον ἱππόν[ικον υἱόν,</l>
                     <milestone n="str. 2" unit="strophe"/>
                     <l part="N">ὃς φιλοξείνου τε καὶ ὀρθοδ[ίκου</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P">
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P">
                         The rest of the text is lost.
                     </note>
-                </div2>
-                <div2 n="14b" sample="complete" part="N" type="poem" org="uniform">
+                </div>
+                <div n="14b" sample="complete" part="N" type="poem" org="uniform">
                     <head>
                         <title lang="en">οδε 14β</title>
                         <persName type="winner">Ἀριστοτελει Λαρισαίῳ</persName>
@@ -1700,11 +1700,11 @@
                     <l part="N">ραν πρὸς εὐθαλέα μολών</l>
                     <l part="N">δὶς στεφανώσατο Λα-</l>
                     <l n="10" part="N">ρίσα[ς ἀναξίππου χάριν [</l>
-                    <note anchored="yes" place="unspecified" lang="en" type="Text" resp="P">
+                    <note anchored="true" place="unspecified" lang="en" type="Text" resp="P">
                         The rest of the ode is lost.
                     </note>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

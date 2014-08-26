@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - 1 Chronicles</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,13 +81,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="1 Chronicles" type="book">
+            <div part="N" sample="complete" org="uniform" n="1 Chronicles" type="book">
                 <head lang="en">1 Chronicles</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">Adam Seth Enos</s>
@@ -222,8 +222,8 @@ Matred filiae Mezaab
                         <milestone unit="verse" n="54"/>
                         <s part="N">dux Magdihel dux Iram hii duces Edom</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">filii autem Israhel Ruben Symeon Levi Iuda Isachar et Zabulon</s>
@@ -370,8 +370,8 @@ atque resonantes et in tabernaculis commorantes hii sunt Cinei
 qui venerunt de calore patris domus Rechab
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -443,8 +443,8 @@ filius fuit Sechenia
                         <milestone unit="verse" n="24"/>
                         <s part="N">filii Helioenai Oduia et Heliasub et Pheleia et Accub et Iohanan et Dalaia et Anani septem</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">filii Iuda Phares Esrom et Carmi et Ur et Subal</s>
@@ -601,8 +601,8 @@ et Ozihel filios Iesi
 Amalechitarum et habitaverunt ibi pro eis usque ad diem hanc
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -725,8 +725,8 @@ Gad et dimidium tribus Manasse et adduxit eos in Alae et Abor
 et Ara et fluvium Gozan usque ad diem hanc
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">filii Levi Gersom Caath Merari</s>
@@ -959,8 +959,8 @@ et Iasa cum suburbanis suis
                         <milestone unit="verse" n="81"/>
                         <s part="N">sed et Esbon cum suburbanis eius et Iezer cum suburbanis suis</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">porro filii Isachar Thola et Phua Iasub et Samaron quattuor</s>
@@ -1111,8 +1111,8 @@ fortissimi duces ducum numerus autem eorum aetatis quae apta
 esset ad bellum viginti sex milia
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">Beniamin autem genuit Bale primogenitum suum Asbal secundum Ohora tertium</s>
@@ -1211,8 +1211,8 @@ tendentes arcum et multos habentes filios ac nepotes usque ad
 centum quinquaginta omnes hii filii Beniamin
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1380,8 +1380,8 @@ Ionathan et Melchisuae et Abinadab et Esbaal
 Ismahel Saria Obdia Anan hii filii Esel
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1454,8 +1454,8 @@ custodierit illud sed insuper etiam pythonissam consuluerit
 transtulit regnum eius ad David filium Isai
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">congregatus est igitur omnis Israhel ad David in Hebron dicens os tuum sumus et caro tua</s>
@@ -1627,8 +1627,8 @@ pervenerat posuit autem eum David ad auriculam suam
 Iethma Moabites Elihel et Obed et Iasihel de Masobia
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1797,8 +1797,8 @@ bubus ad vescendum farinam palatas uvam passam vinum oleum
 boves arietes ad omnem copiam gaudium quippe erat in Israhel
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">iniit autem consilium David cum tribunis et centurionibus et universis principibus</s>
@@ -1865,8 +1865,8 @@ civitatem David sed avertit in domum Obededom Getthei
 benedixit Dominus domui eius et omnibus quae habebat
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1938,8 +1938,8 @@ castra Philisthinorum de Gabaon usque Gazera
 Dominus dedit pavorem eius super omnes gentes
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2069,8 +2069,8 @@ David Michol filia Saul prospiciens per fenestram vidit regem
 David saltantem atque ludentem et despexit eum in corde suo
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2208,8 +2208,8 @@ Idithun fecit esse portarios
                         <milestone unit="verse" n="43"/>
                         <s part="N">reversusque est omnis populus in domum suam et David ut benediceret etiam domui suae</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="17" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="17" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2345,8 +2345,8 @@ oret coram te
 te te enim Domine benedicente benedicta erit in perpetuum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="18" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="18" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2430,8 +2430,8 @@ iudicium atque iustitiam cuncto populo suo
 Felethi porro filii David primi ad manum regis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="19" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="19" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">accidit autem ut moreretur Naas rex filiorum Ammon et regnaret filius eius pro eo</s>
@@ -2538,8 +2538,8 @@ transfugerunt ad David et servierunt ei noluitque ultra Syria
 auxilium praebere filiis Ammon
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="20" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="20" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2588,8 +2588,8 @@ Sammaa fratris David hii sunt filii Rapha in Geth qui
 ceciderunt in manu David et servorum eius
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="21" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="21" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">consurrexit autem Satan contra Israhel et incitavit David ut numeraret Israhel</s>
@@ -2740,8 +2740,8 @@ Deum nimio enim fuerat timore perterritus videns gladium angeli
 Domini
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="22" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="22" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">dixitque David haec est domus Dei et hoc altare in holocaustum Israhel</s>
@@ -2844,8 +2844,8 @@ sanctuarium Domino Deo ut introducatur arca foederis Domini et
 vasa Domino consecrata in domum quae aedificatur nomini Domini
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="23" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="23" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">igitur David senex et plenus dierum regem constituit Salomonem filium suum super Israhel</s>
@@ -2963,8 +2963,8 @@ sanctuarii et observationem filiorum Aaron fratrum suorum ut
 ministrent in domo Domini
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="24" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="24" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">porro filiis Aaron hae partitiones erunt filii Aaron Nadab et Abiu et Eleazar et Ithamar</s>
@@ -3062,8 +3062,8 @@ familiarum sacerdotalium et leviticarum tam maiores quam
 minores omnes sors aequaliter dividebat
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="25" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="25" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3159,8 +3159,8 @@ Godoliae ipsi et filiis eius et fratribus duodecim
                         <milestone unit="verse" n="31"/>
                         <s part="N">vicesima quarta Romamthiezer filiis et fratribus eius duodecim</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="26" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="26" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">divisiones autem ianitorum de Coritis Mesellemia filius Core de filiis Asaph</s>
@@ -3298,8 +3298,8 @@ et Gadditis et dimidio tribus Manasse in omne ministerium Dei
 et regis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="27" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="27" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3441,8 +3441,8 @@ regis
 princeps autem exercitus regis erat Ioab
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="28" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="28" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3569,8 +3569,8 @@ ministerium domus Domini adsistunt tibi et parati sunt et
 noverunt tam principes quam populus facere omnia praecepta tua
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="29" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="29" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3748,8 +3748,8 @@ transierunt sub eo sive in Israhel sive in cunctis regnis
 terrarum
                         </s>
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

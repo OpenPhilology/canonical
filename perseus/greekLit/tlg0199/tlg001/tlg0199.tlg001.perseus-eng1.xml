@@ -15,15 +15,15 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 62K</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
                 <authority>Perseus Project</authority>
             </publicationStmt>
             <notesStmt>
-                <note place="unspecified" anchored="yes">
+                <note place="unspecified" anchored="true">
                     Diane Svarlien typed in her translation.  Basic SGML tagging by EM
                 </note>
             </notesStmt>
@@ -42,18 +42,18 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="poem"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="poem"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>7/12/92</date>
                 <respStmt>
@@ -95,13 +95,13 @@
 					added cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" type="Book" n="Ep">
+            <div part="N" sample="complete" org="uniform" type="Book" n="Ep">
                 <head>Epinicians</head>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="1">
+                <div part="N" sample="complete" org="uniform" type="poem" n="1">
                     <head>
                         <title>Ode 1</title>
                         <persName type="winner">For Argeius of Ceos</persName>
@@ -246,8 +246,8 @@
                         <milestone n="180" unit="line" ed="P"/>
                         has honor only as long as he lives. Excellence is a difficult struggle, but when the struggle is completed rightly it leaves a man, even when he dies, the enviable ornament of renown.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="2">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="2">
                     <head>
                         <title>Ode 2</title>
                         <persName type="winner">For Argeius of Ceos</persName>
@@ -269,8 +269,8 @@
                         <milestone n="11" unit="card"/>
                         the native Muse summons the sweet clang of flutes, honoring the dear son of Pantheides with victory songs.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="3">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="3">
                     <head>
                         <title>Ode 3</title>
                         <persName type="winner">For Hieron of Syracuse</persName>
@@ -278,7 +278,7 @@
                             Chariot-Race at
                             <placeName key="perseus,Olympia">Olympia</placeName>
                         </seg>
-                        <date value="-468">468 B. C.</date>
+                        date when="-468">468 B. C.</date>
                     </head>
                     <p>
                         <milestone n="1" unit="strophe"/>
@@ -415,8 +415,8 @@
                         <milestone n="95" unit="line" ed="P"/>
                         Silence is no ornament for a successful man. With remembrance of fine deeds a man will also sing the gracious recompense made by the honey-voiced Cean nightingale.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="4">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="4">
                     <head>
                         <title>Ode 4</title>
                         <persName type="winner">For Hieron of Syracuse</persName>
@@ -424,7 +424,7 @@
                             Chariot Race at
                             <placeName key="perseus,Delphi">Delphi</placeName>
                         </seg>
-                        <date value="-470">470 B. C.</date>
+                        date when="-470">470 B. C.</date>
                     </head>
                     <p>
                         <milestone n="1" unit="strophe"/>
@@ -450,8 +450,8 @@
                         <milestone n="20" unit="line" ed="P"/>
                         and to be granted a share of every kind of noble deed?
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="5">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="5">
                     <head>
                         <title>Ode 5</title>
                         <persName type="winner">For Hieron of Syracuse</persName>
@@ -459,7 +459,7 @@
                             Single-horse victory at
                             <placeName key="perseus,Olympia">Olympia</placeName>
                         </seg>
-                        <date value="-476">476 B. C.</date>
+                        date when="-476">476 B. C.</date>
                     </head>
                     <p>
                         <milestone n="1" unit="strophe"/>
@@ -469,7 +469,7 @@
                         if any man on earth today, will rightly understand this honor, sweet gift of the violet-garlanded Muses. Now, calm your righteous mind; rest it from cares, and consider: a hymn, woven with the help of the deep-waisted Graces,
                         <milestone n="10" unit="line" ed="P"/>
                         is sent from the holy island
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Ceos, off the coast of
                             <placeName key="tgn,7002681">Attica</placeName>
                             ; homeland of Bacchylides and his uncle, the poet Simonides.
@@ -506,24 +506,24 @@
                         <milestone n="2" unit="antistrophe"/>
                         <milestone n="56" unit="card"/>
                         So it was, they say, that the gate-destroying unconquerable son
-                        <note place="unspecified" anchored="yes" resp="Svarlien">Heracles.</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">Heracles.</note>
                         of Zeus of the flashing thunderbolt went down to the halls of slender-ankled Persephone
                         <milestone n="60" unit="line" ed="P"/>
                         to bring up into the light from Hades the razor-toothed dog,
-                        <note place="unspecified" anchored="yes" resp="Svarlien">Cerberus.</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">Cerberus.</note>
                         son of the fearsome Echidna. There he saw the souls of miserable mortals by the streams of Cocytus,
                         <milestone n="65" unit="line" ed="P"/>
                         like leaves swirled by the wind along the sheep-pasturing headlands of shining Ida. Among them, the shade of Porthaon's bold,
                         <milestone n="70" unit="line" ed="P"/>
                         spear-wielding descendant
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Meleager. Porthaon is his grandfather; his father is Oineus.
                         </note>
                         stood out.
                         <milestone n="2" unit="epistrophe"/>
                         <milestone n="71" unit="card"/>
                         When the marvellous hero, son of Alcmene,
-                        <note place="unspecified" anchored="yes" resp="Svarlien">Heracles. Alcmene is his mother.</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">Heracles. Alcmene is his mother.</note>
                         saw him shining in his armor, he stretched the clear-sounding bowstring onto his bow, and opened the lid of his quiver and drew out a bronze-tipped
                         <milestone n="75" unit="line" ed="P"/>
                         arrow. But the soul of Meleager appeared in front of him and spoke to him, knowing him well: “Son of great Zeus,
@@ -532,7 +532,7 @@
                         <milestone n="3" unit="strophe"/>
                         <milestone n="81" unit="card"/>
                         Do not shoot a harsh arrow from your hands in vain against the souls of those who have perished. You have no need to fear.” So he spoke. And the son of Amphitryon
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Heracles has both a divine father (Zeus) and a nominal mortal father (Amphitryon).
                         </note>
                         was astonished,
@@ -562,7 +562,7 @@
                         <milestone n="121" unit="card"/>
                         Ruinous fate destroyed
                         <gap/>
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             There is a gap of two or three words in the papyrus here (lines 120-23).
                         </note>
                         For not yet did the hostile goddess, the savage daughter of Leto, [stop] her anger. We fought hard for the beast's fiery hide
@@ -597,7 +597,7 @@
                         Is there, in the halls of battle-loving Oineus, any daughter, unsubdued by love, whose appearance is like yours? I would gladly make her my splendid bride.”
                         <milestone n="170" unit="line" ed="P"/>
                         And to him the soul of Meleager, steadfast in battle, answered: “I left behind at home Deianeira,
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Deianeira did marry Heracles; later she killed him unintentionally by giving him a robe treated with poison, which she thought was a love-charm.
                         </note>
                         with her neck like a fresh olive; golden
@@ -623,15 +623,15 @@
                         from the path
                         <gap/>
                         .
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             There is another gap in the papyrus here, and the text is uncertain.
                         </note>
                         For in this way the roots of fine fortune flourish; may the great father
                         <milestone n="200" unit="line" ed="P"/>
                         Zeus guard them, undisturbed, in peace.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="6">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="6">
                     <head>
                         <title>Ode 6</title>
                         <persName type="winner">For Lachon of Ceos</persName>
@@ -639,7 +639,7 @@
                             [Boys'] Foot Race at
                             <placeName key="perseus,Olympia">Olympia</placeName>
                         </seg>
-                        <date value="-452">452 B. C.</date>
+                        date when="-452">452 B. C.</date>
                     </head>
                     <p>
                         <milestone n="1" unit="strophe"/>
@@ -659,8 +659,8 @@
                         <milestone n="15" unit="line" ed="P"/>
                         since by your triumph in the foot race you brought glory to Ceos.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="7">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="7">
                     <head>
                         <title>Ode 7</title>
                         <persName type="winner">For Lachon of Ceos</persName>
@@ -668,7 +668,7 @@
                             [Boys'] Foot Race at
                             <placeName key="perseus,Olympia">Olympia</placeName>
                         </seg>
-                        <date value="-452">452 B. C.</date>
+                        date when="-452">452 B. C.</date>
                     </head>
                     <p>
                         <milestone n="1" unit="strophe"/>
@@ -684,16 +684,16 @@
                         <milestone n="10" unit="line" ed="P"/>
                         and much envied among men. You have adorned with garlands [the son] of Aristomenes, Lachon
                         <gap/>
-                        <note place="unspecified" anchored="yes" type="Text" resp="Svarlien">The rest is fragmentary.</note>
+                        <note place="unspecified" anchored="true" type="Text" resp="Svarlien">The rest is fragmentary.</note>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="8">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="8">
                     <head>
                         <title>Ode 8</title>
                         <persName type="winner">For Liparion of Ceos?</persName>
                     </head>
                     <p>
-                        <note place="unspecified" anchored="yes" type="Text" resp="Svarlien">
+                        <note place="unspecified" anchored="true" type="Text" resp="Svarlien">
                             The text of str. 1 is fragmentary.
                         </note>
                         <milestone n="2" unit="strophe"/>
@@ -711,8 +711,8 @@
                         <milestone n="30" unit="line" ed="P"/>
                         of Aetolian olive in the famous games of Phrygian Pelops.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="9">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="9">
                     <head>
                         <title>Ode 9</title>
                         <persName type="winner">For Automedes of Phlius</persName>
@@ -857,8 +857,8 @@
                         <gap/>
                         for the son of Timoxenos sing praises, with  processions [of young men], for his victory in the pentathlon.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="10">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="10">
                     <head>
                         <title>Ode 10</title>
                         <persName type="winner">For an Athenian</persName>
@@ -936,8 +936,8 @@
                         must
                         <gap/>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="11">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="11">
                     <head>
                         <title>Ode 11</title>
                         <persName type="winner">For Alexidamus of Metapontion</persName>
@@ -1049,8 +1049,8 @@
                         <milestone n="125" unit="line" ed="P"/>
                         throughout all time, countless deeds of valor done by the Achaeans.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="12">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="12">
                     <head>
                         <title>Ode 12</title>
                         <persName type="winner">For Teisias of Aegina</persName>
@@ -1075,7 +1075,7 @@
                         and the strong-limbed wrestling at
                         <placeName key="perseus,Nemea">Nemea</placeName>
                         <gap/>
-                        <note place="unspecified" anchored="yes" type="text" resp="Svarlien">lines 9-32 are lost.</note>
+                        <note place="unspecified" anchored="true" type="text" resp="Svarlien">lines 9-32 are lost.</note>
                         <milestone n="2" unit="antistrophe"/>
                         <milestone n="34" unit="card"/>
                         <gap/>
@@ -1096,8 +1096,8 @@
                         and at the silver-whirling [Alpheus?]
                         <gap/>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="13">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="13">
                     <head>
                         <title>Ode 13</title>
                         <persName type="winner">For Pytheas of Aegina</persName>
@@ -1106,7 +1106,7 @@
                             <placeName key="perseus,Nemea">Nemea</placeName>
                         </seg>
                         ?
-                        <date value="-483">483 B. C.</date>
+                        date when="-483">483 B. C.</date>
                     </head>
                     <p>
                         <milestone n="1" unit="strophe"/>
@@ -1116,7 +1116,7 @@
                         <gap/>
                         <milestone n="10" unit="line" ed="P"/>
                         <gap/>
-                        <note place="unspecified" anchored="yes" type="text" resp="Svarlien">Lines 13-43 are lost.</note>
+                        <note place="unspecified" anchored="true" type="text" resp="Svarlien">Lines 13-43 are lost.</note>
                         <milestone n="2" unit="strophe"/>
                         <milestone n="44" unit="card"/>
                         “
@@ -1227,7 +1227,7 @@
                         <gap/>
                         or on a [pyre] piled high with wood
                         <gap/>
-                        <note place="unspecified" anchored="yes" type="text" resp="Svarlien">Lines 170-74 are missing.</note>
+                        <note place="unspecified" anchored="true" type="text" resp="Svarlien">Lines 170-74 are missing.</note>
                         <milestone n="175" unit="line" ed="P"/>
                         for all-shining Excellence is not hidden and effaced in the lightless [veil?] of night,
                         <milestone n="6" unit="antistrophe"/>
@@ -1251,7 +1251,7 @@
                         <milestone n="205" unit="line" ed="P"/>
                         to win the victory, and all-subduing time always [preserves] a fine deed. The [vain speech] of enemies diminishes, unseen
                         <gap/>
-                        <note place="unspecified" anchored="yes" type="text" resp="Svarlien">Lines 210-219 are lost.</note>
+                        <note place="unspecified" anchored="true" type="text" resp="Svarlien">Lines 210-219 are lost.</note>
                         <milestone n="7" unit="antistrophe"/>
                         <milestone n="220" unit="card"/>
                         <gap/>
@@ -1265,8 +1265,8 @@
                         <milestone n="230" unit="line" ed="P"/>
                         songs filled with words of delight will proclaim him to all the people.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="14">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="14">
                     <head>
                         <title>Ode 14</title>
                         <persName type="winner">For Cleoptolemus of Thessaly</persName>
@@ -1296,10 +1296,10 @@
                         <gap/>
                         of hospitable and just
                         <gap/>
-                        <note place="unspecified" anchored="yes" type="text" resp="Svarlien">The rest of the ode is lost.</note>
+                        <note place="unspecified" anchored="true" type="text" resp="Svarlien">The rest of the ode is lost.</note>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="14b">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="14b">
                     <head>
                         <title>Ode 14b</title>
                         <persName type="winner">For Aristoteles of Larisa</persName>
@@ -1315,10 +1315,10 @@
                         <milestone n="10" unit="line" ed="P"/>
                         for the glory of horse-mastering Larisa
                         <gap/>
-                        <note place="unspecified" anchored="yes" type="text" resp="Svarlien">The rest of the ode is lost.</note>
+                        <note place="unspecified" anchored="true" type="text" resp="Svarlien">The rest of the ode is lost.</note>
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

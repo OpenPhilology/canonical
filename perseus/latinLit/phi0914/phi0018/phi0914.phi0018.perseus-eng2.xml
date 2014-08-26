@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>The History of Rome by Titus Livius, the first eight books - 8</title>
@@ -17,8 +17,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:NEH">The National Endowment for the Humanities</funder>
-            </titleStmt>
-            <extent>about 1.4 Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -47,20 +47,20 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter" n="chunk"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter" n="chunk"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English </language>
-                <language id="greek">Greek </language>
-                <language id="la">Latin </language>
-                <language id="fr">French </language>
+                language ident="en">English </language>
+                language ident="greek">Greek </language>
+                language ident="la">Latin </language>
+                language ident="fr">French </language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>4/4/2006</date>
                 <respStmt>
@@ -69,12 +69,12 @@
                 </respStmt>
                 <item>initial file </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
             <pb n="503" id="p.503"/>
-            <div1 part="N" sample="complete" org="uniform" n="8" type="book">
+            <div part="N" sample="complete" org="uniform" n="8" type="book">
                 <head>BOOK VIII.</head>
                 <argument>
                     <p>
@@ -429,7 +429,7 @@ dition against the Samnites.
                     <milestone n="6" unit="section"/>
                     <quote>
                         Janus, Jupiter, father Mars, Quirinus, Bellona, ye Lares, ye gods Novensiles,
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             The Novensiles were nine deities brought to Rome by the Sabines: Lara, Vesta, Minerva, Feronia, Concord, Faith, Fortune, Chance, Health. See Niebuhr III. n. 249.
                         </note>
                         ye gods Indigetes, ye divinities, under whose power we and our enemies are, and ye dii Manes,
@@ -946,7 +946,7 @@ dition against the Samnites.
                     they said,
                     <quote>
                         that suc defect could have been discovered, as the consul, rising in the night, had nominated the dictator while every thing was still;
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             Any noise happening during the taking of the auspices was reckoned inauspicious; hence
                             <hi rend="italics">silentium</hi>
                             signified among the augurs, every circum- stance being favourable.
@@ -1560,7 +1560,7 @@ dition against the Samnites.
                     <milestone n="5" unit="section"/>
                     From this cause, certainly, both the actions of individuals and the public records of events have been confused. Nor is there extant any writer, contemporary with those events, on whose authority we can with certainty rely.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

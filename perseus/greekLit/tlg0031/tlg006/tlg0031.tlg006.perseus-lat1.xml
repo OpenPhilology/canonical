@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - Romans</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,13 +81,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="Romans" type="book">
+            <div part="N" sample="complete" org="uniform" n="Romans" type="book">
                 <head lang="en">Romans</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">Paulus servus Christi Iesu vocatus apostolus segregatus in evangelium Dei</s>
@@ -231,8 +231,8 @@ quoniam qui talia agunt digni sunt morte non solum ea faciunt
 sed et consentiunt facientibus
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -336,8 +336,8 @@ te qui per litteram et circumcisionem praevaricator legis es
 spiritu non littera cuius laus non ex hominibus sed ex Deo est
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">quid ergo amplius est Iudaeo aut quae utilitas circumcisionis</s>
@@ -442,8 +442,8 @@ Iesu
                         <milestone unit="verse" n="31"/>
                         <s part="N">legem ergo destruimus per fidem absit sed legem statuimus</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">quid ergo dicemus invenisse Abraham patrem nostrum secundum carnem</s>
@@ -536,8 +536,8 @@ qui suscitavit Iesum Dominum nostrum a mortuis
                         <milestone unit="verse" n="25"/>
                         <s part="N">qui traditus est propter delicta nostra et resurrexit propter iustificationem nostram</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">iustificati igitur ex fide pacem habeamus ad Deum per Dominum nostrum Iesum Christum</s>
@@ -637,8 +637,8 @@ per iustitiam in vitam aeternam per Iesum Christum Dominum
 nostrum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">quid ergo dicemus permanebimus in peccato ut gratia abundet</s>
@@ -713,8 +713,8 @@ fructum vestrum in sanctificationem finem vero vitam aeternam
                         <milestone unit="verse" n="23"/>
                         <s part="N">stipendia enim peccati mors gratia autem Dei vita aeterna in Christo Iesu Domino nostro</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -811,8 +811,8 @@ membris meis
 ipse mente servio legi Dei carne autem legi peccati
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -978,8 +978,8 @@ nos separare a caritate Dei quae est in Christo Iesu Domino
 nostro
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1100,8 +1100,8 @@ est
 petram scandali et omnis qui credit in eum non confundetur
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">fratres voluntas quidem cordis mei et obsecratio ad Deum fit pro illis in salutem</s>
@@ -1179,8 +1179,8 @@ me palam apparui his qui me non interrogabant
 populum non credentem et contradicentem
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1322,8 +1322,8 @@ eius
                         <milestone unit="verse" n="36"/>
                         <s part="N">quoniam ex ipso et per ipsum et in ipso omnia ipsi gloria in saecula amen</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1399,8 +1399,8 @@ eius
                         <milestone unit="verse" n="21"/>
                         <s part="N">noli vinci a malo sed vince in bono malum</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1461,8 +1461,8 @@ contentione et aemulatione
                         <milestone unit="verse" n="14"/>
                         <s part="N">sed induite Dominum Iesum Christum et carnis curam ne feceritis in desideriis</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">infirmum autem in fide adsumite non in disceptationibus cogitationum</s>
@@ -1555,8 +1555,8 @@ non iudicat semet ipsum in eo quo probat
 ex fide omne autem quod non ex fide peccatum est
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">debemus autem nos firmiores inbecillitates infirmorum sustinere et non nobis placere</s>
@@ -1693,8 +1693,8 @@ mei oblatio accepta fiat in Hierosolyma sanctis
                         <milestone unit="verse" n="33"/>
                         <s part="N">Deus autem pacis sit cum omnibus vobis amen</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1803,8 +1803,8 @@ cunctis gentibus cognito
                         <milestone unit="verse" n="27"/>
                         <s part="N">solo sapienti Deo per Iesum Christum cui honor in saecula saeculorum amen</s>
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

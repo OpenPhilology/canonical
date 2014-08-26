@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - John</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,13 +81,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="John" type="book">
+            <div part="N" sample="complete" org="uniform" n="John" type="book">
                 <head lang="en">John</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">in principio erat Verbum et Verbum erat apud Deum et Deus erat Verbum</s>
@@ -262,8 +262,8 @@ ei priusquam te Philippus vocaret cum esses sub ficu vidi te
 et angelos Dei ascendentes et descendentes supra Filium hominis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">et die tertio nuptiae factae sunt in Cana Galilaeae et erat mater Iesu ibi</s>
@@ -354,8 +354,8 @@ crediderunt in nomine eius videntes signa eius quae faciebat
 homine ipse enim sciebat quid esset in homine
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">erat autem homo ex Pharisaeis Nicodemus nomine princeps Iudaeorum</s>
@@ -489,8 +489,8 @@ incredulus est Filio non videbit vitam sed ira Dei manet super
 eum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -689,8 +689,8 @@ Iesus filius tuus vivit et credidit ipse et domus eius tota
                         <milestone unit="verse" n="54"/>
                         <s part="N">hoc iterum secundum signum fecit Iesus cum venisset a Iudaea in Galilaeam</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">post haec erat dies festus Iudaeorum et ascendit Iesus Hierosolymis</s>
@@ -859,8 +859,8 @@ qui accuset vos Moses in quo vos speratis
                         <milestone unit="verse" n="47"/>
                         <s part="N">si autem illius litteris non creditis quomodo meis verbis credetis</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">post haec abiit Iesus trans mare Galilaeae quod est Tiberiadis</s>
@@ -1129,8 +1129,8 @@ me nisi fuerit ei datum a Patre meo
 traditurus eum cum esset unus ex duodecim
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1314,8 +1314,8 @@ scrutare et vide quia propheta a Galilaea non surgit
                         <milestone unit="verse" n="53"/>
                         <s part="N">et reversi sunt unusquisque in domum suam</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">Iesus autem perrexit in montem Oliveti</s>
@@ -1536,8 +1536,8 @@ eius servo
                         <milestone unit="verse" n="59"/>
                         <s part="N">tulerunt ergo lapides ut iacerent in eum Iesus autem abscondit se et exivit de templo</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">et praeteriens vidit hominem caecum a nativitate</s>
@@ -1698,8 +1698,8 @@ non vident videant et qui vident caeci fiant
 nunc vero dicitis quia videmus peccatum vestrum manet
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1839,8 +1839,8 @@ Iohannes baptizans primum et mansit illic
                         <milestone unit="verse" n="42"/>
                         <s part="N">omnia autem quaecumque dixit Iohannes de hoc vera erant et multi crediderunt in eum</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">erat autem quidam languens Lazarus a Bethania de castello Mariae et Marthae sororis eius</s>
@@ -2024,8 +2024,8 @@ templo stantes quid putatis quia non veniat ad diem festum
 cognoverit ubi sit indicet ut adprehendant eum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2215,8 +2215,8 @@ ipse mihi mandatum dedit quid dicam et quid loquar
 loquor sicut dixit mihi Pater sic loquor
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2351,8 +2351,8 @@ ego vado non potes me modo sequi sequeris autem postea
 tibi non cantabit gallus donec me ter neges
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">non turbetur cor vestrum creditis in Deum et in me credite</s>
@@ -2470,8 +2470,8 @@ maior me est
 mandatum dedit mihi Pater sic facio surgite eamus hinc
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">ego sum vitis vera et Pater meus agricola est</s>
@@ -2578,8 +2578,8 @@ perhibebit de me
                         <milestone unit="verse" n="27"/>
                         <s part="N">et vos testimonium perhibetis quia ab initio mecum estis</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">haec locutus sum vobis ut non scandalizemini</s>
@@ -2706,8 +2706,8 @@ mecum est
 pressuram habetis sed confidite ego vici mundum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="17" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="17" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2810,8 +2810,8 @@ et hii cognoverunt quia tu me misisti
 qua dilexisti me in ipsis sit et ego in ipsis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="18" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="18" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2983,8 +2983,8 @@ pascha vultis ergo dimittam vobis regem Iudaeorum
                         <milestone unit="verse" n="40"/>
                         <s part="N">clamaverunt rursum omnes dicentes non hunc sed Barabban erat autem Barabbas latro</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="19" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="19" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">tunc ergo adprehendit Pilatus Iesum et flagellavit</s>
@@ -3160,8 +3160,8 @@ monumentum novum in quo nondum quisquam positus erat
                         <milestone unit="verse" n="42"/>
                         <s part="N">ibi ergo propter parasceven Iudaeorum quia iuxta erat monumentum posuerunt Iesum</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="20" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="20" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3287,8 +3287,8 @@ Christus Filius Dei et ut credentes vitam habeatis in nomine
 eius
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="21" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="21" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">postea manifestavit se iterum Iesus ad mare Tiberiadis manifestavit autem sic</s>
@@ -3400,8 +3400,8 @@ scribantur per singula nec ipsum arbitror mundum capere eos qui
 scribendi sunt libros amen
                         </s>
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

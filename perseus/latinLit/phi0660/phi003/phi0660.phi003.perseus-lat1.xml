@@ -15,8 +15,8 @@
                 <name>David Smith</name>
             </respStmt>
             <funder n="org:FIPSE">The Fund for the Improvement of Postsecondary Education (FIPSE) </funder>
-        </titleStmt>
-        <extent>About 120Kb</extent>
+        </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+        
         
         <sourceDesc>
             <bibl>
@@ -30,37 +30,37 @@
     
     <encodingDesc>
         <refsDecl n="text=orig" doctype="TEI.2">
-            <state unit="text"/>
+            refState unit="text"/>
             <state n="chunk" unit="poem"/>
-            <state unit="line"/>
+            refState unit="line"/>
         </refsDecl>
         <!--
 <refsDecl n="text=transl" doctype="TEI.2">
-  <state unit="text"/>
+  refState unit="text"/>
   <state n="chunk" unit="poem"/>
-  <state unit="line"/>
+  refState unit="line"/>
 </refsDecl>
 -->
         <refsDecl n="text=commintro" doctype="TEI.2">
-            <state unit="text"/>
+            refState unit="text"/>
             <state n="chunk" unit="section"/>
         </refsDecl>
         <refsDecl n="text=comm" doctype="TEI.2">
-            <state unit="text"/>
-            <state unit="poem"/>
+            refState unit="text"/>
+            refState unit="poem"/>
             <state n="chunk" unit="commline"/>
         </refsDecl>
     </encodingDesc>
     
     <profileDesc>
         <langUsage>
-            <language id="la">Latin</language>
-            <language id="en">English</language>
-            <language id="greek">Greek</language>
+            language ident="la">Latin</language>
+            language ident="en">English</language>
+            language ident="greek">Greek</language>
         </langUsage>
     </profileDesc>
     
-    <revisionDesc>
+    <revisionDesc><!--
         <change><date>15-Jul-00</date>
             <respStmt><name>Anne Mahoney</name><resp>ed.</resp></respStmt>
             <item>
@@ -120,12 +120,12 @@
             <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
             <item>split composite text and converted to unicode</item>
         </change>
-    </revisionDesc>
+    <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
 </teiHeader>
 <text lang="la" n="orig">
     <body>
         <head lang="en">Latin Text</head>
-        <div1 type="poem" n="1">
+        <div type="poem" n="1">
             <l>Tandem venit amor, qualem texisse pudori</l>
             <l rend="indent">quam nudasse alicui sit mihi fama magis.</l>
             <l>Exorata meis illum Cytherea Camenis</l>
@@ -136,8 +136,8 @@
             <l rend="indent">ne legat id nemo quam meus ante, velim.</l>
             <l>Sed peccasse iuvat, vultus componere famae</l>
             <l rend="indent">taedet: cum digno digna fuisse ferar.
-            </l></div1>
-        <div1 type="poem" n="2">
+            </l></div>
+        <div type="poem" n="2">
             <l>Invisus natalis adest, qui rure molesto</l>
             <l rend="indent">et sine Cerintho tristis agendus erit.</l>
             <l>Dulcius urbe quid est? an villa sit apta puellae</l>
@@ -146,37 +146,37 @@
             <l rend="indent">non tempestivae, saeve propinque, viae!</l>
             <l>Hic animum sensusque meos abducta relinquo,</l>
             <l rend="indent">arbitrio quamvis non sinis esse meo.
-            </l></div1>
-        <div1 type="poem" n="3">
+            </l></div>
+        <div type="poem" n="3">
             <l>Scis iter ex animo sublatum triste puellae?</l>
             <l rend="indent">natali Romae iam licet esse suo.</l>
             <l>Omnibus ille dies nobis natalis agatur,</l>
             <l rend="indent">qui nec opinanti nunc tibi forte venit.
-            </l></div1>
-        <div1 type="poem" n="4">
+            </l></div>
+        <div type="poem" n="4">
             <l>Gratum est, securus multum quod iam tibi de me</l>
             <l rend="indent">permittis, subito ne male inepta cadam.</l>
             <l>Sit tibi cura togae potior pressumque quasillo</l>
             <l rend="indent">scortum quam Servi filia Sulpicia:</l>
             <l>Solliciti sunt pro nobis, quibus illa dolori est,</l>
             <l rend="indent">ne cedam ignoto, maxima causa, toro.
-            </l></div1>
-        <div1 type="poem" n="5">
+            </l></div>
+        <div type="poem" n="5">
             <l>Estne tibi, Cerinthe, tuae pia cura puellae,</l>
             <l rend="indent">quod mea nunc vexat corpora fessa calor?</l>
             <l>A!  ego non aliter tristes evincere morbos</l>
             <l rend="indent">optarim, quam te si quoque velle putem.</l>
             <l n="5">At mihi quid prosit morbos evincere, si tu</l>
             <l rend="indent">nostra potes lento pectore ferre mala?
-            </l></div1>
-        <div1 type="poem" n="6">
+            </l></div>
+        <div type="poem" n="6">
             <l>Ne tibi sim, mea lux, aeque iam fervida cura</l>
             <l rend="indent">ac videor paucos ante fuisse dies,</l>
             <l>si quicquam tota commisi stulta iuventa,</l>
             <l rend="indent">cuius me fatear paenituisse magis,</l>
             <l n="5">hesterna quam te solum quod nocte reliqui,</l>
             <l rend="indent">ardorem cupiens dissimulare meum.
-            </l></div1>
+            </l></div>
     </body>
 </text>
 </TEI>

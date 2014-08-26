@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - Job</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,13 +81,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="Job" type="book">
+            <div part="N" sample="complete" org="uniform" n="Job" type="book">
                 <head lang="en">Job</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -198,8 +198,8 @@ benedictum
                         <milestone unit="verse" n="22"/>
                         <s part="N">in omnibus his non peccavit Iob neque stultum quid contra Deum locutus est</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -263,8 +263,8 @@ noctibus et nemo loquebatur ei verbum videbant enim dolorem
 esse vehementem
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">post haec aperuit Iob os suum et maledixit diei suo</s>
@@ -325,8 +325,8 @@ videat nec ortum surgentis aurorae
                         <milestone unit="verse" n="26"/>
                         <s part="N">nonne dissimulavi nonne silui nonne quievi et venit super me indignatio</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Eliphaz Themanites dixit</s>
@@ -383,8 +383,8 @@ habent fundamentum consumentur velut a tinea
                         <milestone unit="verse" n="21"/>
                         <s part="N">qui autem reliqui fuerint auferentur ex eis morientur et non in sapientia</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">voca ergo si est qui tibi respondeat et ad aliquem sanctorum convertere</s>
@@ -441,8 +441,8 @@ habent fundamentum consumentur velut a tinea
                         <milestone unit="verse" n="27"/>
                         <s part="N">ecce hoc ut investigavimus ita est quod auditum mente pertracta</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Iob dixit</s>
@@ -514,8 +514,8 @@ parcat nec contradicam sermonibus Sancti
                         <milestone unit="verse" n="30"/>
                         <s part="N">et non invenietis in lingua mea iniquitatem nec in faucibus meis stultitia personabit</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">militia est vita hominis super terram et sicut dies mercennarii dies eius</s>
@@ -576,8 +576,8 @@ iniquitatem meam ecce nunc in pulvere dormiam et si mane me
 quaesieris non subsistam
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Baldad Suites dixit</s>
@@ -627,8 +627,8 @@ pacatum reddet habitaculum iustitiae tuae
                         <milestone unit="verse" n="22"/>
                         <s part="N">qui oderunt te induentur confusione et tabernaculum impiorum non subsistet</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">et respondens Iob ait</s>
@@ -710,8 +710,8 @@ mecum in iudicio ex aequo possit audiri
                         <milestone unit="verse" n="35"/>
                         <s part="N">loquar et non timebo eum neque enim possum metuens respondere</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -776,8 +776,8 @@ ergo me ut plangam paululum dolorem meum
 ordo et sempiternus horror inhabitans
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Sophar Naamathites dixit</s>
@@ -830,8 +830,8 @@ cum te consumptum putaveris orieris ut lucifer
                         <milestone unit="verse" n="20"/>
                         <s part="N">oculi autem impiorum deficient et effugium peribit ab eis et spes eorum abominatio animae</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Iob dixit</s>
@@ -890,8 +890,8 @@ cum ipse dederit omnia in manibus eorum
                         <milestone unit="verse" n="25"/>
                         <s part="N">palpabunt quasi in tenebris et non in luce et errare eos faciet quasi ebrios</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">ecce omnia et vidit oculus meus et audivit auris mea et intellexi singula</s>
@@ -953,8 +953,8 @@ meas et vestigia pedum meorum considerasti
                         <milestone unit="verse" n="28"/>
                         <s part="N">qui quasi putredo consumendus sum et quasi vestimentum quod comeditur a tinea</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">homo natus de muliere brevi vivens tempore repletus multis miseriis</s>
@@ -1017,8 +1017,8 @@ consumitur et homines ergo similiter perdes
                         <milestone unit="verse" n="22"/>
                         <s part="N">attamen caro eius dum vivet dolebit et anima illius super semet ipso lugebit</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Eliphaz Themanites dixit</s>
@@ -1094,8 +1094,8 @@ tabernacula eorum qui munera libenter accipiunt
                         <milestone unit="verse" n="35"/>
                         <s part="N">concepit dolorem et peperit iniquitatem et uterus eius praeparat dolos</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Iob dixit</s>
@@ -1160,8 +1160,8 @@ pepercit et effudit in terra viscera mea
                         <milestone unit="verse" n="23"/>
                         <s part="N">ecce enim breves anni transeunt et semitam per quam non revertar ambulo</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="17" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="17" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">spiritus meus adtenuabitur dies mei breviabuntur et solum mihi superest sepulchrum</s>
@@ -1196,8 +1196,8 @@ pepercit et effudit in terra viscera mea
                         <milestone unit="verse" n="16"/>
                         <s part="N">in profundissimum infernum descendent omnia mea putasne saltim ibi erit requies mihi</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="18" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="18" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Baldad Suites dixit</s>
@@ -1248,8 +1248,8 @@ aspergatur in tabernaculo eius sulphur
                         <milestone unit="verse" n="21"/>
                         <s part="N">haec sunt ergo tabernacula iniqui et iste locus eius qui ignorat Deum</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="19" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="19" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Iob dixit</s>
@@ -1325,8 +1325,8 @@ non alius reposita est haec spes mea in sinu meo
                         <milestone unit="verse" n="29"/>
                         <s part="N">fugite ergo a facie gladii quoniam ultor iniquitatum gladius est et scitote esse iudicium</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="20" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="20" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Sophar Naamathites dixit</s>
@@ -1400,8 +1400,8 @@ tabernaculo suo
                         <milestone unit="verse" n="29"/>
                         <s part="N">haec est pars hominis impii a Deo et hereditas verborum eius a Domino</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="21" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="21" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Iob dixit</s>
@@ -1475,8 +1475,8 @@ inundatio et dolores dividet furoris sui
                         <milestone unit="verse" n="34"/>
                         <s part="N">quomodo igitur consolamini me frustra cum responsio vestra repugnare ostensa sit veritati</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="22" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="22" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Eliphaz Themanites dixit</s>
@@ -1542,8 +1542,8 @@ facies iniquitatem a tabernaculo tuo
                         <milestone unit="verse" n="30"/>
                         <s part="N">salvabitur innocens salvabitur autem munditia manuum suarum</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="23" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="23" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Iob dixit</s>
@@ -1586,8 +1586,8 @@ eius et anima eius quodcumque voluerit hoc facit
                         <milestone unit="verse" n="17"/>
                         <s part="N">non enim perii propter inminentes tenebras nec faciem meam operuit caligo</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="24" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="24" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">ab Omnipotente non sunt abscondita tempora qui autem noverunt eum ignorant dies illius</s>
@@ -1659,8 +1659,8 @@ conterentur
                         <milestone unit="verse" n="25"/>
                         <s part="N">quod si non est ita quis me potest arguere esse mentitum et ponere ante Deum verba mea</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="25" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="25" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Baldad Suites dixit</s>
@@ -1675,8 +1675,8 @@ conterentur
                         <milestone unit="verse" n="6"/>
                         <s part="N">quanto magis homo putredo et filius hominis vermis</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="26" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="26" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Iob dixit</s>
@@ -1714,8 +1714,8 @@ parvam stillam sermonis eius audierimus quis poterit tonitruum
 magnitudinis illius intueri
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="27" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="27" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">addidit quoque Iob adsumens parabolam suam et dixit</s>
@@ -1770,8 +1770,8 @@ violentorum quam ab Omnipotente suscipient
                         <milestone unit="verse" n="23"/>
                         <s part="N">stringet super eum manus suas et sibilabit super illum intuens locum eius</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="28" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="28" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">habet argentum venarum suarum principia et auro locus est in quo conflatur</s>
@@ -1836,8 +1836,8 @@ trahitur autem sapientia de occultis
                         <milestone unit="verse" n="28"/>
                         <s part="N">et dixit homini ecce timor Domini ipsa est sapientia et recedere a malo intellegentia</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="29" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="29" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">addidit quoque Iob adsumens parabolam suam et dixit</s>
@@ -1894,8 +1894,8 @@ quasi rex circumstante exercitu eram tamen maerentium
 consolator
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="30" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="30" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1973,8 +1973,8 @@ meum et velut nubes pertransiit salus mea
                         <milestone unit="verse" n="31"/>
                         <s part="N">versa est in luctum cithara mea et organum meum in vocem flentium</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="31" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="31" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">pepigi foedus cum oculis meis ut ne cogitarem quidem de virgine</s>
@@ -2066,8 +2066,8 @@ audiat et librum scribat ipse qui iudicat
                         <milestone unit="verse" n="40"/>
                         <s part="N">pro frumento oriatur mihi tribulus et pro hordeo spina finita sunt verba Iob</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="32" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="32" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">omiserunt autem tres viri isti respondere Iob eo quod iustus sibi videretur</s>
@@ -2130,8 +2130,8 @@ sermonibus eius
                         <milestone unit="verse" n="22"/>
                         <s part="N">nescio enim quamdiu subsistam et si post modicum tollat me factor meus</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="33" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="33" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">audi igitur Iob eloquia mea et omnes sermones meos ausculta</s>
@@ -2206,8 +2206,8 @@ eius in iubilo et reddet homini iustitiam suam
                         <milestone unit="verse" n="33"/>
                         <s part="N">quod si non habes audi me tace et docebo te sapientiam</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="34" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="34" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">pronuntians itaque Heliu etiam haec locutus est</s>
@@ -2304,8 +2304,8 @@ coepisti loqui et non ego quod si quid nosti melius loquere
 constringatur et tunc ad iudicium provocet sermonibus suis Deum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="35" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="35" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">igitur Heliu haec rursum locutus est</s>
@@ -2343,8 +2343,8 @@ iniquitates tuae quid facies contra eum
                         <milestone unit="verse" n="16"/>
                         <s part="N">ergo Iob frustra aperit os suum et absque scientia verba multiplicat</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="36" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="36" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">addens quoque Heliu haec locutus est</s>
@@ -2417,8 +2417,8 @@ plena pinguedine
                         <milestone unit="verse" n="33"/>
                         <s part="N">adnuntiat de ea amico suo quod possessio eius sit et ad eam possit ascendere</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="37" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="37" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">super hoc expavit cor meum et emotum est de loco suo</s>
@@ -2482,8 +2482,8 @@ iudicio et iustitia et enarrari non potest
                         <milestone unit="verse" n="24"/>
                         <s part="N">ideo timebunt eum viri et non audebunt contemplari omnes qui sibi videntur esse sapientes</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="38" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="38" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Dominus Iob de turbine dixit</s>
@@ -2571,8 +2571,8 @@ iudicio et iustitia et enarrari non potest
 clamant vagantes eo quod non habeant cibos
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="39" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="39" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">numquid nosti tempus partus hibicum in petris vel parturientes cervas observasti</s>
@@ -2651,8 +2651,8 @@ utique qui arguit Deum debet respondere ei
                         <milestone unit="verse" n="35"/>
                         <s part="N">unum locutus sum quod utinam non dixissem et alterum quibus ultra non addam</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="40" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="40" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Dominus Iob de turbine ait</s>
@@ -2711,8 +2711,8 @@ utique qui arguit Deum debet respondere ei
                         <milestone unit="verse" n="28"/>
                         <s part="N">ecce spes eius frustrabitur eum et videntibus cunctis praecipitabitur</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="41" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="41" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">non quasi crudelis suscitabo eum quis enim resistere potest vultui meo</s>
@@ -2768,8 +2768,8 @@ fulmina et ad locum alium non ferentur
                         <milestone unit="verse" n="25"/>
                         <s part="N">omne sublime videt ipse est rex super universos filios superbiae</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="42" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="42" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">respondens autem Iob Domino dixit</s>
@@ -2845,8 +2845,8 @@ vidit filios suos et filios filiorum suorum usque ad quartam
 generationem et mortuus est senex et plenus dierum
                         </s>
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

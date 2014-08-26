@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Inst." type="work">Institutio Oratoria, books 7-9 - 8</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -39,23 +39,23 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter"/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter"/>
+                refState unit="section"/>
             </refsDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="page"/>
+            <refsDecl
+                refState unit="page"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="la">Latin</language>
-                <language id="greek">Greek</language>
+                language ident="en">English</language>
+                language ident="la">Latin</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -64,12 +64,12 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
             <pb id="p.177"/>
-            <div1 part="N" sample="complete" org="uniform" n="8" type="book">
+            <div part="N" sample="complete" org="uniform" n="8" type="book">
                 <head>Book VIII</head>
                 <p>
                     <milestone n="pr" unit="chapter"/>
@@ -251,7 +251,7 @@ good, but no really eloquent speakers, and holds
 that, while to be a good speaker it is sufficient to
 say what is necessary, only the really eloquent
 speaker can do this in ornate and appropriate language.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Or.</hi>
                         <milestone n="1" unit="chapter"/>
                         <milestone n="1" unit="section"/>
@@ -264,7 +264,7 @@ or Lucius Crassus, we may regard it as certain that
 the reason why they and their predecessors lacked
 this gift was its extreme difficulty of acquisition.
 Again, Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cic.
                         <hi rend="italics">Or.</hi>
                         xiv. 44;
@@ -387,7 +387,7 @@ used.
                     We borrow figures and metaphors from the
 most decadent poets, and regard it as a real sign
 of genius that it should require a genius to understand our meaning. And yet Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Or.</hi>
                         I. iii. 12.
                     </note>
@@ -487,7 +487,7 @@ and dignified.
                 </p>
                 <p>
                     I. What the Greeks call
-                    <foreign lang="greek">fra/sin</foreign>
+                    <foreign xml:lang="grc">fra/sin</foreign>
                     we in Latin call
                     <hi rend="italics">elocuio</hi>
                     or style. Style is revealed both in individual
@@ -561,7 +561,7 @@ a certain distinguished orator thought
                     </quote>
                     a more elegant phrase than the
 word which he avoided.
-                    <note anchored="yes" place="unspecified">Probably salsamenta.</note>
+                    <note anchored="true" place="unspecified">Probably salsamenta.</note>
                     But while there is no
 special merit in the form of
                     <hi rend="italics">propriety</hi>
@@ -571,10 +571,10 @@ to fly to the opposite extreme. This fault we call
                     <hi rend="italics">impropriety,</hi>
                     <milestone n="4" unit="section"/>
                     while the Greeks call it
-                    <foreign lang="greek">a)/kuron</foreign>
+                    <foreign xml:lang="grc">a)/kuron</foreign>
                     As
 examples I may cite the Virgilian,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         IV. 419.
                     </note>
@@ -587,7 +587,7 @@ speech of Dolabella's,
 phrases of a kind that win praise from some of
 our contemporaries, such as,
                     <quote>His words fell from the cross.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Presumably in the sense,
                         <quote>He spoke like one in bodily pain.</quote>
                     </note>
@@ -654,7 +654,7 @@ of the term is the first. So, too,
                     <milestone n="8" unit="section"/>
                     are employed as names of fish, to mention no other
 cases.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Lit. i. e. in the
                         <hi rend="italics">proper</hi>
                         sense
@@ -697,7 +697,7 @@ is, however, a form of
                     of speech which
 deserves the highest praise, that is to say, the
 employment of words with the maximum of significance, as, for instance, when Cato
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Suet. Caes.</hi>
                         53.
                     </note>
@@ -705,14 +705,14 @@ employment of words with the maximum of significance, as, for instance, when Cat
                     <quote>Caesar was thoroughly sober when he undertook the task of overthrowing the constitution,</quote>
                     or as
 Virgil
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Ecl.</hi>
                         vi. 5.
                     </note>
                     spoke of a
                     <quote>thin-drawn strain,</quote>
                     and Horace
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Odes</hi>
                         I. xii. 1, and III. vi. 36.
                     </note>
@@ -727,7 +727,7 @@ also include under this head that form of
                     <pb id="p.203"/>
                     which is derived from characteristic epithets,
 such as in the Virgilian
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Georg.</hi>
                         i. 295 and
                         <hi rend="italics">Aen.</hi>
@@ -739,7 +739,7 @@ such as in the Virgilian
                     <quote>with white teeth.</quote>
                     But of
 this sort of propriety I shall have to speak elsewhere.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">SC.</hi>
                         ch. vi.
                     </note>
@@ -759,7 +759,7 @@ than they actually say deserve mention in connexion
 with clearness, since they assist the understanding.
 I, however, prefer to place
                     <hi rend="italics">emphasis</hi>
-                    <note anchored="yes" place="unspecified">See IX. ii. 64.</note>
+                    <note anchored="true" place="unspecified">See IX. ii. 64.</note>
                     among the
 ornaments of oratory, since it does not make a thing
 intelligible, but merely more intelligible.
@@ -780,7 +780,7 @@ forms of knowledge.
 in certain districts than in others, or which are
 of a technical character, such as the wind called
                     <quote>Atabalus,</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         An Apulian term for the Scirocco. What is the peculiarity of a
                         <hi rend="italics">sack-ship</hi>
                         is unknown. It is possible that with
@@ -801,7 +801,7 @@ done in the case of what are called homonyms. For
                     may be unintelligible unless we make it clear whether we are speaking of
 a bull, or a mountain, or a constellation, or the name
 of a man, or the root of a tree.
-                    <note anchored="yes" place="unspecified">Reference unknown.</note>
+                    <note anchored="true" place="unspecified">Reference unknown.</note>
                 </p>
                 <p>
                     <milestone n="14" unit="section"/>
@@ -812,11 +812,11 @@ numerous. Therefore, a sentence should never be
 so long that it is impossible to follow its drift, nor
 should its conclusion be unduly postponed by transposition or an excessive use of
                     <hi rend="italics">hyperbaton.</hi>
-                    <note anchored="yes" place="unspecified">See viii. vi. 62.</note>
+                    <note anchored="true" place="unspecified">See viii. vi. 62.</note>
                     Still
 worse is the result when the order of the words is
 confused as in the line
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         i. 109. The awkwardness of the order cannot be
 brought out in English.
@@ -835,7 +835,7 @@ sentence in the midst of another, may seriously
 hinder the understanding of a passage, unless the
 insertion is short. For example, in the passage
 where Vergil
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Georg.</hi>
                         iii. 79–83.
                     </note>
@@ -861,7 +861,7 @@ ambiguity I mean not merely the kind of which
 I have already spoken, where the sense is uncertain,
 as in the clause
                     <hi rend="italics">Chremetem audivi percussisse Demean,</hi>
-                    <note anchored="yes" place="unspecified">See VII. ix. 10.</note>
+                    <note anchored="true" place="unspecified">See VII. ix. 10.</note>
                     <pb id="p.207"/>
                     but also that form of ambiguity which, although
 it does not actually result in obscuring the sense,
@@ -870,7 +870,7 @@ falls into the same verbal error as if a man should say
                     (that he had
 seen a man writing a book). For although it is
 clear that the book was being written by the man,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         and not the man by the book!
                     </note>
@@ -893,13 +893,13 @@ the compass of mortal breath.
 an infinity of toil to acquire this vice, which, by the
 way, is nothing new: for I learn from the pages of
 Livy
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Perhaps in his letter to his son, for which see II. v. 20.
                     </note>
                     that there was one, a teacher, who instructed
 his pupils to make all they said obscure, using the
 Greek word
-                    <foreign lang="greek">sko/tison</foreign>
+                    <foreign xml:lang="grc">sko/tison</foreign>
                     (
                     <quote>darken it.</quote>
                     ) It was this
@@ -920,7 +920,7 @@ succeed in committing the same fault by a
                     <milestone n="20" unit="section"/>
                     Worst of all are the
 phrases which the Greeks call
-                    <foreign lang="greek">a)diano/hta,</foreign>
+                    <foreign xml:lang="grc">a)diano/hta,</foreign>
                     that is to
 say, expressions which, though their meaning is
 obvious enough on the surface, have a secret meaning, as for example in the phrase
@@ -929,7 +929,7 @@ obvious enough on the surface, have a secret meaning, as for example in the phra
 is supposed in the scholastic theme to have torn his
 own limbs with his teeth, is said to have
                     <hi rend="italics">lain upon himself</hi>
-                    <note anchored="yes" place="unspecified">Like a wild beast devouring his prey.</note>
+                    <note anchored="true" place="unspecified">Like a wild beast devouring his prey.</note>
                     <milestone n="21" unit="section"/>
                     Such expressions are regarded as ingenious,
 daring and eloquent, simply because of their ambiguity, and quite a number of persons have become
@@ -1048,7 +1048,7 @@ was right when, in one of his letters to Brutus, he
                     wrote,
                     <quote>Eloquence which evokes no admiration is, in my opinion, unworthy of the name.</quote>
                     Aristotle
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Rhet.</hi>
                         III. ii. 5.
                     </note>
@@ -1057,7 +1057,7 @@ should be one of our first aims.
                 </p>
                 <p>
                     But such ornament must, as I have already said,
-                    <note anchored="yes" place="unspecified">In the introduction to this book, 19.</note>
+                    <note anchored="true" place="unspecified">In the introduction to this book, 19.</note>
                     be bold, manly and chaste, free from all effeminate
 smoothness and the false hues derived from artificial
 dyes, and must glow with health and vigour.
@@ -1086,7 +1086,7 @@ save these?
 not! For my trees must be planted in due order
 and at fixed intervals. What fairer sight is there
 than rows of trees planted in échelon
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Quincunx.</hi>
                         The formation may be thus represented
                     </note>
@@ -1208,7 +1208,7 @@ and tasteless excrescences on a flat surface.
                     In
 some cases instinct, and not reason, must supply
 the touchstone, as, for example, in the line:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         viii. 641.
                     </note>
@@ -1231,7 +1231,7 @@ poet who wrote:
                         <quote>
                             <l part="N">The youngling mice had gnawed</l>
                             <l part="N">Within its chest the purple-bordered gown.</l>
-                            <note anchored="yes" place="unspecified">
+                            <note anchored="true" place="unspecified">
                                 Camillus originally means a
                                 <quote>young boy.</quote>
                             </note>
@@ -1242,7 +1242,7 @@ poet who wrote:
                 <p>
                     <milestone n="20" unit="section"/>
                     On the other hand, we admire Virgil
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Georg. i.</hi>
                         181.
                     </note>
@@ -1261,7 +1261,7 @@ our expecting too much, while the use of the singular
 instead of the plural, and the unusual monosyllabic
 conclusion of the line, both add to the pleasing effect.
 Horace
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">A. P.</hi>
                         139.
                     </note>
@@ -1280,7 +1280,7 @@ heights: at times it is desirable that it should sink.
 For there are occasions when the very meanness of
 the words employed adds force to what we say.
 When Cicero, in his denunciation of Piso,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Fr.</hi>
                         100.
                     </note>
@@ -1299,20 +1299,20 @@ The same is true when he says elsewhere,
 serve to carry off a jest, as in the passage of Cicero
 where he talks of the
                     <quote>little sprat of a boy who slept with his elder sister,</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro. Cael.</hi>
                         xv. 36.
                     </note>
                     or where he speaks of
                     <quote>Flavius, who put out the eyes of crows,</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Mil.</hi>
                         xi. 25. Our equivalent is
                         <quote>catch a weasel asleep.</quote>
                     </note>
                     or, again, in the
                     <hi rend="italics">pro Milone,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Mil.</hi>
                         xxii. 60.
                         <hi rend="italics">Rufio,</hi>
@@ -1322,7 +1322,7 @@ where he talks of the
                     <quote>Hi, there! Rufio!</quote>
                     and talks of
                     <quote>Erucius Antoniaster.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         From the lost
                         <hi rend="italics">pro Vareno.</hi>
                         <quote>Erucius, Antonius' ape.</quote>
@@ -1335,7 +1335,7 @@ praised in my boyhood,
                     or
 in the same declamation,
                     <quote>You feed even your dog.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A declamation turning on the law that sons must support
 their parents.
                     </note>
@@ -1365,23 +1365,23 @@ unique use.
                     <milestone n="25" unit="section"/>
                     For his employment of words such as
                     <hi rend="italics">olli,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Archaic for
                         <hi rend="italics">illi.</hi>
                     </note>
                     <hi rend="italics">quianam,</hi>
-                    <note anchored="yes" place="unspecified">Because.</note>
+                    <note anchored="true" place="unspecified">Because.</note>
                     <hi rend="italics">moerus,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Archaic for
                         <hi rend="italics">murus (Aen.</hi>
                         x. 24.).
                     </note>
                     <hi rend="italics">pone</hi>
-                    <note anchored="yes" place="unspecified">Behind.</note>
+                    <note anchored="true" place="unspecified">Behind.</note>
                     and
                     <hi rend="italics">pellacia</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Deceitfulness (
                         <hi rend="italics">Aen.</hi>
                         ii. 90).
@@ -1396,7 +1396,7 @@ darkness of the past.
                     is old enough: what
 need for us to say
                     <hi rend="italics">quaiso?</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">quaeso</hi>
                         = pray,
                         <hi rend="italics">oppido</hi>
@@ -1407,7 +1407,7 @@ need for us to say
 my older contemporaries, but I fear that no one
 would tolerate it now. At any rate,
                     <hi rend="italics">antegerio,</hi>
-                    <note anchored="yes" place="unspecified">Quite, very.</note>
+                    <note anchored="true" place="unspecified">Quite, very.</note>
                     which
 means the same, would certainly never be used by
 anyone who was not possessed with a passion for
@@ -1415,20 +1415,20 @@ notoriety.
                     <milestone n="26" unit="section"/>
                     What need have we of
                     <hi rend="italics">acrumnosum?</hi>
-                    <note anchored="yes" place="unspecified">Wretched.</note>
+                    <note anchored="true" place="unspecified">Wretched.</note>
                     It
 is surely enough to call a thing
                     <hi rend="italics">horridum. Reor may</hi>
                     be tolerated,
                     <hi rend="italics">autumo</hi>
-                    <note anchored="yes" place="unspecified">Assert.</note>
+                    <note anchored="true" place="unspecified">Assert.</note>
                     smacks of tragedy,
                     <hi rend="italics">proles</hi>
-                    <note anchored="yes" place="unspecified">Offspring.</note>
+                    <note anchored="true" place="unspecified">Offspring.</note>
                     has
 become a rarity, while
                     <hi rend="italics">prosapia</hi>
-                    <note anchored="yes" place="unspecified">Stock, family.</note>
+                    <note anchored="true" place="unspecified">Stock, family.</note>
                     stamps the man
 who uses it as lacking taste. Need I say more
 Almost the whole language has changed.
@@ -1441,12 +1441,12 @@ cannot avoid using occasionally, such, for example, as
                     <hi rend="italics">nuncupare</hi>
                     and
                     <hi rend="italics">fari:</hi>
-                    <note anchored="yes" place="unspecified">Name, speak.</note>
+                    <note anchored="true" place="unspecified">Name, speak.</note>
                     there are yet others which it
 requires some daring to use, but which may still be
 employed so long as we avoid all appearance of that
 affectation which Virgil
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Catal.</hi>
                         ii.
                     </note>
@@ -1468,7 +1468,7 @@ affectation which Virgil
                     <milestone n="29" unit="section"/>
                     a fact which Cicero recorded in the words,
                     <quote>Cimber has killed his brother German.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Phil.</hi>
                         XI. vi. 14. A pun on the two meanings of
                         <hi rend="italics">gemanus,</hi>
@@ -1497,7 +1497,7 @@ of such words.
                 <p>
                     The coining of new words is, as I stated in the
 first book,
-                    <note anchored="yes" place="unspecified">I. v. 70</note>
+                    <note anchored="true" place="unspecified">I. v. 70</note>
                     more permissible in Greek, for the
 Greeks did not hesitate to coin nouns to represent
 certain sounds and emotions, and in truth they were
@@ -1513,7 +1513,7 @@ was a dispute between Pomponius and Seneca which
 even found its way into the prefaces of their works,
 as to whether
                     <hi rend="italics">gradus eliminate</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Sc.
                         <quote>moves his steps beyond the threshold.</quote>
                     </note>
@@ -1521,7 +1521,7 @@ as to whether
 ought to have been allowed in tragedy. But the
 ancients had no hesitation about using even
                     <hi rend="italics">expectorate</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <quote>banishes from his heart.</quote>
                     </note>
                     and, after all, it presents exactly the same formation
@@ -1530,7 +1530,7 @@ as
                     <milestone n="32" unit="section"/>
                     Of the coining of words by expansion
 and inflexion we have examples, such as the Ciceronian
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">De Nat. D.</hi>
                         I. xxxiv. 95.
                     </note>
@@ -1543,7 +1543,7 @@ softened by use. Derivatives may even be fashioned
 from proper names, quite apart from ordinary words,
 witness
                     <hi rend="italics">Sullaturit</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">a Att.</hi>
                         IX. x. 6.
                         <quote>Desires to be a second Sulla.</quote>
@@ -1552,7 +1552,7 @@ witness
                     <hi rend="italics">Fimbriatus</hi>
                     and
                     <hi rend="italics">Figulatus</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Metamorphosed into Figulus. Presumably refers to
 Clusinius Figulus, see VII. ii. 26.
                     </note>
@@ -1560,7 +1560,7 @@ Clusinius Figulus, see VII. ii. 26.
                     <milestone n="33" unit="section"/>
                     Many new words have been
 coined in imitation of the Greeks,
-                    <note anchored="yes" place="unspecified">See II. xiv. 2.</note>
+                    <note anchored="true" place="unspecified">See II. xiv. 2.</note>
                     more especially
 by Verginius Flavus, some of which, such as
                     <hi rend="italics">queens</hi>
@@ -1577,10 +1577,10 @@ in establishing themselves.
 are old, once were new, and there are some words in
 use which are of quite recent origin, such as
                     <hi rend="italics">reatus,</hi>
-                    <note anchored="yes" place="unspecified">The condition of an accused person.</note>
+                    <note anchored="true" place="unspecified">The condition of an accused person.</note>
                     invented by Messala, and
                     <hi rend="italics">munerarius,</hi>
-                    <note anchored="yes" place="unspecified">The giver of a gladiatorial show.</note>
+                    <note anchored="true" place="unspecified">The giver of a gladiatorial show.</note>
                     invented by
 Augustus. So, too, my own teachers still persisted
 in banning the use of words, such as
@@ -1596,7 +1596,7 @@ a letter to Brutus he says,
                     <hi rend="italics">eum amorer et eum, ut hoc</hi>
                     <pb id="p.231"/>
                     <hi rend="italics">verbo utar, favored in consilium advocabo,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This letter is lost:
                         <quote>I will call that love and that favour, if I may use the word, to be my counsellors.</quote>
                     </note>
@@ -1604,7 +1604,7 @@ a letter to Brutus he says,
                     while to
 Appius Pulcher he writes,
                     <hi rend="italics">le hominem non solum sapientem, verum etiam, ut nunc loquimur, urbanum.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">ad Fam.</hi>
                         III. viii. 3.
                         <quote>You who are not merely wise, but, as we say nowadays, urbane.</quote>
@@ -1616,7 +1616,7 @@ word
                     while Caecilius asserts that Sisenna
 was the first to use the phrase
                     <hi rend="italics">albente caelo.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <quote>When the sky grew white (at dawn).</quote>
                     </note>
                     Hortensius seems to have been the first to use
@@ -1628,7 +1628,7 @@ cannot agree with Celsus when he forbids orators to
 coin new words.
                     <milestone n="36" unit="section"/>
                     For some words, as Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Part Or.</hi>
                         v. 16.
                     </note>
@@ -1659,7 +1659,7 @@ that the word or phrase in question is not due to an
 error of judgment. The Greeks have a neat saying
 on this subject, advising us to be the first to blame
 our own hyperbole.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Ar. Rhet.</hi>
                         III. vii. 9.
                     </note>
@@ -1671,7 +1671,7 @@ our own hyperbole.
                     recommended except in connected discourse. Enough has
 now been said on the subject of single words, which,
 as I have pointed out elsewhere,
-                    <note anchored="yes" place="unspecified">I. v. 3.</note>
+                    <note anchored="true" place="unspecified">I. v. 3.</note>
                     have no intrinsic
 value of their own. On the other hand, there is no
 word which is intrinsically ugly unless it be beneath
@@ -1718,7 +1718,7 @@ any speech to be ornate that is not, in the first place,
                     <pb id="p.235"/>
                     acceptable. An acceptable style is defined by
 Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Part. Or.,</hi>
                         vi. 19.
                     </note>
@@ -1743,13 +1743,13 @@ provide an adequate representation of the facts.
                     But since my first task is to point out the faults to
 be avoided, I will begin by calling attention to the
 fault known as
-                    <foreign lang="greek">kake/mfaton,</foreign>
+                    <foreign xml:lang="grc">kake/mfaton,</foreign>
                     a term applied to the
 employment of language to which perverted usage
 has given an obscene meaning: take, for example,
 phrases such as
                     <hi rend="italics">ductare exercitus and patrare bellum,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">ductare</hi>
                         might mean
                         <hi rend="italics">ad libidinem abducere. patrare bellum</hi>
@@ -1784,7 +1784,7 @@ in a most unbecoming manner, or by assimilation to
 the
                     <hi rend="italics">n</hi>
                     which follows
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         pronouncing
                         <hi rend="italics">cunnotis.</hi>
@@ -1799,7 +1799,7 @@ A similar offence against modesty may be caused by
 the division of words, as, for example, by the use of
 the nominative of
                     <hi rend="italics">intercapedinis.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">interccapedo,</hi>
                         of which the last two syllables might give
 rise to unseemly laughter;
@@ -1813,7 +1813,7 @@ find, unless you exercise the greatest care, that there
 are a number of persons who take pleasure in putting
 an indecent interpretation on words, thinking, as
 Ovid
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Met.</hi>
                         i. 502.
                     </note>
@@ -1827,9 +1827,9 @@ Ovid
 from words which are as far removed from indecency
 as possible. Celsus, for example, detects an instance
 of
-                    <foreign lang="greek">kake/mfaton</foreign>
+                    <foreign xml:lang="grc">kake/mfaton</foreign>
                     in the Virgilian
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Georg.</hi>
                         i. 357.
                     </note>
@@ -1844,14 +1844,14 @@ to say anything at all.
                     <milestone n="48" unit="section"/>
                     Next to indecency of expression comes meanness,
 styled
-                    <foreign lang="greek">tapei/nwsis,</foreign>
+                    <foreign xml:lang="grc">tapei/nwsis,</foreign>
                     when the grandeur or dignity of
 anything is diminished by the words used, as in the
 line:
                     <quote rend="blockquote">
                         <l part="N">
                             <quote>There is a rocky wart upon the mountain's brow.</quote>
-                            <note anchored="yes" place="unspecified">From an unknown tragedian.</note>
+                            <note anchored="true" place="unspecified">From an unknown tragedian.</note>
                         </l>
                     </quote>
                     The opposite fault, which is no less serious, consists
@@ -1873,7 +1873,7 @@ charm, and finish.
                 <p>
                     <milestone n="50" unit="section"/>
                     We must also avoid
-                    <foreign lang="greek">mei/wsis</foreign>
+                    <foreign xml:lang="grc">mei/wsis</foreign>
                     a term applied to
 meagreness and inadequacy of expression, although
 it is a fault which characterises an obscure style rather
@@ -1892,7 +1892,7 @@ sometimes be regarded as a fault: it is, in fact, a
 blemish into which Cicero not infrequently falls
 through indifference to such minor details: take, for
 example, the following passage,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Pro Cluent.</hi>
                         xxxv. 96. To bring out the effect criticised
 by Cicero,
@@ -1902,22 +1902,22 @@ by Cicero,
                         But
                         <quote>trial</quote>
                         is required to give the correct sense.
-                        <foreign lang="greek">e)pana/lhyis</foreign>
+                        <foreign xml:lang="grc">e)pana/lhyis</foreign>
                         = repetition.
                     </note>
                     <quote>Judges, this judgment was not merely unlike a judgment.</quote>
                     It is sometimes given another name,
-                    <foreign lang="greek">e)pana/lhyis,</foreign>
+                    <foreign xml:lang="grc">e)pana/lhyis,</foreign>
                     under
 which appellation it is ranked among figures, of
 which I shall give examples when I come to the
 discussion of stylistic virtues.
-                    <note anchored="yes" place="unspecified">IX. ii.</note>
+                    <note anchored="true" place="unspecified">IX. ii.</note>
                 </p>
                 <p>
                     <milestone n="52" unit="section"/>
                     A worse fault is
-                    <foreign lang="greek">o(moei/deia,</foreign>
+                    <foreign xml:lang="grc">o(moei/deia,</foreign>
                     or sameness, a term
 applied to a style which has no variety to relieve
 its tedium, and which presents a uniform monotony
@@ -1934,7 +1934,7 @@ the monotony of its structure.
 than are necessary, as, for instance, in the sentence
 of Livy,
                     <quote>The ambassadors, having failed to obtain peace, went back home, whence they had come.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Fr.</hi>
                         62,
                         <hi rend="italics">Hertz.</hi>
@@ -1958,7 +1958,7 @@ in his mother's womb.
                     <quote>Oh,</quote>
                     he said,
                     <quote>I suppose other women carry them in their bags.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">perulra</hi>
                         means
                         <quote>a small wallet.</quote>
@@ -1975,7 +1975,7 @@ that in Apul.
 have just given an example, may have a pleasing
 effect when employed for the sake of emphasis, as
 in the Virgilian phrase
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         iv- 359.
                     </note>
@@ -1990,7 +1990,7 @@ in the Virgilian phrase
                     but
 merely tame and redundant, it must be regarded as
 a fault. There is also a fault entitled
-                    <foreign lang="greek">periergi/a,</foreign>
+                    <foreign xml:lang="grc">periergi/a,</foreign>
                     which
 I may perhaps translate by superfluous elaboration,
 which differs from its corresponding virtue much as
@@ -2028,7 +2028,7 @@ or unbecoming or superfluous manner. Style may,
 however, be corrupted in precisely the same number
 of ways that it may be adorned. But I have discussed this subject at greater length in another
 work,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The lost
                         <hi rend="italics">De causis corruptae eloquentiae.</hi>
                     </note>
@@ -2041,16 +2041,16 @@ from virtues.
                 <p>
                     <milestone n="59" unit="section"/>
                     To these blemishes may be added faulty arrangement or
-                    <foreign lang="greek">a)noikono/mhton,</foreign>
+                    <foreign xml:lang="grc">a)noikono/mhton,</foreign>
                     the faulty use of figures or
-                    <foreign lang="greek">a)sxhma/tiston,</foreign>
+                    <foreign xml:lang="grc">a)sxhma/tiston,</foreign>
                     and the faulty collocation of words
 or
-                    <foreign lang="greek">kakosu/nqeton.</foreign>
+                    <foreign xml:lang="grc">kakosu/nqeton.</foreign>
                     But, as I have already discussed
 arrangement, I will confine myself to the consideration of figures and structure. There is also a fault
 known as
-                    <foreign lang="greek">*sardismo\s,</foreign>
+                    <foreign xml:lang="grc">*sardismo\s,</foreign>
                     which consists in the indiscriminate use of several different dialects, as, for
 instance, would result from mixing Doric, Ionic, and
                     <pb id="p.245"/>
@@ -2062,7 +2062,7 @@ with new, and poetic with colloquial, the result
 being a monstrous medley like that described by
 Horace in the opening portion of his
                     <hi rend="italics">Ars poetica,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">A. P. I.</hi>
                     </note>
                     <quote rend="blockquote">
@@ -2083,10 +2083,10 @@ say, secondly in giving this adequate expression,
 and thirdly in lending it additional brilliance, a
 process which may correctly be termed embellishment. Consequently we must place among ornaments
 that
-                    <foreign lang="greek">e)na/rgeia</foreign>
+                    <foreign xml:lang="grc">e)na/rgeia</foreign>
                     which I mentioned in the rules which
 I laid down for the statement of facts,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <milestone n="4" unit="chapter"/>
                         <milestone n="1" unit="section"/>
                         ii. 63.
@@ -2120,7 +2120,7 @@ in the passage beginning,
                         <quote>
                             <l part="N">
                                 Forthwith each hero tiptoe stood erect.
-                                <note anchored="yes" place="unspecified">
+                                <note anchored="true" place="unspecified">
                                     <hi rend="italics">Aen.</hi>
                                     v. 426.
                                 </note>
@@ -2136,7 +2136,7 @@ been actual spectators.
 department, as in others. Is there anybody so incapable of forming a mental picture of a scene that,
 when he reads the following passage from the
 Verrines,
-                    <note anchored="yes" place="unspecified">v. xxxiii. 86.</note>
+                    <note anchored="true" place="unspecified">v. xxxiii. 86.</note>
                     he does not seem not merely to see the
 actors in the scene, the place itself and their very
 dress, but even to imagine to himself other details
@@ -2158,7 +2158,7 @@ those who viewed the scene.
 picture which we endeavour to present is fuller in
 detail, as, for example, in the following description
 of a luxurious banquet, which is also from Cicero,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         From the lost
                         <hi rend="italics">pro Gallio.</hi>
                     </note>
@@ -2308,7 +2308,7 @@ something quite plain by such obscure allusions.
                     <milestone n="74" unit="section"/>
                     But even the type of simile which I discussed in
 connexion with arguments
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <milestone n="5" unit="chapter"/>
                         <milestone n="1" unit="section"/>
                         xi. 22.
@@ -2337,7 +2337,7 @@ they be bound to us by ties of blood.
                     </quote>
                     Far finer is
 the following from Cicero's
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Pro Arch.</hi>
                         viii. 19.
                     </note>
@@ -2371,7 +2371,7 @@ arrangement, is attached to the subject which it
 illustrates, the correspondence between the resemblances being exact, an effect produced by
                     <hi rend="italics">reciprocal representation,</hi>
                     which the Greeks style
-                    <foreign lang="greek">a)ntapo/dosis.</foreign>
+                    <foreign xml:lang="grc">a)ntapo/dosis.</foreign>
                     For example, the simile already quoted,
                     <milestone n="78" unit="section"/>
                     <quote rend="blockquote">
@@ -2422,7 +2422,7 @@ side by side. Virgil provides many remarkable examples, but it will be better fo
 oratory. In the
                     <hi rend="italics">pro Murena</hi>
                     Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Pro Mur.</hi>
                         xiii. 29.
                     </note>
@@ -2439,7 +2439,7 @@ of oratory betake themselves to the study of the
                     <milestone n="80" unit="section"/>
                     There is also another simile in the same
 speech,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Pro Mur.</hi>
                         xvii. 36.
                     </note>
@@ -2463,7 +2463,7 @@ shorter similes, such as
                     <quote>Wandering like wild beasts through the woods,</quote>
                     or the passage from Cicero's
 speech against Clodius:
-                    <note anchored="yes" place="unspecified">Now lost.</note>
+                    <note anchored="true" place="unspecified">Now lost.</note>
                     <quote>He fled from the court like a man escaping naked from a fire.</quote>
                     Similar
 examples from everyday speech will occur to
@@ -2506,7 +2506,7 @@ actually say.
                     <milestone n="84" unit="section"/>
                     An example of the former is found
 in Homer,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Od.</hi>
                         xi. 523.
                     </note>
@@ -2516,7 +2516,7 @@ Greeks
                     into the Wooden Horse, indicating
 its size by a single verb. Or again, there is the
 following example by Virgil:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         ii. 262.
                     </note>
@@ -2527,7 +2527,7 @@ following example by Virgil:
                     </quote>
                     a phrase which in a similar manner indicates the
 height of the horse. The same poet,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         iii. 631.
                     </note>
@@ -2559,7 +2559,7 @@ incite him to cruelty. The omission of a word is produced by
                     <hi rend="italics">aposiopesis,</hi>
                     which, however, being a figure,
 shall be dealt with in its proper place.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         v. 15: The passage goes on,
                         <quote>
                             Then your victory
@@ -2591,7 +2591,7 @@ there are many different ways of embellishing our
 style.
                     <milestone n="87" unit="section"/>
                     For even that absolute and unaffected simplicity which the Greeks call
-                    <foreign lang="greek">a)fe/leia</foreign>
+                    <foreign xml:lang="grc">a)fe/leia</foreign>
                     has in it a
 certain chaste ornateness such as we admire also in
 women, while a minute accuracy in securing propriety and precision in our words likewise produces
@@ -2604,22 +2604,22 @@ shown in different ways; for there will always be
 force in anything that is in its own way effective.
 Its most important exhibitions are to be found in
 the following:
-                    <foreign lang="greek">dei/nwsis</foreign>
+                    <foreign xml:lang="grc">dei/nwsis</foreign>
                     or a certain sublimity in the
 exaggerated denunciation of unworthy conduct, to
 mention no other topics;
-                    <foreign lang="greek">fantasi/a</foreign>
+                    <foreign xml:lang="grc">fantasi/a</foreign>
                     or imagination,
 which assists us to form mental pictures of things;
-                    <foreign lang="greek">e)cergasi/a</foreign>
+                    <foreign xml:lang="grc">e)cergasi/a</foreign>
                     or finish, which produces completeness of
 effect;
-                    <foreign lang="greek">e)pecergasi/a</foreign>
+                    <foreign xml:lang="grc">e)pecergasi/a</foreign>
                     an intensified form of the preceding, which reasserts our proofs and clinches the
 argument by repetition;
                     <milestone n="89" unit="section"/>
                     and
-                    <foreign lang="greek">e)ne/rgeia,</foreign>
+                    <foreign xml:lang="grc">e)ne/rgeia,</foreign>
                     or vigour, a
 near relative of all these qualities, which derives
 its name from action and finds its peculiar function
@@ -2633,7 +2633,7 @@ your special province, that is, when I show that,
 as far as abuse is concerned, you are a mere
 ignoramus?
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cassius Severus was famous for his powers of abuse.
 His opponent was abusive. Cassius says that he will take a
 leaf out of his book and show him what real abuse is.
@@ -2680,7 +2680,7 @@ may say that one who
                     <hi rend="italics">hurt</hi>
                     him. The following passage from the
                     <hi rend="italics">pro Caelio,</hi>
-                    <note anchored="yes" place="unspecified">xvi. 38.</note>
+                    <note anchored="true" place="unspecified">xvi. 38.</note>
                     provides examples of both:
                     <quote>
                         If a widow lives
@@ -2702,7 +2702,7 @@ This sort of
 and made more striking by pointing the comparison between words of stronger meaning and
 those for which we propose to substitute them, as
 Cicero does in denouncing Verres
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Verr. I.</hi>
                         iii. 9.
                     </note>
@@ -2734,7 +2734,7 @@ everal, and may be carried not merely to the
 highest degree, but sometimes even beyond it.
                     <milestone n="4" unit="section"/>
                     A single example from Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Verr.</hi>
                         v. lxvi. 170.
                     </note>
@@ -2765,7 +2765,7 @@ orse.
                     <milestone n="6" unit="section"/>
                     There is a second method of passing beond the highest degree, exemplified in Virgil's
 description of Lausus:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         vii. 649.
                     </note>
@@ -2798,7 +2798,7 @@ of augmentation.
 our style less obviously, but perhaps yet more effectively, by introducing a continuous and unbroken
 series in which each word is stronger than the last,
 as Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Phil.</hi>
                         I. xxv. 63.
                     </note>
@@ -2837,7 +2837,7 @@ to rise from the less to the greater, since by raising
 what is below it must necessarily exalt that which
                     <pb id="p.269"/>
                     is above, as, for example: in the following passage:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Phil. II.</hi>
                         xxv. 63.
                     </note>
@@ -2850,7 +2850,7 @@ an assembly of the Roman people.
                     </quote>
                     Or take this
 passage from the speech against Catiline:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Phil.</hi>
                         I. vii. 17.
 xi 32.
@@ -2865,7 +2865,7 @@ house.
 to make something which we desire to exaggerate
 seem greater than ever, as Cicero does in the
                     <hi rend="italics">pro Cluentio,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         v. xiii. 24.
                     </note>
@@ -2903,7 +2903,7 @@ that when amplification is our purpose we
                     <pb id="p.271"/>
                     compare not merely whole with whole, but part with
 part, as in the following passage:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Cat.</hi>
                         i. i. 3.
                         <hi rend="italics">Phil.</hi>
@@ -2949,7 +2949,7 @@ we desire to emplasise.
                     Cicero, when he is about
 to reproach Antony with his drunkenness and
 vomiting, says,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Cat.</hi>
                         i. i. 3.
                         <hi rend="italics">Phil.</hi>
@@ -2974,7 +2974,7 @@ inferred from another, the term
 improper nor extraordinary, since it has been
 applied on similar grounds to one of the
                     <hi rend="italics">bases.</hi>
-                    <note anchored="yes" place="unspecified">See III. vi. 43 sqq. VII. v. 2.</note>
+                    <note anchored="true" place="unspecified">See III. vi. 43 sqq. VII. v. 2.</note>
                     So, again,
                     <milestone n="17" unit="section"/>
                     amplification results from subsequent
@@ -2989,7 +2989,7 @@ of the preceding day.
                     <hi rend="italics">amplification</hi>
                     may equally result from antecedent circumstances; for example, when Juno made her request
 to Aeolus, the latter
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         i. 81.
                     </note>
@@ -3006,7 +3006,7 @@ circumstance in such colours as to raise the detestation of our audience to its 
 to make light of them in order that what is to follow
 may seem still more horrible: consider the following
 passage from Cicero:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Verr.</hi>
                         5, 44, 177.
                     </note>
@@ -3038,7 +3038,7 @@ is a similar form of
 reference to something which appears to have been
 said with quite another purpose in view. The chiefs
 of Troy
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Il.</hi>
                         iii. 156.
                     </note>
@@ -3062,7 +3062,7 @@ that she is the cause of his sorrows.
                     <milestone n="23" unit="section"/>
                     Again, when
 Plato in the Symposium
-                    <note anchored="yes" place="unspecified">218B–219D.</note>
+                    <note anchored="true" place="unspecified">218B–219D.</note>
                     makes Alcibiades confess
 how he had wished Socrates to treat him, he does
 not, I think, record these facts with a view to
@@ -3075,18 +3075,18 @@ beauty of his day so frankly placed at his disposal.
 extraordinary stature of the heroes of old by the
 description of their weapons, such as the shield of
 Ajax
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Il.</hi>
                         vii. 219.
                     </note>
                     and the spear-shaft of Achilles
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Il.</hi>
                         xvi. 140.
                     </note>
                     hewn in the
 forests of Pelion. Virgil
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics"> Aen.</hi>
                         iii. 659.
                     </note>
@@ -3104,7 +3104,7 @@ body
                         </quote>
                     </quote>
                     So, too, what a giant must Demoleos
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         v. 264.
                     </note>
@@ -3124,7 +3124,7 @@ body
                         </quote>
                     </quote>
                     And again, Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Phil.</hi>
                         ii. 27.
                     </note>
@@ -3162,7 +3162,7 @@ meaning may also be regarded under the head of
 this case reached by a series of steps, it is none the
 less attained by the piling up of words. Take the
 following example:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Pro Lig.</hi>
                         iii. 9.
                     </note>
@@ -3178,8 +3178,8 @@ desires were yours?
                     </quote>
                     This passage recalls the figure
 styled
-                    <foreign lang="greek">sunaqroismo/s</foreign>
-                    <note anchored="yes" place="unspecified">
+                    <foreign xml:lang="grc">sunaqroismo/s</foreign>
+                    <note anchored="true" place="unspecified">
                         <quote>accumulation.</quote>
                     </note>
                     by the Greeks, but in that
@@ -3187,7 +3187,7 @@ figure it is a number of different things that are
 accumulated, whereas in this passage all the accumulated details have but one reference. The
 heightening of effect may also be produced by
 making the words rise to a climax.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Verr.</hi>
                         xv. xlv. 118.
                     </note>
@@ -3205,7 +3205,7 @@ Rome, the lictor Sextius.
 there are as many degrees of descent as ascent.
 I shall therefore content myself with quoting but
 one example, namely, the words used by Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Leg. Agr.</hi>
                         II. V. 13.
                     </note>
@@ -3241,7 +3241,7 @@ I would proceed to the immediate discussion of this
 subject but for the fact that others have given
 separate treatment to this form of artifice, [which
 employs words not in their literal, but in a metaphorical sense
-                    <note anchored="yes" place="unspecified">See ch. vi.</note>
+                    <note anchored="true" place="unspecified">See ch. vi.</note>
                     ]. I shall therefore at this point
 indulge a desire now almost universal, and discuss
 a form of ornament which many regard as the chief,
@@ -3288,7 +3288,7 @@ under the same name, the oldest type of
                     and that in which the term is most correctly applied,
                     <pb id="p.283"/>
                     is the aphorism, called
-                    <foreign lang="greek">gnw/mh</foreign>
+                    <foreign xml:lang="grc">gnw/mh</foreign>
                     by the Greeks. Both
 the Greek and the Latin names are derived from
 the fact that such utterances resemble the decrees
@@ -3302,7 +3302,7 @@ as in the sentence:
                         There is nothing that wins
 the affections of the people more than goodness of
 heart.
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             Cic.
                             <hi rend="italics">pro Lig.</hi>
                             xii. 37.
@@ -3326,14 +3326,14 @@ it sometimes, though not invariably, is. More correct
 is the statement that at times it is simple, as in the
 example just quoted, while at other times a reason
 for the statement may be added,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The premises of the enthymeme are simple, while those
 of the epichireme are supported by a
                         <hi rend="italics">reason.</hi>
                         See v. xiv.
                     </note>
                     such as the following:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Sall. Jug.</hi>
                         10.
                     </note>
@@ -3357,7 +3357,7 @@ the statement that
                         </cit>
                     </quote>
                     There are some even who classify them under ten
-                    <note anchored="yes" place="unspecified">##</note>
+                    <note anchored="true" place="unspecified">##</note>
                     heads, though the principle on which they make
 this division is such that it would justify a still
 larger number: they class them as based on interrogation, comparison, denial, similarity, admiration,
@@ -3414,7 +3414,7 @@ general to the particular. For example, although
 the direct statement would be,
                     <quote>To hurt is easy, but to do good is hard.</quote>
                     Ovid
-                    <note anchored="yes" place="unspecified">In his lost tragedy, the Medea.</note>
+                    <note anchored="true" place="unspecified">In his lost tragedy, the Medea.</note>
                     gives this reflexion
 increased force when lie makes Medea say,
                     <quote rend="blockquote">
@@ -3425,7 +3425,7 @@ increased force when lie makes Medea say,
                     </quote>
                     <milestone n="7" unit="section"/>
                     Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">' Pro Lig.</hi>
                         xii. 38.
                     </note>
@@ -3474,7 +3474,7 @@ among cities.
                     <milestone n="10" unit="section"/>
                     I have already said enough on this
 topic in dealing with arguments.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See v. x. 2, and again, for greater detail, v. xiv. 1 (note
 at end), where an example of this type of
                         <hi rend="italics">sententia</hi>
@@ -3491,7 +3491,7 @@ even if you thought it was in your power to restore it!
                     But the use of
 the enthymeme is not confined to proof, it may sometimes be employed for the purpose of ornament, as
 in the following instance:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Pro Lig.</hi>
                         iv. 10.
                     </note>
@@ -3530,7 +3530,7 @@ or a proof by way of climax. Here are two examples:
                         <pb id="p.289"/>
                         by slaying him to suffering such dishonour.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cic.
                         <hi rend="italics">pro Mil.</hi>
                         iv. 9,
@@ -3569,7 +3569,7 @@ necessary device, as in the following case:
 must, therefore, first confess your own offence before
 you accuse Ligarius of anything.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Pro Lig. i. 2.</hi>
                         It is a conclusion in the logical sense.
 But
@@ -3615,7 +3615,7 @@ when she was accused of having buried her husband,
 who had been one of the rebels, addressed her sons
 in his peroration with the words:
                     <quote>Nonetheless, it is your duty, boys, to give your mother burial.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The point is uncertain. Possibly, as Gesner suggests,
 the sons were accusing their mother.
                     </note>
@@ -3627,7 +3627,7 @@ in his defence of Spatale, whose lover had made her
 his heir and then proceeded to die at the age
 of eighteen, remarked:
                     <quote>What a marvellous fellow to gratify his passion thus!</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">sibi indulsit</hi>
                         would seen to mean his appointing S. his
 heir and then being kind enough to die so soon! But the
@@ -3644,7 +3644,7 @@ been in serious danger:—
 type which relies for its effect on contrast of opposites,
 as
                     <quote>I know from whom to fly, but whom to follow I know not;</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cic.
                         <hi rend="italics">ad Att.</hi>
                         VIII. vii. 2.
@@ -3657,7 +3657,7 @@ wretch, though he could not speak,
                         could not keep
 silence?
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Probably from the lost
                         <hi rend="italics">in Pisonem,</hi>
                         since St. Jerome in a
@@ -3674,7 +3674,7 @@ speech against Spatale, where he says:
                         Is it your
 pleasure, then, ye laws, the faithful guardians of
 chastity, that wives should receive a title
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             By the
                             <hi rend="italics">lex Julia et Papia Poppaea</hi>
                             childless wives were
@@ -3702,7 +3702,7 @@ owed to fathers.
 and far-fetched, is the remark made by the gladiator
 mentioned above in his prosecution of his sister:
                     <quote>I have fought to the last finger.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The exact meaning is uncertain. The allusion may be to
 the turning up of the thumb as a sign of defeat. See sect. 12.
                     </note>
@@ -3752,7 +3752,7 @@ indignities! Others fail from sheer extravagance.
 For example, I once heard a rhetorician who was
 declaiming about the Germans, say:
                     <quote>I know not where they carry their heads,</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Is this a suggestion that the Germans are monsters
                         <quote>whose heads do grow beneath their shoulders</quote>
                         or that
@@ -4025,7 +4025,7 @@ eloquence,
                     </hi>
                     to which I may add the phrase employed
 by Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Pro Mil.</hi>
                         xiii. 34, 35.
                     </note>
@@ -4041,7 +4041,7 @@ of Clodius as the
 is even possible to express facts of a somewhat
 unseemly character by a judicious use of metaphor,
 as in the following passage:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Virg.
                         <hi rend="italics">Georg.</hi>
                         iii. 1
@@ -4071,7 +4071,7 @@ actually substituted for the thing.
                     Metaphors fall into four classes. In the first we
 substitute one living thing for another, as in the
 passage where the poet, speaking of a charioteer,
-                    <note anchored="yes" place="unspecified">Probably from Ennius.</note>
+                    <note anchored="true" place="unspecified">Probably from Ennius.</note>
                     says,
                     <quote rend="blockquote">
                         <quote>
@@ -4080,7 +4080,7 @@ passage where the poet, speaking of a charioteer,
                         </quote>
                     </quote>
                     or when Livy
-                    <note anchored="yes" place="unspecified">Liv. XXXVIII. liv.</note>
+                    <note anchored="true" place="unspecified">Liv. XXXVIII. liv.</note>
                     says that Scipio was continually
                     <hi rend="italics">barked at</hi>
                     by Cato.
@@ -4144,7 +4144,7 @@ are given life and action, as in the phrase
                         </cit>
                     </quote>
                     or in the passage of Cicero,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Pro Lit.</hi>
                         iii. 9. See VIII. iv. 27.
                     </note>
@@ -4201,7 +4201,7 @@ in one continuous series, our language will become
 allegorical and enigmatic. There are also certain
 metaphors which fail from meanness, such as that
 of which I spoke above
-                    <note anchored="yes" place="unspecified">See VIII. iii. 48.</note>
+                    <note anchored="true" place="unspecified">See VIII. iii. 48.</note>
                     :
                     <quote rend="blockquote">
                         <quote>
@@ -4213,7 +4213,7 @@ of which I spoke above
 follow that because Cicero was perfectly justified
 in talking of
                     <quote>the sink of the state,</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         In
                         <hi rend="italics">Cat.</hi>
                         I. v. 12.
@@ -4225,7 +4225,7 @@ an ancient orator:
                     <quote>You have lanced the boils of the state.</quote>
                     <milestone n="15" unit="section"/>
                     Indeed Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">De Or.</hi>
                         iii. xli. 164.
                     </note>
@@ -4332,7 +4332,7 @@ prose. For example, Livy frequently says,
                     <hi rend="italics">Romans</hi>
                     were victorious; on the other hand, Cicero
 in a letter to Brutus
-                    <note anchored="yes" place="unspecified">This letter is lost.</note>
+                    <note anchored="true" place="unspecified">This letter is lost.</note>
                     says,
                     <quote>We have imposed on the people and are regarded as orators,</quote>
                     when he is
@@ -4397,7 +4397,7 @@ the question of style.
                     <hi rend="italics">metonymy,</hi>
                     which consists in the substitution of one name for
 another, and, as Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Orat.</hi>
                         xxvii. 93.
                     </note>
@@ -4408,7 +4408,7 @@ indicate an invention by substituting the name of
                     <pb id="p.315"/>
                     the inventor, or a possession by substituting the
 name of the possessor. Virgil, for example, writes:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         i. 177.
                     </note>
@@ -4582,7 +4582,7 @@ done in two ways: by the substitution of an epithet
 as equivalent to the name which it replaces, such as
                     <quote>Tydides,</quote>
                     <quote>Pelides,</quote>
-                    <note anchored="yes" place="unspecified">The son of Tydeus=Diomede, the son of Peleus = Achilles.</note>
+                    <note anchored="true" place="unspecified">The son of Tydeus=Diomede, the son of Peleus = Achilles.</note>
                     or by indicating the most
 striking characteristics of an individual, as in the
 phrase
@@ -4636,7 +4636,7 @@ Scipio as
                     Cicero himself, at any rate, availed himself of this
 licence, as, for example, in the following case:
                     <quote>Your faults are not many, said the old praeceptor to the hero,</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Pro Muren.</hi>
                         xxix. 60. The passage continues (a quotation
 from some old play)
@@ -4672,7 +4672,7 @@ becoming obsolete. Indeed, we scarcely permit ourselves to use new derivatives, 
 which are formed in various ways from words in
 common use, such as
                     <hi rend="italics">Sullaturit,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cic.
                         <hi rend="italics">ad Att.</hi>
                         IX. x. 6.
@@ -4695,7 +4695,7 @@ common use, such as
                     <milestone n="33" unit="section"/>
                     * * * * * *
 * * * * * * * * *
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This passage is too corrupt to admit of emendation or
 translation. There seem to be references to
                         <hi rend="italics">vio</hi>
@@ -4740,7 +4740,7 @@ literally "they make a house.
                             <l part="N">To Aigialeus</l>
                             <l part="N">His sire bears funeral offerings,</l>
                         </quote>
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             Perhaps from the Medus of Pacuvius It is an abuse to
 use
                             <hi rend="italics">parental</hi>
@@ -4751,11 +4751,11 @@ use
                     <milestone n="35" unit="section"/>
                     Flasks are called
                     <hi rend="italics">acetabula,</hi>
-                    <note anchored="yes" place="unspecified">Lit. vinegar flasks.</note>
+                    <note anchored="true" place="unspecified">Lit. vinegar flasks.</note>
                     whatever they contain,
 and caskets
                     <hi rend="italics">pyxides,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         made of boxwood.
                     </note>
@@ -4805,23 +4805,23 @@ from one
 comedy) but rarely used in Latin, and is by no means
 to be commended, though it is not infrequently
 employed by the Greeks, who, for example, call
-                    <foreign lang="greek">*xei/rwn</foreign>
+                    <foreign xml:lang="grc">*xei/rwn</foreign>
                     the centaur
-                    <foreign lang="greek">*(/hsswn</foreign>
-                    <note anchored="yes" place="unspecified">
-                        <foreign lang="greek">*xei/rwn</foreign>
+                    <foreign xml:lang="grc">*(/hsswn</foreign>
+                    <note anchored="true" place="unspecified">
+                        <foreign xml:lang="grc">*xei/rwn</foreign>
                         and
-                        <foreign lang="greek">h(/sswn</foreign>
+                        <foreign xml:lang="grc">h(/sswn</foreign>
                         both mean inferior.
                     </note>
                     and substitute the epithet
-                    <foreign lang="greek">qoai/</foreign>
+                    <foreign xml:lang="grc">qoai/</foreign>
                     (swift) for
-                    <foreign lang="greek">o)/ceiai</foreign>
-                    <note anchored="yes" place="unspecified">
+                    <foreign xml:lang="grc">o)/ceiai</foreign>
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp. Od.</hi>
                         xv. 298.
-                        <foreign lang="greek">*qoo/s</foreign>
+                        <foreign xml:lang="grc">*qoo/s</foreign>
                         is used elsewhere to express
 sharpness.
                     </note>
@@ -4829,7 +4829,7 @@ sharpness.
 islands. But who would endure a Roman if he
 called Verres
                     <hi rend="italics">sus</hi>
-                    <note anchored="yes" place="unspecified">Verres =boar; Catus=wise.</note>
+                    <note anchored="true" place="unspecified">Verres =boar; Catus=wise.</note>
                     or changed the name of Aelius
 Catus to Aelius
                     <hi rend="italics">doctus?</hi>
@@ -4850,7 +4850,7 @@ for
                     <hi rend="italics">canto</hi>
                     and
                     <hi rend="italics">canto</hi>
-                    <note anchored="yes" place="unspecified">In the sense of to repeat.</note>
+                    <note anchored="true" place="unspecified">In the sense of to repeat.</note>
                     for
                     <hi rend="italics">dico,</hi>
                     therefore
@@ -4887,7 +4887,7 @@ when they speak of
                     <quote>white teeth</quote>
                     or
                     <quote>liquid wine.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Georg.</hi>
                         III. 364.
                     </note>
@@ -4900,14 +4900,14 @@ instance in the following:
                     But its decorative effect is greatest
 when it is metaphorical, as in the phrases
                     <quote>unbridled greed</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cic. in
                         <hi rend="italics">Cat.</hi>
                         I. x. 25.
                     </note>
                     or
                     <quote>those mad piles of masonry.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics"> Pro Mil.</hi>
                         xx. 53.
                     </note>
@@ -4919,7 +4919,7 @@ of something to it, as when Virgil speaks of
                     <quote>disgraceful poverty</quote>
                     or
                     <quote>sad old age.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         vi. 276 and 275. Here the addition is
                         <hi rend="italics">metonymy, turpis</hi>
@@ -4945,7 +4945,7 @@ doubling its strength. None the less, not merely
 single epithets are employed, but we may find a
 number of them together, as in the following passage
 from Virgil:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         iii. 475. I have translated 476 (
                         <hi rend="italics">cura deum, bis Pergameis erepte ruinis</hi>
@@ -5010,7 +5010,7 @@ wars as tempests, and peace and good-will as the
 haven.
                     <milestone n="45" unit="section"/>
                     Such, again, is the claim of Lucretius:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Lucr.</hi>
                         IV. 1.
                     </note>
@@ -5034,7 +5034,7 @@ haven.
                 <p>
                     <milestone n="46" unit="section"/>
                     On the other hand, in the Bucolics
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Buc.</hi>
                         IX. 7.
                     </note>
@@ -5062,7 +5062,7 @@ allegory, but generally with this modification, that
 there is an admixture of plain speaking. We get
 allegory pure and unadulterated in the following
 passage of Cicero:
-                    <note anchored="yes" place="unspecified">From an unknown speech.</note>
+                    <note anchored="true" place="unspecified">From an unknown speech.</note>
                     <quote>
                         What I marvel at and complain
 of is this, that there should exist any man so set on
@@ -5072,7 +5072,7 @@ he himself is sailing.
                     <milestone n="48" unit="section"/>
                     The following is an example
 of the commonest type, namely, the mixed allegory:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Pro Mil.</hi>
                         ii, 5.
                     </note>
@@ -5093,7 +5093,7 @@ literally.
                     <milestone n="49" unit="section"/>
                     But far the most ornamental effect is produced by the artistic admixture of simile, metaphor
 and allegory, as in the following example:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Pro Mur.</hi>
                         xvii. 35.
                     </note>
@@ -5139,7 +5139,7 @@ involve allegory if not preceded by an explanation;
 for there are numbers of sayings available for use like
 the
                     <quote>Dionysius is at Corinth,</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The allusion must be to the fact that Dionysius II,
 tyrant of Syracuse, on his expulsion from the throne,
 migrated to Corinth and set up as a schoolmaster. Its
@@ -5153,7 +5153,7 @@ is too obscure, we call it a riddle: such riddles are,
 in my opinion, to be regarded as blemishes, in view of
 the fact that lucidity is a virtue; nevertheless they
 are used by poets, as, for example, by Virgil
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Ecl.</hi>
                         iii. 104; the solution is lost.
                     </note>
@@ -5169,7 +5169,7 @@ following lines:
                     Even orators sometimes use them,
                     <milestone n="53" unit="section"/>
                     as when Caelius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The references are to the licentious character of Clodia.
                         <hi rend="italics">Coa</hi>
                         was probably intended to suggest
@@ -5216,7 +5216,7 @@ but about whom it is said, since what is said may
 in another context be literally true. It is permissible to censure with counterfeited praise and
 praise under a pretence of blame. The following will
 serve as an example of the first.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cic.
                         <hi rend="italics">Pro Cluent.</hi>
                         xxxiii. 91.
@@ -5229,7 +5229,7 @@ this substitution of this man for another on the panel.
                     </quote>
                     As an example of the reverse process we may take
 the following:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp. §</hi>
                         20.
                     </note>
@@ -5239,7 +5239,7 @@ the following:
 we may speak in mockery when we say the opposite
 of what we desire to be understood, as in Cicero's
 denunciation of Clodius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         From the lost speech
                         <hi rend="italics">in Clodium et Curionem.</hi>
                     </note>
@@ -5256,23 +5256,23 @@ salvation.
 disguise bitter taunts in gentle words I y way of wit,
 or we may indicate our meaning by saying exactly
 the contrary or. . .
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The passage is hopelessly corrupt. The concluding
 portion of the sentence must have referred to the use of
 proverbs, of which it may have contained an example. This
 is clear from the next sentence. Sarcasm, urbane wit and
 contradiction are covered by the first three clauses, but there
 has been no allusion to proverbs such as
-                        <foreign lang="greek">paroimi/a</foreign>
+                        <foreign xml:lang="grc">paroimi/a</foreign>
                         demands.
                     </note>
                     If the Greek names for these
                     <pb id="p.335"/>
                     methods are unfamiliar to any of my readers, I would
 remind him that they are
-                    <foreign lang="greek">sarkasmo/s, a)stei+smo/s, a)nti/frasis</foreign>
+                    <foreign xml:lang="grc">sarkasmo/s, a)stei+smo/s, a)nti/frasis</foreign>
                     and
-                    <foreign lang="greek">paroimi/a</foreign>
+                    <foreign xml:lang="grc">paroimi/a</foreign>
                     (sarcasm, urbane wit, contradiction and proverbs).
                     <milestone n="58" unit="section"/>
                     There are, however, some
@@ -5299,7 +5299,7 @@ of indifference to those that use it.
                     <milestone n="59" unit="section"/>
                     To these the
 Greeks add
-                    <foreign lang="greek">mukthrismo/s</foreign>
+                    <foreign xml:lang="grc">mukthrismo/s</foreign>
                     or mockery under the
 thinnest of disguises.
                 </p>
@@ -5313,7 +5313,7 @@ something which would be indecent, if expressed in
 so many words: compare the phrase
                     <quote>To meet the demands of nature</quote>
                     from Sallust.
-                    <note anchored="yes" place="unspecified">Presumably from the Histories.</note>
+                    <note anchored="true" place="unspecified">Presumably from the Histories.</note>
                     <milestone n="60" unit="section"/>
                     But at times it
 is employed solely for decorative effect, a practice
@@ -5373,10 +5373,10 @@ are and choose suitable positions for them.
 it is impossible to make our prose rhythmical except
 by artistic alterations in the order of words, and
 the reason why those four words in which Plato
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         At the beginning of the
                         <hi rend="italics">Repiblic.</hi>
-                        <foreign lang="greek">kate/bhn xfe\s ei)s *peiraia=.</foreign>
+                        <foreign xml:lang="grc">kate/bhn xfe\s ei)s *peiraia=.</foreign>
                     </note>
                     in the noblest of his works states that he had gone
 down to the Piraeus were found written in a number
@@ -5403,7 +5403,7 @@ an ornamental effect, that is strictly called
                     the following passage will provide an example:
 animadverti, indices, omnem accusatoris orationenm in duas
                     <hi rend="italics">divisam esse partes.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Cic. pro Cluent.</hi>
                         i. 1.
                     </note>
@@ -5420,7 +5420,7 @@ this effect by the division of words, as in the line:
                     <quote rend="blockquote">
                         <l part="N">
                             Hyperboreo septem subiecta trioni
-                            <note anchored="yes" place="unspecified">
+                            <note anchored="true" place="unspecified">
                                 <hi rend="italics">Georg.</hi>
                                 iii. 381.
                             </note>
@@ -5446,7 +5446,7 @@ to be called a
 have held. Of the faults resulting from long or confused
                     <hi rend="italics">hyperbata</hi>
                     have spoken in the appropriate place.
-                    <note anchored="yes" place="unspecified">VIII. ii. 14.</note>
+                    <note anchored="true" place="unspecified">VIII. ii. 14.</note>
                 </p>
                 <p>
                     I have kept
@@ -5458,7 +5458,7 @@ ways.
                     <milestone n="68" unit="section"/>
                     We may say more than the actual facts, as
 when Cicero says,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Phil.</hi>
                         II. xxv. 63.
                     </note>
@@ -5530,7 +5530,7 @@ again, one
                     may be heightened by the
 addition of another, as when Cicero in denouncing
 Antony says:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics"> Phil.</hi>
                         II. xxvii. 67.
                     </note>
@@ -5547,7 +5547,7 @@ eye.
                     I think, too, that I am right in saying that
 I noted a brilliant example of the same kind in the
 Hymns
-                    <note anchored="yes" place="unspecified">A lost work.</note>
+                    <note anchored="true" place="unspecified">A lost work.</note>
                     of Pindar, the prince of lyric poets. For
 when he describes the onslaught made by Hercules
 upon the Meropes, the legendary inhabitants of the
@@ -5559,7 +5559,7 @@ power, the former being treated as quite inadequate.
                     Cicero has imitated his method in the following
                     <pb id="p.343"/>
                     passage from the Verrines:
-                    <note anchored="yes" place="unspecified">v. vi. 145.</note>
+                    <note anchored="true" place="unspecified">v. vi. 145.</note>
                     <quote>
                         After long lapse of
 years the Sicilians saw dwelling in their midst, not
@@ -5574,7 +5574,7 @@ that sailed those same narrow seas.
                     The methods
 of hyperbole by attenuation are the same in number.
 Compare the Virgilian
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Ecl.</hi>
                         iii. 103. Describing a flock of starved sheep.
                     </note>
@@ -5582,7 +5582,7 @@ Compare the Virgilian
                         <l part="N">Scarce cling they to their bones,</l>
                     </quote>
                     or the lines from a humorous work
-                    <note anchored="yes" place="unspecified">Unknown.</note>
+                    <note anchored="true" place="unspecified">Unknown.</note>
                     of Cicero's,
                     <quote rend="blockquote">
                         <quote>
@@ -5642,7 +5642,7 @@ have said enough on this topic, since I have already
 dealt with it in my work on the causes of the decline
 of oratory.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

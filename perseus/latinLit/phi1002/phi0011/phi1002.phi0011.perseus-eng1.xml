@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Inst." type="work">Institutio Oratoria, books 1-3 - 1</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -39,23 +39,23 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter"/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter"/>
+                refState unit="section"/>
             </refsDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="page"/>
+            <refsDecl
+                refState unit="page"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="la">Latin</language>
-                <language id="greek">Greek</language>
+                language ident="en">English</language>
+                language ident="la">Latin</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -64,12 +64,12 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
             <pb id="p.5"/>
-            <div1 part="N" sample="complete" org="uniform" n="1" type="book">
+            <div part="N" sample="complete" org="uniform" n="1" type="book">
                 <head>Book I</head>
                 <milestone n="pr" unit="chapter"/>
                 <milestone n="1" unit="section"/>
@@ -209,7 +209,7 @@ play?
                     <milestone n="13" unit="section"/>
                     These two branches of knowledge were, as
 Cicero has clearly shown,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Or.</hi>
                         iii. 15.
                     </note>
@@ -456,7 +456,7 @@ children.
 orator is to be brought up, I would repeat what
 I have said about nurses. As regards his
                     <hi rend="italics">paedagogi,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         There is no translation for
                         <hi rend="italics">paedagogus,</hi>
                         the slave-tutor.
@@ -558,7 +558,7 @@ instruction and endure the strain of learning. Most
 of them attribute this view to Hesiod, at least such
 as lived before the time of Aristophanes the grammarian, who was the first to deny that the
                     <hi rend="italics">Hypothecae,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Admonitions,</hi>
                         a lost didactic poem. Aristophanes of
 Byzantium, 257–180 B.C., the famous Alexandrian critic.
@@ -1309,7 +1309,7 @@ the age at which each should be commenced.
                     As soon as the boy has learned to read and
                     <pb id="p.63"/>
                     write without difficulty, it is the turn for the teacher
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">grammaticus</hi>
                         is the teacher of literature and languages;
 at times it is necessary to restrict its meaning to
@@ -1385,7 +1385,7 @@ will discuss for instance whether certain necessary
 letters are absent from the alphabet, not indeed
 when we are writing Greek words (for then we
 borrow two letters
-                    <note anchored="yes" place="unspecified">Y and Z.</note>
+                    <note anchored="true" place="unspecified">Y and Z.</note>
                     from them), but in the case of
 genuine Latin words:
                     <milestone n="8" unit="section"/>
@@ -1425,7 +1425,7 @@ and shape the Greek
                     <hi rend="italics">koppa,</hi>
                     now used by the Greeks
 solely as a numerical sign
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">K</hi>
                         = Kaeso, Kalendae, 'Karthago, Kaput, Kalumnia, etc.
 The
@@ -1467,7 +1467,7 @@ consonants.
 there are two vowels which may be repeated, while
 a consonant can only be followed and modified by
 a different consonant.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The two vowels are
                         <hi rend="italics">i</hi>
                         and
@@ -1483,7 +1483,7 @@ duplicated within one syllable.
                     <hi rend="italics">coniicit</hi>
                     is derived from
                     <hi rend="italics">iacit</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The derivation is mentioned to show that two
                         <hi rend="italics">i's,</hi>
                         not
@@ -1557,7 +1557,7 @@ about even in nominatives. For just as names like
                     <hi rend="italics">clamos</hi>
                     and
                     <hi rend="italics">lases</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         of lares.
                     </note>
@@ -1571,7 +1571,7 @@ our ancestors used to say
                     <hi rend="italics">mertare</hi>
                     and
                     <hi rend="italics">pultare.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For
                         <hi rend="italics">mersare</hi>
                         and
@@ -1603,7 +1603,7 @@ of that name.
                     <hi rend="italics">Burrus, Bruges,</hi>
                     and
                     <hi rend="italics">Belena.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         Pyrrus, Phryges, Helena.
                     </note>
@@ -1691,7 +1691,7 @@ between the nouns and the verbs. I know that
                     <hi rend="italics">conviction</hi>
                     seems to me to be the more accurate translation of
 the Greek
-                    <foreign lang="greek">.</foreign>
+                    <foreign xml:lang="grc">.</foreign>
                     <milestone n="19" unit="section"/>
                     Gradually the number was
 increased by the philosophers, more especially by
@@ -1754,7 +1754,7 @@ added also the
                     <quote>alas</quote>
                     and the
                     <hi rend="italics">derivative</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Generally interpreted
                         <hi rend="italics">collective:</hi>
                         but see Colson,
@@ -1770,7 +1770,7 @@ added also the
                     But of these classifications I do not approve.
                     <milestone n="21" unit="section"/>
                     Whether we should translate
-                    <foreign lang="greek">proshgori/a</foreign>
+                    <foreign xml:lang="grc">proshgori/a</foreign>
                     by
                     <hi rend="italics">vocable</hi>
                     or
@@ -1836,7 +1836,7 @@ are names such as
                     <hi rend="italics">Cotta, Scipio, Laenas</hi>
                     or
                     <hi rend="italics">Seranus,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Sulla =? spindleshanks (
                         <hi rend="italics">surula</hi>
                         ). Burrus = red. Galba
@@ -1859,7 +1859,7 @@ slave-names such as
                     <hi rend="italics">Marcipor</hi>
                     or
                     <hi rend="italics">Publipor</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e. Marcipuer, Publipuer.</hi>
                     </note>
                     derived
@@ -1891,7 +1891,7 @@ such as
                     <hi rend="italics">fraudator</hi>
                     and
                     <hi rend="italics">nutritor.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">lectum</hi>
                         may be ace. of
                         <hi rend="italics">lectus,</hi>
@@ -1917,7 +1917,7 @@ of
                     </note>
                     Again
                     <hi rend="italics">itur in antiquam silvam</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         vi. 179:
                         <quote>They go into the ancient wood.</quote>
@@ -1962,7 +1962,7 @@ we get phrases such as
                     </hi>
                     and
                     <hi rend="italics">potus</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <quote>Having dined,</quote>
                         <quote>having drunk.</quote>
                         Active in sense,
@@ -1986,7 +1986,7 @@ we say
                     <hi rend="italics">dictu</hi>
                     and
                     <hi rend="italics">factu</hi>
-                    <note anchored="yes" place="unspecified">Supines.</note>
+                    <note anchored="true" place="unspecified">Supines.</note>
                     as we say
                     <hi rend="italics">noctu</hi>
                     and
@@ -2069,7 +2069,7 @@ teacher therefore, that such slippery customers may
 not elude detection, must seek to acquire a delicate
 discrimination; but of this I will speak later when
 I come to discuss figures of speech.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         § 40.
                     </note>
@@ -2109,7 +2109,7 @@ of
 insertion of a Spanish or African term; for instance
 the iron tire of a wheel is called
                     <hi rend="italics">cantus,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Pers. v. 71. Usually, though wrongly, spelt
                         <hi rend="italics">oanthus.</hi>
                     </note>
@@ -2117,7 +2117,7 @@ the iron tire of a wheel is called
 Persius uses it as established in the Latin language;
 Catullus picked up
                     <hi rend="italics">ploxenum</hi>
-                    <note anchored="yes" place="unspecified">Cat. xcvii. 6.</note>
+                    <note anchored="true" place="unspecified">Cat. xcvii. 6.</note>
                     (a box) in the valley
 of the Po, while the author of the
                     <hi rend="italics">in Pollionem,</hi>
@@ -2128,7 +2128,7 @@ he Labienus or Cornelius Gallus, imported
                     <quote>follower.</quote>
                     As for
                     <hi rend="italics">mastruca,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         In
                         <hi rend="italics">Or. pro Scauro.</hi>
                     </note>
@@ -2173,7 +2173,7 @@ for
                     <pb id="p.85"/>
                     when Ennius writes
                     <hi rend="italics">Mettocoque Fufetioeo,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The barbarism lies in the use of the old Greek terminationoeo in the genitive.
                     </note>
                     where
@@ -2228,7 +2228,7 @@ comment.
                     <hi rend="italics">duapondo</hi>
                     and
                     <hi rend="italics">trepondo</hi>
-                    <note anchored="yes" place="unspecified">Two and three pounds in weight.</note>
+                    <note anchored="true" place="unspecified">Two and three pounds in weight.</note>
                     have persisted in common parlance
 down to our own day, and Messala shows that the
 practice is correct.
@@ -2277,7 +2277,7 @@ two syllables in
                     <hi rend="italics">Europai</hi>
                     and
                     <hi rend="italics">Asiai</hi>
-                    <note anchored="yes" place="unspecified">The archaic genitive as used by epic poets.</note>
+                    <note anchored="true" place="unspecified">The archaic genitive as used by epic poets.</note>
                     ; or when the
 opposite fault occurs, called
                     <hi rend="italics">synaeresis</hi>
@@ -2290,7 +2290,7 @@ example I may quote the line of Publius Varro:
                     <quote rend="blockquote">
                         <l part="N">
                             turn te flagranti deiectum fulmine Plaethon.
-                            <note anchored="yes" place="unspecified">
+                            <note anchored="true" place="unspecified">
                                 <hi rend="italics">
                                     Ph
                                     <hi rend="overline">oe</hi>
@@ -2306,13 +2306,13 @@ example I may quote the line of Publius Varro:
 the letters their true syllabic value. I may mention
 as further anomalies peculiar to poetry the lengthening of a short syllable as in
                     <hi rend="italics">Italiam fato profugus,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         i. 6.
                     </note>
                     or the shortening of a long such as
                     <hi rend="italics">unĭius ob noxam et furias;</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         i. 45.
                     </note>
@@ -2346,7 +2346,7 @@ out into excessive use, witness such spelling as
                     <hi rend="italics">praecho,</hi>
                     which may still be read in certain
 inscriptions: the well-known epigram of Catullus
-                    <note anchored="yes" place="unspecified">Cat. Ixxxi.</note>
+                    <note anchored="true" place="unspecified">Cat. Ixxxi.</note>
                     will be remembered in this connexion.
                     <milestone n="21" unit="section"/>
                     The spellings
@@ -2366,7 +2366,7 @@ tragedy, we actually find
 tone (I note that old writers spell the word
                     <hi rend="italics">tonor,</hi>
                     as derived from the Greek
-                    <foreign lang="greek">to/nos</foreign>
+                    <foreign xml:lang="grc">to/nos</foreign>
                     ), or of accent, styled
 prosody by the Greeks, such as the substitution of
 the acute accent for the grave or the grave for the
@@ -2398,7 +2398,7 @@ same remark applies to
                     <hi rend="italics">Terei.</hi>
                     Such has
 been the tradition as regards accents.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The Roman accent was a stress, while the Greek was a
 pitch accent, though by the Christian era tending to change
 into stress. Roman grammarians borrow the Greek terminology and speak of accents in terms of pitch. The explanation of this is probably that the Roman stress accent was
@@ -2437,7 +2437,7 @@ accent, it might be thought that they meant
                     <hi rend="italics">circus</hi>
                     not
                     <hi rend="italics">circuitus.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         that
                         <hi rend="italics">circum</hi>
@@ -2466,7 +2466,7 @@ two, consequently it contains but one acute accent,
 as though it were a single word. The same thing
 occurs in the phrase
                     <hi rend="italics">Troiae qui primus ab oris.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen. i.</hi>
                         l:
                         <hi rend="italics">qui</hi>
@@ -2479,7 +2479,7 @@ occurs in the phrase
                     It
 sometimes happens that the accent is altered by
 the metre as in pecudes pictaeque volucres
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Georg.</hi>
                         iii. 243.
                     </note>
@@ -2527,18 +2527,18 @@ should find words without an acute accent at all.
 voice and tongue. The Greeks who are happier in
 inventing names than we are call them iotacisms,
 lambdacisms,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Iotacism = doubling the i sound, e.g.
                         <hi rend="italics">Troiia</hi>
                         for
                         <hi rend="italics">Troia;</hi>
                         lambdacism = doubling the l.
                     </note>
-                    <foreign lang="greek">i)sxno/thtes</foreign>
+                    <foreign xml:lang="grc">i)sxno/thtes</foreign>
                     (attenuations) and
-                    <foreign lang="greek">plateiasmoi/</foreign>
+                    <foreign xml:lang="grc">plateiasmoi/</foreign>
                     (broadenings); they also use the term
-                    <foreign lang="greek">koilostomi/a,</foreign>
+                    <foreign xml:lang="grc">koilostomi/a,</foreign>
                     when the voice seems to proceed from the depths of
 the mouth.
                     <milestone n="33" unit="section"/>
@@ -2548,7 +2548,7 @@ whole nations to fault. To sum up then, if all the
 faults of which we have just spoken be avoided,
                     <pb id="p.95"/>
                     we shall be in possession of the Greek
-                    <foreign lang="greek">o)rqoe/peia,</foreign>
+                    <foreign xml:lang="grc">o)rqoe/peia,</foreign>
                     that is to say, an exact and pleasing articulation; for
 that is what we mean when we speak of correct
 pronunciation.
@@ -2568,13 +2568,13 @@ sentence.
                     <milestone n="35" unit="section"/>
                     For example whether
                     <hi rend="italics">amarae corticis</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Ecl.</hi>
                         vi. 62.
                     </note>
                     or
                     <hi rend="italics">medio cortice</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Georg.</hi>
                         ii. 74.
                     </note>
@@ -2655,7 +2655,7 @@ omission, in phrases such as
                     <hi rend="italics">ne hoc fecit:</hi>
                     and by transposition as in
                     <hi rend="italics">quoque ego, enim hoc voluit, aulem non habuit.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e. nam</hi>
                         cannot he coupled with
                         <hi rend="italics">enim; de</hi>
@@ -2749,20 +2749,20 @@ but rarely used.
 usage in any Latin author. On the contrary phrases
 such as
                     <hi rend="italics">devenere locos,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         i. 369:
                         <quote>They came to the places.</quote>
                     </note>
                     <hi rend="italics">conticuere omnes</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         ii. l:
                         <quote>All were silent.</quote>
                     </note>
                     and
                     <hi rend="italics">consedere duces</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Ovid,
                         <hi rend="italics">Met.</hi>
                         xiii. l:
@@ -2770,7 +2770,7 @@ such as
                     </note>
                     clearly prove that they have nothing to do with the dual. Moreover
                     <hi rend="italics">dixere,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Dixere,</hi>
                         <quote>they have spoken,</quote>
                         was said when the advocates had finished their pleading.
@@ -2782,7 +2782,7 @@ denote more than two advocates.
                     Again, does not
 Livy near the beginning of his first book write
                     <hi rend="italics">tenuere arcem Sabini</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Liv. I. xii.:
                         <quote>The Sabines held the citadel.</quote>
                         <quote>The Romans marched up the slope against them.</quote>
@@ -2803,7 +2803,7 @@ For Cicero in his
                         as
 the more correct.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Orat.</hi>
                         xlvii. 157.
                     </note>
@@ -2826,7 +2826,7 @@ possessives and
 with expressions of quantity, there are some who
 will regard phrases such as
                     <hi rend="italics">magnum peculiolum</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Lit.
                         <quote>A great little fortune.</quote>
                     </note>
@@ -2864,7 +2864,7 @@ same
                     <hi rend="italics">genus,</hi>
                     and he who uses the wrong
                     <hi rend="italics">species</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">e.g. intus</hi>
                         for
                         <hi rend="italics">intro,</hi>
@@ -2885,7 +2885,7 @@ bad Latin to say in a question
                     <hi rend="italics">hic</hi>
                     and
                     <hi rend="italics">ille sit</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For
                         <hi rend="italics">hic an ille sit?</hi>
                     </note>
@@ -2916,7 +2916,7 @@ committed in connexion with the various kinds of
 pronouns, interjections and prepositions. It is also
 a
                     <hi rend="italics">solecism</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The meaning of this passage is uncertain, but the
 solecism in question is probably an anacoluthon.
                     </note>
@@ -2934,7 +2934,7 @@ for instance phrases such as
                     <hi rend="italics">ludi Floralia</hi>
                     and
                     <hi rend="italics">Megalensia</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Where strict grammar would require
                         <hi rend="italics">tragoedia Thyestis, ludi Florales, Megalenses.</hi>
                         The normal usage would be
@@ -2952,7 +2952,7 @@ not deny their employment even to orators.
 however will generally have some justification,
 as I shall show in a later portion of this work, which
 I promised you a little while back.
-                    <note anchored="yes" place="unspecified">I. iv. 24. The promise is fulfilled in Book IX.</note>
+                    <note anchored="true" place="unspecified">I. iv. 24. The promise is fulfilled in Book IX.</note>
                     I must however point out that a figure, if used unwittingly,
 will be a
                     <hi rend="italics">solecism.</hi>
@@ -3049,7 +3049,7 @@ masculine Greek nouns to end in
                     and in
 Cicero
                     <hi rend="italics">Hermagora.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This form does not actually occur in Cicero, MSS.
 evidently wrongly giving
                         <hi rend="italics">Hermagaras.</hi>
@@ -3116,7 +3116,7 @@ in
                     though care must be taken that two
 conflicting prepositions are not prefixed as in
                     <hi rend="italics">imperterritus:</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Quintilian regards the negative
                         <hi rend="italics">in</hi>
                         as a preposition. His
@@ -3154,7 +3154,7 @@ also be formed by what I might term the combination of two independent units, as
 is possible at any rate in Latin, although Cicero
 asserts that
                     <hi rend="italics">capsis</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Orat.</hi>
                         xlv. 154.
                     </note>
@@ -3173,7 +3173,7 @@ speech, namely
                     <hi rend="italics">Suovelaurilia,</hi>
                     a derivation which corresponds to the
 actual sacrifice, which has its counterpart in Homer
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         As in
                         <hi rend="italics">Od.</hi>
                         xi. 130. The word means sacrifices of a pig,
@@ -3203,7 +3203,7 @@ formed from two complete Latin words, as for instance
                     though in this case
 there is some question as to whether the words from
 which they are formed are complete.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         if both elements are complete in themselves is the
 word a true compound?
@@ -3250,7 +3250,7 @@ true of
                     <hi rend="italics">ignauus</hi>
                     and
                     <hi rend="italics">erepublica.</hi>
-                    <note anchored="yes" place="unspecified">Sometimes written as one word.</note>
+                    <note anchored="true" place="unspecified">Sometimes written as one word.</note>
                     But compounds are
 better suited to Greek than to Latin,
                     <milestone n="70" unit="section"/>
@@ -3258,7 +3258,7 @@ better suited to Greek than to Latin,
 not think that this is due to the nature of our
 language: the reason rather is that we have a
 preference for foreign goods, and therefore receive
-                    <foreign lang="greek">kurtau/xhn</foreign>
+                    <foreign xml:lang="grc">kurtau/xhn</foreign>
                     with applause, whereas we can scarce
 defend
                     <hi rend="italics">incurvicervicus</hi>
@@ -3283,7 +3283,7 @@ rejected, they become a subject for jest.
                     <milestone n="72" unit="section"/>
                     Still we
 must make the venture; for as Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Nat. deorum,</hi>
                         I. xxxiv. 95.
                     </note>
@@ -3295,16 +3295,16 @@ On the other hand the
 us. Who would tolerate an attempt to imitate
                     <pb id="p.113"/>
                     phrases like the much praised
-                    <foreign lang="greek">li/gce bio/s,</foreign>
-                    <note anchored="yes" place="unspecified">
+                    <foreign xml:lang="grc">li/gce bio/s,</foreign>
+                    <note anchored="true" place="unspecified">
                         Homer,
                         <hi rend="italics">Il.</hi>
                         iv. 125.
                     </note>
                     <quote>the bow twanged,</quote>
                     and
-                    <foreign lang="greek">si=zen o)fqalmo/s</foreign>
-                    <note anchored="yes" place="unspecified">
+                    <foreign xml:lang="grc">si=zen o)fqalmo/s</foreign>
+                    <note anchored="true" place="unspecified">
                         2
                         <hi rend="italics">Od. ix.</hi>
                         394.
@@ -3338,7 +3338,7 @@ choose one of two expressions, when both are metrically possible, as for instanc
                     <hi rend="italics">aeriae quo congessere palumbes</hi>
                     or
                     <hi rend="italics">silice in nuda</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         xii. 208:
                         <quote>cutaway from the lowest root.</quote>
@@ -3381,7 +3381,7 @@ words, paying special attention to their final syllables
                     (hence monosyllables are asserted to lie outside the
 domain of
                     <hi rend="italics">analogy</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         sc. because two monosyllables, unless identical, cannot
 have the same final syllable.
                     </note>
@@ -3448,7 +3448,7 @@ that in Lucilius we find—
                     <quote>
                         <l part="N">
                             fervit aqua et fervet: firvit nunc ferverit ad annum.
-                            <note anchored="yes" place="unspecified">In Book IX.</note>
+                            <note anchored="true" place="unspecified">In Book IX.</note>
                         </l>
                     </quote>
                     <quote rend="blockquote">The water boils and boil it will; it boils and for a year will boil.</quote>
@@ -3556,11 +3556,11 @@ asked why
 from the Greek, they took refuge in the fact
                     <pb id="p.119"/>
                     that
-                    <foreign lang="greek">patro/s</foreign>
+                    <foreign xml:lang="grc">patro/s</foreign>
                     provides a parallel to
                     <hi rend="italics">patris</hi>
                     and
-                    <foreign lang="greek">ka/prou</foreign>
+                    <foreign xml:lang="grc">ka/prou</foreign>
                     to
                     <hi rend="italics">apri.</hi>
                     <milestone n="14" unit="section"/>
@@ -3646,7 +3646,7 @@ also be allowed to point out that phrases such as
                     <hi rend="italics">centum milia nummum</hi>
                     and
                     <hi rend="italics">fidem deum</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e. nummum</hi>
                         and
                         <hi rend="italics">deum</hi>
@@ -3661,7 +3661,7 @@ of the fact and were not simply conforming to usage
 and the demands of elegance, as in the numerous
 cases, with which Cicero deals magnificently, as
 always, in his Orator.
-                    <note anchored="yes" place="unspecified">xlvi. 155.</note>
+                    <note anchored="true" place="unspecified">xlvi. 155.</note>
                     <milestone n="19" unit="section"/>
                     Augustus again in his letters
 to Gaius Caesar corrects him for preferring
@@ -3671,12 +3671,12 @@ to Gaius Caesar corrects him for preferring
                     not on the ground that the former is not
 Latin, but because it is unpleasing and as he himself
 puts it in Greek
-                    <foreign lang="greek">peri/ergon</foreign>
+                    <foreign xml:lang="grc">peri/ergon</foreign>
                     (affected).
                     <milestone n="20" unit="section"/>
                     Some hold
 that this is just a question of
-                    <foreign lang="greek">o)rqoe/peia</foreign>
+                    <foreign xml:lang="grc">o)rqoe/peia</foreign>
                     or correctness
 of speech, a subject to which I am far from being
 indifferent. For what can be more necessary than
@@ -3699,7 +3699,7 @@ from
                     <hi rend="italics">conservavisse</hi>
                     in
 preference to the usual forms,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         For
                         <hi rend="italics">havĕ,</hi>
                         calfacere, conservasse.
@@ -3827,23 +3827,23 @@ grammar, was far from unhappy. So much for
                     was called
                     <hi rend="italics">notation</hi>
                     by Cicero,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Top.</hi>
                         viii. 35.
                     </note>
                     on the ground that
 the term used by Aristotle
-                    <note anchored="yes" place="unspecified">
-                        <foreign lang="greek">peri\ e(rm.</foreign>
+                    <note anchored="true" place="unspecified">
+                        <foreign xml:lang="grc">peri\ e(rm.</foreign>
                         2.
                     </note>
                     is
-                    <foreign lang="greek">su/mbolon,</foreign>
+                    <foreign xml:lang="grc">su/mbolon,</foreign>
                     which may
 be translated by
                     <hi rend="italics">nota.</hi>
                     A literal rendering of
-                    <foreign lang="greek">e)tumologi/a</foreign>
+                    <foreign xml:lang="grc">e)tumologi/a</foreign>
                     would be
                     <hi rend="italics">ueriloquium,</hi>
                     a form which even Cicero, its
@@ -3900,7 +3900,7 @@ origin of names such as
                     <hi rend="italics">Capitolium, collis Quirinalis</hi>
                     or
                     <hi rend="italics">Argietum?</hi>
-                    <note anchored="yes" place="unspecified">For derivations see Index of Names at end.</note>
+                    <note anchored="true" place="unspecified">For derivations see Index of Names at end.</note>
                 </p>
                 <p>
                     <milestone n="32" unit="section"/>
@@ -4009,7 +4009,7 @@ himself a perfect genius when he identified
 that they are free from a heavy load of care, and
 supported this opinion by a Greek analogy: for he
 asserted that
-                    <foreign lang="greek">h)i+/qeoi</foreign>
+                    <foreign xml:lang="grc">h)i+/qeoi</foreign>
                     <quote>young men,</quote>
                     had a precisely
 similar origin. Modestus is not his inferior in
@@ -4029,7 +4029,7 @@ that
                     <milestone n="37" unit="section"/>
                     But we may pardon anyone
 after the example set by Varro.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Lingua Lat.</hi>
                         v. 34 and 76.
                     </note>
@@ -4072,7 +4072,7 @@ the sounds which they represent, and even extending this practice to certain der
                     <hi rend="italics">uelox</hi>
                     for instance find its origin in
                     <hi rend="italics">uelocitas,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The above makes Quintilian derive
                         <hi rend="italics">velox</hi>
                         from
@@ -4346,7 +4346,7 @@ word is derived from
                     <hi rend="italics">k</hi>
                     my view is that it should not
 be used at all except in such words as may be indicated by the letter standing alone as an abbreviation.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">K</hi>
                         may stand for
                         <hi rend="italics">Kalendae, Kaeso, Karthago, Kalumnia, Kaput.</hi>
@@ -4366,7 +4366,7 @@ force in conjunction with all the vowels.
 and therefore undergoes frequent change. I make
 no mention of the earliest times when our alphabet
 contained fewer letters
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The original alphabet consisted of twenty-one letters,
 and was increased to twenty-three by the addition of
                         <hi rend="italics">y</hi>
@@ -4380,7 +4380,7 @@ was sometimes long and short, as it is with us, and
 again was sometimes used to express the syllable
                     <pb id="p.139"/>
                     which is identical with its name.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         the interjection O!
                     </note>
@@ -4392,7 +4392,7 @@ ancient writers ended a number of words with
 may be seen on the column adorned with the beaks
 of ships, which was set up in the forum in honour
 of Duilius.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The ablative originally terminated in
                         <hi rend="italics">d; e.g. pugnandod, marid, navaled, pracdad,</hi>
                         etc., on the base of the column of
@@ -4410,13 +4410,13 @@ star).
                     <milestone n="13" unit="section"/>
                     I have already spoken of the interchange
 of letters
-                    <note anchored="yes" place="unspecified">I. iv. 12–17.</note>
+                    <note anchored="true" place="unspecified">I. iv. 12–17.</note>
                     and need not repeat my remarks here:
 perhaps their pronunciation corresponded with their
 spelling.
                     <milestone n="14" unit="section"/>
                     For a long time the doubling of semivowels was avoided,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">e.g. iusi</hi>
                         was written for
                         <hi rend="italics">iussi.</hi>
@@ -4430,7 +4430,7 @@ repetition of the vowel.
                     and
                     <hi rend="italics">i</hi>
                     as in the Greek diphthong
-                    <foreign lang="greek">ei</foreign>
+                    <foreign xml:lang="grc">ei</foreign>
                     lasted longer: it
 served to distinguish cases and numbers, for which
 we may compare the instructions of Lucilius:
@@ -4490,12 +4490,12 @@ learning to read. This difficulty occurs in Greek as
 is employed not merely in the termination of the
 dative, but is sometimes found in the middle of
 words as in
-                    <foreign lang="greek">lh/|sths,</foreign>
+                    <foreign xml:lang="grc">lh/|sths,</foreign>
                     for the reason that the analysis
 applied by etymology shows the word to be a trisyllable
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The noun being formed from
-                        <foreign lang="greek">lhi/zw. *l*h*i*s*t*h*i</foreign>
+                        <foreign xml:lang="grc">lhi/zw. *l*h*i*s*t*h*i</foreign>
                         in the text
 is dative after
                         <hi rend="italics">in.</hi>
@@ -4515,7 +4515,7 @@ The diphthong
                     in all cases,
 as in Greek, others confined its use to the dative and
 genitive singular; whence it comes that Vergil,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         ix. 26 and vii. 464.
                     </note>
@@ -4556,14 +4556,14 @@ double
                     <hi rend="italics">u,</hi>
                     appear for the first time with an i (such at any rate
 is the tradition) in an inscription of Gaius Caesar.
-                    <note anchored="yes" place="unspecified">Caligula, the first of the Caesars to adopt this title.</note>
+                    <note anchored="true" place="unspecified">Caligula, the first of the Caesars to adopt this title.</note>
                     <milestone n="22" unit="section"/>
                     We now write
                     <hi rend="italics">here,</hi>
                     but I still find in manuscripts of
 the old comic poets phrases such as
                     <hi rend="italics">heri ad me uenit,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Ter.
                         <hi rend="italics">Phorm.</hi>
                         36.
@@ -4620,7 +4620,7 @@ introduced the Aeolic
                     <hi rend="italics">digamma</hi>
                     to represent this
 sound.
-                    <note anchored="yes" place="unspecified">cp. I. iv. 8.</note>
+                    <note anchored="true" place="unspecified">cp. I. iv. 8.</note>
                     It is a distinct improvement that to-day we
 spell
                     <hi rend="italics">cui</hi>
@@ -4645,7 +4645,7 @@ marriage service women used to be called
                     <hi rend="italics">Gaiae,</hi>
                     just as men were called
                     <hi rend="italics">Gaii.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The bride used the
                         <hi rend="italics">formula ubi tu Gaius, ibi ego Gaia.</hi>
                     </note>
@@ -4658,7 +4658,7 @@ abbreviation indicating the
 manner which does not agree with its pronunciation.
 We also find
                     <hi rend="italics">columnas</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">columa</hi>
                         is mentioned by the grammarian Pompeius as a
 barbarism in the fifth century.
@@ -4677,7 +4677,7 @@ barbarism in the fifth century.
                     <hi rend="italics">Subura</hi>
                     when indicated by three letters is spelt
                     <hi rend="italics">Suc.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The original name was
                         <hi rend="italics">Sucusa.</hi>
                     </note>
@@ -4795,7 +4795,7 @@ are passages which I should be unwilling to explain
 to a class. Elegiacs, however, more especially erotic
 elegy, and hendecasyllables, which are merely sections
 of Sotadean verse
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         One form of Sotadean is ZZZ
 The Hendecasyllable runs ZZZ,= the
 Sotadean minus the first three syllables. Both metres were
@@ -4881,7 +4881,7 @@ metres and are allowed such licence that faults
 are given other names when they occur in poetry:
 for we style them
                     <hi rend="italics">metaplasms,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The formation of cases of nouns and tenses of verbs from
 a non-existent nom. or pres.: or more generally any change
 in the forms of a word.
@@ -4889,7 +4889,7 @@ in the forms of a word.
                     <hi rend="italics">schematisms</hi>
                     and
                     <hi rend="italics">schemata,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">schematismus</hi>
                         and
                         <hi rend="italics">schemata</hi>
@@ -4912,7 +4912,7 @@ in common use, the teacher must exercise no ordinary diligence,
                     <milestone n="16" unit="section"/>
                     while still greater care is required in
 teaching all the tropes
-                    <note anchored="yes" place="unspecified">See Book VIII. chap. vi.</note>
+                    <note anchored="true" place="unspecified">See Book VIII. chap. vi.</note>
                     which are employed for the
 adornment more especially of poetry, but of oratory
 as well, and in making his class acquainted with the
@@ -4922,7 +4922,7 @@ two sorts of
                     <hi rend="italics">figures of speech</hi>
                     and
                     <hi rend="italics">figures of thought.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See Book
                         <milestone n="9" unit="chapter"/>
                         <milestone n="1" unit="section"/>
@@ -5021,7 +5021,7 @@ learning everything. He should also be set to write
                     ) and
                     <hi rend="italics">delineations of character (ethologiae</hi>
                     ),
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The meaning of
                         <hi rend="italics">ethologia</hi>
                         is doubtful, but probably means
@@ -5080,7 +5080,7 @@ ended by carrying it when grown to a bull.
                     </quote>
                     All
 these instances are couched in the same grammatical form
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The sense is not clear: it appears to refer to the stereotyped form in which the
                         <hi rend="italics">chria</hi>
                         was couched.
@@ -5108,7 +5108,7 @@ which I think boys ought to be instructed before
 being handed over to the teacher of rhetoric: for it
                     <pb id="p.161"/>
                     is by such studies that the course of education described by the Greeks as
-                    <foreign lang="greek">e)gku/klikos paidei/a</foreign>
+                    <foreign xml:lang="grc">e)gku/klikos paidei/a</foreign>
                     or general
 education will be brought to its full completion.
                 </p>
@@ -5150,13 +5150,13 @@ subtleties of formal logic: not that acquaintance
                     <pb id="p.163"/>
                     with the so called
                     <quote>horn</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         You have what you have not lost: you have not lost
 horns: therefore you have horns.
                     </note>
                     or
                     <quote>crocodile</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A crocodile, having seized a woman's son, said that he
 would restore him, if she would tell him the truth. She
 replied,
@@ -5256,7 +5256,7 @@ same principles which were afterwards imitated in
 with emphasising that concord of discordant elements
 which they style harmony attributed a sound to the
 motions of the celestial bodies.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The music of the spheres:
                         <hi rend="italics">cp.</hi>
                         the vision of Er in Plato
@@ -5273,7 +5273,7 @@ notes of the heptachord.
 are certain passages in his works, more especially in
 the
                     <hi rend="italics">Timaeus,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Tim.</hi>
                         p. 47.
                     </note>
@@ -5296,7 +5296,7 @@ not therefore without reason that Plato regarded the
 knowledge of music as necessary to his ideal statesman or politician, as he calls him; while the leaders
 even of that school, which in other respects is the
 strictest and most severe of all schools of philosophy,
-                    <note anchored="yes" place="unspecified">sc. the Stoics.</note>
+                    <note anchored="true" place="unspecified">sc. the Stoics.</note>
                     held that the wise man might well devote some of
 his attention to such studies. Lycurgus himself, the
 founder of the stern laws of Sparta, approved of the
@@ -5331,7 +5331,7 @@ teach both music and literature, and whose Maricas,
 who was none other than Hyperbolus in disguise,
 asserts that he knows nothing of music but letters.
 Aristophanes
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Knights,</hi>
                         188.
                     </note>
@@ -5349,7 +5349,7 @@ out large sums to musicians and geometricians.
 after dinner, and when on such an occasion Themistocles confessed that he could not play, his education
 was (to quote the words of Cicero)
                     <quote>regarded as imperfect.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Tusc. Disp.</hi>
                         I. ii. 4.
                     </note>
@@ -5375,7 +5375,7 @@ expect to derive from the study of Music.
                 <p>
                     Music has two modes of expression in the voice
 and in the body;
-                    <note anchored="yes" place="unspecified">Music includes dancing.</note>
+                    <note anchored="true" place="unspecified">Music includes dancing.</note>
                     for both voice and body require
 to be controlled by appropriate rules. Aristoxenus
 divides music, in so far as it concerns the voice, into
@@ -5422,7 +5422,7 @@ or as the Greeks call it
 be secured by the study of music. This is a most
 important department of eloquence, and will receive
 separate treatment in this work.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Book
                         <milestone n="11" unit="chapter"/>
                         <milestone n="1" unit="section"/>
@@ -5511,7 +5511,7 @@ the education of an orator?
                 <p>
                     <milestone n="34" unit="section"/>
                     As regards geometry,
-                    <note anchored="yes" place="unspecified">Geometry here includes all mathematics.</note>
+                    <note anchored="true" place="unspecified">Geometry here includes all mathematics.</note>
                     it is granted that portions of
 this science are of value for the instruction of children:
 for admittedly it exercises their minds, sharpens
@@ -5533,7 +5533,7 @@ cases, in which a speaker is regarded as deficient in education, I will not say 
 in making a calculation, but even if he contradicts
 the calculation which he states in words by making
 an uncertain or inappropriate gesture with his fingers.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         There was a separate symbol for each number, depending
 on the hand used and the position of the fingers. See
                         <hi rend="italics">Class. Review,</hi>
@@ -5563,7 +5563,7 @@ logic.
                     For, if necessary, he will use the syllogism,
 and he will certainly make use of the enthymeme
 which is a rhetorical form of syllogism.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See v. xiv. I for an example from the
                         <hi rend="italics">Pro Ligario.</hi>
                         <quote>
@@ -5583,7 +5583,7 @@ truth by the use of geometrical methods. An
 example of this may be found in connexion with
 numbers in the so-called pseudographs, a favourite
 amusement in our boyhood.
-                    <note anchored="yes" place="unspecified">It is not known to what Quintilian refers.</note>
+                    <note anchored="true" place="unspecified">It is not known to what Quintilian refers.</note>
                     But there are more
 important points to be considered. Who is there
 who would not accept the following proposition?
@@ -5682,7 +5682,7 @@ there are a number of problems which it is difficult
 to solve in any other way, which are as a rule solved
 by these linear demonstrations, such as the method
 of division, section to infinity,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Quintilian is perhaps referring to the measurement of
 the area of an irregular figure by dividing it into a number
 of small equal and regular figures the size of which was
@@ -5740,7 +5740,7 @@ sound is similar but somewhat duller.
 always a stumbling-block to Demosthenes; our
                     <hi rend="italics">l</hi>
                     and r have of course the same value.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The mis-spelling of
                         <hi rend="italics">flagro</hi>
                         as
@@ -5763,7 +5763,7 @@ are softened into t and
                     Again our teacher must
 not tolerate the affected pronunciation of
                     <hi rend="italics">s</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Quintilian perhaps alludes to the habit of prefixing
                         <hi rend="italics">i</hi>
                         to
@@ -5782,7 +5782,7 @@ to be uttered from the depths of the throat or
 sound of the voice to be over-laid with a fuller
 sound, a fault fatal to purity of speech; the
 Greeks give this peculiarity the name
-                    <foreign lang="greek">katapeplasme/non</foreign>
+                    <foreign xml:lang="grc">katapeplasme/non</foreign>
                     (plastered over), a term applied to the
 tone produced by a pipe,
                     <milestone n="7" unit="section"/>
@@ -5886,7 +5886,7 @@ ancient Romans consider such a practice as disgraceful: this is clear from the f
 ritual dances have survived to the present day, while
 Cicero in the third book of his
                     <hi rend="italics">de Oratore</hi>
-                    <note anchored="yes" place="unspecified">lix. 220.</note>
+                    <note anchored="true" place="unspecified">lix. 220.</note>
                     quotes the
 words of Crassus, in which he lays down the
 principle that the orator
@@ -6087,7 +6087,7 @@ of such studies.
                     But he that has enough of the
 divine spark to conceive the ideal eloquence, he who,
 as the great tragic poet
-                    <note anchored="yes" place="unspecified">Pacuvius (Ribbeck, 177).</note>
+                    <note anchored="true" place="unspecified">Pacuvius (Ribbeck, 177).</note>
                     says, regards
                     <quote>oratory</quote>
                     as
@@ -6114,7 +6114,7 @@ studies in which a boy must be instructed, while he
 is yet too young to proceed to greater things! My
 next book will start afresh and will pass to the consideration of the duties of the teacher of rhetoric.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

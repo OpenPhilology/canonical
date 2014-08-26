@@ -16,7 +16,7 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:Tufts">Tufts University</funder>
-            </titleStmt>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -50,10 +50,10 @@
                 <tagUsage render="blockquote" gi="q"> Marks poetical language. within the running text. </tagUsage>
                 <tagUsage render="large" gi="quote"> Marks material quoted from other biblical texts. </tagUsage>
             </tagsDecl>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <state delim=" " unit="book"/>
                 <state delim=":" unit="chapter"/>
-                <state unit="verse"/>
+                refState unit="verse"/>
             </refsDecl>
             <classDecl>
                 <taxonomy id="perseus.class">
@@ -137,11 +137,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="greek" usage="100">Greek </language>
-                <language id="en">English </language>
+                language ident="greek" usage="100">Greek </language>
+                language ident="en">English </language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>5/27/09</date>
                 <respStmt>
@@ -175,11 +175,11 @@
   			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="grc">
         <body>
-            <div1 n="III John" sample="complete" part="N" type="Book" org="uniform">
+            <div n="III John" sample="complete" part="N" type="Book" org="uniform">
                 <pb n="345"></pb>
                 <head>ΙΩΑΝΟΥ Γ</head>
                 <p>
@@ -268,7 +268,7 @@
 
 σε οἱ φίλοι. ἀσπάζου τοὺς φίλους κατʼ ὄνομα.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

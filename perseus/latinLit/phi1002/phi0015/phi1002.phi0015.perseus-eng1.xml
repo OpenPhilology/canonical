@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Inst." type="work">Institutio Oratoria, books 4-6 - 5</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -39,23 +39,23 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter"/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter"/>
+                refState unit="section"/>
             </refsDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="page"/>
+            <refsDecl
+                refState unit="page"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="la">Latin</language>
-                <language id="greek">Greek</language>
+                language ident="en">English</language>
+                language ident="la">Latin</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -64,19 +64,19 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
             <pb id="p.155"/>
-            <div1 part="N" sample="complete" org="uniform" n="5" type="book">
+            <div part="N" sample="complete" org="uniform" n="5" type="book">
                 <head>Book V</head>
                 <p>
                     <milestone n="pr" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     There have been certain writers of no small
 authority
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         Ar.
                         <hi rend="italics">Rhet.</hi>
@@ -116,11 +116,11 @@ end.
 points, while it would be a work of supererogation to
 know the
                     <hi rend="italics">bases</hi>
-                    <note anchored="yes" place="unspecified">See III. vi.</note>
+                    <note anchored="true" place="unspecified">See III. vi.</note>
                     of cases or to consider the other
                     <pb id="p.157"/>
                     points dealt with above,
-                    <note anchored="yes" place="unspecified">III. xi.</note>
+                    <note anchored="true" place="unspecified">III. xi.</note>
                     unless we intend to proceed
 to the consideration of the
                     <hi rend="italics">proof</hi>
@@ -128,7 +128,7 @@ to the consideration of the
                     <milestone n="5" unit="section"/>
                     of the
 five parts
-                    <note anchored="yes" place="unspecified">I. ix. 1; IV. iii. 15.</note>
+                    <note anchored="true" place="unspecified">I. ix. 1; IV. iii. 15.</note>
                     into which we divided judicial cases, any
 single one other than the
                     <hi rend="italics">proof</hi>
@@ -147,7 +147,7 @@ peculiar to the several kinds of cases.
                 <milestone n="1" unit="section"/>
                 <p>
                     1. To begin with it may be noted that the division laid down by Aristotle
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Rhet.</hi>
                         i. ii. 2.
                     </note>
@@ -157,11 +157,11 @@ some proofs adopted by the orator which lie outside
 the art of speaking, and others which he himself
 deduces or, if I may use the term, begets out of his
 case. The former therefore have been styled
-                    <foreign lang="greek">a)/texnoi</foreign>
+                    <foreign xml:lang="grc">a)/texnoi</foreign>
                     or
                     <hi rend="italics">inartificial</hi>
                     proofs, the latter
-                    <foreign lang="greek">e)/ntexnoi</foreign>
+                    <foreign xml:lang="grc">e)/ntexnoi</foreign>
                     or
                     <hi rend="italics">artificial.</hi>
                     <milestone n="2" unit="section"/>
@@ -207,25 +207,25 @@ it is from these that the name
                     is
 derived: as examples I may cite those passed
 against Oppianicus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Cluent.</hi>
                         xvii.
                         <hi rend="italics">sqq.</hi>
                     </note>
                     or by the senate against Milo.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Mil. v.</hi>
                     </note>
                     Thirdly, there are judgments passed on the actual
 case, as for example in cases where the accused has
 been deported,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Banished persons who have been accused afresh after their restoration.
                     </note>
                     or where renewed application is
 made for the recognition of an individual as a free
 man,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         When a slave claimed his liberty by
                         <hi rend="italics">assertio</hi>
                         through a representative known as
@@ -237,7 +237,7 @@ presented anew.
                     or in portions of cases tried in the centumviral
 court which come before two different panels of
 judges.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The meaning is not clear. The Latin suggests that
 portions of a case might be tried by two panels sitting
 separately, while the case as a whole was tried by the two
@@ -280,7 +280,7 @@ can be adopted, it will still be possible to point out
 that the peculiar circumstances of many trials have
 led to unjust decisions; hence condemnations such
 as that of Rutilius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Publius Rutilius Rufus condemned for extortion while
 governor of Asia, owing to a conspiracy of the publicans
 against him. He went into voluntary exile at Mitylene and
@@ -373,7 +373,7 @@ sufficient for the detection of forgery.
                     <milestone n="6" unit="chapter"/>
                     <milestone n="1" unit="section"/>
                     With regard to oaths,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         An oath might be taken by one of the parties as an
 alternative to evidence. In court such an oath might be
 taken only on the proposal of the adversary; the litigant
@@ -450,7 +450,7 @@ mind as to whether he has committed perjury or no.
 never be in a hurry to propose that our opponent
 should take an oath, just as we should never allow
 him the choice of a judge
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The choice of the single
                         <hi rend="italics">iudex</hi>
                         in civil cases rested with
@@ -460,7 +460,7 @@ the person proposed.
                     nor select our judge
 from among the supporters of the opposite side: for
 if it is regarded as a disgrace to such a supporter
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Not an actual advocate, but a supporter and adviser
 on points of law.
                     </note>
@@ -500,7 +500,7 @@ present in court is, however, one of great difficulty,
 and consequently whether defending or impugning
 them the orator employs a twofold armoury in the
 shape of a set speech and examination.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Interrogatio</hi>
                         includes both the examination in chief and
 cross-examination.
@@ -522,7 +522,7 @@ practice of making a special attack, which all the
 same involves impugning the validity of evidence
 given by large numbers of persons. We know, for
 instance, that the evidence of entire nations
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">e.g.</hi>
                         in cases of extortion, where a whole province might
 give evidence against the accused.
@@ -545,7 +545,7 @@ found in many speeches, sometimes embedded in
                     the speech for the defence and sometimes published
 separately like the speech against the evidence of
 Vatinius.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Vatinius had appeared as a witness against Sestius, who
 was defended by Cicero.
                     </note>
@@ -567,7 +567,7 @@ a speech.
                     How such knowledge may be acquired I
 shall explain when I come to the appropriate portion
 of this work.
-                    <note anchored="yes" place="unspecified">XII. viii.</note>
+                    <note anchored="true" place="unspecified">XII. viii.</note>
                     This knowledge will suggest material
 for the examination and will supply weapons ready
 to the speaker's hand: it will also indicate to him
@@ -581,7 +581,7 @@ believing the witness or the reverse.
                 </p>
                 <p>
                     And since there are two classes of witnesses
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         In civil cases evidence was as a rule voluntary; in
 criminal cases the accuser might
                         <hi rend="italics">subpoena</hi>
@@ -772,7 +772,7 @@ have been summoned to appear in person. This was
 easier and of more frequent occurrence in the days
 when the examination of the witnesses was not
 deferred till after the conclusion of the pleading.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         It is not clear to what Quintilian refers. There are, it is
 true, passages in Cicero where the orator speaks of evidence
 as already given, but the speeches where these references are
@@ -808,7 +808,7 @@ regards the first type of question counsel for the
                     <pb id="p.185"/>
                     defence may, by adopting a method which I have
 already recommended for the prosecutor,
-                    <note anchored="yes" place="unspecified">Alive, § 17, 18.</note>
+                    <note anchored="true" place="unspecified">Alive, § 17, 18.</note>
                     namely by
 commencing his examination with questions of an
 apparently irrelevant and innocent character and
@@ -880,7 +880,7 @@ with oral. Such a circumstance may be turned to
 advantage by either side. For one party will rest
 its case on the fact that the witness is speaking on
 oath, the other on the unanimity of the signatories.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         An over-statement, since in many cases the signatories
 could only testify that the statement was that actually
 made by the deponent; with its truth they were not
@@ -944,7 +944,7 @@ accomplice?
 by Cicero in dealing with the charge of poisoning in
 the
                     <hi rend="italics">pro Cluentio.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         IX. 167.
                     </note>
@@ -1060,7 +1060,7 @@ arguments to support them.
 which involve a conclusion and those which do not.
 The former are those which cannot be otherwise and
 are called
-                    <foreign lang="greek">tekmh/ria,</foreign>
+                    <foreign xml:lang="grc">tekmh/ria,</foreign>
                     by the Greeks, because they are
 indications from which there is no getting away.
 These however seem to me scarcely to come under
@@ -1102,7 +1102,7 @@ may not have received a sword-wound.
                 <p>
                     <milestone n="8" unit="section"/>
                     There are other indications or
-                    <foreign lang="greek">ei)ko/ta,</foreign>
+                    <foreign xml:lang="grc">ei)ko/ta,</foreign>
                     that is
 probabilities, as the Greeks call them, which do not
 involve a necessary conclusion. These may not
@@ -1112,7 +1112,7 @@ conjunction with other indications.
                     <milestone n="9" unit="section"/>
                     The Latin
 equivalent of the Greek
-                    <foreign lang="greek">shmei=on</foreign>
+                    <foreign xml:lang="grc">shmei=on</foreign>
                     is
                     <hi rend="italics">signum,</hi>
                     a sign,
@@ -1221,7 +1221,7 @@ atmosphere, such an appellation is correct enough.
                     For if tile moon turns red owing to the wind, her
 hue is certainly a sign of wind. And if, as the same
 poet infers,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Verg.
                         <hi rend="italics">G.</hi>
                         i. 422.
@@ -1241,9 +1241,9 @@ no matter for wonder.
                     <milestone n="1" unit="section"/>
                     I now turn to arguments, the name under
 which we comprise the
-                    <foreign lang="greek">e)nqumh/mata, e)pixeirh/mata,</foreign>
+                    <foreign xml:lang="grc">e)nqumh/mata, e)pixeirh/mata,</foreign>
                     and
-                    <foreign lang="greek">a)podei/ceis</foreign>
+                    <foreign xml:lang="grc">a)podei/ceis</foreign>
                     of the Greeks, terms which, in spite of
 their difference, have much the same meaning. For
 the
@@ -1261,7 +1261,7 @@ I am now speaking);
                     secondly it signifies a proposition with a reason, and thirdly a conclusion of an
 argument drawn either from denial of consequents or
 from incompatibles
-                    <note anchored="yes" place="unspecified">v. viii. 5; xiv. 2. n.</note>
+                    <note anchored="true" place="unspecified">v. viii. 5; xiv. 2. n.</note>
                     ; although there is some controversy on this point. For there are some who style a
 conclusion from consequents an
                     <hi rend="italics">epicheireme,</hi>
@@ -1269,7 +1269,7 @@ conclusion from consequents an
 will be found that the majority hold the view that an
                     <hi rend="italics">epicheireme</hi>
                     is a conclusion from incompatibles:
-                    <note anchored="yes" place="unspecified">See v. xiv. 2, VIII. v. 9.</note>
+                    <note anchored="true" place="unspecified">See v. xiv. 2, VIII. v. 9.</note>
                     wherefore Cornificius styles it a
                     <hi rend="italics">contrarium</hi>
                     or argument from contraries. Some again call it a rhetorical
@@ -1280,9 +1280,9 @@ number as those of the regular syllogism, since such
                     <pb id="p.205"/>
                     precision is not specially required by the orator.
 Valgius
-                    <note anchored="yes" place="unspecified">See III. i. 18. A rhetorician of the reign of Augustus.</note>
+                    <note anchored="true" place="unspecified">See III. i. 18. A rhetorician of the reign of Augustus.</note>
                     translates
-                    <foreign lang="greek">e)pixei/rhma</foreign>
+                    <foreign xml:lang="grc">e)pixei/rhma</foreign>
                     by
                     <hi rend="italics">aggressio,</hi>
                     <milestone n="4" unit="section"/>
@@ -1291,7 +1291,7 @@ an attempt. It would however, in my opinion, be
 truer to say that it is not our handling of the
 subject, but the thing itself which we attempt which
 should be called an
-                    <foreign lang="greek">e)pixei/rhma,</foreign>
+                    <foreign xml:lang="grc">e)pixei/rhma,</foreign>
                     that is to say the
 argument by which we try to prove something and
 which, even if it has not yet been stated in so many
@@ -1300,7 +1300,7 @@ words, has been clearly conceived by the mind.
                     Others regard it not as an attempted or imperfect
 proof, but a complete proof, falling under the most
 special
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The last or lowest species.
                         <hi rend="italics">p.</hi>
                         § 56 and VII. i. 23.
@@ -1309,19 +1309,19 @@ special
 its proper and most generally received appellation it
 must be understood in the sense of a definite conception of some thought consisting of at least three
 parts.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         the major and minor premisses and the conclusion.
 See v. xiv. 6
                         <hi rend="italics">sqq.</hi>
                     </note>
                     Some call an
-                    <foreign lang="greek">e)pixei/rhma</foreign>
+                    <foreign xml:lang="grc">e)pixei/rhma</foreign>
                     a
                     <hi rend="italics">reason,</hi>
                     <milestone n="6" unit="section"/>
                     but Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv.</hi>
                         . xxxi. 34.
                     </note>
@@ -1331,7 +1331,7 @@ See v. xiv. 6
 too seems to derive this name from the syllogism
 rather than anything else; for he calls the
                     <hi rend="italics">syllogistic basis</hi>
-                    <note anchored="yes" place="unspecified">See III. vi. 43, 46, 51.</note>
+                    <note anchored="true" place="unspecified">See III. vi. 43, 46, 51.</note>
                     a
                     <hi rend="italics">ratiocinative basis</hi>
                     and quotes philosophers to support him. And since there is a certain kinship between a syllogism and an
@@ -1340,12 +1340,12 @@ rather than anything else; for he calls the
 the latter term.
                     <milestone n="7" unit="section"/>
                     An
-                    <foreign lang="greek">a)po/decis</foreign>
+                    <foreign xml:lang="grc">a)po/decis</foreign>
                     is a clear proof; hence
 the use of the term
-                    <foreign lang="greek">grammikai\ a)podei/ceis,</foreign>
+                    <foreign xml:lang="grc">grammikai\ a)podei/ceis,</foreign>
                     <quote>linear demonstrations</quote>
-                    <note anchored="yes" place="unspecified">See I. x. 38.</note>
+                    <note anchored="true" place="unspecified">See I. x. 38.</note>
                     by the geometricians. Caecilius
 holds that it differs from the
                     <hi rend="italics">epicheireme</hi>
@@ -1375,7 +1375,7 @@ means of what is certain. Indeed this is the nature
 of all arguments, for what is certain cannot be
 proved by what is uncertain. To all these forms of
 argument the Greeks give the name of
-                    <foreign lang="greek">pi/steis</foreign>
+                    <foreign xml:lang="grc">pi/steis</foreign>
                     , a
 term which, though the literal translation is
                     <hi rend="italics">fides</hi>
@@ -1393,7 +1393,7 @@ explaining the themes of the speeches of Cicero,
 says
                     <hi rend="italics">The argument is as follows.</hi>
                     Cicero
-                    <note anchored="yes" place="unspecified">In some letter now lost.</note>
+                    <note anchored="true" place="unspecified">In some letter now lost.</note>
                     himself in
 writing to Brutus says,
                     <hi rend="italics">
@@ -1408,7 +1408,7 @@ subjects for writing are so called.
 wondered at, since the term is also in common use
 among artists; hence the Vergilian phrase
                     <hi rend="italics">A mighty argument.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         vii. 791, with Reference to the design on the shield of
 Turnus.
@@ -1426,7 +1426,7 @@ which, to my thinking, he betrays a certain confusion of thought.
 merely the result of logical processes, but may
 equally be secured by inartificial arguments. Now
 I have already
-                    <note anchored="yes" place="unspecified">v. ix. 2.</note>
+                    <note anchored="true" place="unspecified">v. ix. 2.</note>
                     distinguished signs or, as he prefers
 to call them, indications from arguments. Consequently, since an argument is a process of reasoning
                     <pb id="p.209"/>
@@ -1468,7 +1468,7 @@ to handle arguments correctly must know the nature
 and meaning of everything and their usual effects.
 For it is thus that we arrive at probable arguments
 or
-                    <foreign lang="greek">ei)ko/ta</foreign>
+                    <foreign xml:lang="grc">ei)ko/ta</foreign>
                     as the Greeks call them.
                     <milestone n="16" unit="section"/>
                     With regard to
@@ -1526,10 +1526,10 @@ no argument.
                     of arguments, although some hold that they are identical
 with the topics which I have already discussed
 above.
-                    <note anchored="yes" place="unspecified">In previous chapter.</note>
+                    <note anchored="true" place="unspecified">In previous chapter.</note>
                     But I do not use this term in its usual
 acceptance, namely, commonplaces
-                    <note anchored="yes" place="unspecified">See ii. iv. 22, v. xii. 6 and xiii. 57.</note>
+                    <note anchored="true" place="unspecified">See ii. iv. 22, v. xii. 6 and xiii. 57.</note>
                     directed against
 luxury, adultery, and the like, but in the sense of
 the secret places where arguments reside, and from
@@ -1563,7 +1563,7 @@ it contains.
                     <milestone n="23" unit="section"/>
                     Firstly, then, arguments may be drawn from
 persons; for, as I have already said,
-                    <note anchored="yes" place="unspecified">v. viii. 4.</note>
+                    <note anchored="true" place="unspecified">v. viii. 4.</note>
                     all arguments
 fall into two classes, those concerned with things and
 those concerned with persons, since causes, time,
@@ -1638,7 +1638,7 @@ have been given for some special reasons, such as the
 titles of Wise, Great, Pious, or unless the name has
 suggested some special thought to the bearer.
 Lentulus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Publius Cornelius Lentulus Sura, Catilinarian conspirator.
                         <hi rend="italics">cp.</hi>
                         Sail
@@ -1654,10 +1654,10 @@ he too bore the name Cornelius.
                     <milestone n="31" unit="section"/>
                     On tile other hand
 the conceit employed by Euripides
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Phoeniss. 636.
-                        <foreign lang="greek">a)lhqw=s d' o)/noma *polunei/kh path\r e)/qeto/ soi</foreign>
-                        <foreign lang="greek">qei/a| pronoi/a| neike/wn e)pw/numon,</foreign>
+                        <foreign xml:lang="grc">a)lhqw=s d' o)/noma *polunei/kh path\r e)/qeto/ soi</foreign>
+                        <foreign xml:lang="grc">qei/a| pronoi/a| neike/wn e)pw/numon,</foreign>
                         <quote>
                             with truth did our father call
 thee Polynices with divine foreknowledge naming thee after
@@ -1669,7 +1669,7 @@ Eteocles taunt his brother Polynices on the ground
 that his name is evidence of character, is feeble in
 the extreme. Still a name will often provide the
 subject for a jest,
-                    <note anchored="yes" place="unspecified">See vi. iii. 53.</note>
+                    <note anchored="true" place="unspecified">See vi. iii. 53.</note>
                     witness the frequent jests of
                     <pb id="p.219"/>
                     Cicero on the name of Verres. Such, then, and the
@@ -1689,9 +1689,9 @@ what means the action is performed.
                     Consequently
 arguments are drawn from the causes of past or future
 actions. The matter of these causes, by some called
-                    <foreign lang="greek">u(/lh,</foreign>
+                    <foreign xml:lang="grc">u(/lh,</foreign>
                     by others
-                    <foreign lang="greek">du/namis,</foreign>
+                    <foreign xml:lang="grc">du/namis,</foreign>
                     falls into two genera, which
 are each divided into four species. For the motive
 for any action is as a rule concerned with the acquisition, increase, preservation and use of things that are
@@ -1719,7 +1719,7 @@ charged, but also to defend him when he contends
                     that his action was right, that is to say proceeded
 from an honourable motive, a theme of which I have
 spoken more fully in the third book.
-                    <note anchored="yes" place="unspecified">III. xi. 4–9.</note>
+                    <note anchored="true" place="unspecified">III. xi. 4–9.</note>
                     <milestone n="36" unit="section"/>
                     Questions
 of definition are also at times intimately connected
@@ -1736,7 +1736,7 @@ or level, near the coast or inland, planted or uncultivated, crowded or deserted
 carrying out a given design or the reverse. This is a
 topic which is treated most carefully by Cicero in his
                     <hi rend="italics">pro Milone.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Mil.</hi>
                         xx.
                     </note>
@@ -1777,7 +1777,7 @@ both in custom and law.
                     Further arguments drawn
 from place may serve to secure approval or the
 reverse. Ajax for instance in Ovid
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Met.</hi>
                         xiii. 5. Ajax had saved the ships from being burned
 by the Trojans. The dispute as to whether the arms of
@@ -1795,7 +1795,7 @@ tried there. Ajax's argument is,
                     Again one of the many charges brought against
 Milo was that he killed Clodius on the monument of
 his ancestors.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Ail.</hi>
                         vii. 17. i.e. on the Appian Way constructed by
 one of Clodius' ancestors.
@@ -1805,7 +1805,7 @@ one of Clodius' ancestors.
 weight in deliberative oratory, as may those drawn
 from time, which I shall now proceed to discuss.
 Time may, as I have said elsewhere,
-                    <note anchored="yes" place="unspecified">III. vi. 25.</note>
+                    <note anchored="true" place="unspecified">III. vi. 25.</note>
                     be understood
 in two different senses, general and special. The first
 sense is seen in words and phrases such as
@@ -1843,7 +1843,7 @@ fact; for instance, occasionally it provides irrefragable
                     <pb id="p.225"/>
                     proofs, which may be illustrated by a case which I
 have already cited,
-                    <note anchored="yes" place="unspecified">v. v. 2.</note>
+                    <note anchored="true" place="unspecified">v. v. 2.</note>
                     when one of the signatories to a
 document has died before the day on which it was
 signed, or when a person is accused of the commission of some crime, although he was only an infant
@@ -1887,7 +1887,7 @@ acted as a procurer on the ground that he bought
 her after she was found guilty of adultery, or
 when a debauched character is accused of parricide on the ground that he said to his father
                     <quote>You have rebuked me for the last time.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Both cases are clearly themes from the schools of
 rhetoric.
                     </note>
@@ -1930,7 +1930,7 @@ given person had the will, and whether lie had the
 power to do the deed; for hope will often create
 the will to act. Hence the well-known inference in
 Cicero:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Mil.</hi>
                         x. 29.
                     </note>
@@ -1951,11 +1951,11 @@ a javelin sticking in a dead body.
                     <milestone n="52" unit="section"/>
                     To these we may
 add manner, the Greek
-                    <foreign lang="greek">tro/pos,</foreign>
+                    <foreign xml:lang="grc">tro/pos,</foreign>
                     in regard to which
 we ask how a thing was done. Manner is concerned
 sometimes with quality and the letter of the law
-                    <note anchored="yes" place="unspecified">See § 40. Also III. vi. 55 and 66.</note>
+                    <note anchored="true" place="unspecified">See § 40. Also III. vi. 55 and 66.</note>
                     (we may for instance argue that it was unlawful to
 kill an adulterer by poison), sometimes with questions of fact, as for example if I argue that an act
 was committed with a good intent and therefore
@@ -1970,7 +1970,7 @@ actual cause, there are clearly three points to which
 we must give attention, namely Whether it is, What
 it is and Of what kind it is. But as there are certain
                     <quote>places</quote>
-                    <note anchored="yes" place="unspecified">See above § 20.</note>
+                    <note anchored="true" place="unspecified">See above § 20.</note>
                     of argument which are common to
 all three questions, this triple division is impracticable and we must therefore consider these questions rather in connexion with those
                     <quote>places</quote>
@@ -2001,7 +2001,7 @@ coupled with a retentive memory and a dignified delivery.
 as in the preceding instances, or by etymology: we
 may for instance explain
                     <hi rend="italics">assiduus</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Paulus (exc. Fest.) gives the following explanation of this
 absurd derivation, for which Cicero tells that Aelius Stilo
 was responsible:
@@ -2021,7 +2021,7 @@ expense, contributing an
                     <hi rend="italics">as</hi>
                     and
                     <hi rend="italics">do, locuples</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">locheples</hi>
                         (
                         <quote>wealthy</quote>
@@ -2032,7 +2032,7 @@ sors of many places.
                     </note>
                     by deriving it from
                     <hi rend="italics">copia locorum, pecuniosus</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pecuniosus</hi>
                         (
                         <quote>moneyed</quote>
@@ -2060,7 +2060,7 @@ proceed from the
                     <hi rend="italics">genus</hi>
                     to the ultimate
                     <hi rend="italics">species;</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         § 5.
                     </note>
@@ -2158,7 +2158,7 @@ one who is assigned.
                     </hi>
                     There are also other points of
 difference which are dealt with elsewhere.
-                    <note anchored="yes" place="unspecified">VII. iii. 26. Also III vi. 25.</note>
+                    <note anchored="true" place="unspecified">VII. iii. 26. Also III vi. 25.</note>
                     <milestone n="61" unit="section"/>
                     Again,
 the term difference is applied in cases when the
@@ -2178,7 +2178,7 @@ they are not actually properties, but serve to show
 or creatures of the sea. This distinction, however,
 comes under the province not so much of argument
 as of exact definition. Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Cic. Top.</hi>
                         iii. 13.
                     </note>
@@ -2206,7 +2206,7 @@ argument is based on
                     <hi rend="italics">species,</hi>
                     since there are two
 kinds of marriage.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         There was the formal marriage
                         <hi rend="italics">per coemptionem,</hi>
                         bringing
@@ -2220,7 +2220,7 @@ based on cohabitation without involving the wife's coming
                         <hi rend="italics">in manum mariti.</hi>
                     </note>
                     Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cic.
                         <hi rend="italics">Top.</hi>
                     </note>
@@ -2248,7 +2248,7 @@ told are three, democracy, oligarchy, and monarchy.
 It is true that he does not use these illustrations,
                     <milestone n="64" unit="section"/>
                     since, as he was writing to Trebatius,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A famous lawyer,
                         <hi rend="italics">cp.</hi>
                         III. xi. 18. v. 17.
@@ -2310,7 +2310,7 @@ be employed with care; for if, in setting forth the
 alternatives, we chance to omit one, our whole case
 will fail, and our audience will be moved to laughter.
 It is safer to do what Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Caec.</hi>
                         xiii. 37.
                     </note>
@@ -2325,7 +2325,7 @@ advanced, either of which if established would suffice
                     <pb id="p.239"/>
                     to prove the case. Take the following example
 from Cicero:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Cluent.</hi>
                         xxiii. 64.
                     </note>
@@ -2346,7 +2346,7 @@ alternatives of which one must necessarily be true,
 and as a result, whichever he chooses, lie will
 damage his case. Cicero does this in the
                     <hi rend="italics">pro Oppio:</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Oppius was accused of embezzling public money and
 plotting against the life of M. Aurelius Cotta, governor of
 Bithynia, where Oppius was serving as quaestor. Cicero's
@@ -2359,7 +2359,7 @@ to commit suicide?
                     </quote>
                     and in the
                     <hi rend="italics">pro Vareno:</hi>
-                    <note anchored="yes" place="unspecified">See iv. ii. 26.</note>
+                    <note anchored="true" place="unspecified">See iv. ii. 26.</note>
                     <quote>
                         You
 have a choice between two alternatives: either you
@@ -2379,7 +2379,7 @@ the same conclusion, as in the sentence,
 the common dilemma,
                     <quote>
                         What is the use of a figure,
-                        <note anchored="yes" place="unspecified">See vii. iv. 28, ix. i. 14, ix. ii. 65.</note>
+                        <note anchored="true" place="unspecified">See vii. iv. 28, ix. i. 14, ix. ii. 65.</note>
                         if its meaning is clear? And what is its use, if it
 is unintelligible?
                     </quote>
@@ -2423,11 +2423,11 @@ which it ended?
                     <quote>If a guardian should be required to be faithful to his trust, so should an agent.</quote>
                     To this class belongs
 the type of argument called
-                    <foreign lang="greek">e)pagwgh/</foreign>
+                    <foreign xml:lang="grc">e)pagwgh/</foreign>
                     by the Greeks,
                     <hi rend="italics">induction</hi>
                     by Cicero.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv.</hi>
                         i. 31.
                     </note>
@@ -2456,7 +2456,7 @@ good unwittingly does not deserve a reward.
 from contradictions:
                     <quote>He who is wise is not a fool.</quote>
                     Or from consequences necessary or probable
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         It is possible that Quintilian regards
                         <hi rend="italics">adiuncta as</hi>
                         =
@@ -2489,19 +2489,19 @@ and will continue to regard him with affection.
                     </quote>
                     However, such arguments, being incontrovertible,
 are of the nature of absolute indications.
-                    <note anchored="yes" place="unspecified">See ch. ix.</note>
+                    <note anchored="true" place="unspecified">See ch. ix.</note>
                     <milestone n="75" unit="section"/>
                     These,
 however, I call
                     <hi rend="italics">consequent or</hi>
-                    <foreign lang="greek">a)ko/louqa</foreign>
+                    <foreign xml:lang="grc">a)ko/louqa</foreign>
                     goodness, for
 instance, is consequent on wisdom: while in regard
 to things which merely have taken place afterwards or
 will take place I use the term
                     <hi rend="italics">insequent</hi>
                     or
-                    <foreign lang="greek">parepo/mena,</foreign>
+                    <foreign xml:lang="grc">parepo/mena,</foreign>
                     though I do not regard the question of terminology
 as important. Give them any name you please, as
 long as the meaning is clear and it is shown that
@@ -2527,7 +2527,7 @@ their will?
                     as in
 the
                     <hi rend="italics">Verrines,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Verr.</hi>
                         I. xlii. 109. The praetor on entering office on
 Jan. I issued an
@@ -2561,16 +2561,16 @@ will.
                     arguments those derived from facts
 which lend each other mutual support and are by
 some regarded as forming a separate kind of argument, which they
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Ar.
                         <hi rend="italics">Rhet.</hi>
                         II. xxiii. 3.
                     </note>
                     call
-                    <foreign lang="greek">e)k tw=n pro\s a)/llhla,</foreign>
+                    <foreign xml:lang="grc">e)k tw=n pro\s a)/llhla,</foreign>
                     arguments
 from things mutually related, while Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv.</hi>
                         I. xxx. 46.
                     </note>
@@ -2578,7 +2578,7 @@ from things mutually related, while Cicero
 them arguments drawn from things to which the
 same line of reasoning applies; take the following
 example
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">ib.</hi>
                         47.
                     </note>
@@ -2661,7 +2661,7 @@ it should be shunned.
 should not necessarily search for the originating
 cause is just: an example of such error is provided
 by the speech of Medea
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The opening of Ennius' translation of the
                         <hi rend="italics">Medea</hi>
                         of
@@ -2682,7 +2682,7 @@ that there
                     </quote>
                     or I might cite the words addressed by Philoctetes
 to Paris,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         From the
                         <hi rend="italics">Philoctetes</hi>
                         of Accius, Ribbeck fr. 178.
@@ -2698,7 +2698,7 @@ to Paris,
 may arrive anywhere.
                     <milestone n="85" unit="section"/>
                     But for the fact that Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Top.</hi>
                         iii. 12.
                     </note>
@@ -2712,7 +2712,7 @@ these what is styled the
                     <milestone n="86" unit="section"/>
                     Some call these arguments
 derived from causes or efficients by the Greek name
-                    <foreign lang="greek">e)kba/seis</foreign>
+                    <foreign xml:lang="grc">e)kba/seis</foreign>
                     that is, results; for in such cases the only
 point considered is how one thing results from
 another.
@@ -2755,13 +2755,13 @@ case of parricide is also just in the case of matricide.
                     </quote>
                     In all these cases we follow the syllogistic
 method.
-                    <note anchored="yes" place="unspecified">See III. vi. 15, 43, 88.</note>
+                    <note anchored="true" place="unspecified">See III. vi. 15, 43, 88.</note>
                     <milestone n="89" unit="section"/>
                     The following type of argument on the
 other hand is more serviceable in questions turning
                     <pb id="p.251"/>
                     on definition or quality.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See iii. 6.
                         <hi rend="italics">passim.</hi>
                     </note>
@@ -2805,7 +2805,7 @@ with a very few. As an example of argument from
 something greater take the following example from
 the
                     <hi rend="italics">pro Caecina</hi>
-                    <note anchored="yes" place="unspecified">XV. 43.</note>
+                    <note anchored="true" place="unspecified">XV. 43.</note>
                     <quote>
                         Shall we suppose that that
 which alarms whole armies caused no alarm to a
@@ -2815,7 +2815,7 @@ peaceful company of lawyers?
 argument from something easier, take this passage
                     <pb id="p.253"/>
                     from the speech against Clodius and Curio:
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A lost speech of Cicero to which reference is made in III. vii. 2.
                     </note>
                     <quote>
@@ -2825,7 +2825,7 @@ withdrew failed to secure election?
                     </quote>
                     <milestone n="93" unit="section"/>
                     The following
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         xvi. 45. Caecina had attempted to take possession of
 lands left him by will, but was driven off by armed force.
 Cicero has just pointed out that there were precedents for
@@ -2845,7 +2845,7 @@ Ligarius
                     For an argument drawn from
 something less take this passage from the
                     <hi rend="italics">pro Caecinaa</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Lig.</hi>
                         iii. 8 and x. 31. Cicero's point is that he has
 been a much more bitter opponent of Caesar than Ligarius,
@@ -2875,7 +2875,7 @@ species.
                     I think I should also add that arguments are
 drawn not merely from admitted facts, but from
 fictitious suppositions, which the Greeks style
-                    <foreign lang="greek">kaq' u(po/qesin</foreign>
+                    <foreign xml:lang="grc">kaq' u(po/qesin</foreign>
                     and that this latter type of argument falls
 into all the same divisions as those which I have
                     <pb id="p.255"/>
@@ -2900,7 +2900,7 @@ from such a penalty if he were a soldier, an infant.
 or if he were absent from home on the service of
 the state. Again in the case where a hero is allowed
 to choose his reward
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         VII. v. 4.
                     </note>
@@ -2913,7 +2913,7 @@ arguments are specially useful when we are arguing
 against the letter of the law, and are thus employed
 by Cicero in the
                     <hi rend="italics">pro Caecina</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         xix. 55. Quintilian merely quotes fragments of Cicero's
 arguments. The sense of the passages omitted is supplied in
 brackets. The interdict of the praetor had ordered Caecina's
@@ -2937,7 +2937,7 @@ might be quoted from the same work.
                     But fictitious
 suppositions are also exceedingly useful when we
 are concerned with the quality of an act
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Mur</hi>
                         —. xxxix. 83. Cicero argues that Murena's
 election as consul is necessary to save the state from Catiline.
@@ -2954,7 +2954,7 @@ he would condemn Lucius Murena.
                     </quote>
                     It is useful
 also for amplification
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Phil.</hi>
                         II. xxv. 63.
                         <quote>This</quote>
@@ -2965,7 +2965,7 @@ also for amplification
                     <quote>If this had happened to you during dinner in the midst of your deep potations</quote>
                     ;
 or again,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Probably an allusion to
                         <hi rend="italics">Cat.</hi>
                         i. 7, where Cicero makes
@@ -3017,14 +3017,14 @@ we have in hand.
                     This type of argument may
 reasonably be described as drawn from circumstances, there being no other word to express the
 Greek
-                    <foreign lang="greek">peri/stasis</foreign>
+                    <foreign xml:lang="grc">peri/stasis</foreign>
                     or from those things which are
 peculiar to any given case. For instance, in the
 case of the priest who having committed adultery
 desired to save
                     <hi rend="italics">his own</hi>
                     life by means of the law
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         This law and those which follow are imaginary laws
 invented for the purposes of the schools of rhetoric.
                     </note>
@@ -3051,7 +3051,7 @@ requires payment of the whole sum owed him by
 another banker. The appropriate argument supplied
 by the subject to the creditor is that there was
 special reason for the insertion of the clause
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The argument is far from clear. The case assumes that
 by a species of moratorium a banker may be released from
 payment of his debts in full to ordinary creditors. This
@@ -3091,7 +3091,7 @@ his advocate with him.
                     <milestone n="108" unit="section"/>
                     Cicero in the
                     <hi rend="italics">pro Cluentio</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         xxxvi. 98. The
                         <hi rend="italics">lex Iulia de ambitu</hi>
                         contained a provision
@@ -3187,7 +3187,7 @@ because the gains of war cannot be retained except
 by the exercise of the same violence by which they
 were acquired. Another peculiar feature of the case
 is that it is tried before the Amphictyonic council,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         § 118. The Amphictyonic Council of Delphi in the
 fourth century B.C. had come to be an international council,
@@ -3204,7 +3204,7 @@ we may urge that the right to refuse payment could
 not have been conferred by the victor because he
 possesses only what he holds, but a right, being
 incorporeal, cannot be grasped by the hand.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         a right can only be transferred by the possessor, not
 by force or seizure.
@@ -3249,7 +3249,7 @@ plea that can be urged is that of equity.
                     I make these remarks, not because I think that a
 knowledge of the
                     <quote>places</quote>
-                    <note anchored="yes" place="unspecified">See V. x. 20.</note>
+                    <note anchored="true" place="unspecified">See V. x. 20.</note>
                     from which arguments
 may be derived is useless (had I thought so, I
 should have passed them by)but to prevent those
@@ -3333,16 +3333,16 @@ spontaneously follow the thought of the orator.
                     <milestone n="1" unit="section"/>
                     The third kind of proof, which is drawn into
 the service of the case from without, is styled a
-                    <foreign lang="greek">para/deigma</foreign>
+                    <foreign xml:lang="grc">para/deigma</foreign>
                     by the Greeks, who apply the term to all
 comparisons of like with like, but more especially
 to historical parallels. Roman writers have for the
 most part preferred to give the name of comparison
 to that which the Greeks style
-                    <foreign lang="greek">parabolh/,</foreign>
+                    <foreign xml:lang="grc">parabolh/,</foreign>
                     while they
 translate
-                    <foreign lang="greek">para/deigma</foreign>
+                    <foreign xml:lang="grc">para/deigma</foreign>
                     by example, although this
 latter involves comparison, while the former is of
                     <pb id="p.273"/>
@@ -3351,29 +3351,29 @@ latter involves comparison, while the former is of
                     For my own part, I
 prefer with a view to making my purpose easier of
 apprehension to regard both as
-                    <foreign lang="greek">paradei/gmata</foreign>
+                    <foreign xml:lang="grc">paradei/gmata</foreign>
                     and to
 call them examples. Nor am I afraid of being
 thought to disagree with Cicero, although he does
 separate comparison from example.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv.</hi>
                         I. xxx. 49.
                     </note>
                     For he divides
 all arguments into two classes, induction and
 ratiocination, just as most Greeks
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         cp. Ar.
                         <hi rend="italics">ah.</hi>
                         I. ii. 18.
                     </note>
                     divide it into
-                    <foreign lang="greek">paradei/gmata</foreign>
+                    <foreign xml:lang="grc">paradei/gmata</foreign>
                     and
-                    <foreign lang="greek">e)pixeirh/mata,</foreign>
+                    <foreign xml:lang="grc">e)pixeirh/mata,</foreign>
                     explaining
-                    <foreign lang="greek">para/deigma</foreign>
+                    <foreign xml:lang="grc">para/deigma</foreign>
                     as a rhetorical induction.
                     <milestone n="3" unit="section"/>
                     The method of argument
@@ -3415,7 +3415,7 @@ but he that is most excellent in virtue.
 from things like or unlike or contrary. Similes are,
 it is true, sometimes employed for the embellishment of the speech as well, but I will deal with
 them in their proper place;
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         VIII iii. 72
                         <hi rend="italics">sqq.</hi>
                     </note>
@@ -3441,7 +3441,7 @@ state, while Manlius condemned his son to death for
 his valoulr
                     </quote>
                     ;
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Manlius had forbidden all encounters with the enemy. His son engaged in single combat and slew his man. See Liv. VIII. viii. 1.
                     </note>
                     from the contrary when we say,
@@ -3449,7 +3449,7 @@ his valoulr
                         Marcellus restored the works of art which had
 been taken from the Syracusans who were our
 enemies, while Verres
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             <hi rend="italics">cp. Verr.</hi>
                             IV. lv. 123.
                         </note>
@@ -3484,7 +3484,7 @@ just that leading citizens who have rendered good
 service to their country should be recalled from
 that exile to which they have been driven by envy.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         cp. Liv. ix. 30. The flute-players employed in public
 worship migrated to Tibur because deprived of an oldestablished privilege, but were brought back by stratagem,
 after their hosts had made them drunk.
@@ -3507,7 +3507,7 @@ examples of these classes of argument from the
 pages of Cicero; for where should I find better?
 The following passage from the
                     <hi rend="italics">pro Murena</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         viii. 17. Sulpicius, one of Murena's accusers and an
 unsuccessful candidate for the consulship, had sought to
 depreciate Murena's birth. Cicero urges that even if Sulpicius' statements were true they would be irrelevant and
@@ -3527,7 +3527,7 @@ most excellent and respectable citizen. Yet I defeated Catiline by force of meri
                     <milestone n="12" unit="section"/>
                     The
                     <hi rend="italics">pro Milone</hi>
-                    <note anchored="yes" place="unspecified">iii. 7.</note>
+                    <note anchored="true" place="unspecified">iii. 7.</note>
                     will give us an
 example of argument from the greater to the less:
                     <quote>
@@ -3543,7 +3543,7 @@ the fact that he confessed that he had slain his
 sister with his own hand.
                     </quote>
                     The following
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Mil.</hi>
                         xxvii. 72.
                     </note>
@@ -3572,14 +3572,14 @@ then follows the whole invective against Clodius.
 they may turn on kind, manner, time, place, etcetera,
 almost every one of which Cicero employs to overthrow the previous decisions that seemed to apply
 to the case of Cluentius,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Cluent.</hi>
                         xxxii.
                         <hi rend="italics">sqq.</hi>
                     </note>
                     while he makes use of
 argument from contraries when lie minimises
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">ib.</hi>
                         xlviii. 134. The accused was a knight: the retention
 of his horse implied that he retained his status.
@@ -3597,7 +3597,7 @@ to quote.
                     <milestone n="14" unit="section"/>
                     A brief example of a similar argument is
 to be found in Virgil,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Aen.</hi>
                         ii. 540.
                     </note>
@@ -3613,7 +3613,7 @@ to be found in Virgil,
                     <milestone n="15" unit="section"/>
                     Historical parallels may however sometimes be related in full, as in the
                     <hi rend="italics">pro Milone</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Mil.</hi>
                         iv. 9.
                     </note>
@@ -3632,7 +3632,7 @@ him go scot free.
                     On the other hand in certain
 cases it will be sufficient merely to allude to the
 parallel, as Cicero does in the same speech
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">ib.</hi>
                         iii. 8.
                     </note>
@@ -3659,7 +3659,7 @@ shows us how we should employ such quotations.
                     For
 an example of this type will be found in the same
 speech
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">ib.</hi>
                         iii. 8. The allusion is to Orestes, acquitted when
 tried before the Areopagus at Athens by the casting vote of
@@ -3686,11 +3686,11 @@ less suspicious than others in their reception of
 fictions and, when pleased, readily agree with the
 arguments from which their pleasure is derived.
 Thus Menenius Agrippa
-                    <note anchored="yes" place="unspecified">See Liv. ii. 32.</note>
+                    <note anchored="true" place="unspecified">See Liv. ii. 32.</note>
                     is said to have reconciled
 the plebs to the patricians by his fable of the limbs'
 quarrel with the belly. Horace
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Epis</hi>
                         I. i. 73.
                     </note>
@@ -3700,10 +3700,10 @@ the employment of fables as beneath the dignity
 even of poetry; witness his lines that narrate
                     <quote>What the shrewd fox to the sick lion told.</quote>
                     The Greeks call such fables
-                    <foreign lang="greek">ai)=noi</foreign>
+                    <foreign xml:lang="grc">ai)=noi</foreign>
                     (tales) and, as I
 have already
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         In the preceding section.
                         <hi rend="italics">cp.</hi>
                         Arist.
@@ -3740,15 +3740,15 @@ into court with a strong prejudice against the
                         <pb id="p.285"/>
                         accused.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Cluent.</hi>
                         xxvii. 75.
                     </note>
                     <milestone n="23" unit="section"/>
                     For
-                    <foreign lang="greek">parabolh/,</foreign>
+                    <foreign xml:lang="grc">parabolh/,</foreign>
                     which Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv.</hi>
                         i. 30.
                     </note>
@@ -3759,7 +3759,7 @@ by
 resemblance is far less obvious. Nor does it merely
 compare the actions of men as Cicero does in the
                     <hi rend="italics">pro Murena</hi>
-                    <note anchored="yes" place="unspecified">ii. 4.</note>
+                    <note anchored="true" place="unspecified">ii. 4.</note>
                     :
                     <quote>
                         But if those who have just come
@@ -3785,11 +3785,11 @@ often take on a different appearance when viewed
 from a different angle, I feel that I ought to point
 out that the kind of comparison which the Greeks
 call
-                    <foreign lang="greek">ei)kw/n,</foreign>
+                    <foreign xml:lang="grc">ei)kw/n,</foreign>
                     and which expresses the appearance of
 things and persons (as for instance in the line of
 Cassius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Probably the epigrammatist Cassius of Parma.
                         <hi rend="italics">lanipedis</hi>
                         =bandaged for the gout. Regius emended to
@@ -3824,7 +3824,7 @@ for the common weal.
                     <milestone n="25" unit="section"/>
                     Of this kind is the saying
 of Cicero
-                    <note anchored="yes" place="unspecified">See IV. iv. 8.</note>
+                    <note anchored="true" place="unspecified">See IV. iv. 8.</note>
                     :
                     <quote>
                         As our bodies can make no use of
@@ -3839,14 +3839,14 @@ this simile in the
                     from the analogy of
 the human body, so in the
                     <hi rend="italics">pro Cornelio</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Clunt.</hi>
                         liii. 146.
                     </note>
                     he draws
 a simile from horses, and in the
                     <hi rend="italics">pro Archia</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Arch.</hi>
                         viii. 19.
                     </note>
@@ -3878,12 +3878,12 @@ force is different, when applied to ships and friendship, money and embraces.
                     Consequently, it is allimportant in this connexion to consider whether the
 simile is really applicable. So in answering those
 Socratic questions which I mentioned above,
-                    <note anchored="yes" place="unspecified">§ 3.</note>
+                    <note anchored="true" place="unspecified">§ 3.</note>
                     the
 greatest care must be taken to avoid giving an incautious answer, such as those given by the wife of
 Xenophon to Aspasia in the dialogue of Aeschines
 the Socratic: the passage is translated by Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv.</hi>
                         I. xxxi. 51.
                     </note>
@@ -3932,7 +3932,7 @@ for instance, and an ant both belong to the genus
                     <hi rend="italics">animal</hi>
                     ),and dissimilitude in things similar (puppies
 and kids, for example, are unlike the parents,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Verg. Ecl</hi>
                         i. 23.
                     </note>
@@ -3958,7 +3958,7 @@ take the following passage from the
                     <hi rend="italics">Topica</hi>
                     of
 Cicero,
-                    <note anchored="yes" place="unspecified">iii. 15.</note>
+                    <note anchored="true" place="unspecified">iii. 15.</note>
                     where he argues that a man to whom the
 usufruct of a house has been left will not restore it
 in the interests of the heir if it collapses; just as
@@ -3978,7 +3978,7 @@ dissimilar points of law occurs in the
                     <hi rend="italics">pro Caecina</hi>
                     of
 Cicero
-                    <note anchored="yes" place="unspecified">xii. 34.</note>
+                    <note anchored="true" place="unspecified">xii. 34.</note>
                     :
                     <milestone n="33" unit="section"/>
                     <quote>
@@ -3989,7 +3989,7 @@ prevented me from entering my house?
                     </quote>
                     Dissimilar points may be illustrated by the following
 example
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         Cic.
                         <hi rend="italics">Top.</hi>
@@ -4051,7 +4051,7 @@ reasoning beings.
                     Authority also may be drawn from external sources
 to support a case. Those who follow the Greeks,
 who call such arguments
-                    <foreign lang="greek">kri/seis,</foreign>
+                    <foreign xml:lang="grc">kri/seis,</foreign>
                     style them
                     <hi rend="italics">judgments</hi>
                     or
@@ -4096,7 +4096,7 @@ authority to their statements.
 is provided by the fact that when the Megarians
 disputed the possession of Salamis with the Athenians, the latter prevailed by citing a line from
 Homer,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">II.</hi>
                         ii. 558.
                         <quote>
@@ -4114,7 +4114,7 @@ they are anonymous, as, for instance,
                     or
                     <quote>Conscience is as good as a thousand witnesses,</quote>
                     or, to quote Cicero,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Cato maj.</hi>
                         iii 7.
                     </note>
@@ -4130,7 +4130,7 @@ Socrates was the wisest of mankind: indeed, they
                     rank it above all other authorities. Such authority
 is rare, but may prove useful. It is employed by
 Cicero in his speech on the Replies of the Soothsayers
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de har. resp. passim.</hi>
                         The soothsayers consulted as to
 the significance of certain prodigies had replied that they
@@ -4139,14 +4139,14 @@ Cicero argued against this in a speech to the senate (56 B.C.).
                     </note>
                     and in the oration in which he denounced
 Catiline to the people,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">in Cat.</hi>
                         III. ix. 21.
                     </note>
                     when he points to the statue
 of Jupiter crowning a column, and again in the
                     <hi rend="italics">pro Ligario,</hi>
-                    <note anchored="yes" place="unspecified">vi. 19.</note>
+                    <note anchored="true" place="unspecified">vi. 19.</note>
                     where lie admits the cause of Caesar to
 be the better because the gods have decided in his
 favour. When such arguments are inherent in the
@@ -4195,7 +4195,7 @@ obviously impossible to prove what is doubtful by
 what is no less doubtful. Still some things which are
 adduced as proof require proof themselves.
                     <quote>You killed your husband, for you were an adulteress.</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         v. xi. 39.
                     </note>
@@ -4297,7 +4297,7 @@ which they call
                     or
                     <hi rend="italics">emotional.</hi>
                     Aristotle
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Rhet.</hi>
                         I. ii. 4.
                     </note>
@@ -4317,7 +4317,7 @@ Roman people: Aemilius Scaurus denies it.
                     A
 similar defence is said to have been employed by
 Iphicrates
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         At.
                         <hi rend="italics">Rhet.</hi>
                         II. xxiii. 7.
@@ -4334,7 +4334,7 @@ out such arguments as will appeal to him. I have
 already spoken of this in the rules which I laid
                     <pb id="p.305"/>
                     down for the exordium and for deliberative oratory.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         IV. i. 17
                         <hi rend="italics">sq.,</hi>
                         III. viii. 36
@@ -4376,7 +4376,7 @@ an impression on it; or whether they should be
 divided between the commencement and close of the
 proof, adopting the Homeric disposition of placing
 the weakest in the centre of the column,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">I.</hi>
                         iv. 299.
                     </note>
@@ -4463,10 +4463,10 @@ to say of these qualities in the speaker.
 masters of sculpture and painting desired to carve
 or paint forms of ideal beauty, they never fell into
 the error of taking some Bagoas or Megabyzus
-                    <note anchored="yes" place="unspecified">Eunuchs.</note>
+                    <note anchored="true" place="unspecified">Eunuchs.</note>
                     as
 models, but rightly selected the well-known Doryphorus,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The famous statue of Polycletus, regarded as the standard
 of manly beauty and proportion. Many copies have survived.
 Doryphorus= the Spearbearer.
@@ -4496,7 +4496,7 @@ the misfortune is that teachers more often than not
 pass over what is necessary in silence, and utility is
 not accounted one of the good qualities of eloquence.
 But I have dealt with these points in another work,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Perhaps the lost
                         <hi rend="italics">de causis corruptae eloquentiae.</hi>
                     </note>
@@ -4512,7 +4512,7 @@ refutation, while whatever is said by our opponents
 must be rebutted, whether we are speaking for the
 defence or the prosecution. It is in this sense that
 refutation is assigned the fourth place
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         (i) exoidium, (ii) statement of facts, (iii) confirmation,
 (iv) refutation, (v) peroration.
                     </note>
@@ -4529,7 +4529,7 @@ appeal to the emotions is made in refutation.
                 <p>
                     It is not, however, without reason that, as Cicero
 so often testifies,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         It is not clear what passages Quintilian has in his
 mind.
                     </note>
@@ -4542,7 +4542,7 @@ it is sufficient for the accuser that his charge should
 be true, whereas counsel for the defence may deny
                     <pb id="p.313"/>
                     or justify the facts, raise the question of competence,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         See III. vi. 23. No exact rendering of
                         <hi rend="italics">translatio</hi>
                         is
@@ -4587,21 +4587,21 @@ case we must deny or justify the facts or raise the
 question of competence: for these are practically
 the sole methods of defence available in the courts.
 Pleas for mercy,
-                    <note anchored="yes" place="unspecified">See vii. iv. 17.</note>
+                    <note anchored="true" place="unspecified">See vii. iv. 17.</note>
                     <milestone n="5" unit="section"/>
                     which are not in any sense a
 method of actual defence, can rarely be used, and
                     <pb id="p.315"/>
                     only before judges who are not limited to some
 precise form of verdict.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">e. g.</hi>
                         in the emperor's court as opposed to the
                         <hi rend="italics">quaestiones perpetuae</hi>
                         or civil actions.
                     </note>
                     Even those speeches delivered before Gaius Caesar
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         As in the
                         <hi rend="italics">pro Ligario</hi>
                         and
@@ -4616,7 +4616,7 @@ they do employ such pleas for mercy, also make use
 of the ordinary methods of defence. For I think
 you will agree with me that the following passage
 contains arguments of a strongly defensive character
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cic.
                         <hi rend="italics">pro Lig.</hi>
                         iv. 10
@@ -4652,7 +4652,7 @@ may be denied that a fact is of the nature alleged.
                     <pb id="p.317"/>
                     When it is impossible to plead justification or to
 raise the question of competence,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         if we cannot say
                         <quote>The act was right</quote>
@@ -4759,7 +4759,7 @@ opponent. If his statements be obviously false, it
 will be sufficient to deny them. This is done by
 Cicero in the
                     <hi rend="italics">pro Cluentio,</hi>
-                    <note anchored="yes" place="unspecified">lx. 168.</note>
+                    <note anchored="true" place="unspecified">lx. 168.</note>
                     where he denies that
 the man alleged by the accuser to have fallen dead
 on the spot after drinking the contents of the cup,
@@ -4782,7 +4782,7 @@ orator's duty to make it appear that some argument
 of his opponent is contradictory or irrelevant or
 incredible or superfluous or really favourable to his
 own client. Oppius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         § 21 and v. x 69.
                     </note>
@@ -4795,7 +4795,7 @@ army by bribes.
                     The accuser of Cornelius offers to
 produce witnesses to show that he read out the law
 when tribune
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         IV. ii. 13.
                     </note>
@@ -4806,7 +4806,7 @@ to be entrusted with the task of accusing Verres on
 the ground that he had been the latter's quaestor:
 Cicero actually makes this argument tell in his own
 favour.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cicero argues that since the relation between praetor
 and quaestor is almost that which should exist between
 father and son, a quaestor should not be allowed to prosecute
@@ -4829,7 +4829,7 @@ reference to the nature of the case in its entirety.
 For instance, the question of cruelty is considered
 with regard to the charge of high treason brought
 against Rabirius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Rabirius was accused of causing the death of Saturninus
 forty years after the event.
                     </note>
@@ -4838,7 +4838,7 @@ case of Tubero who accused Ligarius when he was
 an exile and attempted to prevent Caesar from
 pardoning him; of arrogance as in the case of the
 charge brought against Oppius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         P. Oppius, quaestor to M. Aurelius Cotta in Bithynia,
 was charged by Cotta in a letter to the senate with misappropriation of supplies for the troops and with an attempt
 on his life. Cicero defended him in 69 B.C. The speech
@@ -4854,7 +4854,7 @@ against a charge is that it involves peril to the
 community or to the judges themselves; we find an
 example of the former in the
                     <hi rend="italics">pro Tullio,</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         IV. ii. 131. The speech is lost.
                     </note>
@@ -4874,7 +4874,7 @@ in the
                     where Cicero warns the judges at
 some length not to permit such an action to be
 brought against the equestrian order.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A third of the jury were composed of
                         <hi rend="italics">equites. cp.</hi>
                         III. vii 20, v. ix. 13.
@@ -4927,7 +4927,7 @@ as Cicero does in the
                     <hi rend="italics">pro Cornelio,</hi>
                     where he says,
                     <quote>He put his hand to the tablet containing the law</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         IV. iv. 8.
                     </note>
@@ -4939,7 +4939,7 @@ addicted to luxury, we may say,
                     <quote>He has been charged with living in a somewhat too liberal style.</quote>
                     So, too, we may call a mean man thrifty and a
 slanderous tongue free.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         iv. ii. 77
                     </note>
@@ -4950,7 +4950,7 @@ together with their proofs, nor emphasise any of his
 points by amplifying them, unless we do so with a
 view to making light of them, as for instance in the
 following passage
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro. Mur.</hi>
                         ix. 21.
                     </note>
@@ -4969,7 +4969,7 @@ accuser we may sometimes set forth the whole
 charge, as Cicero does in the
                     <hi rend="italics">pro Scauro</hi>
                     with reference to the death of Bostar,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         IV. i. 69. Scaurus was accused of extortion in
 Sardinia, and of having murdered a certain Bostar at a
@@ -4981,7 +4981,7 @@ a number of points raised in the course of the
 accusation and put them together as in the
                     <hi rend="italics">pro Vareno</hi>
                     :
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         v. x. 69.
                     </note>
@@ -5007,7 +5007,7 @@ no illustration.
                 <p>
                     <milestone n="29" unit="section"/>
                     Common arguments
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">i.e.</hi>
                         are easy to make use of.
                     </note>
@@ -5032,7 +5032,7 @@ Oppius?
 artist to discover inconsistencies, real or apparent,
 in the speech of his opponent, though such inconsistencies are sometimes evident from the bare facts,
 as for instance in the case of Caelius,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Cael.</hi>
                         xiii.
                     </note>
@@ -5042,7 +5042,7 @@ which is an indication of great intimacy, and on the
 other hand that he got poison to murder her, which
                     <pb id="p.331"/>
                     is a sign of violent hatred. Tubero similarly
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Liq.</hi>
                         iii.
                     </note>
@@ -5064,7 +5064,7 @@ censors? What can be more damaging than the fact
 that Egnatius disinherited his son on the ground
 that lie had been bribed to give a false verdict in
 the trial in which Cluentius secured the condemnation of Oppianicus? But Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Cluent.</hi>
                         xlviii. 135.
                     </note>
@@ -5148,18 +5148,18 @@ to the case and not to his powers.
 when we come across denunciations such as that
 directed against Rullus for the obscurity of his
 language,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Leq. Agr.</hi>
                         II. v. 13.
                     </note>
                     or against Piso for his utter incapacity as
 a speaker,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">in Pis.</hi>
                         i. 30, etc.
                     </note>
                     or against Antony
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">Phil.</hi>
                         ii. 4, iii, 4, xiii. 19, etc.
                     </note>
@@ -5175,7 +5175,7 @@ to our opponent's counsel should be on different
 lines. Sometimes however we are justified in attacking, not merely their manner of speaking, but
 also their character, their appearance, their gait or
 bearing. Indeed, in his attack on Quintius, Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Cluents</hi>
                         xl. III.
                     </note>
@@ -5191,7 +5191,7 @@ jest, as for example Cicero disposes of Triarius.
 For to the allegation that the pillars destined for the
 house of Scaurus were carried on waggons through
 the city streets he replied,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Scauro</hi>
                         xxii. 46.
                     </note>
@@ -5213,14 +5213,14 @@ cunning have avoided discussing it at all.
                     A change
 in the tactics of defence is also often selected for
 censure. For example, Attius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Cluent.</hi>
                         Iii.
                     </note>
                     in his speech against
 Cluentius complains that Cicero insists on the letter
 of the law, and Aeschines
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Aesch.
                         <hi rend="italics">in Ctes. §</hi>
                         206.
@@ -5300,7 +5300,7 @@ consciousness of the fact.
                     We may find an example
 of this in the
                     <hi rend="italics">pro Cluentio</hi>
-                    <note anchored="yes" place="unspecified">lii. 143.</note>
+                    <note anchored="true" place="unspecified">lii. 143.</note>
                     of Cicero:
                     <quote>
                         You have
@@ -5329,7 +5329,7 @@ said,
                     Sometimes however it may be possible to put forward something not unlike such objections, if some
 point included by our opponent in the depositions
 which he produces has been discussed among his advocates
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The exact purport is not clear. The reference would
 seem to be to information as to the line of defence likely to
 be adopted, which has leaked out during a discussion of the
@@ -5400,7 +5400,7 @@ begin by refutation.
 objections fresh objections will arise, a process
 which may be carried to some length. The
                     <hi rend="italics">strokes</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Not enough is known of gladiatorial fighting to render
 this passage fully intelligible.
                     </note>
@@ -5413,11 +5413,11 @@ process may be prolonged still further.
                     <milestone n="55" unit="section"/>
                     But refutation also includes that simple form of proof, which
 I described above,
-                    <note anchored="yes" place="unspecified">v. xii. 12.</note>
+                    <note anchored="true" place="unspecified">v. xii. 12.</note>
                     based on an appeal to the
 emotions and mere assertion; for an example see
 the words of Scaurus which I have already quoted.
-                    <note anchored="yes" place="unspecified">v. xii. 10.</note>
+                    <note anchored="true" place="unspecified">v. xii. 10.</note>
                     Nay, I am not sure that this form of proof is not
 actually of more frequent occurrence when something is denied. It is, however, specially important
 for both parties that they should see where the
@@ -5470,7 +5470,7 @@ leisure of the study are sadly upset by the necessities of forensic strife.
                     For practically all those
 who have set forth the law of speaking as though it
 were a profound mystery,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         v. xiv. 27.
                     </note>
@@ -5490,11 +5490,11 @@ orators.
                     <milestone n="1" unit="section"/>
                     Tile term
                     <hi rend="italics">enthymeme</hi>
-                    <note anchored="yes" place="unspecified">For this chapter see note prefixed to Index.</note>
+                    <note anchored="true" place="unspecified">For this chapter see note prefixed to Index.</note>
                     is applied not merely to
 the actual argument, that is to say, the matter adduced to prove something else, but also to its expression, the nature of which, as I have already pointed
 out, is twofold.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         v. x. 2.
                     </note>
@@ -5504,7 +5504,7 @@ out, is twofold.
 immediately followed by a proof, as in the following
 passage from the
                     <hi rend="italics">pro Ligario;</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         vi. 19. The cause helped by heaven is that of Caesar.
                         <hi rend="italics">cp.</hi>
                         Lucan's
@@ -5530,14 +5530,14 @@ on the other hand be drawn from
 which case the proof will be much stronger; indeed
 some restrict the title of
                     <hi rend="italics">enthymeme</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         v. x. 2.
                     </note>
                     to this form of
 argument. The following passage from the
                     <hi rend="italics">pro Milone</hi>
-                    <note anchored="yes" place="unspecified">xxix. 79. The death is that of Clodius.</note>
+                    <note anchored="true" place="unspecified">xxix. 79. The death is that of Clodius.</note>
                     of Cicero will provide a parallel:
                     <quote>
                         You
@@ -5550,7 +5550,7 @@ you thought it within your power to do so.
 of argument may even at times consist of a number
 of clauses, as in the following passage from the same
 speech
-                    <note anchored="yes" place="unspecified">xvi. 41.</note>
+                    <note anchored="true" place="unspecified">xvi. 41.</note>
                     :
                     <quote>
                         Was he resolved then to kill to the
@@ -5572,7 +5572,7 @@ most effective kind of
 be that in which a reason is subjoined to a dissimilar
 or contrary proposition as in the following passage
 from Demosthenes
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">in Androt. § 7; in Aristocr.</hi>
                         § 99.
                     </note>
@@ -5596,7 +5596,7 @@ propose anything of the kind.
                     some authorities hold
 that it consists of four, five, and even six parts.
 Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv.</hi>
                         I. xxxvii. 67.
                     </note>
@@ -5627,7 +5627,7 @@ parts to which they belong.
                     <milestone n="7" unit="section"/>
                     Let us then take
 an example from Cicero
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">de Inv.</hi>
                         3. xxxiv. 58.
                     </note>
@@ -5706,7 +5706,7 @@ in individual arguments, but in whole
                     provided
 they are of a simple character, and also in
                     <hi rend="italics">questions.</hi>
-                    <note anchored="yes" place="unspecified">See III. vi. 9, 10.</note>
+                    <note anchored="true" place="unspecified">See III. vi. 9, 10.</note>
                     <milestone n="11" unit="section"/>
                     For cases and questions always have first a
                     <hi rend="italics">major premise,</hi>
@@ -5851,7 +5851,7 @@ are such that he who would await their sanction is
 certain to be the victim of an unjust penalty before
 ever the just penalty can be claimed.
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">pro Mil.</hi>
                         iv. 10.
                     </note>
@@ -5871,7 +5871,7 @@ with the
                     <hi rend="italics">reason</hi>
                     and then proceed to the conclusion
 as in another passage from the same speech
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">ib.</hi>
                         iii. 9.
                     </note>
@@ -5893,7 +5893,7 @@ whatever circumstances a man has been killed?
 places the various parts in the regular order in the
 following instance:
                     <quote>How can it be unjust to kill a robber who lies in wait for his victim?</quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">ib.</hi>
                         iv. 10.
                     </note>
@@ -5941,7 +5941,7 @@ of day.
                     <hi rend="italics">minor premise</hi>
                     is refuted by all the
 methods which we mentioned in dealing with refutation.
-                    <note anchored="yes" place="unspecified">In the preceding chapter.</note>
+                    <note anchored="true" place="unspecified">In the preceding chapter.</note>
                     As to the
                     <hi rend="italics">reason</hi>
                     it must be pointed out that it
@@ -6074,10 +6074,10 @@ everything to a minute and scrupulous inquiry with
 a view to arriving at clear and convincing truths,
 and they claim for themselves the tasks of invention
 and judgment, calling the former
-                    <foreign lang="greek">topikh/</foreign>
+                    <foreign xml:lang="grc">topikh/</foreign>
                     or the
 art of selecting the appropriate material for treatment, and the latter
-                    <foreign lang="greek">kritikh/</foreign>
+                    <foreign xml:lang="grc">kritikh/</foreign>
                     or the art of criticism.
                     <milestone n="29" unit="section"/>
                     We on the other hand have to compose our
@@ -6109,7 +6109,7 @@ to be fettered by petty rules, like children who
 trace the letters of the alphabet which others have
 first written for them, or, as the Greeks say, insist
 on keeping the coat their mother gave them.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         The proverb which is also found in Plutarch (
                         <hi rend="italics">de Alex. Fort.</hi>
                         i. 330 B) seems to refer to a child's passionate fondness
@@ -6134,7 +6134,7 @@ by an inexorable chain of argument, making inferences where there was never any 
 following the orators of old, although they always
 refuse to answer the question who it is that they are
 imitating. However of figures I shall speak elsewhere.
-                    <note anchored="yes" place="unspecified">IX. i. ii. iii.</note>
+                    <note anchored="true" place="unspecified">IX. i. ii. iii.</note>
                 </p>
                 <p>
                     <milestone n="33" unit="section"/>
@@ -6175,7 +6175,7 @@ passage:
 to observe a happy mean in the employment of such
 embellishments, so that they may prove a real ornament and not a hindrance.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

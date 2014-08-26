@@ -13,7 +13,7 @@
 <name>David Smith</name>
 </respStmt><funder n="org:Tufts">Tufts</funder>
 				
-			</titleStmt>
+			</titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
 			
 			
 			<sourceDesc>
@@ -37,33 +37,33 @@
 				<correction method="silent" status="medium"/>
 			</editorialDecl>
 			<refsDecl n="text=intro" doctype="TEI.2">
-				<state unit="text"/>
+				refState unit="text"/>
 				<state n="chunk" unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=hymns" doctype="TEI.2">
-				<state unit="text"/>
+				refState unit="text"/>
 				<state n="chunk" unit="poem"/>
-				<state unit="line"/>
+				refState unit="line"/>
 			</refsDecl>
 			<refsDecl n="text=epigrams" doctype="TEI.2">
-				<state unit="text"/>
+				refState unit="text"/>
 				<state n="chunk" unit="poem"/>
-				<state unit="line"/>
+				refState unit="line"/>
 			</refsDecl>
 		</encodingDesc>
 		
 		<profileDesc>
 			<langUsage>
-				<language id="greek">Greek</language>
-				<language id="en">English</language>
-				<language id="la">Latin</language>
-				<language id="de">German</language>
-				<language id="fr">French</language>
-				<language id="it">Italian</language>
+				language ident="greek">Greek</language>
+				language ident="en">English</language>
+				language ident="la">Latin</language>
+				language ident="de">German</language>
+				language ident="fr">French</language>
+				language ident="it">Italian</language>
 			</langUsage>
 		</profileDesc>
 		
-		<revisionDesc>
+		<revisionDesc><!--
 			<change><date>23-Jul-02</date>
 				<respStmt><name>AEM</name><resp>markup</resp></respStmt>
 				<item>Initial markup
@@ -99,11 +99,11 @@
 		<change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite file and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
 		
 	</teiHeader><text xml:lang="grc"><body>
 				
-			<div1 n="3" type="poem"><head>εἰς Ἄρτεμιν.</head>
+			<div n="3" type="poem"><head>εἰς Ἄρτεμιν.</head>
 <p>						<lb></lb>Ἄρτεμιν (οὐ γὰρ ἐλαφρὸν ἀειδόντεσσι λαθέσθαι)
 						<lb></lb>ὑμνέομεν, τῆι τόξα λαγωβολίαι τε μέλονται
 						<lb></lb>καὶ χορὸς ἀμφιλαφὴς καὶ ἐν οὔρεσιν ἑψιάασθαι,
@@ -386,6 +386,6 @@
 						<lb></lb>μηδὲ χορὸν φεύγειν ἐνιαύσιον (οὐδὲ γὰρ Ἱππώ
 						<lb></lb>ἀκλαυτεὶ περὶ βωμὸν ἀπείπατο κυκλώσασθαι)·
 						<lb></lb>χαῖρε μέγα κρείουσα καὶ εὐάντησον ἀοιδῆι.
-							<pb></pb></p></div1>
+							<pb></pb></p></div>
 				
 			</body></text></TEI>

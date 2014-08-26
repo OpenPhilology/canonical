@@ -17,7 +17,7 @@
 <name>David Smith</name>
 </respStmt>
 <funder n="org:NEH">National Endowment For The Humanities (NEH)</funder> 
-      </titleStmt>  <sourceDesc>
+      </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>  <sourceDesc>
         <biblStruct>
           <monogr>
             <author>M. Tullius Cicero</author>
@@ -35,33 +35,33 @@
     </fileDesc>
 
     <encodingDesc>
-      <refsDecl doctype="TEI.2">
+      <refsDecl
         <state delim=" " unit="text"/>
-        <state unit="section"/>
+        refState unit="section"/>
       </refsDecl>
-      <refsDecl doctype="TEI.2">
+      <refsDecl
         <state delim=" " unit="text"/>
         <state delim="." unit="chapter"/>
-        <state unit="section"/>
+        refState unit="section"/>
       </refsDecl>
       <refsDecl n="text=Ver." doctype="TEI.2">
         <state delim=" " unit="text"/>
         <state delim=" " unit="actio"/>
         <state delim="." unit="book"/>
-        <state unit="section"/>
+        refState unit="section"/>
       </refsDecl>
     </encodingDesc>
 
     <profileDesc>
       <langUsage>
-        <language id="en">English </language>
-        <language id="fr">French </language>
-        <language id="la">Latin </language>
-        <language id="greek">Greek </language>
+        language ident="en">English </language>
+        language ident="fr">French </language>
+        language ident="la">Latin </language>
+        language ident="greek">Greek </language>
       </langUsage>
     </profileDesc>
 
-    <revisionDesc>
+    <revisionDesc><!--
       <change>
         <date>3/19/97</date>
         <respStmt>
@@ -143,7 +143,7 @@ Added to repository. Passes TEI parsing.
     <change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
   </teiHeader><text xml:lang="en">
         <front>
           <head>THE ORATION FOR SEXTUS ROSCIUS OF AMERIA.</head>
@@ -263,7 +263,7 @@ Added to repository. Passes TEI parsing.
               n="11" unit="section"/> I also, above all things, entreat you, O Marcus Fannius, to
             show yourself at this present time both to us and to the Roman people the same man that
             you formerly showed yourself to the Roman people when you before presided at the trial
-            in this same cause. <note anchored="yes">Fannius had been praetor, and before a cause
+            in this same cause. <note anchored="true">Fannius had been praetor, and before a cause
               came to actual trial, in came before the praetor, who decided whether there were
               sufficient grounds for allowing the trial to proceed; much as our grand jury does
               now.</note>
@@ -298,7 +298,7 @@ Added to repository. Passes TEI parsing.
             beginning how the matter was managed, so that you may the more easily be able to
             perceive both the misery of this most innocent man, and their audacity, and the calamity
             of the republic. <milestone n="6" unit="chapter"/><milestone n="15" unit="section"/></p>
-          <p>Sextus Roscius, the father of this man, was a citizen <note anchored="yes">A <foreign
+          <p>Sextus Roscius, the father of this man, was a citizen <note anchored="true">A <foreign
                 lang="la">municeps</foreign> was a citizen of a <foreign lang="la"
                 >municipium</foreign>. For a full explanation of these terms see Smith, Dict. Ant.
               p.259, v. <foreign lang="la">Colonia</foreign>. </note> of <placeName
@@ -311,9 +311,9 @@ Added to repository. Passes TEI parsing.
             name, as it is right I should, only to express my sense of their honour and dignity. And
             of all his property he has left this alone to his son,—for domestic robbers
             have possession of his patrimony, which they have seized by force the fame and life of
-            this innocent man is defended by his paternal connections <note anchored="yes">The Latin
+            this innocent man is defended by his paternal connections <note anchored="true">The Latin
               word is <foreign lang="la">hospes</foreign>, answering to the Greek <foreign
-                lang="greek">ce/nos</foreign>.</note> and friends. <milestone n="16" unit="section"
+                xml:lang="grc">ce/nos</foreign>.</note> and friends. <milestone n="16" unit="section"
             /> As he had at all times been a favourer of the side of the nobility, so, too, in this
             last disturbance, when the dignity and safety of all the nobles was in danger, he,
             beyond all others in that neighbourhood, defended that party and that cause with all his
@@ -403,7 +403,7 @@ Added to repository. Passes TEI parsing.
             have had it all burnt, than see Titus Roscius acting as owner of and glorying in the
             property of Sextus Roscius, a most virtuous and honourable man. <milestone n="25"
               unit="section"/> Therefore a decree of their senate is, immediately passed, that the
-            ten chief men <note anchored="yes">The <foreign lang="la">decuriones</foreign> were the
+            ten chief men <note anchored="true">The <foreign lang="la">decuriones</foreign> were the
               senators in a colony. Only a <foreign lang="la">decuric</foreign> could be a
               magistrate, and their body possessed whatever power had once belonged to the
               community. Smith, Dict. Ant. v. <foreign lang="la">Colonia</foreign>.</note> should go
@@ -494,7 +494,7 @@ Added to repository. Passes TEI parsing.
             was never seen by the Roman people, unless it were the death of that same man, which was
             so important that it crushed and broke the hearts of all his fellow-citizens; for
             endeavouring to save whom by an arrangement, he was destroyed by them. <note
-              anchored="yes">Scaevola was trying to effect an accommodation between the parties of
+              anchored="true">Scaevola was trying to effect an accommodation between the parties of
               Sulla and Marius when he was murdered by them. </note>
             <milestone n="34" unit="section"/> Is not this case very like that speech and action of
             Fimbria? You are accusing Sextus Roscius. Why so? Because he escaped out of your hands;
@@ -677,7 +677,7 @@ Added to repository. Passes TEI parsing.
             see on what account you come here as his adversary. They know that you are induced to do
             so by this man's money. What then? Still you ought to have been desirous of gain with
             such limitations as to think that the opinion of all these men, and the Remmian <note
-              anchored="yes">The <foreign lang="la">Remmia Lex</foreign> fixed the punishment for
+              anchored="true">The <foreign lang="la">Remmia Lex</foreign> fixed the punishment for
                 <foreign lang="la">calumnia</foreign>; but it is not known when this law was passed,
               nor what were its penalties, Smith, Dict Ant. v. <foreign lang="la"
               >Calumnia</foreign>.</note> law ought to nave some weight. <milestone n="20"
@@ -707,7 +707,7 @@ Added to repository. Passes TEI parsing.
             such a way as to accuse a man of having murdered his father, without being able to say
             why or how; and if you are only barking without any ground for suspicion, no one,
             indeed, will break your legs; but if I know these judges well, they will so firmly affix
-            to your heads that letter <note anchored="yes">The letter was K, which was branded on
+            to your heads that letter <note anchored="true">The letter was K, which was branded on
               the forehead of those who were convicted of bringing false accusations, being the
               first letter of the word <foreign lang="la">kalumnia</foreign> as it was originally
               spelt. It was also the first letter of the word <foreign lang="la">kalendae</foreign>
@@ -1017,7 +1017,7 @@ Added to repository. Passes TEI parsing.
             became most indigent? Did he, who burning with avarice rushes in like an enemy against
             his own relations, or he who has always lived in such a manner as to have no
             acquaintance with exorbitant gains, or with any profit beyond that which he procured
-            with toil? Did he who, of all the brokers <note anchored="yes">There is a pun here on
+            with toil? Did he who, of all the brokers <note anchored="true">There is a pun here on
               the word <foreign lang="la">sector</foreign>, which means not only a broker, but also
               a cut-throat, a murderer.</note> is the most audacious, or he who, because of the
             insolence of the forum and of the public courts, dreads not only the bench, but even the
@@ -1032,7 +1032,7 @@ Added to repository. Passes TEI parsing.
             with more fluency than I can. But I, perhaps, owing to the number of advocates, may be
             classed in the common body; the battle of <placeName key="perseus,Cannae"
               >Cannae</placeName>
-            <note anchored="yes">There is a little dispute as to Cicero's exact meaning here. Some
+            <note anchored="true">There is a little dispute as to Cicero's exact meaning here. Some
               think there is a sort of pun on the similarity of sound between <foreign lang="la"
                 >Cannensis</foreign> and <foreign lang="la">Cinnanensis</foreign> and that allusion
               is intended to the destruction of Cinna's army, in which a great number of Roman
@@ -1043,7 +1043,7 @@ Added to repository. Passes TEI parsing.
               even to slaves, now, after the proscriptions of Sulla, the most worthless men were
               allowed to put themselves forth as accusers.</note> has made you a sufficiently
             respectable accuser. We have seen many men slain, not at Thrasymenus, but at Servilius.
-              <note anchored="yes">The <foreign lang="la">Lacus Servilius</foreign> was at
+              <note anchored="true">The <foreign lang="la">Lacus Servilius</foreign> was at
                 <placeName key="perseus,Rome">Rome</placeName>, and was the place where Sulla
               murdered a great many Romans, and set up their heads, even the heads of senators, to
               public view; so that <persName><surname>Seneca</surname></persName> says of the lake,
@@ -1051,7 +1051,7 @@ Added to repository. Passes TEI parsing.
                 est.”</foreign>
             </note><milestone n="90" unit="section"/>
             <quote>
-              <l>“Who was not wounded there with Phrygian<note anchored="yes">This is a
+              <l>“Who was not wounded there with Phrygian<note anchored="true">This is a
                   fragment of a play of Ennius; by the words, “Phrygian steel”
                   he points out that these murders were chiefly committed by slaves, great numbers
                   of whom had lately been imported from <placeName key="tgn,7002613"
@@ -1060,7 +1060,7 @@ Added to repository. Passes TEI parsing.
                   Sulla.</note> steel?”</l>
             </quote> I need not enumerate all,—the Curtii, the Marii, the Mamerci, whom
             age now exempted from battles; and, lastly, the aged Priam himself, Antistius, <note
-              anchored="yes">In the <title>Brutus</title> Cicero speaks of Antistius as a tolerable
+              anchored="true">In the <title>Brutus</title> Cicero speaks of Antistius as a tolerable
               speaker; he calls him here Priam, meaning that he acted as a sort of leader and king
               among the accusers. </note> whom not only his age, but even the laws excused from
             going to battle. There are now six hundred men, whom nobody even mentions by name
@@ -1175,7 +1175,7 @@ Added to repository. Passes TEI parsing.
             know it? I do not know, only I see this, that <persName><surname>Capito</surname></persName> is a partner in this property. I see that, of thirteen farms, he
             is in possession of three of the finest. <milestone n="100" unit="section"/> I hear
             besides, that this suspicion is not fixed upon <persName><surname>Capito</surname></persName> for the first time now; that he has gained many infamous
-            victories; but that this is the first very splendid <note anchored="yes">The Latin word
+            victories; but that this is the first very splendid <note anchored="true">The Latin word
               is <foreign lang="la">lemniscatus</foreign>, literally, adorned with ribbons hanging
               down all from a garland or crown. <foreign lang="la">Palma lemniscata</foreign> is a
               palm branch (i.e. a token of victory,) given to a gladiator or general when the
@@ -1186,7 +1186,7 @@ Added to repository. Passes TEI parsing.
             murdered many men; many by the sword, many by poison. I can even tell you of one man
             whom, contrary to the custom of our ancestors, he threw from the bridge into the
               <placeName key="tgn,1130786">Tiber</placeName>, when he was not sixty years of age;
-              <note anchored="yes">There is a pun here on the word <foreign lang="la"
+              <note anchored="true">There is a pun here on the word <foreign lang="la"
               >pons</foreign>. <foreign lang="la">Pons</foreign> means not only a bridge, but also
               the platform over which men passed to give their votes at elections; and men above
               sixty had no votes, and all having none were called <foreign lang="la"
@@ -1273,7 +1273,7 @@ Added to repository. Passes TEI parsing.
             and, relying constantly on some delay or other, to cut off from his colleagues all
             access to Sulla. Lastly, owing to his being the prompter, the adviser, the go-between,
             the deputies did not see Sulla; deceived by his faith, or rather by his perfidy, as you
-            may know from themselves, if the accuser is willing to produce them <note anchored="yes"
+            may know from themselves, if the accuser is willing to produce them <note anchored="true"
               >In a question of fact the accuser alone was permitted to submit witnesses; the
               defendant could not do so.</note> as witnesses, they brought back home with a false
             hope instead of a reality. <milestone n="111" unit="section"/> In private affairs if any
@@ -1414,9 +1414,9 @@ Added to repository. Passes TEI parsing.
             I begin to speak of them, will require a copious discussion, I commit to your capacities
             and to your conjectures. <milestone n="43" unit="chapter"/><milestone n="124"
               unit="section"/></p>
-          <p>I come now to that golden name of Chrysogonus, <note anchored="yes">This is a pun on
-              the name of Chrysogonus, all derived from the Greek word <foreign lang="greek"
-                >xruso/s</foreign>, gold; and <foreign lang="greek">go/nos</foreign>, birth.</note>
+          <p>I come now to that golden name of Chrysogonus, <note anchored="true">This is a pun on
+              the name of Chrysogonus, all derived from the Greek word <foreign xml:lang="grc"
+                >xruso/s</foreign>, gold; and <foreign xml:lang="grc">go/nos</foreign>, birth.</note>
             under which name the whole confederacy is set up, concerning whom, O judges, I am at a
             loss both how to speak and how to hold my tongue; for if I say nothing, I leave out a
             great part of my argument, and if I speak, I fear that not he alone (about whom I am not
@@ -1430,7 +1430,7 @@ Added to repository. Passes TEI parsing.
             be freely listened to and freely spoken, Sextus Roscius was not a man of such importance
             in the state as to make us complain of his fortune more than of that of others. But I
             ask this, how could they be sold even by that very law which is enacted about
-            prescriptions, whether it be the Valerian <note anchored="yes">Valerius Flaccus had been
+            prescriptions, whether it be the Valerian <note anchored="true">Valerius Flaccus had been
               created Interrex on the death of the two consuls, Marius and <persName><surname>Carbo</surname></persName>. He appointed Sulla dictator, and passed a law
               that whatever Sulla had done should be ratified; so that Cicero's meaning here is,
               that he does not know which was the nominal author of the law he is quoting, Valerius
@@ -1540,7 +1540,7 @@ Added to repository. Passes TEI parsing.
             that all this was done, and that his proper honour and rank was restored to every one, I
             rejoice, O judges, and am exceedingly delighted; and I know that it was all done by the
             kindness of the gods, by the zeal of the Roman people, by the wisdom and government, and
-            good fortune <note anchored="yes">Cicero dwells on the <foreign lang="la"
+            good fortune <note anchored="true">Cicero dwells on the <foreign lang="la"
                 >felicitas</foreign> of Sulla, because <foreign lang="la">Felix</foreign> was the
               name which Sulla himself assumed, priding himself especially on his good fortune.
             </note> of Lucius Sulla. <milestone n="137" unit="section"/> I have no business to find
@@ -1648,7 +1648,7 @@ Added to repository. Passes TEI parsing.
             can take away from him—unless you are indignant at this, that you see him
             sitting with his clothes on in this court whom you turned naked out of his patrimony, as
             if off a wreck; as if you did not know that be is both fed and clothed by Caecilia, the
-            daughter of Balearicus, <note anchored="yes">In the tenth chapter she is called the
+            daughter of Balearicus, <note anchored="true">In the tenth chapter she is called the
               daughter of Metellus Nepos; so, if the reading there be correct, it must be corrupt
               here, which is probably the case. According to Graevius, she was a woman held in such
               esteem that, in the Marsic war, the temple of Juno Sospita was restored by a decree of

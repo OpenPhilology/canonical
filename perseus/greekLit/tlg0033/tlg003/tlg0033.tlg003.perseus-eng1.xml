@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>Odes (English). Machine readable text - N.</title>
@@ -15,15 +15,15 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 245K</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
                 <authority>Perseus Project</authority>
             </publicationStmt>
             <notesStmt>
-                <note place="unspecified" anchored="yes">
+                <note place="unspecified" anchored="true">
                     Diane Arnson Svarlien typed in her translation.  Basic SGML tagging by EM
                 </note>
             </notesStmt>
@@ -42,20 +42,20 @@
                     <p>professional data entry</p>
                 </correction>
             </editorialDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="poem"/>
-                <state unit="line"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="poem"/>
+                refState unit="line"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
-                <language id="latin">Latin</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
+                language ident="latin">Latin</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>8/9</date>
                 <respStmt>
@@ -96,21 +96,21 @@
                 </respStmt>
                 <item>Entered Svarlien's responses to Hubbard.</item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" type="book" n="N.">
+            <div part="N" sample="complete" org="uniform" type="book" n="N.">
                 <head>Nemean Odes</head>
                 <p/>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="1">
+                <div part="N" sample="complete" org="uniform" type="poem" n="1">
                     <head>
                         <title>Nemean 1</title>
                         <persName type="winner">For Chromius of Aetna</persName>
                         <seg part="N" type="race">Chariot Race</seg>
                         <date>
                             ?
-                            <date value="-476">476</date>
+                            date when="-476">476</date>
                             B. C.
                         </date>
                     </head>
@@ -166,11 +166,11 @@
                         seizing
                         <milestone unit="line" ed="P" n="45"/>
                         the two necks of the serpents in his two irresistible hands. When they were strangled, time squeezed the breath of life out of their unspeakable limbs. Unbearable fear
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with Snell
-                            <foreign lang="greek">de/os</foreign>
+                            <foreign xml:lang="grc">de/os</foreign>
                             for
-                            <foreign lang="greek">be/los</foreign>
+                            <foreign xml:lang="grc">be/los</foreign>
                             .
                         </note>
                         struck the women who were then helping Alcmena at her bedside;
@@ -195,23 +195,23 @@
                         But he himself
                         <milestone unit="line" ed="P" n="70"/>
                         will have allotted to him in peace, as an extraordinary reward for his great hardship, continuous peace for all time among the homes of the blessed. He will receive flourishing Hebe as his bride and celebrate the wedding-feast, and in the presence of Zeus the son of Cronus he will praise the sacred law.
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with Snell
-                            <foreign lang="greek">no/mon</foreign>
+                            <foreign xml:lang="grc">no/mon</foreign>
                             for
-                            <foreign lang="greek">do/mon</foreign>
+                            <foreign xml:lang="grc">do/mon</foreign>
                             .
                         </note>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="2">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="2">
                     <head>
                         <title>Nemean 2</title>
                         <persName type="winner">For Timodemus of Acharnae</persName>
                         <seg part="N" type="race">Pancratium</seg>
                         <date>
                             ?
-                            <date value="-485">485</date>
+                            date when="-485">485</date>
                             B. C.
                         </date>
                     </head>
@@ -246,15 +246,15 @@
                         <milestone unit="line" ed="P" n="25"/>
                         Begin with a sweet-singing voice!
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="3">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="3">
                     <head>
                         <title>Nemean 3</title>
                         <persName type="winner">For Aristocleides of Aegina</persName>
                         <seg part="N" type="race">Pancratium</seg>
                         <date>
                             ?
-                            <date value="-475">475</date>
+                            date when="-475">475</date>
                             B. C.
                         </date>
                     </head>
@@ -308,11 +308,11 @@
                         as he slew deer without the help of dogs and crafty nets; for he excelled with his feet. I have this story as it was told by earlier generations. Deep-thinking Cheiron reared Jason under his stone roof, and later Asclepius,
                         <milestone unit="line" ed="P" n="55"/>
                         whom he taught the gentle-handed laws of remedies. And he arranged a marriage for Peleus with the lovely-bosomed
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with Snell
-                            <foreign lang="greek">a)glao/kolpon</foreign>
+                            <foreign xml:lang="grc">a)glao/kolpon</foreign>
                             for
-                            <foreign lang="greek">a)glao/karpon</foreign>
+                            <foreign xml:lang="grc">a)glao/karpon</foreign>
                             .
                         </note>
                         daughter of Nereus, and brought up for her their incomparable child, nurturing his spirit with all fitting things,
@@ -335,11 +335,11 @@
                         as a boy among young boys, a man among men, or, thirdly, among elders, according to each stage which we,the race of men, possess.
                         <milestone unit="line" ed="P" n="75"/>
                         And mortal life sets in motion four excellences, and bids us to think of what is at hand. You are
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with Snell
-                            <foreign lang="greek">a)/pessi</foreign>
+                            <foreign xml:lang="grc">a)/pessi</foreign>
                             for
-                            <foreign lang="greek">a)/pesti</foreign>
+                            <foreign xml:lang="grc">a)/pesti</foreign>
                             .
                         </note>
                         not without these excellences. Farewell, my friend! I am sending this to you, honey mixed with white milk, crested with foam from mixing, a draught of song accompanied by the Aeolian breathings of flutes,
@@ -356,15 +356,15 @@
                         <placeName key="perseus,Megara">Megara</placeName>
                         .
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="4">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="4">
                     <head>
                         <title>Nemean 4</title>
                         <persName type="winner">For Timasarchus of Aegina</persName>
                         <seg part="N" type="race">Boys' Wrestling</seg>
                         <date>
                             ?
-                            <date value="-473">473</date>
+                            date when="-473">473</date>
                             B. C.
                         </date>
                     </head>
@@ -388,11 +388,11 @@
                         because he had sent back from the contest at Cleonae a chain of garlands, and from splendid, illustrious Athens; and because in seven-gated Thebes,
                         <milestone unit="line" ed="P" n="20"/>
                         beside Amphitryon's splendid tomb, the Cadmeans gladly crowned him with flowers, for the sake of Aegina. For he looked on
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with Snell and MSS
-                            <foreign lang="greek">kate/draken</foreign>
+                            <foreign xml:lang="grc">kate/draken</foreign>
                             for
-                            <foreign lang="greek">kate/dramen</foreign>
+                            <foreign xml:lang="grc">kate/dramen</foreign>
                             .
                         </note>
                         a hospitable city, when he came as a friend to friends, to the prosperous court of Heracles,
@@ -435,7 +435,7 @@
                         ,
                         <milestone unit="line" ed="P" n="55"/>
                         Peleus turned a warlike hand against Iolcus and gave it in subjection to the Haemones
-                        <note place="unspecified" anchored="yes" resp="Svarlien">Following Snell's punctuation.</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">Following Snell's punctuation.</note>
                         <milestone unit="strophe" n="str. 8"/>
                         <milestone unit="line" n="57"/>
                         after encountering the crafty arts of Acastus' wife Hippolyte. With the sword of Daedalus, the son of Pelias sowed the seeds of death for Peleus
@@ -475,15 +475,15 @@
                         <milestone unit="line" ed="P" n="95"/>
                         with gentle thoughts towards noble men, but a rough adversary to his opponents.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="5">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="5">
                     <head>
                         <title>Nemean 5</title>
                         <persName type="winner">For Pytheas of Aegina</persName>
                         <seg part="N" type="race">Boys' Pancratium</seg>
                         <date>
                             ?
-                            <date value="-483">483</date>
+                            date when="-483">483</date>
                             B. C.
                         </date>
                     </head>
@@ -541,15 +541,15 @@
                         <placeName key="tgn,7011116">Epidaurus</placeName>
                         . Bring to the porch of Aeacus green garlands of flowers, in company with the golden-haired Graces.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="6">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="6">
                     <head>
                         <title>Nemean 6</title>
                         <persName type="winner">For Alcimidas of Aegina</persName>
                         <seg part="N" type="race">Boys' Wrestling</seg>
                         <date>
                             ?
-                            <date value="-465">465</date>
+                            date when="-465">465</date>
                             B. C.
                         </date>
                     </head>
@@ -595,7 +595,7 @@
                         the children of Leto of the golden distaff, and beside Castalia at evening he was made radiant by the loud chorus of the Graces.
                         <milestone unit="line" ed="P" n="40"/>
                         And the bridge of the untiring sea
-                        <note place="unspecified" anchored="yes" resp="Svarlien">i.e. the Isthmus of Corinth.</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">i.e. the Isthmus of Corinth.</note>
                         honored Creontidas in the biennial festival of those who live around, when bulls are slain in the sacred precinct of Poseidon. And the herb of the Nemean lion once
                         <milestone unit="line" ed="P" n="45"/>
                         crowned him when he was victorious beneath the shady primeval mountains of Phlius.
@@ -604,11 +604,11 @@
                         There are broad avenues open on every side for storytellers to adorn this glorious island, since the Aeacids provided them by example with an outstanding share of great excellence.
                         <milestone unit="line" ed="P" n="50"/>
                         Their name flies far, over the land and across the sea. It even reached the Ethiopians, when Memnon did not return to his home; Achilles descended from his chariot and fell upon
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with Snell
-                            <foreign lang="greek">e)/mpese</foreign>
+                            <foreign xml:lang="grc">e)/mpese</foreign>
                             for
-                            <foreign lang="greek">e)/mbale</foreign>
+                            <foreign xml:lang="grc">e)/mbale</foreign>
                             .
                         </note>
                         them, a grievous antagonist,
@@ -625,29 +625,29 @@
                         <milestone unit="line" ed="P" n="65"/>
                         by a sudden drawing of lots. I would say that Melesias is equal in speed to a dolphin that darts through the salt sea; he is the charioteer who guided your hands and strength.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="7">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="7">
                     <head>
                         <title>Nemean 7</title>
                         <persName type="winner">For Sogenes of Aegina</persName>
                         <seg part="N" type="race">Boys' Pentathlon</seg>
                         <date>
                             ?
-                            <date value="-467">467</date>
+                            date when="-467">467</date>
                             B. C.
                         </date>
                     </head>
                     <p>
                         <milestone unit="strophe" n="str. 1"/>
                         <milestone unit="line" n="1"/>
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             On the uncertainty of the date, see C. Carey,A Commentary on Five Odes of Pindar (
                             <placeName key="tgn,7007567">New York</placeName>
-                            <date value="1981">1981</date>
+                            date when="1981">1981</date>
                             ), p. 133.
                         </note>
                         Eleithuia, seated beside the deep-thinking Fates, hear me, creator of offspring, child of Hera great in strength. Without you we see neither the light nor the dark night before it is our lot to go to your sister, Hebe,
-                        <note place="unspecified" anchored="yes" resp="Svarlien">Youth</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">Youth</note>
                         with her lovely limbs.
                         <milestone unit="line" ed="P" n="5"/>
                         Yet we do not all draw our first breath for equal ends. Under the yoke of destiny, different men are held by different restraints. But it is by your favor that, even so, Sogenes the son of Thearion, distinguished by his excellence, is celebrated in song as glorious among pentathletes.
@@ -672,15 +672,15 @@
                         <milestone unit="line" n="30"/>
                         <milestone unit="line" ed="P" n="30"/>
                         from the city of Ilus. But the wave of Hades breaks over all alike; it falls on the man who does not expect it, and on the one who does. There is honor for those whose fame a god causes to grow luxuriant when they are dead.  Neoptolemus came to help,
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Adding a period after
-                            <foreign lang="greek">teqnako/twn</foreign>
+                            <foreign xml:lang="grc">teqnako/twn</foreign>
                             and reading with C. Carey,
                             <title>A Commentary on Five Odes of Pindar</title>
                             <placeName key="tgn,7007567">New York</placeName>
-                            <date value="1981">1981</date>
+                            date when="1981">1981</date>
                             , 148-50,
-                            <foreign lang="greek">boaqe/wn . . . mo/len</foreign>
+                            <foreign xml:lang="grc">boaqe/wn . . . mo/len</foreign>
                             .
                         </note>
                         to the great navel of the broad-bosomed earth. And he lies beneath the Pythian soil,
@@ -698,13 +698,13 @@
                         The hospitable Delphians were grieved beyond measure; but he fulfilled his fate. It was destined that within that most ancient grove one
                         <milestone unit="line" ed="P" n="45"/>
                         of the ruling race of Aeacus should, for all time to come, stay beside the fine-walled house of the god, and dwell there to preside over the processions of heroes, which are honored by many sacrifices.
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Following
                             <placeName key="tgn,2114280">Snell</placeName>
                             's punctuation, period after
-                            <foreign lang="greek">poluqu/ tois</foreign>
+                            <foreign xml:lang="grc">poluqu/ tois</foreign>
                             and after
-                            <foreign lang="greek">e)kgo/nwn</foreign>
+                            <foreign xml:lang="grc">e)kgo/nwn</foreign>
                             , below.
                         </note>
                         As for their justly earned good name, a few words will suffice: it is no lying witness that presides over achievements of the offspring of you and Zeus,
@@ -725,12 +725,12 @@
                         If any Achaean man is nearby
                         <milestone unit="line" ed="P" n="65"/>
                         who lives above the Ionian sea, he will not find fault with me. I trust in my being their representative. And among my fellow townsmen, the glance of my eye is bright; I have not overshot the mark, and I have thrust all violence away from my path. May the rest of my days approach benevolently. Anyone who knows the truth will declare whether I follow a path that is out of tune, singing a twisted
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with
                             <placeName key="tgn,2114280">Snell</placeName>
-                            <foreign lang="greek">ya/gion</foreign>
+                            <foreign xml:lang="grc">ya/gion</foreign>
                             for
-                            <foreign lang="greek">yo/gion</foreign>
+                            <foreign xml:lang="grc">yo/gion</foreign>
                             .
                         </note>
                         song.
@@ -749,22 +749,22 @@
                         <milestone unit="line" n="85"/>
                         <milestone unit="line" ed="P" n="85"/>
                         to be a city-ruler in my
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with
                             <placeName key="tgn,2114280">Snell</placeName>
                             and MSS
-                            <foreign lang="greek">e)ma=|</foreign>
+                            <foreign xml:lang="grc">e)ma=|</foreign>
                             for
-                            <foreign lang="greek">e(a=|</foreign>
+                            <foreign xml:lang="grc">e(a=|</foreign>
                             .
                         </note>
                         illustrious fatherland, and to be a kindly
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with
                             <placeName key="tgn,2114280">Snell</placeName>
-                            <foreign lang="greek">propra/on'</foreign>
+                            <foreign xml:lang="grc">propra/on'</foreign>
                             for
-                            <foreign lang="greek">proprew=n'</foreign>
+                            <foreign xml:lang="grc">proprew=n'</foreign>
                             .
                         </note>
                         friend and brother to you, Heracles. If one man has any benefit from another, we would say that a neighbor, if he loves his neighbor with an earnest mind, is a joy worth any price. But if a god should also uphold this truth,
@@ -783,15 +783,15 @@
                         <milestone unit="line" ed="P" n="105"/>
                         is poverty of thought, like babbling “Corinth of Zeus” to children.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="8">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="8">
                     <head>
                         <title>Nemean 8</title>
                         <persName type="winner">For Deinias of Aegina</persName>
                         <seg part="N" type="race">Double Foot Race</seg>
                         <date>
                             ?
-                            <date value="-459">459</date>
+                            date when="-459">459</date>
                             B. C.
                         </date>
                     </head>
@@ -845,15 +845,15 @@
                         <milestone unit="line" ed="P" n="50"/>
                         makes hardship painless. Truly, the song of victory existed long ago, even before the quarrel arose between Adrastus and the race of Cadmus.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="9">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="9">
                     <head>
                         <title>Nemean 9</title>
                         <persName type="winner">For Chromius of Aetna</persName>
                         <seg part="N" type="race">Chariot Race</seg>
                         <date>
                             ?
-                            <date value="-474">474</date>
+                            date when="-474">474</date>
                             B. C.
                         </date>
                     </head>
@@ -887,16 +887,16 @@
                         <milestone unit="strophe" n="str. 5"/>
                         <milestone unit="line" n="21"/>
                         And so that company, in bronze armor, and with their horses in war-harnesses, was hastening to arrive at manifest doom. And planting
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
-                            <foreign lang="greek">e)reisa/menoi</foreign>
+                        <note place="unspecified" anchored="true" resp="Svarlien">
+                            <foreign xml:lang="grc">e)reisa/menoi</foreign>
                             . Wilamowitz: “
                             <foreign lang="latin">reditum in Ismeni ripa sibi fixerunt.</foreign>
                             ”
                         </note>
                         their sweet return on the banks of the Ismenus, they fattened the white-flowering smoke with their corpses
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading
-                            <foreign lang="greek">sw/masi pi/anan</foreign>
+                            <foreign xml:lang="grc">sw/masi pi/anan</foreign>
                             (Bergk).
                         </note>
                         . For seven funeral pyres feasted on their bodies' young limbs. But, for the sake of Amphiaraus, Zeus with his all-powerful thunderbolt
@@ -935,15 +935,15 @@
                         <milestone unit="line" ed="P" n="55"/>
                         throwing my shaft nearest of all to the mark of the Muses.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="10">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="10">
                     <head>
                         <title>Nemean 10</title>
                         <persName type="winner">For Theaeus of Argos</persName>
                         <seg part="N" type="race">Wrestling</seg>
                         <date>
                             ?
-                            <date value="-444">444</date>
+                            date when="-444">444</date>
                             B. C.
                         </date>
                     </head>
@@ -986,20 +986,20 @@
                         , and he gave the Muses a field to plough, since he won three times at the gates of the sea, and three times on the sacred ground, according to the ordinance of Adrastus. Father Zeus, his mouth keeps silent what his heart truly desires. The accomplishment of all
                         <milestone unit="line" ed="P" n="30"/>
                         deeds rests with you. Adding boldness to a heart that does not shrink from labor
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Omit comma after
-                            <foreign lang="greek">ou)d'</foreign>
+                            <foreign xml:lang="grc">ou)d'</foreign>
                             , taking it with
-                            <foreign lang="greek">a)mo/kqw</foreign>
+                            <foreign xml:lang="grc">a)mo/kqw</foreign>
                             rather than with the verb (Fennell, Farnell).
                         </note>
                         , he asks for your grace.
                         <milestone unit="strophe" n="epode 2"/>
                         <milestone unit="line" n="31"/>
                         I sing what is known to the god
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading
-                            <foreign lang="greek">qew=| te kai\ o(/stis</foreign>
+                            <foreign xml:lang="grc">qew=| te kai\ o(/stis</foreign>
                             , with the mss.
                         </note>
                         and to whoever strives for the chief crown in the foremost games.
@@ -1037,11 +1037,11 @@
                         <milestone unit="strophe" n="ant. 4"/>
                         <milestone unit="line" n="61"/>
                         Looking out from Taÿgetus, Lynceus saw them seated in the hollow of an oak
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading
-                            <foreign lang="greek">h(me/nous</foreign>
+                            <foreign xml:lang="grc">h(me/nous</foreign>
                             (Boeckh), although Didymus defends
-                            <foreign lang="greek">h(me/nos</foreign>
+                            <foreign xml:lang="grc">h(me/nos</foreign>
                             as a Doric acc.
                         </note>
                         ; for that man had the sharpest eye of all who live on earth. He and Idas at once reached the spot with swift feet, and quickly contrived a mighty deed;
@@ -1071,15 +1071,15 @@
                         <milestone unit="line" ed="P" n="90"/>
                         He opened the eye, and then released the voice of the bronze-clad warrior, Castor.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="11">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="11">
                     <head>
                         <title>Nemean 11</title>
                         <persName type="winner">For Aristagoras of Tenedos</persName>
                         <seg part="N" type="race">on his installation as President of the Council</seg>
                         <date>
                             ?
-                            <date value="-446">446</date>
+                            date when="-446">446</date>
                             B. C.
                         </date>
                     </head>
@@ -1134,8 +1134,8 @@
                         <milestone unit="line" ed="P" n="45"/>
                         longing for many deeds, for our limbs are bound by shameless hope, while the streams of foresight lie far away. But we must hunt for due measure in our love of gain. The madness of unattainable desires is too sharp.
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

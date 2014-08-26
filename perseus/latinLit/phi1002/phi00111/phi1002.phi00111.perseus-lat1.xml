@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Inst." type="work">Institutio Oratoria, books 10-12 - 11</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -39,23 +39,23 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter"/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter"/>
+                refState unit="section"/>
             </refsDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="page"/>
+            <refsDecl
+                refState unit="page"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -64,13 +64,13 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
             <pb/>
             <pb id="p.154"/>
-            <div1 part="N" sample="complete" org="uniform" n="11" type="book">
+            <div part="N" sample="complete" org="uniform" n="11" type="book">
                 <head>Liber XI</head>
                 <p>
                     <milestone n="1" unit="chapter"/>
@@ -235,7 +235,7 @@ genere causarum et proderit et decebit.
                     <reg>est</reg>
                     autem,
 quod omnes et semper et ubique deceat, facere ac
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         deceat facere ac,
                         <hi rend="italics">
                             2nd hand of cod.
@@ -370,7 +370,7 @@ atque obtrectatores plus vindicat sibi.
                     <reg>erant</reg>
                     enim
 illa tuenda,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         illa tuenda,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -388,7 +388,7 @@ pepercisset, quae non desierunt carpere maligni:
                         <l part="N">
                             <reg>cedant</reg>
                             arma togae, concedat laurea linguae;
-                            <note anchored="yes" place="unspecified">
+                            <note anchored="true" place="unspecified">
                                 linguae,
                                 <hi rend="italics">B:</hi>
                                 laudi,
@@ -709,7 +709,7 @@ quidque formam et proprium quendam modum eloquentiae poscit: cum etiam in ceteri
 non idem in foro, curia, campo, theatro, domi facere
                     <pb id="p.182"/>
                     conveniat; et pleraque, quae natura non sunt reprehendenda atque adeo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         adeo,
                         <hi rend="italics">Gesner:</hi>
                         idco,
@@ -1025,7 +1025,7 @@ persona.
                     Cicero pro Gabinio et P. Vatinio,
 inimicissimis antea sibi hominibus et in quos orationes etiam scripserat, uerum ait, ut sit iusta causa
 sic faciendi,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ait ut sit
                         <gap/>
                         sic faciendi,
@@ -1049,7 +1049,7 @@ nocentem, cuius egerat causam.
                     id elegantissime cum eorum, a quibus ad se perductus
 esset, precibus, tum etiam adolescentia sua excusat,
 detracturus alioqui plurimum auctoritatis sibi,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         sibi,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -1093,7 +1093,7 @@ iudex ad irae pudorem.
                     <reg>accidit</reg>
                     etiam nonnunquam
 ut eadem de
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ut,
                         <hi rend="italics">added by Regius, de by Halm.</hi>
                     </note>
@@ -1153,7 +1153,7 @@ eorum, in quibus erraverat, ipse conversus est.
                     enim casus quidam, qui hoc natura ipsa rei non
 indecens faciant: ut cum pater ex meretrice natum,
 quod duxerit
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         meretrice
                         <gap/>
                         duxerit,
@@ -1173,7 +1173,7 @@ vel quod omnium sit votum parentum, ut honestiores
 quam sint ipsi liberos habeant, (nam et si filia nata,
 meretrix eam mater pudicam esse voluisset) vel
 quod humilior ipse fuerit, (licet enim huic ducere)
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         huic ducere,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -1191,7 +1191,7 @@ minus id faciendum filio fuisse, ne renovaret domus
 pudorem et exprobraret patri nuptias, matri prioris
 vitae necessitatem, ne denique legem quandam suis
 quoque rursum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         rursum,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -1226,7 +1226,7 @@ iudex intelligat potius dolorem illum quam audiat?
                     patrono quoque per similes adfectus eundum
                     <pb id="p.206"/>
                     erit, quia hoc iniuriae genus verecundius est fateri
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         fateri,
                         <hi rend="italics">added by Halm.</hi>
                     </note>
@@ -1264,7 +1264,7 @@ est, ut ea, quae laedunt, non libenter tractare videaris nec in omnia impetum fa
 expugnandum est, et reprehendens alia laude compenses:
                     <milestone n="88" unit="section"/>
                     si cupidos milites dicas,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         cupidos milites dicas, sed,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -1312,7 +1312,7 @@ pondus, quia ut in cibis alia aliis magis complent.
                     <milestone n="92" unit="section"/>
                     <reg>adiiciendum</reg>
                     etiam breviter videtur, quod fit ut
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         fit ut,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -1336,7 +1336,7 @@ nemo.
                     potest pugnare inter se videri.
                     <reg>verum</reg>
                     utrumque ac merito laudatur; causarum enim
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         causarum enim,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -1390,7 +1390,7 @@ sumus intuenda sunt.
                     <reg>ita</reg>
                     , cum semper cogitatio
 ultra eat,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ultra eat id,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -1419,7 +1419,7 @@ quaedam vestigia animo, velut in ceris anulorum
 signa serventur, existimant.
                     <reg>neque</reg>
                     ero tam credulus, ut, qui
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         qui
                         <gap/>
                         fieri videam,
@@ -1434,7 +1434,7 @@ signa serventur, existimant.
                     </note>
                     habitu tardiorem firmioremque memoriam
 fieri videam, ei artem quoque audeam impertire.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ei artem quoque audeam impertire,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -1470,7 +1470,7 @@ semper memoria, sed aliquando etiam redit?
                     <reg>nesciretur</reg>
                     tamen, quanta vis esset eius, quanta divinitas
 illa, nisi in hoc lumen vim
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         vim,
                         <hi rend="italics">added by Regius.</hi>
                     </note>
@@ -1501,14 +1501,14 @@ aversa.
                     <reg>unde</reg>
                     accidit, ut quae per plures dies
 scribimus ediscendi causa, cogitatione
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         causa, cogitatione,
                         <hi rend="italics">early edd.:</hi>
                         sint cogitationes,
                         <hi rend="italics">MSS.</hi>
                     </note>
                     ipsa contineamus.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         contineamius,
                         <hi rend="italics">Slothouwer:</hi>
                         contineat,
@@ -1546,7 +1546,7 @@ comperit.
                     <reg>nam</reg>
                     vix eo ultra limen egresso, triclinium
 illud supra convivas corruit atque ita confudit,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         confudit ut,
                         <hi rend="italics">Badius:</hi>
                         confunditur,
@@ -1559,7 +1559,7 @@ possent discernere.
                     <reg>tum</reg>
                     Simonides dicitur memor
 ordinis,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ordinis,
                         <hi rend="italics">Regiuns:</hi>
                         orline,
@@ -1573,7 +1573,7 @@ Glaucone Carystio an Leocrati an Agatharcho an
 Scopae scriptum sit id carmen; et Pharsali fuerit
 haec domus, ut ipse quodam loco significare Simonides
 videtur utque Apollodorus et Eratosthenes et Euphorion et Larissaeus Eurypylus tradiderunt, an Crannone, ut Apollas Callimachus,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Apollas Callimachus
                         <hi rend="italics">being unknown, Bentley conjectured</hi>
                         Alollas et Callimachus (
@@ -1604,7 +1604,7 @@ de tanta sua gloria.
                     hoc Simonidis facto notatum videtur, iuvari
 memoriam signatis animo sedibus, idque credere
 suo quisque experimento potest.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         potest,
                         <hi rend="italics">added by Rollin.</hi>
                     </note>
@@ -1616,7 +1616,7 @@ tacitae quoque cogitationes in mentem revertuntur.
                     est igitur, ut in plerisque, ars ab experimento.
                     <reg>loca</reg>
                     deligunt
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         deligunt,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -1642,7 +1642,7 @@ adiuvet.
                     <reg>tum</reg>
                     , quae scripserunt vel cogitatione
 complexi sunt,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         complexi sunt,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -1675,14 +1675,14 @@ admonentur.
                     , quamlibet multa sint, quorum
 meminisse oporteat, fiunt singula conexa quodam
 choro,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         choro,
                         <hi rend="italics">early editors:</hi>
                         coria, corio,
                         <hi rend="italics">MSS.</hi>
                     </note>
                     nec errant
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         nec errant,
                         <hi rend="italics">Bonnell:</hi>
                         onerant,
@@ -1735,7 +1735,7 @@ ut si rerum nomina multa per ordinem audita reddenda sint.
                     in iis quae didicerunt locis
 ponunt res illas: mensam, ut hoc utar, in vestibulo
 et pulpitum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         pulpitum,
                         <hi rend="italics">Bonnell:</hi>
                         populum,
@@ -1758,7 +1758,7 @@ in ediscendis, quae orationis perpetuae erunt.
                     et sensus non eandem imaginem quam res habent,
 cum alterum fingendum sit, et horum tamen utcunque commonet locus, sicut sermonis alicuius habiti.
                     <reg>at</reg>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         At,
                         <hi rend="italics">added by Halm.</hi>
                     </note>
@@ -1774,7 +1774,7 @@ omnium et loca scilicet infinita, per quae verba,
 quot sunt in quinque contra Verrem secundae actionis
 libris, explicentur, meminerimus etiam omnium quasi
 depositorum: nonne impediri quoque dicendi cursum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quoque dicendi cursum,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -1819,7 +1819,7 @@ infelix, ut, quod cuique loco signum destinaverit,
 nesciat.
                     <reg>at</reg>
                     , si tardus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         at,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -1836,7 +1836,7 @@ nesciat.
                     </note>
                     ad hoc, eo quoque adhuc
 remedio utetur
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         utetur,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -1847,7 +1847,7 @@ remedio utetur
                     </note>
                     ut ipsae notae (hoc enim est ex illa
 arte non inutile) aptentur
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         aptentur,
                         <hi rend="italics">Hiecke:</hi>
                         adtentus.
@@ -1855,14 +1855,14 @@ arte non inutile) aptentur
                     </note>
                     ad eos qui excidunt
 sensus: ancora
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ancora,
                         <hi rend="italics">Hiecke:</hi>
                         ancoram,
                         <hi rend="italics">MSS.</hi>
                     </note>
                     ut supra pro posui, si de nave dicendum est,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         est,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -1896,7 +1896,7 @@ tenendi magis causa est, ut in Cicerone, Verrio,
 Aurelio.
                     <reg>sed</reg>
                     hoc miserim.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         miserim,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -1910,7 +1910,7 @@ Aurelio.
                     <milestone n="32" unit="section"/>
                     <reg>illud</reg>
                     neminem non iuvabit, iisdem quibus scripserit
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         scripserit,
                         <hi rend="italics">early edd.:</hi>
                         ceteris,
@@ -1922,7 +1922,7 @@ Aurelio.
                     <pb id="p.230"/>
                     memoriam, et velut oculis intuetur non paginas modo,
 sed versus prope ipsos, estque cum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         estque cum,
                         <hi rend="italics">
                             <name>Meister</name>
@@ -2380,7 +2380,7 @@ fractis sunt organis similes.
                     etiam spiritus
 obiectu aliquo sicut lapillo tenues aquae, quarum
 cursus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         cursus,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -2505,7 +2505,7 @@ facere illorum mentionem, in qua emendari possunt.
                     id est, nullum eorum, de quibus modo rettuli, patietur
 incommodum; deinde non subsurda, rudis, immanis,
 dura, rigida, rava,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         rava,
                         <hi rend="italics">Burman</hi>
                         : vana,
@@ -2552,9 +2552,9 @@ et incipiat ubi oportet et desinat.
                     <reg>observandum</reg>
                     etiam, quo loco sustinendus et quasi suspendendus
 sermo sit, quod Graeci
-                    <foreign lang="greek">u(podiastolh/n</foreign>
+                    <foreign xml:lang="grc">u(podiastolh/n</foreign>
                     vel
-                    <foreign lang="greek">u(postigmh/n</foreign>
+                    <foreign xml:lang="grc">u(postigmh/n</foreign>
                     vocant, quo deponendus.
                     <milestone n="36" unit="section"/>
                     <reg>suspenditur</reg>
@@ -2612,7 +2612,7 @@ morabor et novum rursus exordium faciam.
 in periodis.
                     <reg>ut</reg>
                     enim
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         enim,
                         <hi rend="italics">Obrecht:</hi>
                         in,
@@ -2684,7 +2684,7 @@ pronuntiatio.
                     <reg>ac</reg>
                     ne quis pugnare inter se putet
 aequalitatem et varietatem, cum illi virtuti contrarium vitium sit inaequalitas, huic, quod dicitur
-                    <foreign lang="greek">monoei/deia,</foreign>
+                    <foreign xml:lang="grc">monoei/deia,</foreign>
                     quasi quidam unus aspectus.
                     <reg>ars</reg>
                     porro
@@ -2700,7 +2700,7 @@ rationem rerum, de quibus dicimus, animorumque
 habitus conformanda vox est, ne ab oratione discordet.
                     <reg>vitemus</reg>
                     igitur illam, quae Graece
-                    <foreign lang="greek">monotoni/a</foreign>
+                    <foreign xml:lang="grc">monotoni/a</foreign>
                     vocatur, una quaedam spiritus ac soni intentio; non
 solum ne dicamus omnia clamose, quod insanum est,
 aut intra loquendi modum, quod motu caret, aut
@@ -2851,9 +2851,9 @@ dicere domi solebat.
 et clarus satis spiritus, non tamen firmae intentionis
 ideoque tremulus, ut corpora, quae aspectu integra
 nervis parum sustinentur; id
-                    <foreign lang="greek">brasmo/n</foreign>
-                    <note anchored="yes" place="unspecified">
-                        <foreign lang="greek">brasmo/n,</foreign>
+                    <foreign xml:lang="grc">brasmo/n</foreign>
+                    <note anchored="true" place="unspecified">
+                        <foreign xml:lang="grc">brasmo/n,</foreign>
                         <hi rend="italics">
                             <name>Butler</name>
                             :
@@ -2867,7 +2867,7 @@ nervis parum sustinentur; id
                         : BPAMON,
                         <hi rend="italics">cod.</hi>
                         bamb.:
-                        <foreign lang="greek">bra/gxon</foreign>
+                        <foreign xml:lang="grc">bra/gxon</foreign>
                         <hi rend="italics">
                             Gesner and ed.
                             <reg>tarvis</reg>
@@ -2909,7 +2909,7 @@ similis?
                     <reg>quid</reg>
                     vero movendis adfectibus contrarium
 magis quam, cum dolendum,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         dolendum,
                         <hi rend="italics">
                             <name>Regius</name>
@@ -2925,7 +2925,7 @@ magis quam, cum dolendum,
                     irascendum, indignandum, commiserandum sit, non solum ab his
 adfectibus, in quos inducendus est iudex, recedere,
 sed ipsam fori sanctitatem Lyciorum et Carum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Lyciorum et Carum,
                         <hi rend="italics">Daniel:</hi>
                         ludorum talarium,
@@ -2935,7 +2935,7 @@ sed ipsam fori sanctitatem Lyciorum et Carum
                     <reg>nam</reg>
                     Cicero
                     <hi rend="italics">illos ex Lycia et Caria</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Phrygia,
                         <hi rend="italics">MSS. of Cicero.</hi>
                     </note>
@@ -3141,7 +3141,7 @@ partibus congruat.
                     <reg>sed</reg>
                     in ipso vultu plurimum
 valent oculi, per quos maxime animus eminet,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         animus enminet,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -3206,7 +3206,7 @@ ratione demittuntur aut allevantur.
                     labrisque
 non fere quidquam decenter ostendimus, tametsi
 derisus iis,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         derisus iis,
                         <hi rend="italics">Obrecht:</hi>
                         derisui,
@@ -3277,7 +3277,7 @@ hae, prope est ut dicam, ipsae loquuntur.
                     <milestone n="87" unit="section"/>
                     <reg>non</reg>
                     eaedem concitant, inhibent,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">
                             <reg>after</reg>
                         </hi>
@@ -3579,7 +3579,7 @@ orationis celeritate crebrescet.
 aliis pressa conveniet pronuntiatio.
                     <reg>illa</reg>
                     transcurrimus, congerimus,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         After congerimus
                         <hi rend="italics">B.</hi>
                         gives abundamus,
@@ -3603,7 +3603,7 @@ citatius moventur.
 supra oculos, demitti infra pectus vetant; adeo a
                     <pb id="p.304"/>
                     capite eum petere
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         a capite eum petere
                         <hi rend="italics">is almost certainly corrupt:</hi>
                         gestulm
@@ -3646,7 +3646,7 @@ sanguine madet: an domum?
                     enim adfectus in his
 iunctae exhibent manus; in rebus parvis, mitibus,
 tristibus breves; magnis, laetis, atrocibus exertiores.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         exortiores,,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -3680,7 +3680,7 @@ saepe scio evenire.
                     <reg>solet</reg>
                     esse et pigra et trepida et
 secanti similis; interim etiam uncis digitis, ut
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ut
                         <hi rend="italics">added by Spalding.</hi>
                     </note>
@@ -3689,7 +3689,7 @@ capite deiiciatur aut eadem manu supinata in superiora
 iactetur.
                     <reg>fit</reg>
                     et ille gestus,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         gestus
                         <hi rend="italics">
                             suggested by Halm.
@@ -3976,7 +3976,7 @@ caesam velim, aiter enim multis modis fiet enormis.
                     <milestone n="140" unit="section"/>
                     <reg>sinus</reg>
                     decentissimus, si aliquanto supra imam tunicam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         tunicam,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -4438,7 +4438,7 @@ infinito magis illa flexa et circumducta sunt:
 ego te in eadem patria per eosdem retinere non potero?
                     </hi>
                     et cum bona C. Rabirii nummo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         nummo,
                         <hi rend="italics">Bentley:</hi>
                         uno,
@@ -4467,7 +4467,7 @@ vestes laniare; sed suo loco dicta sunt.
                 <p>
                     <reg>et</reg>
                     quia in partibus causae talis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">
                             causa talis, ed.
                             <reg>camp</reg>
@@ -4614,7 +4614,7 @@ molesta et vocis mutationibus resultans.
                     inutiliter
 ex Graecis veteres transtulerunt, quod ab iis sumptum
 Laenas Popilius posuit, esse hanc negotiosam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         negotiosam,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -4637,7 +4637,7 @@ convenit, ita tamen temperanda, ne, dum actoris
 captamus elegantiam, perdamus viri boni et gravis
 auctoritatem.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

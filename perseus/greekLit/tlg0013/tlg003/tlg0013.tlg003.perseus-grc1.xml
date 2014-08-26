@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader status="new" type="text">
+  <teiHeader type="text">
     <fileDesc>
       <titleStmt>
 	<title>To Delian Apollo </title>
@@ -16,9 +16,9 @@
 </respStmt>
 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
 	
-      </titleStmt>
+      </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
 
-      <extent>about 159Kb</extent>
+      
 
       
 
@@ -35,22 +35,22 @@ Homeric Hymns</title>
     </fileDesc>
 
     <encodingDesc>
-      <refsDecl doctype="TEI.2">
-	<state unit="hymn" n="chunk" delim="."/>
-	<state unit="line"/>
+      <refsDecl
+	refState unit="hymn" n="chunk" delim="."/>
+	refState unit="line"/>
       </refsDecl>
-     <!--  <refsDecl doctype="TEI.2">
+     <!--  <refsDecl
 	<state n="chunk" unit="card"/>
       </refsDecl> -->
     </encodingDesc>
 
     <profileDesc>
       <langUsage>
-	<language id="greek">Greek</language>
+	language ident="greek">Greek</language>
       </langUsage>
     </profileDesc>
 
-    <revisionDesc>
+    <revisionDesc><!--
       <change><date>1988</date>
 	<respStmt><resp>tagging</resp><name>Bill Merrill</name></respStmt>
 	<item>Text keyboarded in the Philippines.  Basic SGML tagging by Bill Merrill</item>
@@ -63,11 +63,11 @@ Homeric Hymns</title>
     <change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
 
   </teiHeader><text xml:lang="grc"><body>
 <milestone unit="card" n="1" ed="P"/>
-<div2 type="part">
+<div type="part">
 <sp><p><lb></lb><milestone unit="Para" ed="P"/>μνήσομαι οὐδὲ λάθωμαι Ἀπόλλωνος ἑκάτοιο,
 <lb></lb>ὅντε θεοὶ κατὰ δῶμα Διὸς τρομέουσιν ἰόντα·
 <lb></lb>καί ῥά τʼ ἀναΐσσουσιν ἐπὶ σχεδὸν ἐρχομένοιο
@@ -265,9 +265,9 @@ Homeric Hymns</title>
 <lb></lb>οἳ δʼ ἐπὶ δὴ πείσονται, ἐπεὶ καὶ ἐτήτυμόν ἐστιν.
 <lb></lb>αὐτὰρ ἐγὼν οὐ λήξω ἑκηβόλον Ἀπόλλωνα
 <lb></lb>ὑμνέων ἀργυρότοξον, ὃν ἠύκομος τέκε Λητώ.</p>
-</sp></div2>
+</sp></div>
 <milestone unit="card" n="179" ed="P"/>
-<div2 type="part">
+<div type="part">
 <head>[Εἲς Ἀπόλλωνα Πύθιον]
 <sp><p><lb></lb><milestone unit="Para" ed="P"/>ὦ ἄνα, καὶ Λυκίην καὶ Μῃονίην ἐρατεινὴν
 <lb n="180" rend="displayNum"></lb>καὶ Μίλητον ἔχεις,  ἔναλον πόλιν ἱμερόεσσαν,
@@ -655,5 +655,5 @@ Homeric Hymns</title>
 <lb></lb>εἴρηταί τοι πάντα· σὺ δὲ φρεσὶ σῇσι φύλαξαι.</q>
 <lb n="545" rend="displayNum"></lb><milestone unit="Para" ed="P"/>καὶ σὺ μὲν οὕτω χαῖρε,  Διὸς καὶ Λητοῦς υἱέ·
 <lb></lb>αὐτὰρ ἐγὼ καὶ σεῖο καὶ ἄλλης μνήσομʼ ἀοιδῆς.
-</p></sp></div2>
+</p></sp></div>
 </body></text></TEI>

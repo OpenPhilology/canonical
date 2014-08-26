@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Ab Urbe Condita" type="work">Ab Urbe Condita, books 5-7 - 5</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -38,19 +38,19 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter" n="chunk"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter" n="chunk"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -59,18 +59,18 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
             <pb id="p.2"/>
-            <div1 part="N" sample="complete" org="uniform" n="5" type="book">
+            <div part="N" sample="complete" org="uniform" n="5" type="book">
                 <head>Liber V</head>
                 <p>
                     <milestone n="1" unit="chapter"/>
                     <reg>pace</reg>
                     alibi parta Romani Veiique in armis erant
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 351</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 351</note>
                     tanta ira odioque, ut victis finem adesse appareret.
                     <reg>comitia</reg>
                     utriusque populi longe diversa ratione facta
@@ -82,25 +82,25 @@
                     militum consulari
 				potestate numerum; octo, quot nunquam antea,
 				creati, M.'
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">M.' Sigonius</hi>
                         (
                         <hi rend="italics">ef.</hi>
                         IV. lxi. 1): m_ (
                         <hi rend="italics">or</hi>
                         m)
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     Aemilius Mamercus iterum L. Valerius Potitus tertium Ap. Claudius Crassus M. Quinctilius Varus L. Iulius Iulus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         L. Iulius Iulus
-                        <foreign lang="greek">s</foreign>
+                        <foreign xml:lang="grc">s</foreign>
                         (
                         <hi rend="italics">C.I.L.</hi>
                         i2,
                         <hi rend="italics">p.</hi>
                         116): m_. iulius rullus
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         m_. iulius tullus a: m iulius publius
                         <hi rend="italics">L:</hi>
                         m_ uilius publius
@@ -124,7 +124,7 @@
                     est,
                     <milestone n="5?" unit="section"/>
                     violenter diremisset, cum ob iram repulsae, quod
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 351</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 351</note>
                     suffragio duodecim populorum alius sacerdos ei praelatus esset, artifices, quorum magna pars ipsius servi erant, ex medio ludicro repente abduxit.
                     <milestone n="6" unit="section"/>
                     <reg>gens</reg>
@@ -137,7 +137,7 @@
 				decreti suppressa fama est Veiis propter metum
 				regis, qui a quo tale quid dictum referretur, pro
 				seditionis eum principe, non vani sermonis auctore
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         auctore
                         <hi rend="italics">MPIFUBD</hi>
                         4:auctorem
@@ -177,7 +177,7 @@
                     libertatem
                     <pb id="p.6"/>
                     plebis; remotam in perpetuum et ablegatam ab urbe
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 351</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 351</note>
                     et ab re publica iuventutem iam ne hiemi quidem
 				aut tempori anni cedere ac domos ac res invisere
 				suas.
@@ -205,7 +205,7 @@
                     <corr sic="importunes">inportunos</corr>
                     decemviros iniunxisse servitutis, ut perennem militiam
 				facerent.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">
                             <reg>after</reg>
                         </hi>
@@ -225,7 +225,7 @@
                     <reg>quidnam</reg>
                     illi consules dictatoresve facturi
 				essent, qui consularem
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <milestone n="9" unit="section"/>
                         consularem
                         <hi rend="italics">
@@ -233,7 +233,7 @@
                             and Walters in their note:
                         </hi>
                         proconsularem
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     imaginem tam saevam ac trucem fecerint?
                     <reg>sed</reg>
@@ -250,7 +250,7 @@
                     si nihil aliud,
                     <pb id="p.8"/>
                     admoneat collegas liberos et cives eorum, non servos,
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 351</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 351</note>
                     militare, quos hieme saltem in domos ac tecta
                     <milestone n="12?" unit="section"/>
                     reduci oporteat et aliquo tempore anni parentes liberosque ac coniuges invisere et usurpare libertatem et
@@ -281,7 +281,7 @@
                     <milestone n="2?" unit="section"/>
                     <name>Quirites</name>
                     ,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Quirites
                         <hi rend="italics">D</hi>
                         4
@@ -327,17 +327,17 @@
                     illos
                     <pb id="p.10"/>
                     aliud aut tum timuisse creditis aut hodie turbare
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 351</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 351</note>
                     velle nisi concordiam ordinum, quam dissolvendae maxime tribuniciae potestatis rentur esse?
                     <milestone n="6" unit="section"/>
                     <reg>sic</reg>
                     hercule tamquam artifices improbi opus quaerunt;
 				quippe
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quippe
                         <hi rend="italics">Büttner:</hi>
                         qui et
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         <hi rend="italics">wanting in V:</hi>
                         et
                         <hi rend="italics">
@@ -360,7 +360,7 @@
                     forte hoc dicitis: Quidquid patres faciunt displicet, sive illud pro plebe sive contra plebem est,'
                     <milestone n="8?" unit="section"/>
                     et quemadmodum servis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         servis
                         <hi rend="italics">
                             <reg>aid</reg>
@@ -369,7 +369,7 @@
                         cum (tum
                         <hi rend="italics">L</hi>
                         ) seruis
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     suis vetant domini quicquam rei cum alienis hominibus esse pariterque in iis beneficio ac maleficio abstineri aequum censent, sic vos interdicitis patribus commercio plebis, ne nos comitate ac munificentia nostra provocemus plebem nec plebs nobis dicto audiens atque oboediens sit.
                     <milestone n="9" unit="section"/>
@@ -387,16 +387,16 @@
                     <milestone n="4" unit="chapter"/>
                     "
                     <reg>atqui</reg>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <corr sic="Atqui">atque</corr>
                         <hi rend="italics">OEH:</hi>
                         atque
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     ego, quam hoc consilium collegarum meorum, quo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quo
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         quod
                         <hi rend="italics">VB.</hi>
                     </note>
@@ -407,7 +407,7 @@
 				vos solum sed etiam in castris si habeatur, ipso
                     <pb id="p.12"/>
                     exercitu disceptante aequam arbitror videri posse.
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 351</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 351</note>
                     <reg>in</reg>
                     qua si mihi ipsi nihil quod dicerem in mentem venire posset, adversariorum certe orationibus contentus essem.
                     <milestone n="3" unit="section"/>
@@ -466,7 +466,7 @@
                     finem captis Veiis imposuerimus.
                     <reg>si</reg>
                     hercules nulla
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 351</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 351</note>
                     alia causa, ipsa indignitas perseverantiam imponere debuit.
                     <milestone n="11" unit="section"/>
                     <reg>decem</reg>
@@ -523,17 +523,17 @@
                     <milestone n="4" unit="section"/>
                     <reg>illud</reg>
                     quod proprie ad milites pertinet, quibus
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 351</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 351</note>
                     boni tribuni plebis tum stipendium
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         tunm stipendium
-                        <foreign lang="greek">s</foreign>
+                        <foreign xml:lang="grc">s</foreign>
                         <hi rend="italics">
                             <reg>madnig</reg>
                             :
                         </hi>
                         cum stipendium
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         olim stipendium
                         <hi rend="italics">
                             <reg>heidenhain</reg>
@@ -547,7 +547,7 @@
                     fossamque,
                     <milestone n="5?" unit="section"/>
                     ingentis utrumque
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         utrumque
                         <hi rend="italics">
                             <reg>drakenborch</reg>
@@ -563,17 +563,17 @@
                         3)
                         <hi rend="italics">a:</hi>
                         utrumque rem
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     operis, per tantum spatii duxerunt: castella primo pauca, postea & exercitu aucto creberrima fecerunt; munitiones non
 				in urbem modo sed in Etruriam etiam spectantes,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         spectantes
                         <hi rend="italics">F3a:</hi>
                         spec. antis
                         <hi rend="italics">V:</hi>
                         expectantes
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                         ex specstantes
                         <hi rend="italics">D?</hi>
                         : exspectantes
@@ -582,13 +582,13 @@
                     si qua inde auxilia veniant,
                     <milestone n="6?" unit="section"/>
                     opposuere; quid turres, quid vineas testudinesque et alium
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         et alium
                         <hi rend="italics">D</hi>
                         x
                         <hi rend="italics">a Rhenanus:</hi>
                         et talium
-                        <foreign lang="greek">W</foreign>
+                        <foreign xml:lang="grc">W</foreign>
                         (
                         <hi rend="italics">
                             <reg>vorm</reg>
@@ -602,14 +602,14 @@
                     <milestone n="7" unit="section"/>
                     <reg>quanto</reg>
                     est minus operae
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         operae
                         <hi rend="italics">
                             <reg>hell</reg>
                             :
                         </hi>
                         opera
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     tueri facta et instare ac perseverare defungique cura?
                     <reg>brevis</reg>
@@ -617,14 +617,14 @@
                     <milestone n="8" unit="section"/>
                     <reg>loquor</reg>
                     de operae et
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         operae et
                         <hi rend="italics">
                             <reg>ussing</reg>
                             :
                         </hi>
                         opere et
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         operis
                         <hi rend="italics">D</hi>
                         3:operum D?: opera et
@@ -633,11 +633,11 @@
                     de temporis iactura.
                     <reg>quid</reg>
                     ? Periculi, quod differendo bello adimus, num
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         num
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         nunc
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     oblivisci nos haec tam crebra Etruriae concilia de mittendis Veios auxiliis patiuntur?
                     <milestone n="9" unit="section"/>
@@ -649,7 +649,7 @@
                     animum postea fore, cum si laxamentum dederis, maior frequentiorque legatio itura sit, cum
                     <pb id="p.18"/>
                     id quod nunc offendit Etruscos, rex creatus Veiis,
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 351</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 351</note>
                     mutari spatio interposito possit vel consensu civitatis, ut eo reconcilient Etruriae animos, vel ipsius voluntate regis, qui obstare regnum suum saluti civium nolit?
                     <milestone n="11" unit="section"/>
                     <reg>videte</reg>
@@ -664,12 +664,12 @@
                     <reg>si</reg>
                     mediusfidius, ad hoc bellum nihil pertineret, ad disciplinam certe militiae plurimum intererat
 				insuescere militem nostrum non solum parata
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         parata
                         <hi rend="italics">U</hi>
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         parta
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         parua
                         <hi rend="italics">O.</hi>
                     </note>
@@ -679,13 +679,13 @@
 				quamvis serae spei exitum exspectare et si non sit
 				aestate perfectum bellum, hiemem opperiri nec, sicut
 				aestivas aves, statim autumno tecta ac recessus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         recessus
                         <hi rend="italics">V:</hi>
                         recessum (recensum
                         <hi rend="italics">B</hi>
                         )
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     circumspicere.
                     <milestone n="3" unit="section"/>
@@ -693,13 +693,13 @@
                     vos, venandi studium ac voluptas homines per nives ac pruinas in montes
 				silvasque rapit: belli necessitatibus eam patientiam
 				non adhibebimus quam vel lusus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         vel lusus
                         <hi rend="italics">early edd.</hi>
                         : uel usus (lusus
                         <hi rend="italics">D</hi>
                         )
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     ac voluptas elicere solet?
                     <milestone n="4" unit="section"/>
@@ -707,7 +707,7 @@
                     effeminata corpora militum nostrorum esse putamus, adeo molles animos, ut hiemem
                     <pb id="p.20"/>
                     unam durare in castris, abesse ab domo non possint?
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 351</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 351</note>
                     <reg>ut</reg>
                     tamquam navale bellum tempestatibus captandis et observando tempore anni gerant, non aestus, non frigora pati possint?
                     <milestone n="5" unit="section"/>
@@ -726,13 +726,13 @@
                     virtute militum vestrorum, haec Romano
 				nomine sunt digna, non Veios tantum nec hoc bellum
 				intueri quod instat, sed famam et ad alia
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         et ad alia
                         <hi rend="italics">early edd.:</hi>
                         et alia
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         ad ali
-                        <foreign lang="greek">s.</foreign>
+                        <foreign xml:lang="grc">s.</foreign>
                     </note>
                     bella et ad ceteros populos in posterum quaerere.
                     <milestone n="7" unit="section"/>
@@ -758,7 +758,7 @@
                     —sicut
                     <pb id="p.22"/>
                     Veios expugnabit, nisi auxilio hostibus tribuni plebis
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 351</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 351</note>
                     fuerint, et Romae invenerint praesidia Veientes quae nequiquam in Etruria quaerunt.
                 </p>
                 <p>
@@ -789,7 +789,7 @@
                         adeo quidquid tribunus plebi
 				loquitur, etsi prodendae patriae dissolvendaeque rei
 				publicae est, adsuestis aequi
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             aequi
                             <hi rend="italics">
                                 <name>Rhenanus</name>
@@ -839,7 +839,7 @@
 				accepta calamitas apud Veios et superiorem Appium
                     <pb id="p.24"/>
                     in causa et concordiam ordinum maiorem ardoremque
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 351</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 351</note>
                     ad obsidendos pertinacius Veios fecit.
                     <milestone n="2" unit="section"/>
                     <reg>nam</reg>
@@ -878,21 +878,21 @@
 				plebis;
                     <milestone n="7" unit="section"/>
                     pedestris ordinis aiunt nunc esse operam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         aiunt nunc esse operam
                         <hi rend="italics">
                             <reg>cuper</reg>
                             :
                         </hi>
                         se aiunt nunc esse operamque
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         seiciunt nunc esse operamque
                         <hi rend="italics">B.</hi>
                     </note>
                     rei publicae extra ordinem polliceri, seu Veios seu quo alio ducere velint; si Veios ducti sint, negant
                     <pb id="p.26"/>
                     se inde prius quam capta urbe hostium redituros
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 351</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 351</note>
                     esse.
                     <milestone n="8" unit="section"/>
                     <reg>
@@ -940,13 +940,13 @@
                     <milestone n="8" unit="chapter"/>
                     <reg>insequens</reg>
                     annus tribunos militum consulari
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 352</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 352</note>
                     potestate habuit C. Servilium Ahalam tertium Q.
 				Servilium L. Verginium Q. Sulpicium A. Manlium
 				iterum M.
                     <milestone n="2" unit="section"/>
                     <name>Sergium</name>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         M.' Sergium
                         <hi rend="italics">a Sigonius</hi>
                         (Sergium
@@ -956,7 +956,7 @@
                         116): m sergium (
                         <hi rend="italics">or</hi>
                         marcum sergium)
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         martum sergium
                         <hi rend="italics">F:</hi>
                         marcum seruiium
@@ -967,9 +967,9 @@
                     tribunis, dum
                     <pb id="p.28"/>
                     cura omnium in Veiens bellum intenta est, neglectum
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 352</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 352</note>
                     Anxuri
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Anxuri
                         <hi rend="italics">a</hi>
                         2
@@ -979,7 +979,7 @@
                         ancxyri,
                         <hi rend="italics">or</hi>
                         anxiri)
-                        <foreign lang="greek">W</foreign>
+                        <foreign xml:lang="grc">W</foreign>
                         (
                         <hi rend="italics">not</hi>
                         <hi rend="italics">in V</hi>
@@ -1012,7 +1012,7 @@
                     <milestone n="7" unit="section"/>
                     <reg>forte</reg>
                     ea regione qua
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         qua M.' Sergius
                         <hi rend="italics">
                             <name>Sigonius</name>
@@ -1048,7 +1048,7 @@
                     <milestone n="9" unit="section"/>
                     <reg>una</reg>
                     spes erat si ex maioribus
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 352</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 352</note>
                     castris subveniretur, ut diversae legiones aliae adversus Capenatem ac Faliscum, aliae contra eruptionem oppidanorum pugnarent; sed castris praeerat Verginius, privatim Sergio invisus infestusque.
                     <milestone n="10" unit="section"/>
                     <reg>is</reg>
@@ -1069,18 +1069,18 @@
 				collegas maledictis.
                     <reg>pauci</reg>
                     rei publicae, plerique
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         plerique
                         <hi rend="italics">inserted by Kiehl.</hi>
                     </note>
                     huic atque illi, ut quosque studium privatim aut gratia occupaverat,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         occupaverat
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         occupauerant
                         <hi rend="italics">U:</hi>
                         occupauerunt
-                        <foreign lang="greek">W</foreign>
+                        <foreign xml:lang="grc">W</foreign>
                         (
                         <hi rend="italics">not. in V</hi>
                         ).
@@ -1095,7 +1095,7 @@
 				censuere non exspectandum iustum tempus comitiorum, sed extemplo novos tribunos militum creandos
                     <pb id="p.32"/>
                     esse, qui kalendis Octobribus magistratum
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 352</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 352</note>
                     occiperent.
                     <milestone n="2" unit="section"/>
                     <reg>in</reg>
@@ -1149,10 +1149,10 @@
                 <p>
                     <milestone n="10" unit="chapter"/>
                     L. Valerio Potito quartum M. Furio Camillo
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 353</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 353</note>
                     iterum M.'
                     <corr sic="Aemillo">Aemilio</corr>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         M.' Aemilio
                         <hi rend="italics">
                             <reg>sigon</reg>
@@ -1167,7 +1167,7 @@
                         m
                         <hi rend="italics">or</hi>
                         marco) aemilio
-                        <foreign lang="greek">W</foreign>
+                        <foreign xml:lang="grc">W</foreign>
                         (
                         <hi rend="italics">
                             cf.
@@ -1177,7 +1177,7 @@
                         XIV. xliv. l).
                     </note>
                     Mamerco tertium Cn. Cornelio Cosso iterum K. Fabio Ambusto L. Iulio Iulo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Iulio
                         <hi rend="italics">
                             <name>Iulo</name>
@@ -1187,7 +1187,7 @@
                             .:
                         </hi>
                         iulio tullo
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         iulio tullio
                         <hi rend="italics">HDL.</hi>
                     </note>
@@ -1195,15 +1195,15 @@
                     <milestone n="2" unit="section"/>
                     <reg>nam</reg>
                     et bellum multiplex fuit eodem tempore, ad Veios et ad Capenam et ad Falerios
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Falerios
                         <hi rend="italics">D</hi>
                         3
                         <hi rend="italics">a</hi>
                         1
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         ualerios
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     et in Volscis,
                     <milestone n="3?" unit="section"/>
@@ -1218,28 +1218,28 @@
                     <reg>quantum</reg>
                     autem augebatur militum numerus tanto
 				maiore pecunia in stipendium opus erat, eaque tributo conficiebatur
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         conficiebatur
                         <hi rend="italics">
                             <name>Madvig</name>
                             :
                         </hi>
                         conferebatur
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     invitis conferentibus qui domi remanebant, quia tuentibus urbem opera quoque militari laborandum serviendumque rei publicae erat.
                     <milestone n="6" unit="section"/>
                     <reg>haec</reg>
                     , per se gravia, indigniora
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         gravia indigniora
                         <hi rend="italics">
                             <reg>vorm</reg>
                             .?
                         </hi>
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         grauia indignioraque
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         graui indignioraque
                         <hi rend="italics">B.</hi>
                     </note>
@@ -1251,19 +1251,19 @@
                     quattuor deinde bella uno dilectu
                     <pb id="p.36"/>
                     exercitus scriptos et pueros quoque ac senes
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 353</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 353</note>
                     extractos.
                     <milestone n="8" unit="section"/>
                     <corr sic="lam">iam</corr>
                     non aestatis nec hiemis discrimen esse, ne ulla quies unquam miserae plebi sit, quae nunc
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quae nunc
                         <hi rend="italics">
                             <reg>ald</reg>
                             .:
                         </hi>
                         quae ne
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         quin
                         <hi rend="italics">
                             <reg>vorm</reg>
@@ -1284,13 +1284,13 @@
                     dilectum tributumque et occupatos animos
 				maiorum rerum curis comitiis tribunorum plebis
 				numerus expleri nequiit.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         nequiit
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         nequit (
                         <hi rend="italics">or</hi>
                         nequid)
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     <milestone n="11" unit="section"/>
                     <reg>pugnaturn</reg>
@@ -1298,14 +1298,14 @@
                     <reg>postquam</reg>
                     obtineri non
 				poterat, tamen labefactandae legis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         legis
                         <hi rend="italics">
                             <name>Madvig</name>
                             :
                         </hi>
                         legis tribuniciae
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     causa effectum est ut cooptarentur tribuni plebis C. Lacerius et M. Acutius, haud dubie patriciorum opibus.
                 </p>
@@ -1318,7 +1318,7 @@
                     <milestone n="2" unit="section"/>
                     <reg>is</reg>
                     quod petissent patres quondam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quondam
                         <hi rend="italics">
                             <reg>haupt</reg>
@@ -1327,38 +1327,38 @@
                         quidam (
                         <hi rend="italics">omitted in a</hi>
                         )
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     primo incepto repulsi, tandem
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         tandem
                         <hi rend="italics"> Weissenborn:</hi>
                         tamen
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     tribunos militum expugnasse ait
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         expugnasse ait (expugnasse
-                        <foreign lang="greek">s</foreign>
+                        <foreign xml:lang="grc">s</foreign>
                         )
                         <hi rend="italics">
                             <name>Luterbacher</name>
                             :
                         </hi>
                         expugnassent
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     vociferans legem Treboniam sublatam et cooptatos tribunos plebis non suffragiis populi sed imperio
                     <pb id="p.38"/>
                     patriciorum; eo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         eo
                         <hi rend="italics">
                             <name>Weissenborn</name>
                             :
                         </hi>
                         : et
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         <hi rend="italics">
                             <reg>vorm</reg>
                             .? D
@@ -1366,7 +1366,7 @@
                         4.
                     </note>
                     revolvi rem ut aut patricii aut
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 353</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 353</note>
                     patriciorum adseculae habendi tribuni plebis sint; eripi sacratas leges,
                     <milestone n="3?" unit="section"/>
                     extorqueri tribuniciam potestatem; id fraude patriciorum, scelere ac proditione collegarum
@@ -1396,14 +1396,14 @@
                     </reg>
                     namque malorum in Sergio
 				Verginioque causas esse; nec id accusatores
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         accusatores
                         <hi rend="italics">
                             <reg>giers</reg>
                             :
                         </hi>
                         accusatorem
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     magis arguere quam fateri reos, qui noxii ambo alter in
                     <corr sic="alterumn">alterum</corr>
@@ -1422,7 +1422,7 @@
 				Veientibus ad incendenda opera belli trahendi causa,
                     <pb id="p.40"/>
                     et nunc proditum exercitum, tradita Faliscis Romana
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 353</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 353</note>
                     castra.
                     <milestone n="9" unit="section"/>
                     <reg>omnia</reg>
@@ -1433,7 +1433,7 @@
                     <reg>praeiudicium</reg>
                     iam de reis et ab senatu et ab populo
 				Romano et ab ipsorum collegio
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         collegio
                         <hi rend="italics">
                             <name>Walters</name>
@@ -1446,7 +1446,7 @@
                         4
                         <hi rend="italics">a</hi>
                         2)
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     factum esse;
                     <milestone n="11" unit="section"/>
@@ -1470,21 +1470,21 @@
                     repeterent animos
 				Quirites quos recenti clade accepta habuissent, cum
 				fuga trepidum, plenum volnerum ac pavoris
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         pavoris
                         <hi rend="italics">
                             <reg>gronov</reg>
                             .:
                         </hi>
                         pauore
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     incidentem portis exercitum viderint non fortunam aut
                     <pb id="p.42"/>
                     quemquam deorum, sed hos duces accusantem.
                     <milestone n="15" unit="section"/>
                     <reg>pro</reg>
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 353</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 353</note>
                     certo se habere neminem in contione stare qui illo die non caput domum fortunasque L. Vergini ac M.' Sergi sit exsecratus detestatusque.
                     <milestone n="16" unit="section"/>
                     <reg>minime</reg>
@@ -1497,7 +1497,7 @@
                     <milestone n="12" unit="chapter"/>
                     <reg>his</reg>
                     orationibus incitata plebs denis milibus
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 354</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 354</note>
                     aeris gravis reos condemnat, nequiquam Sergio
 				Martem communem belli fortunamque accusante,
 				Verginio deprecante ne infelicior domi quam militiae
@@ -1514,7 +1514,7 @@
 				plebes haberet, legem agrariam promulgant tributumque conferri prohibent,
                     <milestone n="4?" unit="section"/>
                     cum tot exercitibus stipendio opus esset resque militiae
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         militia
                         <hi rend="italics">
                             <name>Gronovius</name>
@@ -1523,14 +1523,14 @@
                         miliae
                         <hi rend="italics">H:</hi>
                         militia
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     ita prospere gererentur ut nullo bello veniretur ad exitum spei.
                     <reg>namque</reg>
                     Veiis castra quae amissa erant reciperata
 				castellis praesidiisque firmantur; praeerant tribuni
 				militum M.' Aemilius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         M.' Aemilius
                         <hi rend="italics">a:</hi>
                         m. (
@@ -1538,23 +1538,23 @@
                         m_.) aemilius (aemelius
                         <hi rend="italics">B</hi>
                         )
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     et K. Fabius.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         K. Fabius
                         <hi rend="italics">cf. chap.</hi>
                         x, § 1: q. (
                         <hi rend="italics">or</hi>
                         quintus) fabius
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     <milestone n="5" unit="section"/>
                     <reg>a</reg>
                     M. Furio in Faliscis, a
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         a M1: et
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     <name>Cn</name>
                     . Cornelio in Capenate agro hostes nulli extra moenia inventi; praedae actae incendiisque villarum ac frugum vastati fines; oppida nec oppugnata nec obsessa sunt.
@@ -1563,7 +1563,7 @@
                     in Volscis
                     <pb id="p.44"/>
                     depopulato agro Anxur nequiquam oppugnatum loco alto
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 354</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 354</note>
                     situm et, postquam vis inrita erat, vallo fossaque obsideri coeptum.
                     <name>Valerio</name>
                     Potito Volsci provincia evenerat.
@@ -1575,12 +1575,12 @@
 				mole coorta quam bella tractabantur; et cum tributum conferri per
                     <corr sic="tribunes">tribunos</corr>
                     non posset
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         posset
                         <hi rend="italics">D?</hi>
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         possit
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     nec stipendium imperatoribus mitteretur aeraque militaria flagitaret miles, haud procul erat quin castra quoque
 				urbanae seditionis contagione turbarentur.
@@ -1597,15 +1597,15 @@
                     <milestone n="10" unit="section"/>
                     ceteri patricii creati, P.
 				Manlius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Manlius
                         <hi rend="italics">D</hi>
                         1 (
                         <hi rend="italics">or D</hi>
                         2)
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         manilius
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         mamilius
                         <hi rend="italics">PFUB:</hi>
                         mamlius (
@@ -1614,7 +1614,7 @@
                         <hi rend="italics">D.</hi>
                     </note>
                     L. Titinius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         L. Titinius
                         <hi rend="italics">
                             <reg>sigon</reg>
@@ -1623,12 +1623,12 @@
                         (v. xviii. 2,
                         <hi rend="italics">and Diod.</hi>
                         xiv. xc. 1) p. titinius
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         et p. titinius
                         <hi rend="italics">EDA.</hi>
                     </note>
                     P. Maelius L. Furius Medullinus L. Publilius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Publilius
                         <hi rend="italics">
                             <reg>sigon</reg>
@@ -1639,7 +1639,7 @@
                         i2,
                         <hi rend="italics">p.</hi>
                         116): popilius
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         populius
                         <hi rend="italics">U.</hi>
                     </note>
@@ -1655,7 +1655,7 @@
 				militum priore anno fuerat triplexque stipendium
                     <pb id="p.46"/>
                     equitibus dederat, gratia extractum ad tantum
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 355</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 355</note>
                     honorem credunt, alii orationem ipsum tempestivam de concordia ordinum patribus plebique gratam habuisse.
                     <milestone n="13" unit="section"/>
                     <reg>hac</reg>
@@ -1687,7 +1687,7 @@
                     <reg>unus</reg>
                     M. Veturius ex patriciis candidatis
 				locum tenuit: plebeios alios tribunos militum consulari potestate omnes fere centuriae dixere, M. Pomponium Cn. Duillium Voleronem Publilium
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Publilium
                         <hi rend="italics">
                             <reg>sigon</reg>
@@ -1698,7 +1698,7 @@
                         -litium,
                         <hi rend="italics">or</hi>
                         -licum)
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     Cn. Genucium L. Atilium.
                 </p>
@@ -1717,7 +1717,7 @@
                     <milestone n="6" unit="section"/>
                     <reg>duumviri</reg>
                     sacris faciundis
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 355</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 355</note>
                     lectisternio tunc primum in urbe Romana facto per dies
 				octo Apollinem Latonamque et Dianam, Herculem
 				Mercurium atque Neptunum tribus quam amplissime
@@ -1756,14 +1756,14 @@
                     <reg>itaque</reg>
                     e
 				maioribus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         e maioribus
                         <hi rend="italics">
                             <reg>perizoniuss</reg>
                             :
                         </hi>
                         maioribus
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     castris, unde antea cessatum fuerat, brevi spatio circumductae copiae Capenates in vallum
 				Romanum versos ab tergo adgrediuntur; inde pugna
@@ -1776,7 +1776,7 @@
                     <milestone n="12" unit="section"/>
                     <reg>nec</reg>
                     ita multo post iam forte
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         iam forte
                         <hi rend="italics">
                             <name>Conway</name>
@@ -1785,14 +1785,14 @@
                         iam palantes (palentes
                         <hi rend="italics">H</hi>
                         ) veluti forte
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     oblati populatores Capenatis agri reliquias pugnae absumpsere.
                     <milestone n="13" unit="section"/>
                     <reg>et</reg>
                     <pb id="p.50"/>
                     Veientium refugientes in urbem multi ante portas
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 355</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 355</note>
                     caesi, dum prae metu, ne simul Romanus inrumperet, obiectis foribus extremos suorum exclusere.
                 </p>
                 <p>
@@ -1801,7 +1801,7 @@
                     eo anno acta.
                     <reg>et</reg>
                     iam comitia
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 356</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 356</note>
                     tribunorum militum aderant, quorum prope maior patribus
 				quam belli cura erat, quippe non communicatum
 				modo cum plebe sed prope amissum cernentibus
@@ -1811,7 +1811,7 @@
                     clarissimis viris ex composito praeparatis ad petendum quos praetereundi
 				verecundiam crederent fore, nihilo minus ipsi,
 				perinde ac si omnes candidati essent, cuncta experientes non homines modo sed deos etiam exciebant,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         exciebant
                         <hi rend="italics">
                             <reg>dralkenborch</reg>
@@ -1820,7 +1820,7 @@
                         excipiebant (-bat
                         <hi rend="italics">F</hi>
                         )
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     in religionem vertentes comitia biennio habita:
                     <milestone n="4" unit="section"/>
@@ -1836,13 +1836,13 @@
 				honoratissimum quemque, tribunos militum consulari
 				potestate creavere, L. Valerium Potitum quintum
 				M.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quintum M.
                         <hi rend="italics">D?:</hi>
                         quintum (
                         <hi rend="italics">or</hi>
                         q_)
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         q. (
                         <hi rend="italics">i.e.</hi>
                         que)
@@ -1853,7 +1853,7 @@
                     L. Furium
                     <corr sic="Medullinuim">Medullinum</corr>
                     tertium Q. Servilium
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 356</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 356</note>
                     Fidenatem iterum Q. Sulpicium Camerinum iterum.
                     <milestone n="6" unit="section"/>
                     <reg>his</reg>
@@ -1902,7 +1902,7 @@
                     vir haud intacti
                     <pb id="p.54"/>
                     religione animi, causatus de privati portenti
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 356</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 356</note>
                     procuratione si operae illi esset consulere velle, ad
 				conloquium vatem elicuit.
                     <milestone n="7" unit="section"/>
@@ -1929,21 +1929,21 @@
 				celanda effando nefas contrahi.
                     <milestone n="11" unit="section"/>
                     <reg>sic</reg>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         sic
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         his
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     igitur libris fatalibus, sic disciplina Etrusca traditum esse, quando
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quando
                         <hi rend="italics">
                             <reg>duker</reg>
                             :
                         </hi>
                         ut quando
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         ut
                         <hi rend="overline">qn</hi>
                         <hi rend="italics">A.</hi>
@@ -1963,11 +1963,11 @@
                     <milestone n="16" unit="chapter"/>
                     <reg>priusquam</reg>
                     a Delphis oratores redirent
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 357</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 357</note>
                     Albanive prodigii piacula invenirentur, novi tribuni
                     <pb id="p.56"/>
                     militum consulari potestate L. Iulius Iulus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Iulus
                         <hi rend="italics">
                             <name>Sigonius</name>
@@ -1984,13 +1984,13 @@
                         2
                     </note>
                     L.
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 357</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 357</note>
                     Furius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         L. Furius
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         p_ furius
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         p_ silius furius
                         <hi rend="italics">PFUB:</hi>
                         praesilius (pre-
@@ -1999,7 +1999,7 @@
                         <hi rend="italics">OE.</hi>
                     </note>
                     Medullinus quartum L. Sergius Fidenas A. Postumius Regillensis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Regillensis
                         <hi rend="italics">
                             <reg>sigon</reg>
@@ -2008,7 +2008,7 @@
                         regiliensis
                         <hi rend="italics">MOE:</hi>
                         religiensis
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     P. Cornelius Maluginensis A. Manlius magistratum inierunt.
                     <milestone n="2" unit="section"/>
@@ -2016,24 +2016,24 @@
                     anno Tarquinienses novi hostes exorti.
                     <reg>qui</reg>
                     quia
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Qui quia
                         <hi rend="italics">
                             <reg>duker</reg>
                             :
                         </hi>
                         quia
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     multis simul bellis,
                     <corr sic="Volscorurn">Volscorum</corr>
                     ad Anxur, ubi praesidium obsidebatur, Aequorum ad Labicos,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Labicos
-                        <foreign lang="greek">W</foreign>
+                        <foreign xml:lang="grc">W</foreign>
                         <hi rend="italics">at</hi>
                         II. xxxix. 4: lauicos
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     qui Romanam ibi coloniam oppugnabant, ad hoc Veientique et Falisco et Capenati bello occupatos videbant Romanos, nec intra muros quietiora negotia esse certaminibus patrum ac plebis,
                     <milestone n="3?" unit="section"/>
@@ -2052,11 +2052,11 @@
                     <milestone n="5" unit="section"/>
                     A.
 				Postumius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         A. Postumius
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         aurelius postumius
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     et L. Iulius non iusto dilectu—etenim ab tribunis plebis impediebantur—sed prope voluntariorum quos adhortando incitaverant coacta manu per agrum Caeretem obliquis tramitibus egressi redeuntes a populationibus gravesque praeda Tarquinienses oppressere.
                     <milestone n="6" unit="section"/>
@@ -2067,7 +2067,7 @@
                     <milestone n="7" unit="section"/>
                     <reg>biduum</reg>
                     ad
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 357</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 357</note>
                     recognoscendas res datum dominis; tertio incognita —erant autem ea pleraque hostium ipsorum—sub hasta veniere, quodque inde redactum militibus est divisum.
                 </p>
                 <p>
@@ -2112,7 +2112,7 @@
                     unam expiationem eorum
                     <pb id="p.60"/>
                     esse ut tribuni militum abdicarent se magistratu,
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 357</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 357</note>
                     auspicia de integro repeterentur, et interregnum
 				iniretur.
                     <milestone n="4" unit="section"/>
@@ -2143,18 +2143,18 @@
 				negare.
                     <reg>maxima</reg>
                     iam in parte
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         maxima iam in parte
                         <hi rend="italics">
                             <name>Luterbacher</name>
                             :
                         </hi>
                         maxime in ea parte
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     Etruriae gentem
 				invisitatam,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         invisitatam
                         <hi rend="italics">E</hi>
                         1
@@ -2164,17 +2164,17 @@
                         inusitatam
                         <hi rend="italics">or</hi>
                         inuis sitatam)
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     novos accolas esse,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         esse
                         <hi rend="italics">
                             <name>Conway</name>
                             and Walters:
                         </hi>
                         Gallos esse
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     cum quibus nec pax satis fida nec bellum pro certo sit.
                     <milestone n="9" unit="section"/>
@@ -2186,14 +2186,14 @@
                     magnum advenisse
 				hostium numerum fama Romae erat; eoque mitescere discordiae intestinae metu communi, ut fit,
 				coepere.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         coepere
                         <hi rend="italics">
                             <name>Weissenborn</name>
                             :
                         </hi>
                         coeptae
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                 </p>
                 <pb id="p.62"/>
@@ -2201,9 +2201,9 @@
                     <milestone n="18" unit="chapter"/>
                     <reg>haud</reg>
                     invitis patribus P. Licinium Calvum
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 358</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 358</note>
                     praerogativae
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         praerogativae
                         <hi rend="italics">
                             <name>Sigonius</name>
@@ -2212,16 +2212,16 @@
                         praerogatiua (progatiua
                         <hi rend="italics">P</hi>
                         )
-                        <foreign lang="greek">s</foreign>
+                        <foreign xml:lang="grc">s</foreign>
                         .
                     </note>
                     tribunum militum non petentem creant, moderationis expertae in priore magistratu virum, ceterum iam tum exactae aetatis; omnesque
 				deinceps ex collegio eiusdem anni refici apparebat,
                     <milestone n="2?" unit="section"/>
                     L. Titinium P. Maenium
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         P. Maenium
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         P. Maenium Q. Manlium
                         <hi rend="italics">
                             <reg>niebuhr</reg>
@@ -2253,7 +2253,7 @@
                         <milestone n="4" unit="section"/>
                         sed
 					collegas
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             sed collegas
                             <hi rend="italics">
                                 <name>Madvig</name>
@@ -2270,7 +2270,7 @@
                             si et
                             <hi rend="italics">or</hi>
                             sic) collegas
-                            <foreign lang="greek">s</foreign>
+                            <foreign xml:lang="grc">s</foreign>
                             .
                         </note>
                         eosdem reficitis, etiam usu meliores factos, me iam non eundem sed umbram nomenque P. Licini relictum videtis.
@@ -2304,7 +2304,7 @@
                     Genuciusque
                     <pb id="p.64"/>
                     tribuni militum profecti adversus Faliscos
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 358</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 358</note>
                     Capenatesque, dum bellum maiore animo gerunt quam consilio, praecipitavere se in insidias.
                     <milestone n="8" unit="section"/>
                     <name>Genucius</name>
@@ -2348,7 +2348,7 @@
                     fatalis dux ad excidium illius
                     <pb id="p.66"/>
                     urbis servandaeque patriae, M. Furius Camillus,
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 358</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 358</note>
                     dictator dictus magistrum equitum P. Cornelium
 				Scipionem dixit.
                     <milestone n="3" unit="section"/>
@@ -2399,7 +2399,7 @@
                     ad Veios exercitus ductus, densioraque castella
                     <pb id="p.68"/>
                     facta et a procursationibus, quae multae temere inter
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 358</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 358</note>
                     murum ac vallum fiebant, edicto ne quis iniussu pugnaret, ad opus milites traducti.
                     <milestone n="10" unit="section"/>
                     <reg>operum</reg>
@@ -2443,7 +2443,7 @@
 				qui largitionem novam prodigam inaequalem
                     <pb id="p.70"/>
                     inconsultam arguens, si semel nefas ducerent captam ex
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 358</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 358</note>
                     hostibus in aerario exhausto bellis pecuniam esse,
 				auctor erat stipendii ex ea pecunia militi numerandi
 				ut eo minus tributi plebes conferret;
@@ -2487,7 +2487,7 @@
                     <milestone n="21" unit="chapter"/>
                     <reg>ingens</reg>
                     profecta multitudo replevit castra.
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 358</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 358</note>
                     <reg>tum</reg>
                     dictator auspicato egressus cum edixisset ut
 				arma milites caperent,
@@ -2536,7 +2536,7 @@
 				prosecuisset ei victoriam dari, exauditam in cuniculo
                     <pb id="p.74"/>
                     movisse Romanos milites ut adaperto cuniculo exta
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 358</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 358</note>
                     raperent et ad dictatorem ferrent.
                     <milestone n="9" unit="section"/>
                     <reg>sed</reg>
@@ -2550,11 +2550,11 @@
                     <reg>cuniculus</reg>
                     delectis militibus eo tempore plenus
 				in aedem
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         in aedem
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         in aede
-                        <foreign lang="greek">W</foreign>
+                        <foreign xml:lang="grc">W</foreign>
                     </note>
                     Iunonis, quae in Veientana arce erat, armatos repente edidit, et pars aversos in muris
 				invadunt hostes, pars claustra portarum revellunt,
@@ -2588,7 +2588,7 @@
 				sua fortuna populique Romani videretur, ut eam
                     <pb id="p.76"/>
                     invidiam lenire quam minimo suo privato incommodo
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 358</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 358</note>
                     publicoque populi Romani liceret.
                     <milestone n="16" unit="section"/>
                     <reg>convertentem</reg>
@@ -2633,7 +2633,7 @@
                     solitus.
                     <reg>dein</reg>
                     cum quidam seu spiritu divino tactus
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 358</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 358</note>
                     seu iuvenali ioco,
                     <quote>
                         <reg>visne</reg>
@@ -2680,21 +2680,21 @@
                     agentium erant.
                     <reg>senatus</reg>
                     in quadriduum, quot dierum
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 358</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 358</note>
                     nullo ante bello, supplicationes decernit.
                     <milestone n="4" unit="section"/>
                     <reg>adventus</reg>
                     quoque dictatoris omnibus ordinibus obviam effusis
 				celebratior quam ullius unquam antea fuit, triumphusque omnem consuetum honorandi diei illius,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         diei illius
                         <hi rend="italics">F</hi>
                         3
-                        <foreign lang="greek">s</foreign>
+                        <foreign xml:lang="grc">s</foreign>
                         : diem illius (illus
                         <hi rend="italics">H</hi>
                         )
-                        <foreign lang="greek">s.</foreign>
+                        <foreign xml:lang="grc">s.</foreign>
                     </note>
                     modum aliquantum excessit.
                     <milestone n="5" unit="section"/>
@@ -2736,7 +2736,7 @@
                     Romani fieret.
                     <reg>ea</reg>
                     quoque conlatio plebis animos
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 358</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 358</note>
                     a Camillo alienavit.
                     <milestone n="12" unit="section"/>
                     <reg>inter</reg>
@@ -2749,11 +2749,11 @@
                     <milestone n="24" unit="chapter"/>
                     <name>Veiis</name>
                     captis sex tribunos militum consulari
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 359</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 359</note>
                     potestate insequens annus habuit, duos P. Cornelios,
 				Cossum et Scipionem, M. Valerium Maximum iterum
 				K. Fabium Ambustum tertium
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         tertium
                         <hi rend="italics">
                             <reg>sigon</reg>
@@ -2766,7 +2766,7 @@
                         118): iterum (
                         <hi rend="italics">wanting in V</hi>
                         )
-                        <foreign lang="greek">s.</foreign>
+                        <foreign xml:lang="grc">s.</foreign>
                     </note>
                     L. Furium Medullinum quintum Q. Servilium tertium.
                     <milestone n="2" unit="section"/>
@@ -2799,7 +2799,7 @@
                     <reg>urbem</reg>
                     <pb id="p.84"/>
                     quoque urbi Romae vel situ vel magnificentia
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 359</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 359</note>
                     publicorum privatorumque tectorum ac locorum praeponebant.
                     <milestone n="7" unit="section"/>
                     <reg>quin</reg>
@@ -2810,7 +2810,7 @@
                     <reg>ceterum</reg>
                     partem plebis, partem
 				senatus destinabant ad habitandos
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ad habitandos
                         <hi rend="italics">
                             <reg>heerwagen</reg>
@@ -2819,14 +2819,14 @@
                         a habitandos
                         <hi rend="italics">P:</hi>
                         habitandos
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         habitando
                         <hi rend="italics">V.</hi>
                     </note>
                     Veios, duasque urbes communi
                     <corr sic="re">rei</corr>
                     publica
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         communi
                         <corr sic="re">rei</corr>
                         publica (republica)
@@ -2838,7 +2838,7 @@
                         <corr sic="re">rei</corr>
                         <hi rend="italics">V:</hi>
                         communes reipublicae
-                        <foreign lang="greek">s.</foreign>
+                        <foreign xml:lang="grc">s.</foreign>
                     </note>
                     incoli a populo Romano posse.
                 </p>
@@ -2851,11 +2851,11 @@
 				quippe nunc in una urbe tantum dissensionum esse:
                     <milestone n="10" unit="section"/>
                     quid in duabus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         duabus
                         <hi rend="italics">DLA:</hi>
                         duabus urbibus
-                        <foreign lang="greek">s.</foreign>
+                        <foreign xml:lang="grc">s.</foreign>
                     </note>
                     fore? victamne ut quisquam victrici patriae praeferret sineretque maiorem fortunam captis esse Veiis, quam incolumibus fuerit?
                     <reg>postremo</reg>
@@ -2878,7 +2878,7 @@
 				causa clamor ortus esset, principes senatus primi
                     <pb id="p.86"/>
                     turbae offerentes se peti feririque atque occidi iubebant.
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 359</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 359</note>
                     <milestone n="3" unit="section"/>
                     <reg>ab</reg>
                     horum aetatibus dignitatibusque et honoribus
@@ -2931,7 +2931,7 @@
                     ea res ut quae maxime
                     <pb id="p.88"/>
                     senatui unquam fuit; honoremque ob eam
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 359</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 359</note>
                     munificentiam ferunt matronis habitum ut pilento ad sacra
 				ludosque, carpentis festo profestoque uterentur.
                     <milestone n="10" unit="section"/>
@@ -2968,7 +2968,7 @@
                     <milestone n="26" unit="chapter"/>
                     <reg>comitiis</reg>
                     tribunorum militum patres summa
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 360</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 360</note>
                     ope evicerunt ut M. Furius Camillus crearetur.
                     <reg>propter</reg>
                     bella simulabant parari ducem; sed largitioni
@@ -2985,7 +2985,7 @@
 				tribuni plebis nihil moverunt, donec M. Furius
                     <pb id="p.90"/>
                     Camillus in Faliscos, cui id bellum mandatum erat
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 360</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 360</note>
                     proficisceretur.
                     <reg>differendo</reg>
                     deinde elanguit res, et Camillo, quem adversarium maxime metuebant,
@@ -3006,7 +3006,7 @@
                     <milestone n="6" unit="section"/>
                     <reg>ceterum</reg>
                     Camillus captivum indidem
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         indidem
                         <hi rend="italics">
                             <reg>kern</reg>
@@ -3015,7 +3015,7 @@
                         indecem
                         <hi rend="italics">M:</hi>
                         indicem
-                        <foreign lang="greek">s.</foreign>
+                        <foreign xml:lang="grc">s.</foreign>
                     </note>
                     ex agris secutus ducem castris multa nocte motis prima luce aliquanto superioribus locis se ostendit.
                     <milestone n="7" unit="section"/>
@@ -3041,7 +3041,7 @@
 				impetus oppidanorum in Romanas stationes
                     <pb id="p.92"/>
                     proeliaque parva fieri, et teri tempus neutro inclinata spe,
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 360</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 360</note>
                     cum frumentum copiaeque aliae ex ante convecto largius obsessis quam obsidentibus suppeterent.
                     <milestone n="10" unit="section"/>
                     <reg>videbaturque</reg>
@@ -3063,14 +3063,14 @@
 				instituisset pueros ante urbem lusus exercendique
 				causa producere, nihil eo more per belli tempus
 				intermisso, modo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         modo
                         <hi rend="italics">
                             <reg>hertz</reg>
                             :
                         </hi>
                         dum modo
-                        <foreign lang="greek">s.</foreign>
+                        <foreign xml:lang="grc">s.</foreign>
                     </note>
                     brevioribus modo longioribus spatiis trahendo eos a porta lusu sermonibusque
 				variatis, longius solito ubi res dedit progressus inter
@@ -3085,14 +3085,14 @@
                     se in
 				manus Romanis tradidisse, quando eos pueros quorum
 				parentes capita ibi rerum sint in potestatem
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         in potestatem
                         <hi rend="italics">
                             <reg>aid</reg>
                             .
                         </hi>
                         : in potestate
-                        <foreign lang="greek">s.</foreign>
+                        <foreign xml:lang="grc">s.</foreign>
                     </note>
                     dediderit.
                     <milestone n="5" unit="section"/>
@@ -3110,7 +3110,7 @@
                         cum Faliscis
                         <pb id="p.94"/>
                         quae pacto fit humano societas non est: quam
-                        <note anchored="yes" place="unspecified" type="marg">A.U.C. 360</note>
+                        <note anchored="true" place="unspecified" type="marg">A.U.C. 360</note>
                         ingeneravit natura utrisque est eritque.
                         <reg>sunt</reg>
                         et belli sicut pacis iura, iusteque ea non minus quam fortiter
@@ -3157,7 +3157,7 @@
 					nec homo quisquam invideat victi a vobis et
                         <pb id="p.96"/>
                         imperatore vestro dedimus nos vobis, rati, quo nihil victori
-                        <note anchored="yes" place="unspecified" type="marg">A.U.C. 360</note>
+                        <note anchored="true" place="unspecified" type="marg">A.U.C. 360</note>
                         pulchrius est, melius nos sub imperio vestro quam legibus nostris victuros.
                         <milestone n="13" unit="section"/>
                         <reg>eventu</reg>
@@ -3188,14 +3188,14 @@
 				triumphantem albi per urbem vexerant equi insignis,
 				iustitia fideque hostibus victis cum in urbem redisset,
 				taciti
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         taciti
                         <hi rend="italics">
                             <name>Gronovius</name>
                             V:
                         </hi>
                         tacite
-                        <foreign lang="greek">s.</foreign>
+                        <foreign xml:lang="grc">s.</foreign>
                     </note>
                     eius verecundiam non tulit senatus quin sine mora voti liberaretur;
                     <milestone n="2" unit="section"/>
@@ -3216,7 +3216,7 @@
                     qui legatorum nomen
                     <pb id="p.98"/>
                     donumque et deum cui mitteretur et doni causam
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 360</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 360</note>
                     veritus ipse multitudinem quoque, quae semper ferme regenti est similis, religionis iustae implevit adductosque in publicum hospitium legatos cum praesidio
 				etiam navium Delphos prosecutus, Romam inde
 				sospites restituit.
@@ -3252,7 +3252,7 @@
                     <milestone n="9" unit="section"/>
                     <reg>poscentes</reg>
                     ut confestim inde ad castra hostium
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 360.</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 360.</note>
                     duceret—et in conspectu erant posita in plano—
 				nihil poenae recusabant ni ea ante noctem expugnassent.
                     <milestone n="10" unit="section"/>
@@ -3265,7 +3265,7 @@
 				Verruginem excluderent, fuere obvii, proeliumque
 				ante lucem—sed luna pernox erat—commissum est.
                     <reg>haud</reg>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Haud
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -3274,7 +3274,7 @@
                         et haud (aut
                         <hi rend="italics">FB</hi>
                         )
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     incertius diurno proelium fuit;
                     <milestone n="11" unit="section"/>
@@ -3300,10 +3300,10 @@
                     <milestone n="29" unit="chapter"/>
                     <reg>tribunorum</reg>
                     plebis actiones quia nondum
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 361.</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 361.</note>
                     <pb id="p.102"/>
                     invenerant finem, et plebs continuare latoribus legis
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 361</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 361</note>
                     tribunatum et patres reficere intercessores legis adnisi sunt; sed plus suis comitiis plebs valuit.
                     <milestone n="2" unit="section"/>
                     <reg>quem</reg>
@@ -3312,9 +3312,9 @@
                     <reg>annum</reg>
                     post quintum decimum creati consules L.
 				Lucretius Flavus Ser.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Ser.
-                        <foreign lang="greek">s</foreign>
+                        <foreign xml:lang="grc">s</foreign>
                         (
                         <hi rend="italics">C.I.L.</hi>
                         i2,
@@ -3322,7 +3322,7 @@
                         119
                         <hi rend="italics">and Diod.</hi>
                         xv. viii. 1): Sergius
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     <milestone n="3" unit="section"/>
                     <name>Sulpicius</name>
@@ -3352,21 +3352,21 @@
                     tamen gratiam senatus
                     <pb id="p.104"/>
                     plebis ira, et pessimo exemplo innoxii denis milibus
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 361</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 361</note>
                     gravis aeris condemnati sunt.
                     <milestone n="8" unit="section"/>
                     <reg>id</reg>
                     aegre passi patres.
                     <name>Camillus</name>
                     palam sceleris plebem arguere, quae iam in suos versa non intellegeret se pravo iudicio de tribunis intercessionem sustulisse, intercessione sublata tribuniciam potestatem evertisse
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         evertisse
                         <hi rend="italics">
                             <name>Rhenanus</name>
                             :
                         </hi>
                         euertissent
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     ;
                     <milestone n="9" unit="section"/>
@@ -3395,7 +3395,7 @@
 				urbem ab se captam frequentari, cottidie se frui
                     <pb id="p.106"/>
                     monumento gloriae suae et ante oculos habere urbem
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 361</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 361</note>
                     latam in triumpho suo, insistere omnes vestigiis
 				laudum suarum;
                     <milestone n="3" unit="section"/>
@@ -3407,11 +3407,11 @@
                     <milestone n="4" unit="section"/>
                     <reg>his</reg>
                     adhortationibus principis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         principis
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         principes
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     concitati patres, senes iuvenesque, cum ferretur lex agmine facto in
 				forum venerunt, dissipatique per tribus suos quisque
@@ -3431,13 +3431,13 @@
                     non vi agebant
 				sed precibus et inter preces multa deorum mentio
 				erat, religiosum parti maximae fuit, et legem una
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         una
                         <hi rend="italics">A</hi>
                         2
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         unam
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     plures tribus antiquarunt quam iusserunt.
                     <milestone n="8" unit="section"/>
@@ -3448,14 +3448,14 @@
                     <pb id="p.108"/>
                     liberorum capitum ratio haberetur, vellentque in
                     <corr sic="earn">eam</corr>
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C 361</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C 361</note>
                     spem liberos tollere.
                 </p>
                 <p>
                     <milestone n="31" unit="chapter"/>
                     <reg>eo</reg>
                     munere delenita plebe nihil certatum
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C 362</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C 362</note>
                     est quo minus consularia comitia haberentur.
                     <milestone n="2" unit="section"/>
                     <reg>creati</reg>
@@ -3479,7 +3479,7 @@
 				consererent.
                     <name>Valerio</name>
                     , quod perseverantior iis caedendis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         iis caedendis
                         <hi rend="italics">
                             <name>Weissenborn</name>
@@ -3488,7 +3488,7 @@
                         caedendis (
                         <hi rend="italics">or</hi>
                         ce-)
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         caed..dis
                         <hi rend="italics">V:</hi>
                         gaedendis
@@ -3513,14 +3513,14 @@
 				caloribusque nimiis ortam exercitus duci nequivit.
                     <reg>ob</reg>
                     quae Volsinienses Sappinatibus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Sappinatibus
                         <hi rend="italics">
                             <reg>moimmsen</reg>
                             (cf. chap.
                         </hi>
                         xxxii. § 2): salpinati. bus
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         sapienatibus
                         <hi rend="italics">V:</hi>
                         scalpinatibus
@@ -3534,7 +3534,7 @@
                     C. Iulius censor decessit; in eius locum M. Cornelius suffectus, quae res postea religioni fuit quia eo
                     <pb id="p.110"/>
                     lustro Roma est capta; nec deinde unquam in
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 362</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 362</note>
                     <corr sic="deortui">demortui</corr>
                     locum censor sufficitur.
                     <milestone n="7" unit="section"/>
@@ -3557,7 +3557,7 @@
                     <milestone n="32" unit="chapter"/>
                     <reg>kalendis</reg>
                     Quinctilibus magistratum
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 363</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 363</note>
                     occepere L. Lucretius Ser.
                     <name>Sulpicius</name>
                     M. Aemilius L.
@@ -3567,7 +3567,7 @@
                     <reg>ex</reg>
                     his L. Lucretio et C. Aemilio
 				Volsinienses
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Volsinienses
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -3578,10 +3578,10 @@
                         uolsiniensis (
                         <hi rend="italics">or</hi>
                         uuls-)
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     provincia evenit, Sappinates
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Sappinates
                         <hi rend="italics">HDL</hi>
                         (
@@ -3589,7 +3589,7 @@
                         § 4): salpinates (salpp-
                         <hi rend="italics">P</hi>
                         )
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         sal sappinates
                         <hi rend="italics">M: wanting in V.</hi>
                     </note>
@@ -3611,14 +3611,14 @@
 				committerent Sappinates; moenibus armati se tutabantur.
                     <name>Romani</name>
                     praedas passim et ex Sappinati
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Sappinati
                         <hi rend="italics">
                             <reg>mommsen</reg>
                             :
                         </hi>
                         salpinati
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         sa . pinati
                         <hi rend="italics">V</hi>
                         .
@@ -3630,7 +3630,7 @@
                     <milestone n="5" unit="section"/>
                     donec Volsiniensibus fessis bello ea condicione ut
 				res
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C 363</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C 363</note>
                     populo Romano redderent stipendiumque eius anni exercitui praestarent, in viginti annos indutiae datae.
                 </p>
                 <p>
@@ -3654,9 +3654,9 @@
 				tribuno plebis propter praedam Veientanam, filio
 				quoque adulescente per idem tempus orbatus cum
 				accitis domum tribulibus clientibusque, quae
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         clientibusque, quae
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         clientibus quae (que
                         <hi rend="italics">E:</hi>
                         quae
@@ -3666,7 +3666,7 @@
                         3: q
                         <hi rend="italics">BD:</hi>
                         q que D4)
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         eo clientibus quae
                         <hi rend="italics">M:</hi>
                         et clientilus quae
@@ -3695,7 +3695,7 @@
                     <milestone n="2" unit="section"/>
                     <reg>eam</reg>
                     gentem
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 363</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 363</note>
                     traditur fama dulcedine frugum maximeque vini,
 				nova
                     <corr sic="tur">tum</corr>
@@ -3706,7 +3706,7 @@
 				Galliam vinum inliciendae gentis causa Arruntem
 				Clusinum ira corruptae uxoris ab Lucumone, cui
 				tutor is fuerat,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         is fuerat
                         <hi rend="italics">
                             <name>Conway</name>
@@ -3717,7 +3717,7 @@
                         is (es
                         <hi rend="italics">M</hi>
                         ) fuerat ipse
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         fuerat ipse
                         <hi rend="italics">A</hi>
                         2.
@@ -3749,9 +3749,9 @@
 				nomina sunt argumento, quod alterum Tuscum communi vocabulo gentis,
                     <milestone n="8?" unit="section"/>
                     alterum Hadriaticum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Hadriaticum;
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         hadriatium
                         <hi rend="italics">V:</hi>
                         atriaticum
@@ -3763,7 +3763,7 @@
                     </note>
                     ab
 				Hatria,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ab Hatria
                         <hi rend="italics">
                             <name>Conway</name>
@@ -3776,18 +3776,18 @@
                         450): mare ab atria (
                         <hi rend="italics">or</hi>
                         adria)
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     Tuscorum colonia, vocavere Italicae gentes; Graeci eadem Tyrrhenum atque Adriaticum vocant.
                     <milestone n="9" unit="section"/>
                     <reg>ei</reg>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         vocant.
                         <reg>ei</reg>
                         ;
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         uocant et
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         uocante.
                         <hi rend="italics">PFBE?:</hi>
                         uocantes
@@ -3805,7 +3805,7 @@
                     in utrumque mare vergentes incoluere urbibus
                     <pb id="p.116"/>
                     duodenis terras, prius cis Appenninum ad inferum
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C 363</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C 363</note>
                     mare, postea trans Appenninum totidem, quot capita originis erant,
                     <milestone n="10" unit="section"/>
                     coloniis missis, quae trans Padum omnia loca, excepto Venetorum angulo qui sinum circumcolunt maris, usque ad Alpes tenuere.
@@ -3813,7 +3813,7 @@
                     <reg>alpinis</reg>
                     quoque ea gentibus haud dubie origo est, maxime
 				Raetis,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Raetis
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -3824,7 +3824,7 @@
                         retiis
                         <hi rend="italics">or</hi>
                         reciis)
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         ratiis
                         <hi rend="italics">D?:</hi>
                         ratus
@@ -3857,28 +3857,28 @@
                     Segoveso sortibus dati Hercynei saltus;
                     <pb id="p.118"/>
                     Belloveso haud paulo laetiorem in Italiam viam di
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C 363</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C 363</note>
                     dabant.
                     <milestone n="5" unit="section"/>
                     <reg>is</reg>
                     quod eius ex populis abundabat, Bituriges
 				Arvernos Senones Haeduos
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Haeduos
                         <hi rend="italics">H. J. Müller:</hi>
                         aeduos
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     Ambarros Carnutes Aulercos excivit.
                     <reg>profectus</reg>
                     ingentibus peditum equitumque copiis in Tricastinos
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Tricastinos
-                        <foreign lang="greek">s</foreign>
+                        <foreign xml:lang="grc">s</foreign>
                         (
                         <hi rend="italics">cf.</hi>
                         XXI. xxxi. 9): tricaspinos
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         tris caspinos
                         <hi rend="italics">D.</hi>
                     </note>
@@ -3904,7 +3904,7 @@
                     Galli
 				fortunae suae omen rati adiuvere ut quem primum in
 				terram egressi occupaverant locum patientibus Saluis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         patientibus Saluis
                         <hi rend="italics">
                             <reg>valesius</reg>
@@ -3913,13 +3913,13 @@
                         patentibus (petentibus
                         <hi rend="italics">B</hi>
                         ) siluis
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     communirent.
                     <reg>ipsi</reg>
                     per Taurinos saltus saltumque
 				Duriae Alpes
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         saltumque Duriae Alpes
                         <hi rend="italics">
                             <name>Conway</name>
@@ -3934,7 +3934,7 @@
                         2
                         <hi rend="italics">A</hi>
                         2)
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         saltusque (
                         <hi rend="italics">or</hi>
                         quae) iuliae alte (alta
@@ -3956,23 +3956,23 @@
                     <milestone n="35" unit="chapter"/>
                     <reg>alia</reg>
                     subinde manus Cenomanorum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cenomanorum
                         <hi rend="italics">
                             <name>Glareanus</name>
                             :
                         </hi>
                         germanorum
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     <pb id="p.120"/>
                     Etitovio duce vestigia priorum secuta eodem saltu
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C 363</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C 363</note>
                     favente Belloveso cum transcendisset Alpes, ubi nunc Brixia ac Verona urbes sunt locos tenuere.
                     <milestone n="2" unit="section"/>
                     <name>Libui</name>
                     considunt post hos Salluviique
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Salluviique
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -3983,16 +3983,16 @@
                         salluii
                         <hi rend="italics">or</hi>
                         saluuii) qui
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     prope antiquam gentem Laevos Ligures incolentes circa Ticinum amnem.
                     <reg>poenino</reg>
                     deinde
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         poenino deinde
                         <hi rend="italics">E</hi>
                         3
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         poeni nonne inde
                         <hi rend="italics">M:</hi>
                         poeninon deinde
@@ -4059,19 +4059,19 @@
                     <milestone n="5" unit="section"/>
                     <reg>de</reg>
                     auxilio nihil impetratum; legati tres M. Fabi Ambusti filii missi, qui senatus populique
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         populique
                         <hi rend="italics">A</hi>
                         1 (
                         <hi rend="italics">or A</hi>
                         2)
-                        <foreign lang="greek">s</foreign>
+                        <foreign xml:lang="grc">s</foreign>
                         <hi rend="italics">
                             <reg>ald</reg>
                             .:
                         </hi>
                         populi
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     Romani nomine agerent cum Gallis -ne a quibus nullam
 				iniuriam accepissent socios populi Romani atque
@@ -4082,14 +4082,14 @@
                     <pb id="p.122"/>
                     res cogat, tuendos esse; sed melius visum
                     <corr sic="bellurn">bellum</corr>
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 363</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 363</note>
                     ipsum amoveri, si posset, et Gallos, novam gentem, pace potius cognosci quam armis.
                 </p>
                 <p>
                     <milestone n="36" unit="chapter"/>
                     <reg>mitis</reg>
                     legatio, ni praeferoces legatos
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     Gallisque magis quam Romanis similes habuisset.
                     <reg>quibus</reg>
                     postquam mandata ediderunt in concilio
@@ -4118,7 +4118,7 @@
 				virorum esse ferociter dicerent, accensis utrimque
                     <pb id="p.124"/>
                     animis ad arma discurritur et proelium conseritur.
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     <milestone n="6" unit="section"/>
                     <reg>ibi</reg>
                     iam urgentibus Romanam urbem fatis legati contraius gentium arma capiunt.
@@ -4160,11 +4160,11 @@
                     <milestone n="11" unit="section"/>
                     <reg>quo</reg>
                     facto haud
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     secus quam dignum erat infensi Galli bellum propalam minantes ad suos redeunt.
                     <reg>tribuni</reg>
                     militum cum tribus Fabiis creati Q. Sulpicius Longus Q. Servilius quartum P. Cornelius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         P. Cornelius
                         <hi rend="italics">
                             H. J. Mueller (cf.
@@ -4174,7 +4174,7 @@
                         xv. xx. 1): p. seruilius (
                         <hi rend="italics">omitted by H</hi>
                         )
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     Maluginensis.
                 </p>
@@ -4211,7 +4211,7 @@
                     antecedente fama nuntiisque Clusinorum, deinceps
                     <pb id="p.128"/>
                     inde aliorum populorum, plurimum terroris Romam
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     celeritas hostium tulit,
                     <milestone n="7?" unit="section"/>
                     quippe quibus velut tumultuario exercitu raptim ducto aegre ad undecimum
@@ -4255,7 +4255,7 @@
                     ad subsidiarios signa convertit, si eos
                     <pb id="p.130"/>
                     loco depulisset haud dubius facilem in aequo campi
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     tantum superanti multitudini victoriam fore; adeo
 				non fortuna modo sed ratio etiam cum barbaris
 				stabat.
@@ -4266,14 +4266,14 @@
                     <reg>pavor</reg>
                     fugaque
 				occupaverat animos et tanta omnium
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         omniur
                         <hi rend="italics">
                             <name>Gronovius</name>
                             D?:
                         </hi>
                         hominum
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     oblivio ut multo maior pars Veios in hostium urbem, cum Tiberis arceret, quam recto itinere Romam ad
 				coniuges ac liberos fugerent.
@@ -4309,7 +4309,7 @@
                     <milestone n="39" unit="chapter"/>
                     <name>Gallos</name>
                     quoque velut obstupefactos
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 344</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 344</note>
                     miraculum victoriae
                     <corr sic="tar">tam</corr>
                     repentinae tenuit, et ipsi pavore
@@ -4339,11 +4339,11 @@
                     Romam, nemo superesse quemquam
                     <corr sic="plraeter">praeter</corr>
                     eos qui Romam refugerant crederet,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         crederet F3A1
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                         crederent
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     complorati omnes pariter vivi mortuique totam prope urbem lamentis impleverunt.
                     <milestone n="5" unit="section"/>
@@ -4361,11 +4361,11 @@
 				futurus videretur impetus: primo adventu, quia
                     <pb id="p.134"/>
                     accesserant ad urbem—mansuros enim ad Alliam
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     fuisse nisi hoc consilii foret;
                     <milestone n="7" unit="section"/>
                     —deinde sub occasum solis, quia haud multum diei supererat, ante noctem rati sunt
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         rati sunt
                         <hi rend="italics">
                             <name>Walters</name>
@@ -4381,7 +4381,7 @@
                         14): rati (ratu
                         <hi rend="italics">B</hi>
                         ) se
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         rati
                         <hi rend="italics">V:</hi>
                         enim
@@ -4408,14 +4408,14 @@
 				senatusque robur in arcem Capitoliumque concedere,
                     <milestone n="10?" unit="section"/>
                     armisque et frumento conlato inde ex loco munito
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         inde ex loco munito
                         <hi rend="italics">
                             <reg>reid</reg>
                             :
                         </hi>
                         ex loco inde munito
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     deos
                     <corr sic="hlominesque">hominesque</corr>
@@ -4435,7 +4435,7 @@
 				dicere obituros nec his corporibus quibus non arma
                     <pb id="p.136"/>
                     ferre, non tueri patriam possent, oneraturos inopiam
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     armatorum.
                 </p>
                 <p>
@@ -4456,14 +4456,14 @@
 				muliebris fletus et concursatio incerta nunc hos nunc
 				illos sequentium rogitantiumque viros natosque cui
 				se fato darent, nihil quod humani superesset mali
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         human superesset mali
                         <hi rend="italics">
                             <reg>finckch</reg>
                             :
                         </hi>
                         humanis superesset malis
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     relinquebant.
                     <milestone n="4" unit="section"/>
@@ -4486,7 +4486,7 @@
 				per agros dilapsi, pars urbes petunt finitimas, sine
 				ullo duce aut consensu suam quisque spem, sua
 				consilia communibus deploratis sequentes.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         sequentes
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -4495,14 +4495,14 @@
                         exsequentes (exe-
                         <hi rend="italics">B</hi>
                         )
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     <milestone n="7" unit="section"/>
                     <name>Flamen</name>
                     interim Quirinalis virginesque Vestales
                     <pb id="p.138"/>
                     omissa rerum suarum cura, quae sacrorum secum
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     ferenda, quae quia vires ad omnia ferenda deerant relinquenda essent consultantes, quisve ea locus fideli
 				adservaturus custodia esset,
                     <milestone n="8?" unit="section"/>
@@ -4510,26 +4510,26 @@
 				in doliolis sacello proximo aedibus flaminis Quirinalis,
 				ubi nunc despui religio est, defodere; cetera inter
 				se onere partito ferunt
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ferunt
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         feruntur
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     via quae sublicio ponte ducit ad Ianiculum.
                     <milestone n="9" unit="section"/>
                     <reg>in</reg>
                     eo clivo eas cum L. Albinius de plebe homo conspexisset plaustro coniugem ac liberos avehens
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         avehens
                         <hi rend="italics">
                             <name>Madvig</name>
                             :
                         </hi>
                         uehens
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         habens
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     inter ceteram turbam quae inutilis bello
                     <milestone n="10?" unit="section"/>
@@ -4552,7 +4552,7 @@
                     <milestone n="3" unit="section"/>
                     <reg>sunt</reg>
                     qui M. Folio pontifice maximo
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     praefante carmen devovisse eos se pro patria Quiritibusque Romanis tradant.
                 </p>
                 <p>
@@ -4576,7 +4576,7 @@
                     rursus ipsa solitudine absterriti, ne qua fraus hostilis
 				vagos exciperet, in forum ac propinqua foro loca
 				conglobati redibant
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         redibant
                         <hi rend="italics">F</hi>
                         3 (
@@ -4586,7 +4586,7 @@
                         3
                         <hi rend="italics">A</hi>
                         2:. rediebant
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     ;
                     <milestone n="7" unit="section"/>
@@ -4602,7 +4602,7 @@
                     <milestone n="9" unit="section"/>
                     <reg>ad</reg>
                     eos velut simulacra versi cum starent, M.
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     Papirius, unus ex iis, dicitur Gallo barbam suam,
 				ut tum omnibus promissa erat, permulcenti scipione
 				eburneo in caput incusso iram movisse atque ab eo
@@ -4624,11 +4624,11 @@
 				quodcumque superesset urbis, id pignus ad flectendos
 				hostium animos haberent, nequaquam perinde atque
 				in capta urbe primo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         primo
                         <hi rend="italics">H. J. Mueller:</hi>
                         prima
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     die aut passim aut late vagatus est ignis.
                     <milestone n="3" unit="section"/>
@@ -4637,14 +4637,14 @@
 				cernentes vagosque per vias omnes cursus, cum alia
 				atque alia parte nova aliqua clades oreretur, non
 				mentibus solum consipere,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         consipere
                         <hi rend="italics">
                             <reg>lipsius</reg>
                             :
                         </hi>
                         concipere
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         incipere
                         <hi rend="italics">E.</hi>
                     </note>
@@ -4652,20 +4652,20 @@
                     <milestone n="4" unit="section"/>
                     <reg>quocumque</reg>
                     clamor hostium,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         clamor hostium
                         <hi rend="italics">A</hi>
                         2 (
                         <hi rend="italics">or A</hi>
                         3)
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         clamor sonitus hostium
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     mulierum puerorumque ploratus, sonitus flammae et fragor ruentium tectorum avertisset, paventes ad omnia animos oraque et oculos flectebant velut ad spectaculum a fortuna positi
                     <pb id="p.144"/>
                     occidentis patriae nec ullius rerum suarum relicti
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     praeterquam corporum vindices,
                     <milestone n="5" unit="section"/>
                     tanto ante alios miserandi magis qui unquam obsessi sunt quod interclusi a patria obsidebantur, omnia sua cernentes in hostium potestate.
@@ -4673,9 +4673,9 @@
                     <reg>nec</reg>
                     tranquillior nox diem tam
 				foede actum excepit; lux deinde noctem inquieta
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         inquieta Gronovius: inquietam
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     insecuta est, nec ullum erat tempus quod a novae semper cladis
                     <corr sic="alieuius">alicuius</corr>
@@ -4710,7 +4710,7 @@
                     nihil temere
                     <corr sic="nee">nec</corr>
                     trepide; ad omnis aditus stationibus
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     firmatis, qua signa ferri videbant ea robore virorum
 				opposito scandere hostem sinunt, quo successerit
 				magis in arduum eo pelli posse per proclive facilius
@@ -4720,14 +4720,14 @@
                     fere clivo restitere, atque inde ex loco
 				superiore, qui prope sua sponte in hostem inferebat
 				impetu facto, strage ea ac
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         strage ea ac
                         <hi rend="italics">
                             <name>Madvig</name>
                             :
                         </hi>
                         strage ac
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     ruina fudere Gallos ut nunquam postea nec pars nec universi temptaverint tale pugnae genus.
                     <milestone n="4" unit="section"/>
@@ -4759,7 +4759,7 @@
                     Ardeates consultare.
                     <reg>nec</reg>
                     secus quam divino spiritu
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     tactus cum se in mediam contionem intulisset abstinere suetus ante talibus conciliis,
                     <milestone n="44" unit="chapter"/>
                     <quote>
@@ -4794,7 +4794,7 @@
                         —nec
                         <corr sic="enirm">enim</corr>
                         exprobranda ea
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             exprobranda ea
                             <hi rend="italics">
                                 <reg>alschefski</reg>
@@ -4840,16 +4840,16 @@
                         vinoque raptim hausto repleti, ubi
                         <pb id="p.150"/>
                         nox adpetit prope rivos aquarum sine munimento,
-                        <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                        <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                         sine stationibus ac custodiis passim ferarum ritu sternuntur, nunc ab secundis rebus magis etiam solito incauti.
                         <milestone n="7" unit="section"/>
                         <reg>si</reg>
                         vobis in animo est tueri moenia
 					vestra nec pati haec omnia Galliam fieri, prima
 					vigilia capite arma frequentesque
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             frequentesque V: frequentes
-                            <foreign lang="greek">W.</foreign>
+                            <foreign xml:lang="grc">W.</foreign>
                         </note>
                         me sequimini ad caedem, non ad pugnam.
                         <reg>nisi</reg>
@@ -4892,7 +4892,7 @@
                     in agro Veienti Tuscorum facta strages
                     <pb id="p.152"/>
                     est, qui urbis iam prope quadringentesimum annum
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     vicinae, oppressae ab hoste invisitato, inaudito, adeo
 				nihil miseriti sunt ut in agrum Romanum eo tempore
 				incursiones facerent plenique praedae Veios etiam
@@ -4909,13 +4909,13 @@
                     primum miseratio sui,
 				deinde indignitas atque ex ea ira animos cepit:
 				Etruscisne
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Etruscisne
                         <hi rend="italics">
                             <reg>vorm</reg>
                             .?
                         </hi>
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         etruscin
                         <hi rend="italics">MPHDLA:</hi>
                         etruscis
@@ -4953,12 +4953,12 @@
                     <milestone n="2" unit="section"/>
                     <reg>sacrificium</reg>
                     erat statum
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     in Quirinali colle genti Fabiae.
                     <reg>ad</reg>
                     id faciendum
 				C. Fabius Dorsuo Gabino cinctu incinctus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         cinctu incinctus
                         <hi rend="italics">
                             <name>Walters</name>
@@ -4969,7 +4969,7 @@
                         cunctus
                         <hi rend="italics">F</hi>
                         )
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         cinctu
                         <hi rend="italics">V</hi>
                         Rhenanus.
@@ -5013,14 +5013,14 @@
                     omnium placuit ab Ardea
                     <pb id="p.156"/>
                     Camillum acciri, sed antea consulto senatu, qui
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     Romae esset: adeo regebat omnia pudor, discriminaque rerum prope perditis rebus servabant.
                     <milestone n="8" unit="section"/>
                     <reg>ingenti</reg>
                     periculo transeundum per hostium custodias erat.
                     <reg>ad</reg>
                     eam rem Pontius Cominus,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Cominus
                         <hi rend="italics">
                             <reg>e</reg>
@@ -5032,7 +5032,7 @@
                             , Italic Dialects, p.
                         </hi>
                         15): quominus
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         comminus
                         <hi rend="italics">MO?:</hi>
                         cominius
@@ -5040,7 +5040,7 @@
                         2(
                         <hi rend="italics">or E</hi>
                         3)
-                        <foreign lang="greek">s.</foreign>
+                        <foreign xml:lang="grc">s.</foreign>
                     </note>
                     impiger iuvenis, operam pollicitus incubans cortici secundo Tiberi ad
 				urbem defertur.
@@ -5054,7 +5054,7 @@
                     <reg>accepto</reg>
                     inde senatus consulto uti comitiis curiatis revocatus de exsilio iussu
 				populi Camillus dictator extemplo diceretur militesque haberent imperatorem quem vellent, eadem degressus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         degressus
                         <hi rend="italics">
                             <name>Sigonius</name>
@@ -5065,17 +5065,17 @@
                         digressu
                         <hi rend="italics">B</hi>
                         1)
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     nuntius Veios contendit;
                     <milestone n="11" unit="section"/>
                     missique Ardeam legati ad Camillum Veios eum perduxere, seu— quod magis credere libet non prius profectum ab
 				Ardea quam compererit
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         compererit
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         comperit
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         comperet
                         <hi rend="italics">M.</hi>
                     </note>
@@ -5092,7 +5092,7 @@
 				nuntius a Veiis pervenerat, seu sua sponte animadverso ad Carmentis saxo ascensu aequo, nocte
                     <pb id="p.158"/>
                     sublustri cum primo inermem qui temptaret viam
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     praemisissent, tradentes inde arma ubi quid iniqui
 				esset, alterni innixi sublevantesque in vicem et
 				trahentes alii alios,
@@ -5118,11 +5118,11 @@
 				prolapsi cum proximos sterneret, trepidantes alios
 				armisque omissis saxa quibus adhaerebant manibus
 				amplexos trucidat.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         trucidat
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         trucidant
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     <reg>iamque</reg>
                     et alii congregati telis missilibusque saxis proturbare hostes, ruinaque tota prolapsa acies in praeceps deferri.
@@ -5139,7 +5139,7 @@
 				primum ob virtutem laudatus donatusque non ab
                     <pb id="p.160"/>
                     tribunis solum militum sed consensu etiam militari;
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     <milestone n="8" unit="section"/>
                     cui universi selibras farris et quartarios vini ad aedes eius, quae in arce erant, contulerunt,—rem dictu parvam, ceterum inopia fecerat
                     <corr sic="earn">eam</corr>
@@ -5152,7 +5152,7 @@
 				loci qua fefellerat adscendens hostis citati; et cum
 				in omnes more militari se animadversurum Q.
 				Sulpicius
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Q. Sulpicius
                         <hi rend="italics">
                             <name>Sigonius</name>
@@ -5166,7 +5166,7 @@
                         pubblius) sulpicius (
                         <hi rend="italics">or</hi>
                         sulpitius)
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     tribunus militum pronuntiasset,
                     <milestone n="10?" unit="section"/>
@@ -5197,7 +5197,7 @@
 				iam pigritia singulos sepeliendi promisce acervatos
                     <pb id="p.162"/>
                     cumulos hominum urebant; bustorumque inde
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     Gallicorum nomine insignem locum fecere.
                     <milestone n="4" unit="section"/>
                     <reg>indutiae</reg>
@@ -5217,15 +5217,15 @@
 				instruitque quibus haud impar adoriatur hostes,
                     <milestone n="6?" unit="section"/>
                     interim Capitolinus exercitus stationibus vigiliisque
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         vigiliisque
                         <hi rend="italics">D</hi>
                         4
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         et uigiliis
                         <hi rend="italics">O:</hi>
                         uigiliis
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     fessus superatis tamen humanis omnibus malis cum famem unam natura vinci non sineret, diem de die
 				prospectans ecquod auxilium ab dictatore appareret,
@@ -5242,7 +5242,7 @@
 				paciscerentur.
                     <reg>inde</reg>
                     inter Q. Sulpicium
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Q. Sulpicium
                         <hi rend="italics">
                             <name>Sigonius</name>
@@ -5252,18 +5252,18 @@
                         xlvii. § 9): p. sulpicium (-tum
                         <hi rend="italics">L</hi>
                         )
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     tribunum militum et Brennum regulum Gallorum
                     <pb id="p.164"/>
                     conloquio transacta res est, et mille pondo auri
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     pretium populi gentibus mox imperaturi factum.
                     <reg>rei</reg>
                     foedissimae per se adiecta indignitas est:
                     <milestone n="9" unit="section"/>
                     pondera ab Gallis allata iniqua, et tribuno recusante additus ab insolente Gallo ponderi gladius, auditaque intoleranda Romanis vox, Vae victis.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Vae victis
                         <hi rend="italics">
                             <reg>duker</reg>
@@ -5274,7 +5274,7 @@
                         ut
                         <hi rend="italics">F</hi>
                         3) uictis esse
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         . . .ictis esse
                         <hi rend="italics">V.</hi>
                     </note>
@@ -5297,7 +5297,7 @@
                     <reg>suos</reg>
                     in acervum conicere
 				sarcinas et arma aptare ferroque non auro reciperare
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         reciperare
                         <hi rend="italics">
                             <name>Conway</name>
@@ -5308,7 +5308,7 @@
                         I. xii. 1): recuperare (
                         <hi rend="italics">and in</hi>
                         § 7)
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     patriam iubet, in conspectu habentes fana
 				deum et coniuges et liberos et solum patriae deforme
@@ -5324,7 +5324,7 @@
                     nova re trepidi arma
                     <pb id="p.166"/>
                     capiunt iraque magis quam consilio in Romanos
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     incurrunt.
                     <reg>iam</reg>
                     verterat fortuna, iam deorum opes
@@ -5363,42 +5363,42 @@
                     <milestone n="2" unit="section"/>
                     fana
 				omnia, quoad
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quoad
                         <hi rend="italics">
                             <reg>mommsen</reg>
                             :
                         </hi>
                         quod
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     ea hostis possedisset, restituerentur terminarentur expiarenturque, expiatioque eorum in
                     <pb id="p.168"/>
                     libris per duumviros quaereretur;
                     <milestone n="3" unit="section"/>
                     cum Caeritibus
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     hospitium publice fieret quod sacra populi Romani ac sacerdotes recepissent, beneficioque eius populi
 				non intermissus honos deorum immortalium esset;
                     <milestone n="4" unit="section"/>
                     ludi Capitolini fierent, quod Iuppiter optimus maximus suam sedem atque arcem populi Romani in re
 				trepida tutatus esset; collegiumque ad eam rem M.
 				Furius dictator constitueret ex iis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         iis
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         hiis
                         <hi rend="italics">A:</hi>
                         eis
                         <hi rend="italics">VU:</hi>
                         his
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     qui in Capitolio atque arce habitarent.
                     <milestone n="5" unit="section"/>
                     <reg>expiandae</reg>
                     etiam vocis nocturnae quae nuntia cladis ante bellum Gallicum audita neglectaque esset mentio inlata, iussumque templum in Nova via Aio Locutio
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         in Nova via Aio Locutio
                         <hi rend="italics">
                             <name>Sigonius</name>
@@ -5418,14 +5418,14 @@
                         in noua iam locutio (
                         <hi rend="italics">or similar corruptions</hi>
                         )
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     fieri.
                     <milestone n="6" unit="section"/>
                     <reg>aurum</reg>
                     quod Gallis ereptum erat quodque ex aliis templis inter trepidationem in Iovis cellam conlatum, cum
 				quo
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quo
                         <hi rend="italics">
                             <reg>mommsen</reg>
@@ -5436,7 +5436,7 @@
                         in quae (inique
                         <hi rend="italics">H</hi>
                         )
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     referri oporteret confusa memoria esset, sacrum omne iudicatum et sub Iovis sella poni iussum.
                     <milestone n="7" unit="section"/>
@@ -5450,7 +5450,7 @@
 				ad deos pertinebant quaeque per senatum agi
                     <pb id="p.170"/>
                     poterant, tum demum agitantibus tribunis plebem
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     adsiduis contionibus, ut relictis ruinis in urbem paratam Veios transmigrarent, in contionem universo senatu prosequente escendit atque ita verba fecit:
                 </p>
                 <p>
@@ -5461,7 +5461,7 @@
 				solacium aliud habuerim, quoad Ardeae vixi, quam
 				quod procul ab his certaminibus eram, et ob eadem
 				haec non si miliens senatus consulto
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         si miliens senatus consulto
                         <hi rend="italics">
                             <name>Weissenborn</name>
@@ -5476,7 +5476,7 @@
                         simillae sic (
                         <hi rend="italics">or other corruptions</hi>
                         )
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     <corr sic="pophlique">populique</corr>
                     iussu revocaretis, rediturus unquam fuerim.
@@ -5494,22 +5494,22 @@
                     <milestone n="3" unit="section"/>
                     <reg>quid</reg>
                     enim repetiimus,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         repetiimus
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         repetimus
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     quid obsessam ex hostium manibus eripuimus, si reciperatam ipsi deserimus?
                     <reg>et</reg>
                     cum victoribus Gallis capta tota urbe Capitolium tamen atque arcem dique et homines Romani tenuerint,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         tenuerint
                         <hi rend="italics">
                             <name>Conway</name>
                         </hi>
                         : tenuerint habitauerint
-                        <foreign lang="greek">W</foreign>
+                        <foreign xml:lang="grc">W</foreign>
                         (
                         <hi rend="italics">but there is a punct. in a space before and in one after</hi>
                         habitauerint
@@ -5527,7 +5527,7 @@
 				urbe simul positae traditaeque per manus religiones
                     <pb id="p.172"/>
                     nullae essent, tamen tam evidens numen hac
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     tempestate rebus adfuit Romanis ut omnem neglegentiam divini cultus exemptam hominibus putem.
                     <milestone n="5" unit="section"/>
                     <reg>intuemini</reg>
@@ -5557,15 +5557,15 @@
                     in
 				Capitolium ad deos, ad sedem Iovis optimi maximi;
 				sacra in ruina rerum nostrarum alia terra
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         terra
-                        <foreign lang="greek">s</foreign>
+                        <foreign xml:lang="grc">s</foreign>
                         <hi rend="italics">
                             <name>Gronovius</name>
                             :
                         </hi>
                         terrae
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     celavimus, alia avecta in finitimas urbes amovimus ab hostium oculis; deorum cultum deserti ab dis hominibusque tamen non intermisimus.
                     <milestone n="10" unit="section"/>
@@ -5580,15 +5580,15 @@
                     "
                     <reg>haec</reg>
                     culti neglectique numinis tanta
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     momenta
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         momenta
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         monumenta (
                         <hi rend="italics">or</hi>
                         -nim-)
-                        <foreign lang="greek">W:</foreign>
+                        <foreign xml:lang="grc">W:</foreign>
                         munimenta
                         <hi rend="italics">MBO.</hi>
                     </note>
@@ -5603,17 +5603,17 @@
                     omnes deos publicos privatosque, Quirites, deserturi estis?
                     <reg>quam</reg>
                     par vestrum factum ei est,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         factum ei est
                         <hi rend="italics">
                             <reg>drakenborch</reg>
                             :
                         </hi>
                         factum est
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     quod in obsidione nuper in egregio adulescente C. Fabio non minore hostium admiratione quam vestra conspectum est, cum inter Gallica tela degressus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         degressus
                         <hi rend="italics">
                             <name>Sigonius</name>
@@ -5621,7 +5621,7 @@
                         (
                         <hi rend="italics">cf. chap.</hi>
                         xlvi § 10): digressus
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     ex arce sollemne Fabiae gentis in colle Quirinali obiit?
                     <milestone n="4" unit="section"/>
@@ -5649,7 +5649,7 @@
                     tuque, Quirine pater?
                     <reg>haec</reg>
                     omnia in profano deseri
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     placet sacra aequalia urbi, quaedam vetustiora origine urbis?
                 </p>
                 <p>
@@ -5659,7 +5659,7 @@
                     videte quid inter nos ac maiores intersit.
                     <reg>illi</reg>
                     sacra quaedam in monte Albano Laviniique
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Laviniique
                         <hi rend="italics">
                             <name>Gronovius</name>
@@ -5675,7 +5675,7 @@
                             ;
                         </hi>
                         lauinoque
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     nobis
 				facienda tradiderunt.
@@ -5700,7 +5700,7 @@
                     <milestone n="11" unit="section"/>
                     <name>Aio</name>
                     Locutio
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Aio Locutio
                         <hi rend="italics">
                             <reg>gebhard</reg>
@@ -5714,7 +5714,7 @@
                         <hi rend="italics">A:</hi>
                         allocutio (
                         <hi rend="italics">and similar corruptions)</hi>
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     templum propter caelestem vocem exauditam in Nova via iussimus fieri; Capitolinos
 				ludos sollemnibus aliis addidimus collegiumque ad
@@ -5731,7 +5731,7 @@
                     quid tandem de sacerdotibus?
                     <reg>nonne</reg>
                     in mentem
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     venit quantum piaculi committatur?
                     <reg>vestalibus</reg>
                     nempe una illa sedes est, ex qua eas nihil unquam praeterquam urbs capta movit; flamini Diali noctem
@@ -5763,7 +5763,7 @@
                     "
                     <reg>at</reg>
                     enim apparet quidem pollui omnia
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quidem pollui omnia
                         <hi rend="italics">
                             <name>Madvig</name>
@@ -5787,7 +5787,7 @@
 				Quirites, puto, qui meministis ante Gallorum adventum salvis tectis publicis privatisque, stante incolumi
                     <pb id="p.180"/>
                     urbe, hanc eandem rem actam esse ut Veios
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     transmigraremus.
                     <milestone n="3" unit="section"/>
                     <reg>et</reg>
@@ -5815,14 +5815,14 @@
 				loco conscisceremus quem tueri non possemus.
                     <reg>et</reg>
                     Galli evertere potuerunt Romam, Romani
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Romani
                         <hi rend="italics">
                             <name>Madvig</name>
                             :
                         </hi>
                         quam Romani
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     restituere non videbuntur potuisse?
                     <milestone n="6" unit="section"/>
@@ -5837,7 +5837,7 @@
 				illos Romanos, vos Veientes esse?
                     <name>An</name>
                     non
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         An non
                         <hi rend="italics">
                             <name>Conway</name>
@@ -5846,7 +5846,7 @@
                         (
                         <hi rend="italics">note):</hi>
                         an
-                        <foreign lang="greek">s:</foreign>
+                        <foreign xml:lang="grc">s:</foreign>
                         Non
                         <hi rend="italics">D</hi>
                         2: non
@@ -5864,21 +5864,21 @@
                     <milestone n="8" unit="section"/>
                     <reg>si</reg>
                     tota urbe nullum melius
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     ampliusve tectum fieri possit quam casa illa conditoris est nostri, non in casis ritu pastorum agrestiumque habitare est satius inter sacra penatesque nostros quam exsulatum publice ire?
                     <milestone n="9" unit="section"/>
                     <reg>maiores</reg>
                     nostri, convenae pastoresque, cum in his locis nihil praeter
 				silvas paludesque esset, novam urbem tam brevi
 				aedificarunt: nos Capitolio atque arce
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         atque arce
                         <hi rend="italics">
                             <reg>wesenberg</reg>
                             :
                         </hi>
                         arce
-                        <foreign lang="greek">W.</foreign>
+                        <foreign xml:lang="grc">W.</foreign>
                     </note>
                     incolumi, stantibus templis deorum aedificare incensa piget?
                     <reg>et</reg>
@@ -5903,7 +5903,7 @@
                         quidem—fatebor vobis,
                         <milestone n="3?" unit="section"/>
                         etsi minus iniuriae vestrae
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             iniuriae vestrae
                             <hi rend="italics">
                                 <name>Conway</name>
@@ -5912,7 +5912,7 @@
                             iniuriae vestrae quam meae calamitatis (quam calamitatis meae
                             <hi rend="italics">HDLA</hi>
                             )
-                            <foreign lang="greek">W.</foreign>
+                            <foreign xml:lang="grc">W.</foreign>
                         </note>
                         meminisse iuvat—cum abessem, quotienscumque
 				patria in mentem veniret, haec omnia occurrebant,
@@ -5925,9 +5925,9 @@
                         sine causa di
                         <pb id="p.184"/>
                         hominesque hunc urbi condendae locum elegerunt,
-                        <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                        <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                         saluberrimos colles, flumen opportunum, quo ex mediterraneis locis fruges devehantur, quo maritimi commeatus accipiantur, mare vicinum ad commoditates nec expositum nimia propinquitate ad pericula classium externarum, regionem Italiae mediam,
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             regionem Italiae mediam
                             <hi rend="italics">
                                 <name>Madvig</name>
@@ -5940,7 +5940,7 @@
                             1
                             <hi rend="italics"> or E</hi>
                             2) Italiae medium
-                            <foreign lang="greek">W.</foreign>
+                            <foreign xml:lang="grc">W.</foreign>
                         </note>
                         ad incrementum urbis natum unice locum.
                         <milestone n="5" unit="section"/>
@@ -5958,7 +5958,7 @@
                         <reg>quod</reg>
                         cum ita sit, quae, malum,
 				ratio est haec expertis alia
-                        <note anchored="yes" place="unspecified">
+                        <note anchored="true" place="unspecified">
                             haec expertis alia
                             <hi rend="italics">
                                 <name>Walters</name>
@@ -5988,7 +5988,7 @@
 				ea quae ad religiones pertinebat maxime dicitur; sed
                     <pb id="p.186"/>
                     rem dubiam decrevit vox opportune emissa, quod
-                    <note anchored="yes" place="unspecified" type="marg">A.U.C. 364</note>
+                    <note anchored="true" place="unspecified" type="marg">A.U.C. 364</note>
                     cum senatus post paulo de his rebus in curia Hostilia
 				haberetur cohortesque ex praesidiis revertentes forte
 				agmine forum transirent, centurio in comitio exclamavit:
@@ -6020,7 +6020,7 @@
 				ductae, nunc privata passim subeant tecta, formaque
 				urbis sit occupatae magis quam divisae similis.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

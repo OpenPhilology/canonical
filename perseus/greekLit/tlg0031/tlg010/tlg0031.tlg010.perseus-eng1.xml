@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="English Bible" type="work">World English Bible - Ephesians</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -38,7 +38,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -46,10 +46,10 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>14-Oct-99</date>
                 <respStmt>
@@ -76,13 +76,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="Ephesians" type="book">
+            <div part="N" sample="complete" org="uniform" n="Ephesians" type="book">
                 <head>Paul's Letter to the Ephesians</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Paul, an apostle of Christ Jesus through the will of God,
@@ -165,8 +165,8 @@ be head over all things for the assembly,
                         which is his body, the
 fullness of him who fills all in all.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         You were made alive when you were dead in transgressions and
@@ -245,8 +245,8 @@ in the Lord;
                         in whom you also are built together for a
 habitation of God in the Spirit.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         For this cause I, Paul, am the prisoner of Christ Jesus on
@@ -319,8 +319,8 @@ works in us,
                         to him be the glory in the assembly and in Christ
 Jesus to all generations forever and ever. Amen.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         I therefore, the prisoner in the Lord, beg you to walk
@@ -433,8 +433,8 @@ anger, outcry, and slander, be put away from you, with all malice.
                         And be kind to one another, tenderhearted, forgiving each other,
 just as God also in Christ forgave you.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Be therefore imitators of God, as beloved children.
@@ -541,8 +541,8 @@ concerning Christ and of the assembly.
 must also love his own wife even as himself; and let the wife see that
 she respects her husband.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <milestone unit="verse" n="1"/>
                     <p>
                         Children, obey your parents in the Lord, for this is right.
@@ -626,8 +626,8 @@ Father and the Lord Jesus Christ.
                         Grace be with all those who
 love our Lord Jesus Christ with incorruptible love. Amen.
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

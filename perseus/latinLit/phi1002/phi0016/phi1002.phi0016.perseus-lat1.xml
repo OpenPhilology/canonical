@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Inst." type="work">Institutio Oratoria, books 4-6 - 6</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -39,23 +39,23 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter"/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter"/>
+                refState unit="section"/>
             </refsDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="page"/>
+            <refsDecl
+                refState unit="page"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -64,12 +64,12 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
             <pb id="p.372"/>
-            <div1 part="N" sample="complete" org="uniform" n="6" type="book">
+            <div part="N" sample="complete" org="uniform" n="6" type="book">
                 <head>Liber VI</head>
                 <p>
                     <milestone n="pr" unit="chapter"/>
@@ -212,7 +212,7 @@ te avunculo praetori generum destinatum, te
                     avitae eloquentiae candidatum,
                     <pb id="p.380"/>
                     superstes parens tantum ad poenas, amisi
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         omnium spes,
                         <hi rend="italics">brarkcted by Spalding.</hi>
                         avitae,
@@ -279,7 +279,7 @@ conclusionem alii vocant.
 posita aut ira rebus aut ira adfectibus.
                     <reg>rerum</reg>
                     repetitio et congregatio, quae Graece dicitur
-                    <foreign lang="greek">a)nakefalai/wsis</foreign>
+                    <foreign xml:lang="grc">a)nakefalai/wsis</foreign>
                     a quibusdam Latinorum enumeratio, et
 memoriam iudicis reficit et totam simul causam ponit
 ante oculos et, etiamsi per singula minus moverat,
@@ -299,7 +299,7 @@ repetitione velut memoriae iudicum diffidentis.
                     <milestone n="3" unit="section"/>
                     <reg>sunt</reg>
                     autem innumerabiles species,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         species,
                         <hi rend="italics">added by Halm.</hi>
                     </note>
@@ -367,7 +367,7 @@ possint.
                     illud constitit inter omnes, etiam
 ira aliis partibus actionis, si multiplex causa sit et
 pluribus argumentis defensa, utiliter
-                    <foreign lang="greek">a)nakefalai/wsin</foreign>
+                    <foreign xml:lang="grc">a)nakefalai/wsin</foreign>
                     fieri solere, sicut nemo dubitaverit multas esse causas, ira quibus nullo loco sit necessaria, si breves et
 simplices fuerint.
                     <reg>haec</reg>
@@ -658,7 +658,7 @@ occidi videretur.
                     <name>Sed</name>
                     non ideo probaverim, quod factum et lego et ipse aliquando vidi, depictam ira tabula
 sipariove
-                    <note anchored="yes" place="unspecified">sipariove, F. C. Cotlradus: supra Iovem, MSS.</note>
+                    <note anchored="true" place="unspecified">sipariove, F. C. Cotlradus: supra Iovem, MSS.</note>
                     imaginem rei, cuius atrocitate iudex erat
 commovendus.
                     <reg>quae</reg>
@@ -723,7 +723,7 @@ interim frigus, diligenterque sunt haec actori providenda.
                     <reg>equidem</reg>
                     repugnantes eos patrono et nihil
 vultu commotos et intempestive renidentes
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         renidentes,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -736,7 +736,7 @@ vultu commotos et intempestive renidentes
 aliquo vel ipso vultu risum etiam moventes saepe vidi;
 praecipue vero cum aliqua velut scenice fiunt, alio
 cadunt.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         alio,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -764,7 +764,7 @@ officium erat ut traderent eam, ignari, qui esset
                     epilogus, quotiens respexisset patronus, offerebant palam,
 et prolata novissime deformitate ipsa (nam senis
 cadaveri cera
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         cadaveri cera,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -913,7 +913,7 @@ adiecit:
                     videntur ira prooemio atque ira epilogo sedem habere,
 ira quibus sane sint frequentissimi, tamen aliae quoque partes recipiunt, sed breviores, ut cum ex iis
 plurima sint reservanda.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         sint reservanda,
                         <hi rend="italics">
                             <reg>early</reg>
@@ -958,8 +958,8 @@ plurimis suas lacrimas dedit.
                     <milestone n="55" unit="section"/>
                     <reg>sunt</reg>
                     , qui hos
-                    <foreign lang="greek">merikou\s</foreign>
-                    <foreign lang="greek">e)pilo/gous</foreign>
+                    <foreign xml:lang="grc">merikou\s</foreign>
+                    <foreign xml:lang="grc">e)pilo/gous</foreign>
                     vocent, quo partitam perorationem
                     <pb id="p.416"/>
                     significant.
@@ -1008,7 +1008,7 @@ quibus causam diserti docerentur.
                     <reg>qui</reg>
                     vero iudicem
 rapere et, in quem vellet habitum animi, posset perducere, quo dicente
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         dicente,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -1022,7 +1022,7 @@ rarus fuit.
                     <milestone n="4" unit="section"/>
                     <reg>atqui</reg>
                     hoc est quod dominetur in iudiciis, haec eloquentia regnat.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         eloquentia regnat,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -1069,14 +1069,14 @@ animus est in adfectibus.
                     autem,
                     <milestone n="8" unit="section"/>
                     sicut antiquitus traditum accepimus, duae sunt species: alteram Graeci
-                    <foreign lang="greek">pa/qos</foreign>
+                    <foreign xml:lang="grc">pa/qos</foreign>
                     vocant,
 quod nos vertentes recte ac proprie adfectum dicimus, alteram
-                    <foreign lang="greek">*)=hqos</foreign>
+                    <foreign xml:lang="grc">*)=hqos</foreign>
                     cuius nomine, ut ego quidem
 sentio, caret sermo Romanus; mores appellantur,
 atque inde pars quoque illa philosophiae
-                    <foreign lang="greek">h)qikh/</foreign>
+                    <foreign xml:lang="grc">h)qikh/</foreign>
                     moralis
 est dicta.
                     <milestone n="9" unit="section"/>
@@ -1091,11 +1091,11 @@ quam nomina interpretari maluerunt.
                     <reg>adfectus</reg>
                     <pb id="p.422"/>
                     igitur
-                    <foreign lang="greek">pa/qos</foreign>
+                    <foreign xml:lang="grc">pa/qos</foreign>
                     concitatos,
-                    <foreign lang="greek">*)=hqos</foreign>
-                    <note anchored="yes" place="unspecified">
-                        <foreign lang="greek">pa/qos. ... *)=hqos</foreign>
+                    <foreign xml:lang="grc">*)=hqos</foreign>
+                    <note anchored="true" place="unspecified">
+                        <foreign xml:lang="grc">pa/qos. ... *)=hqos</foreign>
                         <hi rend="italics">excerpts of Cassiodorus with slight alteration of order:</hi>
                         hos. . illos,
                         <hi rend="italics">MSS.</hi>
@@ -1106,10 +1106,10 @@ lenes; denique hos imperare, illos persuadere; hos
 ad perturbationem, illos ad benivolentiam praevalere.
                     <reg>adiiciunt</reg>
                     quidam?
-                    <foreign lang="greek">*)=hqos</foreign>
+                    <foreign xml:lang="grc">*)=hqos</foreign>
                     perpetuum,
-                    <note anchored="yes" place="unspecified">
-                        <foreign lang="greek">*)=hqos</foreign>
+                    <note anchored="true" place="unspecified">
+                        <foreign xml:lang="grc">*)=hqos</foreign>
                         perpetuum,
                         <hi rend="italics">excerpts of Cassiodorus:</hi>
                         hoc pertuum,
@@ -1118,7 +1118,7 @@ ad perturbationem, illos ad benivolentiam praevalere.
                         <hi rend="italics">G;</hi>
                         peritorum, codd. dett.
                     </note>
-                    <foreign lang="greek">pa/qos</foreign>
+                    <foreign xml:lang="grc">pa/qos</foreign>
                     temporale
 esse.
                     <reg>quod</reg>
@@ -1133,7 +1133,7 @@ omnibus.
                     <milestone n="11" unit="section"/>
                     <reg>nam</reg>
                     cum ex illo ethico
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ethico,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -1145,7 +1145,7 @@ omnibus.
                     loco nihil non
 ab oratore tractetur, quidquid de honestis et utilibus,
 denique faciendis et non faciendis dicitur,
-                    <foreign lang="greek">*)=hqos</foreign>
+                    <foreign xml:lang="grc">*)=hqos</foreign>
                     vocari
 potest.
                     <reg>quidam</reg>
@@ -1154,25 +1154,25 @@ ista in hac parte; sed non concedo ut sola sint.
                     <reg>quin</reg>
                     illud adhuc adiicio,
                     <milestone n="12" unit="section"/>
-                    <foreign lang="greek">pa/qos</foreign>
+                    <foreign xml:lang="grc">pa/qos</foreign>
                     atque
-                    <foreign lang="greek">*)=hqos</foreign>
+                    <foreign xml:lang="grc">*)=hqos</foreign>
                     esse interim ex eadem natura, ita ut illud maius sit, hoc
 minus, ut amor
-                    <foreign lang="greek">pa/qos</foreign>
+                    <foreign xml:lang="grc">pa/qos</foreign>
                     caritas
-                    <foreign lang="greek">*)=hqos</foreign>
+                    <foreign xml:lang="grc">*)=hqos</foreign>
                     interdum diversa
 inter se, sicut in epilogis, nam quae
-                    <foreign lang="greek">pa/qos</foreign>
+                    <foreign xml:lang="grc">pa/qos</foreign>
                     concitavit,
-                    <foreign lang="greek">*)=hqos</foreign>
+                    <foreign xml:lang="grc">*)=hqos</foreign>
                     solet mitigare.
                     <reg>proprie</reg>
                     tamen mihi huius nominis exprimenda natura est, quatenus appellatione
 ipsa non satis significari videtur.
                     <milestone n="13" unit="section"/>
-                    <foreign lang="greek">*)=hqos</foreign>
+                    <foreign xml:lang="grc">*)=hqos</foreign>
                     quod intelligimus quodque a dicentibus desideramus, id erit,
 quod ante omnia bonitate commendabitur, non solum
                     <pb id="p.424"/>
@@ -1204,7 +1204,7 @@ locis tantum.
                     <reg>verum</reg>
                     aliquanto magis propria fuit
 virtus simulationis, satisfaciendi rogandi
-                    <foreign lang="greek">ei)rwnei/a</foreign>
+                    <foreign xml:lang="grc">ei)rwnei/a</foreign>
                     quae
 diversum ei quod dicit intellectum petit.
                     <milestone n="16" unit="section"/>
@@ -1225,22 +1225,22 @@ maior est et illo minor.
                     <name>Non</name>
                     parum significanter
 etiam illa in scholis
-                    <foreign lang="greek">h)/qh</foreign>
+                    <foreign xml:lang="grc">h)/qh</foreign>
                     dixerimus, quibus plerumque
 rusticos, superstitiosos, avaros, timidos secundum
 condicionem propositionum effingimus.
                     <reg>nam</reg>
                     si
-                    <foreign lang="greek">h)/qh</foreign>
+                    <foreign xml:lang="grc">h)/qh</foreign>
                     mores sunt cum hos imitamur, ex his ducimus
 orationem.
                 </p>
                 <p>
                     <milestone n="18" unit="section"/>
                     <reg>denique</reg>
-                    <foreign lang="greek">*)=hqos</foreign>
-                    <note anchored="yes" place="unspecified">
-                        <foreign lang="greek">*)=hqos,</foreign>
+                    <foreign xml:lang="grc">*)=hqos</foreign>
+                    <note anchored="true" place="unspecified">
+                        <foreign xml:lang="grc">*)=hqos,</foreign>
                         Meistr: hoc
                         <hi rend="italics">MSS.</hi>
                     </note>
@@ -1256,7 +1256,7 @@ causis, quibus ex sua bonitate faciet fidem.
                     <reg>nam</reg>
                     qui, dum dicit, malus videtur, utique male dicit; non
 enim videtur iusta dicere, alioqui
-                    <foreign lang="greek">*)=hqos</foreign>
+                    <foreign xml:lang="grc">*)=hqos</foreign>
                     videretur.
                     <milestone n="19" unit="section"/>
                     <name>Quare</name>
@@ -1270,7 +1270,7 @@ modus maxime convenit.
                     <milestone n="20" unit="section"/>
                     <reg>diversum</reg>
                     est huic, quod
-                    <foreign lang="greek">pa/qos</foreign>
+                    <foreign xml:lang="grc">pa/qos</foreign>
                     dicitur, quodque nos
 adfectum proprie vocamus; et, ut proxime utriusque
 differentiam signem, illud comoediae, hoc tragoediae
@@ -1327,7 +1327,7 @@ nostram, ut etiam quae multo minora sunt intoleranda dicamus:
                     <name>Sed</name>
                     haec diligentius, cum de amplificatione
 dicemus.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         de amplificatione dicemus,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -1353,7 +1353,7 @@ aut maiorem quam est, faciat adfectum.
                     <reg>haec</reg>
                     est
 illa, quae
-                    <foreign lang="greek">dei/nwsis</foreign>
+                    <foreign xml:lang="grc">dei/nwsis</foreign>
                     vocatur, rebus indignis, asperis,
 invidiosis addens vim oratio; qua virtute praeter
 alias plurimum Demosthenes valuit.
@@ -1409,7 +1409,7 @@ enim sunt motus in nostra potestate.
                     <reg>temptabo</reg>
                     etiam de hoc dicere.
                     <reg>quas</reg>
-                    <foreign lang="greek">fantasi/as</foreign>
+                    <foreign xml:lang="grc">fantasi/as</foreign>
                     Graeci vocant,
 nos sane visiones appellemus, per quas imagines rerum
 absentium ita repraesentantur animo, ut eas cernere
@@ -1421,12 +1421,12 @@ absentium ita repraesentantur animo, ut eas cernere
 bene conceperit, is erit in adfectibus potentissimus.
                     <reg>hunc</reg>
                     quidam dicunt
-                    <foreign lang="greek">eu)fantasi/wton,</foreign>
+                    <foreign xml:lang="grc">eu)fantasi/wton,</foreign>
                     qui sibi res, voces,
 actus secundum verum optime finget; quod quidem
 nobis volentibus facile continget.
                     <reg>nisi</reg>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         nisi,
                         <hi rend="italics">Törinebladh:</hi>
                         nihil,
@@ -1452,7 +1452,7 @@ exspirantis hiatus insidet?
                 <p>
                     <milestone n="32" unit="section"/>
                     <reg>insequitur</reg>
-                    <foreign lang="greek">e)na/rgeia,</foreign>
+                    <foreign xml:lang="grc">e)na/rgeia,</foreign>
                     quae a Cicerone illustratio et
 evidentia nominatur, quae non tam dicere videtur
 quam ostendere; et adfectus non aliter, quam si
@@ -1494,7 +1494,7 @@ sed adsumamus parumper illum dolorem.
                     <reg>ita</reg>
                     dicemus,
 quae in nostro simili casu dicturi fuissemus.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         fuissenus,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -1656,7 +1656,7 @@ urbana esse videantur.
                     <reg>occasio</reg>
                     vero et in rebus est
 cuius est
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         cuius est,
                         <hi rend="italics">added by Halm following Spalding.</hi>
                     </note>
@@ -1728,7 +1728,7 @@ latente iudicio velut palato, excitatque et a taedio
 defendit orationem.
                     <reg>sales</reg>
                     enim,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         sales enim,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -1765,7 +1765,7 @@ pedes faceti ac delicatius ingredienti molles.
                     locum vero accipimus, quod est contrarium serio.
                     <milestone n="21" unit="section"/>
                     sed hoc nimis angustum,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         sed hoc nimis angustum,
                         <hi rend="italics">added by Halm.</hi>
                     </note>
@@ -1784,7 +1784,7 @@ fuisse dicunt, dicacem negant.
                     <reg>proprium</reg>
                     autem materiae, de qua nunc loquimur,
 est ridiculum, ideoque haec tota disputatio a Graecis
-                    <foreign lang="greek">peri\ geloi/ou</foreign>
+                    <foreign xml:lang="grc">peri\ geloi/ou</foreign>
                     inscribitur.
                     <reg>eius</reg>
                     prima divisio traditur
@@ -1826,7 +1826,7 @@ quod neque oratori neque ulli viro gravi conveniat.
 in quibus est quidem summa gratia, sed maior, cum
 captare risum non videntur; nihil enim est iis, quae
 sicut salsa
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         sicut,
                         <hi rend="italics">Gesner:</hi>
                         dūt, G: dicenti,
@@ -1861,7 +1861,7 @@ illud potius amicum quam dictum perdendi.
                     <name>In</name>
                     hac quidem pugna forensi malim mihi lenibus uti
 licere; quanquam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quanquam,
                         <hi rend="italics">
                             <name>Regius</name>
@@ -1941,7 +1941,7 @@ sicut supra dixeram, inhumanus est iocus.
                     <milestone n="34" unit="section"/>
                     <reg>illud</reg>
                     non ad oratoris
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         oratoris,
                         <hi rend="italics">Harster:</hi>
                         orat fori*,
@@ -2092,7 +2092,7 @@ repercutiendo.
                     <milestone n="46" unit="section"/>
                     <name>At</name>
                     quaedam propria sunt respondentium; illa etiam
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         etiam atque etiam,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -2113,7 +2113,7 @@ repercutiendo.
                     atque etiam cogitata adferri
 solent, haec plerumque in altercatione aut in rogandis
 testibus reperiuntur.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         reperiuntur,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -2128,7 +2128,7 @@ testibus reperiuntur.
 ex quibus dicta ridicula ducantur, repetendum est
 mihi non omnes eos oratoribus convenire; in primis
 ex amphibolia neque illa obscena,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         obscena,
                         <hi rend="italics">Teuffel</hi>
                         <hi rend="italics">:</hi>
@@ -2156,7 +2156,7 @@ raro belle respondeant, nisi cum prorsus rebus ipsis
                     adiuvantur.
                     <name>Quare</name>
                     <del status="unremarkable">non hoc modo</del>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         non hoc. modo,
                         <hi rend="italics">bracketd by Halm.</hi>
                     </note>
@@ -2301,7 +2301,7 @@ primis, asinus allus vocabatur;
                     <reg>ducitur</reg>
                     et ab
 inanimis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Messinm
                         <gap/>
                         inanimis,
@@ -2327,7 +2327,7 @@ militi libellum timide porrigenti,
                     <milestone n="60" unit="section"/>
                     <reg>sunt</reg>
                     quaedam vi
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         vi
                         <hi rend="italics">is the reading of AG, but is unsatisfactory as introducing nothing new.</hi>
                         veri (
@@ -2352,7 +2352,7 @@ accusator in invidiam vocaret,
                     </hi>
                     inquit,
                     <hi rend="italics">et panem item</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         panem item,
                         <hi rend="italics">Haupt:</hi>
                         parentem,
@@ -2435,7 +2435,7 @@ cenaculum eius perplueret.
                     <reg>tertium</reg>
                     adhuc illud:
 (nisi quod,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         nisi quod,
                         <hi rend="italics">
                             <name>Becher</name>
@@ -2458,7 +2458,7 @@ eodem loco est sed nulli priorum simile, quod dixit
 M. Vestinus, cum ei nuntiatum esset
                     <gap/>
                     necatum esse,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         necatum esse,
                         <hi rend="italics">supplied by Spalding.</hi>
                     </note>
@@ -2498,7 +2498,7 @@ in tropos quoque omnes cadit.
                     <name>An</name>
                     non plurima per
 hyperbolen
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         per hyperbolen,
                         <hi rend="italics">added by Regius.</hi>
                     </note>
@@ -2522,7 +2522,7 @@ querebatur,
                     inquit,
                     <hi rend="italics">aliquid et rei publicae causa.</hi>
                     <reg>metaphora</reg>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         metaphors,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -2551,8 +2551,8 @@ dicebat.
                     <milestone n="70" unit="section"/>
                     <reg>figuras</reg>
                     quoque mentis, quae
-                    <foreign lang="greek">sxh/mata</foreign>
-                    <foreign lang="greek">dianoi/as</foreign>
+                    <foreign xml:lang="grc">sxh/mata</foreign>
+                    <foreign xml:lang="grc">dianoi/as</foreign>
                     dicuntur, res eadem recipit omnes, in quas
 nonnulli diviserunt species dictorum.
                     <reg>nam</reg>
@@ -2631,7 +2631,7 @@ comedisset,
                     <reg>elevandi</reg>
                     ratio est
 duplex, ut aut nimiam quis
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         nimiam quis,
                         <hi rend="italics">Deffner:</hi>
                         veniam quis aut,
@@ -2800,7 +2800,7 @@ quamvis frequens sit, transeo.
                     <reg>illud</reg>
                     vero, etiamsi
 ridiculum est, indignum tamen est homine liberali,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         liberali,
                         <hi rend="italics">early edd.:</hi>
                         tolerabili,
@@ -2816,7 +2816,7 @@ loquenti,
                     </hi>
                     inquit,
                     <hi rend="italics">tibi ducam et formulam scribam,</hi>
-                    <note anchored="yes" place="unspecified">scribani, Badius: screws ibes, G.</note>
+                    <note anchored="true" place="unspecified">scribani, Badius: screws ibes, G.</note>
                     <hi rend="italics">quod caput durum habeas.</hi>
                     <reg>hic</reg>
                     enim dubium
@@ -2868,7 +2868,7 @@ eius interrogasset,
                     inquit.
                     <reg>plurimus</reg>
                     autem circa simulationem et dissimulationem
-                    <note anchored="yes" place="unspecified">et dissimulationem, added by Reyiats.</note>
+                    <note anchored="true" place="unspecified">et dissimulationem, added by Reyiats.</note>
                     risus est, quae sunt
 vicina et prope eadem; sed simulatio est certam
 opinionem animi sui imitantis, dissimulatio aliena se
@@ -2897,7 +2897,7 @@ et instaret identidem accusator ei,
                     </hi>
                     <pb id="p.486"/>
                     <hi rend="italics">numquid</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Tulli numquid,
                         <hi rend="italics">
                             cod.
@@ -3015,7 +3015,7 @@ simulatio contra simulantem, qualis illa Domitii Afri
 fuit: vetus habebat testamentum, et unus ex amicis
 recentioribus, sperans aliquid ex mutatione tabularum, falsam fabulam intulerat, consulens eum, an
 primipilari seni iam testato rursus
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         primipilari
                         <gap/>
                         rursus,
@@ -3059,7 +3059,7 @@ litigatori conspectum eius in foro vitanti per nomenclatorem missum ad eum,
 aqua vivo,
                         </hi>
                     </quote>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         responderet
                         <hi rend="italics">
                             MSS. corr.
@@ -3082,7 +3082,7 @@ aqua vivo,
                         </hi>
                     </quote>
                     <reg>quae</reg>
-                    <foreign lang="greek">u(po\ to\ h)=qos</foreign>
+                    <foreign xml:lang="grc">u(po\ to\ h)=qos</foreign>
                     vocant.
                     <milestone n="94" unit="section"/>
                     <reg>est</reg>
@@ -3142,7 +3142,7 @@ vocant sapientiam,
                     <hi rend="italics">felicitas est;</hi>
                     seu ficti notis
 versibus similes, quae
-                    <foreign lang="greek">parw|di/a</foreign>
+                    <foreign xml:lang="grc">parw|di/a</foreign>
                     dicitur.
                     <milestone n="98" unit="section"/>
                     <reg>et</reg>
@@ -3179,7 +3179,7 @@ aeneam magnae pecuniae.
                     <milestone n="99" unit="section"/>
                     <reg>subabsurda</reg>
                     illa constant stulti simulatione; quae,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         stulti simulatione; quae,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -3221,7 +3221,7 @@ ingentem in femine ostendisset,
                     <reg>contumeliis</reg>
                     quoque uti belle datur: ut Hispo
 obiicienti atrociora
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         contumeliis
                         <hi rend="italics">
                             <name>Badius</name>
@@ -3243,7 +3243,7 @@ obiicienti atrociora
                         ex te
 metiris,
                     </hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         me ex te metiris,
                         <hi rend="italics">Burmann:</hi>
                         mentis, mentiris,
@@ -3272,7 +3272,7 @@ qui est maxime varius.
                     haec, ne omisisse
 viderer, attigi; illa autem, quae de usu ipso et modo
 iocandi complexus sum, audeo confirmare
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         audeo confirmare,
                         <hi rend="italics">Radermacher:</hi>
                         adeo infirmare, infirmarem, infirma sed,
@@ -3316,7 +3316,7 @@ et personis, quod in utrisque oporteat dicere perfectae eloquentiae est.
                     <reg>cur</reg>
                     autem brevem esse
 eam voluerit, nescio, cum idem atque
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         cum idem atque,
                         <hi rend="italics">
                             <name>Halm</name>
@@ -3366,7 +3366,7 @@ indicio illa est urbanitas, in qua nihil absonum, nihil
 agreste, nihil inconditum, nihil peregrinum neque
 sensu neque verbis neque ore gestuve possit deprehendi; ut non tam sit in singulis dictis quam in toto
 colore dicendi, qualis apud Graecos
-                    <foreign lang="greek">a)ttikismo\s</foreign>
+                    <foreign xml:lang="grc">a)ttikismo\s</foreign>
                     ille
 reddens Athenarum proprium saporem.
                     <milestone n="108" unit="section"/>
@@ -3391,7 +3391,7 @@ scripsit de Pompeio et Caesare,
 quem sequar, non habeo;
                     </hi>
                     et medii, quod
-                    <foreign lang="greek">a)pofqegmatiko/n</foreign>
+                    <foreign xml:lang="grc">a)pofqegmatiko/n</foreign>
                     vocat et est ita, cum dixerit,
                     <hi rend="italics">
                         <reg>nec</reg>
@@ -3531,7 +3531,7 @@ maxime necessarium est, omnium personarum, instrumentorum, temporum, locorum hab
                     <reg>neque</reg>
                     tantum cum
 his ipsis monitoribus clam res erit
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         tantum
                         <gap/>
                         clam res erit,
@@ -3546,7 +3546,7 @@ his ipsis monitoribus clam res erit
                     </note>
                     ; quidam faciunt
 aperte ut quoque rixentur.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ut quoque rixentur,
                         <hi rend="italics">Madvig:</hi>
                         quod (
@@ -3818,7 +3818,7 @@ sine prudentia facere doctrinam.
 cum elocutione, tractabitur cum praecipere de apte
 dicendo coeperimus.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

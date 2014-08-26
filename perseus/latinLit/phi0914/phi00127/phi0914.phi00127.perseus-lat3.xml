@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>Ab urbe condita, books 26-30 - 27</title>
@@ -15,7 +15,7 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:NEH">The National Endowment for the Humanities</funder>
-            </titleStmt>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
             <extent/>
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
@@ -42,19 +42,19 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book" delim="."/>
-                <state unit="chapter" delim="."/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book" delim="."/>
+                refState unit="chapter" delim="."/>
+                refState unit="section"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin </language>
-                <language id="en">English </language>
+                language ident="la">Latin </language>
+                language ident="en">English </language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>4/3/2006</date>
                 <respStmt>
@@ -63,11 +63,11 @@
                 </respStmt>
                 <item>created XML file</item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="27" type="book">
+            <div part="N" sample="complete" org="uniform" n="27" type="book">
                 <milestone n="1" unit="chapter"/>
                 <p>
                     <milestone n="1" unit="section"/>
@@ -3174,7 +3174,7 @@
                     <pb n="p milestone " id="p.28001"/>
                     castrisque inde motis ut omnia auxilia quae diffusa latius tueri non poterat in extremum Italiae angulum Bruttios contraheret, et Metapontinos ciuitatem uniuersam excitos sedibus suis et Lucanorum qui suae dicionis erant in Bruttium agrum traduxit.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

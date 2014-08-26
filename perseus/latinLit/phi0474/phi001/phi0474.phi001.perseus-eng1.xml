@@ -17,7 +17,7 @@
 <name>David Smith</name>
 </respStmt>
 <funder n="org:NEH">National Endowment For The Humanities (NEH)</funder> 
-      </titleStmt>  <sourceDesc>
+      </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>  <sourceDesc>
         <biblStruct>
           <monogr>
             <author>M. Tullius Cicero</author>
@@ -35,33 +35,33 @@
     </fileDesc>
 
     <encodingDesc>
-      <refsDecl doctype="TEI.2">
+      <refsDecl
         <state delim=" " unit="text"/>
-        <state unit="section"/>
+        refState unit="section"/>
       </refsDecl>
-      <refsDecl doctype="TEI.2">
+      <refsDecl
         <state delim=" " unit="text"/>
         <state delim="." unit="chapter"/>
-        <state unit="section"/>
+        refState unit="section"/>
       </refsDecl>
       <refsDecl n="text=Ver." doctype="TEI.2">
         <state delim=" " unit="text"/>
         <state delim=" " unit="actio"/>
         <state delim="." unit="book"/>
-        <state unit="section"/>
+        refState unit="section"/>
       </refsDecl>
     </encodingDesc>
 
     <profileDesc>
       <langUsage>
-        <language id="en">English </language>
-        <language id="fr">French </language>
-        <language id="la">Latin </language>
-        <language id="greek">Greek </language>
+        language ident="en">English </language>
+        language ident="fr">French </language>
+        language ident="la">Latin </language>
+        language ident="greek">Greek </language>
       </langUsage>
     </profileDesc>
 
-    <revisionDesc>
+    <revisionDesc><!--
       <change>
         <date>3/19/97</date>
         <respStmt>
@@ -143,7 +143,7 @@ Added to repository. Passes TEI parsing.
     <change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
   </teiHeader><text xml:lang="en">
         <front>
           <head>The speech of M. T. Cicero as the advocate of P. Quinctius.</head>
@@ -174,7 +174,7 @@ Added to repository. Passes TEI parsing.
           <milestone n="1" unit="section"/>
           <p>The two things which have the greatest influence in a state,—namely, the
             greatest interest, and eloquence, are both making against us at the present moment; and
-            while I am awed <note anchored="yes">The Latin is <foreign lang="la">quorum alteram
+            while I am awed <note anchored="true">The Latin is <foreign lang="la">quorum alteram
                   <emph>vereor</emph>, alteram <emph>metuo</emph></foreign>, <foreign lang="la"
                 >vereor</foreign> expressing a slighter degree of alarm than <foreign lang="la"
                 >metuo</foreign> or <foreign lang="la">timeo</foreign>, and also one arising rather
@@ -192,7 +192,7 @@ Added to repository. Passes TEI parsing.
             that Marcus Junius, who has several times pleaded this cause before you, O Aquillius, a
             man practised in the conduct of other causes also, and much and frequently concerned in
             this particular one, is at this moment absent, being engaged on his new commission;
-              <note anchored="yes">It is not known what this <foreign lang="la">legatio</foreign>
+              <note anchored="true">It is not known what this <foreign lang="la">legatio</foreign>
               was.</note> and so they have had recourse to me, who, even if I had all other
             requisite qualifications in ever so high a degree, have certainly scarcely had time
             enough to be able to understand so important a business, having so many points of
@@ -215,7 +215,7 @@ Added to repository. Passes TEI parsing.
           <p>I do not say this, O Caius Aquillius, because I have any doubt of your own good faith
             and constancy, or because Publius Quinctius ought not to have the greatest hopes from
             those whom you have called in as your assessors, being, as they are, among the most
-            eminent <note anchored="yes">Their names were Lucius Lucilius, Publius Quintilius, and
+            eminent <note anchored="true">Their names were Lucius Lucilius, Publius Quintilius, and
               Marcus Marcellus; “The <foreign lang="la">judex</foreign> was generally
               aided by advisers learned in the law, (<foreign lang="la">jurisconsulti</foreign>,)
               who were said <foreign lang="la">in concilio adesse</foreign>, but the <foreign
@@ -234,7 +234,7 @@ Added to repository. Passes TEI parsing.
             easily be able to overwhelm whomsoever he chooses by an unjust trial; <milestone n="8"
               unit="section"/> for what, O Caius Aquillius, can be mentioned or spoken of more
             unjust or more unworthy than this, that I who am defending the liberties, <note
-              anchored="yes">The Latin has <foreign lang="la">caput</foreign>, which in a legal
+              anchored="true">The Latin has <foreign lang="la">caput</foreign>, which in a legal
               sense expresses not only a man's life, but also his status or civil condition; to be
               registered in the census was <foreign lang="la">caput habere</foreign>; to change
               one's rank, <foreign lang="la">capite, &c. diminuere</foreign>. And so a trial
@@ -250,7 +250,7 @@ Added to repository. Passes TEI parsing.
             cast any false accusation like a poisoned arrow at us, there will be no opportunity for
             applying a remedy. <milestone n="9" unit="section"/> That has happened through the
             injustice and wrong-doing of the praetor; first, because, contrary to universal custom,
-            he has chosen that the trial as to honour or infamy <note anchored="yes">Because if it
+            he has chosen that the trial as to honour or infamy <note anchored="true">Because if it
               were decided that Quinctius had forfeited his recognizances, <foreign lang="la"
                 >infamia</foreign> was the consequence.</note> should take place before the one
             concerning the fact; secondly, because he has so arranged this very trial, that the
@@ -275,7 +275,7 @@ Added to repository. Passes TEI parsing.
             family, but in one matter a little less wise, inasmuch as he formed a partnership with
             Sextus Naevius, a respectable man, but one who had not been brought up so as to be
             acquainted with the rights of partnership, or with the duties of a head of an
-            established family. <note anchored="yes">The office of <foreign lang="la"
+            established family. <note anchored="true">The office of <foreign lang="la"
                 >praeco</foreign> was so little reputable that before Cicero's death a law was
               passed to prevent all persons who had been <foreign lang="la">praecones</foreign> from
               becoming <foreign lang="la">decuriones</foreign> in the <foreign lang="la"
@@ -290,13 +290,13 @@ Added to repository. Passes TEI parsing.
             intimacy with the man, Quinctius, as I have said, entered into a partnership with him as
             to those articles which were procured in <placeName key="tgn,1000070">Gaul</placeName>.
             He had considerable property in cattle, and a well-cultivated and productive farm.
-            Naevius is carried off from the halls of Licinius, <note anchored="yes">The Hall of
+            Naevius is carried off from the halls of Licinius, <note anchored="true">The Hall of
               Licinius, i.e. Licinius Crassus, was the celebrated one where he erected four columns
               of Hymettian marble, for the theatrical shows in his aedileship, and was one of the
               common resorts of auctioneers and criers.</note> and from the gang of criers, into
               <placeName key="tgn,1000070">Gaul</placeName> and across the <placeName
               key="tgn,2066659">Alps</placeName>; there is a great change in his situation, <note
-              anchored="yes"><foreign lang="la">Coelum non animum mutant qui trans mare
+              anchored="true"><foreign lang="la">Coelum non animum mutant qui trans mare
                 currunt.</foreign> —<bibl n="Hor. Ep. 1.2.27">;Hor. Epist. 1, ii.
                 27</bibl>.</note> none in his disposition; for he who from his boyhood had been
             proposing to himself gain without any outlay, as soon as he spent anything himself and
@@ -306,7 +306,7 @@ Added to repository. Passes TEI parsing.
             him; so that without much moderation, he carried off whatever he could from the common
             stock to his private house for himself. And in this he was as industrious as if all who
             behaved in a partnership with exact good faith, were usually condemned in a trial before
-            an arbitrator. <note anchored="yes">The Latin has “arbitrium pro socio
+            an arbitrator. <note anchored="true">The Latin has “arbitrium pro socio
               condemnari,” on which Graevius says, “<foreign lang="la">Arbitrium
                 pro socio</foreign>, is a formula of law, by which is signified an action and trial
               in a case of partnership if any one had cheated his partner; and Cicero means that
@@ -314,7 +314,7 @@ Added to repository. Passes TEI parsing.
               liable to be condemned, and not those who did cheat.”</note> But concerning
             these matters I do not consider it necessary to say what Publius Quinctius wishes me to
             mention; although the cause calls for it: yet as it only calls for it, and does not
-            absolutely require it, <note anchored="yes">The Latin has <foreign lang="la">quia
+            absolutely require it, <note anchored="true">The Latin has <foreign lang="la">quia
                   <emph>postulat</emph> non <emph>flagitat</emph></foreign>, both words being nearly
               synonymous, but <foreign lang="la">flagito</foreign> being evidently a stronger word
               than <foreign lang="la">postulo</foreign>.</note> I will pass it over. <milestone
@@ -352,7 +352,7 @@ Added to repository. Passes TEI parsing.
             Quinctius referred it to you, O Caius Aquillius, to decide what he should pay his
             children. He preferred submitting to your decision in this matter, because, on account
             of the difference in the exchange, it was not sufficient to look in his books and see
-            how much was owed, unless he had inquired at the temple of Castor <note anchored="yes"
+            how much was owed, unless he had inquired at the temple of Castor <note anchored="true"
               >Some have wished to alter <foreign lang="la">ad Castoris</foreign> here to <foreign
                 lang="la">a quaestoribus</foreign>; but the temple of Castor was a place where much
               money was kept:—<foreign lang="la">&AElig;ratâ</foreign>
@@ -396,7 +396,7 @@ Added to repository. Passes TEI parsing.
             been brought up in his house, and with whom he was exceedingly intimate. No agreement
             could be come to; because the one was willing to put up with a slight loss, but the
             other was not content with a moderate booty. <milestone n="22" unit="section"/> So from
-            that time the matter was referred to legal decision. <note anchored="yes">Lit.
+            that time the matter was referred to legal decision. <note anchored="true">Lit.
               “recognizances were entered into.” When the praetor had granted an
               action, the plaintiff required the defendant to give security for his appearance
               before the praetor on a stated day, commonly the day but one after the <foreign
@@ -430,7 +430,7 @@ Added to repository. Passes TEI parsing.
             next day. They come in crowds; he makes oath that Publius Quinctius has not appeared to
             his bail, and that he has appeared to his. A long protest to this effect is sealed with
             the seals of noble men. They depart: Naevius demands of Burrienus the praetor, that by
-            his edict he may take possession of Quinctius's goods. <note anchored="yes">If either
+            his edict he may take possession of Quinctius's goods. <note anchored="true">If either
               party did not appear on the appointed day, he was said <foreign lang="la">vadimonium
                 deserere</foreign>, and the praetor gave to the other party the <foreign lang="la"
                 >bonorum possessio</foreign>. Vide Smith's Dict. Ant. p. 9. v. <foreign lang="la"
@@ -464,7 +464,7 @@ Added to repository. Passes TEI parsing.
             decrees. <milestone n="29" unit="section"/> Meantime Alphenus was fighting every day at
               <placeName key="perseus,Rome">Rome</placeName> with that old gladiator. He had the
             people indeed on his side, because that fellow never ceased to aim at the head. <note
-              anchored="yes">There is an allusion here to the fights of gladiators, in which the
+              anchored="true">There is an allusion here to the fights of gladiators, in which the
               people disapproved of that gladiator who aimed too constantly at the vital parts of
               his adversary, so as to make the combat short. There is a pun here, <foreign lang="la"
                 >caput</foreign> meaning the head or life of the gladiator, and also the condition
@@ -504,7 +504,7 @@ Added to repository. Passes TEI parsing.
               unit="chapter"/><milestone n="32" unit="section"/></p>
           <p>Quinctius departs much embarrassed; and no wonder, when so miserable a choice was
             offered him, and one so unjust, that he must either himself convict himself of a capital
-            offence if he gave security, <note anchored="yes">Because the giving security now would
+            offence if he gave security, <note anchored="true">Because the giving security now would
               be an admission that he had forfeited his recognizances before; which was liable to be
               punished with <foreign lang="la">infamia</foreign></note> or open the cause himself in
             a capital trial if he gave a bond. As in the one case there was no reason why he should
@@ -520,7 +520,7 @@ Added to repository. Passes TEI parsing.
             ancestors have determined that he who is pleading for his life should speak last, you
             see that we, owing to this unprecedented accusation of the prosecutor's, are pleading
             our cause first. Moreover, you see that those who are more accustomed <note
-              anchored="yes">He means Hortensius.</note> to defend people are today acting as
+              anchored="true">He means Hortensius.</note> to defend people are today acting as
             accusers; and that those talents are turned to do people injury, which have hitherto
             been employed in ministering to men's safety, and in assisting them. There remained but
             one thing more, which they put in execution yesterday,—namely, to proceed
@@ -539,7 +539,7 @@ Added to repository. Passes TEI parsing.
             arrogate to myself a power of proving the case better than it has been proved before;
             nor yet will I make a long speech, because the cause has already been explained by him
             who has spoken before, and brevity, which is exceedingly agreeable to me, is required of
-            me, who am neither able to devise <note anchored="yes">He mentions in the Brutus that he
+            me, who am neither able to devise <note anchored="true">He mentions in the Brutus that he
               was at this time in a very delicate state of health. <foreign lang="la">Erat eo
                 tempore in nobis summa gracilitas et infirmitas corporis</foreign>. <bibl
                 n="Cic. ad Brut. 313">Brutus, 313.</bibl></note> nor to utter many arguments.
@@ -646,7 +646,7 @@ Added to repository. Passes TEI parsing.
             Aquillius? He asks for his money: we deny that it is due. Let a trial take place
             instantly; we make no objection; is there anything more? If he is afraid that the money
             will not be forth coming when the decision is given let him take security that it shall
-            be; and let him give security <note anchored="yes">In many cases both plaintiff and
+            be; and let him give security <note anchored="true">In many cases both plaintiff and
               defendant might be required to give security, (<foreign lang="la">satis
               dare</foreign>.) Smith, Dict. Ant. p.10, V. <foreign lang="la">Actio</foreign>.</note>
             for what I demand in the very same terms in which we give security. <milestone n="45"
@@ -673,7 +673,7 @@ Added to repository. Passes TEI parsing.
             and respiting the recognizances; he who, after he had withdrawn his recognizance drove
             Quinctius by treachery and violence from their joint estate; who, when he had ample
             opportunity, without any one's making objection, to try a civil action, <note
-              anchored="yes">With respect to its subject matter the <foreign lang="la"
+              anchored="true">With respect to its subject matter the <foreign lang="la"
                 >actio</foreign> was divided into two great divisions, the <foreign lang="la">in
                 personam actio</foreign> and the <foreign lang="la">in rem actio</foreign>. The
               former was against a person who was bound to the plaintiff by contract or delict the
@@ -721,7 +721,7 @@ Added to repository. Passes TEI parsing.
             not merely his ample estates, but even his necessary food and clothing put up under the
             hammer, with great disgrace to himself; he is not only erased from the list of men, but
             he is removed out of sight, if possible, even beneath the dead. An honourable <note
-              anchored="yes">Most of the commentators consider this passage corrupt, and propose
+              anchored="true">Most of the commentators consider this passage corrupt, and propose
               various emendations of it. I have however thought it safer to adhere to the text of
               the MSS. as it stands in Orellius.</note> death forsooth often sets off even a base
             life, but a dishonoured life leaves no room to hope for even an honourable death.
@@ -896,7 +896,7 @@ Added to repository. Passes TEI parsing.
             of in accordance with the edict. But then, the tribunes of the people did not even hear
             his cause. I admit, if that be the case, that the agent ought to have obeyed the decree
             of the praetor. What; if Marcus Brutus openly said that he would intercede <note
-              anchored="yes"><foreign lang="la">Intercedo</foreign> was the technical word for the
+              anchored="true"><foreign lang="la">Intercedo</foreign> was the technical word for the
               interposition of the tribunes.</note> unless some agreement was come to between
             Alphenus himself and Naevius; does not the appeal to the tribunes seem to have been
             interposed not for the sake of delay but of assistance? <milestone n="21" unit="chapter"
@@ -931,7 +931,7 @@ Added to repository. Passes TEI parsing.
             matter. <milestone n="69" unit="section"/> “For he was,” says he,
             “a man of the opposite party.” No doubt; a man who had been brought
             up in your house, whom you from a youth had so trained up as not to favour any one of
-            eminence, not even a gladiator. <note anchored="yes">The text is undoubtedly corrupt
+            eminence, not even a gladiator. <note anchored="true">The text is undoubtedly corrupt
               here. Some read <foreign lang="la">haereret</foreign>, some <foreign lang="la"
                 >cederet</foreign>. I have adopted the text of Orellius; but the meaning is not very
               plain.</note> If Alphenus had the same wish as you always especially entertained, was
@@ -957,7 +957,7 @@ Added to repository. Passes TEI parsing.
             because it was in his power to appeal to some one against you; because a magistrate was
             found before whom the cause of Alphenus could be fairly heard; what is Quinctius to
             determine on at this time I—a man who has not as yet found any just
-            magistrate, nor been able to procure the customary trial; <note anchored="yes"
+            magistrate, nor been able to procure the customary trial; <note anchored="true"
               >“Because the matter in dispute was really a money matter, but the praetor
               ordered the trial to proceed <foreign lang="la">de
               probro</foreign>.”—Hottoman.</note> in whose case no condition, no
@@ -1019,7 +1019,7 @@ Added to repository. Passes TEI parsing.
             yourself would be very worthless, ought to be of the greatest weight in an affair of
             your own when it makes against you. You bought the goods of Sextus Alphenus when Lucius
             Sulla, the dictator, sold them. You entered Quinctius in your books as the partner in
-            the purchase of these goods.<note anchored="yes"><foreign lang="la">Nomen</foreign> is
+            the purchase of these goods.<note anchored="true"><foreign lang="la">Nomen</foreign> is
               especially used in reference to debts, because not only the amount of the debts, but
               also the name of the debtor is entered in the account books. Riddle's Dict. in v.
                 <foreign lang="la">Nomen</foreign>.</note> I say no more. Did you enter into a
@@ -1174,7 +1174,7 @@ Added to repository. Passes TEI parsing.
             now, but why they are all striving for Publius Quinctius? Especially when in such a
             trial the testimonies of creditors are thought exceedingly material. After that, I
             employed the testimony of the adversary, who lately entered as his partner the man who,
-            according to the language of his present claim, <note anchored="yes"><foreign lang="la"
+            according to the language of his present claim, <note anchored="true"><foreign lang="la"
                 >Intentio</foreign> was the technical legal term for the claim made by the
               plaintiff.</note> he demonstrates was at that time not even in the number of living
             men. Then I mentioned that incredible rapidity, or rather audacity of his. I showed that
@@ -1225,7 +1225,7 @@ Added to repository. Passes TEI parsing.
             habits people have more influence. What then shall be done? <milestone n="94"
               unit="section"/> They have not so much more influence, that those who, having
             abandoned the strict discipline of virtuous men, have chosen rather to follow the gains
-            and extravagance of Gallonius,<note anchored="yes">Gallonius was a crier also, branded
+            and extravagance of Gallonius,<note anchored="true">Gallonius was a crier also, branded
               by Horace as notorious for extravagance and luxury. <quote lang="la">
                 <l>Galloni praeconis erat acipensere mensa </l>
                 <l>Infamis. </l>

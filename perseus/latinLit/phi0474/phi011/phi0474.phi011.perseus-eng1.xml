@@ -15,7 +15,7 @@
 <name>Elli Mylonas</name>
 <name>David Smith</name>
 </respStmt>
-<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt>  <sourceDesc>
+<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>  <sourceDesc>
 				<biblStruct>
 					<monogr>
 						<author>M. Tullius Cicero</author>
@@ -31,41 +31,41 @@
 		</fileDesc>
 
 		<encodingDesc>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Corn." doctype="TEI.2">
 				<state delim=" " unit="text"/>
-				<state unit="speech"/>
+				refState unit="speech"/>
 			</refsDecl>
 		</encodingDesc>
 
 		<profileDesc>
 			<langUsage>
-				<language id="en">English</language>
-				<language id="la">Latin</language>
-				<language id="greek">Greek</language>
+				language ident="en">English</language>
+				language ident="la">Latin</language>
+				language ident="greek">Greek</language>
 			</langUsage>
 		</profileDesc>
 
-		<revisionDesc>
+		<revisionDesc><!--
 			<change>
 				<date>7/14/97</date>
 				<respStmt>
@@ -183,10 +183,10 @@ Added to repository.
 		<change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
 	</teiHeader><text xml:lang="en">
 				<body>
-					<div1 type="Speech" n="1">
+					<div type="Speech" n="1">
 						<head>THE SPEECH OF M. T. CICERO IN OPPOSITION TO PUBLIUS SERVILIUS RULLUS, A TRIBUNE OF THE PEOPLE, CONCERNING THE AGRARIAN LAW.<lb/>DELIVERED IN THE SENATE.<lb/>THE FIRST ORATION
 							ON THIS SUBJECT.</head>
 						<argument>
@@ -216,7 +216,7 @@ Added to repository.
        will therefore come under the power of the praetor; the whole coast of the Lycians and
        Cilicians will be advertised for sale; <placeName key="tgn,7016748">Mysia</placeName> and
         <placeName key="tgn,7002613">Phrygia</placeName> will be subjected to the same conditions
-        <note anchored="yes">Rhunck has enclosed this sentence in brackets, as the gloss and
+        <note anchored="true">Rhunck has enclosed this sentence in brackets, as the gloss and
         interpolation of an ignorant man; but Orellius thinks some part of it really Cicero's,
         though not free from corruptions.</note>] <milestone n="fr4" unit="section"/></p>
 						<p>The <foreign lang="la">decemviri</foreign> will sell the booty, the spoils, the division of
@@ -227,7 +227,7 @@ Added to repository.
        been said,—that after the consulship of those men, all that kingdom became the
        property of the Roman people, by the bequest of the king Alexander. Will you then give
         <placeName key="tgn,7002256">Alexandria</placeName>
-       <note anchored="yes">Alexander, king of <placeName key="tgn,7016833">Egypt</placeName>, had
+       <note anchored="true">Alexander, king of <placeName key="tgn,7016833">Egypt</placeName>, had
         died at <placeName key="tgn,7002862">Tyre</placeName> in the consulship of Cotta and
         Torquatus, two years before, and had bequeathed <placeName key="perseus,Alexandria">Alexandria</placeName> and <placeName key="tgn,7016833">Egypt</placeName> to the Roman
         people, and in consequence many people advocated the course of claiming that inheritance,
@@ -248,7 +248,7 @@ Added to repository.
        with us, lands belonging to the allies, the ranks of kings in alliance with us, were all made
        a present of to the decemvirs; and now they want actual ready money paid down to them.
         <milestone n="3" unit="section"/> I am waiting to see what this vigilant and clever tribune
-       is contriving. Let the Scantian <note anchored="yes">The Scantian wood was in <placeName key="tgn,7003005">Campania</placeName>.</note> wood, says he, be sold. Did you then find
+       is contriving. Let the Scantian <note anchored="true">The Scantian wood was in <placeName key="tgn,7003005">Campania</placeName>.</note> wood, says he, be sold. Did you then find
        this wood mentioned among the possessions that were left, or in the pasture lands of the
        lessors? If there is anything which you have hunted out, and discovered, brought to light out
        of darkness, although it is not just, still use that, since it is convenient, and since you
@@ -489,7 +489,7 @@ Added to repository.
        order, which existed so long among our ancestors, appear after a long interval to be again
        restored to the republic.</p>
 					
-					<div1 type="Speech" n="2">
+					<div type="Speech" n="2">
 						<head> THE SECOND SPEECH OF M. T. CICERO <lb/>IN OPPOSITION TO PUBLIUS SERVILIUS RULLUS, A TRIBUNE OF THE PEOPLE, <lb/>CONCERNING THE AGRARIAN LAW. <lb/>DELIVERED TO THE
 							PEOPLE.</head>
 						<argument>
@@ -506,7 +506,7 @@ Added to repository.
 						<p>
        <milestone n="2" unit="section"/> It is in accordance with the customs and established usages
        of our ancestors, O Romans, that those who, by your kindness, have overtaken the images of
-       their family,<note anchored="yes">“Those Romans who had passed through one of the
+       their family,<note anchored="true">“Those Romans who had passed through one of the
         high offices of aediles, praetor, or consul were allowed to have their likenesses handed
         down to posterity. These likenesses were, according to Casaubon, busts; but according to
         Schweighauser, masks; they were kept in the hall of the house, in niches appropriated for
@@ -550,7 +550,7 @@ Added to repository.
        years on whom you have conferred this honour,—that you have conferred it on my
        first application, in my proper year. But yet nothing can be more splendid or more honourable
        for me than this circumstance,—that at the comitia at which I was elected you
-       delivered not your ballot, <note anchored="yes"><persName><surname>Middleton</surname></persName> says (with express reference to this passage,) “the method
+       delivered not your ballot, <note anchored="true"><persName><surname>Middleton</surname></persName> says (with express reference to this passage,) “the method
         of choosing consuls was not by an open vote, but by a kind of ballot or little tickets of
         wood distributed to the citizens with the names of the candidates severally inscribed on
         each; but in Cicero's case, the people were not content with this secret and silent way of
@@ -782,7 +782,7 @@ Added to repository.
        whom the first place in the unpopularity which may possibly arise from drawing the law, and
        from having his name at the head of it, has indeed been conceded to him, but the profit from
        the whole business, they, who in the hope of it are placed in this position, reserve to
-       themselves in equal shares with him. <note anchored="yes">The last four lines of this
+       themselves in equal shares with him. <note anchored="true">The last four lines of this
         paragraph are very corrupt in the original, and there is a good deal of variety in the
         readings.</note>
       </p>
@@ -822,7 +822,7 @@ Added to repository.
        dignity is denied? </p>
 						<p>
        <milestone n="26" unit="section"/> Now consider what a power is given to the decemvirs, and
-       how great is its extent. In the first place be gives the decemvirs the honour of a <foreign lang="la">lex curiata</foreign>. <note anchored="yes">
+       how great is its extent. In the first place be gives the decemvirs the honour of a <foreign lang="la">lex curiata</foreign>. <note anchored="true">
         <p>The <foreign lang="la">comitia curiata</foreign>, at which alone a <foreign lang="la">lex
           curiata</foreign> could he passed, was a meeting of the <foreign lang="la">populus</foreign> of <placeName key="tgn,7013962">Rome</placeName>, assembled in its
          tribes of houses; and no member of the <foreign lang="la">plebs</foreign> could vote at
@@ -836,7 +836,7 @@ Added to repository.
          they voted by their curies.</p>
         <p>The <foreign lang="la">comitia centuriata</foreign> were the assembly of the <foreign lang="la">populus</foreign> and <foreign lang="la">plebs</foreign> together, and they
          voted by their centuries by ballot.</p>
-        <p>The <foreign lang="la">comitia tributa</foreign> were not established till B. C. <date value="-491">491</date>. They were an assembly of the people according to the local tribes
+        <p>The <foreign lang="la">comitia tributa</foreign> were not established till B. C. date when="-491">491</date>. They were an assembly of the people according to the local tribes
          into which the <foreign lang="la">Plebs</foreign> was originally divided. No qualification
          of birth or property was necessary to enable a them to vote in the <foreign lang="la">comitia tributa</foreign>. They were summoned by the <foreign lang="la">tribuni
           plebis</foreign>, who were also the presiding magistrates in general; but the consuls or
@@ -853,7 +853,7 @@ Added to repository.
         <milestone n="11" unit="chapter"/></p>
 						<p>Our ancestors chose that you should give your votes twice about every magistrate. For as a
         <foreign lang="la">centuriata lex</foreign>
-       <note anchored="yes">This and the preceding chapter are exceedingly obscure, and almost
+       <note anchored="true">This and the preceding chapter are exceedingly obscure, and almost
         unintelligible to us; perhaps also the text is a little corrupt. Manutius says,
         “An exceedingly difficult passage, which has perplexed men of the greatest ability
         and learning.” His explanation is as follows: “The ancient Romans had
@@ -880,7 +880,7 @@ Added to repository.
        repented of the honour they had conferred on any one. <milestone n="27" unit="section"/> Now,
        because you have preserved the <foreign lang="la">comitia centuriata</foreign> and <foreign lang="la">tributa</foreign>, the <foreign lang="la">curiata</foreign> have remained only for
        the sake of the auspices. But this tribune of the people, because he saw that no man could
-       possibly have any authority conferred on him without the authority of the burghers <note anchored="yes">The Latin terms are <foreign lang="la">populus</foreign> and <foreign lang="la">plebs</foreign>. For the best account of the <foreign lang="la">populus</foreign>
+       possibly have any authority conferred on him without the authority of the burghers <note anchored="true">The Latin terms are <foreign lang="la">populus</foreign> and <foreign lang="la">plebs</foreign>. For the best account of the <foreign lang="la">populus</foreign>
         to be found in a small space, see Smith's Dict. Ant. p. 726, v. <foreign lang="la">Patricii</foreign>; and consult the same admirable book, p. 765, v. <foreign lang="la">Plebes</foreign>, or <foreign lang="la">plebs</foreign>. The word <foreign lang="la">potestas</foreign>, which I have translated “authority,” means
         strictly only civil authority, in opposition to <foreign lang="la">imperium</foreign>,
         military command.</note> or of the commonalty, confirmed that authority which he proposed to
@@ -929,12 +929,12 @@ Added to repository.
       </p>
 						<p>Let there then be decemvirs, appointed neither by the genuine <foreign lang="la">comitia</foreign>,—that is to say, by the votes of the people,—nor by
        that <foreign lang="la">comitia</foreign> convened in appearance, to keep up an ancient
-       custom, by the thirty lictors for the sake of the auspices. <note anchored="yes">“In after times, when the <foreign lang="la">comitia curiata</foreign> were
+       custom, by the thirty lictors for the sake of the auspices. <note anchored="true">“In after times, when the <foreign lang="la">comitia curiata</foreign> were
         little more than a matter of form, their suffrages were represented by the thirty lictors of
         the <foreign lang="la">curiae</foreign>, whose duty it was to summon the <foreign lang="la">curiae</foreign> when the meetings actually took place.”—Smith, Dict.
         Ant. p. 273 a, v. <foreign lang="la">Comitia</foreign>.</note> See now, also, how much
        greater honours he confers on these men who have received no authority from you, than we have
-       received, to whom you have given the most ample authority, He orders the decemvirs, <note anchored="yes">The Latin has, “<foreign lang="la">decemviri
+       received, to whom you have given the most ample authority, He orders the decemvirs, <note anchored="true">The Latin has, “<foreign lang="la">decemviri
         pullarii</foreign>”. <foreign lang="la">Pullarius</foreign> was the officer
         appointed to feed and take care of the sacred chickens that were kept for the purpose of
         taking the auspices; and much was inferred from the way in which they took their food, or
@@ -951,7 +951,7 @@ Added to repository.
        strengthens it with such bulwarks and defences that it will be quite impossible to deprive
        them of it against their own consent. Then he adorns them with apparitors, and secretaries,
        and clerks, and criers, and architects; besides that, with mules, and tents, and centuries,
-        <note anchored="yes">There is, no doubt, some corruption here in the text.</note> and all
+        <note anchored="true">There is, no doubt, some corruption here in the text.</note> and all
        sorts of furniture; he draws money for their expenses from the treasury; he supplies them
        with more money from the allies; he appoints them two hundred surveyors from the equestrian
        body every year as their personal attendants, and also as ministers and satellites of their
@@ -1084,7 +1084,7 @@ Added to repository.
        Lucius Torquatus? Why did they not proceed openly, as they did before? Why did they not act
        as they did when they before sought that country, in a straightforward and open manner? Did
        they, who, when they had a fair wind, could not hold their course straight on to the kingdom
-       they coveted, think that they could reach <placeName key="perseus,Alexandria">Alexandria</placeName> amid foul mists and darkness? <note anchored="yes">This sentence and
+       they coveted, think that they could reach <placeName key="perseus,Alexandria">Alexandria</placeName> amid foul mists and darkness? <note anchored="true">This sentence and
         the succeeding one are considered very corrupt, and there is a great variety of readings
         proposed; for <foreign lang="la">qui Etesiis</foreign> some read <foreign lang="la">quietis
          iis</foreign>; for <foreign lang="la">directo</foreign>, <foreign lang="la">decreto</foreign>. <foreign lang="la">Unaque</foreign> is quite
@@ -1337,7 +1337,7 @@ Added to repository.
        you do not define the exact spot. What do you mean? Do you mean the nature of the land? But,
        says he, the law does say, “which can be ploughed or cultivated.” Which
        can be ploughed or cultivated, he says; not, which has been ploughed or cultivated. Is this
-       now a law, or is it an advertisement of some sale of Neratius <note anchored="yes">It is
+       now a law, or is it an advertisement of some sale of Neratius <note anchored="true">It is
         unknown who this man was. Perhaps some puffing auctioneer.</note>; in whose descriptions
        people used to find such sentences as these:—“Two hundred acres in which
        an olive garden may be made. Three hundred acres where vines can be planted.” Is
@@ -1775,7 +1775,7 @@ Added to repository.
        who, on account of indolence, are living in tranquillity, still take pleasure in their own
        base indolence; you, if in the calm quiet with which you govern fortune, you think such a
        condition as you enjoy better, should maintain it diligently; not as one that has been
-       acquired by laziness, but as one that has been earned by virtue. <note anchored="yes"> This
+       acquired by laziness, but as one that has been earned by virtue. <note anchored="true"> This
         and the next sentence are given up as corrupt by every one. Many different readings have
         been proposed; and I have endeavoured to extract what appears to have been Cicero's meaning
         from them, keeping as closely as possible to the text of Orellius.</note> And I, by the
@@ -1790,7 +1790,7 @@ Added to repository.
        honours which I have gained, shall at last confess, that in selecting a consul you all showed
        the greatest possible foresight. </p>
 					
-					<div1 type="Speech" n="3">
+					<div type="Speech" n="3">
 						<head>THE THIRD SPEECH OF M. T. CICERO IN OPPOSITION TO PUBLIUS SERVILIUS RULLUS, A TRIBUNE OF THE PEOPLE, CONCERNING THE AGRARIAN LAW. DELIVERED TO THE PEOPLE.</head>
 						<argument>
 							<head>THE ARGUMENT.</head>
@@ -1854,7 +1854,7 @@ Added to repository.
        destroyed this man established a tyrant of the republic by law. It is an invidious law, as I
        said before; but still it has some excuse. For it appears to be a law not urged by the man
        but by the time. What shall we say if this law is a far more impudent one? <milestone n="6" unit="section"/> For by the Valerian and Cornelian law this power is taken away at the same
-       time that it is given. <note anchored="yes">There is probably some corruption in the text
+       time that it is given. <note anchored="true">There is probably some corruption in the text
         here and in the next few sentences; Orellius marks them with a dagger.</note> An impudent
        courting of the people is joined with a bitter injury done to them. But still a man from whom
        any property is taken always has some hope arising from those laws; and he, to whom any is
@@ -1889,13 +1889,13 @@ Added to repository.
        the provision of your law. <milestone n="9" unit="section"/> For those farms in truth are
        held by the best right, which are held on the best conditions. Free tenures are held by a
        better tenure than servile ones. By this clause all tenures which have hitherto been servile
-        <note anchored="yes"><foreign lang="la">Serva praedia</foreign> mean such estates as were
+        <note anchored="true"><foreign lang="la">Serva praedia</foreign> mean such estates as were
         liable to certain burdens or duties; held by the performance of certain services.</note>
        tenures will be so no longer. Enfranchised estates are in a better condition than those which
        are liable to no obligations; by the same clause all lands subject to the payment of any
        fine, if only they were assigned by Sulla, are released from such payments. Lands which are
        exempt from payment are in a better condition than those which pay a fine. I, in my Tusculan
-       villa, must pay a tax for the Crabran <note anchored="yes"> The <foreign lang="la">Crabra
+       villa, must pay a tax for the Crabran <note anchored="true"> The <foreign lang="la">Crabra
          aqua</foreign> is several times mentioned by Cicero in his letters as a small artificial
         stream running through his Tusculan property. He even had a law-suit respecting it, as
         appears from one of his letters. </note> water, because I received my estate subject to this

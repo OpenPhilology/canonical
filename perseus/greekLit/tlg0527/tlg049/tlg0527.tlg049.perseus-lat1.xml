@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Vulgate" type="work">Latin Vulgate - Jeremiah</title>
@@ -15,8 +15,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:FIPSE">Fund for the Improvement of Postsecondary Education</funder>
-            </titleStmt>
-            <extent>about 5Mb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -36,7 +36,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
+            <refsDecl
                 <step to="DITTO" from="DESCENDANT (1 DIV1 N %1)" refunit="book" delim=" "/>
                 <step to="DITTO" from="DESCENDANT (1 DIV2 N %2)" refunit="chapter" delim="."/>
                 <step to="DITTO" from="DESCENDANT (1 MILESTONE N %3)" refunit="verse"/>
@@ -44,11 +44,11 @@
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>13-Oct-99</date>
                 <respStmt>
@@ -81,13 +81,13 @@
 			added/fixed cvs log keyword
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="Jeremiah" type="book">
+            <div part="N" sample="complete" org="uniform" n="Jeremiah" type="book">
                 <head lang="en">Jeremiah</head>
-                <div2 part="N" sample="complete" org="uniform" n="1" type="chapter">
+                <div part="N" sample="complete" org="uniform" n="1" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">verba Hieremiae filii Helciae de sacerdotibus qui fuerunt in Anathoth in terra Beniamin</s>
@@ -173,8 +173,8 @@ Iuda principibus eius et sacerdotibus et populo terrae
                         <milestone unit="verse" n="19"/>
                         <s part="N">et bellabunt adversum te et non praevalebunt quia tecum ego sum ait Dominus ut liberem te</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="2" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="2" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">et factum est verbum Domini ad me dicens</s>
@@ -364,8 +364,8 @@ tuum quoniam obtrivit Dominus confidentiam tuam et nihil
 habebis prosperum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="3" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="3" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -501,8 +501,8 @@ nostri ab adulescentia nostra usque ad hanc diem et non
 audivimus vocem Domini Dei nostri
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="4" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="4" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -654,8 +654,8 @@ vox filiae Sion intermorientis expandentisque manus suas vae
 mihi quia defecit anima mea propter interfectos
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="5" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="5" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -791,8 +791,8 @@ manibus suis et populus meus dilexit talia quid igitur fiet in
 novissimo eius
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="6" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="6" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -938,8 +938,8 @@ conflavit conflator malitiae enim eorum non sunt consumptae
                         <milestone unit="verse" n="30"/>
                         <s part="N">argentum reprobum vocate eos quia Dominus proiecit illos</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="7" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="7" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">verbum quod factum est ad Hieremiam a Domino dicens</s>
@@ -1119,8 +1119,8 @@ Hierusalem vocem gaudii et vocem laetitiae vocem sponsi et
 vocem sponsae in desolatione enim erit terra
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="8" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="8" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1234,8 +1234,8 @@ et in vanitatibus alienis
 quare igitur non est obducta cicatrix filiae populi mei
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="9" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="9" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1376,8 +1376,8 @@ habitantes in deserto quia omnes gentes habent praeputium omnis
 autem domus Israhel incircumcisi sunt corde
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="10" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="10" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">audite verbum quod locutus est Dominus super vos domus Israhel</s>
@@ -1493,8 +1493,8 @@ invocaverunt quia comederunt Iacob et devoraverunt eum et
 consumpserunt illum et decus eius dissipaverunt
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="11" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="11" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">verbum quod factum est ad Hieremiam a Domino dicens</s>
@@ -1621,8 +1621,8 @@ eorum morientur in fame
 viros Anathoth annum visitationis eorum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="12" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="12" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1717,8 +1717,8 @@ Baal aedificabuntur in medio populi mei
                         <milestone unit="verse" n="17"/>
                         <s part="N">quod si non audierint evellam gentem illam evulsione et perditione ait Dominus</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="13" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="13" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -1851,8 +1851,8 @@ super colles in agro vidi abominationes tuas vae tibi
 Hierusalem non mundaberis post me usquequo adhuc
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="14" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="14" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">quod factum est verbum Domini ad Hieremiam de sermonibus siccitatis</s>
@@ -1971,8 +1971,8 @@ possunt dare imbres nonne tu es Domine Deus noster quem
 expectavimus tu enim fecisti omnia haec
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="15" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="15" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2090,8 +2090,8 @@ et eruam dicit Dominus
                         <milestone unit="verse" n="21"/>
                         <s part="N">et liberabo te de manu pessimorum et redimam te de manu fortium</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="16" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="16" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">et factum est verbum Domini ad me dicens</s>
@@ -2207,8 +2207,8 @@ profuit
 manum meam et virtutem meam et scient quia nomen mihi Dominus
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="17" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="17" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2350,8 +2350,8 @@ die sabbati succendam ignem in portis eius et devorabit domos
 Hierusalem et non extinguetur
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="18" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="18" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">verbum quod factum est ad Hieremiam a Domino dicens</s>
@@ -2466,8 +2466,8 @@ facie tua non deleatur fiant corruentes in conspectu tuo in
 tempore furoris tui abutere eis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="19" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="19" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2560,8 +2560,8 @@ mala quae locutus sum adversum eam quoniam induraverunt
 cervicem suam ut non audirent sermones meos
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="20" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="20" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2663,8 +2663,8 @@ sepulchrum et vulva eius conceptus aeternus
 et consumerentur in confusione dies mei
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="21" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="21" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -2742,8 +2742,8 @@ dicit Dominus et succendam ignem in saltu eius et devorabit
 omnia in circuitu eius
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="22" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="22" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">haec dicit Dominus descende in domum regis Iuda et loqueris ibi verbum hoc</s>
@@ -2901,8 +2901,8 @@ vir qui sedeat super solium David et potestatem habeat ultra in
 Iuda
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="23" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="23" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">vae pastoribus qui disperdunt et dilacerant gregem pascuae meae dicit Dominus</s>
@@ -3110,8 +3110,8 @@ et civitatem quam dedi vobis et patribus vestris a facie mea
 aeternam quae numquam oblivione delebitur
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="24" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="24" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3172,8 +3172,8 @@ maledictionem in universis locis ad quos eieci eos
 consumantur de terra quam dedi eis et patribus eorum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="25" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="25" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3363,8 +3363,8 @@ in desolationem a facie irae columbae et a facie irae furoris
 Domini
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="26" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="26" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">in principio regis Ioachim filii Iosiae regis Iuda factum est verbum istud a Domino dicens</s>
@@ -3494,8 +3494,8 @@ sepulchris vulgi ignobilis
 traderetur in manu populi et interficerent eum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="27" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="27" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3624,8 +3624,8 @@ visitationis suae dicit Dominus et adferri faciam ea et
 restitui in loco isto
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="28" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="28" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3713,8 +3713,8 @@ hoc anno morieris adversum Dominum enim locutus es
                         <milestone unit="verse" n="17"/>
                         <s part="N">et mortuus est Ananias propheta in anno illo mense septimo</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="29" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="29" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -3874,8 +3874,8 @@ populi huius et non videbit bonum quod ego faciam populo meo
 ait Dominus quia praevaricationem locutus est adversum Dominum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="30" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="30" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">hoc verbum quod factum est ad Hieremiam a Domino dicens</s>
@@ -3989,8 +3989,8 @@ conpleat cogitationem cordis sui in novissimo dierum
 intellegetis ea
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="31" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="31" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -4196,8 +4196,8 @@ Equorum orientalis sanctum Domini non evelletur et non
 destruetur ultra in perpetuum
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="32" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="32" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -4434,8 +4434,8 @@ civitatibus campestribus et in civitatibus quae ad austrum sunt
 quia convertam captivitatem eorum ait Dominus
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="33" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="33" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -4573,8 +4573,8 @@ adsumam de semine eius principes seminis Abraham et Isaac et
 Iacob reducam enim conversionem eorum et miserebor eis
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="34" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="34" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -4708,8 +4708,8 @@ incendent igni et civitates Iuda dabo in solitudinem eo quod
 non sit habitator
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="35" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="35" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -4825,8 +4825,8 @@ deficiet vir de stirpe Ionadab filii Rechab stans in conspectu
 meo cunctis diebus
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="36" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="36" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -5006,8 +5006,8 @@ sermones libri quem conbuserat Ioachim rex Iuda igni et insuper
 additi sunt sermones multo plures quam ante fuerant
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="37" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="37" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -5117,8 +5117,8 @@ pulmento donec consumerentur omnes panes de civitate et mansit
 Hieremias in vestibulo carceris
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="38" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="38" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -5280,8 +5280,8 @@ auditum
 quo capta est Hierusalem et factum est ut caperetur Hierusalem
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="39" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="39" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -5378,8 +5378,8 @@ tuo in die illa
 anima tua in salutem quia in me habuisti fiduciam ait Dominus
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="40" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="40" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -5487,8 +5487,8 @@ qui congregati sunt ad te et peribunt reliquiae Iuda
 facere verbum hoc falsum enim tu loqueris de Ismahel
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="41" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="41" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -5600,8 +5600,8 @@ Ismahel filius Nathaniae Godoliam filium Ahicam quem
 praeposuerat rex Babylonis in terra Iuda
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="42" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="42" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -5724,8 +5724,8 @@ vestri super universis pro quibus misit me ad vos
 moriemini in loco ad quem voluistis intrare ut habitaretis ibi
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="43" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="43" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -5804,8 +5804,8 @@ amicitur pastor pallio suo et egredietur inde in pace
 et delubra deorum Aegypti conburet igni
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="44" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="44" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -6000,8 +6000,8 @@ illius sicut tradidi Sedeciam regem Iuda in manu Nabuchodonosor
 regis Babylonis inimici sui et quaerentis animam eius
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="45" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="45" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -6030,8 +6030,8 @@ animam tuam in salutem in omnibus locis ad quaecumque
 perrexeris
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="46" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="46" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">quod factum est verbum Domini ad Hieremiam prophetam contra gentes</s>
@@ -6169,8 +6169,8 @@ vero non consumam sed castigabo te in iudicio nec quasi
 innocenti parcam tibi
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="47" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="47" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -6208,8 +6208,8 @@ Ascalonem et adversus maritimas eius regiones ibique condixerit
 illi
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="48" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="48" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -6416,8 +6416,8 @@ filii tui et filiae tuae in captivitatem
                         <milestone unit="verse" n="47"/>
                         <s part="N">et convertam captivitatem Moab in novissimis diebus ait Dominus hucusque iudicia Moab</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="49" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="49" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -6618,8 +6618,8 @@ consumam eos
                         <milestone unit="verse" n="39"/>
                         <s part="N">in novissimis autem diebus reverti faciam captivos Aelam dicit Dominus</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="50" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="50" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -6873,8 +6873,8 @@ dissipatum fuerit cum ipsis habitaculum eorum
                         <milestone unit="verse" n="46"/>
                         <s part="N">a voce captivitatis Babylonis commota est terra et clamor inter gentes auditus est</s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="51" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="51" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -7200,8 +7200,8 @@ adflictionis quam ego adduco super eam et dissolventur hucusque
 verba Hieremiae
                         </s>
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" n="52" type="chapter">
+                </div>
+                <div part="N" sample="complete" org="uniform" n="52" type="chapter">
                     <p>
                         <milestone unit="verse" n="1"/>
                         <s part="N">
@@ -7383,8 +7383,8 @@ Babylonis statuta per singulos dies usque ad diem mortis suae
 cunctis diebus vitae eius
                         </s>
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

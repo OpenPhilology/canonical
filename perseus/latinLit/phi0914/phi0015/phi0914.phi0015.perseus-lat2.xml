@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>Ab urbe condita, books 1-5 - 5</title>
@@ -15,7 +15,7 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:NEH">The National Endowment for the Humanities</funder>
-            </titleStmt>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
             <extent/>
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
@@ -42,19 +42,19 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book" delim="."/>
-                <state unit="chapter" delim="."/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book" delim="."/>
+                refState unit="chapter" delim="."/>
+                refState unit="section"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin </language>
-                <language id="en">English </language>
+                language ident="la">Latin </language>
+                language ident="en">English </language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>10/6/97</date>
                 <respStmt>
@@ -135,11 +135,11 @@ Revision 1.1  1997/10/06 23:04:12  textgod
 Added to repository. Passed SGML parse.
                 </item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="5" type="book">
+            <div part="N" sample="complete" org="uniform" n="5" type="book">
                 <milestone n="1" unit="chapter"/>
                 <milestone n="1" unit="section"/>
                 <pb id="p.5001"/>
@@ -2267,7 +2267,7 @@ primo per publicum ductae, nunc priuata passim subeant
 tecta, formaque urbis sit occupatae magis quam diuisae
 similis.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

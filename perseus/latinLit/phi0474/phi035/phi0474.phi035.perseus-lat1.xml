@@ -18,7 +18,7 @@
 </respStmt>
 <funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>
       
-      </titleStmt>
+      </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
 	
       <sourceDesc>
 	<biblStruct>
@@ -42,37 +42,37 @@ Collegii Reginae Socius</title>
     </fileDesc>
     
     <encodingDesc>
-      <refsDecl doctype="TEI.2">
+      <refsDecl
 	<state delim=" " unit="text"/>
-	<state unit="section"/>
+	refState unit="section"/>
       </refsDecl>
-      <refsDecl doctype="TEI.2">
+      <refsDecl
 	<state delim=" " unit="text"/>
 	<state delim="." n="chunk" unit="chapter"/>
-	<state unit="section"/>
+	refState unit="section"/>
       </refsDecl>
       <refsDecl n="text=Phil." doctype="TEI.2">
 	<state delim=" " unit="text"/>
 	<state delim="." unit="speech"/>
-	<state unit="section"/>
+	refState unit="section"/>
       </refsDecl>
       <refsDecl n="text=Phil." doctype="TEI.2">
 	<state delim=" " unit="text"/>
 	<state delim="." unit="speech"/>
 	<state delim="." n="chunk" unit="chapter"/>
-	<state unit="section"/>
+	refState unit="section"/>
       </refsDecl>
     </encodingDesc>
     
     <profileDesc>
       <langUsage>
-	<language id="la">Latin
+	language ident="la">Latin
 </language>
-	<language id="greek">Greek
+	language ident="greek">Greek
       </language></langUsage>
     </profileDesc>
     
-    <revisionDesc>
+    <revisionDesc><!--
       <change><date>5/9/97</date>
 	<respStmt><name>CJSU</name><resp>ed.</resp></respStmt>
 	<item>
@@ -159,11 +159,11 @@ Added to repository. Passes SGML validation.
     <change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
   </teiHeader><text xml:lang="la">
 <body>
 <head>Philippicae Orationes in M. Antonium</head>
-<div1 type="Speech" n="1">
+<div type="Speech" n="1">
 <head>IN M. ANTONIVM 
 ORATIO PHILIPPICA PRIMA</head> 
 
@@ -680,7 +680,7 @@ tam mihi me quam rei publicae reservabo. <reg>mihi</reg> fere<note>mihi fere <hi
 est quod vixi vel ad aetatem vel ad gloriam: huc si quid 
 accesserit, non tam mihi quam vobis reique publicae accesserit. </p>
 
-<div1 type="Speech" n="2">
+<div type="Speech" n="2">
 <head>IN M. ANTONIVM
 ORATIO PHILIPPICA SECVNDA</head> 
 
@@ -1450,7 +1450,7 @@ in scelere cognoscite.
 <milestone n="23" unit="chapter"/><milestone n="56" unit="section"/><reg>restituebat</reg><note>restituerat <hi rend="italics">V</hi></note> multos calamitosos: in 
 eis patrui nulla mentio. <reg>si</reg> severus, cur non in omnis? si 
 misericors, cur non in suos? <reg>sed</reg> omitto ceteros: Licinium 
-<reg>lenticulam</reg><note>Lenticulam <hi rend="italics">ns</hi> (<foreign lang="greek">Lenti/koulon</foreign> <hi rend="italics">nominat Dio Cassius</hi> xlv. 47): Denticulam <hi rend="italics">Vct</hi>: Denticulum <hi rend="italics">Bücheler</hi></note> de alea condemnatum, conlusorem suum, restituit, 
+<reg>lenticulam</reg><note>Lenticulam <hi rend="italics">ns</hi> (<foreign xml:lang="grc">Lenti/koulon</foreign> <hi rend="italics">nominat Dio Cassius</hi> xlv. 47): Denticulam <hi rend="italics">Vct</hi>: Denticulum <hi rend="italics">Bücheler</hi></note> de alea condemnatum, conlusorem suum, restituit, 
 quasi vero ludere cum condemnato non liceret, sed<note>sed <hi rend="italics">codd.</hi>: scilicet <hi rend="italics">Koch</hi></note> 
 ut quod in alea perdiderat beneficio legis dissolveret. 
 <reg>quam</reg> attulisti rationem populo Romano cur eum restitui 
@@ -2289,7 +2289,7 @@ populum Romanum liberum relinquam—hoc mihi maius ab
 dis immortalibus dari nihil potest—alterum ut ita cuique 
 eveniat ut de re publica quisque mereatur.  </p>
 
-<div1 type="Speech" n="3">
+<div type="Speech" n="3">
 <head>IN M. ANTONIVM 
 ORATIO PHILIPPICA TERTIA</head> 
 
@@ -2848,7 +2848,7 @@ eis videretur, primo quoque tempore de his rebus ad
 hunc ordinem referrent<note>referrent <hi rend="italics">Vc</hi>: referent <hi rend="italics">t</hi>: referant <hi rend="italics">ns</hi></note>, ita uti e re publica fideque sua 
 videretur<note>videretur censuerunt <hi rend="italics">c</hi>: censuerint (<hi rend="italics">sine</hi> videretur) <hi rend="italics">ns</hi></note>.</p>
 
-<div1 type="Speech" n="4">
+<div type="Speech" n="4">
 <head>IN M. ANTONIVM 
 ORATIO PHILIPPICA QVARTA</head> 
 
@@ -3059,7 +3059,7 @@ fortissimo vobisque amicissimo, hoc M. Servilio<note>M. hoc <hi rend="italics">D
 eius, ornatissimis viris, optimis civibus, longo intervallo me 
 auctore et principe ad spem libertatis exarsimus.  </p>
 
-<div1 type="Speech" n="5">
+<div type="Speech" n="5">
 <head>IN M. ANTONIVM 
 ORATIO PHILIPPICA QVINTA</head> 
 
@@ -3823,7 +3823,7 @@ Romani libertas carissima sit et fuerit, vacationem militiae
 ipsis liberisque eorum esse placere extra tumultum Gallicum 
 Italicumque: easque legiones bello confecto missas fieri 
 placere; quantamque pecuniam militibus earum legionum 
-in singulos C. Caesar, pontifex, pro praetore<note>pro praetore <foreign lang="greek">d</foreign>: populo Romano <hi rend="italics">V</hi>: <hi rend="italics">del. Poggius</hi></note> pollicitus sit, 
+in singulos C. Caesar, pontifex, pro praetore<note>pro praetore <foreign xml:lang="grc">d</foreign>: populo Romano <hi rend="italics">V</hi>: <hi rend="italics">del. Poggius</hi></note> pollicitus sit, 
 tantam dari placere; utique C. Pansa A. Hirtius consules,  
 alter ambove, si eis videretur, rationem agri haberent qui 
 sine iniuria privatorum dividi posset<note>haberent ... posset <hi rend="italics">Schütz</hi>: habent ... possit <hi rend="italics">V</hi>: habeant ... possit <hi rend="italics">Poggius</hi></note>, eisque militibus, 
@@ -3834,7 +3834,7 @@ sine mora matureque decreta, facilius apparabitis ea quae
 tempus et necessitas flagitat. <reg>celeritate</reg> autem opus est: 
 qua si essemus usi, bellum, ut saepe dixi, nullum haberemus. </p>
 
-<div1 type="Speech" n="6">
+<div type="Speech" n="6">
 <head>IN M. ANTONIVM 
 ORATIO PHILIPPICA SEXTA</head> 
 
@@ -4100,7 +4100,7 @@ tanta concordia consequemini<note>consequamini <hi rend="italics">V</hi></note>,
 serviatis. Aliae nationes servitutem pati possunt, populi 
 Romani est<note>res est <hi rend="italics">D</hi></note> propria libertas.</p>
 
-<div1 type="Speech" n="7">
+<div type="Speech" n="7">
 <head>IN M. ANTONIVM 
 ORATIO PHILIPPICA SEPTIMA</head> 
 
@@ -4435,7 +4435,7 @@ senatus, hoc studio equestris ordinis, hoc ardore populi
 Romani potes in perpetuum rem publicam metu et periculo 
 liberare. <reg>quibus</reg> de rebus refers, P. Servilio adsentior<note>quibus ... assentior <hi rend="italics">om. ns</hi>: de rebus <hi rend="italics">om. bt</hi>: assentior <hi rend="italics">om. t</hi></note>.  </p>
 
-<div1 type="Speech" n="8">
+<div type="Speech" n="8">
 <head>IN M. ANTONIVM 
 ORATIO PHILIPPICA OCTAVA</head> 
 
@@ -4866,7 +4866,7 @@ senatum referant. <reg>si</reg> quis post hoc senatus consultum ad
 Antonium profectus esset<note>esset <hi rend="italics">V</hi>: fuerit <hi rend="italics">D</hi></note> praeter L. Varium, senatum existimaturum 
 eum contra rem publicam fecisse.  </p>
 
-<div1 type="Speech" n="9">
+<div type="Speech" n="9">
 <head>IN M. ANTONIVM 
 ORATIO PHILIPPICA NONA</head> 
 
@@ -5104,7 +5104,7 @@ quo Ser. Sulpicius inferatur; quod sepulcrum ipsius,
 liberorum posterorumque eius<note>posterorum eius sit <hi rend="italics">D</hi></note> esset, uti quod optimo iure 
 publice sepulcrum<note>sepulcrum publice <hi rend="italics">D</hi></note> datum esset.'  </p>
 
-<div1 type="Speech" n="10">
+<div type="Speech" n="10">
 <head>IN M. ANTONIVM 
 ORATIO PHILIPPICA DECIMA</head> 
 
@@ -5494,7 +5494,7 @@ consule cum quaestore prove quaestore<note>cum quaestore prove quaestore <hi ren
 Macedoniam obtinere quoad ei ex senatus consulto 
 successum sit.'  </p>
 
-<div1 type="Speech" n="11">
+<div type="Speech" n="11">
 <head>IN M. ANTONIVM 
 ORATIO PHILIPPICA VNDECIMA</head> 
 
@@ -6005,7 +6005,7 @@ et praeclari viri, robustus et victor exercitus.
 <milestone n="33" unit="section"/>Deiotari regis 
 et patris et fili et magnus et nostro more institutus exercitus; 
 summa in filio spes, summa ingeni indoles, summa 
-virtus<note>summa virtus <foreign lang="greek">d</foreign>: summaque v <hi rend="italics">D</hi> (<hi rend="italics">cf. Zielinski p.</hi> 215)</note>. <reg>quid</reg> de patre dicam? cuius benevolentia in<note>benevolentia in <hi rend="italics">s</hi>: -tiã <hi rend="italics">n</hi>: -tia <hi rend="italics">bt</hi></note> populum 
+virtus<note>summa virtus <foreign xml:lang="grc">d</foreign>: summaque v <hi rend="italics">D</hi> (<hi rend="italics">cf. Zielinski p.</hi> 215)</note>. <reg>quid</reg> de patre dicam? cuius benevolentia in<note>benevolentia in <hi rend="italics">s</hi>: -tiã <hi rend="italics">n</hi>: -tia <hi rend="italics">bt</hi></note> populum 
 Romanum est ipsius aequalis aetati; qui non solum 
 socius imperatorum nostrorum fuit in bellis verum etiam 
 dux copiarum suarum. <reg>quae</reg> de illo viro Sulla, quae 
@@ -6100,7 +6100,7 @@ enim deos immortalis spero aequissimum iudicare.
 cum ita sint, eam quam dixi sententiam vobis, patres conscripti, 
 censeo comprobandam.  </p>
 
-<div1 type="Speech" n="12">
+<div type="Speech" n="12">
 <head>IN M. ANTONIVM 
 ORATIO PHILIPPICA DVODECIMA</head> 
 
@@ -6421,7 +6421,7 @@ non longe a domo, certe in Etruria est, id est in via. <reg>quis</reg>
 igitur mihi praestat Lentonem uno capite esse contentum? 
 <reg>dic</reg> mihi praeterea, Pansa, Ventidius ubi sit, cui fui semper 
 amicus ante quam ille rei publicae bonisque omnibus tam 
-aperte est factus inimicus. <reg>possum</reg> Cassiam vitare, <add>tenere</add><note>tenere <foreign lang="greek">d</foreign>, <hi rend="italics">ed. R</hi>: et <hi rend="italics">t</hi>: <hi rend="italics">om. bnsv</hi>: <hi rend="italics">fort.</hi> sequi <hi rend="italics">ante</hi> quid si <hi rend="italics">supplendum</hi></note> 
+aperte est factus inimicus. <reg>possum</reg> Cassiam vitare, <add>tenere</add><note>tenere <foreign xml:lang="grc">d</foreign>, <hi rend="italics">ed. R</hi>: et <hi rend="italics">t</hi>: <hi rend="italics">om. bnsv</hi>: <hi rend="italics">fort.</hi> sequi <hi rend="italics">ante</hi> quid si <hi rend="italics">supplendum</hi></note> 
 Flaminiam: quid, si Anconam, ut dicitur, Ventidius venerit, 
 poterone Ariminum tuto accedere? <reg>restat</reg> Aurelia. 
 <reg>hic</reg> quidem etiam praesidia habeo<note>habebo <hi rend="italics">b</hi></note>; possessiones enim sunt 
@@ -6431,7 +6431,7 @@ familiaritatem notissimam.
 <milestone n="10" unit="chapter"/><milestone n="24" unit="section"/><reg>hisce</reg> ego viis me committam 
 qui Terminalibus nuper in suburbium, ut eodem die reverterer, 
 ire non sum ausus? <reg>domesticis</reg> me parietibus vix 
-tueor sine amicorum custodiis. <reg>itaque</reg> in urbe maneo<note>maneo <hi rend="italics">om. <foreign lang="greek">d</foreign>, Naugerius</hi> (1)</note>, si<note>si <hi rend="italics">bv</hi>: sisi <hi rend="italics">t</hi>: si sic <hi rend="italics">ns</hi></note> 
+tueor sine amicorum custodiis. <reg>itaque</reg> in urbe maneo<note>maneo <hi rend="italics">om. <foreign xml:lang="grc">d</foreign>, Naugerius</hi> (1)</note>, si<note>si <hi rend="italics">bv</hi>: sisi <hi rend="italics">t</hi>: si sic <hi rend="italics">ns</hi></note> 
 licebit, manebo. <reg>haec</reg> mea sedes est, haec vigilia, haec 
 custodia, hoc praesidium stativum. <reg>teneant</reg> alii castra, 
 gerant res<note>gerant res <hi rend="italics">Orelli</hi>: regna tres <hi rend="italics">t</hi>: regna res <hi rend="italics">cett.</hi>: regant res <hi rend="italics">Schütz</hi></note> bellicas; occiderint<note>occiderint <hi rend="italics">scripsi</hi>: oderint <hi rend="italics">codd.</hi>: fuderint <hi rend="italics">Faernus</hi></note> hostem; nam hoc caput est; 
@@ -6542,7 +6542,7 @@ et meam fidem rei publicae constantiamque praestitero,
 tum erunt mihi non ei solum qui me oderunt sed illi 
 etiam qui invident extimescendi. <reg>custodiatur</reg> igitur vita 
 rei publicae mea<note>rei p. (r. p.) mea <hi rend="italics">t</hi>: r. p. eaque <hi rend="italics">b</hi>: mea r. p. eaque <hi rend="italics">ns</hi></note>, quoad vel dignitas vel natura patietur, 
-patriae reservetur, mors aut<note>aut (<hi rend="italics">post</hi> mors) <foreign lang="greek">p</foreign>, <hi rend="italics">Faernus</hi>: autem <hi rend="italics">cett.</hi></note> necessitatem habeat fati aut, si 
+patriae reservetur, mors aut<note>aut (<hi rend="italics">post</hi> mors) <foreign xml:lang="grc">p</foreign>, <hi rend="italics">Faernus</hi>: autem <hi rend="italics">cett.</hi></note> necessitatem habeat fati aut, si 
 ante oppetenda est, oppetatur cum gloria. <reg>haec</reg> cum ita 
 sint, etsi hanc legationem res publica, ut levissime dicam, 
 non desiderat, tamen si tuto licebit ire, proficiscar. <reg>omnino</reg>, 
@@ -6552,7 +6552,7 @@ mihi quoniam liberum est spatium, multum etiam atque
 etiam considerandum puto idque potissimum faciendum 
 quod maxime interesse rei publicae iudicaro.  </p>
 
-<div1 type="Speech" n="13">
+<div type="Speech" n="13">
 <head>IN M. ANTONIVM 
 ORATIO PHILIPPICA TERTIA 
 DECIMA</head> 
@@ -6732,10 +6732,10 @@ septiens miliens quod adulescenti, patres conscripti, spopondistis,
 ita discribetur ut videatur a vobis Cn. Pompei 
 filius in patrimonio suo conlocatus. <reg>haec</reg> senatus: reliqua 
 populus Romanus in ea familia quam vidit amplissimam 
-persequetur, in primis paternum auguratus locum, in quem<note>in quem <hi rend="italics">codd. Ferrarii</hi>: in q~ <foreign lang="greek">p</foreign>: in que <hi rend="italics">t</hi>: in quo <hi rend="italics">nsv</hi>: <hi rend="italics">om. b</hi></note> 
+persequetur, in primis paternum auguratus locum, in quem<note>in quem <hi rend="italics">codd. Ferrarii</hi>: in q~ <foreign xml:lang="grc">p</foreign>: in que <hi rend="italics">t</hi>: in quo <hi rend="italics">nsv</hi>: <hi rend="italics">om. b</hi></note> 
 ego eum, ut quod a patre accepi filio reddam, mea nominatione 
 cooptabo. Vtrum igitur augurem Iuppiter <reg>optimus</reg> 
-<reg>maximus</reg><note>luppiter Opt. Maximus <hi rend="italics">Pluygers</hi>: i. o. m. <hi rend="italics">bnst</hi>: iovis maximi <hi rend="italics">v<foreign lang="greek">p</foreign></hi>: lovis Opt. Max. <hi rend="italics">Poggius</hi></note> cuius interpretes internuntiique constituti sumus<note>nos <hi rend="italics">post</hi> sumus <hi rend="italics">add. Madvig</hi></note>, 
+<reg>maximus</reg><note>luppiter Opt. Maximus <hi rend="italics">Pluygers</hi>: i. o. m. <hi rend="italics">bnst</hi>: iovis maximi <hi rend="italics">v<foreign xml:lang="grc">p</foreign></hi>: lovis Opt. Max. <hi rend="italics">Poggius</hi></note> cuius interpretes internuntiique constituti sumus<note>nos <hi rend="italics">post</hi> sumus <hi rend="italics">add. Madvig</hi></note>, 
 utrum populus Romanus libentius sanciet, Pompeiumne 
 an<note>-ne an <hi rend="italics">tv</hi>: ne <hi rend="italics">bns</hi></note> Antonium? <reg>mihi</reg> quidem numine deorum immortalium 
 videtur hoc fortuna voluisse ut actis Caesaris firmis ac ratis 
@@ -6799,7 +6799,7 @@ quattuor consules gerit bellum. <reg>huic</reg> cedamus, huius condiciones
 audiamus, cum hoc pacem fieri posse credamus? 
 
 <milestone n="8" unit="chapter"/></p><p><reg>at</reg> periculum est ne opprimamur. <reg>non</reg> metuo ne is qui 
-suis amplissimis fortunis nisi nobis<note><lemma>nobis</lemma> bonis <hi rend="italics">v<foreign lang="greek">p</foreign></hi></note> salvis frui non potest 
+suis amplissimis fortunis nisi nobis<note><lemma>nobis</lemma> bonis <hi rend="italics">v<foreign xml:lang="grc">p</foreign></hi></note> salvis frui non potest 
 prodat salutem suam. <reg>bonos</reg> civis primum natura efficit, 
 adiuvat deinde fortuna. <reg>omnibus</reg> enim bonis expedit 
 salvam esse rem publicam. <reg>sed</reg> in eis qui fortunati sunt 
@@ -6810,7 +6810,7 @@ quis eodem sanior? <reg>vidit</reg> eius maestitiam atque lacrimas
 populus Romanus Lupercalibus; vidit<note>vidit <hi rend="italics">om. t</hi></note> quam abiectus, quam 
 confectus esset, cum Caesari diadema imponens<note>ponens <hi rend="italics">t</hi></note> Antonius 
 servum se illius quam conlegam esse malebat. <reg>qui</reg> si reliquis 
-flagitiis et sceleribus abstinere<note>abstinere <hi rend="italics">n<foreign lang="greek">p</foreign></hi>: se <hi rend="italics">ante</hi> abstin. <hi rend="italics">add. bs, post</hi> si <hi rend="italics">t</hi></note> potuisset, tamen unum 
+flagitiis et sceleribus abstinere<note>abstinere <hi rend="italics">n<foreign xml:lang="grc">p</foreign></hi>: se <hi rend="italics">ante</hi> abstin. <hi rend="italics">add. bs, post</hi> si <hi rend="italics">t</hi></note> potuisset, tamen unum 
 ob hoc factum dignum illum omni poena putarem. <reg>nam</reg> 
 si ipse servire poterat, nobis dominum cur imponebat? et 
 si eius pueritia pertulerat libidines eorum qui erant in eum 
@@ -6818,7 +6818,7 @@ tyranni, etiamne in nostros liberos dominum et tyrannum
 comparabat? <reg>itaque</reg> illo interfecto qualem in nos eum esse 
 voluit, talis ipse in ceteros<note>in ceteros <hi rend="italics">del. Pluygers</hi></note> exstitit. 
 
-<milestone n="18" unit="section"/><reg>qua</reg> enim <add>in</add><note>in <foreign lang="greek">p</foreign>, <hi rend="italics">om. cett.</hi></note> barbaria 
+<milestone n="18" unit="section"/><reg>qua</reg> enim <add>in</add><note>in <foreign xml:lang="grc">p</foreign>, <hi rend="italics">om. cett.</hi></note> barbaria 
 quisquam tam taeter, tam crudelis tyrannus quam in hac 
 urbe armis barbarorum stipatus Antonius? Caesare dominante 
 veniebamus in senatum, si non libere, at tamen tuto. 
@@ -6836,14 +6836,14 @@ obtulerunt.
 
 <milestone n="9" unit="chapter"/><milestone n="19" unit="section"/>Caesaris enim incredibilis ac divina virtus 
 latronis impetus crudelis ac furibundos retardavit: quem 
-tamen<note>tamen <hi rend="italics">b</hi> (<hi rend="italics">e coll. mea</hi>) <foreign lang="greek">p</foreign>: tum <hi rend="italics">nst</hi></note> ille demens laedere se putabat edictis, ignorans quaecumque 
+tamen<note>tamen <hi rend="italics">b</hi> (<hi rend="italics">e coll. mea</hi>) <foreign xml:lang="grc">p</foreign>: tum <hi rend="italics">nst</hi></note> ille demens laedere se putabat edictis, ignorans quaecumque 
 falso diceret<note>diceret <hi rend="italics">ns</hi>: in eum diceret <hi rend="italics">bt</hi>: ediceret <hi rend="italics">Pluygers</hi></note> in sanctissimum adulescentem<note>in sanctissimum adulescentem <hi rend="italics">del. Halm</hi></note>, ea vere 
 recidere in memoriam pueritiae suae. <reg>ingressus</reg> urbem est 
 quo comitatu vel potius agmine, cum dextra sinistra, gemente 
 populo Romano, minaretur dominis, notaret domos, divisurum 
 se urbem palam suis polliceretur. Eoque ipso die 
 innumerabilia senatus consulta fecit, quae quidem omnia citius 
-delata<note>delata <hi rend="italics">tv<foreign lang="greek">p</foreign></hi>: delata <hi rend="italics">bn</hi>: perfecta perlata <hi rend="italics">s</hi></note> quam scripta sunt<note>eoque ... scripta sunt <hi rend="italics">post</hi> paludatus <hi rend="italics">hab. codd., huc transposui</hi></note>. <reg>rediit</reg> ad milites; ibi<note>ibi <hi rend="italics">bnv</hi>: ubi <hi rend="italics">st</hi></note> pestifera 
+delata<note>delata <hi rend="italics">tv<foreign xml:lang="grc">p</foreign></hi>: delata <hi rend="italics">bn</hi>: perfecta perlata <hi rend="italics">s</hi></note> quam scripta sunt<note>eoque ... scripta sunt <hi rend="italics">post</hi> paludatus <hi rend="italics">hab. codd., huc transposui</hi></note>. <reg>rediit</reg> ad milites; ibi<note>ibi <hi rend="italics">bnv</hi>: ubi <hi rend="italics">st</hi></note> pestifera 
 illa Tiburi<note>Tibure <hi rend="italics">Muretus</hi></note> contio. Inde ad urbem cursus; senatus in Capitolium; 
 parata de circumscribendo adulescente sententia 
 consularis, cum repente—nam<note><lemma>nam</lemma> iam <hi rend="italics">Faernus</hi></note> Martiam legionem Albae 
@@ -7098,7 +7098,7 @@ eorum qui Caesarem occiderant: et eosdem nec opinantis
 ad quaestoris sui aut imperatoris aut commilitonum suorum 
 pericula impulistis.' <reg>scilicet</reg> verba dedimus, decepimus: 
 ignorabat legio Martia, quarta, nesciebant<note><lemma>nesciebant</lemma> nec sciebant <hi rend="italics">bt</hi>: ignorabant <hi rend="italics">s</hi></note> veterani quid 
-ageretur; non illi senatus auctoritatem, non<note>non ... non <hi rend="italics">o<foreign lang="greek">p</foreign></hi>: an ... non <hi rend="italics">bt</hi>: num ... an <hi rend="italics">s</hi>: non ... an <hi rend="italics">v</hi></note> libertatem populi 
+ageretur; non illi senatus auctoritatem, non<note>non ... non <hi rend="italics">o<foreign xml:lang="grc">p</foreign></hi>: an ... non <hi rend="italics">bt</hi>: num ... an <hi rend="italics">s</hi>: non ... an <hi rend="italics">v</hi></note> libertatem populi 
 sequebantur: Caesaris mortem ulcisci volebant, quam  
 omnes fatalem fuisse arbitrabantur; te videlicet salvum, 
 beatum, florentem esse cupiebant. 
@@ -7324,7 +7324,7 @@ rem fore. <reg>hoc</reg> vel coniungi cum hoc senatus consulto licet
 vel seiungi potest separatimque perscribi, ut proprio senatus 
 consulto Pompeius conlaudatus esse videatur.  </p>
 
-<div1 type="Speech" n="14">
+<div type="Speech" n="14">
 <head>IN M. ANTONIVM 
 ORATIO PHILIPPICA QVARTA 
 DECIMA</head> 
@@ -7585,7 +7585,7 @@ semper illum hostem, semper hoc bellum, ut ego qui omni
 tempore verae pacis auctor fuissem huic essem nomini pestiferae 
 pacis inimicus; idem P. 
 
-<milestone n="21" unit="section"/>Ventidium<note>P. <hi rend="italics">Ferrarius</hi>: r. <hi rend="italics">tv</hi>: <hi rend="italics">om. bhos</hi></note>, cum alii praetorem<note>cum alii praetorem <hi rend="italics">Garatoni</hi>: cum alii p.r. t.r. volusenum <hi rend="italics">b</hi>: cum aliis tr. pl. volusenum <hi rend="italics">ot</hi> (voluisse n&utilde; <hi rend="italics">o</hi>): cum aliis tr. pl. voluisse unum <hi rend="italics">s</hi>: cum alii tr. pl. voluissent (vocavissent <foreign lang="greek">p</foreign>) num <hi rend="italics">v<foreign lang="greek">p</foreign></hi>: volusenum <hi rend="italics">vel</hi> voluisse n&utilde;. (un&utilde;) <hi rend="italics">voc.</hi> voluissent (<hi rend="italics">l.</hi> 20) <foreign lang="greek">dittografi/an</foreign> <hi rend="italics">puto</hi></note>, 
+<milestone n="21" unit="section"/>Ventidium<note>P. <hi rend="italics">Ferrarius</hi>: r. <hi rend="italics">tv</hi>: <hi rend="italics">om. bhos</hi></note>, cum alii praetorem<note>cum alii praetorem <hi rend="italics">Garatoni</hi>: cum alii p.r. t.r. volusenum <hi rend="italics">b</hi>: cum aliis tr. pl. volusenum <hi rend="italics">ot</hi> (voluisse n&utilde; <hi rend="italics">o</hi>): cum aliis tr. pl. voluisse unum <hi rend="italics">s</hi>: cum alii tr. pl. voluissent (vocavissent <foreign xml:lang="grc">p</foreign>) num <hi rend="italics">v<foreign xml:lang="grc">p</foreign></hi>: volusenum <hi rend="italics">vel</hi> voluisse n&utilde;. (un&utilde;) <hi rend="italics">voc.</hi> voluissent (<hi rend="italics">l.</hi> 20) <foreign xml:lang="grc">dittografi/an</foreign> <hi rend="italics">puto</hi></note>, 
 ego semper hostem. <reg>has</reg> in sententias meas si consules<note>consules <hi rend="italics">Manutius</hi>: gg. <hi rend="italics">t</hi>: coss. designati (desigg. <hi rend="italics">s</hi>) <hi rend="italics">cett.</hi></note> 
 discessionem facere voluissent, omnibus istis latronibus auctoritate 
 ipsa senatus iam pridem de manibus arma cecidissent. 
@@ -7815,7 +7815,7 @@ constituat<note>constituant <hi rend="italics">h</hi></note>:
 <milestone n="38" unit="section"/>cumque virtus legionum digna clarissimis imperatoribus 
 exstiterit, senatum, quae sit antea pollicitus 
 legionibus exercitibusque nostris, ea summo studio re publica 
-recuperata persoluturum<note>persoluturum <hi rend="italics">Manutius</hi>: soluturum <hi rend="italics">b</hi>: resoluturum <hi rend="italics">cett.</hi></note>, cumque<note>cumque <foreign lang="greek">d</foreign>, <hi rend="italics">ed. R</hi>: quod <hi rend="italics">mei</hi></note> legio Martia princeps  
+recuperata persoluturum<note>persoluturum <hi rend="italics">Manutius</hi>: soluturum <hi rend="italics">b</hi>: resoluturum <hi rend="italics">cett.</hi></note>, cumque<note>cumque <foreign xml:lang="grc">d</foreign>, <hi rend="italics">ed. R</hi>: quod <hi rend="italics">mei</hi></note> legio Martia princeps  
 cum hostibus conflixerit, atque ita cum maiore numero 
 hostium contenderit <add>ut</add><note>ut <hi rend="italics">Ferrarius</hi>: cum <hi rend="italics">codd.</hi>: ut cum <hi rend="italics">Halm</hi></note> plurimos caederent caderent non 
 nulli<note>caderent nonnulli <hi rend="italics">o, ut voluit Halm</hi>: cadere nonnullos <hi rend="italics">cett.</hi></note>, cumque sine ulla retractatione pro patria vitam profuderint; 
@@ -7832,7 +7832,7 @@ hostium militumque divinam virtutem<note>divina virtus <hi rend="italics">b</hi>
 quae praemia senatus militibus ante constituit, ea solvantur 
 eorum qui hoc bello pro patria occiderunt parentibus, 
 liberis, coniugibus, fratribus: eisque<note>fratribus: eisque <hi rend="italics">Ferrarius</hi>: fratribus hisque (iisque <hi rend="italics">s1</hi>: eaque <hi rend="italics">s2</hi>) frattribus <hi rend="italics">hsv</hi>: fratribusque <hi rend="italics">o</hi>: fratribus <hi rend="italics">b</hi></note> tribuantur quae militibus 
-ipsis tribui oporteret, si vivi vicissent<note>si vivi vicissent <hi rend="italics">Ernesti</hi>: si illi vicissent <hi rend="italics">bhs1v</hi>: si illi vixissent <hi rend="italics">os2</hi>: si illi viverent <foreign lang="greek">p</foreign></note> qui morte 
+ipsis tribui oporteret, si vivi vicissent<note>si vivi vicissent <hi rend="italics">Ernesti</hi>: si illi vicissent <hi rend="italics">bhs1v</hi>: si illi vixissent <hi rend="italics">os2</hi>: si illi viverent <foreign xml:lang="grc">p</foreign></note> qui morte 
 vicerunt.  </p>
 </body></text>
 </group></text></TEI>

@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Inst." type="work">Institutio Oratoria, books 4-6 - 4</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -39,23 +39,23 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter"/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter"/>
+                refState unit="section"/>
             </refsDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="page"/>
+            <refsDecl
+                refState unit="page"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -64,11 +64,11 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
-            <div1 part="N" sample="complete" org="uniform" n="4" type="book">
+            <div part="N" sample="complete" org="uniform" n="4" type="book">
                 <head>Liber IV</head>
                 <p>
                     <milestone n="pr" unit="chapter"/>
@@ -146,14 +146,14 @@ perseverandum.
                     <reg>quod</reg>
                     principium Latine vel exordium dicitur,
 maiore quadam ratione Graeci videntur
-                    <foreign lang="greek">prooi/mion</foreign>
+                    <foreign xml:lang="grc">prooi/mion</foreign>
                     nominasse, quia a nostris initium modo significatur,
 illi satis dare partem hanc esse ante ingressum rei
 de qua dicendum sit, ostendunt.
                     <milestone n="2" unit="section"/>
                     <reg>nam</reg>
                     sive propterea quod
-                    <foreign lang="greek">oi)/mh</foreign>
+                    <foreign xml:lang="grc">oi)/mh</foreign>
                     cantus est et citharoedi pauca illa,
 quae, antequam legitimum certamen inchoent, emerendi favoris gratia canunt, prooemium cognominaverunt, oratores quoque ea quae, priusquam causam
 exordiantur, ad conciliandos sibi iudicum animos
@@ -161,7 +161,7 @@ praeloquuntur eadem appellatione signarunt;
                     <milestone n="3" unit="section"/>
                     sive,
 quod
-                    <foreign lang="greek">oi)=mon</foreign>
+                    <foreign xml:lang="grc">oi)=mon</foreign>
                     iidem Graeci viam appellant, id quod
 ante ingressum rei ponitur sic vocare est institutum:
 certe prooemium est, quod apud iudicem dici, priusquam causam cognoverit, possit; vitioseque in scholis
@@ -252,7 +252,7 @@ honore, si eloquentiam eius et gratiam nos timere
 fingendo, ut ea suspecta sint iudici, fecerimus,
 interim per contumeliam, sed hoc perquam raro, ut
 Asinius pro Vrbiniae
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         <hi rend="italics">cp.</hi>
                         VII. ii. 4 and 26.
                     </note>
@@ -549,7 +549,7 @@ genere causae desiderari palam est.
 causarum plurimi quinque fecerunt, honestum,
 humile, dubium vel anceps, admirabile, obscurum:
 id est
-                    <foreign lang="greek">e)/ndocon, a)/docon, a)mfi/docon, para/docon, dusparakolou/qhton.</foreign>
+                    <foreign xml:lang="grc">e)/ndocon, a)/docon, a)mfi/docon, para/docon, dusparakolou/qhton.</foreign>
                     <reg>sunt</reg>
                     quibus recte videtur adiici turpe,
 quod alii humili, alii admirabili subiiciunt.
@@ -649,7 +649,7 @@ dicit, scire se mirari quosdam, quod is, qui per
 tot annos defenderit multos, laeserit neminem,
 ad accusandum Verrem descenderit; deinde ostendit,
 hanc ipsam esse sociorum defensionem; quod schema
-                    <foreign lang="greek">pro/lhmyis</foreign>
+                    <foreign xml:lang="grc">pro/lhmyis</foreign>
                     dicitur.
                     <milestone n="50" unit="section"/>
                     <reg>id</reg>
@@ -757,7 +757,7 @@ vultuque nimia promittens.
                     <reg>dissimulata</reg>
                     enim et,
 ut Graeci dicunt,
-                    <foreign lang="greek">a)nepi/fantos</foreign>
+                    <foreign xml:lang="grc">a)nepi/fantos</foreign>
                     actio melius saepe surrepit.
                     <name>Sed</name>
                     haec, prout formari animum iudicum
@@ -789,7 +789,7 @@ quo praeparare debet fatiget.
                     <reg>sermonem</reg>
                     a persona
 iudicis aversum, quae
-                    <foreign lang="greek">a)postrofh/</foreign>
+                    <foreign xml:lang="grc">a)postrofh/</foreign>
                     dicitur, quidam in
 totum a prooemio summouent, nonnulla quidem in
 hanc persuasionem ratione ducti.
@@ -1030,7 +1030,7 @@ et praesentium, qualis est Ciceronis de discursu
 amicorum Chrysogoni, postquam est nominatus, et
 futurorum, quae solis dari uaticinantibus potest;
 nam
-                    <foreign lang="greek">u(potu/pwsis</foreign>
+                    <foreign xml:lang="grc">u(potu/pwsis</foreign>
                     non est habenda narratio.
                     <milestone n="4" unit="section"/>
                     <name>Sed</name>
@@ -1493,7 +1493,7 @@ natum filium sustuli, educavi, in adolescentiam perduxi.
                     </hi>
                     <reg>ideoque</reg>
                     Graecorum aliqui aliud circumcisam expositionem, id est
-                    <foreign lang="greek">su/ntomon,</foreign>
+                    <foreign xml:lang="grc">su/ntomon,</foreign>
                     aliud brevem putaverunt,
 quod illa supervacuis careret, haec posset aliquid ex
 necessariis desiderare.
@@ -1504,9 +1504,9 @@ hoc ponimus, non ut minus, sed ne plus dicatur quam
 oporteat.
                     <reg>nam</reg>
                     iterationes quidem et
-                    <foreign lang="greek">tautologi/as</foreign>
+                    <foreign xml:lang="grc">tautologi/as</foreign>
                     et
-                    <foreign lang="greek">perissologi/as,</foreign>
+                    <foreign xml:lang="grc">perissologi/as,</foreign>
                     quas in narratione vitandas quidam
 scriptores artium tradiderunt, transeo; sunt enim
                     <pb id="p.74"/>
@@ -1703,7 +1703,7 @@ prudenter erutum tradunt.
                     <reg>his</reg>
                     tribus narrandi virtutibus adiiciunt quidam
 magnificentiam, quam
-                    <foreign lang="greek">megalopre/peian</foreign>
+                    <foreign xml:lang="grc">megalopre/peian</foreign>
                     vocant, quae
 neque in omnes causas cadit (nam quid in plerisque
 iudiciis privatis, de certa credita, locato et conducto,
@@ -1732,7 +1732,7 @@ esse, verum etiam iucundam expositionem.
                     <reg>sunt</reg>
                     <pb id="p.84"/>
                     qui adiiciant his evidentiam, quae
-                    <foreign lang="greek">e)na/rgeia</foreign>
+                    <foreign xml:lang="grc">e)na/rgeia</foreign>
                     Graece
 vocatur.
                     <milestone n="64" unit="section"/>
@@ -2447,7 +2447,7 @@ laboris nostri ducimus summam.
                     <milestone n="128" unit="section"/>
                     <reg>est</reg>
                     quaedam etiam repetita narratio, quae
-                    <foreign lang="greek">e)pidih/ghsis</foreign>
+                    <foreign xml:lang="grc">e)pidih/ghsis</foreign>
                     dicitur, sane res declamatoria magis quam forensis,
 ideo autem reperta, ut, quia narratio brevis esse
 debet, fusius et ornatius res possit exponi; quod fit
@@ -2458,7 +2458,7 @@ faciendum iudico neque sic unquam, ut totus ordo
 repetatur; licet enim per partes idem consequi.
                     <reg>ceterum</reg>
                     , qui uti
-                    <foreign lang="greek">e)pidihgh/sei</foreign>
+                    <foreign xml:lang="grc">e)pidihgh/sei</foreign>
                     volet, narrationis loco
 rem stringat et contentus indicare, quod factum sit,
 quo sit modo factum plenius se loco suo expositurum
@@ -2493,7 +2493,7 @@ Tullio Cicero
 paternum;
                     </hi>
                     Demosthenes pro Ctesiphonte
-                    <foreign lang="greek">tou= ga\r *fwkiko=n susta/ntos pole/mou.</foreign>
+                    <foreign xml:lang="grc">tou= ga\r *fwkiko=n susta/ntos pole/mou.</foreign>
                 </p>
                 <p>
                     <milestone n="132" unit="section"/>
@@ -2597,7 +2597,7 @@ illa procursio, ita frequenter utilis ante quaestionem
 praeparatio, utique si prima specie minus erit favorabilis, si legem asperam ac poenarias actiones tuebimur.
                     <reg>est</reg>
                     hic locus velut sequentis exordii
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         exordii,
                         <hi rend="italics">B:</hi>
                         exordium,
@@ -2605,7 +2605,7 @@ praeparatio, utique si prima specie minus erit favorabilis, si legem asperam ac 
                     </note>
                     ad conciliandum
 probationibus nostris iudicem, mitigandum, concitandum.
-                    <note anchored="yes" place="unspecified">mitigandum, concitandum omitted by B.</note>
+                    <note anchored="true" place="unspecified">mitigandum, concitandum omitted by B.</note>
                     Quod liberius hic et vehementius fieri
 potest, quia iudici nota iam causa est.
                     <milestone n="10" unit="section"/>
@@ -2627,7 +2627,7 @@ enim magis aut minus erit hoc necessarium.
                     <milestone n="12" unit="section"/>
                     <reg>hanc</reg>
                     partem
-                    <foreign lang="greek">pare/kbasin</foreign>
+                    <foreign xml:lang="grc">pare/kbasin</foreign>
                     vocant
 Graeci, Latini egressum vel egressionem.
                     <name>Sed</name>
@@ -2647,7 +2647,7 @@ divinus orator, velut nomine ipso ducis cursus dicendi
 teneretur, abrupto quem inchoaverat sermone devertit
 actutum.
                     <milestone n="14" unit="section"/>
-                    <foreign lang="greek">*pare/kbasis</foreign>
+                    <foreign xml:lang="grc">*pare/kbasis</foreign>
                     est, ut mea quidem fert opinio,
 alicuius rei, sed ad utilitatem causae pertinentis extra
 ordinem excurrens tractatio.
@@ -2666,7 +2666,7 @@ maledictorum refutatio.
                     <reg>similia</reg>
                     his, quae non sunt
 in quaestione, omnis amplificatio, minutio, omne adfectus genus, et quae
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         et quae,
                         <hi rend="italics">Spailding:</hi>
                         atque ea,
@@ -2707,7 +2707,7 @@ respondimus.
                     autem propositio videtur omnis
 confirmationis initium, quod non modo in ostendenda
 quaestione principali, sed nonnunquam etiam in singulis argumentis poni solet maximeque in iis quae
-                    <foreign lang="greek">e)pixeirh/mata</foreign>
+                    <foreign xml:lang="grc">e)pixeirh/mata</foreign>
                     vocantur.
                     <name>Sed</name>
                     nunc de priore loquimur.
@@ -3088,7 +3088,7 @@ modestiam iuris probatione proclivior.
                     <milestone n="22" unit="section"/>
                     <name>Sed</name>
                     ut non semper necessaria aut utilis est partitio,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         utilis est partitio,
                         <hi rend="italics">
                             <name>Victor</name>
@@ -3167,7 +3167,7 @@ quid nos; in eo, de quo ambigitur, quae nostrae propositiones, quae partis adver
                     vero,
 non eodem ordine exsequi, quo quidque proposueris.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

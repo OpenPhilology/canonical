@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Inst." type="work">Institutio Oratoria, books 1-3: index - 1</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -39,23 +39,23 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter"/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter"/>
+                refState unit="section"/>
             </refsDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="page"/>
+            <refsDecl
+                refState unit="page"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -64,12 +64,12 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
             <pb id="p.4"/>
-            <div1 part="N" sample="complete" org="uniform" n="1" type="book">
+            <div part="N" sample="complete" org="uniform" n="1" type="book">
                 <head>Liber I</head>
                 <p>
                     <milestone n="pr" unit="chapter"/>
@@ -273,7 +273,7 @@ ac pronuntiatio veniunt, dabuntur.
                     <reg>unus</reg>
                     accedet,
 in quo nobis orator ipse informandus est, ubi,
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         ubi.. disseremus,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -498,7 +498,7 @@ posset.
                     <reg>in</reg>
                     qua sententia Hesiodum esse plurimi
 tradunt qui ante grammaticum Aristophanen fuerunt; nam is primus
-                    <foreign lang="greek">u(poqh/kas,</foreign>
+                    <foreign xml:lang="grc">u(poqh/kas,</foreign>
                     in quo libro scriptum
 hoc invenitur, negavit esse huius poëtae.
                     <milestone n="16" unit="section"/>
@@ -629,7 +629,7 @@ edocebuntur.
 non nocebit.
                     <reg>non</reg>
                     excludo autem, id quod est inventum
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         inventum,
                         <hi rend="italics">Heindorf:</hi>
                         notum,
@@ -715,7 +715,7 @@ vulgaribus et forte occurrentibus perdat.
                     <reg>protinus</reg>
                     enim potest interpretationem linguae secretioris,
 quas Graeci
-                    <foreign lang="greek">glw/ssas</foreign>
+                    <foreign xml:lang="grc">glw/ssas</foreign>
                     vocant, dum aliud agitur,
 ediscere et inter prima elementa consequi rem
 postea proprium tempus desideraturam.
@@ -748,7 +748,7 @@ ut nomina quaedam versusque adfectatae difficultatis
 ex pluribus et asperrime coëuntibus inter se syllabis
 catenatos et velut confragosos quam citatissime
 volvant;
-                    <foreign lang="greek">xalinoi/</foreign>
+                    <foreign xml:lang="grc">xalinoi/</foreign>
                     Graece vocantur.
                     <reg>res</reg>
                     modica
@@ -1372,7 +1372,7 @@ etiam contrariam sibi poscit) ut K, quae et ipsa
 quorundam nominum nota est, et Q, cuius similis
 effectu specieque, nisi quod paulum a nostris obliquatur, Coppa apud Graecos nunc tantum in numero
 manet, et nostrarum ultima, qua tam carere potuimus quam
-                    <foreign lang="greek">y</foreign>
+                    <foreign xml:lang="grc">y</foreign>
                     non quaerimus?
                     <milestone n="10" unit="section"/>
                     <reg>atque</reg>
@@ -1386,7 +1386,7 @@ consonantibus usus acceperit, quia
                     <hi rend="italics">nos</hi>
                     ut
                     <hi rend="italics">luos.</hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         etiam ... uos.. tuos,
                         <hi rend="italics">Ritschl:</hi>
                         tam ... quos... cos,
@@ -1473,7 +1473,7 @@ quibusdam ipsa alteri successit, nam
                     <hi rend="italics">fordeum faedosque</hi>
                     pro aspiratione F velut simili littera utentes; nam contra
 Graeci aspirare F ut
-                    <foreign lang="greek">f</foreign>
+                    <foreign xml:lang="grc">f</foreign>
                     solent, ut pro Fundanio
 Cicero testem, qui primam eius litteram dicere non
 possit, irridet.
@@ -1535,9 +1535,9 @@ Graecis id tantum notetur,
                     ac
                     <hi rend="italics">probaveront?</hi>
                     <reg>sic</reg>
-                    <foreign lang="greek">*)odusseu/s,</foreign>
+                    <foreign xml:lang="grc">*)odusseu/s,</foreign>
                     quem
-                    <foreign lang="greek">*)ulusse/a</foreign>
+                    <foreign xml:lang="grc">*)ulusse/a</foreign>
                     fecerant Aeolis, ad
                     <hi rend="italics">
                         <name>Vlixem</name>
@@ -1586,7 +1586,7 @@ vim sermonis, in nominibus materiam (quia alterum
 est quod loquimur, alterum de quo loquimur), in
 convinctionibus autem complexus eorum esse iudicaverunt: quas coniunctiones a plerisque dici scio,
 sed haec videtur ex
-                    <foreign lang="greek">sunde/smw|</foreign>
+                    <foreign xml:lang="grc">sunde/smw|</foreign>
                     magis propria translatio.
                     <milestone n="19" unit="section"/>
                     <reg>paulatim</reg>
@@ -1629,7 +1629,7 @@ mihi non approbantur.
                     <reg>vocabulum</reg>
                     an appellatio
 dicenda sit
-                    <foreign lang="greek">proshgori/a</foreign>
+                    <foreign xml:lang="grc">proshgori/a</foreign>
                     et subiicienda nomini necne,
 quia parvi refert, liberum opinaturis relinquo.
                 </p>
@@ -1652,7 +1652,7 @@ sunt duobus omnibusve communia.
                     <reg>nec</reg>
                     statim
 diligentem putabo, qui promiscua, quae
-                    <foreign lang="greek">e)pi/koina</foreign>
+                    <foreign xml:lang="grc">e)pi/koina</foreign>
                     dicuntur, ostenderit, in quibus sexus uterque per
 alterum apparet; aut quae feminina positione mares
 aut neutrali feminas significant, qualia sunt
@@ -1827,7 +1827,7 @@ rebus bene accommodata.
                     possit velut
                     <hi rend="italics">vocalitas,</hi>
                     quae
-                    <foreign lang="greek">eu)fwni/a</foreign>
+                    <foreign xml:lang="grc">eu)fwni/a</foreign>
                     dicitur; cuius
 in eo delectus est, ut inter duo, quae idem significant ac tantundem valent, quod melius sonet malis.
                 </p>
@@ -1924,7 +1924,7 @@ Placentinus (si reprehendenti Hortensio credimus)
                         <reg>mettoeoque</reg>
                         Fufetioeo
                     </hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         Mettocoque Fufetioeo,
                         <hi rend="italics">Skuttsch:</hi>
                         mettioeo et furetioeo, A,
@@ -2017,9 +2017,9 @@ vitia, quia exempla eorum tradi scripto non possunt,
 nisi cum in versus inciderunt, ut divisio
                     <hi rend="italics">Europaï Asiaï</hi>
                     et ei contrarium vitium, quod
-                    <foreign lang="greek">sunai/resin</foreign>
+                    <foreign xml:lang="grc">sunai/resin</foreign>
                     et
-                    <foreign lang="greek">sunaloifh\n</foreign>
+                    <foreign xml:lang="grc">sunaloifh\n</foreign>
                     Graeci vocant, nos complexionem dicamus, qualis est apud P. Varronem
                     <hi rend="italics">tum te flagrant deiectum fulmine Phaethon.</hi>
                     <milestone n="18" unit="section"/>
@@ -2090,10 +2090,10 @@ quidem ab antiquis dictos
                     <hi rend="italics">tonores</hi>
                     comperi videlicet
 declinato a Graecis verbo, qui
-                    <foreign lang="greek">to/nous</foreign>
+                    <foreign xml:lang="grc">to/nous</foreign>
                     dicunt), vel
 adcentus, quas Graeci
-                    <foreign lang="greek">prosw|di/as</foreign>
+                    <foreign xml:lang="grc">prosw|di/as</foreign>
                     vocant, cum acuta
 et gravis alia pro alia ponuntur, ut in hoc
                     <hi rend="italics">Camillus,</hi>
@@ -2109,7 +2109,7 @@ flexa pro gravi, ut
                     <hi rend="italics">
                         <name>Appi</name>
                     </hi>
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         aut Appi,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -2184,7 +2184,7 @@ recedent, aut si consuetudo vicerit, vetus lex
                     <pb id="p.92"/>
                     sermonis abolebitur; cuius difficilior apud Graecos
 observatio est, quia plura illis loquendi genera, quas
-                    <foreign lang="greek">diale/ktous</foreign>
+                    <foreign xml:lang="grc">diale/ktous</foreign>
                     vocant, et quod alia vitiosum interim alia
 rectum est; apud nos vero brevissima ratio.
                     <milestone n="30" unit="section"/>
@@ -2215,16 +2215,16 @@ vox sine acuta.
                     <reg>et</reg>
                     illa per sonos accidunt, quae
 demonstrari scripto non possunt, vitia oris et linguae:
-                    <foreign lang="greek">i)wtakismou\s</foreign>
+                    <foreign xml:lang="grc">i)wtakismou\s</foreign>
                     et
-                    <foreign lang="greek">lambdakismou\s</foreign>
+                    <foreign xml:lang="grc">lambdakismou\s</foreign>
                     et
-                    <foreign lang="greek">i)sxno/thtas</foreign>
+                    <foreign xml:lang="grc">i)sxno/thtas</foreign>
                     et
-                    <foreign lang="greek">plateiasmou\s</foreign>
+                    <foreign xml:lang="grc">plateiasmou\s</foreign>
                     feliciores fingendis nominibus Graeci
 vocant, sicut
-                    <foreign lang="greek">koilostomi/an,</foreign>
+                    <foreign xml:lang="grc">koilostomi/an,</foreign>
                     cum vox quasi in recessu
 oris auditor.
                     <milestone n="33" unit="section"/>
@@ -2234,7 +2234,7 @@ oris auditor.
                     igitur omnibus, de quibus supra
                     <pb id="p.94"/>
                     dixi, vitiis erit illa quae vocatur
-                    <foreign lang="greek">o)rqoe/peia,</foreign>
+                    <foreign xml:lang="grc">o)rqoe/peia,</foreign>
                     id est
 emendata cum suavitate vocum explanatio: nam sic
 accipi potest recta.
@@ -2331,13 +2331,13 @@ nunquam reperiatur.
                     <reg>haec</reg>
                     tria genera quidam
 deducunt a soloecismo, et adiectionis vitium
-                    <foreign lang="greek">pleonasmo/n,</foreign>
+                    <foreign xml:lang="grc">pleonasmo/n,</foreign>
                     detractionis
-                    <foreign lang="greek">e)/lleiyin,</foreign>
+                    <foreign xml:lang="grc">e)/lleiyin,</foreign>
                     inversionis
-                    <foreign lang="greek">a)nastrofh/n</foreign>
+                    <foreign xml:lang="grc">a)nastrofh/n</foreign>
                     vocant, quae si in speciem soloecismi cadat,
-                    <foreign lang="greek">u(perbato/n</foreign>
+                    <foreign xml:lang="grc">u(perbato/n</foreign>
                     quoque eodem appellari modo posse.
                     <milestone n="41" unit="section"/>
                     <reg>immutatio</reg>
@@ -2355,7 +2355,7 @@ quidque, de quibus supra dictum est, diviseris praeterea numeros,
                     <milestone n="42" unit="section"/>
                     in quibus nos singularem ac
 pluralem habemus Graeci et
-                    <foreign lang="greek">dui+ko/n.</foreign>
+                    <foreign xml:lang="grc">dui+ko/n.</foreign>
                     <reg>quanquam</reg>
                     fuerunt, qui nobis quoque adiicerent dualem
                     <hi rend="italics">scripsere, legere;</hi>
@@ -2764,7 +2764,7 @@ praepositio sit
                     res tota
 magis Graecos decet, nobis minus succedit, nec id
 fieri natura puto, sed alienis favemus; ideoque cum
-                    <foreign lang="greek">kurtau/xena</foreign>
+                    <foreign xml:lang="grc">kurtau/xena</foreign>
                     mirati simus,
                     <hi rend="italics">incurvicervicum</hi>
                     vix a risu
@@ -2789,13 +2789,13 @@ primo dura visa sunt, usu molliuntur.
                     <reg>sed</reg>
                     minime
 nobis concessa est
-                    <foreign lang="greek">o)nomatopoii/a</foreign>
+                    <foreign xml:lang="grc">o)nomatopoii/a</foreign>
                     quis enim ferat, si
                     <pb id="p.112"/>
                     quid simile illis merito laudatis
-                    <foreign lang="greek">li/gce bio/s</foreign>
+                    <foreign xml:lang="grc">li/gce bio/s</foreign>
                     et
-                    <foreign lang="greek">si/z o)fqalmo/s</foreign>
+                    <foreign xml:lang="grc">si/z o)fqalmo/s</foreign>
                     fingere audeamus?
                     <reg>nam</reg>
                     ne
@@ -2990,10 +2990,10 @@ contendunt.
                     quoniam utrumque a Graeco
                     <pb id="p.118"/>
                     ductum sit, ad eam rationem recurrunt, ut
-                    <foreign lang="greek">patro/s</foreign>
+                    <foreign xml:lang="grc">patro/s</foreign>
                     <hi rend="italics">patris,</hi>
                     <milestone n="14" unit="section"/>
-                    <foreign lang="greek">ka/prou</foreign>
+                    <foreign xml:lang="grc">ka/prou</foreign>
                     <hi rend="italics">apri</hi>
                     faciat.
                     <reg>illa</reg>
@@ -3105,10 +3105,10 @@ in epistulis ad C. Caesarem scriptis emendat, quod is
 sit Latinum sed quia sit odiosum et, ut ipse Graeco
 verbo significavit,
                     <milestone n="20" unit="section"/>
-                    <foreign lang="greek">peri/ergon.</foreign>
+                    <foreign xml:lang="grc">peri/ergon.</foreign>
                     <reg>atqui</reg>
                     hanc quidam
-                    <foreign lang="greek">o)rqoe/peian</foreign>
+                    <foreign xml:lang="grc">o)rqoe/peian</foreign>
                     solam putant, quam ego minime excludo.
                     <reg>quid</reg>
                     enim tam necessarium quam recta locutio?
@@ -3243,7 +3243,7 @@ aliud grammatice loqui.
                     <pb id="p.124"/>
                     Cicerone dicta est notatio, quia nomen eius apud
 Aristotelem invenitur
-                    <foreign lang="greek">su/mbolon,</foreign>
+                    <foreign xml:lang="grc">su/mbolon,</foreign>
                     quod est nota; nam
 verbum ex verbo ductum, id est veriloquium, ipse
 Cicero, qui finxit, reformidat.
@@ -3384,7 +3384,7 @@ est Gavius
                     <hi rend="italics">caelites,</hi>
                     quod onere
 gravissimo vacent, idque Graeco argumento iuvit,
-                    <foreign lang="greek">h)i+qe/ous</foreign>
+                    <foreign xml:lang="grc">h)i+qe/ous</foreign>
                     enim eadem de causa dici affirmat.
                     <reg>nec</reg>
                     ei
@@ -3540,7 +3540,7 @@ vocabo consensum eruditorum, sicut vivendi consensum bonorum.
                     , quoniam diximus, quae sit loquendi
 regula, dicendum, quae scribentibus custodienda,
 quod Graeci
-                    <foreign lang="greek">o)rqografi/an</foreign>
+                    <foreign xml:lang="grc">o)rqografi/an</foreign>
                     vocant; hoc nos recte scribendi scientiam nominemus.
                     <reg>cuius</reg>
                     ars non in hoc
@@ -3700,7 +3700,7 @@ dixi, vocalibus scripserunt.
                     et
                     <hi rend="italics">i</hi>
                     iungendis eadem ratione qua Graeci
-                    <foreign lang="greek">ei</foreign>
+                    <foreign xml:lang="grc">ei</foreign>
                     uterentur;
 ea casibus numerisque discreta est, ut Lucilius praecipit:
                     <hi rend="italics">
@@ -3742,7 +3742,7 @@ instituentur, etiam impedimento erit; sicut in
                     <hi rend="italics">i</hi>
                     litterae, quam non solum
 dativis casibus in parte ultima ascribunt sed quibusdam etiam interponunt, ut in
-                    <foreign lang="greek">*l*h*i*s*t*h*i</foreign>
+                    <foreign xml:lang="grc">*l*h*i*s*t*h*i</foreign>
                     quia
 etymologia ex divisione in tris syllabas facta desideret
 eam litteram.
@@ -4052,7 +4052,7 @@ Latini conferunt, (quanquam plerique plus ingenio
 quam arte valuerunt) in primis copiam verborum,
 quorum in tragoediis gravitas, in comoediis elegantia
 et quidam velut
-                    <foreign lang="greek">a)ttikismo/s</foreign>
+                    <foreign xml:lang="grc">a)ttikismo/s</foreign>
                     inveniri potest.
                     <milestone n="9" unit="section"/>
                     <reg>oeconomia</reg>
@@ -4117,9 +4117,9 @@ ultima eius professionis diligentia est.
                     <reg>enimvero</reg>
                     iam maiore cura doceat tropos omnes, quibus praecipue non poema modo sed etiam oratio ornatur;
 schemata utraque, id est figuras, quaeque
-                    <foreign lang="greek">le/cews</foreign>
+                    <foreign xml:lang="grc">le/cews</foreign>
                     quaeque
-                    <foreign lang="greek">dianoi/as</foreign>
+                    <foreign xml:lang="grc">dianoi/as</foreign>
                     vocantur, quorum ego sicut
                     <pb id="p.154"/>
                     troporum tractatum in eum locum differo, quo mihi de
@@ -4238,7 +4238,7 @@ percussit;
                     </hi>
                     et aliud paene par ei, quod tamen eodem
 nomine appellare non audent sed dicunt
-                    <foreign lang="greek">xreiw=des,</foreign>
+                    <foreign xml:lang="grc">xreiw=des,</foreign>
                     ut
                     <hi rend="italics">
                         <name>Milo</name>
@@ -4268,7 +4268,7 @@ quibus instituendos, priusquam rhetori tradantur,
                     <pb id="p.160"/>
                     pueros existimo, strictim subiungam, ut efficiatur
 orbis ille doctrinae, quem Graeci
-                    <foreign lang="greek">e)gku/klion paidei/an</foreign>
+                    <foreign xml:lang="grc">e)gku/klion paidei/an</foreign>
                     vocant.
                 </p>
                 <p>
@@ -4401,7 +4401,7 @@ antiquitus opinionem vulgaverint, mundum ipsum
 ratione esse compositum, quam postea sit lyra
                     <pb id="p.166"/>
                     imitata, nec illa modo contenti dissimilium concordia, quam vocant
-                    <foreign lang="greek">a(rmoni/an,</foreign>
+                    <foreign xml:lang="grc">a(rmoni/an,</foreign>
                     sonum quoque iis
 motibus dederint.
                     <milestone n="13" unit="section"/>
@@ -4423,7 +4423,7 @@ tantum Romana in bellis gloria ceteris praestat.
                     <milestone n="15" unit="section"/>
                     <reg>non</reg>
                     igitur frustra Plato civili viro, quem
-                    <foreign lang="greek">politiko\n</foreign>
+                    <foreign xml:lang="grc">politiko\n</foreign>
                     vocat, necessariam musicen credidit.
                     <reg>et</reg>
                     eius
@@ -4502,9 +4502,9 @@ desideratur.
                     <reg>vocis</reg>
                     rationem Aristoxenus musicus
 dividit in
-                    <foreign lang="greek">r(uqmo/n</foreign>
+                    <foreign xml:lang="grc">r(uqmo/n</foreign>
                     et
-                    <foreign lang="greek">me/los,</foreign>
+                    <foreign xml:lang="grc">me/los,</foreign>
                     quorum alterum modulatione, alterum canore ac sonis constat.
                     <reg>num</reg>
                     igitur
@@ -4535,7 +4535,7 @@ adfici animos in diversum habitum sentiamus.
                     <milestone n="26" unit="section"/>
                     <pb id="p.172"/>
                     Corporis quoque aptus et decens motus, qui dicitur
-                    <foreign lang="greek">eu)ruqmi/a,</foreign>
+                    <foreign xml:lang="grc">eu)ruqmi/a,</foreign>
                     et est necessarius nec aliunde peti potest;
 in quo pars actionis non minima consistit, qua de
 re sepositus nobis est locus.
@@ -4554,7 +4554,7 @@ est.
 Gracchi, praecipui suorum temporum oratoris, cui
 contionanti consistens post eum musicus fistula,
 quam
-                    <foreign lang="greek">tona/rion</foreign>
+                    <foreign xml:lang="grc">tona/rion</foreign>
                     vocant, modos, quibus deberet intendi,
 monstrabat.
                     <milestone n="28" unit="section"/>
@@ -4664,7 +4664,7 @@ tamen nunquam probabit dialectice.
 qui rhetoricus est syllogismus.
                     <reg>denique</reg>
                     probationum quae sunt potentissimae
-                    <foreign lang="greek">grammikai\ a)podei/ceis</foreign>
+                    <foreign xml:lang="grc">grammikai\ a)podei/ceis</foreign>
                     vulgo dicuntur: quid autem magis oratio quam
 probationem petit?
                     <milestone n="39" unit="section"/>
@@ -4674,7 +4674,7 @@ geometrica ratione deprellendit.
                     <reg>fit</reg>
                     hoc et in
 numeris per quasdam, quas
-                    <foreign lang="greek">*yeudografi/as</foreign>
+                    <foreign xml:lang="grc">*yeudografi/as</foreign>
                     vocant,
 quibus pueri ludere solebamus.
                     <reg>sed</reg>
@@ -4839,7 +4839,7 @@ in faucibus patietur audiri nec oris inanitate resonare
                     nec, quod minime sermoni puro conveniat, simplicem
 vocis naturam pleniore quodam sono circumliniri,
 quod Graeci
-                    <foreign lang="greek">katapeplasme/non</foreign>
+                    <foreign xml:lang="grc">katapeplasme/non</foreign>
                     dicunt.
                     <milestone n="7" unit="section"/>
                     <reg>sic</reg>
@@ -5044,7 +5044,7 @@ fere loquuntur; at noviciis nostris per quot annos
                     scias, si quem iam
 robustum instituere litteris coeperis, non sine causa
 dici
-                    <foreign lang="greek">paidomaqei=s</foreign>
+                    <foreign xml:lang="grc">paidomaqei=s</foreign>
                     eos, qui in sua quidque arte optime
 faciant.
                     <milestone n="10" unit="section"/>
@@ -5149,7 +5149,7 @@ de studiis, quibus, antequam maiora capiat, puer
 instituendus est; proximus liber velut novum sumet
 exordium et ad rhetoris officia transibit.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

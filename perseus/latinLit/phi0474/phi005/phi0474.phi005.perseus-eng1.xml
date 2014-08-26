@@ -17,7 +17,7 @@
 <name>David Smith</name>
 </respStmt>
 <funder n="org:NEH">National Endowment For The Humanities (NEH)</funder> 
-      </titleStmt>  <sourceDesc>
+      </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>  <sourceDesc>
         <biblStruct>
           <monogr>
             <author>M. Tullius Cicero</author>
@@ -35,33 +35,33 @@
     </fileDesc>
 
     <encodingDesc>
-      <refsDecl doctype="TEI.2">
+      <refsDecl
         <state delim=" " unit="text"/>
-        <state unit="section"/>
+        refState unit="section"/>
       </refsDecl>
-      <refsDecl doctype="TEI.2">
+      <refsDecl
         <state delim=" " unit="text"/>
         <state delim="." unit="chapter"/>
-        <state unit="section"/>
+        refState unit="section"/>
       </refsDecl>
       <refsDecl n="text=Ver." doctype="TEI.2">
         <state delim=" " unit="text"/>
         <state delim=" " unit="actio"/>
         <state delim="." unit="book"/>
-        <state unit="section"/>
+        refState unit="section"/>
       </refsDecl>
     </encodingDesc>
 
     <profileDesc>
       <langUsage>
-        <language id="en">English </language>
-        <language id="fr">French </language>
-        <language id="la">Latin </language>
-        <language id="greek">Greek </language>
+        language ident="en">English </language>
+        language ident="fr">French </language>
+        language ident="la">Latin </language>
+        language ident="greek">Greek </language>
       </langUsage>
     </profileDesc>
 
-    <revisionDesc>
+    <revisionDesc><!--
       <change>
         <date>3/19/97</date>
         <respStmt>
@@ -143,12 +143,12 @@ Added to repository. Passes TEI parsing.
     <change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
   </teiHeader><text xml:lang="en">
         <body>
-          <div0 type="actio" n="1">
+          <div type="actio" n="1">
             <head>The first oration against Verres.</head>
-            <div1 type="book" n="1">
+            <div type="book" n="1">
               <argument>
                 <head>The Argument</head>
                 <p>After the last oration it was decided that Cicero was to conduct the prosecution
@@ -251,7 +251,7 @@ Added to repository. Passes TEI parsing.
                   <milestone n="6" unit="section"/> Therefore, when I had demanded a very short time
                 to prosecute my inquiries in <placeName key="tgn,7003122">Sicily</placeName>, he
                 found a man to ask for two days less to make investigations in <placeName
-                  key="tgn,7002733">Achaia</placeName>; <note anchored="yes">It is not certainly
+                  key="tgn,7002733">Achaia</placeName>; <note anchored="true">It is not certainly
                   known what Cicero refers to here.</note> not with any real intention of doing the
                 same with his diligence and industry, that I have accomplished by my labour, and
                 daily and nightly investigations. For the Achaean inquisitor never even arrived at
@@ -282,14 +282,14 @@ Added to repository. Passes TEI parsing.
                 eloquence or in the influence of any one, he would not be so eager in collecting and
                 catching at all these things; he would not scorn and despise the senatorial body to
                 such a degree, as to procure a man to be selected out of the senate at his will to
-                be made a criminal of, who should plead his cause <note anchored="yes">This refers
+                be made a criminal of, who should plead his cause <note anchored="true">This refers
                   to the same subject as the previous note.</note> before him, while he in the
                 meantime was preparing whatever he had need of. <milestone n="10" unit="section"/>
                 And what the circumstances are on which he founds his hopes, and what hopes he
                 builds on them, and what he is fixing his mind on. I see clearly. But how he can
                 have the confidence to think that he can effect anything with the present praetor,
                 and the present bench of Judges, I cannot conceive. This one thing I know, which the
-                Roman people perceived too when he rejected <note anchored="yes">“In any
+                Roman people perceived too when he rejected <note anchored="true">“In any
                   given case the litigant parties agreed upon a judex, or accepted him whom the
                   magistrates proposed; a party had the power of rejecting a proposed judex, though
                   there must have been some limit to this power.” (<bibl n="Cic. Clu. 43"
@@ -307,7 +307,7 @@ Added to repository. Passes TEI parsing.
                 event is there in his quaestorship, that first step to honour, except that Cnaeus
                 Carbo was robbed by his quaestor of the public money? that the consul was plundered
                 and betrayed? his army deserted? his province abandoned? the holy nature and
-                obligations imposed on him by lot <note anchored="yes">Because the provinces which
+                obligations imposed on him by lot <note anchored="true">Because the provinces which
                   involved all these obligations were distributed by lot to the different
                   magistrates.</note> violated?—whose lieutenancy was the ruin of all
                   <placeName key="tgn,1000004">Asia</placeName> and <placeName key="tgn,7002611"
@@ -315,7 +315,7 @@ Added to repository. Passes TEI parsing.
                 cities, all the shrines and temples; when he renewed and repeated against Cnaeus
                 Dolabella his ancient wicked tricks when he had been quaestor, and did not only in
                 his danger desert, but even attack and betray the man to whom he had been
-                lieutenant, and proquaestor, <note anchored="yes">“The proconsul or
+                lieutenant, and proquaestor, <note anchored="true">“The proconsul or
                   praetor who had the administration of a province was attended by a quaestor. This
                   quaestor had undoubtedly to perform the same offices as those who accompanied the
                   armies into the field..They had also to levy those parts of the public revenue
@@ -349,7 +349,7 @@ Added to repository. Passes TEI parsing.
                 acquitted in the courts of justice through bribery; the most upright and honourable
                 men, being prosecuted while absent, were condemned and banished without being heard
                 in their own defence; the most fortified harbours, the greatest and strongest
-                cities, were laid open to pirates and robbers; <note anchored="yes">The coast of
+                cities, were laid open to pirates and robbers; <note anchored="true">The coast of
                     <placeName key="tgn,7003122">Sicily</placeName> being much infested by pirates,
                   it was the custom of the praetors to fit out a fleet every year for the protection
                   of trade. This fleet was provided by a contribution of the maritime towns, each of
@@ -406,13 +406,13 @@ Added to repository. Passes TEI parsing.
                 impudence—the whole attempt at bribery was abandoned. <milestone n="17"
                   unit="section"/> The affair was going on admirably; lists of your names and of the
                 whole tribunal were in every one's hands. It did not seem possible to mark the votes
-                  <note anchored="yes">This refers to the way in which Hortensius had once marked
+                  <note anchored="true">This refers to the way in which Hortensius had once marked
                   the judges whom he had bribed, as is mentioned in the speech against
                   Caecilius.</note> of these men with any distinguishing mark or colour or spot of
                 dirt; and that fellow, from having been brisk and in high spirits, became on a
                 sudden so downcast and humbled, that he seemed to be condemned not only by the Roman
                 people but even by himself. But lo! all of a sudden, within these few days, since
-                the consular comitia <note anchored="yes">The <foreign lang="la">comitia
+                the consular comitia <note anchored="true">The <foreign lang="la">comitia
                     centuriata</foreign> for the election of consuls for the succeeding year were
                   held on the 26th of July.</note> have taken place, he has gone back to his
                 original plan with more money, and the same plots are now laid against your
@@ -429,7 +429,7 @@ Added to repository. Passes TEI parsing.
                 which, however, shall be mentioned by me deliberately and cautiously, that it may be
                 seen that I pay due regard to our friendship and to his dignity. <milestone n="19"
                   unit="section"/> He sees Verres in the crowd by the arch of Fabius; <note
-                  anchored="yes">This arch had been erected to commemorate the victory obtained by
+                  anchored="true">This arch had been erected to commemorate the victory obtained by
                   Fabius over the Allobroges; and it was erected in the Via Sacra, as Cicero
                   mentions in his speech Pro Plancio.</note> he speaks to the man, and with a loud
                 voice congratulates him on his victory. He does not say a word to Hortensius
@@ -519,7 +519,7 @@ Added to repository. Passes TEI parsing.
                 to them; secondly, that not only would Hortensius be consul, but Quintus Metellus
                 also: and listen while I show you how great a friend he is to them. For he gave him
                 a token of his goodwill of such a sort, that he seemed to be giving it as a return
-                for the suffrages <note anchored="yes">“The order in which the centuries
+                for the suffrages <note anchored="true">“The order in which the centuries
                   voted was decided by lot, and that which gave its vote first was called <foreign
                     lang="la">centuria praerogativa</foreign>.”—Smith, Dict.
                   Ant. p. 274, v. <foreign lang="la">Comitia</foreign>. “We also find the
@@ -553,7 +553,7 @@ Added to repository. Passes TEI parsing.
                 tried and proved experience in the decision of actions. It will never do for us to
                 have such a man as that on the bench, which we are endeavouring to corrupt by some
                 means or other; for before, when he was one of the Judges on the tribunal of which
-                Junius <note anchored="yes">Caesonius was now aedile elect with Cicero. In the
+                Junius <note anchored="true">Caesonius was now aedile elect with Cicero. In the
                   prosecution instituted by Cluentius against Oppianicus, while Verres was <foreign
                     lang="la">praetor urbanus</foreign>, Oppianicus had tried to ensure his
                   acquittal by bribing Stalenus, Ballus and Gutta, three of the Judges; but
@@ -612,7 +612,7 @@ Added to repository. Passes TEI parsing.
                 consulting his occasions and his cause, it is necessary for me to oppose conduct of
                 that sort with prudence. <milestone n="34" unit="section"/> Your plan is, to begin
                 to answer me after two sets of games have been celebrated; mine is to have the
-                adjournment <note anchored="yes">The Latin is, <foreign lang="la">ut
+                adjournment <note anchored="true">The Latin is, <foreign lang="la">ut
                     comperindinem</foreign>. “<foreign lang="la">Comperendinare</foreign>
                   is, when the cause has been pleaded on each side, to order that on the third day
                   both the defendant and the prosecutor appear to speak a second
@@ -669,7 +669,7 @@ Added to repository. Passes TEI parsing.
                 that when the equestrian body supplied the judges for nearly fifty years together,
                 not even the slightest suspicion ever arose of bribes having been accepted for the
                 purpose of influencing a decision; why it is, I say, when the judicial authority was
-                transferred to the senatorial body, and the power <note anchored="yes">That is to
+                transferred to the senatorial body, and the power <note anchored="true">That is to
                   say, when the power of appealing to the tribunes of the people was taken
                   away.</note> of the Roman people over every one of us was taken away, Quintus
                 Calidius, when he was condemned, said that a man of praetorian rank could not
@@ -753,7 +753,7 @@ Added to repository. Passes TEI parsing.
               <p>But now men are on the watch towers; they observe how every one of you behaves
                 himself in respecting religion and in preserving the laws. They see that, ever since
                 the passing of the law for restoring the power of the tribunes, only one senator,
-                and he too a very insignificant one, <note anchored="yes">The senator was
+                and he too a very insignificant one, <note anchored="true">The senator was
                   Dolabella</note> has been condemned. And though they do nor blame this, yet they
                 have nothing which they can very much commend. For there is no credit in being
                 upright in a case where there is no one who is either able or who endeavours to
@@ -777,7 +777,7 @@ Added to repository. Passes TEI parsing.
                 have in your power to remove and to eradicate the disgrace and infamy which has now
                 for many years attached to your order. It is evident to all men, that since these
                 tribunals have been established which we now have, there has never been a bench of
-                judges of the same splendour and dignity as this. <note anchored="yes">Cicero
+                judges of the same splendour and dignity as this. <note anchored="true">Cicero
                   several times in these orations takes credit to himself for his industry and
                   intrepidity in striking all judges liable to suspicion off the list of those who
                   were to try this case.</note> If anything is done wrongly in this case, all men
@@ -800,7 +800,7 @@ Added to repository. Passes TEI parsing.
                 come into favour and popularity with the Roman people. Think who you are, and in
                 what a situation you are placed; what you ought to give to the Roman people, what
                 you ought to repay to your ancestors. Let the recollection of the Acilian <note
-                  anchored="yes">The <foreign lang="la">Lex Acilia</foreign> was carried by Marcus
+                  anchored="true">The <foreign lang="la">Lex Acilia</foreign> was carried by Marcus
                   Acilius Glabrio, the father of this Glabrio, when tribune of the people; it
                   abridged the proceedings in trials for extortion, and did not allow of the
                   adjournment and delays which were permitted by previously existing laws.</note>
@@ -862,9 +862,9 @@ Added to repository. Passes TEI parsing.
                 even if we had abundant space and leisure days for making a long speech without any
                 inconvenience, still there was no need at all of a long speech in this matter.</p>
             
-          </div0>
-          <div0 type="actio" n="2">
-            <div1 type="Book" n="1">
+          </div>
+          <div type="actio" n="2">
+            <div type="Book" n="1">
               <head>THE FIRST BOOK OF THE SECOND PLEADING AGAINST CAIUS VERRES.</head>
               <head>RESPECTING HIS CONDUCT IN THE CITY PRAETORSHIP.</head>
               <argument>
@@ -1006,7 +1006,7 @@ Added to repository. Passes TEI parsing.
               <p>Suppose he has escaped from the court about peculation. Let him think of the
                 generals of the enemy, for whose release he has accepted bribes; let him consider
                 what answer he can make about those men whom he has left in his own house to
-                substitute in their places;<note anchored="yes">This refers to the following act of
+                substitute in their places;<note anchored="true">This refers to the following act of
                   Verres:—A single pirate ship had been taken by his lieutenant; the
                   captain bribed Verres to save his life, but the people were impatient for the
                   execution of him and his chief officers. Verres, who had in his dungeons many
@@ -1305,7 +1305,7 @@ Added to repository. Passes TEI parsing.
                 up your mind which side you would take and which party you would espouse. Carbo was
                 very indignant that there had fallen to his lot as his quaestor a man of such
                 notorious luxury and indolence. But he loaded him with all sorts of kindnesses. Not
-                to dwell too long on this; money was voted, was paid;<note anchored="yes">By vote or
+                to dwell too long on this; money was voted, was paid;<note anchored="true">By vote or
                   the money was voted to the <foreign lang="la">tribuni aerarii</foreign>, and was
                   paid by them to the quaestor, to be paid by him to the army.</note> he went as
                 quaestor to the province; he came into <placeName key="tgn,1000070"
@@ -1345,7 +1345,7 @@ Added to repository. Passes TEI parsing.
                   >sesterces</foreign> which he had in hand, Carbo never touched, Sulla never saved
                 them, nor were these ever brought into the treasury. He selected <placeName
                   key="perseus,Ariminum">Ariminum</placeName> as the town, because at the time when
-                he was giving in his accounts, it had been taken and plundered.<note anchored="yes"
+                he was giving in his accounts, it had been taken and plundered.<note anchored="true"
                     ><placeName key="perseus,Ariminum">Ariminum</placeName> had been betrayed by
                   Albinovanus, Marius's lieutenant, to Sulla.</note> He did not suspect, what he
                 shall now find out, that plenty of the Ariminians were left to us after that
@@ -1502,7 +1502,7 @@ Added to repository. Passes TEI parsing.
                 who among the Tenedians is considered a most holy god, who is said to have founded
                 that city, after whose name it is called <placeName key="perseus,Tenedos"
                   >Tenedos</placeName>. This very <placeName key="tgn,7001182">Tenes</placeName>, I
-                say, most admirably wrought, which you have seen <note anchored="yes">It was allowed
+                say, most admirably wrought, which you have seen <note anchored="true">It was allowed
                   to the aediles, and it was not uncommon for them to borrow of the cities of the
                   allies celebrated and beautiful statues to adorn the shows in the games which they
                   exhibited; and afterwards they were restored to their owners.</note> before now in
@@ -1517,7 +1517,7 @@ Added to repository. Passes TEI parsing.
                 the Roman people, ought not to be brought before the praetor, but must be carried to
                   <placeName key="perseus,Rome">Rome</placeName>. What pictures did he carry off
                 from thence; what statues! which I saw lately in his house, when I went thither for
-                the sake of sealing <note anchored="yes">The custom was for the accuser to put a
+                the sake of sealing <note anchored="true">The custom was for the accuser to put a
                   seal on the house and effects of the man whom he was preparing to prosecute, in
                   order that no evidence of the theft to be imputed might be removed by the removal
                   of the stolen goods.</note> it up. <milestone n="51" unit="section"/> And where
@@ -1535,10 +1535,10 @@ Added to repository. Passes TEI parsing.
                   <milestone n="20" unit="chapter"/><milestone n="52" unit="section"/></p>
               <p>What did you think that these men would think of you then, when they saw that you
                 were no longer contending against your accuser, but against the quaestor and the
-                brokers? <note anchored="yes">The <foreign lang="la">quaestores aerarii</foreign>
+                brokers? <note anchored="true">The <foreign lang="la">quaestores aerarii</foreign>
                   were sent to take possession in the name of the people of the effects of a man who
                   was convicted; the <foreign lang="la">sectores</foreign> or brokers attended them
-                  to appraise the goods seized.</note> On <note anchored="yes">In some editions the
+                  to appraise the goods seized.</note> On <note anchored="true">In some editions the
                   passage from “<foreign lang="la">Qua de re
                   Charidemum</foreign>,” to “<foreign lang="la">Non ad se
                     pertinere</foreign>,” is transferred to the previous chapter, and
@@ -1785,7 +1785,7 @@ Added to repository. Passes TEI parsing.
                   >Lampsacus</placeName> any longer, their error in sparing a wicked man would be
                 less than that of not sparing a lieutenant. <milestone n="70" unit="section"/> And
                 so that fellow, far more wicked and infamous than even the notorious Hadrian, <note
-                  anchored="yes">This had happened about twelve years before, in the consulship of
+                  anchored="true">This had happened about twelve years before, in the consulship of
                   the younger Marius and Carbo, A.U.C. 672.</note> was a good deal more fortunate.
                 He, because Roman citizens could not tolerate his avarice, was burnt alive at
                   <placeName key="tgn,7018163">Utica</placeName> in his own house; and that was
@@ -1892,7 +1892,7 @@ Added to repository. Passes TEI parsing.
                 betrayed by him? Therefore, you too experienced his perfidy when he joined your
                 enemies,—when he, himself a most guilty man, gave most damaging evidence
                 against you—when he refused to give in his accounts to the treasury unless
-                you were condemned. <note anchored="yes">Dolabella was governor of <placeName
+                you were condemned. <note anchored="true">Dolabella was governor of <placeName
                     key="tgn,7002470">Cilicia</placeName> at the time Verres was acting as his
                   lieutenant and proquaestor. On his return from his government he was prosecuted by
                   Scaurus for corruption, and was condemned mainly through the evidence of
@@ -2009,7 +2009,7 @@ Added to repository. Passes TEI parsing.
                 were so, who would not have been moved? Who would not have thought that he was
                 taking care of himself in chastising the injury which had been done to you? Who
                 would not have thought that not only your cause but that the common safety was at
-                stake in that matter? In truth the name of lieutenant <note anchored="yes">Cicero
+                stake in that matter? In truth the name of lieutenant <note anchored="true">Cicero
                   here, one may almost say, plays on the meanings of the word <foreign lang="la"
                     >legatus</foreign>, which means not only a lieutenant, but also an ambassador
                   The persons of ambassadors have always, by the laws of nations, been considered to
@@ -2072,7 +2072,7 @@ Added to repository. Passes TEI parsing.
                 violence of a storm, but by this horrible tempest which fell upon the allies.
                   <milestone n="90" unit="section"/> There are at Rome Milesian ambassadors, most
                 noble men and the chief men of the city, who, although they are waiting with
-                apprehension for the month of February <note anchored="yes">It was in the month of
+                apprehension for the month of February <note anchored="true">It was in the month of
                   February that the senate was used to give audience to the deputies from the
                   provinces: and the consuls elect, as has been said before, were notoriously in the
                   interest of Verres.</note> and the time of the consuls elect, yet they not only do
@@ -2120,7 +2120,7 @@ Added to repository. Passes TEI parsing.
                 as having been received, he has never paid over fifty thousand. Of the slaves, since
                 he has been prosecuted in this manner, some have been restored, some are detained
                 even now. All the gains which they had made, and all their substitutes <note
-                  anchored="yes">“As slaves often acted as factors or agents for their
+                  anchored="true">“As slaves often acted as factors or agents for their
                   masters in matters of business, and, as such, were often entrusted with property
                   to a large amount, there arose a practice of allowing the slave to consider part
                   of the gains as his own; this was his <foreign lang="la">peculium</foreign> ....
@@ -2211,7 +2211,7 @@ Added to repository. Passes TEI parsing.
                 lieutenancy and pro-quaestorship of yours, those items occur which are necessarily
                 set down also in the accounts of Dolabella. (An extract is read of the account of
                 the damages assessed against Dolabella, praetor of the Roman people, for money
-                received.) <note anchored="yes">Hottomann makes sure that there is some corruption
+                received.) <note anchored="true">Hottomann makes sure that there is some corruption
                   of the MS. here, and Graevius agrees with him. “The whole passage is
                   very obscure and the more difficult because we are not acquainted with the forms
                   of proceeding which were followed against magistrates convicted of extortion. It
@@ -2281,7 +2281,7 @@ Added to repository. Passes TEI parsing.
                 house of Chelidon after having taken the auspices, he drew the lot of the city
                 province, more in accordance with his own inclination and that of Chelidon, than
                 with the wish of the Roman people. And observe how he behaved at the very
-                outset,—what his intentions were as shown <note anchored="yes"
+                outset,—what his intentions were as shown <note anchored="true"
                   >“After the praetors were appointed, before they entered on the
                   discharge of their duties as judges, they were in the habit of issuing an edict,
                   setting forth the principles which they intended should govern their decisions;
@@ -2289,10 +2289,10 @@ Added to repository. Passes TEI parsing.
                   observe the law.”—Hottoman.</note> in his first edict.
                   <milestone n="41" unit="chapter"/></p>
               <p>Publius Annius Asellus died while Caius Sacerdos was praetor. As he had an only
-                daughter, and as he was not included in the census, <note anchored="yes"
+                daughter, and as he was not included in the census, <note anchored="true"
                   >“By the <foreign lang="la">lex Voconia</foreign> it was enacted, that
                   no person who should be included in the census, after the census of that year, BC
-                    <date value="-169">169</date>, should make any female his heir. Cicero does not
+                    date when="-169">169</date>, should make any female his heir. Cicero does not
                   state that the <foreign lang="la">Lex</foreign> fixed the census at any sum; but
                   it appears from other writers that a woman could not be made <foreign lang="la"
                     >haeres</foreign> by any person who was rated in the census at a hundred
@@ -2526,7 +2526,7 @@ Added to repository. Passes TEI parsing.
                 decision between other parties quite contrary to the last decision which he had
                 given only a little while before. <milestone n="121" unit="section"/> Hence it was
                 that men were found who were even ridiculous in their indignation; some of whom, as
-                you have heard, said that it was not strange that such piggish <note anchored="yes"
+                you have heard, said that it was not strange that such piggish <note anchored="true"
                   >There is a pun here on the name of Verres, which means a pig, boar: and on the
                   name of Sacerdos, which means also a sacrificing priest.</note> justice should be
                 worthless. Others were colder; but still, because they were angry they seemed
@@ -2903,7 +2903,7 @@ Added to repository. Passes TEI parsing.
                 accounts of Rabonius.” <milestone n="58" unit="chapter"/><milestone
                   n="151" unit="section"/></p>
               <p>Even in this place in the former pleadings Quintus Hortensius complained that the
-                young Junius came clad in his praetexta <note anchored="yes">The <foreign lang="la"
+                young Junius came clad in his praetexta <note anchored="true">The <foreign lang="la"
                     >praetexta</foreign> was a token of the tender age of the youth, as it was only
                   worn by boys under the age of seventeen, and then was exchanged by the <foreign
                     lang="la">toga virilis</foreign>.</note> into your presence, and stood with his
@@ -2920,13 +2920,13 @@ Added to repository. Passes TEI parsing.
                 wicked letting out of contracts by that man, and through his nefarious robbery,
                 being deprived of all his paternal property and fortune, came before your tribunal,
                 if for nothing else, at least to see him through whose conduct he himself has passed
-                many years in mourning, a little less gaily <note anchored="yes">Dressed, that is,
+                many years in mourning, a little less gaily <note anchored="true">Dressed, that is,
                   in the mourning robe in which defendants in criminal prosecutions usually appeared
                   in court.</note> dressed than he was used to be. Therefore, O Hortensius, it was
                 not his age but his cause, not his dress but his fortune, that seemed to you
                 calculated to rouse the popular feeling. Nor did it move you so much that he had
                 come with the praetexta, as that he had come without the <foreign lang="la"
-                  >bulla</foreign>. <note anchored="yes">“The <foreign lang="la"
+                  >bulla</foreign>. <note anchored="true">“The <foreign lang="la"
                     >bulla</foreign> was an ornament of gold worn by children, suspended from their
                   necks, especially by the children of the noble and wealthy; it was worn by
                   children of both sexes, as a token of paternal affection and of high birth.
@@ -2959,7 +2959,7 @@ Added to repository. Passes TEI parsing.
                 himself in war, who had been found to be a nefarious plunderer of the Roman people
                 in the forum? Do we doubt what that man would do with respect to spoils taken from
                 the enemy, who appropriated to himself so much plunder from the spoils of Lucius
-                Metellus? <note anchored="yes">This temple of Castor had been vowed by Postumius,
+                Metellus? <note anchored="true">This temple of Castor had been vowed by Postumius,
                   the dictator at the battle of Lake Regillus. It was decorated with statues and
                   other embellishments by Lucius Metellus surnamed Dalmaticus, out of the wealth he
                   acquired by, and the spoils he brought back from, the war in <placeName
@@ -2978,12 +2978,12 @@ Added to repository. Passes TEI parsing.
                 decision concerning you. <milestone n="60" unit="chapter"/><milestone n="155"
                   unit="section"/></p>
               <p>And he, even during his praetorship, exercised the office of judge in public cases.
-                  <note anchored="yes">The praetors appointed the judges, but had not themselves the
+                  <note anchored="true">The praetors appointed the judges, but had not themselves the
                   right of sitting as judges in all criminal cases, only in a few special
                   ones.</note> For even that must not be passed over. A fine was sought to be
                 recovered from Quintus Opimius before him while praetor; who was brought to trial,
                 as it was alleged, indeed, because while tribune of the people he had interposed his
-                veto in a manner contrary to the Cornelian law, <note anchored="yes">This law had
+                veto in a manner contrary to the Cornelian law, <note anchored="true">This law had
                   been passed by Sulla to take away from the tribunes the power of interposing their
                   veto, but Pompeius restored it to them.</note> but, in reality, because while
                 tribune of the people he had said something which gave offence to some one of the
@@ -3005,14 +3005,14 @@ Added to repository. Passes TEI parsing.
                 presided while praetor, endeavoured to strip him of his spoils and carry them to his
                 own house, has he a right to deprecate any calamity to himself? <milestone n="61"
                   unit="chapter"/></p>
-              <p>For as for the choosing of other judges by Junius, <note anchored="yes">In the
+              <p>For as for the choosing of other judges by Junius, <note anchored="true">In the
                   trial between Cluentius and Oppianicus, Junius was the presiding judge. The
                   imputation on him was, that he had used fraudulent tricks to pack the tribunal, in
                   selecting by lot the judges who were to act instead of those who had been objected
                   to by both parties.</note> of that I say nothing. For why should I? Should I
                 venture to speak against the lists which you produced? It is difficult to do so; for
                 not only does your own influence and that of the judges deter me, but also the
-                golden ring of your secretary. <note anchored="yes">The allusion is to the golden
+                golden ring of your secretary. <note anchored="true">The allusion is to the golden
                   ring which Verres, when leaving <placeName key="tgn,7003122">Sicily</placeName>,
                   had publicly decreed to his secretary, as is mentioned also in the fourth oration
                   against Verres, that “<title>De Re
@@ -3031,7 +3031,7 @@ Added to repository. Passes TEI parsing.
                 his own judges also could be effected by the instrumentality of his comrade, Quintus
                 Curtius, who was to be principal judge; and unless I had prevented that by the power
                 of the people, and the outcries and reproaches of all men, the advantage of having
-                judges taken from this decuria <note anchored="yes">“With the passing of
+                judges taken from this decuria <note anchored="true">“With the passing of
                   special enactments for the punishment of particular offences was introduced the
                   practice of forming a body of <foreign lang="la">judices</foreign> for the trial
                   of such offences as the enactments were directed against. Thus it is said that the
@@ -3047,7 +3047,7 @@ Added to repository. Passes TEI parsing.
                 them without any reason, and placing on the bench those whom Verres had approved.
                   <gap desc="[The rest of this oration is lost.]"/></p>
             
-            <div1 type="Book" n="2">
+            <div type="Book" n="2">
               <head>THE SECOND BOOK OF THE SECOND PLEADING AGAINST CAIUS VERRES.</head>
               <head>CONCERNING HIS MANNER OF DECIDING CAUSES AS JUDGE WHILE IN SICILY.</head>
               <argument>
@@ -3190,7 +3190,7 @@ Added to repository. Passes TEI parsing.
                 For I shall consult their safety rather than their inclination. Do you think that
                 there was ever any criminal in any province defended in his absence against the
                 inquiry into his conduct urged by his accuser, with such influence, and with such
-                zeal? The quaestors of both provinces, <note anchored="yes"><placeName
+                zeal? The quaestors of both provinces, <note anchored="true"><placeName
                     key="tgn,7003122">Sicily</placeName> had two quaestors, one for the western or
                   Lilybaean district, one for the Syracusan. </note> who were so while he was
                 praetor, stood close to me with their forces. <milestone n="12" unit="section"/>
@@ -3288,7 +3288,7 @@ Added to repository. Passes TEI parsing.
                 impudence. <milestone n="19" unit="section"/> The very day on which he reached
                   <placeName key="tgn,7003122">Sicily</placeName>, (see now whether he was not come,
                 according to that omen bruited about the city,) prepared to sweep <note
-                  anchored="yes">This is another pun on the name of Verres, from its similarity in
+                  anchored="true">This is another pun on the name of Verres, from its similarity in
                   sound to the word <foreign lang="la">verro</foreign>, I sweep.</note> the province
                 pretty clean, he immediately sends letters from <placeName key="tgn,7003897"
                   >Messana</placeName> to Halesa, which I suppose he had written in <placeName
@@ -3350,7 +3350,7 @@ Added to repository. Passes TEI parsing.
                 Dio, nothing from your own mother-in-law, that most admirable woman, Servilia, an
                 ancient friend and connection of Dio's? Are not my witnesses ignorant of many
                 circumstances which you are acquainted with? Is it not owing, not to the innocence
-                of your client, but to the exception <note anchored="yes">It was forbidden by the
+                of your client, but to the exception <note anchored="true">It was forbidden by the
                   Roman Law, as by our own, for the advocates to give evidence against his clients
                   of matters which had come to his knowledge by confidential communication.</note>
                 made by the law, that I am prevented from summoning you as a witness on my side on
@@ -3432,7 +3432,7 @@ Added to repository. Passes TEI parsing.
                 invented an infinite number of expedients for getting bold of a countless amount of
                 money. <milestone n="12" unit="chapter"/></p>
               <p>No one doubts that all the wealth of every man is placed in the power of those men
-                who allow <note anchored="yes">At <placeName key="perseus,Rome">Rome</placeName> the
+                who allow <note anchored="true">At <placeName key="perseus,Rome">Rome</placeName> the
                     <foreign lang="la">praetor urbanus</foreign>, in the provinces the propraetors
                   and the proconsuls, decided whether there was reason for an action at law, and it
                   they decided that there was, then they assigned judges to try the action.</note>
@@ -3460,7 +3460,7 @@ Added to repository. Passes TEI parsing.
                 Lucius Suetius and Lucius Rucilius. His tribunals he formed in this
                 way:—those who were Roman citizens were to be judges, when Sicilians ought
                 to have been, according to their laws, those who were Sicilians were to be judges,
-                when Romans <note anchored="yes">The text here is very much disputed, and is
+                when Romans <note anchored="true">The text here is very much disputed, and is
                   probably wholly corrupt. I have endeavoured to give what is certainly the general
                   sense intended to be conveyed, though it can scarcely be extracted from the Latin
                   Graevius reads,...“<foreign lang="la">Si Siculi essent, tum si eorum
@@ -3708,7 +3708,7 @@ Added to repository. Passes TEI parsing.
                 because he could not deny that money had been given him by them; he did not go to a
                 distance to look for some one, (in which case he would not have been able to prove
                 it,) but he took one of his nearest relations, a sort of second son, <note
-                  anchored="yes">He was in fact his son-in-law elect.</note> and accused him of
+                  anchored="true">He was in fact his son-in-law elect.</note> and accused him of
                 having stolen the money. He declared that he would make him refund it; and he, after
                 he heard that, had a proper regard for his dignity, for his age, and for his noble
                 birth. He addressed the senate on the subject; he declared to them that he had
@@ -3739,7 +3739,7 @@ Added to repository. Passes TEI parsing.
                 the assistance of those men whom I have named, he carried off all the statues, all
                 the works in ivory out of the sacred temples, all the paintings from every place,
                 and even whatever images of the gods he fancied; secondly, that in the senate-house
-                of the Syracusans, which they call <foreign lang="greek">bouleuth/rion</foreign>, a
+                of the Syracusans, which they call <foreign xml:lang="grc">bouleuth/rion</foreign>, a
                 most honourable place, and of the highest reputation in the eyes of the citizens,
                 where there is a brazen statue of Marcus Marcellus himself, (who preserved and
                 restored that place to the Syracusans, though by the laws of war and victory he
@@ -3753,7 +3753,7 @@ Added to repository. Passes TEI parsing.
                 services done them by Caius Marcellus, and also most gladly gave to the family and
                 name and race of the Marcelli. Mithridates in <placeName key="tgn,1000004"
                   >Asia</placeName>, when he had occupied the whole of that province, did not
-                abolish the festival of Mucius. <note anchored="yes">In honour of Quintus Mucius
+                abolish the festival of Mucius. <note anchored="true">In honour of Quintus Mucius
                   Scaevola, who had been praetor in that province, and had established a high
                   character for lenity and incorruptibility.</note> An enemy, and he too an enemy in
                 other respects, only too savage and barbarous, still would not violate the honour of
@@ -3771,7 +3771,7 @@ Added to repository. Passes TEI parsing.
                 that man's conduct. O splendid Verrine festival! whither have you gone that you have
                 not brought the people cause to remember that day? In truth, what house, what city,
                 what temple even have you ever approached without leaving it emptied and ruined. Let
-                the festival, then, be fitly called Verrine, <note anchored="yes">There is a
+                the festival, then, be fitly called Verrine, <note anchored="true">There is a
                   recurrence here to the pun on the word <foreign lang="la">verres</foreign>, a
                   boar.</note> and appear to be established, not from recollection of your name, but
                 of your covetousness and your natural disposition. <milestone n="22" unit="chapter"
@@ -3951,7 +3951,7 @@ Added to repository. Passes TEI parsing.
               <p><milestone n="66" unit="section"/> You have already heard the evidence of Heraclius
                 of Centuripa, a most virtuous and noble young man, from whom a hundred thousand
                   <foreign lang="la">sesterces</foreign> were claimed by a fraudulent and false
-                accusation. Verres, by means of penalties and securities <note anchored="yes">The
+                accusation. Verres, by means of penalties and securities <note anchored="true">The
                     <foreign lang="la">compromissum</foreign> was money deposited by both parties as
                   a security for their obeying the decision of the judge, “though the same
                   term was also employed to express the engagement by which parties agreed to settle
@@ -4095,7 +4095,7 @@ Added to repository. Passes TEI parsing.
                 in the senate is likely to be: for what will be his authority? When will he have
                 either the daring or the power to deliver his opinion? When will a man of such
                 luxury and such indolence ever attempt to mount up to the senate-house except in the
-                month of February? <note anchored="yes">In the month of February, as has been said
+                month of February? <note anchored="true">In the month of February, as has been said
                   before, the senate gave audience to the deputies from foreign nations, and these
                   deputies were accustomed to bring rich presents to the senators who favoured their
                   respective nations.</note> However, let him come; let him vote war against the
@@ -4106,7 +4106,7 @@ Added to repository. Passes TEI parsing.
               <p>What really is of vital importance, what is formidable, what is to be dreaded by
                 every virtuous man, is, that if through any influence this man escapes from this
                 trial, he must be among the judges; he must give his decision on the lives of Roman
-                citizens; he must be standard-bearer in the army of that man <note anchored="yes"
+                citizens; he must be standard-bearer in the army of that man <note anchored="true"
                   >Hortensius is meant here.</note> who wishes to possess undisputed sway over our
                 courts of justice. This the Roman people refuses; this it will never endure; the
                 whole people raises an outcry, and gives you leave, if you are delighted with these
@@ -4132,7 +4132,7 @@ Added to repository. Passes TEI parsing.
                 afterwards sold the very same articles to his adversary for a still higher price,
                 are you going to cheat both, and to decide as you please? and not even to give back
                 the money to the party whom you have deceived? <milestone n="79" unit="section"/>
-                What is the use of speaking to me of Bulbus, of Stalenus? <note anchored="yes"
+                What is the use of speaking to me of Bulbus, of Stalenus? <note anchored="true"
                   >Bulbus and Stalenus had been judges in the action between Cluentius and
                   Oppianicus, which had been already mentioned, and had been convicted of corruption
                   in that trial.</note> What monster of this sort, what prodigy of wickedness have
@@ -4245,7 +4245,7 @@ Added to repository. Passes TEI parsing.
                 however, all this covetousness of his I will expose another time; at present I must
                 return to Sthenius. <milestone n="89" unit="section"/> Verres being furiously
                 enraged against Sthenius, renounces the connection of hospitality with him, leaves
-                his house, and departs; <note anchored="yes">The Latin is, “<foreign
+                his house, and departs; <note anchored="true">The Latin is, “<foreign
                     lang="la">domo ejus <emph>emigrat</emph>, atque adeo <emph>exit</emph>, nam jam
                     ante migrarat.</foreign>” <foreign lang="la">Emigrat</foreign> has
                   only a simple meaning; <foreign lang="la">exit</foreign> is said of him who
@@ -4294,7 +4294,7 @@ Added to repository. Passes TEI parsing.
                 Sicilians. <milestone n="38" unit="chapter"/><milestone n="92" unit="section"/></p>
               <p>That punctual and diligent man is ready at the eighth hour. He orders Sthenius to
                 be summoned; and, when he sees that he does not appear, he begins to burn with
-                indignation, and to go mad with rage; to despatch <note anchored="yes">The Latin
+                indignation, and to go mad with rage; to despatch <note anchored="true">The Latin
                   word is <foreign lang="la">Venereus</foreign>: the officers who attended on the
                   Roman magistrate in <placeName key="tgn,7003122">Sicily</placeName> were so called
                   from Venus Erycina, who was the patron goddess of all the west of <placeName
@@ -4398,7 +4398,7 @@ Added to repository. Passes TEI parsing.
                 complaint to their of the treatment of Sthenius; lastly, that I myself had pleaded
                 the cause of Sthenius before this college of the tribunes of the people, as by their
                 edict no one was allowed to remain in <placeName key="perseus,Rome">Rome</placeName>
-                who had been condemned on a capital <note anchored="yes">A “capital
+                who had been condemned on a capital <note anchored="true">A “capital
                   charge” at <placeName key="perseus,Rome">Rome</placeName> does not
                   necessarily mean one affecting the life of the prisoner, but his status as a free
                   citizen. A charge which involved <foreign lang="la">infamia</foreign>,
@@ -4412,7 +4412,7 @@ Added to repository. Passes TEI parsing.
                 be prohibited by their edict from remaining in <placeName key="perseus,Rome"
                   >Rome</placeName>.” <milestone n="101" unit="section"/> When this news
                 was brought to him, he for a while was alarmed and agitated; he turned the blunt end
-                of his pen <note anchored="yes">To turn the pen was to erase what had been written
+                of his pen <note anchored="true">To turn the pen was to erase what had been written
                   “At one end the stilus was sharpened to a point for scratching the
                   characters on the wax, while the other end, being fat and circular served to
                   render the surface of the tablets smooth again, and so to obliterate what had been
@@ -4620,7 +4620,7 @@ Added to repository. Passes TEI parsing.
                 not requested this favour of me; if my affection and love for the republic, and the
                 injury done to the credit of our order and of the courts of justice, had not
                 compelled me to do so; and if this had been my only reason, that you had so cruelly,
-                and wickedly, and abominably treated my friend and connection <note anchored="yes">I
+                and wickedly, and abominably treated my friend and connection <note anchored="true">I
                   have in some instances translated <foreign lang="la">hospes</foreign>
                   “friend,” and oftener still “connection,”
                   though either word is far from representing adequately the idea of the Latin
@@ -4787,10 +4787,10 @@ Added to repository. Passes TEI parsing.
                 present. <milestone n="129" unit="section"/> It is a custom of the Sicilians, and of
                 the rest of the Greeks, because they wish their days and months to agree with the
                 calculations as to the sun and moon, if there be any difference sometimes to take
-                out a day, or, at most, two days from a month, which they call <foreign lang="greek"
+                out a day, or, at most, two days from a month, which they call <foreign xml:lang="grc"
                   >e)caire/simoi</foreign>. And so also they sometimes make a month longer by a day
                 or by two days. And when he heard of that, he, this new astronomer, who was thinking
-                not so much of the heavens as of the heavy plate, <note anchored="yes">The original
+                not so much of the heavens as of the heavy plate, <note anchored="true">The original
                   puns on the resemblance between <foreign lang="la">caelum</foreign>,
                   “heaven,” and <foreign lang="la">caelatum</foreign>,
                   “carved” or “chased.”</note> he orders
@@ -4866,7 +4866,7 @@ Added to repository. Passes TEI parsing.
                 care of himself. He not only picked up whatever money had slipped through his
                 principal's fingers, by which he amassed great riches, but he also picked up the
                 relics of his pleasures and of his profligacy. Therefore do not fancy that Athenio
-                  <note anchored="yes">Athenio was a Cilician slave who had headed a revolt of
+                  <note anchored="true">Athenio was a Cilician slave who had headed a revolt of
                   slaves in <placeName key="tgn,7003122">Sicily</placeName>, A.U.C. 650. He was at
                   last defeated and slain by the consul Aquilius, A.U.C. 651.</note> reigned in
                   <placeName key="tgn,7003122">Sicily</placeName>, for he took no city; but know ye
@@ -5034,7 +5034,7 @@ Added to repository. Passes TEI parsing.
                 henceforth sell the tenths according to the law of Hiero. You were the first who had
                 sold them in a way contrary to that law.—That they may not put a money
                 value on the corn which is ordered for the public granary. This, too, is now
-                requested for the first time on account of your three denarii: <note anchored="yes"
+                requested for the first time on account of your three denarii: <note anchored="true"
                   >See the note on the next oration, “<title>De Re
                   Frumentaria</title>,” for an explanation of this; and on points
                   connected with the topic of corn, and the <foreign lang="la">societas</foreign> of
@@ -5227,7 +5227,7 @@ Added to repository. Passes TEI parsing.
                 not, even in a time of profound peace, protect the statues of a praetor of the Roman
                 people. <milestone n="160" unit="section"/> The men of <placeName
                   key="perseus,Tauromenium">Tauromenium</placeName> which is a city in alliance
-                  <note anchored="yes">The <foreign lang="la">foederatae civitates</foreign> were
+                  <note anchored="true">The <foreign lang="la">foederatae civitates</foreign> were
                   those states which were connected with <placeName key="perseus,Rome"
                     >Rome</placeName> by a treaty, <foreign lang="la">foedus</foreign>. The name did
                   not include Roman colonies, or Latin colonies, or any place which had obtained the
@@ -5619,7 +5619,7 @@ Added to repository. Passes TEI parsing.
                 not have known a man in your own province, who, I see, was in <placeName
                   key="tgn,7003122">Sicily</placeName> while you were praetor, and who, I perceive
                 from the accounts themselves, was a very wealthy man. And now, that this may not be
-                longer in obscurity, advance into the middle, <note anchored="yes">This is said of
+                longer in obscurity, advance into the middle, <note anchored="true">This is said of
                   the officers of the court who have the account in their keeping during the
                   trial.</note> open the volume, the copy of the accounts, so that every one may be
                 able to see now, not the traces only of that man's avarice, but the very bed in
@@ -5656,7 +5656,7 @@ Added to repository. Passes TEI parsing.
                 act shamelessly in defending people, to be thought ungrateful for abandoning
                 them.</p>
             
-            <div1 type="Book" n="3">
+            <div type="Book" n="3">
               <head>THE THIRD BOOK OF THE SECOND PLEADING IN THE ACCUSATION AGAINST CAIUS
                 VERRES.</head>
               <head>ON THE COURT RELATING TO CORN.</head>
@@ -5677,7 +5677,7 @@ Added to repository. Passes TEI parsing.
                   allowed to the old inhabitants a continuance of their ancient rights, and that,
                   with some few exceptions, the territory of all the states was subjected, as
                   formerly, to the payment of a tithe on corn, wine, oil, and the <foreign lang="la"
-                    >fruges minutae</foreign>.<note anchored="yes">“<placeName
+                    >fruges minutae</foreign>.<note anchored="true">“<placeName
                       key="tgn,1033212">Fruges</placeName> minutae” probably
                     pulse—Riddle's Lat. Dict. in v. <foreign lang="la"
                     >Minutus</foreign>.</note>It was further determined that place and time of
@@ -5822,7 +5822,7 @@ Added to repository. Passes TEI parsing.
                 domestic pandering to his passions? Can he who wishes to pay due honours to the
                 immortal gods, by any means avoid being an enemy to that man who has plundered all
                 the temples, who has dared to commit his robberies even on the track of the wheels
-                of the sacred car? <note anchored="yes"><foreign lang="la">Thensa</foreign> was the
+                of the sacred car? <note anchored="true"><foreign lang="la">Thensa</foreign> was the
                   chariot or car on which the images of the gods were carried in the <foreign
                     lang="la">Ludi Circenses</foreign>.</note> Must not he who thinks that all men
                 ought to live under equal laws, be very hostile to you, when he considers the
@@ -6114,10 +6114,10 @@ Added to repository. Passes TEI parsing.
                 others. What? of what men is that retinue composed? Of Volusius the soothsayer, and
                 Cornelius the physician, and the other dogs whom you see licking up the crumbs about
                 my judgment-seat. For he never appointed any judge or recuperator <note
-                  anchored="yes">The <foreign lang="la">recuperatores</foreign> were a kind of
+                  anchored="true">The <foreign lang="la">recuperatores</foreign> were a kind of
                   judges, usually appointed by the praetors in some particular kinds of action, and
                   especially in those relating to money.</note> from the proper body. <note
-                  anchored="yes">The Latin word here is <foreign lang="la">conventus</foreign>,
+                  anchored="true">The Latin word here is <foreign lang="la">conventus</foreign>,
                   which often occurs in these orations; properly it means any assembly of men, but
                   when the Romans had reduced foreign countries into the form of provinces, it
                   assumed a nave definite meaning. Sometimes it was applied to the whole body of
@@ -6815,7 +6815,7 @@ Added to repository. Passes TEI parsing.
                 from tribunals, and from disputes; whom you, O most profligate of men, ought to have
                 spared, whose interests you ought to have consulted, the whole race of whom you
                 ought most carefully to have preserved. In the first year of your praetorship the
-                tenths of that district were sold for eighteen thousand <note anchored="yes"
+                tenths of that district were sold for eighteen thousand <note anchored="true"
                   >Orellius considers that all the figures and measures in this and the next chapter
                   are in a state of hopeless corruption and confusion; and they are certainly not
                   very easily reconciled with each other. The effect of the oration in general is
@@ -7992,7 +7992,7 @@ Added to repository. Passes TEI parsing.
                 Verres had already departed from the province; written by the hand of Timarchides
                 Read the letter of Timarchides: “Timarchides, the officer of Verres,
                 wishes health to Apronius.” Now I do not blame this which he has written,
-                “The officer.” <note anchored="yes">The Latin is <foreign
+                “The officer.” <note anchored="true">The Latin is <foreign
                     lang="la">accensus</foreign>. “The <foreign lang="la"
                     >accensus</foreign> was a public officer who attended on several of the Roman
                   magistrates. He anciently preceded the consul, who had not the fasces.... It was
@@ -8003,7 +8003,7 @@ Added to repository. Passes TEI parsing.
                   magistrate on whom they attended.”—Smith, Dict. Ant. in
                   voce.</note> For why should clerks alone assume to themselves this privilege?
                 “Lucius Papirius the clerk,” I should like this signature to be
-                common to all attendants, lictors, and messengers. <note anchored="yes">The Latin is
+                common to all attendants, lictors, and messengers. <note anchored="true">The Latin is
                     <foreign lang="la">viator</foreign>. “<foreign lang="la"
                     >Viator</foreign> was a servant who attended upon and executed the commands of
                   certain Roman magistrates, to whom he bore the same relation that the lictor did
@@ -8021,7 +8021,7 @@ Added to repository. Passes TEI parsing.
                 ample funds.” It is quite inevitable that what there was superfluous of
                 the gain you both made by the corn, must have gone chiefly to the man by whose
                 intervention you transacted that business. “Get hold of the new clerks and
-                officers. <note anchored="yes">The Latin is <foreign lang="la">apparitor</foreign>,
+                officers. <note anchored="true">The Latin is <foreign lang="la">apparitor</foreign>,
                   which was “the general name for the public servants of the magistrates
                   at <placeName key="perseus,Rome">Rome</placeName>,—<foreign lang="la"
                     >accensi</foreign>, <foreign lang="la">carnifex</foreign>, <foreign lang="la"
@@ -8033,7 +8033,7 @@ Added to repository. Passes TEI parsing.
                 —Use every means that offer, in concert with Lucius Vulteius, who has the
                 greatest influence.” See now, what an opinion Timarchides has of his own
                 dishonest cunning, when he gives precepts of dishonesty to Apronius! Now these
-                words, “Use every means in your power ” <note anchored="yes">The
+                words, “Use every means in your power ” <note anchored="true">The
                   Latin is <foreign lang="la">caede</foreign>, <foreign lang="la">concide</foreign>.
                   “N.B. <foreign lang="la">caede</foreign>
                   <foreign lang="la">concide</foreign>, Cic. proverbially; i.e. use every means in
@@ -8133,7 +8133,7 @@ Added to repository. Passes TEI parsing.
                 yourself, if, indeed, he is not worse (If that be possible) in this
                 respect,—that you have turned out such as you are without being bred up in
                 the school of a dissolute man, but only under a thief, and a go-between. <note
-                  anchored="yes">The Latin is <foreign lang="la">divisor</foreign>, on which Riddle
+                  anchored="true">The Latin is <foreign lang="la">divisor</foreign>, on which Riddle
                   says, “a decider a distributor. There were also <foreign lang="la"
                     >divisores</foreign> at the comitia, through whom the candidates caused money to
                   be distributed among the tribes, this was a name given by way of reproach, and not
@@ -8193,7 +8193,7 @@ Added to repository. Passes TEI parsing.
                 anything of which I myself do not already feel thoroughly convinced. <milestone
                   n="165" unit="section"/> In the ease of this public money, O judges, there are
                 three kinds of thefts. In the first place, he put it out among the companies from
-                which it had been drawn at twenty-four per cent interest; <note anchored="yes"
+                which it had been drawn at twenty-four per cent interest; <note anchored="true"
                   >Towards the close of the republic the interest of money became due on the first
                   of every month; therefore <foreign lang="la">centesimae usurae</foreign>, which
                   seems to have been reckoned the ordinary rate of interest at <placeName
@@ -8500,7 +8500,7 @@ Added to repository. Passes TEI parsing.
                 unprecedented and scandalous. <milestone n="184" unit="section"/> Bring me back to
                 those scriveners, if you please; do not get together those men who when with a
                 little money scraped together from the presents of spendthrifts and the gratuities
-                to actors, they have bought themselves a place in some decury, <note anchored="yes"
+                to actors, they have bought themselves a place in some decury, <note anchored="true"
                   >These decuries were colleges, or guilds, in which the different bodies of
                   inferior officers, librarians, clerks, lictors, <foreign lang="la"
                     >accensi</foreign>, nomenclators, &c were enrolled.</note> think that
@@ -8516,7 +8516,7 @@ Added to repository. Passes TEI parsing.
                 have any defence left? that any one can endure this? Do you think that even any one
                 of those who are at this moment your own advocates can listen to this with
                 equanimity? Do you think that, in the same city in which an action was brought
-                against Caius Cato, <note anchored="yes">Caius Cato was the grandson of Marcus Cato
+                against Caius Cato, <note anchored="true">Caius Cato was the grandson of Marcus Cato
                   the censor, and nephew of the younger Scipio Africanus; he had been praetor of
                     <placeName key="tgn,7003122">Sicily</placeName>, but was convicted of having
                   received eighteen thousand <foreign lang="la">sesterces</foreign>
@@ -8543,7 +8543,7 @@ Added to repository. Passes TEI parsing.
                 enemy? gained in what victory? Of what booty or trophies do they make a part? Is it
                 because while you were praetor, a most beautiful fleet, the bulwark of <placeName
                   key="tgn,7003122">Sicily</placeName>, the defence of the province, was burnt <note
-                  anchored="yes">This has been mentioned before, owing to the way in which Verres
+                  anchored="true">This has been mentioned before, owing to the way in which Verres
                   had disabled the fleet for his private gain, excusing towns from providing ships
                   who were inclined to pay for the relaxation, and discharging too all the sailors
                   who chose to buy their discharges, it was so powerless that a small squadron of
@@ -8591,7 +8591,7 @@ Added to repository. Passes TEI parsing.
                   >sesterces</foreign> for a <foreign lang="la">modius</foreign> of wheat, two for
                 one of barley, Verres, having first added to the quantity of wheat, valued each
                   <foreign lang="la">modius</foreign> of wheat with the cultivators at three
-                  <foreign lang="la">denarii</foreign>. <note anchored="yes">A <foreign lang="la"
+                  <foreign lang="la">denarii</foreign>. <note anchored="true">A <foreign lang="la"
                     >denarius</foreign> was about eight pence half-penny; a <foreign lang="la"
                     >sestertius</foreign> only fraction over two-pence.</note> My charge is not
                 this, O Hortensius; do not you think about this; I know that many virtuous, and
@@ -9159,7 +9159,7 @@ Added to repository. Passes TEI parsing.
                 may return to their farms and to their homes under my guidance and through my
                 instrumentality.</p>
             
-            <div1 type="Book" n="4">
+            <div type="Book" n="4">
               <head>THE FOURTH BOOK OF THE SECOND PLEADING IN THE PROSECUTION OF VERRES.</head>
               <head>ABOUT THE STATUES</head>
               <argument>
@@ -9330,7 +9330,7 @@ Added to repository. Passes TEI parsing.
                 them, since against all this class of accusations you are going to use this defence
                 alone, I ask what sort of tribunals you thought that there would be at <placeName
                   key="perseus,Rome">Rome</placeName>, if you thought that any one would grant you
-                this, that you in your praetorship and in your command <note anchored="yes">The
+                this, that you in your praetorship and in your command <note anchored="true">The
                   Latin word is <foreign lang="la">imperium</foreign>. “<foreign lang="la"
                     >Imperium</foreign> (as opposed to <foreign lang="la">Potestas</foreign>) is the
                   power which was conferred by the state upon an individual who was appointed to
@@ -9358,7 +9358,7 @@ Added to repository. Passes TEI parsing.
                 provinces? This was it, O judges, because they thought it a robbery, not a purchase,
                 when the seller was not allowed to sell on his own terms. And they were aware that,
                 in the provinces, if he who was there with the command and power <note
-                  anchored="yes">The Latin word in each case is <foreign lang="la"
+                  anchored="true">The Latin word in each case is <foreign lang="la"
                     >potestas</foreign>. “According to Paulus, <foreign lang="la"
                     >potestas</foreign>, as applied to a magistrate, is equivalent to <foreign
                     lang="la">imperium</foreign> ... But <foreign lang="la">potestas</foreign> is
@@ -9604,7 +9604,7 @@ Added to repository. Passes TEI parsing.
                 you, when they see the privileges of our citizenship extinguished by such a
                 punishment. <milestone n="12" unit="chapter"/><milestone n="27" unit="section"/></p>
               <p>But you say you bought these things? What? did you forget to purchase of the same
-                Heius that Attalic <note anchored="yes">Attalus, king of <placeName
+                Heius that Attalic <note anchored="true">Attalus, king of <placeName
                     key="tgn,7016140">Pergamus</placeName>, had been the inventor of weaving gold
                   thread into tapestry work, and therefore tapestry with gold threads interwoven in
                   it was called by his name.</note> tapestry, celebrated over the whole of
@@ -9797,7 +9797,7 @@ Added to repository. Passes TEI parsing.
                 home, and of great credit and popularity with the people among whom he has settled,
                 on account of his virtue. It is reported to Verres of this man that he has some
                 exceedingly fine specimens of chased work; and among them two goblets called
-                Thericlean, <note anchored="yes">“Thericles was a potter in the time of
+                Thericlean, <note anchored="true">“Thericles was a potter in the time of
                   Aristophanes, who made earthenware vessels of a peculiar black clay. In subsequent
                   time, any goblets made in imitation of his, whether of wood, silver, or glass,
                   were called Thericlean.”—Graevius.</note> made by the hand of
@@ -10273,7 +10273,7 @@ Added to repository. Passes TEI parsing.
                 such bitter injustice, they will not be so crazy as to spend their time, and labour,
                 and expense on things which they do not think will be acceptable to you. <milestone
                   n="31" unit="chapter"/><milestone n="69" unit="section"/></p>
-              <p>And in this place I appeal to you, O Quintus Catulus; <note anchored="yes">The
+              <p>And in this place I appeal to you, O Quintus Catulus; <note anchored="true">The
                   Capitol had been burnt in the civil war between Marius and Sulla, and it was now
                   being restored under the superintendence of Quintus Catulus, to whom that office
                   had been entrusted by the senate.</note> for I am speaking of your most honourable
@@ -10876,7 +10876,7 @@ Added to repository. Passes TEI parsing.
                 whole of the plain is cut off and separated, so as to be difficult of approach.
                 Around it are many lakes and groves, and beautiful flowers at every season of the
                 year; so that the place itself appears to testify to that abduction of the virgin
-                which we have heard of from our boyhood. <note anchored="yes">We have the same
+                which we have heard of from our boyhood. <note anchored="true">We have the same
                   advantage as, or rather greater advantages than Cicero in this respect, for we
                   have heard the story from our boyhood told far more beautifully than any Sicilian
                   ever imagined it. See <bibl n="Ov. Fast. 4.419">Ovid Fasti, iv. 419</bibl>.</note>
@@ -11066,11 +11066,11 @@ Added to repository. Passes TEI parsing.
                 is called Tyche, in which there is a spacious gymnasium, and many sacred buildings,
                 and that district is the most frequented and the most populous. There is also a
                 fourth city, which, because it is the last built, is called <placeName
-                  key="tgn,1094981">Neapolis</placeName>, <note anchored="yes"><placeName
+                  key="tgn,1094981">Neapolis</placeName>, <note anchored="true"><placeName
                     key="tgn,1094981">Neapolis</placeName> meaning “new city,”
                   or as we might say, <placeName key="tgn,7014109">Newtown</placeName>, from the
-                  Greek words <foreign lang="greek">*ne/a po/lis</foreign>, as Tyche is the Greek
-                  name of Fortune—<foreign lang="greek">*tu/xh</foreign> compare with this
+                  Greek words <foreign xml:lang="grc">*ne/a po/lis</foreign>, as Tyche is the Greek
+                  name of Fortune—<foreign xml:lang="grc">*tu/xh</foreign> compare with this
                   passage the description of <placeName key="perseus,Syracuse">Syracuse</placeName>
                   given by Thucydides in his sixth and seventh books.</note> in the highest part of
                 which there is a very large theatre, and, besides that there are two temples of
@@ -11193,7 +11193,7 @@ Added to repository. Passes TEI parsing.
                 more? was not the statue of Aristaeus openly taken away by your command out of the
                 temple of Bacchus? <milestone n="128" unit="section"/> What more? did you not take
                 away out of the temple of <persName><surname>Jupiter</surname></persName> that most
-                holy statue of Jupiter Imperator, which the Greeks call <foreign lang="greek"
+                holy statue of Jupiter Imperator, which the Greeks call <foreign xml:lang="grc"
                   >*)/ourios</foreign>, most beautifully made? What next? did you hesitate to take
                 away out of the temple of Libera, that most exquisite bust of Parian marble, which
                 we used to go to see? And that Paean used to be worshipped among that people
@@ -11273,7 +11273,7 @@ Added to repository. Passes TEI parsing.
                 therefore our ancestors willingly allowed those things to remain in numbers among
                 the allies, in order that they might be as splendid and as flourishing as possible
                 under our dominion; and among those nations whom they rendered taxable or tributary,
-                  <note anchored="yes">The Latin is <foreign lang="la">quos vectigales aut
+                  <note anchored="true">The Latin is <foreign lang="la">quos vectigales aut
                     stipendiarius fuerant</foreign>—“<foreign lang="la"
                     >Stipendiarii</foreign> and <foreign lang="la">vectigales</foreign> are thus
                   distinguished: <foreign lang="la">Stipendiarii</foreign> are those who pay
@@ -11487,10 +11487,10 @@ Added to repository. Passes TEI parsing.
                 any friends or connections at <placeName key="perseus,Syracuse"
                 >Syracuse</placeName>, that he was entirely desolate and forsaken, a man of the name
                 of Theomnastus, a man ridiculously crazy, whom the Syracusans call Theoractus. <note
-                  anchored="yes">Theoractus seems a sort of nickname, to indicate his insanity,
-                  being derived from <foreign lang="greek">*qeo/s</foreign>, God, and <foreign
-                    lang="greek">r(h/gnumi</foreign>, to break; while Theomnastas derived from
-                    <foreign lang="greek">*qeo/s</foreign> and <foreign lang="greek"
+                  anchored="true">Theoractus seems a sort of nickname, to indicate his insanity,
+                  being derived from <foreign xml:lang="grc">*qeo/s</foreign>, God, and <foreign
+                    xml:lang="grc">r(h/gnumi</foreign>, to break; while Theomnastas derived from
+                    <foreign xml:lang="grc">*qeo/s</foreign> and <foreign xml:lang="grc"
                     >me/mnhmai</foreign>, to remember.</note> attempted to detain those documents; a
                 man in such a condition, that the boys follow him, and that every one laughs at him
                 every time he opens his mouth. But his craziness, which is ridiculous to others, was
@@ -11548,7 +11548,7 @@ Added to repository. Passes TEI parsing.
                 deities, and that they might take away the festival days in honour of that family by
                 whose means they had recovered all their other festivals.</p>
             
-            <div1 type="Book" n="5">
+            <div type="Book" n="5">
               <head>The Fifth Book of the Second Pleading in the Prosecution against Verres.</head>
               <head>The Speech on the Punishments.</head>
               <argument>
@@ -12094,7 +12094,7 @@ Added to repository. Passes TEI parsing.
                 perceive, that not only no defence is procured for you, but that an immense body of
                 accusations is raised up against you; unless, indeed, you are going to speak of the
                 relics of the war in <placeName key="tgn,1000080">Italy</placeName>, and the
-                disaster of Temsa. <note anchored="yes">Temsa is a town of the Bruttii, whither some
+                disaster of Temsa. <note anchored="true">Temsa is a town of the Bruttii, whither some
                   of the relics of Spartacus's army had fled. Verres had passed through it, or close
                   to it, on his return from <placeName key="tgn,7003122">Sicily</placeName>.</note>
                 But when your fortune recently conducted you to that place, at a most seasonable
@@ -12222,7 +12222,7 @@ Added to repository. Passes TEI parsing.
               <p>
                 <milestone n="49" unit="section"/> Oh! but you did not command the Mamertines to
                 furnish a ship, because they are one of the confederate cities. Thank God, we have a
-                man trained by the hands of the Fetiales; <note anchored="yes">The <foreign
+                man trained by the hands of the Fetiales; <note anchored="true">The <foreign
                     lang="la">Fetiales</foreign> were a college of Roman priests, who acted as the
                   guardians of the public faith; it was their province to determine the
                   circumstances under which satisfaction was to be demanded from, or hostilities
@@ -12827,7 +12827,7 @@ Added to repository. Passes TEI parsing.
                 now nearly dawn. He comes forth into the middle of the crowd, bewildered with wine,
                 and sleep, and debauchery. He is received by all with such a shout that it seemed to
                 bring before his eyes a resemblance to the dangers of <placeName key="tgn,7002579"
-                  >Lampsacus</placeName>. <note anchored="yes">See the <bibl n="Cic. Ver. 2.1.67"
+                  >Lampsacus</placeName>. <note anchored="true">See the <bibl n="Cic. Ver. 2.1.67"
                     >first book of this second pleading, c. 26.</bibl></note> But this present
                 appeared greater than that, because, though both the mobs hated him equally, the
                 numbers here were much greater. People began to talk to one another of his tent on
@@ -12836,7 +12836,7 @@ Added to repository. Passes TEI parsing.
                 many days together, during which no one had seen him. Then they demanded Cleomenes,
                 who had been appointed commander-in-chief by him; and nothing was ever nearer
                 happening than the transference of the precedent of <placeName key="tgn,7018163"
-                  >Utica</placeName> in the case of Hadrian <note anchored="yes">See the <bibl
+                  >Utica</placeName> in the case of Hadrian <note anchored="true">See the <bibl
                     n="Cic. Ver. 2.1.70">27th chapter of the first book of the second
                     pleading</bibl> against Verres.</note> to <placeName key="perseus,Syracuse"
                   >Syracuse</placeName>; so that two graves of two most infamous governors would
@@ -12884,7 +12884,7 @@ Added to repository. Passes TEI parsing.
                 defeated and destroyed, owing to the natural character of the place and harbour.
                 Here first was the power of that splendid city defeated, weakened, and impaired. In
                 this harbour, shipwreck was made of the nobleness and dominion and glory of
-                  <placeName key="perseus,Athens">Athens</placeName>. <note anchored="yes">See the
+                  <placeName key="perseus,Athens">Athens</placeName>. <note anchored="true">See the
                     <bibl n="Thuc. 7.1.1">seventh book of Thucydides.</bibl></note>
                 <milestone n="38" unit="chapter"/></p>
               <p>Did a pirate penetrate to that part of the city which he could not approach without
@@ -13533,7 +13533,7 @@ Added to repository. Passes TEI parsing.
                 to say whenever any one came to <placeName key="tgn,7003122">Sicily</placeName> a
                 little better off than usual, that they were soldiers of Sertorius, and that they
                 were flying from <placeName key="tgn,7007641">Dianium</placeName>. <note
-                  anchored="yes"><placeName key="tgn,7007641">Dianium</placeName> was a town in
+                  anchored="true"><placeName key="tgn,7007641">Dianium</placeName> was a town in
                     <placeName key="tgn,1000095">Spain</placeName> which had been occupied by
                   Sertorius.</note> They brought him presents to gain his protection from danger;
                 some brought him Tyrian purple, others brought frankincense, perfumes, and linen
@@ -13566,7 +13566,7 @@ Added to repository. Passes TEI parsing.
                 If he were able to urge this in his defence, still such a defence would find credit
                 with no one. But there is a word written in those documents, which that ignorant and
                 profligate man never noticed, and would not have understood if he had. <foreign
-                  lang="greek">*)ekdikaiw/qhsan</foreign>, it says that is, according to the
+                  xml:lang="grc">*)ekdikaiw/qhsan</foreign>, it says that is, according to the
                 Sicilian language, they were punished and put to death. <milestone n="58"
                   unit="chapter"/><milestone n="149" unit="section"/></p>
               <p>If any king, if any city among foreign nations, in any nation had done anything of
@@ -13603,7 +13603,7 @@ Added to repository. Passes TEI parsing.
                 end of civil dissensions, and of the (shall I say) insanity, or destiny, or calamity
                 in which they take their rise, is not so grievous as to make it unlawful for us to
                 preserve the rest of our citizens in safety. That Verres there, that ancient
-                betrayer of his consul, that transferrer <note anchored="yes">See <bibl
+                betrayer of his consul, that transferrer <note anchored="true">See <bibl
                     n="Cic. Ver. 2.1.94">the first book of this second pleading against Verres, c.
                     37.</bibl></note> of the quaestorship, that embezzler of the public money, has
                 taken upon himself so much authority in the republic, that he would have inflicted a
@@ -13933,7 +13933,7 @@ Added to repository. Passes TEI parsing.
                 grieve that such a crime was committed by this select bench of judges. I should
                 grieve that those judges, whom I have myself approved of and joined in selecting,
                 should walk about in this city branded with such disgrace by that man being
-                acquitted, as to seem smeared not with wax, <note anchored="yes">This refers to the
+                acquitted, as to seem smeared not with wax, <note anchored="true">This refers to the
                   tablets on which the judges signified their decision, which, as has been said
                   before, were covered with wax.</note> but with mud. <milestone n="174"
                   unit="section"/> Wherefore, from this place I warn you also, O Hortensius, if
@@ -14136,7 +14136,7 @@ Added to repository. Passes TEI parsing.
                 that I may be allowed for the future to defend the good, instead of being compelled
                 to prosecute the infamous.</p>
             
-          </div0>
+          </div>
         </body>
       </text>
     </group>

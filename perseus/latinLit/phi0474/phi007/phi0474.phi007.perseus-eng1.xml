@@ -15,7 +15,7 @@
 <name>Elli Mylonas</name>
 <name>David Smith</name>
 </respStmt>
-<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt>  <sourceDesc>
+<funder n="org:NEH">National Endowment For The Humanities (NEH)</funder>  </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>  <sourceDesc>
 				<biblStruct>
 					<monogr>
 						<author>M. Tullius Cicero</author>
@@ -31,41 +31,41 @@
 		</fileDesc>
 
 		<encodingDesc>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
-			<refsDecl doctype="TEI.2">
+			<refsDecl
 				<state delim=" " unit="text"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Catil.;text=Agr." doctype="TEI.2">
 				<state delim=" " unit="text"/>
 				<state delim="." unit="speech"/>
 				<state delim="." unit="chapter"/>
-				<state unit="section"/>
+				refState unit="section"/>
 			</refsDecl>
 			<refsDecl n="text=Corn." doctype="TEI.2">
 				<state delim=" " unit="text"/>
-				<state unit="speech"/>
+				refState unit="speech"/>
 			</refsDecl>
 		</encodingDesc>
 
 		<profileDesc>
 			<langUsage>
-				<language id="en">English</language>
-				<language id="la">Latin</language>
-				<language id="greek">Greek</language>
+				language ident="en">English</language>
+				language ident="la">Latin</language>
+				language ident="greek">Greek</language>
 			</langUsage>
 		</profileDesc>
 
-		<revisionDesc>
+		<revisionDesc><!--
 			<change>
 				<date>7/14/97</date>
 				<respStmt>
@@ -183,7 +183,7 @@ Added to repository.
 		<change><date>July 2014</date>
     <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
     <item>split composite text and converted to unicode</item>
-      </change></revisionDesc>
+      </change><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
 	</teiHeader><text xml:lang="en">
 				<front>
 					<head>THE FRAGMENTS WHICH REMAIN OF THE SPEECH OF M. T. CICERO ON BEHALF OF MARCUS FONTEIUS.</head>
@@ -248,7 +248,7 @@ Added to repository.
       unknown witnesses to known ones, foreign witnesses to citizens; which thinks that it is
       establishing a charge more plainly by the capricious evidence of barbarians than by documents
       written by our fellow citizens? <milestone n="5" unit="section"/> Of two magistracies, each of
-      which is occupied in handling and dealing with large sums of money, the triumvirate <note anchored="yes">There were several sorts of <foreign lang="la">triumviri</foreign> who were
+      which is occupied in handling and dealing with large sums of money, the triumvirate <note anchored="true">There were several sorts of <foreign lang="la">triumviri</foreign> who were
        concerned in the pecuniary affairs of the state: the <foreign lang="la">triumviri
         mensarii</foreign>, who were a sort of bankers, but who seem to have been permanently
        employed by the state, in whose hands we read, that not only the <foreign lang="la">aerarium</foreign>, but also private individuals deposited sums of money which they had to
@@ -284,9 +284,9 @@ Added to repository.
       <milestone n="11" unit="section"/>
      </p>
 					<p><gap desc="*****"/>that in the time of this praetor <placeName key="tgn,1000070">Gaul</placeName>
-      <note anchored="yes">The passages preceding this figure do not occur in old editions; they
+      <note anchored="true">The passages preceding this figure do not occur in old editions; they
        were found in the <placeName key="tgn,7001168">Vatican</placeName> by Niebuhr, and published
-       by him in <date value="1820">1820</date>. They are still in a very corrupt state. The Roman
+       by him in date when="1820">1820</date>. They are still in a very corrupt state. The Roman
        figures at the heads of the subsequent chapters are those which occur in all older editions,
        in which the oration began here.</note> was overwhelmed with debt. From whom do they say that
       loans of such sums were procured? From the Gauls? By no means. From whom then? From Roman
@@ -311,7 +311,7 @@ Added to repository.
       and the monuments which we have erected, and lately mulcted, by the senate, of their lands and
       cities: some, too, who have fought in battle against Marcus Fonteius himself, have by his toil
       and labour been reduced under the power and dominion of the Roman people. <milestone n="13" unit="section"/> There is in the same province <placeName key="tgn,7008368">Narbo
-       Martius</placeName>, <note anchored="yes"><placeName key="tgn,7008368">Narbo
+       Martius</placeName>, <note anchored="true"><placeName key="tgn,7008368">Narbo
         Martius</placeName> is the present town of <placeName key="tgn,7008368">Narbonne</placeName>.</note> a colony of our citizens, set up as a watch-tower of the Roman
       people, and opposed as a bulwark to the attacks of those very natives. There is also the city
       of <placeName key="tgn,7008781">Massilia</placeName>, which I have already mentioned, a city
@@ -391,14 +391,14 @@ Added to repository.
       Plaetorius: that it had not occurred to Fonteius for the first time when he was in <placeName key="tgn,1000070">Gaul</placeName> to establish a transit duty on wine, but that he had
       thought of the plan in <placeName key="tgn,1000080">Italy</placeName>, before he departed from
        <placeName key="perseus,Rome">Rome</placeName>. Accordingly, that Titurius had exacted at
-       <placeName key="tgn,7008441">Tolosa</placeName> fourteen denarii for every amphora <note anchored="yes">The amphora contained nearly six gallons, a denarius, as has been said before,
+       <placeName key="tgn,7008441">Tolosa</placeName> fourteen denarii for every amphora <note anchored="true">The amphora contained nearly six gallons, a denarius, as has been said before,
        was about eight pence-halfpenny; so that this duty was, as nearly as may be, one and
        eightpence a gallon. A <foreign lang="la">victoriatus</foreign> was half a <foreign lang="la">denarius</foreign>.</note> of wine, under the name of transit duty; that Portius and Numius
       at Crodunum had exacted three victoriati; that Serveus at Vulchalo had exacted two victoriati;
       and in those districts they believe that transit duty was exacted by these men at Vulchalo, in
       case of any one turning aside to Cobiamachus, which is a small town between <placeName key="tgn,7008441">Tolosa</placeName> and <placeName key="tgn,7008368">Narbo</placeName>, and
       not wishing to proceed so far as <placeName key="tgn,7008441">Tolosa</placeName>. Elesiodulus
-      exacted only six denarii from those who were taking wine to the enemy. <note anchored="yes">The whole of this passage is very corrupt; the last line or two so hopelessly so, and so
+      exacted only six denarii from those who were taking wine to the enemy. <note anchored="true">The whole of this passage is very corrupt; the last line or two so hopelessly so, and so
        unintelligible, that perhaps it would have been better to have marked them with asterisks
        instead of attempting to translate them.</note>
       <milestone n="20" unit="section"/> I see, O judges, that this is a charge, important both from

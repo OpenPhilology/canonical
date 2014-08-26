@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title n="Inst." type="work">Institutio Oratoria, books 1-3: index - 3</title>
@@ -16,8 +16,8 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 100Kb</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
@@ -39,23 +39,23 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="chapter"/>
-                <state unit="section"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="chapter"/>
+                refState unit="section"/>
             </refsDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="page"/>
+            <refsDecl
+                refState unit="page"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="la">Latin</language>
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
+                language ident="la">Latin</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>2006</date>
                 <respStmt>
@@ -64,12 +64,12 @@
                 </respStmt>
                 <item/>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="la">
         <body>
             <pb id="p.370"/>
-            <div1 part="N" sample="complete" org="uniform" n="3" type="book">
+            <div part="N" sample="complete" org="uniform" n="3" type="book">
                 <head>Liber III</head>
                 <p>
                     <milestone n="1" unit="chapter"/>
@@ -117,7 +117,7 @@ utitur:
                         </l>
                         <l part="N">
                             <reg>aspirant</reg>
-                            <note anchored="yes" place="unspecified">
+                            <note anchored="true" place="unspecified">
                                 inspirant
                                 <hi rend="italics">A</hi>
                                 adspirant,
@@ -183,7 +183,7 @@ Elaïtes.
 omnium scripsit et nihilo minus et artem ipse composuit et pro se dixisse optime est creditus, etiam
 Polycrates, a quo scriptam in Socraten diximus orationem, et Theodorus Byzantius ex iis et ipse, quos
 Plato appellat
-                    <foreign lang="greek">logodaida/lous</foreign>
+                    <foreign xml:lang="grc">logodaida/lous</foreign>
                     <milestone n="12" unit="section"/>
                     <reg>horum</reg>
                     primi communes locos tractasse dicuntur Protagoras, Gorgias,
@@ -414,7 +414,7 @@ in inventionem atque elocutionem, res ac dispositionem inventioni, verba et pron
 velut custodem omnium, memoriam.
                     <reg>idem</reg>
                     in
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         in libris de Oratore,
                         <hi rend="italics">
                             <name>Spalding</name>
@@ -480,7 +480,7 @@ dispositio rhetorices propria videri potest.
                     eo
 plures dissenserunt, utrumne hae partes essent rhetorices an eiusdem opera an, ut Athenaeus credit,
 elementa, quae vocant
-                    <foreign lang="greek">stoixei=a</foreign>
+                    <foreign xml:lang="grc">stoixei=a</foreign>
                     Sed neque elementa
 recte quis dixerit, alioqui tantum initia erunt, ut
 mundi vel umor vel ignis vel materia vel corpora
@@ -548,7 +548,7 @@ fere versari tum oratores videbant;
                     <milestone n="5" unit="section"/>
                     nam et laudes
 ac vituperationes scribebantur, et
-                    <foreign lang="greek">e)pitafi/ous</foreign>
+                    <foreign xml:lang="grc">e)pitafi/ous</foreign>
                     dicere
 erat moris, et plurimum in consiliis ac iudiciis insumebatur operae, ut scriptores artium pro solis
 comprehenderint frequentissima.
@@ -583,19 +583,19 @@ contenditur.
 partes esse voluit, septem autem species: hortandi,
                     <pb id="p.394"/>
                     dehortandi, laudandi, vituperandi, accusandi, defendendi, exquirendi, quod
-                    <foreign lang="greek">e)cetastiko/n</foreign>
+                    <foreign xml:lang="grc">e)cetastiko/n</foreign>
                     dicit; quarum
 duae primae deliberativi, duae sequentes demonstrativi, tres ultimae iudicialis generis sunt partes.
                     <milestone n="10" unit="section"/>
                     <reg>protagoran</reg>
                     transeo, qui interrogandi, respondendi,
 mandandi, precandi, quod
-                    <foreign lang="greek">eu)xwlh/n</foreign>
+                    <foreign xml:lang="grc">eu)xwlh/n</foreign>
                     dixit, partes solas
 putat.
                     <name>Plato</name>
                     in Sophiste iudiciali et contionali tertiam adiecit
-                    <foreign lang="greek">prosomilhtikh/n,</foreign>
+                    <foreign xml:lang="grc">prosomilhtikh/n,</foreign>
                     quam sane permittamus
 nobis dicere sermocinatricem; quae a forensi ratione
 diiungitur et est accommodata privatis disputationibus, cuius vis eadem profecto est quae dialecticae.
@@ -616,25 +616,25 @@ alii demonstrativum vocant.
                     <reg>utrumque</reg>
                     nomen ex
 Graeco creditur fluxisse, nam
-                    <foreign lang="greek">e)gkwmiastiko/n</foreign>
+                    <foreign xml:lang="grc">e)gkwmiastiko/n</foreign>
                     aut
-                    <foreign lang="greek">e)pideiktiko/n</foreign>
+                    <foreign xml:lang="grc">e)pideiktiko/n</foreign>
                     dicunt.
                     <milestone n="13" unit="section"/>
                     <reg>sed</reg>
                     mihi
-                    <foreign lang="greek">e)pideiktiko/n</foreign>
+                    <foreign xml:lang="grc">e)pideiktiko/n</foreign>
                     non tam
 demonstrationis vim habere quam ostentationis
 videtur et multum ab illo
-                    <foreign lang="greek">e)gkwmiastikw=|</foreign>
+                    <foreign xml:lang="grc">e)gkwmiastikw=|</foreign>
                     differre; nam
 ut continet laudativum in se genus, ita non intra hoc
 solum consistit.
                     <milestone n="14" unit="section"/>
                     <reg>an</reg>
                     quisquam negaverit Panegyricos
-                    <foreign lang="greek">e)pideiktikou/s</foreign>
+                    <foreign xml:lang="grc">e)pideiktikou/s</foreign>
                     esse?
                     <reg>atqui</reg>
                     formam suadendi
@@ -716,9 +716,9 @@ scripto de re.
                     <reg>illud</reg>
                     rationale hoc legale genus
 Hermagoras atque eum secuti vocant, id est
-                    <foreign lang="greek">nomiko/n</foreign>
+                    <foreign xml:lang="grc">nomiko/n</foreign>
                     et
-                    <foreign lang="greek">logiko/n.</foreign>
+                    <foreign xml:lang="grc">logiko/n.</foreign>
                     <milestone n="5" unit="section"/>
                     <reg>idem</reg>
                     sentiunt, qui omnem quaestionem
@@ -732,7 +732,7 @@ finitas.
                     sunt, quae remotis personis et
 temporibus et locis ceterisque similibus in utramque
 partem tractantur, quod Graeci
-                    <foreign lang="greek">qe/sin</foreign>
+                    <foreign xml:lang="grc">qe/sin</foreign>
                     dicunt, Cicero
 propositum, alii quaestiones universales civiles, alii
 quaestiones philosopho convenientes, Athenaeus
@@ -757,7 +757,7 @@ quo modo utamur?
                     <reg>finitae</reg>
                     autem sunt ex complexu rerum, personarum tenipolriin, ceterorumque;
 hae
-                    <foreign lang="greek">u(poqe/seis</foreign>
+                    <foreign xml:lang="grc">u(poqe/seis</foreign>
                     a Graecis dicuntur, causae a nostris.
                     <reg>in</reg>
                     his omnis quaestio videtur circa res personasque
@@ -967,9 +967,9 @@ scriptorum.
                     <milestone n="18" unit="section"/>
                     <reg>causam</reg>
                     nunc intelligamus
-                    <foreign lang="greek">u(po/qesin,</foreign>
+                    <foreign xml:lang="grc">u(po/qesin,</foreign>
                     negotium
-                    <foreign lang="greek">peri/stasin.</foreign>
+                    <foreign xml:lang="grc">peri/stasin.</foreign>
                     <reg>sed</reg>
                     et ipsam causam quidam
 similiter finierunt, ut Apollodorus negotium.
@@ -1003,7 +1003,7 @@ fuero exsecutus, res ipsa deprehendet.
 statum, id quidam constitutionem vocant, alii quaestionem, alii quod ex quaestione appareat, Theodorus
                     <hi rend="italics">caput</hi>
                     id est
-                    <foreign lang="greek">kefa/laion genikw/taton,</foreign>
+                    <foreign xml:lang="grc">kefa/laion genikw/taton,</foreign>
                     ad quod referantur
 omnia.
                     <reg>quorum</reg>
@@ -1013,7 +1013,7 @@ appelletur, dum res ipsa manifesta sit.
                     <milestone n="3" unit="section"/>
                     <reg>statum</reg>
                     Graeci
-                    <foreign lang="greek">sta/sin</foreign>
+                    <foreign xml:lang="grc">sta/sin</foreign>
                     vocant, quod nomen non primum ab
 Hermagora traditum putant, sed alii ab Naucrate,
 Isocratis discipulo, alii a Zopyro Clazomenio; quanquam videtur Aeschines quoque in oratione contra
@@ -1126,7 +1126,7 @@ eo dicam fuisse, quod est potentius.
                     <reg>nec</reg>
                     in causa
 Milonis circa primas quaestiones
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         After
                         <hi rend="italics">quaestiones</hi>
                         the MISS. continue
@@ -1325,7 +1325,7 @@ generales quive speciales sint status, convenit.
                     <reg>ac</reg>
                     primum Aristoteles elementa decem constituit,
 circa quae versari videatur omnis quaestio.
-                    <foreign lang="greek">ou)si/an,</foreign>
+                    <foreign xml:lang="grc">ou)si/an,</foreign>
                     quam Plautus essentiam vocat, neque sane aliud est
 eius nomen Latinum; sed ea quaeritur, an sit.
                     <reg>qualitatem</reg>
@@ -1361,7 +1361,7 @@ unde ducta est translatio et comparatio.
                     , quod
 est quasi armatum esse, vestitum esse.
                     <reg>novissime</reg>
-                    <foreign lang="greek">kei=sqai,</foreign>
+                    <foreign xml:lang="grc">kei=sqai,</foreign>
                     quod est compositum esse quodam modo, ut
 calere, stare, irasci.
                     <reg>sed</reg>
@@ -1375,7 +1375,7 @@ positis quaeratur, quod pertinere ad coniecturae et
 qualitatis instrumenta video.
                     <reg>tempus</reg>
                     , quod
-                    <foreign lang="greek">xro/non</foreign>
+                    <foreign xml:lang="grc">xro/non</foreign>
                     vocant, ex quo quaestio, an is quem, dum addicta
 est, mater peperit, servus sit natus.
                     <reg>locum</reg>
@@ -1386,7 +1386,7 @@ templo occidere.
                     exulaverit, qui domi latuit.
                     <reg>tempus</reg>
                     iterum, quod
-                    <foreign lang="greek">kairo/n</foreign>
+                    <foreign xml:lang="grc">kairo/n</foreign>
                     appellant;
                     <milestone n="26" unit="section"/>
                     hanc autem
@@ -1395,7 +1395,7 @@ videri volunt speciem illius temporis, ut aestatem
                     vel hiemem; huic subiicitur ille in pestilentia comissator.
                     <reg>actum</reg>
                     , id est
-                    <foreign lang="greek">prh=cin,</foreign>
+                    <foreign xml:lang="grc">prh=cin,</foreign>
                     quod eo referunt,
                     <hi rend="italics">sciens commiserit an insciens? necessitate an casu?</hi>
                     et talia.
@@ -1407,7 +1407,7 @@ sustulerit?
                     , cui plurimae subiacent lites,
 quotiens factum non negatur, sed quia iusta ratione
 sit factum, defenditur.
-                    <foreign lang="greek">tro/pon,</foreign>
+                    <foreign xml:lang="grc">tro/pon,</foreign>
                     cum id, quod alio
 modo fieri licet, alio dicitur factum; hinc est adulter
 loris caesus vel fame necatus.
@@ -1415,7 +1415,7 @@ loris caesus vel fame necatus.
                     factorum,
 quod est apertius, quam ut vel interpretandum vel
 exemplo sit demonstrandum, tamen
-                    <foreign lang="greek">a)forma\s e)/rgwn</foreign>
+                    <foreign xml:lang="grc">a)forma\s e)/rgwn</foreign>
                     vocant.
                     <milestone n="28" unit="section"/>
                     <reg>hi</reg>
@@ -1425,7 +1425,7 @@ putant.
                     detrahunt duas partes, numerum
 et occasionem, et pro illo quod dixi actum subiiciunt
 res, id est
-                    <foreign lang="greek">pra/gmata.</foreign>
+                    <foreign xml:lang="grc">pra/gmata.</foreign>
                     <reg>quae</reg>
                     ne praeterisse viderer,
 satis habui attingere.
@@ -1486,7 +1486,7 @@ accusatorem coniectura, reum infitiatione uti putaverunt.
                     <milestone n="33" unit="section"/>
                     <reg>iuridicialis</reg>
                     est qui Graece dicitur
-                    <foreign lang="greek">dikaiologiko/s</foreign>
+                    <foreign xml:lang="grc">dikaiologiko/s</foreign>
                     Sed quemadmodum ab Archedemo qualitas
 exclusa est, sic ab his repudiata finitio.
                     <reg>nam</reg>
@@ -1509,13 +1509,13 @@ certum, coniectura sit, si certum est, reliqui status.
 in rebus extra positis, quibus coniectura explicatur,
 aut in nostris opinionibus existimat positam, quorum
 illud
-                    <foreign lang="greek">pragmatiko/n,</foreign>
+                    <foreign xml:lang="grc">pragmatiko/n,</foreign>
                     hoc
-                    <foreign lang="greek">peri\ e)nnoi/as</foreign>
+                    <foreign xml:lang="grc">peri\ e)nnoi/as</foreign>
                     vocat; idem, qui
-                    <foreign lang="greek">a)pro/lhpton</foreign>
+                    <foreign xml:lang="grc">a)pro/lhpton</foreign>
                     et
-                    <foreign lang="greek">prolhmptiko/n</foreign>
+                    <foreign xml:lang="grc">prolhmptiko/n</foreign>
                     dicunt, id est dubium et
 praesumptum, quo significatur de quo liquet.
                     <milestone n="36" unit="section"/>
@@ -1524,7 +1524,7 @@ praesumptum, quo significatur de quo liquet.
                     <quote>an sit</quote>
                     , et de accidentibus ei
 quod esse constat, id est
-                    <foreign lang="greek">peri\ ou)si/as kai\ sumbebhko/twn</foreign>
+                    <foreign xml:lang="grc">peri\ ou)si/as kai\ sumbebhko/twn</foreign>
                     existimat quaeri.
                     <reg>nam</reg>
                     in his omnibus prius genus
@@ -1543,10 +1543,10 @@ alio modo qualitatem esse modo finitionem velint.
                     voce
 quaeri putat an significet, quid, quam multa, quo
 modo? in rebus coniecturam, quod
-                    <foreign lang="greek">kat' ai)/sqhsin</foreign>
+                    <foreign xml:lang="grc">kat' ai)/sqhsin</foreign>
                     vocat,
 et qualitatem, et finitionem, cui nomen dat
-                    <foreign lang="greek">kat' e)/nnoian,</foreign>
+                    <foreign xml:lang="grc">kat' e)/nnoian,</foreign>
                     et ad aliquid.
                     <reg>unde</reg>
                     et illa divisio est, alia esse
@@ -1620,7 +1620,7 @@ controversiam aut in contentionem veniant, contineri
 apertiora sunt, quam ut dicenda sint.
                     <milestone n="45" unit="section"/>
                     <reg>idem</reg>
-                    <note anchored="yes" place="unspecified">Iatrocles, B.</note>
+                    <note anchored="true" place="unspecified">Iatrocles, B.</note>
                     Patrocles sentit.
                     <reg>tres</reg>
                     fecit et M. Antonius his quidem
@@ -1643,17 +1643,17 @@ Verginio placent.
                     deinde fecerunt species,
 ita ut legali subiicerent finitionem et alios, qui ex
 scripto ducuntur, legum contrariarum, quae
-                    <foreign lang="greek">a)ntinomi/a</foreign>
+                    <foreign xml:lang="grc">a)ntinomi/a</foreign>
                     dicitur, et scripti et sententiae vel voluntatis, id est
-                    <foreign lang="greek">kata\ r(hto\n kai\ dia/noian</foreign>
+                    <foreign xml:lang="grc">kata\ r(hto\n kai\ dia/noian</foreign>
                     et
-                    <foreign lang="greek">meta/lhmyin,</foreign>
+                    <foreign xml:lang="grc">meta/lhmyin,</foreign>
                     quam nos varie
 translativam, transumptivam, transpositivam vocamus,
-                    <foreign lang="greek">sullogismo/n</foreign>
+                    <foreign xml:lang="grc">sullogismo/n</foreign>
                     quem accipimus ratiocinativum
 vel collectivum, ambiguitatis, quae
-                    <foreign lang="greek">a)mfiboli/a</foreign>
+                    <foreign xml:lang="grc">a)mfiboli/a</foreign>
                     nominatur; quos posui, quia et ipsi a plerisque status
 appellantur, cum quibusdam legales potius quaestiones eas dici placuerit.
                 </p>
@@ -1661,17 +1661,17 @@ appellantur, cum quibusdam legales potius quaestiones eas dici placuerit.
                     <milestone n="47" unit="section"/>
                     <reg>quattuor</reg>
                     fecit Athenaeus,
-                    <foreign lang="greek">protreptikh\n sta/sin</foreign>
+                    <foreign xml:lang="grc">protreptikh\n sta/sin</foreign>
                     vel
-                    <foreign lang="greek">parormhtikh/n,</foreign>
+                    <foreign xml:lang="grc">parormhtikh/n,</foreign>
                     id est exhortativum, qui suasoriae est
 proprius;
-                    <foreign lang="greek">suntelikh/n,</foreign>
+                    <foreign xml:lang="grc">suntelikh/n,</foreign>
                     qua coniecturam significari
 magis ex his, quae sequuntur, quam ex ipso nomine
                     <pb id="p.434"/>
                     apparet;
-                    <foreign lang="greek">u(pallaktikh/n</foreign>
+                    <foreign xml:lang="grc">u(pallaktikh/n</foreign>
                     ea finitio est, mutatione enim
 nominis constat; iuridicialem, eadem appellatione
 Graeca qua ceteri usus.
@@ -1681,7 +1681,7 @@ nominibus differentia.
                     <milestone n="48" unit="section"/>
                     <reg>sunt</reg>
                     qui
-                    <foreign lang="greek">u(pallaktikh/n</foreign>
+                    <foreign xml:lang="grc">u(pallaktikh/n</foreign>
                     translationem esse existiment, secuti hanc mutationis
 significationem.
                     <reg>fecerunt</reg>
@@ -1777,15 +1777,15 @@ ad aliquid necesse est.
                     <milestone n="53" unit="section"/>
                     <reg>alii</reg>
                     sex status putant, coniecturam, quam
-                    <foreign lang="greek">ge/nesin</foreign>
+                    <foreign xml:lang="grc">ge/nesin</foreign>
                     vocant, et qualitatem, et
 proprietatem, id est
-                    <foreign lang="greek">meta/stasis</foreign>
+                    <foreign xml:lang="grc">meta/stasis</foreign>
                     quo verbo finitio ostenditur, et quantitatem, quam
-                    <foreign lang="greek">meta/stasis;</foreign>
+                    <foreign xml:lang="grc">meta/stasis;</foreign>
                     dicunt, et comparationem, et translationem, cuius adhuc novum
 nomen inventum est
-                    <foreign lang="greek">meta/stasis</foreign>
+                    <foreign xml:lang="grc">meta/stasis</foreign>
                     novum, inquam, in
 statu, alioqui ab Hermagora inter species iuridiciales
 usitatum.
@@ -1817,7 +1817,7 @@ tres putaverunt, An sit?
                     solus quattuor, coniecturam, proprietatem, translationem, qualitatem, quam per accidentia,
                     <pb id="p.438"/>
                     id est
-                    <foreign lang="greek">kata\ sumbebhko/s</foreign>
+                    <foreign xml:lang="grc">kata\ sumbebhko/s</foreign>
                     vocat, hac interpretatione,
 an illi accidat viro bono esse, vel malo.
                     <reg>hanc</reg>
@@ -1829,7 +1829,7 @@ deliberativa;
                     <milestone n="57" unit="section"/>
                     de persona, ea ostenditur laudativa;
 negotialem, quam
-                    <foreign lang="greek">pragmatikh/n</foreign>
+                    <foreign xml:lang="grc">pragmatikh/n</foreign>
                     vocat, in qua de rebus
 ipsis quaeritur, remoto personarum complexu, ut,
 Sitne liber qui est in assertione, an divitiae superbiam pariant, an iustum quid, an bonum sit.
@@ -1855,7 +1855,7 @@ ipsius de his libris iudicium fuerit, supra dixi.
 tradentis est, sive eum movit id, quod Hermagoras
 prima in hoc loco posuit exempla ex quaestionibus
 iuris, sive quod Graeci
-                    <foreign lang="greek">pragmatikou/s</foreign>
+                    <foreign xml:lang="grc">pragmatikou/s</foreign>
                     vocant iuris interpretes.
                     <milestone n="60" unit="section"/>
                     <reg>sed</reg>
@@ -1872,8 +1872,8 @@ semina eius quaedam citra nomen ipsum apud Aristotelen reperiuntur.
                     <reg>legales</reg>
                     autem quaestiones has
 fecit, scripti et voluntatis (quam ipse vocat
-                    <foreign lang="greek">kata\ r(hto\n</foreign>
-                    <foreign lang="greek">kai\ u(pecai/resin,</foreign>
+                    <foreign xml:lang="grc">kata\ r(hto\n</foreign>
+                    <foreign xml:lang="grc">kai\ u(pecai/resin,</foreign>
                     id est dictum et exceptionem, quorum
 prius ei cum omnibus commune est, exceptionis
 nomen minus usitatum), ratiocinativum, ambiguitatis,
@@ -2288,7 +2288,7 @@ ostendentia, ut scripti et voluntatis, quae sine dubio
 aut qualitate aut coniectura continentur, et syllogismos, qui est maxime qualitatis, et leges contrariae,
 quae iisdem, quibus scriptum et voluntas, constant,
 et
-                    <foreign lang="greek">a)mfiboli/a,</foreign>
+                    <foreign xml:lang="grc">a)mfiboli/a,</foreign>
                     quae semper coniectura explicatur.
                     <milestone n="89" unit="section"/>
                     <reg>finitio</reg>
@@ -2525,7 +2525,7 @@ laude ac vituperatione.
                     <reg>quod</reg>
                     genus videtur Aristoteles atque eum secutus Theophrastus a parte
 negotiali, hoc est
-                    <foreign lang="greek">pragmatikh=|</foreign>
+                    <foreign xml:lang="grc">pragmatikh=|</foreign>
                     removisse totamque
 ad solos auditores relegasse, et id eius nominis, quod
 ab ostentatione ducitur, proprium est.
@@ -3089,7 +3089,7 @@ non magis quam ubi constat, quid fieri non possit.
                     <reg>melius</reg>
                     igitur,
 qui tertiam partem dixerunt
-                    <foreign lang="greek">dunato/n</foreign>
+                    <foreign xml:lang="grc">dunato/n</foreign>
                     quod nostri
 possibile nominant, quae ut dura videatur appellatio,
 tamen sola est.
@@ -3105,8 +3105,8 @@ sunt partium.
                     <reg>nam</reg>
                     fas, iustum, pium, aequum,
 mansuetum quoque (sic enim sunt interpretati
-                    <foreign lang="greek">to\</foreign>
-                    <foreign lang="greek">h(/meron</foreign>
+                    <foreign xml:lang="grc">to\</foreign>
+                    <foreign xml:lang="grc">h(/meron</foreign>
                     ) et si qua adhuc adiicere quis eiusdem generis
 velit, subiici possunt honestati.
                     <milestone n="27" unit="section"/>
@@ -3646,7 +3646,7 @@ an obnoxium.
                     <reg>nam</reg>
                     ut con
 ferri materiam omnem et, quid quoque loco
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         quoque loco,
                         <hi rend="italics">Requis:</hi>
                         quoilue,
@@ -3708,13 +3708,13 @@ uter praemium meruerit.
                     <reg>adiecerunt</reg>
                     quidam
 numero mutuam accusationem, quae
-                    <foreign lang="greek">a)ntikathgori/a</foreign>
+                    <foreign xml:lang="grc">a)ntikathgori/a</foreign>
                     vocatur, allis videlicet succedere hane quoque comparativo generi existimantibus, cui similis erit
 petitionum invicem diversarum, quod accidit vel
 frequentissime.
                     <reg>id</reg>
                     si et ipsum vocari debet
-                    <foreign lang="greek">a)ntikathgori/a</foreign>
+                    <foreign xml:lang="grc">a)ntikathgori/a</foreign>
                     (nam proprio caret nomine) duo genera erunt
 eius, alterum quo litigatores idem crimen invicem
 intentant, alterum quo aliud atque aliud.
@@ -3761,7 +3761,7 @@ species dividi convenit.
                     <reg>hanc</reg>
                     igitur quaestionem
 veluti principalem vocant
-                    <foreign lang="greek">zh/thma.</foreign>
+                    <foreign xml:lang="grc">zh/thma.</foreign>
                     <reg>ratio</reg>
                     autem est,
 qua id, quod factum esse constat, defenditur.
@@ -3773,26 +3773,26 @@ exemplo?
 dicit se iuste fecisse: status erit qualitatis; quaestio,
 an iuste fecerit, ratio, quod Clytaemnestra maritum
 suum, patrem Orestis, occidit; hoc
-                    <foreign lang="greek">ai)/tion</foreign>
+                    <foreign xml:lang="grc">ai)/tion</foreign>
                     dicitur.
                     <pb id="p.524"/>
-                    <foreign lang="greek">krino/menon</foreign>
+                    <foreign xml:lang="grc">krino/menon</foreign>
                     autem iudicatio, an oportuerit vel nocentem matrem a filio occidi.
                     <milestone n="5" unit="section"/>
                     <reg>quidam</reg>
                     diviserunt
-                    <foreign lang="greek">ai)/tion</foreign>
+                    <foreign xml:lang="grc">ai)/tion</foreign>
                     et
-                    <foreign lang="greek">ai)ti/an</foreign>
+                    <foreign xml:lang="grc">ai)ti/an</foreign>
                     ut esset altera, propter quam iudicium
 constitutum est, ut occisa Clytaemnestra, altera, qua
 factum defenditur, ut occisus Agamemnon.
                     <reg>sed</reg>
                     tanta est circa verba dissensio, ut alii
-                    <foreign lang="greek">ai)ti/an</foreign>
+                    <foreign xml:lang="grc">ai)ti/an</foreign>
                     causam
 iudicii,
-                    <foreign lang="greek">ai)/tion</foreign>
+                    <foreign xml:lang="grc">ai)/tion</foreign>
                     autem facti vocent, alii eadem in contrarium vertant.
                     <reg>latinorum</reg>
                     quidam haec initium
@@ -3801,7 +3801,7 @@ nomine appellant.
                     <milestone n="6" unit="section"/>
                     <reg>causa</reg>
                     quoque ex causa, id est
-                    <foreign lang="greek">ai)/tion e)c ai)ti/ou</foreign>
+                    <foreign xml:lang="grc">ai)/tion e)c ai)ti/ou</foreign>
                     nasci videtur, quale est: Occidit
 Agamemnonem Clytaemnestra, quia ille filiam communem immolaverat et captivam pellicem adducebat.
                     <reg>iidem</reg>
@@ -3827,7 +3827,7 @@ status habeant, causae tamen status unus sit, ad
 quem referuntur omnia, ita iudicatio maxime propria,
 de qua pronuntiatur.
                     <milestone n="9" unit="section"/>
-                    <foreign lang="greek">sune/xon</foreign>
+                    <foreign xml:lang="grc">sune/xon</foreign>
                     autem (quod, ut dixi,
 continens alii, firmamentum alii putant, Cicero
                     <hi rend="italics">firmissimam argumentationem defensoris et adpositissimam ad iudicationem</hi>
@@ -3931,7 +3931,7 @@ si est insidiatus Clodius, sequitur, ut recte sit occisus.
                     vero in aliquam rem missa causa recessum est
 a quaestione, quae erat, et hic constituta quaestio,
 ubi iudicatio est.
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         causa est recessum est a quaestione quae erat et hic constituta quaestio iudicatio et,
                         <hi rend="italics">A:</hi>
                         causa est recessum et a
@@ -3946,7 +3946,7 @@ est,
                     in his secum etiam Cicero dissentit.
                     <reg>nam</reg>
                     in Rhetoricis (quemadmodum supra dixi) Hermagoran est secutus; in Topicis ex statu effectam contentionem
-                    <foreign lang="greek">krino/menon</foreign>
+                    <foreign xml:lang="grc">krino/menon</foreign>
                     existimat, idque Trebatio, qui
 iuris erat consultus, adludens
                     <hi rend="italics">qua de re agitur</hi>
@@ -3960,7 +3960,7 @@ firmamenti quaestione disceptatio sit iudicationum.
                     <reg>verius</reg>
                     igitur et brevius ii, qui statum et continens
 et iudicationem idem
-                    <note anchored="yes" place="unspecified">
+                    <note anchored="true" place="unspecified">
                         idem,
                         <hi rend="italics">added by Regius.</hi>
                     </note>
@@ -4044,7 +4044,7 @@ cum adfirmatione; ut dicimus,
                     </hi>
                     apud
 Menandrum
-                    <foreign lang="greek">kefa/laio/n e)stin.</foreign>
+                    <foreign xml:lang="grc">kefa/laio/n e)stin.</foreign>
                     <reg>in</reg>
                     universum autem,
 quidquid probandum est, erit caput; sed id maius
@@ -4061,7 +4061,7 @@ exposuimus, praeterea, quae partes essent iudicialium
 causarum, supra dictum est, proximus liber a prima,
 id est exordio incipiet.
                 </p>
-            </div1>
+            </div>
         </body>
     </text>
 </TEI>

@@ -1,5 +1,5 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader status="new" type="text">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>Odes (English). Machine readable text - O.</title>
@@ -15,15 +15,15 @@
                     <name>David Smith</name>
                 </respStmt>
                 <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
-            </titleStmt>
-            <extent>About 245K</extent>
+            </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+            
             <publicationStmt>
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
                 <authority>Perseus Project</authority>
             </publicationStmt>
             <notesStmt>
-                <note place="unspecified" anchored="yes">
+                <note place="unspecified" anchored="true">
                     Diane Arnson Svarlien typed in her translation.  Basic SGML tagging by EM
                 </note>
             </notesStmt>
@@ -42,20 +42,20 @@
                     <p>professional data entry</p>
                 </correction>
             </editorialDecl>
-            <refsDecl doctype="TEI.2">
-                <state unit="book"/>
-                <state unit="poem"/>
-                <state unit="line"/>
+            <refsDecl
+                refState unit="book"/>
+                refState unit="poem"/>
+                refState unit="line"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage default="NO">
-                <language id="en">English</language>
-                <language id="greek">Greek</language>
-                <language id="latin">Latin</language>
+                language ident="en">English</language>
+                language ident="greek">Greek</language>
+                language ident="latin">Latin</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
+        <revisionDesc><!--
             <change>
                 <date>8/9</date>
                 <respStmt>
@@ -96,20 +96,20 @@
                 </respStmt>
                 <item>Entered Svarlien's responses to Hubbard.</item>
             </change>
-        </revisionDesc>
+        <change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
     </teiHeader>
     <text xml:lang="en">
         <body>
-            <div1 part="N" sample="complete" org="uniform" type="book" n="O.">
+            <div part="N" sample="complete" org="uniform" type="book" n="O.">
                 <head>Olympian Odes</head>
                 <p/>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="1">
+                <div part="N" sample="complete" org="uniform" type="poem" n="1">
                     <head>
                         <title>Olympian 1</title>
                         <persName type="winner">For Hieron of Syracuse</persName>
                         <seg part="N" type="race">Single Horse Race</seg>
                         <date>
-                            <date value="-476">476</date>
+                            date when="-476">476</date>
                             B. C.
                         </date>
                     </head>
@@ -121,11 +121,11 @@
                         look no further for any star warmer than the sun, shining by day through the lonely sky, and let us not proclaim any contest greater than
                         <placeName key="tgn,7013967">Olympia</placeName>
                         . From there glorious song enfolds the wisdom of poets,
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             On this line see F. J. Nisetich, "Olympian 1.8-11: An Epinician Metaphor,"
                             <title>HSCP</title>
                             79,
-                            <date value="1975">1975</date>
+                            date when="1975">1975</date>
                             , 55-68.
                         </note>
                         so that they loudly sing
@@ -188,9 +188,9 @@
                         , and bring me to victory. For he has killed thirteen
                         <milestone unit="line" ed="P" n="80"/>
                         suitors,
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             reading
-                            <foreign lang="greek">mnasth=ras</foreign>
+                            <foreign xml:lang="grc">mnasth=ras</foreign>
                             , with the mss.
                         </note>
                         and postpones the marriage
@@ -220,14 +220,14 @@
                         <milestone unit="line" ed="P" n="115"/>
                         May it be yours to walk on high throughout your life, and mine to associate with victors as long as I live, distinguished for my skill among Greeks everywhere.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="2">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="2">
                     <head>
                         <title>Olympian 2</title>
                         <persName type="winner">For Theron of Acragas</persName>
                         <seg part="N" type="race">Chariot Race</seg>
                         <date>
-                            <date value="-476">476</date>
+                            date when="-476">476</date>
                             B. C.
                         </date>
                     </head>
@@ -314,15 +314,15 @@
                         , and who consigned to death Memnon the Ethiopian, son of the Dawn. I have many swift arrows in the quiver under my arm,
                         <milestone unit="line" ed="P" n="85"/>
                         arrows that speak to the initiated. But the masses need interpreters.
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             On this line see W. H. Race, "The End of Olympian 2: Pindar and the Vulgus,"
                             <title>CSCA</title>
                             12,
-                            <date value="1979">1979</date>
+                            date when="1979">1979</date>
                             , 251-67, and G. W. Most, "Pindar O. 2.83-90,"
                             <title>CQ</title>
                             36,
-                            <date value="1986">1986</date>
+                            date when="1986">1986</date>
                             , 304-16.
                         </note>
                         The man who knows a great deal by nature is truly skillful, while those who have only learned chatter with raucous and indiscriminate tongues in vain like crows
@@ -340,14 +340,14 @@
                         <milestone unit="line" ed="P" n="100"/>
                         who could number all the joys that Theron has given others?
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="3">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="3">
                     <head>
                         <title>Olympian 3</title>
                         <persName type="winner">For Theron of Acragas</persName>
                         <seg part="N" type="race">Chariot Race</seg>
                         <date>
-                            <date value="-476">476</date>
+                            date when="-476">476</date>
                             B. C.
                         </date>
                     </head>
@@ -412,14 +412,14 @@
                         <milestone unit="line" ed="P" n="45"/>
                         beyond that. I will not pursue it; I would be a fool.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="4">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="4">
                     <head>
                         <title>Olympian 4</title>
                         <persName type="winner">For Psaumis of Camarina</persName>
                         <seg part="N" type="race">Chariot Race</seg>
                         <date>
-                            <date value="-452">452</date>
+                            date when="-452">452</date>
                             B. C.
                         </date>
                     </head>
@@ -447,15 +447,15 @@
                         <milestone unit="line" ed="P" n="25"/>
                         and I have hands and heart to match. Even on young men gray hair often grows, even before the expected age.”
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="5">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="5">
                     <head>
                         <title>Olympian 5</title>
                         <persName type="winner">For Psaumis of Camarina</persName>
                         <seg part="N" type="race">Mule Car Race</seg>
                         <date>
                             ?460 or
-                            <date value="-456">456</date>
+                            date when="-456">456</date>
                             B. C.
                         </date>
                     </head>
@@ -494,25 +494,25 @@
                         <milestone unit="line" n="23"/>
                         with your sons standing beside you. If a man cultivates both prosperity and health, being generous with his possessions and winning praise as well, let him not seek to become a god.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="6">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="6">
                     <head>
                         <title>Olympian 6</title>
                         <persName type="winner">For Hagesias of Syracuse</persName>
                         <seg part="N" type="race">Mule Car Race</seg>
                         <date>
                             472 or
-                            <date value="-468">468</date>
+                            date when="-468">468</date>
                             B. C.
                         </date>
                     </head>
                     <p>
                         <milestone unit="strophe" n="str. 1"/>
                         <milestone unit="line" n="1"/>
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             On the two possible dates see C. M. Bowra, Pindar (
                             <placeName key="tgn,7011931">Oxford</placeName>
-                            <date value="1964">1964</date>
+                            date when="1964">1964</date>
                             ), p. 409.
                         </note>
                         Raising the fine-walled porch of our dwelling with golden pillars, we will build, as it were, a marvellous hall; at the beginning of our work we must place a far-shining front. If someone were an Olympic victor,
@@ -616,14 +616,14 @@
                         <milestone unit="line" ed="P" n="105"/>
                         and give new growth to the delightful flower of my songs.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="7">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="7">
                     <head>
                         <title>Olympian 7</title>
                         <persName type="winner">For Diagoras of Rhodes</persName>
                         <seg part="N" type="race">Boxing-Match</seg>
                         <date>
-                            <date value="-464">464</date>
+                            date when="-464">464</date>
                             B. C.
                         </date>
                     </head>
@@ -633,11 +633,11 @@
                         As when someone takes a goblet, all golden, the most prized of his possessions, foaming with the dew of the vine from a generous hand, and makes a gift of it to his young son-in-law, welcoming him with a toast from one home to another,
                         <milestone unit="line" ed="P" n="5"/>
                         honoring the grace of the symposium and the new
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with Snell
-                            <foreign lang="greek">ne/os</foreign>
+                            <foreign xml:lang="grc">ne/os</foreign>
                             for
-                            <foreign lang="greek">e(o/n</foreign>
+                            <foreign xml:lang="grc">e(o/n</foreign>
                             .
                         </note>
                         marriage-bond, and thereby, in the presence of his friends, makes him enviable for his harmonious marriage-bed;
@@ -747,14 +747,14 @@
                         <milestone unit="line" ed="P" n="95"/>
                         the winds shift quickly from moment to moment.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="8">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="8">
                     <head>
                         <title>Olympian 8</title>
                         <persName type="winner">For Alcimedon of Aegina</persName>
                         <seg part="N" type="race">Boys' Wrestling</seg>
                         <date>
-                            <date value="-460">460</date>
+                            date when="-460">460</date>
                             B. C.
                         </date>
                     </head>
@@ -805,20 +805,20 @@
                         <milestone unit="line" n="45"/>
                         <milestone unit="line" ed="P" n="45"/>
                         not without your sons: the city will be destroyed
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with Gildersleeve
-                            <foreign lang="greek">r(a/zetai</foreign>
+                            <foreign xml:lang="grc">r(a/zetai</foreign>
                             for
-                            <foreign lang="greek">a)/rzetai</foreign>
+                            <foreign xml:lang="grc">a)/rzetai</foreign>
                             .
                         </note>
                         with the first generation, and with the third.”
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with the MSS
-                            <foreign lang="greek">terta/tois</foreign>
+                            <foreign xml:lang="grc">terta/tois</foreign>
                             . See
                             <title>GRBS</title>
-                            <date value="1987">1987</date>
+                            date when="1987">1987</date>
                             .
                         </note>
                         The god spoke clearly, and then hurried on his way, driving to
@@ -859,21 +859,21 @@
                         <milestone unit="strophe" n="epode 4"/>
                         <milestone unit="line" n="81"/>
                         Having heard the voice of Hermes' daughter, Angelia,
-                        <note place="unspecified" anchored="yes" resp="Svarlien">Message</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">Message</note>
                         Iphion might tell Callimachus of the splendid adornment at
                         <placeName key="perseus,Olympia">Olympia</placeName>
                         , which Zeus gave to their race. May he be willing to grant noble deeds upon noble
                         <milestone unit="line" ed="P" n="85"/>
                         deeds, and to ward off bitter diseases. I pray that, for the share of fine things allotted to them, Zeus may not cause the mind of Nemesis to waver; rather, may he grant a painless life, and thus give new growth to themselves and their city.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="9">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="9">
                     <head>
                         <title>Olympian 9</title>
                         <persName type="winner">For Epharmostus of Opus</persName>
                         <seg part="N" type="race">Wrestling-Match</seg>
                         <date>
-                            <date value="-466">466</date>
+                            date when="-466">466</date>
                             B. C.
                         </date>
                     </head>
@@ -922,19 +922,19 @@
                         <milestone unit="line" ed="P" n="45"/>
                         they founded a unified race of stone offspring, and the stones 
 gave the people their name
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Pun on
-                            <foreign lang="greek">lao\'dy</foreign>
+                            <foreign xml:lang="grc">lao\'dy</foreign>
                             , “people”, and
-                            <foreign lang="greek">lh/qoi</foreign>
+                            <foreign xml:lang="grc">lh/qoi</foreign>
                             , “stones.”
                         </note>
                         . Arouse for them a clear-sounding path
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with Snell and MSS
-                            <foreign lang="greek">oi)=mon</foreign>
+                            <foreign xml:lang="grc">oi)=mon</foreign>
                             for
-                            <foreign lang="greek">ou)=ron</foreign>
+                            <foreign xml:lang="grc">ou)=ron</foreign>
                             .
                         </note>
                         of song; praise wine that is old, but praise the flowers of songs
@@ -1003,14 +1003,14 @@ gave the people their name
                         <milestone unit="line" ed="P" n="110"/>
                         that this man, by the blessing of the gods, was born with deftness of hand and litheness of limb, and with valor in his eyes; and at the banquet of Aias son of Oileus he laid his victorious garland on the altar.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="10">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="10">
                     <head>
                         <title>Olympian 10</title>
                         <persName type="winner">For Hagesidamus of Western Locri</persName>
                         <seg part="N" type="race">Boys' Boxing</seg>
                         <date>
-                            <date value="-476">476</date>
+                            date when="-476">476</date>
                             B.C.
                         </date>
                     </head>
@@ -1115,14 +1115,14 @@ gave the people their name
                         <milestone unit="line" ed="P" n="105"/>
                         kept Ganymede from shameless death, with the help of Cyprian Aphrodite.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="11">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="11">
                     <head>
                         <title>Olympian 11</title>
                         <persName type="winner">For Hagesidamus of Western Locri</persName>
                         <seg part="N" type="race">Boys' Boxing</seg>
                         <date>
-                            <date value="-476">476</date>
+                            date when="-476">476</date>
                             B. C.
                         </date>
                     </head>
@@ -1145,14 +1145,14 @@ gave the people their name
                         <milestone unit="line" ed="P" n="20"/>
                         neither the fiery fox nor loud-roaring lions change their nature.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="12">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="12">
                     <head>
                         <title>Olympian 12</title>
                         <persName type="winner">For Ergoteles of Himera</persName>
                         <seg part="N" type="race">Long Foot Race</seg>
                         <date>
-                            <date value="-466">466</date>
+                            date when="-466">466</date>
                             B. C
                         </date>
                     </head>
@@ -1177,14 +1177,14 @@ gave the people their name
                         <placeName key="tgn,7010770">Pytho</placeName>
                         , and at the Isthmus, you exalt the hot baths of the Nymphs, while keeping company with them beside your own fields.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="13">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="13">
                     <head>
                         <title>Olympian 13</title>
                         <persName type="winner">For Xenophon of Corinth</persName>
                         <seg part="N" type="race">Foot Race and Pentathlon</seg>
                         <date>
-                            <date value="-464">464</date>
+                            date when="-464">464</date>
                             B. C.
                         </date>
                     </head>
@@ -1196,23 +1196,23 @@ gave the people their name
                         , gentle to her own citizens, and hospitable to strangers, I shall recognize prosperous Corinth,
                         <milestone unit="line" ed="P" n="5"/>
                         the portal of Isthmian Poseidon, glorious in her young men. There dwell Eunomia
-                        <note place="unspecified" anchored="yes" resp="Svarlien">Good Government</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">Good Government</note>
                         and her sisters, the secure foundation of cities: Dike,
-                        <note place="unspecified" anchored="yes" resp="Svarlien">Justice</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">Justice</note>
                         and Eirene,
-                        <note place="unspecified" anchored="yes" resp="Svarlien">Peace</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">Peace</note>
                         who was raised together with her, the guardians of wealth for men, the golden daughters of wise Themis.
-                        <note place="unspecified" anchored="yes" resp="Svarlien">Law</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">Law</note>
                         <milestone unit="strophe" n="ant. 1"/>
                         <milestone unit="line" n="9"/>
                         They are resolute in repelling
                         <milestone unit="line" ed="P" n="10"/>
                         Hybris,
-                        <note place="unspecified" anchored="yes" resp="Svarlien">Arrogance</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">Arrogance</note>
                         the bold-tongued mother of
                         <placeName key="tgn,1125285">Koros</placeName>
                         .
-                        <note place="unspecified" anchored="yes" resp="Svarlien">Surfeit</note>
+                        <note place="unspecified" anchored="true" resp="Svarlien">Surfeit</note>
                         I have fine things to tell, and straightforward boldness urges my tongue to speak. It is impossible to conceal one's inborn nature. As for you, sons of Aletes, often the Seasons have sent you victorious splendor
                         <milestone unit="line" ed="P" n="15"/>
                         for your consummate excellence when you won in sacred contests, and often into the hearts of men
@@ -1289,15 +1289,15 @@ gave the people their name
                         <milestone unit="strophe" n="epode 4"/>
                         <milestone unit="line" n="86"/>
                         the winged horse. Mounted on its back and armored in bronze, at once he began to play with weapons. And with Pegasus, from the chilly bosom of the lonely air,
-                        <note place="unspecified" anchored="yes" resp="Svarlien">
+                        <note place="unspecified" anchored="true" resp="Svarlien">
                             Reading with Snell and MSS
-                            <foreign lang="greek">yuxrw=n</foreign>
+                            <foreign xml:lang="grc">yuxrw=n</foreign>
                             and
-                            <foreign lang="greek">e)rh/mou</foreign>
+                            <foreign xml:lang="grc">e)rh/mou</foreign>
                             for
-                            <foreign lang="greek">yuxra=s</foreign>
+                            <foreign xml:lang="grc">yuxra=s</foreign>
                             and
-                            <foreign lang="greek">e)rhh/mwn</foreign>
+                            <foreign xml:lang="grc">e)rhh/mwn</foreign>
                             .
                         </note>
                         he once attacked the Amazons, the female army of archers,
@@ -1345,15 +1345,15 @@ gave the people their name
                         <milestone unit="line" ed="P" n="115"/>
                         Zeus the Accomplisher, grant reverence, and a sweet good fortune of delights.
                     </p>
-                </div2>
-                <div2 part="N" sample="complete" org="uniform" type="poem" n="14">
+                </div>
+                <div part="N" sample="complete" org="uniform" type="poem" n="14">
                     <head>
                         <title>Olympian 14</title>
                         <persName type="winner">For Asopichus of Orchomenus</persName>
                         <seg part="N" type="race">Boys' Foot Race</seg>
                         <date>
                             ?
-                            <date value="-488">488</date>
+                            date when="-488">488</date>
                             B. C.
                         </date>
                     </head>
@@ -1377,8 +1377,8 @@ gave the people their name
                         <placeName key="perseus,Pisa">Pisa</placeName>
                         , has wreathed his youthful hair with the wings of the renowned games.
                     </p>
-                </div2>
-            </div1>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader type="text" status="new">
+  <teiHeader type="text">
     <fileDesc>
       <titleStmt>
         <title>Against Euthynus </title>
@@ -18,7 +18,12 @@
         </respStmt>
         <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
 
-      </titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Trustees of Tufts University</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <authority>Perseus Project</authority>
+      </publicationStmt>
 
       <sourceDesc>
         <bibl>
@@ -34,8 +39,8 @@
 
     <encodingDesc>
       <refsDecl>
-        <state delim="." unit="speech"/>
-        <state n="chunk context" unit="section"/>
+        <refState delim="." unit="speech"/>
+        <refState n="chunk context" unit="section"/>
       </refsDecl>
     </encodingDesc>
 
@@ -45,29 +50,30 @@
         <language ident="greek">Greek </language>
       </langUsage>
 
-      <textClass id="gen.epideictic">
+      <textClass xml:id="gen.epideictic">
         <keywords>
           <term>Epideictic</term>
         </keywords>
       </textClass>
-      <textClass id="gen.forensic.prosecution">
+      <textClass xml:id="gen.forensic.prosecution">
         <keywords>
           <term>Forensic Prosecution</term>
         </keywords>
       </textClass>
-      <textClass id="gen.forensic.defense">
+      <textClass xml:id="gen.forensic.defense">
         <keywords>
           <term>Forensic Defense</term>
         </keywords>
       </textClass>
-      <textClass id="gen.estate.claim">
+      <textClass xml:id="gen.estate.claim">
         <keywords>
           <term>Claim against an Estate</term>
         </keywords>
       </textClass>
     </profileDesc>
 
-    <revisionDesc><!--
+    <revisionDesc>
+      <!--
       <change>
         <date>April 1992</date>
         <respStmt>
@@ -132,7 +138,9 @@
         </respStmt>
         <item>split composite text and converted to unicode</item>
       </change>
-    --><change when="2014-08-01" who="Stella Dee">edited markup</change></revisionDesc>
+    -->
+      <change when="2014-08-01" who="Stella Dee">edited markup</change>
+    </revisionDesc>
   </teiHeader>
   <text xml:lang="en">
     <body>
@@ -265,8 +273,8 @@
         thought that if he diminished the amount he would not be found out, but if he withheld the
         whole sum, his guilt would be manifest. Therefore, he chose to take enough and have left a
         plea in his defense rather than to pay nothing back and be left without a possibility of
-          denial.<note anchored="true" resp="ed">The loss of a formal conclusion, or Epilogue, to the
-          speech is suggested by the abrupt ending.</note></p>
+          denial.<note anchored="true" resp="ed">The loss of a formal conclusion, or Epilogue, to
+          the speech is suggested by the abrupt ending.</note></p>
 
     </body>
   </text>
